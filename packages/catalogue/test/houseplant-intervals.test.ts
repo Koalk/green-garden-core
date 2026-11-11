@@ -167,12 +167,90 @@ const PINS_2: Pin[] = [
   },
 ];
 
+// Part 3 (ranks 22 to 31). Dry and wet tolerance days are unchanged: no source gives any.
+const N = null as any;
+const PINS_3: Pin[] = [
+  {
+    id: "anthurium-andraeanum",
+    interval: 6,
+    confidence: "from_knowledge_verify",
+    sources: 2,
+    dryTol: N,
+    wetTol: N,
+  },
+  {
+    id: "peperomia-obtusifolia",
+    interval: 10,
+    confidence: "checked",
+    sources: 3,
+    dryTol: N,
+    wetTol: N,
+  },
+  {
+    id: "dieffenbachia-seguine",
+    interval: 8,
+    confidence: "checked",
+    sources: 3,
+    dryTol: N,
+    wetTol: N,
+  },
+  {
+    id: "goeppertia-makoyana",
+    interval: 5,
+    confidence: "from_knowledge_verify",
+    sources: 2,
+    dryTol: N,
+    wetTol: N,
+  },
+  {
+    id: "dypsis-lutescens",
+    interval: 7,
+    confidence: "from_knowledge_verify",
+    sources: 3,
+    dryTol: N,
+    wetTol: N,
+  },
+  {
+    id: "dracaena-sanderiana",
+    interval: 7,
+    confidence: "from_knowledge_verify",
+    sources: 2,
+    dryTol: N,
+    wetTol: N,
+  },
+  {
+    id: "nephrolepis-exaltata",
+    interval: 4,
+    confidence: "checked",
+    sources: 3,
+    dryTol: N,
+    wetTol: N,
+  },
+  { id: "dracaena-fragrans", interval: 8, confidence: "guess", sources: 4, dryTol: N, wetTol: N },
+  {
+    id: "ceropegia-woodii",
+    interval: 14,
+    confidence: "from_knowledge_verify",
+    sources: 2,
+    dryTol: N,
+    wetTol: N,
+  },
+  {
+    id: "curio-rowleyanus",
+    interval: 14,
+    confidence: "from_knowledge_verify",
+    sources: 3,
+    dryTol: N,
+    wetTol: N,
+  },
+];
+
 const entry = (id: string): any =>
   JSON.parse(readFileSync(new URL(`../../../catalogue-draft/${id}.json`, import.meta.url), "utf8"))
     .entries[0];
 
-describe("houseplant intervals (top 30, parts 1 and 2)", () => {
-  for (const p of [...PINS, ...PINS_2]) {
+describe("houseplant intervals (top 30, parts 1 to 3)", () => {
+  for (const p of [...PINS, ...PINS_2, ...PINS_3]) {
     it(`${p.id}: ${p.interval} days for a ${POT}`, () => {
       const e = entry(p.id);
       const c = e.care;

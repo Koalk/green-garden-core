@@ -38,6 +38,16 @@
       "retrievedOn": "2026-10-28",
       "lang": "en",
       "linkKind": "toxicity"
+    },
+    {
+      "id": "mbg-curio-water",
+      "title": "Curio rowleyanus (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=457444",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -72,8 +82,9 @@
         "baseIntervalDays": {
           "value": 14,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-pearls",
+          "confidence": "from_knowledge_verify",
+          "corroboratedBy": ["rhs-pearls", "mbg-curio-water"]
         },
         "restSeasonFactor": {
           "value": null,
@@ -197,12 +208,13 @@
         "curated": ["indoor", "trailing", "succulent"]
       },
       "provenance": {
-        "notes": "Watering: NC State says tolerates infrequent watering but should not dry out fully; RHS only says sparingly in winter. Mapped to let_top_dry. Light conflict: NC State bright indirect indoors, RHS several hours of direct sun; kept the gentler one. Temperature: summer 21 to 27 C (both), winter NC State 10 to 16 C, RHS 13 to 16 C; kept the higher winter minimum. Size: NC State up to 2 ft tall and 3 ft spread, RHS 10 cm tall and up to 50 cm spread; NC State used. Severity 1 maps NC State low severity and the ASPCA article (stomach upset). Caution: the ASPCA lists generic Senecio species as more serious (liver damage) and the fetched article does not use the name Curio; a vet check would settle it. Growth rate: no page states it."
+        "notes": "Watering: NC State says tolerates infrequent watering but should not dry out fully; RHS only says sparingly in winter. Mapped to let_top_dry. Light conflict: NC State bright indirect indoors, RHS several hours of direct sun; kept the gentler one. Temperature: summer 21 to 27 C (both), winter NC State 10 to 16 C, RHS 13 to 16 C; kept the higher winter minimum. Size: NC State up to 2 ft tall and 3 ft spread, RHS 10 cm tall and up to 50 cm spread; NC State used. Severity 1 maps NC State low severity and the ASPCA article (stomach upset). Caution: the ASPCA lists generic Senecio species as more serious (liver damage) and the fetched article does not use the name Curio; a vet check would settle it. Growth rate: no page states it. Interval: NC State 'tolerates infrequent watering, never allow to dry out completely between waterings'; Missouri Botanical Garden 'allow roots to dry out between waterings, tolerates infrequent watering'; RHS 'sparingly in winter'. NC State and MBG pull in opposite directions (never fully dry vs dry out between), so 14 stays unconfirmed. Pot and season: 13 cm pot, growing season; winter comes from the rest-season factor. Dry and wet tolerance days: no source gives any, unchanged."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/curio-rowleyanus/",
         "https://www.rhs.org.uk/plants/353584/curio-rowleyanus/details",
-        "https://www.aspca.org/news/are-succulents-safe-have-around-pets"
+        "https://www.aspca.org/news/are-succulents-safe-have-around-pets",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=457444"
       ],
       "lookAlikes": [
         {

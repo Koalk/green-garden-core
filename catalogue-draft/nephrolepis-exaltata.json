@@ -38,6 +38,16 @@
       "retrievedOn": "2026-10-28",
       "lang": "en",
       "linkKind": "toxicity"
+    },
+    {
+      "id": "mbg-nephrolepis-water",
+      "title": "Nephrolepis exaltata (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285753",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -72,8 +82,9 @@
         "baseIntervalDays": {
           "value": 4,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-boston",
+          "confidence": "checked",
+          "corroboratedBy": ["rhs-boston", "mbg-nephrolepis-water"]
         },
         "restSeasonFactor": {
           "value": null,
@@ -179,12 +190,13 @@
         "curated": ["indoor", "fern", "high_humidity"]
       },
       "provenance": {
-        "notes": "Habit conflict: RHS says bushy, upright then drooping; NC State says cascading. Stored as bushy (from_knowledge_verify). Temperature 60 to 70 F from NC State converted to C. Size: NC State 2 to 3 ft, RHS 90 cm, upper values used. NC State tags the plant non-toxic for cats and dogs; the ASPCA page agrees. Asparagus fern, a common mix-up, is toxic."
+        "notes": "Habit conflict: RHS says bushy, upright then drooping; NC State says cascading. Stored as bushy (from_knowledge_verify). Temperature 60 to 70 F from NC State converted to C. Size: NC State 2 to 3 ft, RHS 90 cm, upper values used. NC State tags the plant non-toxic for cats and dogs; the ASPCA page agrees. Asparagus fern, a common mix-up, is toxic. Interval: NC State 'moist soil should never be allowed to dry out, reduce watering in winter'; Missouri Botanical Garden 'consistently moist, only a slight reduction in watering fall to late winter, fronds shed if soils dry out'; RHS keep moist. Three sources agree the mix never dries out, which in a 13 cm pot is about 4 days. Pot and season: 13 cm pot, growing season; winter comes from the rest-season factor. Dry and wet tolerance days: no source gives any, unchanged."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/nephrolepis-exaltata/common-name/boston-fern/",
         "https://www.rhs.org.uk/plants/58296/nephrolepis-exaltata-bostoniensis/details",
-        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boston-fern"
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boston-fern",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285753"
       ],
       "lookAlikes": [
         {

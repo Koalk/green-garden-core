@@ -17,6 +17,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-anthurium-water",
+      "title": "Anthurium andraeanum (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276219",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -46,8 +56,9 @@
         "baseIntervalDays": {
           "value": 6,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-anthurium",
+          "confidence": "from_knowledge_verify",
+          "corroboratedBy": ["mbg-anthurium-water"]
         },
         "restSeasonFactor": {
           "value": null,
@@ -168,9 +179,12 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "One source only. The Missouri Botanical Garden page failed (certificate error) and was not used."
+        "notes": "Interval: NC State 'water when the top inch of soil feels dry'; Missouri Botanical Garden 'consistent moisture year around, soils must not be allowed to dry out'. The two rules differ a little (top inch dry vs never dry), so 6 days for a 13 cm pot stays unconfirmed. The Missouri Botanical Garden page failed earlier on a certificate error and is read now. Pot and season: 13 cm pot, growing season; winter comes from the rest-season factor. Dry and wet tolerance days: no source gives any, unchanged."
       },
-      "sourcesRead": ["https://plants.ces.ncsu.edu/plants/anthurium-andraeanum/"],
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/anthurium-andraeanum/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276219"
+      ],
       "lookAlikes": [
         {
           "name": "Peace lily",

@@ -38,6 +38,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-peperomia-water",
+      "title": "Peperomia obtusifolia (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285088",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -68,8 +78,9 @@
         "baseIntervalDays": {
           "value": 10,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-peperomia",
+          "confidence": "checked",
+          "corroboratedBy": ["clemson-peperomia", "mbg-peperomia-water"]
         },
         "restSeasonFactor": {
           "value": null,
@@ -171,12 +182,13 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Watering style is a mapping: NC State 'prefers dry soil, intolerant of wet soil', Clemson 'prefers to dry out between waterings' to let_top_dry. Toxicity: NC State tags it non-toxic for cats and dogs; the ASPCA page for the same species agrees (fact only, no wording copied)."
+        "notes": "Watering style is a mapping: NC State 'prefers dry soil, intolerant of wet soil', Clemson 'prefers to dry out between waterings' to let_top_dry. Toxicity: NC State tags it non-toxic for cats and dogs; the ASPCA page for the same species agrees (fact only, no wording copied). Interval: NC State 'prefers dry soil, intolerant of wet soil'; Clemson dry out between waterings; Missouri Botanical Garden 'water moderately but consistently, allowing soils to become almost dry on top before rewatering, reduce watering fall to late winter'. Three sources agree on dry-ish between; almost dry on top in a 13 cm pot with fleshy leaves is about 10 days. Pot and season: 13 cm pot, growing season; winter comes from the rest-season factor. Dry and wet tolerance days: no source gives any, unchanged."
       },
       "sourcesRead": [
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/baby-rubber-plant",
         "https://hgic.clemson.edu/factsheet/peperomia-peperomia-spp-indoor-plant-care-and-growing-guide/",
-        "https://plants.ces.ncsu.edu/plants/peperomia-obtusifolia/"
+        "https://plants.ces.ncsu.edu/plants/peperomia-obtusifolia/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285088"
       ],
       "lookAlikes": [
         {

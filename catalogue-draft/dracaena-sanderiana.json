@@ -28,6 +28,16 @@
       "retrievedOn": "2026-10-28",
       "lang": "en",
       "linkKind": "toxicity"
+    },
+    {
+      "id": "mbg-sanderiana-water",
+      "title": "Dracaena sanderiana (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282309",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -61,8 +71,9 @@
         "baseIntervalDays": {
           "value": 7,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-sanderiana",
+          "confidence": "from_knowledge_verify",
+          "corroboratedBy": ["mbg-sanderiana-water"]
         },
         "restSeasonFactor": {
           "value": null,
@@ -168,12 +179,13 @@
         "curated": ["indoor", "grows_in_water"]
       },
       "provenance": {
-        "notes": "NC State rates poison severity low and lists dogs, cats and children; severity 1 is our mapping. The ASPCA page read is the genus entry (Dracaena spp., listed under ribbon plant), not D. sanderiana by name. Child symptoms are not stated, so none are listed. NC State says the sap may irritate skin but also says it does not cause contact dermatitis, so no skin exposure is graded. Temperature, humidity and size: no number on the fetched page, unknown. The Missouri Botanical Garden page failed (certificate error). Water-grown plants (the usual way it is sold) follow the keep-roots-covered rule, not the interval."
+        "notes": "NC State rates poison severity low and lists dogs, cats and children; severity 1 is our mapping. The ASPCA page read is the genus entry (Dracaena spp., listed under ribbon plant), not D. sanderiana by name. Child symptoms are not stated, so none are listed. NC State says the sap may irritate skin but also says it does not cause contact dermatitis, so no skin exposure is graded. Temperature, humidity and size: no number on the fetched page, unknown. Water-grown plants (the usual way it is sold) follow the keep-roots-covered rule, not the interval. Interval: NC State 'requires a moist potting mix, or grow in chlorine-free water, change the water weekly'; Missouri Botanical Garden 'evenly moist soil, can be grown in water'. No depth given, so 7 days for a 13 cm pot stays unconfirmed. Pot and season: 13 cm pot, growing season; winter comes from the rest-season factor. Dry and wet tolerance days: no source gives any, unchanged."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/dracaena-sanderiana/",
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ribbon-plant",
-        "https://hgic.clemson.edu/factsheet/dracaena/"
+        "https://hgic.clemson.edu/factsheet/dracaena/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282309"
       ],
       "lookAlikes": [
         {

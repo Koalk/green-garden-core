@@ -68,8 +68,9 @@
         "baseIntervalDays": {
           "value": 5,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-goeppertia",
+          "confidence": "from_knowledge_verify",
+          "corroboratedBy": ["rhs-calathea"]
         },
         "restSeasonFactor": {
           "value": null,
@@ -175,7 +176,7 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Temperature: RHS 16-21 C; NC State gives 65-75 without units. The ASPCA page read was for Calathea insignis, not G. makoyana, so it is not cited for this plant. RHS is a genus-level guide for Calathea."
+        "notes": "Temperature: RHS 16-21 C; NC State gives 65-75 without units. The ASPCA page read was for Calathea insignis, not G. makoyana, so it is not cited for this plant. RHS is a genus-level guide for Calathea. Interval: NC State 'moist but not wet or soggy', intolerant of both dry and wet soil, decrease watering in winter; RHS genus guide agrees on keeping moist. Neither gives a dry-down depth, so 5 days for a 13 cm pot is my conversion and stays unconfirmed. Not re-read this session beyond the NC State cache. Pot and season: 13 cm pot, growing season; winter comes from the rest-season factor. Dry and wet tolerance days: no source gives any, unchanged."
       },
       "sourcesRead": [
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/prayer-plant",

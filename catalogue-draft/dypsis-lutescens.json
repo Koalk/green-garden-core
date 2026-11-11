@@ -38,6 +38,16 @@
       "retrievedOn": "2026-10-28",
       "lang": "en",
       "linkKind": "toxicity"
+    },
+    {
+      "id": "mbg-dypsis-water",
+      "title": "Dypsis lutescens (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=291457",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -72,8 +82,9 @@
         "baseIntervalDays": {
           "value": 7,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-areca",
+          "confidence": "from_knowledge_verify",
+          "corroboratedBy": ["rhs-areca", "mbg-dypsis-water"]
         },
         "restSeasonFactor": {
           "value": null,
@@ -176,12 +187,13 @@
         "curated": ["indoor", "palm"]
       },
       "provenance": {
-        "notes": "Size left unknown: NC State (10 to 30 ft) and RHS (4 to 8 m) give outdoor or wild sizes, and both say indoor plants stay smaller. Temperature is a minimum only (RHS: keep above about 15 C). NC State rates the plant low severity for people and notes the palm heart contains cyanide-releasing compounds; not graded here. Look-alikes come from the look-alike list (knowledge, verify)."
+        "notes": "Size left unknown: NC State (10 to 30 ft) and RHS (4 to 8 m) give outdoor or wild sizes, and both say indoor plants stay smaller. Temperature is a minimum only (RHS: keep above about 15 C). NC State rates the plant low severity for people and notes the palm heart contains cyanide-releasing compounds; not graded here. Look-alikes come from the look-alike list (knowledge, verify). Interval: NC State 'keep moist but not soggy during the growing season'; Missouri Botanical Garden 'consistent moisture' for houseplants; RHS keep moist. Three sources agree on moist, none gives a depth, so 7 days for a 13 cm pot stays unconfirmed. Pot and season: 13 cm pot, growing season; winter comes from the rest-season factor. Dry and wet tolerance days: no source gives any, unchanged."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/chrysalidocarpus-lutescens",
         "https://www.rhs.org.uk/plants/128311/dypsis-lutescens/details",
-        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/areca-palm"
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/areca-palm",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=291457"
       ],
       "lookAlikes": [
         {

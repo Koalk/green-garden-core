@@ -48,6 +48,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-31",
       "lang": "en"
+    },
+    {
+      "id": "mbg-fragrans-water",
+      "title": "Dracaena fragrans (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282260",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -83,7 +93,8 @@
           "value": 8,
           "unit": "days",
           "source": "gubb-houseplants-3l",
-          "confidence": "guess"
+          "confidence": "guess",
+          "corroboratedBy": ["ncsu-fragrans", "clemson-dracaena", "mbg-fragrans-water"]
         },
         "restSeasonFactor": {
           "value": null,
@@ -196,13 +207,14 @@
         "curated": ["indoor", "low_light"]
       },
       "provenance": {
-        "notes": "Watering conflict: NC State says keep the mix moist while growing, Clemson (general dracaena advice, not corn plant specific) says let it dry a little first. Kept the wetter one per rule 5, from_knowledge_verify; to be picked by a reviewer. Temperature is NC State (70 to 80 F), Clemson's general dracaena advice is 60 to 70 F. Size is the 'Massangeana' houseplant figure from Clemson (4 to 5 ft, 2 ft spread, upper values); NC State gives 3 to 14.5 ft. Severity 1 maps NC State low severity and ASPCA saponin signs. The UF/IFAS FP184 page redirected and was not fetched. Anchor: baseIntervalDays 10 -> 8 for a 3-litre reference pot, from measured water use (Dracaena fragrans 'Lemon Lime', 44.3 g a day); the conversion to days is our arithmetic (02i), so guess."
+        "notes": "Watering conflict: NC State says keep the mix moist while growing, Clemson (general dracaena advice, not corn plant specific) says let it dry a little first. Kept the wetter one per rule 5, from_knowledge_verify; to be picked by a reviewer. Temperature is NC State (70 to 80 F), Clemson's general dracaena advice is 60 to 70 F. Size is the 'Massangeana' houseplant figure from Clemson (4 to 5 ft, 2 ft spread, upper values); NC State gives 3 to 14.5 ft. Severity 1 maps NC State low severity and ASPCA saponin signs. The UF/IFAS FP184 page redirected and was not fetched. Anchor: baseIntervalDays 10 -> 8 for a 3-litre reference pot, from measured water use (Dracaena fragrans 'Lemon Lime', 44.3 g a day); the conversion to days is our arithmetic (02i), so guess. Interval: NC State 'keep soil moist during the growing season, cut back in winter'; Clemson (general dracaena advice) let dry a little first; Missouri Botanical Garden 'keep soils uniformly moist in the growing season, allow soils to dry slightly between waterings, never allow soils to dry out totally'. The third source reconciles the first two: moist with a slight dry-down. Value 8 stays on the 3-litre measured-use study; for a 13 cm pot it would be shorter, so it stays a guess. Pot and season: 13 cm pot, growing season; winter comes from the rest-season factor. Dry and wet tolerance days: no source gives any, unchanged."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/dracaena-fragrans/common-name/corn-plant/",
         "https://hgic.clemson.edu/factsheet/dracaena/",
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/corn-plant",
-        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf"
+        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282260"
       ],
       "lookAlikes": [
         {

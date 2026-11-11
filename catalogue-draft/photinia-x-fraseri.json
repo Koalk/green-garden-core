@@ -115,6 +115,11 @@
           "source": "rhs-photinia-x-fraseri-red-robin",
           "confidence": "checked"
         },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-photinia-x-fraseri-red-robin",
+          "confidence": "checked"
+        },
         "wateringStyle": {
           "value": "let_top_dry",
           "source": "ncsu-photinia-x-fraseri",
@@ -203,7 +208,7 @@
         "curated": ["outdoor_pot", "ground", "foliage", "full_sun"]
       },
       "provenance": {
-        "notes": "Row 96, hedge shrub, the 'Red Robin' hybrid of Photinia glabra and P. serratifolia. Two care sources only (NC State and the RHS cultivar page); no Missouri BG or Clemson page found and ASPCA has no photinia entry. Size: RHS 4 to 8 m by 2.5 to 4 m after 10 to 20 years, NC State 10 to 20 ft by 10 to 15 ft; 600 by 300 cm is the agent's mapping. Hardiness not stored: the RHS page read does not show the H value in its text; NC State USDA 7 to 9. Toxicity: no source grades it; RHS says the fruit is not to be eaten and advises gloves and mentions pets (fruit not to be eaten), which is not a grade, so status unknown and pets show unknown. Pruning in late spring gives a new red flush but removes the flowers (NC State), RHS suggests light pruning when the first colour fades. Es and it names are machine drafts."
+        "notes": "Row 96, hedge shrub, the 'Red Robin' hybrid of Photinia glabra and P. serratifolia. Two care sources only (NC State and the RHS cultivar page); no Missouri BG or Clemson page found and ASPCA has no photinia entry. Size: RHS 4 to 8 m by 2.5 to 4 m after 10 to 20 years, NC State 10 to 20 ft by 10 to 15 ft; 600 by 300 cm is the agent's mapping. Hardiness: RHS H5 (-15 to -10 C; read from the page after the rating key, 2026-11-11); NC State USDA 7 to 9. Toxicity: no source grades it; RHS says the fruit is not to be eaten and advises gloves and mentions pets (fruit not to be eaten), which is not a grade, so status unknown and pets show unknown. Pruning in late spring gives a new red flush but removes the flowers (NC State), RHS suggests light pruning when the first colour fades. Es and it names are machine drafts."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/photinia-x-fraseri/",

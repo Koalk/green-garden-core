@@ -874,3 +874,17 @@ describe("links and source languages", () => {
     assert.match(validateCatalogue(f).join(" "), /lang/);
   });
 });
+
+describe("RHS hardiness for camellia and photinia", () => {
+  for (const [file, source] of [
+    ["camellia-japonica.json", "rhs-camellia-japonica"],
+    ["photinia-x-fraseri.json", "rhs-photinia-x-fraseri-red-robin"],
+  ] as const) {
+    it(`${file} stores the RHS H value as checked`, () => {
+      const h = (loaded.find(({ f }) => f === file)?.json as any).entries[0].care.hardiness;
+      assert.equal(h?.value, "H5");
+      assert.equal(h?.source, source);
+      assert.equal(h?.confidence, "checked");
+    });
+  }
+});

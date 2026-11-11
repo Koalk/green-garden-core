@@ -132,6 +132,11 @@
           "source": "rhs-camellia-japonica",
           "confidence": "checked"
         },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-camellia-japonica",
+          "confidence": "checked"
+        },
         "wateringStyle": {
           "value": "keep_moist",
           "source": "ncsu-camellia-japonica",
@@ -244,7 +249,7 @@
         ]
       },
       "provenance": {
-        "notes": "Row 95, the Japanese camellia, the common garden and pot shrub. Three care sources agree on part shade, moist but well-drained acid soil and shelter from cold wind and early sun. Missouri BG: pots overwinter poorly indoors and buds drop above about 13 C; a pot outside is the usual UK use. Size: NC State 10 to 13 ft by 5 to 10 ft, Missouri BG 7 to 12 ft by 5 to 10 ft, RHS up to 8 to 12 m after 10 to 20 years; 365 by 300 cm (the Missouri upper figure) is the agent's choice and a pot plant stays smaller. No hardiness stored: the RHS page read shows the rating key but not this plant's H value (the page's value did not come through in the text); NC State USDA 7 to 9. Pets: ASPCA lists Camellia japonica as non-toxic to dogs and cats; NC State has no poison section. Single toxicity source. People not graded. Es and it names are machine drafts."
+        "notes": "Row 95, the Japanese camellia, the common garden and pot shrub. Three care sources agree on part shade, moist but well-drained acid soil and shelter from cold wind and early sun. Missouri BG: pots overwinter poorly indoors and buds drop above about 13 C; a pot outside is the usual UK use. Size: NC State 10 to 13 ft by 5 to 10 ft, Missouri BG 7 to 12 ft by 5 to 10 ft, RHS up to 8 to 12 m after 10 to 20 years; 365 by 300 cm (the Missouri upper figure) is the agent's choice and a pot plant stays smaller. Hardiness: RHS H5 (-15 to -10 C; read from the page after the rating key, 2026-11-11); NC State USDA 7 to 9. Pets: ASPCA lists Camellia japonica as non-toxic to dogs and cats; NC State has no poison section. Single toxicity source. People not graded. Es and it names are machine drafts."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/camellia-japonica/",

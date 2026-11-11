@@ -37,11 +37,11 @@
       @media (min-width: 900px) {
         :root {
           --pico-font-size: 87.5%;
-          --pico-form-element-spacing-vertical: 0.4rem;
+          --pico-form-element-spacing-vertical: 0.25rem;
           --pico-form-element-spacing-horizontal: 0.75rem;
           --ctl-h: 2rem;
           --ctl-pad-x: 0.75rem;
-          --ctl-font: 0.9rem;
+          --ctl-font: 1rem;
         }
         h1 {
           --pico-font-size: 1.75rem;
@@ -60,12 +60,13 @@
       input:not([type="checkbox"], [type="radio"]),
       select,
       textarea,
-      [role="tab"],
-      .modal-foot button {
+      button,
+      [role="tab"] {
         font-size: var(--ctl-font);
       }
       input:not([type="checkbox"], [type="radio"]),
-      select {
+      select,
+      button {
         min-height: var(--ctl-h);
       }
       body:has(dialog[open]) {
@@ -134,7 +135,7 @@
         width: auto;
         margin: 0;
         padding: 0.25rem var(--ctl-pad-x);
-        font-size: 0.9rem;
+        font-size: var(--ctl-font);
       }
       article h4 {
         margin-bottom: 0.25rem;
@@ -186,8 +187,9 @@
         height: 1.6rem;
         margin: 0;
         padding: 0;
+        min-height: 0;
         border-radius: 50%;
-        font-size: 0.9rem;
+        font-size: var(--ctl-font);
         line-height: 1.6rem;
         text-align: center;
         vertical-align: middle;
@@ -207,7 +209,7 @@
         width: auto;
         margin: 0;
         padding: 0.1rem 1.5rem 0.1rem 0.5rem;
-        font-size: 0.85rem;
+        font-size: var(--ctl-font);
       }
       #ask {
         border: 2px solid var(--pico-primary);
@@ -244,7 +246,7 @@
       .outdoor .rain button,
       #outdoors .rain button {
         padding: 0.25rem 0.6rem;
-        font-size: 0.85em;
+        font-size: var(--ctl-font);
       }
       #home-modal article {
         max-width: 34rem;
@@ -309,7 +311,7 @@
         background: var(--pico-background-color);
       }
       .modal-foot button {
-        min-height: 2.75rem;
+        min-height: var(--ctl-h);
         padding: 0 1.25rem;
       }
       #species-results ul,

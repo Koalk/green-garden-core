@@ -63,5 +63,10 @@
     "file": "scripts/public-check.test.mjs",
     "kind": "owner-name",
     "reason": "test vectors for the rule"
+  },
+  {
+    "file": ".github/workflows/check.yml",
+    "kind": "secret",
+    "reason": "actions pinned by full commit SHA, which look like hex tokens"
   }
 ]

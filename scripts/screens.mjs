@@ -111,6 +111,17 @@ const stale = (hash) => [
 ];
 
 const SETS = {
+  // control sizes at desktop width (run with DESKTOP_W=1440 DESKTOP_H=900).
+  s240: [
+    { name: "01-today", steps: sample("today") },
+    { name: "02-plants", steps: sample("plants") },
+    { name: "03-planning", steps: sample("planning") },
+    {
+      name: "04-add-dialog",
+      viewport: true,
+      steps: [...sample("plants"), "document.querySelector('[data-action=add-plant]').click()"],
+    },
+  ],
   // fixes from the first click-through (desktop sizing, alternatives control, Away mark, warnings).
   polish: [
     { name: "01-plants", steps: sample("plants") },

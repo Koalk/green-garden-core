@@ -57,6 +57,26 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "ncsu-dracaena-trifasciata-water",
+      "title": "Snake plant (Plant Toolbox)",
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-dracaena-trifasciata-water",
+      "title": "Dracaena trifasciata (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=458447",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -87,8 +107,9 @@
         "baseIntervalDays": {
           "value": 14,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-dracaena-trifasciata-water",
+          "corroboratedBy": ["mbg-dracaena-trifasciata-water"],
+          "confidence": "checked"
         },
         "restSeasonFactor": {
           "value": 1.6,
@@ -190,14 +211,16 @@
         "curated": ["indoor", "low_light", "beginner_friendly"]
       },
       "provenance": {
-        "notes": "Light: NC State says partial shade and very low light tolerated, Penn State and Clemson say bright indirect; the preferred level is stored. Size: sources give leaf length (up to 4 ft) but no spread, so size stays unknown. Severity 1 is the agent's grading of 'low' (NC State)."
+        "notes": "Light: NC State says partial shade and very low light tolerated, Penn State and Clemson say bright indirect; the preferred level is stored. Size: sources give leaf length (up to 4 ft) but no spread, so size stays unknown. Severity 1 is the agent's grading of 'low' (NC State). Interval: NC State 'allow soil to dry between waterings' (spring and autumn; 'in winter only water every one to two months'); Missouri Botanical Garden 'water regularly during growing season, significantly reduced watering fall to late winter'. Neither gives days; 'dry between waterings' in a 13 cm pot takes about two weeks, so 14. The winter wording suggests a rest factor above the 1.6 stored (review). Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
       },
       "sourcesRead": [
         "https://hgic.clemson.edu/exciting-houseplant-selections-for-beginners/",
         "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
         "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/common-name/snake-plant/",
         "https://extension.psu.edu/programs/master-gardener/counties/allegheny/news/snake-plants",
-        "https://extension.umd.edu/resource/selecting-indoor-plants"
+        "https://extension.umd.edu/resource/selecting-indoor-plants",
+        "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=458447"
       ],
       "lookAlikes": [
         {

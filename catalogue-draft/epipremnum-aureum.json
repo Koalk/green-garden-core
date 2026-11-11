@@ -57,6 +57,36 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "ncsu-epipremnum-aureum-water",
+      "title": "Golden pothos (Plant Toolbox)",
+      "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-epipremnum-water",
+      "title": "How to grow epipremnum",
+      "url": "https://www.rhs.org.uk/plants/epipremnum/growing-guide",
+      "publisher": "RHS",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-pothos-water",
+      "title": "How to grow pothos indoors",
+      "url": "https://hgic.clemson.edu/factsheet/how-to-grow-pothos-indoors-epipremnum-spp-care-cultivars-and-common-problems/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -85,10 +115,11 @@
         },
         "engineMethod": "interval",
         "baseIntervalDays": {
-          "value": 7,
+          "value": 8,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-epipremnum-aureum-water",
+          "corroboratedBy": ["rhs-epipremnum-water", "clemson-pothos-water"],
+          "confidence": "checked"
         },
         "restSeasonFactor": {
           "value": 1.3,
@@ -211,14 +242,16 @@
         "curated": ["indoor", "trailing", "beginner_friendly"]
       },
       "provenance": {
-        "notes": "Watering: Penn State 'once the soil has dried out', Clemson pothos page 'let dry completely', Clemson beginners 'top 1.5-2 in dry'; let_top_dry stored. Light: Penn State 'moderate to bright'; Clemson 'bright, indirect' stored. Size: only trailing length (up to 30-40 ft) is stated, no spread, so size stays unknown."
+        "notes": "Watering: Penn State 'once the soil has dried out', Clemson pothos page 'let dry completely', Clemson beginners 'top 1.5-2 in dry'; let_top_dry stored. Light: Penn State 'moderate to bright'; Clemson 'bright, indirect' stored. Size: only trailing length (up to 30-40 ft) is stated, no spread, so size stays unknown. Interval: NC State 'let well-drained potting medium dry out between watering'; RHS 'only water once compost is approaching dryness' and wait for the top layer to dry; Clemson 'allow soil to dry completely before watering'. The sources span 'top layer dry' (about 7 days) to 'completely dry' (about 12), so 8 (was 7), leaning to the majority. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
       },
       "sourcesRead": [
         "https://hgic.clemson.edu/exciting-houseplant-selections-for-beginners/",
         "https://hgic.clemson.edu/factsheet/how-to-grow-pothos-indoors-epipremnum-spp-care-cultivars-and-common-problems/",
         "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
         "https://extension.psu.edu/pothos-as-a-houseplant",
-        "https://extension.umd.edu/resource/selecting-indoor-plants"
+        "https://extension.umd.edu/resource/selecting-indoor-plants",
+        "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/",
+        "https://www.rhs.org.uk/plants/epipremnum/growing-guide"
       ],
       "lookAlikes": [
         {

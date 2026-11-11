@@ -47,6 +47,36 @@
       "access": "fetched",
       "retrievedOn": "2026-10-31",
       "lang": "en"
+    },
+    {
+      "id": "ncsu-spathiphyllum-water",
+      "title": "Spathiphyllum (Plant Toolbox)",
+      "url": "https://plants.ces.ncsu.edu/plants/spathiphyllum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-peace-lily-water",
+      "title": "Peace lily",
+      "url": "https://hgic.clemson.edu/factsheet/peace-lily/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-peace-lilies-water",
+      "title": "How to grow peace lilies",
+      "url": "https://www.rhs.org.uk/plants/peace-lilies/how-to-grow-peace-lilies",
+      "publisher": "RHS",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -186,13 +216,16 @@
         "curated": ["indoor", "low_light", "flowering"]
       },
       "provenance": {
-        "notes": "South Dakota State calls it mildly toxic (calcium oxalate) and says keep away from small children, cats and dogs; the severity grade 1 and the symptom list are the agent's. Habit and size: no fetched page states them. Anchor: baseIntervalDays 5 -> 5 for a 3-litre reference pot, from measured water use (peace lily, 71.0 g a day); the conversion to days is our arithmetic (02i), so guess."
+        "notes": "South Dakota State calls it mildly toxic (calcium oxalate) and says keep away from small children, cats and dogs; the severity grade 1 and the symptom list are the agent's. Habit and size: no fetched page states them. Anchor: baseIntervalDays 5 -> 5 for a 3-litre reference pot, from measured water use (peace lily, 71.0 g a day); the conversion to days is our arithmetic (02i), so guess. Interval: NC State 'keep soil moist, but not soggy; allow it to dry between waterings'; Clemson 'moist but not soggy and allowed to dry out slightly between waterings'; RHS water through the growing season, 'reduce watering slightly in winter'. No days given. The 5 days stay: they come from the 3-litre study (a larger pot than the 13 cm reference) and the written sources back the rule, not the number, so confidence stays guess. They say moist, then slightly dry, which fits let_top_dry better than the stored keep_moist (review). Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
       },
       "sourcesRead": [
         "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
         "https://extension.sdstate.edu/peace-lily-houseplant-how",
         "https://extension.umd.edu/resource/selecting-indoor-plants",
-        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf"
+        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf",
+        "https://plants.ces.ncsu.edu/plants/spathiphyllum/",
+        "https://hgic.clemson.edu/factsheet/peace-lily/",
+        "https://www.rhs.org.uk/plants/peace-lilies/how-to-grow-peace-lilies"
       ],
       "links": [
         {

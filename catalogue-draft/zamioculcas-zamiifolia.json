@@ -37,6 +37,26 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-zamioculcas-zamiifolia-water",
+      "title": "Zamioculcas zamiifolia (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276468",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-zamioculcas-zamiifolia-water",
+      "title": "ZZ plant (Plant Toolbox)",
+      "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -67,8 +87,9 @@
         "baseIntervalDays": {
           "value": 14,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "mbg-zamioculcas-zamiifolia-water",
+          "corroboratedBy": ["ncsu-zamioculcas-zamiifolia-water"],
+          "confidence": "checked"
         },
         "restSeasonFactor": {
           "value": 1.5,
@@ -170,12 +191,14 @@
         "curated": ["indoor", "low_light", "beginner_friendly"]
       },
       "provenance": {
-        "notes": "Clemson labels it not pet safe; agent, severity and symptoms are the agent's mapping. Missouri Botanical Garden's ZZ page failed (certificate error) and was not used."
+        "notes": "Clemson labels it not pet safe; agent, severity and symptoms are the agent's mapping. Missouri Botanical Garden's ZZ page failed (certificate error) and was not used. Interval: Missouri Botanical Garden 'regularly watered, but allow soils to dry between applications; avoid wet soils'; NC State 'watered routinely but allowed to dry out between waterings', rhizomes store water. No days given; fleshy rhizomes in a 13 cm pot make a fortnight a safe middle, so 14. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
       },
       "sourcesRead": [
         "https://hgic.clemson.edu/factsheet/zz-plant-zamioculcas-zamiifolia-indoor-care-growing-tips-plant-guide/",
         "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
-        "https://extension.umd.edu/resource/selecting-indoor-plants"
+        "https://extension.umd.edu/resource/selecting-indoor-plants",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276468",
+        "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/"
       ],
       "lookAlikes": [
         {

@@ -17,6 +17,26 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "ncsu-aloe-vera-water",
+      "title": "Aloe vera (Plant Toolbox)",
+      "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-aloe-vera-water",
+      "title": "Aloe vera (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282195",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -46,8 +66,9 @@
         "baseIntervalDays": {
           "value": 14,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-aloe-vera-water",
+          "corroboratedBy": ["mbg-aloe-vera-water"],
+          "confidence": "checked"
         },
         "restSeasonFactor": {
           "value": 1.6,
@@ -146,9 +167,13 @@
         "curated": ["indoor", "beginner_friendly"]
       },
       "provenance": {
-        "notes": "One fetched page only. SDSU says people and pets should not eat it; the pet-specific severity, agents and symptoms are the agent's. Habit 'rosette' is a mapping from 'leaves fanning from the centre'."
+        "notes": "One fetched page only. SDSU says people and pets should not eat it; the pet-specific severity, agents and symptoms are the agent's. Habit 'rosette' is a mapping from 'leaves fanning from the centre'. Interval: NC State 'allow soil to completely dry between waterings', less often in winter; Missouri Botanical Garden 'water very moderately in spring, summer and fall, reduce to a minimum in winter'. No days given; completely dry in a 13 cm clay-type pot takes about two weeks, so 14. Plastic pots would run longer. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
       },
-      "sourcesRead": ["https://extension.sdstate.edu/aloe-vera-houseplant-how"],
+      "sourcesRead": [
+        "https://extension.sdstate.edu/aloe-vera-houseplant-how",
+        "https://plants.ces.ncsu.edu/plants/aloe-vera/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282195"
+      ],
       "lookAlikes": [
         {
           "name": "Other Aloe species",

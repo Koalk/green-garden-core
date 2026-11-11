@@ -27,6 +27,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-ficus-elastica-water",
+      "title": "Ficus elastica (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=291685",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -56,8 +66,8 @@
         "baseIntervalDays": {
           "value": 8,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "mbg-ficus-elastica-water",
+          "confidence": "from_knowledge_verify"
         },
         "restSeasonFactor": {
           "value": 1.4,
@@ -168,11 +178,12 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Size: height only (6-10 ft indoors), no spread, so unknown. Clemson: sticky sap may irritate skin or upset the stomach; NC State tags it a problem for cats, dogs and horses. Grading and symptoms are the agent's."
+        "notes": "Size: height only (6-10 ft indoors), no spread, so unknown. Clemson: sticky sap may irritate skin or upset the stomach; NC State tags it a problem for cats, dogs and horses. Grading and symptoms are the agent's. Interval: Missouri Botanical Garden 'water regularly during growing season, avoid overwatering, reduce fall to late winter'; NC State lists good drainage and 'occasionally dry' soil, no rule. Only a vague rule exists, so 8 stays unchanged and unconfirmed; a second source with a dry-down depth would let it be checked. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
       },
       "sourcesRead": [
         "https://hgic.clemson.edu/factsheet/rubber-plant/",
-        "https://plants.ces.ncsu.edu/plants/ficus-elastica/"
+        "https://plants.ces.ncsu.edu/plants/ficus-elastica/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=291685"
       ],
       "lookAlikes": [
         {

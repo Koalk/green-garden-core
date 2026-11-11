@@ -27,6 +27,26 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-crassula-ovata-water",
+      "title": "Crassula ovata (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=279445",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-crassula-ovata-water",
+      "title": "Jade plant (Plant Toolbox)",
+      "url": "https://plants.ces.ncsu.edu/plants/crassula-ovata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -56,8 +76,9 @@
         "baseIntervalDays": {
           "value": 14,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "mbg-crassula-ovata-water",
+          "corroboratedBy": ["ncsu-crassula-ovata-water"],
+          "confidence": "checked"
         },
         "restSeasonFactor": {
           "value": 1.6,
@@ -170,11 +191,12 @@
         "curated": ["indoor", "beginner_friendly"]
       },
       "provenance": {
-        "notes": "Light: South Dakota State says bright indirect, NC State says full sun or partial shade (bright light essential); the more cautious bright_indirect is stored. Growth: SDSU slow, NC State medium; slow stored. Size: SDSU up to 6 ft by 3 ft, NC State 3-6 ft by 2-3 ft. Mapping of habit 'bushy' from 'small tree look' / 'multi-stemmed' is the agent's. Jade is the one real watering judgement call: SDSU says let soil dry completely."
+        "notes": "Light: South Dakota State says bright indirect, NC State says full sun or partial shade (bright light essential); the more cautious bright_indirect is stored. Growth: SDSU slow, NC State medium; slow stored. Size: SDSU up to 6 ft by 3 ft, NC State 3-6 ft by 2-3 ft. Mapping of habit 'bushy' from 'small tree look' / 'multi-stemmed' is the agent's. Jade is the one real watering judgement call: SDSU says let soil dry completely. Interval: Missouri Botanical Garden 'water moderately, and allow soils to dry between waterings', reduced watering fall to late winter; NC State 'water in moderation when soil is dry' and reduce in fall to late winter. No days given; succulent leaves in a 13 cm pot dry in about two weeks, so 14. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/crassula-ovata/",
-        "https://extension.sdstate.edu/jade-plant-houseplant-how"
+        "https://extension.sdstate.edu/jade-plant-houseplant-how",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=279445"
       ],
       "lookAlikes": [
         {

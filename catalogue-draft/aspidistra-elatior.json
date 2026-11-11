@@ -38,6 +38,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-aspidistra-elatior-water",
+      "title": "Aspidistra elatior (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282290",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -68,8 +78,9 @@
         "baseIntervalDays": {
           "value": 10,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "clemson-aspidistra",
+          "corroboratedBy": ["ncsu-aspidistra", "mbg-aspidistra-elatior-water"],
+          "confidence": "checked"
         },
         "restSeasonFactor": {
           "value": 1.4,
@@ -171,12 +182,13 @@
         "curated": ["indoor", "low_light"]
       },
       "provenance": {
-        "notes": "Watering style is a mapping: Clemson 'water when dry 2-3 in down' sits between top-dry and fully-dry; let_top_dry stored as the cautious value. Toxicity: NC State tag and the ASPCA page agree (non-toxic for cats and dogs)."
+        "notes": "Watering style is a mapping: Clemson 'water when dry 2-3 in down' sits between top-dry and fully-dry; let_top_dry stored as the cautious value. Toxicity: NC State tag and the ASPCA page agree (non-toxic for cats and dogs). Interval: Clemson 'water when dry 2-3 in down' (earlier read); NC State 'water regularly spring to autumn, sparingly in winter', drought tolerant; Missouri Botanical Garden 'water regularly spring to fall, reduce in winter', 'will tolerate less regular watering'. Two to three inches down in a 13 cm pot is most of the pot, about 10 days, so 10 (unchanged). Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before."
       },
       "sourcesRead": [
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cast-iron-plant",
         "https://hgic.clemson.edu/cast-iron-plant/",
-        "https://plants.ces.ncsu.edu/plants/aspidistra-elatior/"
+        "https://plants.ces.ncsu.edu/plants/aspidistra-elatior/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282290"
       ],
       "lookAlikes": [
         {

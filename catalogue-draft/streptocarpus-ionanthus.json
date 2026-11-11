@@ -67,8 +67,8 @@
         "baseIntervalDays": {
           "value": 7,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-streptocarpus",
+          "confidence": "from_knowledge_verify"
         },
         "restSeasonFactor": {
           "value": 1.4,
@@ -172,7 +172,7 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Watering style is a mapping from 'let the surface dry before rewatering, water from the bottom'. The ASPCA page is listed as Saintpaulia spp. (the former genus name). The Penn State 'African Violet Care' URL returned a generic page with nothing about African violets; read, not used. University of Minnesota's page returned 403."
+        "notes": "Watering style is a mapping from 'let the surface dry before rewatering, water from the bottom'. The ASPCA page is listed as Saintpaulia spp. (the former genus name). The Penn State 'African Violet Care' URL returned a generic page with nothing about African violets; read, not used. University of Minnesota's page returned 403. Interval: NC State 'moist soil', 'water from the bottom and allow the surface to dry before watering again', overwatering the number one issue. One source with a rule (surface dry); a 13 cm pot dries at the surface in about a week, so 7 (unchanged). Missouri Botanical Garden had no page for the species. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before."
       },
       "sourcesRead": [
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/african-violet",

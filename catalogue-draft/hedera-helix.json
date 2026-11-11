@@ -37,6 +37,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-31",
       "lang": "en"
+    },
+    {
+      "id": "mbg-hedera-helix-water",
+      "title": "Hedera helix (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276595",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -67,6 +77,7 @@
           "value": 5,
           "unit": "days",
           "source": "gubb-houseplants-3l",
+          "corroboratedBy": ["clemson-ivy", "mbg-hedera-helix-water"],
           "confidence": "guess"
         },
         "restSeasonFactor": {
@@ -184,12 +195,13 @@
         "curated": ["indoor", "trailing"]
       },
       "provenance": {
-        "notes": "NC State rates it medium severity (saponins and polyacetylenes); symptom lists for humans only, so pet symptoms are the agent's. Size: outdoor figures only, so unknown. Temperature is Clemson's 50-70 F daytime range. Anchor: baseIntervalDays 6 -> 5 for a 3-litre reference pot, from measured water use (ivy, 70.5 g a day); the conversion to days is our arithmetic (02i), so guess."
+        "notes": "NC State rates it medium severity (saponins and polyacetylenes); symptom lists for humans only, so pet symptoms are the agent's. Size: outdoor figures only, so unknown. Temperature is Clemson's 50-70 F daytime range. Anchor: baseIntervalDays 6 -> 5 for a 3-litre reference pot, from measured water use (ivy, 70.5 g a day); the conversion to days is our arithmetic (02i), so guess. Interval: Missouri Botanical Garden 'average, medium moisture, well-drained', 'tolerates some drought, best foliage in evenly moist soil'; Clemson let_top_dry (earlier read); RHS only 'not waterlogged'; the NC State page gave no watering text. No depth is given, so the 5 stays on the 3-litre study conversion (guess behind it) and is not checked. The 3-litre reference differs from the 13 cm pot used elsewhere in this table. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before."
       },
       "sourcesRead": [
         "https://hgic.clemson.edu/factsheet/growing-english-ivy-indoors/",
         "https://plants.ces.ncsu.edu/plants/hedera-helix/",
-        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf"
+        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276595"
       ],
       "lookAlikes": [
         {

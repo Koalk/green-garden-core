@@ -38,6 +38,36 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "ncsu-hoya-carnosa-water",
+      "title": "Hoya carnosa (Plant Toolbox)",
+      "url": "https://plants.ces.ncsu.edu/plants/hoya-carnosa/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-hoya-carnosa-water",
+      "title": "Hoya carnosa (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276833",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-hoya-water",
+      "title": "How to grow hoya",
+      "url": "https://www.rhs.org.uk/plants/hoya/growing-guide",
+      "publisher": "RHS",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -68,8 +98,9 @@
         "baseIntervalDays": {
           "value": 12,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-hoya",
+          "corroboratedBy": ["iastate-hoya", "mbg-hoya-carnosa-water", "rhs-hoya-water"],
+          "confidence": "checked"
         },
         "restSeasonFactor": {
           "value": null,
@@ -175,12 +206,14 @@
         "curated": ["indoor", "trailing"]
       },
       "provenance": {
-        "notes": "Watering is a mapping: Iowa State 'let the mix become nearly dry' to let_fully_dry. The ASPCA page read is for Hoya carnosa 'Krinkle Kurl' (a cultivar)."
+        "notes": "Watering is a mapping: Iowa State 'let the mix become nearly dry' to let_fully_dry. The ASPCA page read is for Hoya carnosa 'Krinkle Kurl' (a cultivar). Interval: NC State 'allow soil to dry out between waterings'; Missouri Botanical Garden 'moderately but consistently, allowing soils to become nearly dry between applications'; Iowa State 'let the mix become nearly dry'; RHS 'keep the compost moist but not waterlogged' in the growing season, 'fairly dry' in winter. Three of four say dry between; nearly dry in a 13 cm pot takes about 12 days, so 12 (unchanged). Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before."
       },
       "sourcesRead": [
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wax-plant",
         "https://yardandgarden.extension.iastate.edu/how-to/all-about-hoyas",
-        "https://plants.ces.ncsu.edu/plants/hoya-carnosa/"
+        "https://plants.ces.ncsu.edu/plants/hoya-carnosa/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276833",
+        "https://www.rhs.org.uk/plants/hoya/growing-guide"
       ],
       "lookAlikes": [
         {

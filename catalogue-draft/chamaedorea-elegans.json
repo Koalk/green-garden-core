@@ -28,6 +28,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-chamaedorea-elegans-water",
+      "title": "Chamaedorea elegans (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276650",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -57,8 +67,9 @@
         "baseIntervalDays": {
           "value": 6,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-chamaedorea",
+          "corroboratedBy": ["mbg-chamaedorea-elegans-water"],
+          "confidence": "from_knowledge_verify"
         },
         "restSeasonFactor": {
           "value": 1.3,
@@ -159,11 +170,12 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Size is NC State's indoor figure (stems up to 5 ft, usually smaller). NC State notes only fruit juice can irritate sensitive skin; not stored as an exposure. The UF/IFAS page failed on redirect loops."
+        "notes": "Size is NC State's indoor figure (stems up to 5 ft, usually smaller). NC State notes only fruit juice can irritate sensitive skin; not stored as an exposure. The UF/IFAS page failed on redirect loops. Interval: NC State 'let soil dry slightly out between waterings', overwatering a problem; Missouri Botanical Garden 'keep soils uniformly moist', reduce in winter. The sources disagree on the rule (slightly dry vs uniformly moist), so 6 stays unconfirmed (review). Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before."
       },
       "sourcesRead": [
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chamaedorea",
-        "https://plants.ces.ncsu.edu/plants/chamaedorea-elegans/"
+        "https://plants.ces.ncsu.edu/plants/chamaedorea-elegans/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276650"
       ],
       "lookAlikes": [
         {

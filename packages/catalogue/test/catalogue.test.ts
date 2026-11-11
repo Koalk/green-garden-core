@@ -212,6 +212,8 @@ describe("validateCatalogue catches rule violations", () => {
 
   it("checked with author knowledge", () => {
     const errs = mutate((e) => {
+      e["care"]["baseIntervalDays"]["source"] = "author";
+      delete e["care"]["baseIntervalDays"]["corroboratedBy"];
       e["care"]["baseIntervalDays"]["confidence"] = "checked";
     });
     assert.ok(errs.some((x) => x.includes("checked needs")));

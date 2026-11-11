@@ -83,12 +83,96 @@ const PINS: Pin[] = [
   },
 ];
 
+// Part 2 (ranks 12 to 21). Dry and wet tolerance days are unchanged: no source gives any.
+const PINS_2: Pin[] = [
+  {
+    id: "philodendron-hederaceum",
+    interval: 7,
+    confidence: "checked",
+    sources: 3,
+    dryTol: 5,
+    wetTol: 4,
+  },
+  {
+    id: "aspidistra-elatior",
+    interval: 10,
+    confidence: "checked",
+    sources: 3,
+    dryTol: 4,
+    wetTol: 4,
+  },
+  {
+    id: "hedera-helix",
+    interval: 5,
+    confidence: "guess",
+    sources: 3,
+    dryTol: 4,
+    wetTol: 4,
+  },
+  {
+    id: "chamaedorea-elegans",
+    interval: 6,
+    confidence: "from_knowledge_verify",
+    sources: 2,
+    dryTol: 3,
+    wetTol: 3,
+  },
+  {
+    id: "ficus-lyrata",
+    interval: 7,
+    confidence: "from_knowledge_verify",
+    sources: 3,
+    dryTol: 3,
+    wetTol: 4,
+  },
+  {
+    id: "dracaena-marginata",
+    interval: 12,
+    confidence: "from_knowledge_verify",
+    sources: 3,
+    dryTol: 10,
+    wetTol: 3,
+  },
+  {
+    id: "aglaonema",
+    interval: 8,
+    confidence: "from_knowledge_verify",
+    sources: 2,
+    dryTol: 4,
+    wetTol: 4,
+  },
+  {
+    id: "streptocarpus-ionanthus",
+    interval: 7,
+    confidence: "from_knowledge_verify",
+    sources: 1,
+    dryTol: 3,
+    wetTol: 3,
+  },
+  {
+    id: "strelitzia-reginae",
+    interval: 5,
+    confidence: "checked",
+    sources: 2,
+    dryTol: 4,
+    wetTol: 4,
+  },
+  {
+    id: "hoya-carnosa",
+    interval: 12,
+    confidence: "checked",
+    sources: 4,
+    dryTol: null as any,
+    wetTol: null as any,
+  },
+];
+
 const entry = (id: string): any =>
   JSON.parse(readFileSync(new URL(`../../../catalogue-draft/${id}.json`, import.meta.url), "utf8"))
     .entries[0];
 
-describe("houseplant intervals (top 30, part 1)", () => {
-  for (const p of PINS) {
+describe("houseplant intervals (top 30, parts 1 and 2)", () => {
+  for (const p of [...PINS, ...PINS_2]) {
     it(`${p.id}: ${p.interval} days for a ${POT}`, () => {
       const e = entry(p.id);
       const c = e.care;

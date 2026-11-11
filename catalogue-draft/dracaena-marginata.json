@@ -47,6 +47,26 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "ncsu-dracaena-marginata-water",
+      "title": "Dracaena (Plant Toolbox, genus page)",
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-marginata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-dracaena-marginata-water",
+      "title": "Dracaena marginata (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282199",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -77,8 +97,9 @@
         "baseIntervalDays": {
           "value": 12,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-dracaena-marginata-water",
+          "corroboratedBy": ["clemson-dracaena", "mbg-dracaena-marginata-water"],
+          "confidence": "from_knowledge_verify"
         },
         "restSeasonFactor": {
           "value": 1.5,
@@ -189,13 +210,15 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Toxicity is genus-level: the NC State page is for Dracaena reflexa var. angustifolia (red-marginated dracaena), a related name, not D. marginata itself; Clemson's page does not mention toxicity. Hence from_knowledge_verify. Size: dragon tree up to 10 ft, upright types usually under 2 ft wide (Clemson). The Missouri Botanical Garden page failed (certificate error)."
+        "notes": "Toxicity is genus-level: the NC State page is for Dracaena reflexa var. angustifolia (red-marginated dracaena), a related name, not D. marginata itself; Clemson's page does not mention toxicity. Hence from_knowledge_verify. Size: dragon tree up to 10 ft, upright types usually under 2 ft wide (Clemson). The Missouri Botanical Garden page failed (certificate error). Interval: NC State (genus page) 'allow plants to dry between waterings but not severely', drought tolerant; Missouri Botanical Garden 'keep soils uniformly moist during growing season, reduce fall to late winter', leaves brown if too wet or too dry. The two split between dry-between and uniformly moist, so 12 stays unconfirmed (review). Clemson let_top_dry (earlier read) sides with NC State. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before."
       },
       "sourcesRead": [
         "https://hgic.clemson.edu/factsheet/dracaena/",
         "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
         "https://plants.ces.ncsu.edu/plants/dracaena-reflexa-var-angustifolia/common-name/red-marginated-dracaena/",
-        "https://extension.umd.edu/resource/selecting-indoor-plants"
+        "https://extension.umd.edu/resource/selecting-indoor-plants",
+        "https://plants.ces.ncsu.edu/plants/dracaena-marginata/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282199"
       ],
       "lookAlikes": [
         {

@@ -27,6 +27,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-philodendron-hederaceum-water",
+      "title": "Philodendron hederaceum (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276387",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -56,8 +66,9 @@
         "baseIntervalDays": {
           "value": 7,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "uf-heartleaf",
+          "corroboratedBy": ["ncsu-philodendron", "mbg-philodendron-hederaceum-water"],
+          "confidence": "checked"
         },
         "restSeasonFactor": {
           "value": 1.3,
@@ -179,11 +190,12 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Conflict kept: NC State 'keep soil slightly moist' vs UF/IFAS 'water when the top inch is dry' (UF stored, from_knowledge_verify). Toxicity: NC State rates it low, UF/IFAS says moderate to severe swelling in pets; the higher severity 2 is stored for cat and dog. Size is the upper end of NC State's range (up to 6 ft); the agent's choice."
+        "notes": "Conflict kept: NC State 'keep soil slightly moist' vs UF/IFAS 'water when the top inch is dry' (UF stored, from_knowledge_verify). Toxicity: NC State rates it low, UF/IFAS says moderate to severe swelling in pets; the higher severity 2 is stored for cat and dog. Size is the upper end of NC State's range (up to 6 ft); the agent's choice. Interval: NC State 'keep soil slightly moist, and slow down on watering in winter'; Missouri Botanical Garden 'water regularly in growing season, reduce in fall to late winter'; UF/IFAS 'water when the top inch is dry'. The top inch of a 13 cm pot dries in about a week, so 7 (unchanged); the three agree on a moist-not-wet rule. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/philodendron-hederaceum/",
-        "https://gardeningsolutions.ifas.ufl.edu/plants/houseplants/heartleaf-philodendron/"
+        "https://gardeningsolutions.ifas.ufl.edu/plants/houseplants/heartleaf-philodendron/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276387"
       ],
       "lookAlikes": [
         {

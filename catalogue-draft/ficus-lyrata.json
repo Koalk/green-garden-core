@@ -27,6 +27,16 @@
       "access": "fetched",
       "retrievedOn": "2026-10-27",
       "lang": "en"
+    },
+    {
+      "id": "mbg-ficus-lyrata-water",
+      "title": "Ficus lyrata (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282753",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
     }
   ],
   "entries": [
@@ -57,8 +67,9 @@
         "baseIntervalDays": {
           "value": 7,
           "unit": "days",
-          "source": "author",
-          "confidence": "guess"
+          "source": "ncsu-ficus-lyrata",
+          "corroboratedBy": ["psu-fiddle-leaf", "mbg-ficus-lyrata-water"],
+          "confidence": "from_knowledge_verify"
         },
         "restSeasonFactor": {
           "value": 1.4,
@@ -173,11 +184,12 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Watering style is a mapping ('moist, well-drained, sensitive to overwatering'; Penn State: check 2 in down). Size: houseplant height 2-10 ft but no spread, so unknown. The UF/IFAS page failed on redirect loops."
+        "notes": "Watering style is a mapping ('moist, well-drained, sensitive to overwatering'; Penn State: check 2 in down). Size: houseplant height 2-10 ft but no spread, so unknown. The UF/IFAS page failed on redirect loops. Interval: NC State 'moist, well-drained', sensitive to overwatering, leaf drop from too much or too little water; Missouri Botanical Garden 'water regularly during growing season, avoid overwatering, reduce fall to late winter'; Penn State (earlier read) check 2 in down. Only Penn State gives a depth, so 7 stays unconfirmed. A 13 cm pot is small for this plant. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before."
       },
       "sourcesRead": [
         "https://plants.ces.ncsu.edu/plants/ficus-lyrata/",
-        "https://extension.psu.edu/programs/master-gardener/counties/adams/news/fiddle-leaf-fig-ficus-lyrata"
+        "https://extension.psu.edu/programs/master-gardener/counties/adams/news/fiddle-leaf-fig-ficus-lyrata",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=282753"
       ],
       "lookAlikes": [
         {

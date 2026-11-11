@@ -40,3 +40,7 @@ Thumbs.db
 # pnpm store (project-local, see .npmrc)
 .pnpm-store/
 /data/
+
+# Session notes and screenshots belong in Stories docs/core-notes/, never in core
+docs/core-notes/
+docs/spikes/

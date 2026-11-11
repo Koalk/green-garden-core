@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "ncsu-cenchrus-alopecuroides",
+      "title": "NC State Plant Toolbox: Cenchrus alopecuroides",
+      "url": "https://plants.ces.ncsu.edu/plants/cenchrus-alopecuroides/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-cenchrus-alopecuroides",
+      "title": "RHS Plant Profile: Pennisetum alopecuroides",
+      "url": "https://www.rhs.org.uk/plants/43920/pennisetum-alopecuroides/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "cenchrus-alopecuroides",
+      "taxon": {
+        "scientificName": "Cenchrus alopecuroides"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Fountain grass",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Chinese fountain grass"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Pennisetum"
+          },
+          {
+            "lang": "es",
+            "name": "Pennisetum",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Cola de zorro chino",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Pennisetum",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Penniseto",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Pennisetum alopecuroides"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-cenchrus-alopecuroides",
+          "corroboratedBy": ["rhs-cenchrus-alopecuroides"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-cenchrus-alopecuroides",
+          "corroboratedBy": ["rhs-cenchrus-alopecuroides"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep a potted plant lightly moist in summer and let the top of the compost dry between waterings; it needs far less in winter."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-cenchrus-alopecuroides",
+          "corroboratedBy": ["rhs-cenchrus-alopecuroides"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 120,
+            "spread": 120
+          },
+          "unit": "cm",
+          "source": "rhs-cenchrus-alopecuroides",
+          "corroboratedBy": ["ncsu-cenchrus-alopecuroides"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-cenchrus-alopecuroides",
+          "confidence": "from_knowledge_verify"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "author",
+          "confidence": "guess"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-cenchrus-alopecuroides",
+          "corroboratedBy": ["rhs-cenchrus-alopecuroides"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "ncsu-cenchrus-alopecuroides",
+          "confidence": "from_knowledge_verify"
+        },
+        "dormancy": {
+          "value": "winter",
+          "source": "ncsu-cenchrus-alopecuroides",
+          "corroboratedBy": ["rhs-cenchrus-alopecuroides"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-cenchrus-alopecuroides",
+          "corroboratedBy": ["rhs-cenchrus-alopecuroides"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-cenchrus-alopecuroides",
+          "corroboratedBy": ["ncsu-cenchrus-alopecuroides"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H3",
+          "source": "rhs-cenchrus-alopecuroides",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Drought tolerant once established; cut the dead foliage and old flower stems to the ground in late winter or early spring and divide clumps in spring."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": [
+          "ground",
+          "outdoor_pot",
+          "full_sun",
+          "foliage",
+          "invasive_outdoors_in_warm_climates"
+        ]
+      },
+      "provenance": {
+        "notes": "Row 104, fountain grass. The row's name Pennisetum alopecuroides is a synonym; NC State uses Cenchrus alopecuroides, RHS still files it under Pennisetum alopecuroides and says Cenchrus is the synonym; the entry key follows NC State and the other name is a synonym. Care: NC State and RHS agree on full sun, well-drained soil and cutting back in late winter. Two care sources only (the Missouri BG search returned no page for it). Size: RHS 1 to 1.5 m by 1 to 1.5 m, NC State 60 to 180 cm by 60 to 120 cm; 120 by 120 cm is a mapping. Hardiness H3 is the RHS rating but RHS also says it may need winter protection in colder areas, and NC State gives zone 6 to 9, so treat it as a lower bound (confidence from_knowledge_verify). Placement in pots is not stated by either page: guess, from the row. NC State warns it self-seeds and has escaped gardens; sterile cultivars (Cayenne, Hush Puppy, Praline) are listed. Toxicity: no page read states any, no ASPCA page, so people and pets are unknown. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/cenchrus-alopecuroides/",
+        "https://www.rhs.org.uk/plants/43920/pennisetum-alopecuroides/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Oriental fountain grass (Cenchrus orientalis)",
+          "tell": "Wider, looser clump with broader, greyer foliage and softer flower plumes; hardy fountain grass (this entry) has the tight bottlebrush spikes."
+        },
+        {
+          "name": "Purple fountain grass (Cenchrus setaceus 'Rubrum')",
+          "tell": "Burgundy leaves and tender: it dies at the first frost in the UK, unlike this hardy species."
+        }
+      ],
+      "lookAlikeNote": "NC State: spreads rapidly by seed and has become a weed in places; some cultivars (Hameln, Little Bunny, Red Head) self-seed aggressively while the sterile ones do not.",
+      "photos": [],
+      "links": []
+    }
+  ]
+}

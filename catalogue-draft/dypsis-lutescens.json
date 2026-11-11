@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-areca",
+      "title": "NC State Plant Toolbox: Chrysalidocarpus lutescens",
+      "url": "https://plants.ces.ncsu.edu/plants/chrysalidocarpus-lutescens",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-areca",
+      "title": "RHS: Dypsis lutescens",
+      "url": "https://www.rhs.org.uk/plants/128311/dypsis-lutescens/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-areca",
+      "title": "Areca Palm (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/areca-palm",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dypsis-lutescens",
+      "taxon": {
+        "scientificName": "Dypsis lutescens"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Areca palm",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Butterfly palm"
+          }
+        ],
+        "synonyms": ["Chrysalidocarpus lutescens", "Areca lutescens"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-areca"],
+          "source": "ncsu-areca",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix lightly damp in summer, never soggy, and ease off in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-areca"],
+          "source": "ncsu-areca",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 15,
+            "max": null
+          },
+          "unit": "C",
+          "source": "rhs-areca",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-areca",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["rhs-areca"],
+          "source": "ncsu-areca",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-areca",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-areca"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-areca",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-areca"]
+          }
+        ],
+        "sources": ["ncsu-areca", "aspca-areca"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Dypsis lutescens - areca palm.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Apurv013",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dypsis_lutescens_-_areca_palm.jpg",
+          "thumbnail": "dypsis-lutescens.webp"
+        }
+      ],
+      "photoFile": "Dypsis lutescens - areca palm.jpg",
+      "tags": {
+        "curated": ["indoor", "palm"]
+      },
+      "provenance": {
+        "notes": "Size left unknown: NC State (10 to 30 ft) and RHS (4 to 8 m) give outdoor or wild sizes, and both say indoor plants stay smaller. Temperature is a minimum only (RHS: keep above about 15 C). NC State rates the plant low severity for people and notes the palm heart contains cyanide-releasing compounds; not graded here. Look-alikes come from the look-alike list (knowledge, verify)."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/chrysalidocarpus-lutescens",
+        "https://www.rhs.org.uk/plants/128311/dypsis-lutescens/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/areca-palm"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Sago palm",
+          "tell": "Areca has several yellowish-green canes with arching feathery fronds; sago is a stiff single trunk"
+        },
+        {
+          "name": "kentia palm",
+          "tell": "Areca has several yellowish-green canes with arching feathery fronds; sago is a stiff single trunk"
+        },
+        {
+          "name": "cat palm",
+          "tell": "Areca has several yellowish-green canes with arching feathery fronds; sago is a stiff single trunk"
+        },
+        {
+          "name": "Phoenix roebelenii",
+          "tell": "Areca has several yellowish-green canes with arching feathery fronds; sago is a stiff single trunk"
+        }
+      ],
+      "lookAlikeNote": "DEADLY look-alike: sago palm",
+      "nameIdeas": ["Aretha", "Areca Raider", "Butterfly", "Palmy", "Goldie Palm"],
+      "links": [
+        {
+          "url": "https://www.giardinaggio.it/giardino/singolepiante/dypsis/dypsis.asp",
+          "title": "Dypsis - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/areca/areca.asp",
+          "title": "Areca - Areca catechu - Chrysalidocarpus lutescens - Appartamento",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

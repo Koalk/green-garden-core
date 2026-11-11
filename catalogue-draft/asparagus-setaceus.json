@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-asparagus-setaceus",
+      "title": "NC State Plant Toolbox: Asparagus setaceus",
+      "url": "https://plants.ces.ncsu.edu/plants/asparagus-setaceus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-asparagus-setaceus",
+      "title": "RHS: Asparagus setaceus",
+      "url": "https://www.rhs.org.uk/plants/27185/asparagus-setaceus/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-sprengeri",
+      "title": "Sprengeri fern, Asparagus densiflorus (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sprengeri-fern",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "asparagus-setaceus",
+      "taxon": {
+        "scientificName": "Asparagus setaceus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Asparagus fern",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Lace fern"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Plumosa fern"
+          }
+        ],
+        "synonyms": ["Asparagus plumosus"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-asparagus-setaceus"],
+          "source": "ncsu-asparagus-setaceus",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix lightly moist from spring to autumn, water more sparingly in winter, and stop it drying out completely or the needles drop."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-asparagus-setaceus"],
+          "source": "ncsu-asparagus-setaceus",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": 21
+          },
+          "unit": "C",
+          "source": "ncsu-asparagus-setaceus",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 91
+          },
+          "unit": "cm",
+          "source": "ncsu-asparagus-setaceus",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-asparagus-setaceus",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "climbing",
+          "corroboratedBy": ["ncsu-asparagus-setaceus"],
+          "source": "rhs-asparagus-setaceus",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["sapogenins"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-asparagus-setaceus",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-asparagus-setaceus",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "cat",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "aspca-sprengeri",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "aspca-sprengeri",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-asparagus-setaceus",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-asparagus-setaceus",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-asparagus-setaceus", "aspca-sprengeri"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Asparagus plumosa WPC.jpg",
+          "licence": "PDM-1.0",
+          "creator": "WayneRay",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asparagus_plumosa_WPC.jpg",
+          "thumbnail": "asparagus-setaceus.webp"
+        }
+      ],
+      "photoFile": "Asparagus plumosa WPC.jpg",
+      "tags": {
+        "curated": [
+          "indoor",
+          "outdoor_pot",
+          "high_humidity",
+          "thorny",
+          "invasive_outdoors_in_warm_climates"
+        ]
+      },
+      "provenance": {
+        "notes": "Not a true fern. The Sprengeri asparagus fern (Asparagus densiflorus) is a different plant often confused with it and sold under the same names. Wiry spiny stems: wear gloves. Care from NC State (full page) and RHS, which agree on bright indirect light, moist well-drained mix, regular water in the growing season and less in winter. NC State: 55 to 70 F, high humidity (no figure), 2 to 3 ft as a houseplant, rapid growth. RHS lists it as a climber needing support, up to 2.5 m. Toxicity: NC State rates it medium severity (berries; abdominal pain, vomiting, diarrhoea; sapogenins; sap irritates skin) and tags it a problem for cats, dogs and children; RHS says fruits harmful if eaten and a skin allergen. The ASPCA page read is for Asparagus densiflorus 'Sprengeri' (toxic to dogs and cats, allergic dermatitis, gastric upset from berries) so it is a related-species reading used only for the pet skin lines. Pets and children graded 2 from 'medium' (agent's mapping); review."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/asparagus-setaceus/",
+        "https://www.rhs.org.uk/plants/27185/asparagus-setaceus/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sprengeri-fern"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/1519-cuidados-de-la-planta-asparagus-setaceus-o-helecho-plumoso",
+          "title": "Asparagus setaceus o Helecho plumoso | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/esparraguera-plumosa--esparraguera-de-las-floristas--helecho-plumoso_3070",
+          "title": "verdeesvida :: Esparraguera plumosa, Esparraguera de las floristas, Helecho plumoso",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

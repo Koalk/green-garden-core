@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-sanderiana",
+      "title": "NC State Plant Toolbox: Dracaena sanderiana",
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-sanderiana/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-dracaena",
+      "title": "Dracaena, ribbon plant entry (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ribbon-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dracaena-sanderiana",
+      "taxon": {
+        "scientificName": "Dracaena sanderiana"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Lucky bamboo",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Ribbon plant"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-sanderiana",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Never let the roots dry out; use water that has stood overnight, as chlorine browns the tips."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-sanderiana",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-sanderiana",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-sanderiana",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "drooling"],
+            "source": "ncsu-sanderiana",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-dracaena"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "drooling"],
+            "source": "ncsu-sanderiana",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-dracaena"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": [],
+            "source": "ncsu-sanderiana",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-sanderiana", "aspca-dracaena"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Many Dracaena sanderiana.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Bernard Ladenthin",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Many_Dracaena_sanderiana.jpg",
+          "thumbnail": "dracaena-sanderiana.webp"
+        }
+      ],
+      "photoFile": "Many Dracaena sanderiana.jpg",
+      "tags": {
+        "curated": ["indoor", "grows_in_water"]
+      },
+      "provenance": {
+        "notes": "NC State rates poison severity low and lists dogs, cats and children; severity 1 is our mapping. The ASPCA page read is the genus entry (Dracaena spp., listed under ribbon plant), not D. sanderiana by name. Child symptoms are not stated, so none are listed. NC State says the sap may irritate skin but also says it does not cause contact dermatitis, so no skin exposure is graded. Temperature, humidity and size: no number on the fetched page, unknown. The Missouri Botanical Garden page failed (certificate error). Water-grown plants (the usual way it is sold) follow the keep-roots-covered rule, not the interval."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/dracaena-sanderiana/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ribbon-plant",
+        "https://hgic.clemson.edu/factsheet/dracaena/"
+      ],
+      "lookAlikes": [
+        {
+          "name": "True bamboo (Phyllostachys)",
+          "tell": "Lucky bamboo has smooth jointed green canes, usually in water; true bamboo is a woody grass"
+        },
+        {
+          "name": "Dracaena braunii",
+          "tell": "Lucky bamboo has smooth jointed green canes, usually in water; true bamboo is a woody grass"
+        }
+      ],
+      "lookAlikeNote": "True bamboo is the SAFER one (ASPCA non-toxic); lucky bamboo is toxic to pets",
+      "nameIdeas": ["Lucky", "Bam-Boo", "Fortune", "Panda Pal", "Bamboozle"]
+    }
+  ]
+}

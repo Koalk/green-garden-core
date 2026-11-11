@@ -1,0 +1,8 @@
+{
+  "name": "amount-hint-15cm-pot",
+  "description": "Watering amount hint (02a section 4) for a 15 cm pot: about 350 ml for let_top_dry, shown rounded to 50 ml.",
+  "why": "02a 4.1: height 0.85 x top diameter, bottom diameter 0.7 x top, frustum volume 1.64 L, soil 90% = 1.48 L. 4.2 fractions (midpoints): let_top_dry 22.5% = 333 ml, shown as 350. The doc example says 'about 350 ml'. Provisional: the fractions are heuristics without a source.",
+  "fn": "wateringHint",
+  "input": { "style": "let_top_dry", "potDiameterCm": 15 },
+  "expected": { "volumeMl": 350, "measure": { "unit": "cup", "halves": 3 }, "provisional": true }
+}

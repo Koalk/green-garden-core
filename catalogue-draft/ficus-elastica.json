@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "clemson-rubber",
+      "title": "Rubber plant",
+      "url": "https://hgic.clemson.edu/factsheet/rubber-plant/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-rubber",
+      "title": "NC State Plant Toolbox: Ficus elastica",
+      "url": "https://plants.ces.ncsu.edu/plants/ficus-elastica/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "ficus-elastica",
+      "taxon": {
+        "scientificName": "Ficus elastica"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Rubber plant",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "clemson-rubber",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 8,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.4,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Yellow lower leaves that drop point to too much water more often than too little."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-rubber"],
+          "source": "ncsu-rubber",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": null
+          },
+          "unit": "C",
+          "corroboratedBy": ["ncsu-rubber"],
+          "source": "clemson-rubber",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-rubber",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-rubber",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["latex_irritant"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "clemson-rubber",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-rubber"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "clemson-rubber",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-rubber"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "clemson-rubber",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["clemson-rubber", "ncsu-rubber"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "சீமை ஆலமரம் 1 (Ficus elastica).jpg",
+          "licence": "PDM-1.0",
+          "creator": "Dr.S.Soundarapandian",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%AE%9A%E0%AF%80%E0%AE%AE%E0%AF%88_%E0%AE%86%E0%AE%B2%E0%AE%AE%E0%AE%B0%E0%AE%AE%E0%AF%8D_1_(Ficus_elastica).jpg",
+          "thumbnail": "ficus-elastica.webp"
+        }
+      ],
+      "photoFile": "சீமை ஆலமரம் 1 (Ficus elastica).jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Size: height only (6-10 ft indoors), no spread, so unknown. Clemson: sticky sap may irritate skin or upset the stomach; NC State tags it a problem for cats, dogs and horses. Grading and symptoms are the agent's."
+      },
+      "sourcesRead": [
+        "https://hgic.clemson.edu/factsheet/rubber-plant/",
+        "https://plants.ces.ncsu.edu/plants/ficus-elastica/"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Fiddle-leaf fig",
+          "species": "ficus-lyrata",
+          "tell": "Rubber plant has big oval glossy leaves with a pointed tip and a red sheath on new growth"
+        },
+        {
+          "name": "Ficus benjamina",
+          "tell": "Rubber plant has big oval glossy leaves with a pointed tip and a red sheath on new growth"
+        },
+        {
+          "name": "Schefflera",
+          "tell": "Rubber plant has big oval glossy leaves with a pointed tip and a red sheath on new growth"
+        }
+      ],
+      "lookAlikeNote": "same mild sap toxicity; similar care",
+      "nameIdeas": ["Rubber Ducky", "Ficus Fred", "Elastigirl", "Bouncer", "Stretch"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/361-cuidados-de-la-planta-ficus-elastica-o-ficus-de-hoja-grande",
+          "title": "Ficus elastica o Ficus de hoja grande | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/piante-appartamento/piante-da-interno/ficus-elastica.asp",
+          "title": "Ficus elastica - Piante da interno - Coltivazione varietà fico",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/ficuselastica/ficuselastica.asp",
+          "title": "Ficus elastica - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/piante/ficus.asp",
+          "title": "Ficus - Fcius benjamin - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

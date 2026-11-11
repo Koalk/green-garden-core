@@ -1,0 +1,55 @@
+[
+  {
+    "latitud": "402500N",
+    "provincia": "MADRID",
+    "altitud": "667",
+    "indicativo": "3195",
+    "nombre": "MADRID, RETIRO",
+    "indsinop": "08222",
+    "longitud": "034041W"
+  },
+  {
+    "latitud": "402730N",
+    "provincia": "MADRID",
+    "altitud": "582",
+    "indicativo": "3129",
+    "nombre": "MADRID, CUATRO VIENTOS",
+    "indsinop": "08221",
+    "longitud": "033600W"
+  },
+  {
+    "latitud": "403000N",
+    "provincia": "MADRID",
+    "altitud": "610",
+    "indicativo": "3200",
+    "nombre": "MADRID, UNIVERSIDAD",
+    "indsinop": "08224",
+    "longitud": "034500W"
+  },
+  {
+    "latitud": "411800N",
+    "provincia": "VALLADOLID",
+    "altitud": "735",
+    "indicativo": "2422",
+    "nombre": "VALLADOLID",
+    "indsinop": "08141",
+    "longitud": "042400W"
+  },
+  {
+    "latitud": "280200N",
+    "provincia": "LAS PALMAS",
+    "altitud": "20",
+    "indicativo": "C649I",
+    "nombre": "ARRECIFE",
+    "indsinop": "60035",
+    "longitud": "131030W"
+  },
+  {
+    "latitud": "380100S",
+    "provincia": "TEST",
+    "altitud": "1",
+    "indicativo": "X000",
+    "nombre": "SOUTH-EAST TEST",
+    "longitud": "020000E"
+  }
+]

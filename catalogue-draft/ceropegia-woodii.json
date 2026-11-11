@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-ceropegia",
+      "title": "NC State Plant Toolbox: Ceropegia woodii",
+      "url": "https://plants.ces.ncsu.edu/plants/ceropegia-woodii/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-ceropegia",
+      "title": "RHS: Ceropegia linearis subsp. woodii",
+      "url": "https://www.rhs.org.uk/plants/74288/ceropegia-linearis-subsp-woodii/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "ceropegia-woodii",
+      "taxon": {
+        "scientificName": "Ceropegia woodii"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "String of hearts",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Rosary vine"
+          }
+        ],
+        "synonyms": ["Ceropegia linearis subsp. woodii"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["rhs-ceropegia"],
+          "source": "ncsu-ceropegia",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Let the mix dry out completely, and water even less over winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-ceropegia"],
+          "source": "ncsu-ceropegia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 10,
+            "spread": 100
+          },
+          "unit": "cm",
+          "source": "rhs-ceropegia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-ceropegia",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["rhs-ceropegia"],
+          "source": "ncsu-ceropegia",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": []
+      },
+      "photos": [
+        {
+          "file": "Ceropegia woodii Ceropegia Wooda 2024-04-26 01.jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Agnieszka Kwiecień, Nova",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ceropegia_woodii_Ceropegia_Wooda_2024-04-26_01.jpg",
+          "thumbnail": "ceropegia-woodii.webp"
+        }
+      ],
+      "photoFile": "Ceropegia woodii Ceropegia Wooda 2024-04-26 01.jpg",
+      "tags": {
+        "curated": ["indoor", "trailing", "succulent"]
+      },
+      "provenance": {
+        "notes": "Toxicity unknown: neither fetched page makes a toxicity statement and no ASPCA page for this plant was found. Not safe by default. Temperature: RHS gives only a frost-tender rating (H1C, minimum roughly 5 to 10 C) and NC State none, so unknown. Size is RHS (about 10 cm tall, spread 0.5 to 1 m, upper value). Growth rate fast is NC State only."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/ceropegia-woodii/",
+        "https://www.rhs.org.uk/plants/74288/ceropegia-linearis-subsp-woodii/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "String of pearls and bananas (Curio)",
+          "tell": "String of hearts has heart leaves with silver marbling and small tubers on the strand"
+        },
+        {
+          "name": "string of turtles (Peperomia prostrata)",
+          "tell": "String of hearts has heart leaves with silver marbling and small tubers on the strand"
+        }
+      ],
+      "lookAlikeNote": "Curio strings are TOXIC; hearts and turtles are not",
+      "nameIdeas": ["Cupid", "Heartstrings", "Valentine", "Sweetheart", "Ceropegia Cy"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/194-cuidados-de-la-planta-ceropegia-woodii-o-enredadera-rosario",
+          "title": "Ceropegia woodii o Enredadera rosario | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/collar-de-corazones_3186",
+          "title": "verdeesvida :: Collar de corazones",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/grasse/singolegrasse/ceropegia/ceropegia.asp",
+          "title": "Collana di cuori - Ceropegia woodii - Succulente - Piante Grasse",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

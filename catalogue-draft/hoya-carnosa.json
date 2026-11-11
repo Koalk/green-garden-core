@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "aspca-wax-plant",
+      "title": "Wax Plant, Hoya carnosa 'Krinkle Kurl' (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wax-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en",
+      "linkKind": "toxicity"
+    },
+    {
+      "id": "iastate-hoya",
+      "title": "All About Hoyas",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/all-about-hoyas",
+      "publisher": "Iowa State University Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-hoya",
+      "title": "NC State Plant Toolbox: Hoya carnosa",
+      "url": "https://plants.ces.ncsu.edu/plants/hoya-carnosa/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "hoya-carnosa",
+      "taxon": {
+        "scientificName": "Hoya carnosa"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Hoya",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["ncsu-hoya"],
+          "source": "iastate-hoya",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 12,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Thick leaves store water; let the mix dry between drinks."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-hoya"],
+          "source": "iastate-hoya",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 18,
+            "max": 27
+          },
+          "unit": "C",
+          "source": "iastate-hoya",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": {
+            "min": 40,
+            "max": 60
+          },
+          "unit": "%",
+          "source": "iastate-hoya",
+          "confidence": "checked"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "climbing",
+          "corroboratedBy": ["iastate-hoya"],
+          "source": "ncsu-hoya",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-hoya",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-wax-plant"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-hoya",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-wax-plant"]
+          }
+        ],
+        "sources": ["ncsu-hoya", "aspca-wax-plant"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Hoya carnosa - umbel with nectar droplets.jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Franz van Duns",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoya_carnosa_-_umbel_with_nectar_droplets.jpg",
+          "thumbnail": "hoya-carnosa.webp"
+        }
+      ],
+      "photoFile": "Hoya carnosa - umbel with nectar droplets.jpg",
+      "tags": {
+        "curated": ["indoor", "trailing"]
+      },
+      "provenance": {
+        "notes": "Watering is a mapping: Iowa State 'let the mix become nearly dry' to let_fully_dry. The ASPCA page read is for Hoya carnosa 'Krinkle Kurl' (a cultivar)."
+      },
+      "sourcesRead": [
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wax-plant",
+        "https://yardandgarden.extension.iastate.edu/how-to/all-about-hoyas",
+        "https://plants.ces.ncsu.edu/plants/hoya-carnosa/"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Hoya kerrii (sweetheart)",
+          "tell": "H. carnosa has oval waxy leaves in pairs and round clusters of star flowers; kerrii has heart-shaped leaves"
+        },
+        {
+          "name": "Hoya carnosa 'Krimson Queen'",
+          "tell": "H. carnosa has oval waxy leaves in pairs and round clusters of star flowers; kerrii has heart-shaped leaves"
+        },
+        {
+          "name": "Dischidia",
+          "tell": "H. carnosa has oval waxy leaves in pairs and round clusters of star flowers; kerrii has heart-shaped leaves"
+        }
+      ],
+      "nameIdeas": ["Hoy Hoy", "Wax On", "Waxy", "Honey", "Candle"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/3293-cuidados-de-la-planta-hoya-carnosa-o-flor-de-cera",
+          "title": "Hoya carnosa o Flor de cera | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/piante-appartamento/piante-da-interno/hoya-carnosa.asp",
+          "title": "Hoya carnosa - Piante da interno - Fiore di cera",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/hoya/hoya.asp",
+          "title": "Fiore di porcellana - Hoya carnosa - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

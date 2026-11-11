@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-rosemary",
+      "title": "RHS: How to grow rosemary",
+      "url": "https://www.rhs.org.uk/herbs/rosemary/grow-your-own",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-salvia-rosmarinus",
+      "title": "NC State Plant Toolbox: Salvia rosmarinus",
+      "url": "https://plants.ces.ncsu.edu/plants/salvia-rosmarinus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-rosemary",
+      "title": "Rosemary (toxic and non-toxic plants list; listed as Rosmarinus officinalis)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rosemary",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "salvia-rosmarinus",
+      "taxon": {
+        "scientificName": "Salvia rosmarinus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Rosemary",
+            "primary": true
+          },
+          {
+            "lang": "es",
+            "name": "Romero",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Rosmarino",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Rosmarinus officinalis"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-rosemary",
+          "corroboratedBy": ["ncsu-salvia-rosmarinus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a pot when the top of the mix has dried; in hot spells it dries quickly, but never let it sit wet, especially in winter."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-rosemary",
+          "corroboratedBy": ["ncsu-salvia-rosmarinus"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": -8,
+            "max": null
+          },
+          "unit": "C",
+          "source": "rhs-rosemary",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 150,
+            "spread": 120
+          },
+          "unit": "cm",
+          "source": "ncsu-salvia-rosmarinus",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-salvia-rosmarinus",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-salvia-rosmarinus",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-rosemary",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-rosemary",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-rosemary", "ncsu-salvia-rosmarinus"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "herb", "full_sun", "fragrant"]
+      },
+      "provenance": {
+        "notes": "Name: GBIF and both pages use Salvia rosmarinus; the old name Rosmarinus officinalis is a synonym and the ASPCA page still uses it. Look-alikes on NC State: lavender and santolina. Watering: RHS says fairly drought tolerant, container plants need extra water in hot dry spells because the compost dries fast, never waterlogged, no frequency; NC State says low tolerance of wet and humid conditions, overwatering is the common cause of death. let_top_dry is the agent's mapping; interval 7 days is a guess. Pots: RHS recommends at least 30 cm wide and deep, soil-based peat-free compost with up to 25 percent grit, wrap or move container plants in winter. Light: both say full sun (NC State also lists partial shade). Temperature: RHS says established plants survive down to about -8 C; container plants are more vulnerable; NC State gives only USDA zones 8a to 10b. Size: NC State 4 to 5 ft by 3 to 4 ft (about 150 by 120 cm upper values); RHS gives none and notes upright and trailing varieties, so from_knowledge_verify. Growth rate medium (NC State). Humidity: NC State's page contradicts itself, so left unknown. Toxicity: ASPCA non-toxic to cats and dogs; NC State tags agree; neither names agents. Severity 0 is our grading. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/herbs/rosemary/grow-your-own",
+        "https://plants.ces.ncsu.edu/plants/salvia-rosmarinus/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rosemary"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/676-cuidados-de-la-planta-rosmarinus-officinalis-o-romero",
+          "title": "Rosmarinus officinalis o Romero | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

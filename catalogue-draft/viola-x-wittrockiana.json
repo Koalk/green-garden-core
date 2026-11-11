@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-viola-cornuta",
+      "title": "RHS plant profile: Viola cornuta",
+      "url": "https://www.rhs.org.uk/plants/18990/viola-cornuta/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-viola-trial",
+      "title": "RHS: Viola overwintering trial results",
+      "url": "https://www.rhs.org.uk/plants/trials-awards/plant-trial-results/viola",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-viola-wittrockiana",
+      "title": "NC State Plant Toolbox: Viola x wittrockiana",
+      "url": "https://plants.ces.ncsu.edu/plants/viola-x-wittrockiana/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "viola-x-wittrockiana",
+      "taxon": {
+        "scientificName": "Viola x wittrockiana"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Pansy",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Garden pansy"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Winter pansy"
+          },
+          {
+            "lang": "es",
+            "name": "Pensamiento",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Pensamiento de jardín",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Viola",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Viola del pensiero",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Viola del pensiero gigante",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-viola-wittrockiana",
+          "corroboratedBy": ["rhs-viola-cornuta"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the soil or compost consistently moist but well drained; pots dry out fast. Deadhead spent flowers to keep it blooming, and expect it to fade in summer heat."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-viola-wittrockiana",
+          "corroboratedBy": ["rhs-viola-cornuta"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 20,
+            "spread": 25
+          },
+          "unit": "cm",
+          "source": "ncsu-viola-wittrockiana",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-viola-wittrockiana",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-viola-wittrockiana",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "full_sun", "seasonal"]
+      },
+      "provenance": {
+        "notes": "Look-alikes: violas (V. cornuta, small-flowered, perennial, RHS) are sold alongside pansies; this entry is the large-flowered garden pansy, usually bought as winter or spring bedding in the UK and autumn to spring in Spain. No RHS pansy page was found, so the RHS sources are the V. cornuta profile (full sun or partial shade, moist but well-drained, patio and container use, deadhead to prolong flowering) and the RHS viola trial (free-draining soil, autumn planting best, coped with -7.5 C). NC State: prefers full sun to part shade in consistently moist, well-drained humus-rich soil, 6 to 9 in tall and 9 to 12 in wide, growth medium, semi-evergreen annual or biennial, succumbs to summer heat; zones 6 to 10. keep_moist is the agent's mapping, 3 days a guess. Habit: NC State mounding, some upright, some trailing. Toxicity: no ASPCA entry for pansy or viola (the page returned no result) and no pet tags on NC State, so toxicity ships unknown, never pet-safe. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/18990/viola-cornuta/details",
+        "https://www.rhs.org.uk/plants/trials-awards/plant-trial-results/viola",
+        "https://plants.ces.ncsu.edu/plants/viola-x-wittrockiana/"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/805-cuidados-de-la-planta-viola-x-wittrockiana-o-pensamiento",
+          "title": "Viola x wittrockiana o Pensamiento | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

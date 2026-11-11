@@ -1,0 +1,8 @@
+{
+  "name": "amount-hint-small-succulent-pot",
+  "description": "Watering amount hint for a let_fully_dry plant in an 8 cm pot: the volume is under 100 ml, so only the qualitative instruction is shown.",
+  "why": "02a 4.2 display rule: succulents in small pots show the instruction only (volumes under 100 ml are noise). 8 cm pot: soil about 0.22 L x 32.5% = 73 ml.",
+  "fn": "wateringHint",
+  "input": { "style": "let_fully_dry", "potDiameterCm": 8 },
+  "expected": { "volumeMl": null, "measure": null }
+}

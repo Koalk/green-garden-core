@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-impatiens",
+      "title": "NC State Plant Toolbox: Impatiens walleriana",
+      "url": "https://plants.ces.ncsu.edu/plants/impatiens-walleriana/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-impatiens",
+      "title": "RHS: Impatiens walleriana",
+      "url": "https://www.rhs.org.uk/plants/95402/impatiens-walleriana/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "impatiens-walleriana",
+      "taxon": {
+        "scientificName": "Impatiens walleriana"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Busy Lizzie",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Impatiens"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Patience plant"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-impatiens"],
+          "source": "ncsu-impatiens",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost evenly moist, because it wilts fast when dry, but never leave the pot standing in water."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-impatiens"],
+          "source": "ncsu-impatiens",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 61,
+            "spread": 61
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-impatiens"],
+          "source": "ncsu-impatiens",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-impatiens",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["ncsu-impatiens"],
+          "source": "rhs-impatiens",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-impatiens",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-impatiens",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["ncsu-impatiens"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Impatiens walleriana, Washington, D.C.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Nvss132",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Impatiens_walleriana,_Washington,_D.C.jpg",
+          "thumbnail": "impatiens-walleriana.webp"
+        }
+      ],
+      "photoFile": "Impatiens walleriana, Washington, D.C.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "flowering", "shade_tolerant", "annual_bedding", "tender"]
+      },
+      "provenance": {
+        "notes": "NAME CLASH: New Guinea impatiens (Impatiens hawkeri) is a different plant, and NC State warns it is also mistaken for Catharanthus. Watering: NC State says moist, well-drained, low drought tolerance, wilts in hot dry spells, rots if overwatered; RHS moist but well-drained. Light: NC State part to full shade (scorches in too much sun), RHS partial shade recommended but full sun if kept well watered; stored bright_indirect (agent mapping). Size: NC State 0.5 to 2 ft both ways, RHS 0.1 to 0.5 m (15 to 60 cm in the text); NC State upper figure stored. Hardiness is tropical (NC State zones 10a to 11b, RHS H1B) so it is bedding or a pot plant; no indoor temperature range. Toxicity: only NC State's tags (non-toxic for cats and dogs) say anything, no agent or symptoms; the ASPCA page returned 404 and RHS is silent. One tag-only source: review. No human lines stored."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/impatiens-walleriana/",
+        "https://www.rhs.org.uk/plants/95402/impatiens-walleriana/details"
+      ]
+    }
+  ]
+}

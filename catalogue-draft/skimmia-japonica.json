@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-04",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-skimmia-japonica",
+      "title": "RHS Plant Profile: Skimmia japonica (Japanese skimmia)",
+      "url": "https://www.rhs.org.uk/plants/17401/skimmia-japonica/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-skimmia-genus-guide",
+      "title": "RHS Genus Guide: Skimmia",
+      "url": "https://www.rhs.org.uk/plants/skimmia",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-skimmia-japonica",
+      "title": "NC State Plant Toolbox: Skimmia japonica (Japanese skimmia)",
+      "url": "https://plants.ces.ncsu.edu/plants/skimmia-japonica/common-name/japanese-skimmia/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "skimmia-japonica",
+      "taxon": {
+        "scientificName": "Skimmia japonica"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Japanese skimmia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Skimmia"
+          },
+          {
+            "lang": "es",
+            "name": "Skimmia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Skimmia japónica",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Skimmia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Skimmia giapponese",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-skimmia-japonica",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-skimmia-japonica",
+          "corroboratedBy": ["rhs-skimmia-genus-guide", "ncsu-skimmia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep skimmia in a pot evenly moist and never let it dry out or sit wet; it does not need ericaceous compost."
+        },
+        "light": {
+          "value": "medium",
+          "source": "rhs-skimmia-japonica",
+          "corroboratedBy": ["rhs-skimmia-genus-guide", "ncsu-skimmia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 150,
+            "spread": 120
+          },
+          "unit": "cm",
+          "source": "rhs-skimmia-japonica",
+          "corroboratedBy": ["ncsu-skimmia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-skimmia-japonica",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "author",
+          "confidence": "guess"
+        },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-skimmia-japonica",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "rhs-skimmia-japonica",
+          "confidence": "from_knowledge_verify"
+        },
+        "droughtTolerance": {
+          "value": "none",
+          "source": "rhs-skimmia-genus-guide",
+          "corroboratedBy": ["rhs-skimmia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "rhs-skimmia-japonica",
+          "corroboratedBy": ["rhs-skimmia-genus-guide", "ncsu-skimmia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "moist",
+          "source": "rhs-skimmia-japonica",
+          "corroboratedBy": ["ncsu-skimmia-japonica", "rhs-skimmia-genus-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants in dry spells and mulch; skimmia struggles in very dry soil or full sun but does not need an acid soil."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "adult",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["cardiac"],
+            "source": "ncsu-skimmia-japonica",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-skimmia-japonica"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["cardiac"],
+            "source": "ncsu-skimmia-japonica",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-skimmia-japonica"]
+          }
+        ],
+        "sources": ["ncsu-skimmia-japonica", "rhs-skimmia-japonica"],
+        "assessedOn": "2026-11-04"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "foliage", "hardy", "part_shade"]
+      },
+      "provenance": {
+        "notes": "Row 83. Toxicity: NC State rates the fruits poisonous to humans, severity medium, a problem for children, causing cardiac arrest in large amounts and nausea in small ones (it names no cat or dog); RHS says the fruit are ornamental and not to be eaten. Severity 2 and the symptom list (cardiac only; nausea has no word in our vocabulary) are the agent's grading. Pets: no pet source; no skimmia ASPCA page was found, and one search snippet claims the ASPCA lists it as toxic while another says it does not (neither fetched), so pets stay unknown. Skin: NC State says it does not cause contact dermatitis; RHS says wear gloves. Not recorded as an exposure. Hardiness: RHS H5; NC State 7a to 8b. Sun: RHS profile full or partial shade, genus guide light shade tolerating deeper shade or sun, NC State dappled to deep shade with leaves that scorch in full sun; medium light and part are the agent's reading. Not ericaceous (RHS genus guide), grows best in neutral or acid soil. Drought: no page states a tolerance; none is the agent's reading of 'struggle in very dry soil'. Watering style keep_moist and 5 days are the agent's mapping and a guess. Size: RHS up to 1.5 m in cultivation (0.5 to 7 m in the wild, max 1.5 to 2.5 m by 1 to 1.5 m), NC State 2 to 7 ft by 3 to 5 ft; 150 by 120 cm is the agent's pick. Male and female plants are separate (RHS, NC State): berries only on females with a male nearby, and S. japonica subsp. reevesiana is self-fertile. Missouri Botanical Garden failed twice (certificate error). Fetched through a summarising fetch: wording not checked against the raw pages. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/17401/skimmia-japonica/details",
+        "https://www.rhs.org.uk/plants/skimmia",
+        "https://plants.ces.ncsu.edu/plants/skimmia-japonica/common-name/japanese-skimmia/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/search"
+      ],
+      "lookAlikes": [],
+      "lookAlikeNote": "Skimmia x confusa and S. japonica subsp. reevesiana are close relatives; the pages fetched do not say how to tell them apart (RHS only notes that subsp. reevesiana is self-fertile).",
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/729-cuidados-de-la-planta-skimmia-japonica-o-esquimia",
+          "title": "Skimmia japonica o Esquimia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/arbustos-y-trepadoras_1/skimmia_3055",
+          "title": "verdeesvida :: Skimmia",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/singolepiante/skimmia/skimmia.asp",
+          "title": "Falso pepe - Skimmia japonica - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

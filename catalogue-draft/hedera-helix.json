@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "clemson-ivy",
+      "title": "Growing English Ivy Indoors",
+      "url": "https://hgic.clemson.edu/factsheet/growing-english-ivy-indoors/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-hedera",
+      "title": "NC State Plant Toolbox: Hedera helix",
+      "url": "https://plants.ces.ncsu.edu/plants/hedera-helix/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "gubb-houseplants-3l",
+      "title": "Gubb, Blanusa et al.: Can houseplants improve indoor air quality by removing CO2 and increasing relative humidity? (water use of plants in 3-litre pots)",
+      "url": "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf",
+      "publisher": "Air Quality, Atmosphere & Health (copy on greenplantsforgreenbuildings.org)",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-31",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "hedera-helix",
+      "taxon": {
+        "scientificName": "Hedera helix"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "English ivy",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "clemson-ivy",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "gubb-houseplants-3l",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.3,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Dry heated rooms invite spider mites; dry air hurts more than dry soil."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "clemson-ivy",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 10,
+            "max": 21
+          },
+          "unit": "C",
+          "source": "clemson-ivy",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-hedera",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["ncsu-hedera"],
+          "source": "clemson-ivy",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "drooling", "diarrhoea"],
+            "source": "ncsu-hedera",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "drooling", "diarrhoea"],
+            "source": "ncsu-hedera",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "vomiting", "diarrhoea"],
+            "source": "ncsu-hedera",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-hedera",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-ivy"]
+          }
+        ],
+        "sources": ["ncsu-hedera", "clemson-ivy"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Bredevoort (NL), Parkbank -- 2016 -- 1398.jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Dietmar Rabich",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bredevoort_(NL),_Parkbank_--_2016_--_1398.jpg",
+          "thumbnail": "hedera-helix.webp"
+        }
+      ],
+      "photoFile": "Bredevoort (NL), Parkbank -- 2016 -- 1398.jpg",
+      "tags": {
+        "curated": ["indoor", "trailing"]
+      },
+      "provenance": {
+        "notes": "NC State rates it medium severity (saponins and polyacetylenes); symptom lists for humans only, so pet symptoms are the agent's. Size: outdoor figures only, so unknown. Temperature is Clemson's 50-70 F daytime range. Anchor: baseIntervalDays 6 -> 5 for a 3-litre reference pot, from measured water use (ivy, 70.5 g a day); the conversion to days is our arithmetic (02i), so guess."
+      },
+      "sourcesRead": [
+        "https://hgic.clemson.edu/factsheet/growing-english-ivy-indoors/",
+        "https://plants.ces.ncsu.edu/plants/hedera-helix/",
+        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Boston ivy (Parthenocissus)",
+          "tell": "True ivy clings with aerial rootlets and has lobed leaves; Boston ivy uses adhesive discs; Swedish ivy has scalloped hairy leaves; poison ivy has three leaflets"
+        },
+        {
+          "name": "Swedish ivy (Plectranthus)",
+          "tell": "True ivy clings with aerial rootlets and has lobed leaves; Boston ivy uses adhesive discs; Swedish ivy has scalloped hairy leaves; poison ivy has three leaflets"
+        },
+        {
+          "name": "devil's ivy (pothos)",
+          "tell": "True ivy clings with aerial rootlets and has lobed leaves; Boston ivy uses adhesive discs; Swedish ivy has scalloped hairy leaves; poison ivy has three leaflets"
+        },
+        {
+          "name": "poison ivy",
+          "tell": "True ivy clings with aerial rootlets and has lobed leaves; Boston ivy uses adhesive discs; Swedish ivy has scalloped hairy leaves; poison ivy has three leaflets"
+        }
+      ],
+      "lookAlikeNote": "Swedish ivy is non-toxic; pothos also toxic; poison ivy is a skin hazard",
+      "nameIdeas": ["Ivy League", "Ivy Winter", "Climber Clive", "Hedy", "Vine Diesel"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/406-cuidados-de-la-planta-hedera-helix-hiedra-comun-o-yedra",
+          "title": "Hedera helix, Hiedra común o Yedra | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

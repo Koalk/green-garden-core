@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-04",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-santolina-chamaecyparissus",
+      "title": "RHS Plant Profile: Santolina chamaecyparissus (lavender cotton)",
+      "url": "https://www.rhs.org.uk/plants/19856/santolina-chamaecyparissus/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-santolina-chamaecyparissus",
+      "title": "NC State Plant Toolbox: Santolina chamaecyparissus",
+      "url": "https://plants.ces.ncsu.edu/plants/santolina-chamaecyparissus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "santolina-chamaecyparissus",
+      "taxon": {
+        "scientificName": "Santolina chamaecyparissus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Cotton lavender",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Lavender cotton"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Santolina"
+          },
+          {
+            "lang": "es",
+            "name": "Santolina",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Abrótano hembra",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Cipresillo",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Santolina",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Cipressina",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Santolina incana"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-santolina-chamaecyparissus",
+          "confidence": "checked"
+        },
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "ncsu-santolina-chamaecyparissus",
+          "corroboratedBy": ["rhs-santolina-chamaecyparissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a pot only when the compost has dried right out; cotton lavender sulks if kept wet."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-santolina-chamaecyparissus",
+          "corroboratedBy": ["ncsu-santolina-chamaecyparissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 50,
+            "spread": 90
+          },
+          "unit": "cm",
+          "source": "rhs-santolina-chamaecyparissus",
+          "corroboratedBy": ["ncsu-santolina-chamaecyparissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-santolina-chamaecyparissus",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "rhs-santolina-chamaecyparissus",
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-santolina-chamaecyparissus",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-santolina-chamaecyparissus",
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "rhs-santolina-chamaecyparissus",
+          "corroboratedBy": ["ncsu-santolina-chamaecyparissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "rhs-santolina-chamaecyparissus",
+          "corroboratedBy": ["ncsu-santolina-chamaecyparissus"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "ncsu-santolina-chamaecyparissus",
+          "corroboratedBy": ["rhs-santolina-chamaecyparissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants until they settle in; established cotton lavender copes with dry spells and dislikes wet ground."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": []
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "foliage", "hardy", "drought_tolerant"]
+      },
+      "provenance": {
+        "notes": "Row 86. Toxicity: no fetched page gives any. RHS and NC State name none (NC State only mentions folk medicine for digestion); the ASPCA search page tried returned no plant listings, so that is not a confirmed absence; the ASPCA lavender page found in search is a different plant and was not fetched. Toxicity stays unknown (pets unknown). Hardiness: RHS H5; NC State 6a to 9b. Drought: RHS 'Drought Resistance: Yes', NC State 'good drought tolerance'. Watering style let_fully_dry and 10 days are the agent's mapping and a guess (RHS well-drained or moist but well-drained, NC State good drainage, occasionally to very dry). Size: RHS 0.1 to 0.5 m tall by 0.5 to 1 m wide, NC State 1 to 2 ft by 2 to 3 ft; 50 by 90 cm is the agent's pick. Placement: RHS lists container use; ground from the starter-list row. No RHS growing guide was found for santolina. Missouri Botanical Garden failed twice (certificate error). The quoted wording came back through a summarising fetch and was not checked against the raw pages. Es and it names are machine drafts (abrótano hembra is the starter-list name; cipresillo and cipressina are names I know people use, not sourced)."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/19856/santolina-chamaecyparissus/details",
+        "https://plants.ces.ncsu.edu/plants/santolina-chamaecyparissus/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/search"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Green santolina (Santolina rosmarinifolia)",
+          "tell": "NC State says it is similar but green, with lighter-coloured flowers; the silvery-grey foliage is what marks S. chamaecyparissus."
+        }
+      ],
+      "lookAlikeNote": "NC State also lists Artemisia 'Powis Castle', Lavandula angustifolia, Phlox subulata and Salvia rosmarinus as often confused with it, without saying how to tell them apart.",
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/693-cuidados-de-la-planta-santolina-chamaecyparissus-o-abrotano-hembra",
+          "title": "Santolina chamaecyparissus o Abrótano hembra | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

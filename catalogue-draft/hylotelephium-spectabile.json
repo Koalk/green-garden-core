@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-07",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-hylotelephium-spectabile",
+      "title": "NC State Plant Toolbox: Hylotelephium spectabile",
+      "url": "https://plants.ces.ncsu.edu/plants/hylotelephium-spectabile/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-hylotelephium-spectabile",
+      "title": "Missouri Botanical Garden Plant Finder: Hylotelephium spectabile",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=279422&isprofile=0&basic=hylotelephium%20spectabile",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "hylotelephium-spectabile",
+      "taxon": {
+        "scientificName": "Hylotelephium spectabile"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Sedum",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Ice plant"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Showy stonecrop"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Stonecrop"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Sedum 'Autumn Joy'"
+          },
+          {
+            "lang": "es",
+            "name": "Sedum",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Uña de gato",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Telefio vistoso",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Sedum",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Telefio",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Sedum spectabile"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-hylotelephium-spectabile",
+          "corroboratedBy": ["mbg-hylotelephium-spectabile"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "mbg-hylotelephium-spectabile",
+          "corroboratedBy": ["ncsu-hylotelephium-spectabile"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "In a pot, water only once the compost has dried right out; a succulent stonecrop sulks when kept wet."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-hylotelephium-spectabile",
+          "corroboratedBy": ["mbg-hylotelephium-spectabile"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 60,
+            "spread": 60
+          },
+          "unit": "cm",
+          "source": "ncsu-hylotelephium-spectabile",
+          "corroboratedBy": ["mbg-hylotelephium-spectabile"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-hylotelephium-spectabile",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "mbg-hylotelephium-spectabile",
+          "corroboratedBy": ["ncsu-hylotelephium-spectabile"],
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-hylotelephium-spectabile",
+          "corroboratedBy": ["mbg-hylotelephium-spectabile"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "mbg-hylotelephium-spectabile",
+          "corroboratedBy": ["ncsu-hylotelephium-spectabile"],
+          "confidence": "checked"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "mbg-hylotelephium-spectabile",
+          "corroboratedBy": ["ncsu-hylotelephium-spectabile"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "mbg-hylotelephium-spectabile",
+          "corroboratedBy": ["ncsu-hylotelephium-spectabile"],
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants until they settle in; after that stonecrop copes with dry soil and flops in too much shade or rich soil."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["alkaloids"],
+        "exposures": [
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-hylotelephium-spectabile",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-hylotelephium-spectabile"],
+        "assessedOn": "2026-11-07"
+      },
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "hardy", "succulent"]
+      },
+      "provenance": {
+        "notes": "Row 89, sold as Sedum 'Autumn Joy' (a hybrid); this entry is the species the list names. Pages: NC State and MBG (two Plant Finder pages cached; the second is cultivar 'Autumn Fire', not cited). No RHS or Clemson page; the ASPCA sedum and hylotelephium pages returned an empty soft 404, so there is no pet source: pets read 'not assessed'. Toxicity: NC State low severity for people, alkaloids sedine and sedamine, symptoms unknown but possibly gastrointestinal, contact dermatitis no; the symptom words are the agent's mapping. Hardiness left empty (MBG USDA 3 to 9; no RHS page read). Low creeping sedums (Sedum acre, S. album) are other plants. Watering: both pages say drought tolerant, dry to medium, well-drained soil; let_fully_dry for a pot is the agent's mapping and 10 days a guess. Size: NC State and MBG 30 to 60 cm tall and wide. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/hylotelephium-spectabile/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=279422&isprofile=0&basic=hylotelephium%20spectabile",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=260506&isprofile=0&basic=hylotelephium%20spectabile",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/sedum",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/hylotelephium"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Creeping sedums (Sedum acre, S. album)",
+          "tell": "Low carpeting plants a few centimetres tall, not the upright clump with flat pink flower heads."
+        }
+      ],
+      "lookAlikeNote": "NC State rates it low-poison for people; no pet source was found.",
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/1231-cuidados-de-la-planta-sedum-spectabile-o-sedum-brillante",
+          "title": "Sedum spectabile o Sedum brillante | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

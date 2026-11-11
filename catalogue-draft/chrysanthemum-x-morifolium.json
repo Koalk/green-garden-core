@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-chrysanthemum",
+      "title": "NC State Plant Toolbox: Chrysanthemum x morifolium",
+      "url": "https://plants.ces.ncsu.edu/plants/chrysanthemum-x-morifolium/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-chrysanthemum",
+      "title": "Chrysanthemum (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chrysanthemum",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "chrysanthemum-x-morifolium",
+      "taxon": {
+        "scientificName": "Chrysanthemum x morifolium"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Garden chrysanthemum",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Florist's chrysanthemum"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Mum"
+          }
+        ],
+        "synonyms": ["Dendranthema x grandiflorum"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-chrysanthemum",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the soil evenly moist, never soggy, and check pots daily in warm weather."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-chrysanthemum",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-chrysanthemum",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-chrysanthemum",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-chrysanthemum",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["sesquiterpene_lactones", "pyrethrins"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "drooling", "skin_irritation"],
+            "source": "aspca-chrysanthemum",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-chrysanthemum"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "drooling", "skin_irritation"],
+            "source": "aspca-chrysanthemum",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-chrysanthemum"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-chrysanthemum",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-chrysanthemum",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-chrysanthemum", "ncsu-chrysanthemum"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Ruhland, Grenzstr. 3, Garten-Chrysantheme, weiß blühend, Herbst, 01.jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "Wilhelm Zimmerling PAR",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ruhland,_Grenzstr._3,_Garten-Chrysantheme,_wei%C3%9F_bl%C3%BChend,_Herbst,_01.jpg",
+          "thumbnail": "chrysanthemum-x-morifolium.webp"
+        }
+      ],
+      "photoFile": "Ruhland, Grenzstr. 3, Garten-Chrysantheme, weiß blühend, Herbst, 01.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "indoor", "flowering", "full_sun"]
+      },
+      "provenance": {
+        "notes": "Garden and florist's mum treated as one row; hardy garden mums (zones 5 to 9, NC State) and short-lived gift pot mums are cared for differently, and pot mums are usually discarded after flowering. Care rests on one page (NC State), which gives soil 'moist with good drainage' and no watering advice, so keep_moist is the agent's mapping and the interval is a guess. NC State: full sun, protect from afternoon sun in warm places, rapid growth, 1 to 3 ft tall and 1 to 2 ft wide, upper values stored. Toxicity: ASPCA lists Chrysanthemum spp. as toxic to dogs and cats (sesquiterpene lactones, pyrethrins; vomiting, diarrhoea, drooling, incoordination, dermatitis); NC State rates humans low severity with contact dermatitis. Pets graded 1 by the agent. The ASPCA incoordination sign has no match in our symptom list and is left out. NC State also lists the flowers as edible."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/chrysanthemum-x-morifolium/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chrysanthemum"
+      ],
+      "links": [
+        {
+          "url": "https://www.giardinaggio.it/giardino/piante/crisantemi.asp",
+          "title": "Crisantemo - Chrysanthemum moriifolium - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

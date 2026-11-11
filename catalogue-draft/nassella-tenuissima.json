@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "ncsu-nassella-tenuissima",
+      "title": "NC State Plant Toolbox: Nassella tenuissima",
+      "url": "https://plants.ces.ncsu.edu/plants/nassella-tenuissima/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-nassella-tenuissima",
+      "title": "Missouri Botanical Garden Plant Finder: Nassella tenuissima",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285344&isprofile=0&basic=nassella%20tenuissima",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-nassella-tenuissima",
+      "title": "RHS Plant Profile: Nassella tenuissima",
+      "url": "https://www.rhs.org.uk/plants/202303/nassella-tenuissima/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "nassella-tenuissima",
+      "taxon": {
+        "scientificName": "Nassella tenuissima"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Mexican feather grass",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Texas needle grass"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Finestem needlegrass"
+          },
+          {
+            "lang": "es",
+            "name": "Stipa",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Plumero mexicano",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Stipa",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Stipa piumosa",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Stipa tenuissima"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima", "rhs-nassella-tenuissima"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a potted plant only when the compost has dried out; it is a drought-lover and overly wet soil rots the roots."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima", "rhs-nassella-tenuissima"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 60,
+            "spread": 60
+          },
+          "unit": "cm",
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima", "rhs-nassella-tenuissima"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-nassella-tenuissima",
+          "confidence": "from_knowledge_verify"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima", "rhs-nassella-tenuissima"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima"],
+          "confidence": "checked"
+        },
+        "dormancy": {
+          "value": "summer",
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-nassella-tenuissima",
+          "corroboratedBy": ["mbg-nassella-tenuissima", "rhs-nassella-tenuissima"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "mbg-nassella-tenuissima",
+          "corroboratedBy": ["ncsu-nassella-tenuissima", "rhs-nassella-tenuissima"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H4",
+          "source": "rhs-nassella-tenuissima",
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Once established it needs no watering; cut the dead leaves back in late winter and remove seedlings, which come up in numbers."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": [
+          "ground",
+          "outdoor_pot",
+          "full_sun",
+          "drought_tolerant",
+          "foliage",
+          "invasive_outdoors_in_warm_climates"
+        ]
+      },
+      "provenance": {
+        "notes": "Row 102, Mexican feather grass. Care: NC State, Missouri BG and RHS agree on full sun, free drainage and drought tolerance; NC State and Missouri BG both say it may go dormant in summer drought and that it seeds freely (weedy; invasive in Australia and parts of California). Size: NC State and Missouri BG give 30 to 60 cm by 30 to 60 cm; RHS says up to 1 m tall by 0.5 m, so 60 by 60 cm is kept. Hardiness H4 is the RHS rating (it lists the plant as Stipa tenuissima under its accepted name; the Nassella page was read). Growth rate medium is NC State alone. Toxicity: no page read states any, no ASPCA page, so people and pets are unknown. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/nassella-tenuissima/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285344&isprofile=0&basic=nassella%20tenuissima",
+        "https://www.rhs.org.uk/plants/202303/nassella-tenuissima/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Giant oat grass (Stipa gigantea)",
+          "tell": "Far taller, up to 2 m, with big golden oat-like flower heads; Mexican feather grass stays under 60 cm with fine, hair-like leaves."
+        }
+      ],
+      "lookAlikeNote": "Seeds freely and is listed as invasive in some regions (Australia, California); deadhead before it sets seed in warm climates.",
+      "photos": [],
+      "links": []
+    }
+  ]
+}

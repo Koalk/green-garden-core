@@ -1,0 +1,12 @@
+{
+  "name": "amount-calibration-global-factor",
+  "description": "Calibration levels: only a global factor, which doubles the estimate.",
+  "why": "Fallback order, last level. 350 ml times 2 is 700 ml.",
+  "fn": "wateringHint",
+  "input": {
+    "style": "let_top_dry",
+    "potDiameterCm": 15,
+    "calibration": { "global": { "factor": 2 } }
+  },
+  "expected": { "volumeMl": 700, "calibration": "global" }
+}

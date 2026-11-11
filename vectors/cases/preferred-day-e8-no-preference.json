@@ -1,0 +1,17 @@
+{
+  "name": "preferred-day-e8-no-preference",
+  "description": "02a E8, no preferred weekday: two let_top_dry plants (I=7, last 4 and 3 days ago, as of Monday 2026-11-02) share the overlap of their windows; ties go to the later day.",
+  "why": "02a E8 intent: no preference means the later day of the overlap. E8's numbers used the superseded first-draft windows ([2,4] and [3,5]); with the section 5 model the windows are A [1,5] and B [2,6], overlap days 2 to 5, so the answer is day 5 (Saturday 2026-11-07) instead of Friday. Hand-computed.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-02",
+    "horizonDays": 6,
+    "plants": [
+      { "id": "a", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-29" },
+      { "id": "b", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-30" }
+    ]
+  },
+  "expected": {
+    "days": [{ "date": "2026-11-07", "plantIds": ["a", "b"] }]
+  }
+}

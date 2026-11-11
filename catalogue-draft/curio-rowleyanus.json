@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-pearls",
+      "title": "NC State Plant Toolbox: Curio rowleyanus",
+      "url": "https://plants.ces.ncsu.edu/plants/curio-rowleyanus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-pearls",
+      "title": "RHS: Curio rowleyanus",
+      "url": "https://www.rhs.org.uk/plants/353584/curio-rowleyanus/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-succulents",
+      "title": "Are succulents safe to have around pets? (ASPCA article)",
+      "url": "https://www.aspca.org/news/are-succulents-safe-have-around-pets",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "curio-rowleyanus",
+      "taxon": {
+        "scientificName": "Curio rowleyanus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "String of pearls",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "String of beads"
+          }
+        ],
+        "synonyms": ["Senecio rowleyanus"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-pearls"],
+          "source": "ncsu-pearls",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water sparingly and let the mix dry mostly out in between; soggy roots are the usual killer."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-pearls"],
+          "source": "ncsu-pearls",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": 27
+          },
+          "unit": "C",
+          "corroboratedBy": ["ncsu-pearls"],
+          "source": "rhs-pearls",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 61,
+            "spread": 91
+          },
+          "unit": "cm",
+          "source": "ncsu-pearls",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["rhs-pearls"],
+          "source": "ncsu-pearls",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["pyrrolizidine_alkaloid"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy"],
+            "source": "ncsu-pearls",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-succulents"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy"],
+            "source": "ncsu-pearls",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-succulents"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-pearls",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-pearls",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-pearls"]
+          }
+        ],
+        "sources": ["ncsu-pearls", "rhs-pearls", "aspca-succulents"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Seneciorowleyanus.jpg",
+          "licence": "PDM-1.0",
+          "creator": "Stickpen",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seneciorowleyanus.jpg",
+          "thumbnail": "curio-rowleyanus.webp"
+        }
+      ],
+      "photoFile": "Seneciorowleyanus.jpg",
+      "tags": {
+        "curated": ["indoor", "trailing", "succulent"]
+      },
+      "provenance": {
+        "notes": "Watering: NC State says tolerates infrequent watering but should not dry out fully; RHS only says sparingly in winter. Mapped to let_top_dry. Light conflict: NC State bright indirect indoors, RHS several hours of direct sun; kept the gentler one. Temperature: summer 21 to 27 C (both), winter NC State 10 to 16 C, RHS 13 to 16 C; kept the higher winter minimum. Size: NC State up to 2 ft tall and 3 ft spread, RHS 10 cm tall and up to 50 cm spread; NC State used. Severity 1 maps NC State low severity and the ASPCA article (stomach upset). Caution: the ASPCA lists generic Senecio species as more serious (liver damage) and the fetched article does not use the name Curio; a vet check would settle it. Growth rate: no page states it."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/curio-rowleyanus/",
+        "https://www.rhs.org.uk/plants/353584/curio-rowleyanus/details",
+        "https://www.aspca.org/news/are-succulents-safe-have-around-pets"
+      ],
+      "lookAlikes": [
+        {
+          "name": "String of bananas (Curio radicans)",
+          "tell": "Pearls has round pea-sized leaves; bananas has curved banana-shaped leaves; dolphins has leaping-dolphin leaves"
+        },
+        {
+          "name": "string of dolphins",
+          "tell": "Pearls has round pea-sized leaves; bananas has curved banana-shaped leaves; dolphins has leaping-dolphin leaves"
+        },
+        {
+          "name": "string of hearts",
+          "tell": "Pearls has round pea-sized leaves; bananas has curved banana-shaped leaves; dolphins has leaping-dolphin leaves"
+        },
+        {
+          "name": "string of turtles",
+          "tell": "Pearls has round pea-sized leaves; bananas has curved banana-shaped leaves; dolphins has leaping-dolphin leaves"
+        }
+      ],
+      "lookAlikeNote": "All Curio strings toxic; bananas reported more toxic by one source. Hearts and turtles are non-toxic",
+      "nameIdeas": ["Pearl Jam", "Pearly", "Pea Pod", "Peas Please", "Rosary"],
+      "links": [
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/collar-de-perlas_3215",
+          "title": "verdeesvida :: Collar de perlas",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/722-cuidados-de-la-planta-senecio-rowleyanus-o-planta-rosario",
+          "title": "Senecio rowleyanus o Planta rosario | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

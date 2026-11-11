@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-ficusb",
+      "title": "NC State Plant Toolbox: Ficus benjamina",
+      "url": "https://plants.ces.ncsu.edu/plants/ficus-benjamina/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-ficusb",
+      "title": "RHS: Ficus benjamina 'Exotica'",
+      "url": "https://www.rhs.org.uk/plants/93230/ficus-benjamina-exotica/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-wfig",
+      "title": "Weeping Fig (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/weeping-fig",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "ficus-benjamina",
+      "taxon": {
+        "scientificName": "Ficus benjamina"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Weeping fig",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Benjamin fig"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-ficusb"],
+          "source": "ncsu-ficusb",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Never let it dry out fully, water less over winter, and avoid moving it, as it sheds leaves when light changes."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-ficusb"],
+          "source": "ncsu-ficusb",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 250,
+            "spread": 150
+          },
+          "unit": "cm",
+          "source": "rhs-ficusb",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-ficusb",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-ficusb",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["ficin", "psoralen", "latex_irritant"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "aspca-wfig",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-ficusb"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "aspca-wfig",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-ficusb", "rhs-ficusb"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "rhs-ficusb",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 2,
+            "symptoms": ["skin_irritation"],
+            "source": "rhs-ficusb",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-wfig", "ncsu-ficusb", "rhs-ficusb"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Ficus-benjamina.jpg",
+          "licence": "PDM-1.0",
+          "creator": "Darsie",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ficus-benjamina.jpg",
+          "thumbnail": "ficus-benjamina.webp"
+        }
+      ],
+      "photoFile": "Ficus-benjamina.jpg",
+      "tags": {
+        "curated": ["indoor", "sheds_leaves_when_moved"]
+      },
+      "provenance": {
+        "notes": "Severities and symptoms are the agent's mapping: the ASPCA page names the agents (ficin, psoralen) and lists dogs, cats and horses as toxic but gives no clinical signs; NC State only tags cats, dogs and horses; RHS (cultivar 'Exotica') says harmful if eaten and a skin allergen for humans and dogs. Skin grade 2 follows the 01e baseline for latex; it is not stated by a fetched page. Watering: NC State 'enough to keep it from drying out fully', RHS moderate and moist but well-drained; mapped to let_top_dry. Size and habit are the RHS cultivar figures (1.5 to 2.5 m by 1 to 1.5 m); NC State says 2 to 10 ft as a houseplant. Temperature: cold-intolerant on both, no range. Humidity: no page gives one."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/ficus-benjamina/",
+        "https://www.rhs.org.uk/plants/93230/ficus-benjamina-exotica/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/weeping-fig"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Rubber plant",
+          "tell": "Benjamina has small glossy pointed leaves on drooping twigs and drops leaves when moved; rubber plant has big leaves"
+        },
+        {
+          "name": "fiddle-leaf fig",
+          "tell": "Benjamina has small glossy pointed leaves on drooping twigs and drops leaves when moved; rubber plant has big leaves"
+        },
+        {
+          "name": "Ficus microcarpa",
+          "tell": "Benjamina has small glossy pointed leaves on drooping twigs and drops leaves when moved; rubber plant has big leaves"
+        }
+      ],
+      "lookAlikeNote": "same",
+      "nameIdeas": ["Benji", "Weepy", "Benjamin Franklin", "Willow", "Sob Story"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/358-cuidados-de-la-planta-ficus-benjamina-o-ficus-de-hoja-pequena",
+          "title": "Ficus benjamina o Ficus de hoja pequeña | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/ficusbenjamina/ficusbenjamina.asp",
+          "title": "Bengiamino - Ficus Benjamina - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.piante.it/ficus-benjamina/",
+          "title": "Ficus benjamina",
+          "publisher": "Piante.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/piante-appartamento/piante-da-interno/ficus-benjamin.asp",
+          "title": "Ficus benjamin - Piante da interno - Pianta fico",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

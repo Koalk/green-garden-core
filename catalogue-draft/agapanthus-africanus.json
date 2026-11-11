@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-agapanthus",
+      "title": "RHS: How to grow agapanthus",
+      "url": "https://www.rhs.org.uk/plants/agapanthus/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-agapanthus",
+      "title": "NC State Plant Toolbox: Agapanthus (genus)",
+      "url": "https://plants.ces.ncsu.edu/plants/agapanthus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "agapanthus-africanus",
+      "taxon": {
+        "scientificName": "Agapanthus africanus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "African lily",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Agapanthus"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Lily of the Nile"
+          },
+          {
+            "lang": "es",
+            "name": "Agapanto",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Lirio africano",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Agapanto",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Giglio africano",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-agapanthus",
+          "corroboratedBy": ["ncsu-agapanthus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Once settled it needs little water outside, but a pot should not dry out completely from summer to early autumn or the flower buds suffer; keep it from sitting wet in winter."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-agapanthus",
+          "corroboratedBy": ["ncsu-agapanthus"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-agapanthus",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-agapanthus",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "full_sun", "tender"]
+      },
+      "provenance": {
+        "notes": "Both pages are genus-level, not A. africanus alone; RHS: deciduous types are the hardiest, evergreens often tender and best overwintered in a cool greenhouse (A. praecox is the evergreen one that shops in Spain sell; it is not stored as a synonym). Watering: RHS says little water once established, container plants should not dry out completely from summer to early autumn; NC State gives no frequency; let_top_dry is the agent's mapping, interval 5 days a guess. Conflict: RHS says pot-bound plants flower poorly and to pot up 2.5 to 5 cm every two or three years; NC State says let it become rootbound because it blooms best that way; the RHS reading is the one the tip follows. Light: RHS full sun, shade reduces flowering; NC State full sun to partial shade. Size left unknown: RHS 20 to 60 cm up to 1.5 m by cultivar, no spread. Growth medium and habit erect or arching are the NC State genus reading. Hardiness: RHS gives no rating, wrap pots in fleece from November to early April; NC State USDA zones 8a to 11b. Toxicity UNKNOWN for pets: no pet source was found (no ASPCA page for agapanthus turned up in search; NC State has no pet tags). NC State rates the sap low severity for humans (may irritate skin and eyes, mouth ulceration) but its own 'causes contact dermatitis' field says no; because the status is unknown no human exposure is stored. On the pets-unknown list. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/agapanthus/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/agapanthus/"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/44-cuidados-de-la-planta-agapanthus-africanus-agapanto-o-flor-del-amor",
+          "title": "Agapanthus africanus, Agapanto o Flor del Amor | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-flor_3/agapanto_3088",
+          "title": "verdeesvida :: Agapanto",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-platycerium-bifurcatum",
+      "title": "NC State Plant Toolbox: Platycerium bifurcatum",
+      "url": "https://plants.ces.ncsu.edu/plants/platycerium-bifurcatum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "platycerium-bifurcatum",
+      "taxon": {
+        "scientificName": "Platycerium bifurcatum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Staghorn fern",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Elkhorn fern"
+          },
+          {
+            "lang": "es",
+            "name": "Cuerno de alce",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Helecho cuerno de alce",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Acrostichum bifurcatum", "Alcicornium bifurcatum"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-platycerium-bifurcatum",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water the crown and roots well, then let them dry slightly before the next soak; never let the plant dry out completely."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-platycerium-bifurcatum",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 91
+          },
+          "unit": "cm",
+          "source": "ncsu-platycerium-bifurcatum",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-platycerium-bifurcatum",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-platycerium-bifurcatum",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-platycerium-bifurcatum",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-platycerium-bifurcatum",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["ncsu-platycerium-bifurcatum"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Cuerno de alce planta 02.jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Sangianense",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cuerno_de_alce_planta_02.jpg",
+          "thumbnail": "platycerium-bifurcatum.webp"
+        }
+      ],
+      "photoFile": "Cuerno de alce planta 02.jpg",
+      "tags": {
+        "curated": ["indoor", "fern", "epiphyte"]
+      },
+      "provenance": {
+        "notes": "One fetched page only (NC State); the ASPCA staghorn fern URL returned 404. Watering: page says let roots dry slightly but never completely, no frequency; stored as let_top_dry (mapping) with a guess interval. Light: dappled sun to partial shade (2 to 6 hours direct), mapped to bright_indirect. Temperature: no range given (zones 9a to 13b only; outdoors only in zone 10), so left unknown. Size 2 to 3 ft tall and wide, upper end stored. Toxicity: the page only tags it non-toxic for cats and dogs (no text, no symptoms), so severity 0 rests on one source; no human data."
+      },
+      "sourcesRead": ["https://plants.ces.ncsu.edu/plants/platycerium-bifurcatum/"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/635-cuidados-de-la-planta-platycerium-bifurcatum-o-helecho-australiano",
+          "title": "Platycerium bifurcatum o Helecho australiano | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/cuerno-de-alce--cuerno-de-ciervo_3178",
+          "title": "verdeesvida :: Cuerno de alce, Cuerno de ciervo",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/platicerium/platicerium.asp",
+          "title": "Felce a corna di cervo, Alicorne - Platycerium bifurcatum - Appartamento",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

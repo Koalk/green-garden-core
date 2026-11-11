@@ -1,0 +1,18 @@
+{
+  "@context": "http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld",
+  "meta": {
+    "publisher": "Environment Agency",
+    "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "documentation": "http://environment.data.gov.uk/flood-monitoring/doc/reference",
+    "version": "0.9",
+    "comment": "Status: Beta service",
+    "hasFormat": [
+      "http://environment.data.gov.uk/flood-monitoring/id/stations/287283TP/readings.csv?parameter=rainfall&since=2026-11-02T00%3A00%3A00Z&_sorted&_limit=400",
+      "http://environment.data.gov.uk/flood-monitoring/id/stations/287283TP/readings.rdf?parameter=rainfall&since=2026-11-02T00%3A00%3A00Z&_sorted&_limit=400",
+      "http://environment.data.gov.uk/flood-monitoring/id/stations/287283TP/readings.ttl?parameter=rainfall&since=2026-11-02T00%3A00%3A00Z&_sorted&_limit=400",
+      "http://environment.data.gov.uk/flood-monitoring/id/stations/287283TP/readings.html?parameter=rainfall&since=2026-11-02T00%3A00%3A00Z&_sorted&_limit=400"
+    ],
+    "limit": 400
+  },
+  "items": []
+}

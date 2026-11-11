@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-rhododendron-guide",
+      "title": "RHS: How to grow rhododendrons",
+      "url": "https://www.rhs.org.uk/plants/rhododendron/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-indoor-azaleas",
+      "title": "RHS: Azaleas indoors (Rhododendron simsii)",
+      "url": "https://www.rhs.org.uk/plants/rhododendron/indoor-azaleas",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-rhododendron-indicum",
+      "title": "NC State Plant Toolbox: Rhododendron indicum",
+      "url": "https://plants.ces.ncsu.edu/plants/rhododendron-indicum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-azalea",
+      "title": "Azalea (toxic and non-toxic plants; Rhododendron spp.)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/azalea",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "rhododendron",
+      "taxon": {
+        "scientificName": "Rhododendron"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Azalea",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Rhododendron"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Indoor azalea"
+          },
+          {
+            "lang": "es",
+            "name": "Azalea",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Rododendro",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Azalea",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Rododendro",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-indoor-azaleas",
+          "corroboratedBy": ["rhs-rhododendron-guide", "ncsu-rhododendron-indicum"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Never let the compost dry out completely, and use rainwater where you can, as hard tap water harms acid-loving plants."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-rhododendron-guide",
+          "corroboratedBy": ["rhs-indoor-azaleas", "ncsu-rhododendron-indicum"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-rhododendron-indicum",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-rhododendron-indicum",
+          "corroboratedBy": ["rhs-rhododendron-guide"],
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["grayanotoxin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "cardiac"],
+            "source": "aspca-azalea",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "cardiac"],
+            "source": "aspca-azalea",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-azalea", "ncsu-rhododendron-indicum"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "part_shade", "acid_soil"]
+      },
+      "provenance": {
+        "notes": "Genus-level entry: azalea hybrids (small, indoor or garden) and rhododendrons (large shrubs) share one entry; scientific name is the genus. Needs acid soil or ericaceous compost: RHS says moist but well-drained acid soil, pH 5.0 to 6.0, rich in organic matter; on alkaline soil grow in containers. Indoor forced azalea (R. simsii, RHS indoor page) is frost tender and wants a cool humid place, never dry; outdoor types mostly fully hardy, dappled shade. Watering: keep_moist is the agent's mapping, 4 days is a guess. Sources differ in plant: the RHS guide is the outdoor genus, the RHS indoor page is R. simsii, the NC State page is R. indicum; no NC State genus page was found. Size: RHS says 'variable' (indoor azalea 45 to 60 cm), NC State R. indicum 60 to 90 cm; not stored. Growth slow: NC State R. indicum only. Pots: loam-based ericaceous compost, repot every other year (RHS). Toxicity: ASPCA lists azalea (Rhododendron spp.) toxic to dogs, cats and horses: grayanotoxin, vomiting, diarrhoea, weakness, cardiac failure; severity 3 is our grading (cardiac failure named). NC State grades R. indicum 'low severity' ('moderate amounts pose little hazard'), a conflict with ASPCA; the higher grade is kept for pets. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/rhododendron/growing-guide",
+        "https://www.rhs.org.uk/plants/rhododendron/indoor-azaleas",
+        "https://plants.ces.ncsu.edu/plants/rhododendron-indicum/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/azalea"
+      ]
+    }
+  ]
+}

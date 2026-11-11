@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-hosta",
+      "title": "RHS: How to grow hostas",
+      "url": "https://www.rhs.org.uk/plants/hosta/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-hosta",
+      "title": "NC State Plant Toolbox: Hosta (genus)",
+      "url": "https://plants.ces.ncsu.edu/plants/hosta/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-hosta",
+      "title": "Hosta (toxic and non-toxic plants list; listed as Hosta plataginea)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hosta",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "hosta",
+      "taxon": {
+        "scientificName": "Hosta"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Hosta",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Plantain lily"
+          },
+          {
+            "lang": "es",
+            "name": "Hosta",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Lirio de los llantenes",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Hosta",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Funkia",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-hosta",
+          "corroboratedBy": ["ncsu-hosta"],
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Pots dry out fast in summer, so water regularly while the plant is in leaf; dry compost browns the leaf edges. In winter keep the pot from getting soggy."
+        },
+        "light": {
+          "value": "medium",
+          "source": "rhs-hosta",
+          "corroboratedBy": ["ncsu-hosta"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "rosette",
+          "source": "rhs-hosta",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponins"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy"],
+            "source": "aspca-hosta",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy"],
+            "source": "aspca-hosta",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-hosta", "ncsu-hosta"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "foliage", "part_shade", "hardy"]
+      },
+      "provenance": {
+        "notes": "Genus-level entry (starter row 58); cultivar sizes run from miniature to giant, so size is left unknown (NC State: 'Blue Mouse Ears' 8 in tall, 'Empress Wu' up to 50 in). Look-alikes: Aspidistra and Bergenia leaves (01g). Watering: RHS says containers need regular watering in summer, soil at least slightly damp, miniatures dislike wet roots in winter; NC State prefers moist, well-drained soil and warns against soggy soil in winter; no frequency, so interval 3 days is a guess. Light: RHS partial or light to medium shade (blue-leaved types light shade, yellow-leaved some sun); NC State morning sun and dappled shade, blue forms deeper shade; stored medium. Hardiness: RHS fully hardy, dies back in late autumn; NC State needs a dormant spell below 40 F and foliage dies back at 28 F; no temperature stored. Growth rate: only a model summary of the truncated NC State page says medium, so unknown (the fetch cut the NC State page; verbatim part covered watering, light, dormancy, pets). Habit rosette is a mapping of 'clumping herbaceous perennial'. Toxicity: ASPCA lists toxic to dogs and cats (saponins; vomiting, diarrhoea, depression), no severity word; NC State says all parts are toxic to cats, dogs and horses with no agent or signs. Severity 1 is our grading, depression mapped to lethargy. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/hosta/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/hosta/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hosta"
+      ]
+    }
+  ]
+}

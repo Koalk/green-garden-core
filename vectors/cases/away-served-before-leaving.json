@@ -1,0 +1,27 @@
+{
+  "name": "away-served-before-leaving",
+  "description": "Away days that leave the start of the window free: the spider plant is watered on the one available day inside its window and stays at thrive.",
+  "why": "02a 5.4: unavailable days are excluded from the candidate days; no warning when the band can still be met. Spider plant (let_top_dry, I=7, last 2026-10-28) has window 11-02 to 11-06; 11-03 to 11-08 are unavailable, so 11-02 is the only candidate. Hand-computed.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-02",
+    "horizonDays": 6,
+    "prefs": {
+      "unavailableDates": [
+        "2026-11-03",
+        "2026-11-04",
+        "2026-11-05",
+        "2026-11-06",
+        "2026-11-07",
+        "2026-11-08"
+      ]
+    },
+    "plants": [
+      { "id": "spider", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-28" }
+    ]
+  },
+  "expected": {
+    "days": [{ "date": "2026-11-02", "plantIds": ["spider"] }],
+    "plants": [{ "plantId": "spider", "outlook": { "level": "thrive", "severity": 0 } }]
+  }
+}

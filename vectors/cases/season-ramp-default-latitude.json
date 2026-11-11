@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-default-latitude",
+  "description": "Without a latitude the northern default is the UK's (55): 17 October is 0.5.",
+  "why": "UK and Spain defaults; with no setting the engine assumes about 55 N. Same value as season-ramp-uk-mid.",
+  "fn": "restWeight",
+  "input": { "date": "2026-10-17", "hemisphere": "north" },
+  "expected": { "weight": 0.5 }
+}

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-boston",
+      "title": "NC State Plant Toolbox: Boston fern",
+      "url": "https://plants.ces.ncsu.edu/plants/nephrolepis-exaltata/common-name/boston-fern/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-boston",
+      "title": "RHS: Nephrolepis exaltata 'Bostoniensis'",
+      "url": "https://www.rhs.org.uk/plants/58296/nephrolepis-exaltata-bostoniensis/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-boston",
+      "title": "Boston Fern (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boston-fern",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "nephrolepis-exaltata",
+      "taxon": {
+        "scientificName": "Nephrolepis exaltata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Boston fern",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Sword fern"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-boston"],
+          "source": "ncsu-boston",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix evenly damp, never dry and never sitting in water; cut back in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-boston"],
+          "source": "ncsu-boston",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 21
+          },
+          "unit": "C",
+          "source": "ncsu-boston",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 91
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-boston"],
+          "source": "ncsu-boston",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-boston",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-boston",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-boston",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-boston"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-boston",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-boston"]
+          }
+        ],
+        "sources": ["ncsu-boston", "aspca-boston"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Helecho de Boston (Nephrolepis exaltata).jpg",
+          "licence": "CC0-1.0",
+          "creator": "Nathaly 1106",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helecho_de_Boston_(Nephrolepis_exaltata).jpg",
+          "thumbnail": "nephrolepis-exaltata.webp"
+        }
+      ],
+      "photoFile": "Helecho de Boston (Nephrolepis exaltata).jpg",
+      "tags": {
+        "curated": ["indoor", "fern", "high_humidity"]
+      },
+      "provenance": {
+        "notes": "Habit conflict: RHS says bushy, upright then drooping; NC State says cascading. Stored as bushy (from_knowledge_verify). Temperature 60 to 70 F from NC State converted to C. Size: NC State 2 to 3 ft, RHS 90 cm, upper values used. NC State tags the plant non-toxic for cats and dogs; the ASPCA page agrees. Asparagus fern, a common mix-up, is toxic."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/nephrolepis-exaltata/common-name/boston-fern/",
+        "https://www.rhs.org.uk/plants/58296/nephrolepis-exaltata-bostoniensis/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boston-fern"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Asparagus fern (Asparagus setaceus, A. densiflorus)",
+          "tell": "Boston fern has flat leaflets on arching fronds with spore dots underneath; asparagus fern has wiry spiny stems, needle-like cladodes and red berries"
+        },
+        {
+          "name": "other Nephrolepis",
+          "tell": "Boston fern has flat leaflets on arching fronds with spore dots underneath; asparagus fern has wiry spiny stems, needle-like cladodes and red berries"
+        },
+        {
+          "name": "maidenhair",
+          "tell": "Boston fern has flat leaflets on arching fronds with spore dots underneath; asparagus fern has wiry spiny stems, needle-like cladodes and red berries"
+        }
+      ],
+      "lookAlikeNote": "TOXIC look-alike: asparagus fern is toxic to cats and dogs",
+      "nameIdeas": ["Fernando", "Boston Bruins", "Fern Gully", "Frond Friend", "Fernie Sanders"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/553-cuidados-de-la-planta-nephrolepis-exaltata-helecho-rizado-o-nefrolepis",
+          "title": "Nephrolepis exaltata, Helecho rizado o Nefrolepis | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/nephrolepis/nephrolepis.asp",
+          "title": "Felce di Boston - Nephrolepis - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

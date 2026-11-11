@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "ncsu-festuca-glauca",
+      "title": "NC State Plant Toolbox: Festuca glauca",
+      "url": "https://plants.ces.ncsu.edu/plants/festuca-glauca/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-festuca-glauca",
+      "title": "Missouri Botanical Garden Plant Finder: Festuca glauca",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285404&isprofile=0&basic=festuca%20glauca",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-festuca-glauca",
+      "title": "RHS Plant Profile: Festuca glauca",
+      "url": "https://www.rhs.org.uk/plants/7181/festuca-glauca-vill/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "festuca-glauca",
+      "taxon": {
+        "scientificName": "Festuca glauca"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Blue fescue",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Grey fescue"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Ornamental blue fescue grass"
+          },
+          {
+            "lang": "es",
+            "name": "Festuca azul",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Festuca",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Festuca azzurra",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Festuca glauca",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Festuca cinerea var. glauca", "Festuca ovina 'Glauca'"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-festuca-glauca",
+          "corroboratedBy": ["mbg-festuca-glauca", "rhs-festuca-glauca"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "mbg-festuca-glauca",
+          "corroboratedBy": ["ncsu-festuca-glauca"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water sparingly and let the compost dry between waterings; it dislikes wet, poorly drained soil."
+        },
+        "light": {
+          "value": "direct",
+          "source": "mbg-festuca-glauca",
+          "corroboratedBy": ["ncsu-festuca-glauca", "rhs-festuca-glauca"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 30,
+            "spread": 45
+          },
+          "unit": "cm",
+          "source": "ncsu-festuca-glauca",
+          "corroboratedBy": ["mbg-festuca-glauca", "rhs-festuca-glauca"],
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "ncsu-festuca-glauca",
+          "corroboratedBy": ["mbg-festuca-glauca"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-festuca-glauca",
+          "corroboratedBy": ["mbg-festuca-glauca", "rhs-festuca-glauca"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "mbg-festuca-glauca",
+          "corroboratedBy": ["ncsu-festuca-glauca"],
+          "confidence": "checked"
+        },
+        "dormancy": {
+          "value": "none",
+          "source": "ncsu-festuca-glauca",
+          "corroboratedBy": ["mbg-festuca-glauca"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "mbg-festuca-glauca",
+          "corroboratedBy": ["ncsu-festuca-glauca", "rhs-festuca-glauca"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "mbg-festuca-glauca",
+          "corroboratedBy": ["ncsu-festuca-glauca", "rhs-festuca-glauca"],
+          "confidence": "checked"
+        },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-festuca-glauca",
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Plant it 20 to 25 cm apart in poor, well-drained soil, trim it back in early spring and divide the clumps every two or three years because the centre dies out."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": ["ground", "outdoor_pot", "full_sun", "drought_tolerant", "foliage"]
+      },
+      "provenance": {
+        "notes": "Row 103, blue fescue. Care: NC State, Missouri BG and RHS agree on full sun, free drainage, drought tolerance and clumps that die out in the centre (divide every 2 to 3 years). Size 30 by 45 cm is the NC State and Missouri BG figure (23 to 30 cm tall, 30 to 45 cm spread); RHS only gives 10 to 50 cm. Hardiness H5 is the RHS rating (NC State zone 4 to 8, Missouri BG 4 to 8). Semi-evergreen per NC State and Missouri BG, so dormancy none. NC State and Missouri BG both say it declines in hot, humid summers. Growth rate not stated, left unknown. Toxicity: no page read states any and no ASPCA page was found, so people and pets are unknown. Es and it names are machine drafts. The Missouri BG Boulder Blue page was read for comparison and not cited as a source."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/festuca-glauca/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285404&isprofile=0&basic=festuca%20glauca",
+        "https://www.rhs.org.uk/plants/7181/festuca-glauca-vill/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Sheep's fescue (Festuca ovina)",
+          "tell": "Greener and less strongly blue; blue fescue is the glaucous, silver-blue form."
+        }
+      ],
+      "lookAlikeNote": "Many named cultivars (Elijah Blue, Boulder Blue, Golden Toupee) share this key; Boulder Blue tolerates heat and humidity better (NC State).",
+      "photos": [],
+      "links": []
+    }
+  ]
+}

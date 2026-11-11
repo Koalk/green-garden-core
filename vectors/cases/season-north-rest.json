@@ -1,0 +1,21 @@
+{
+  "name": "season-north-rest",
+  "description": "Automatic season factor (C10), northern hemisphere in December: a let_top_dry plant with I=7 and rest factor 1.5 waits 11 days.",
+  "why": "PROVISIONAL. Rest season is November to February (north) and May to August (south), taken from the date of the last watering. 7 x 1.5 = 10.5 rounds half up to 11; band [8,14] from 2026-12-01 gives 12-09 to 12-15.",
+  "input": {
+    "today": "2026-12-02",
+    "hemisphere": "north",
+    "plants": [
+      {
+        "id": "pothos",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "restFactor": 1.5,
+        "lastWatered": "2026-12-01"
+      }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "pothos", "earliest": "2026-12-09", "latest": "2026-12-15" }]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-photinia-x-fraseri",
+      "title": "NC State Plant Toolbox: Photinia x fraseri",
+      "url": "https://plants.ces.ncsu.edu/plants/photinia-x-fraseri/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-photinia-x-fraseri-red-robin",
+      "title": "RHS Plant Profile: Photinia x fraseri 'Red Robin'",
+      "url": "https://www.rhs.org.uk/plants/94829/photinia-%C3%97-fraseri-red-robin/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "photinia-x-fraseri",
+      "taxon": {
+        "scientificName": "Photinia x fraseri"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Photinia 'Red Robin'",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Red Robin"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Christmas berry"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Fraser's photinia"
+          },
+          {
+            "lang": "es",
+            "name": "Fotinia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Fotinia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Photinia fraseri"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-photinia-x-fraseri-red-robin",
+          "confidence": "checked"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-photinia-x-fraseri",
+          "corroboratedBy": ["rhs-photinia-x-fraseri-red-robin"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a pot when the top of the compost has dried; it dislikes soggy roots and wet leaves."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-photinia-x-fraseri",
+          "corroboratedBy": ["rhs-photinia-x-fraseri-red-robin"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 600,
+            "spread": 300
+          },
+          "unit": "cm",
+          "source": "rhs-photinia-x-fraseri-red-robin",
+          "corroboratedBy": ["ncsu-photinia-x-fraseri"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-photinia-x-fraseri",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "rhs-photinia-x-fraseri-red-robin",
+          "corroboratedBy": ["ncsu-photinia-x-fraseri"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-photinia-x-fraseri",
+          "corroboratedBy": ["rhs-photinia-x-fraseri-red-robin"],
+          "confidence": "from_knowledge_verify"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "ncsu-photinia-x-fraseri",
+          "confidence": "from_knowledge_verify"
+        },
+        "dormancy": {
+          "value": "none",
+          "source": "ncsu-photinia-x-fraseri",
+          "corroboratedBy": ["rhs-photinia-x-fraseri-red-robin"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-photinia-x-fraseri",
+          "corroboratedBy": ["rhs-photinia-x-fraseri-red-robin"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "ncsu-photinia-x-fraseri",
+          "corroboratedBy": ["rhs-photinia-x-fraseri-red-robin"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants through their first dry spells; established plants cope with dry weather but not with waterlogged soil."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "foliage", "full_sun"]
+      },
+      "provenance": {
+        "notes": "Row 96, hedge shrub, the 'Red Robin' hybrid of Photinia glabra and P. serratifolia. Two care sources only (NC State and the RHS cultivar page); no Missouri BG or Clemson page found and ASPCA has no photinia entry. Size: RHS 4 to 8 m by 2.5 to 4 m after 10 to 20 years, NC State 10 to 20 ft by 10 to 15 ft; 600 by 300 cm is the agent's mapping. Hardiness not stored: the RHS page read does not show the H value in its text; NC State USDA 7 to 9. Toxicity: no source grades it; RHS says the fruit is not to be eaten and advises gloves and mentions pets (fruit not to be eaten), which is not a grade, so status unknown and pets show unknown. Pruning in late spring gives a new red flush but removes the flowers (NC State), RHS suggests light pruning when the first colour fades. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/photinia-x-fraseri/",
+        "https://www.rhs.org.uk/plants/94829/photinia-%C3%97-fraseri-red-robin/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Glossy photinia (Photinia glabra) and its hybrids",
+          "tell": "Several photinias are sold under the 'Red Robin' name."
+        }
+      ],
+      "lookAlikeNote": "RHS: the fruit is ornamental and not to be eaten, and gloves are advised when handling it.",
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/624-cuidados-de-la-planta-photinia-x-fraseri-o-fotinia",
+          "title": "Photinia x fraseri o Fotinia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

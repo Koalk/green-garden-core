@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-mentha",
+      "title": "NC State Plant Toolbox: Mentha spicata",
+      "url": "https://plants.ces.ncsu.edu/plants/mentha-spicata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-mentha",
+      "title": "RHS: Mentha spicata",
+      "url": "https://www.rhs.org.uk/plants/11055/mentha-spicata/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-mint-guide",
+      "title": "RHS: How to grow mint",
+      "url": "https://www.rhs.org.uk/herbs/mint/grow-your-own",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-mint",
+      "title": "Mint, Mentha sp. (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mint",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "mentha-spicata",
+      "taxon": {
+        "scientificName": "Mentha spicata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Spearmint",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Garden mint"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-mentha", "rhs-mint-guide"],
+          "source": "ncsu-mentha",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the pot evenly moist, check it often in hot dry weather, and keep it in its own pot because it spreads."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-mentha", "rhs-mint-guide"],
+          "source": "ncsu-mentha",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 61,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-mentha",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "corroboratedBy": ["rhs-mentha"],
+          "source": "ncsu-mentha",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "corroboratedBy": ["rhs-mentha"],
+          "source": "ncsu-mentha",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["essential_oils"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "aspca-mint",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-mentha"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "aspca-mint",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-mentha"]
+          }
+        ],
+        "sources": ["aspca-mint", "ncsu-mentha"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "20140727Mentha spicata5.jpg",
+          "licence": "CC0-1.0",
+          "creator": "AnRo0002",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:20140727Mentha_spicata5.jpg",
+          "thumbnail": "mentha-spicata.webp"
+        }
+      ],
+      "photoFile": "20140727Mentha spicata5.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "herb", "dormant_season", "spreads_keep_in_pot"]
+      },
+      "provenance": {
+        "notes": "Spearmint only; peppermint and the many other Mentha species have their own care. Pennyroyal (Mentha pulegium) is listed by RHS as harmful if eaten. Spreads by runners: NC State, RHS and Illinois Extension all say grow it in a pot or contain the roots. Dies back in winter and regrows (RHS guide), with no numbers for the rest, so the factor is unknown; the pot can be brought indoors to a sunny windowsill. Watering: NC State moist, rich soil and poor in dry soil; RHS moist and water pots in summer; guide evenly moist. Size: NC State 1 to 2 ft both ways (stored); RHS up to 100 cm tall and wide, and 1 to 1.5 m spread in the table: it grows bigger in the ground. Toxicity: ASPCA covers the genus Mentha (essential oils; vomiting and diarrhoea after large amounts) and calls it toxic to dogs and cats; NC State rates humans low severity (same oils, same symptoms in quantity) and tags it a problem for cats and dogs. Graded 1 (agent mapping; 01c said mild). Humans eat it, so no child line is stored. Illinois Extension page read: nothing on toxicity or watering."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/mentha-spicata/",
+        "https://www.rhs.org.uk/plants/11055/mentha-spicata/details",
+        "https://www.rhs.org.uk/herbs/mint/grow-your-own",
+        "https://extension.illinois.edu/herbs/mint",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mint"
+      ]
+    }
+  ]
+}

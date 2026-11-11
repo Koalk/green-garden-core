@@ -1,0 +1,67 @@
+[
+  {
+    "file": ".env.example",
+    "kind": "email",
+    "reason": "SEPA's public hydrometry request address, named so users can ask for a key"
+  },
+  {
+    "file": "packages/providers/src/sepa.ts",
+    "kind": "email",
+    "reason": "SEPA's public hydrometry request address in a code comment"
+  },
+  {
+    "file": "scripts/public-check-lib.mjs",
+    "kind": "private-path",
+    "reason": "the rule patterns that detect private paths"
+  },
+  {
+    "file": "LICENSE",
+    "kind": "private-matter",
+    "reason": "standard wording of the AGPL text"
+  },
+  {
+    "file": "docs/licensing/CLA.md",
+    "kind": "private-matter",
+    "reason": "standard wording of the contributor agreement"
+  },
+  {
+    "file": "scripts/public-check-lib.mjs",
+    "kind": "session-id",
+    "reason": "the rule patterns that detect it"
+  },
+  {
+    "file": "scripts/public-check.test.mjs",
+    "kind": "session-id",
+    "reason": "test vectors for the rule"
+  },
+  {
+    "file": "scripts/public-check-lib.mjs",
+    "kind": "private-matter",
+    "reason": "the rule patterns that detect it"
+  },
+  {
+    "file": "scripts/public-check.test.mjs",
+    "kind": "private-matter",
+    "reason": "test vectors for the rule"
+  },
+  {
+    "file": "scripts/public-check-lib.mjs",
+    "kind": "decision-date",
+    "reason": "the rule patterns that detect it"
+  },
+  {
+    "file": "scripts/public-check.test.mjs",
+    "kind": "decision-date",
+    "reason": "test vectors for the rule"
+  },
+  {
+    "file": "scripts/public-check-lib.mjs",
+    "kind": "owner-name",
+    "reason": "the rule patterns that detect it"
+  },
+  {
+    "file": "scripts/public-check.test.mjs",
+    "kind": "owner-name",
+    "reason": "test vectors for the rule"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "amount-hint-clamp-more",
+  "description": "Watering amount for a 15 cm let_top_dry pot (350 ml) when the low clamp bit and moved 1.5 into the amount: 500 ml, and the hint says 'more'.",
+  "why": "02a 4.1 gives 333 ml for let_top_dry in a 15 cm pot (amount-hint-15cm-pot); times the amount factor 1.5 = 500 ml, shown rounded to 50 ml. adjust 'more' because the factor is at least 1.1.",
+  "fn": "wateringHint",
+  "input": { "style": "let_top_dry", "potDiameterCm": 15, "amountFactor": 1.5 },
+  "expected": { "volumeMl": 500, "adjust": "more", "calibration": null }
+}

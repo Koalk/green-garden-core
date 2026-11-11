@@ -1,0 +1,35 @@
+{
+  "name": "green-garden-core",
+  "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "pnpm -r test",
+    "test:scripts": "node --test \"scripts/*.test.mjs\"",
+    "dev": "pnpm --filter @green-garden/web-ui start",
+    "check:boundaries": "node scripts/check-boundaries.mjs",
+    "check:licences": "node scripts/check-licences.mjs",
+    "check:spdx": "node scripts/check-spdx.mjs",
+    "check:no-network": "node scripts/check-no-network.mjs",
+    "check:public": "node scripts/public-check.mjs",
+    "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test && pnpm test:scripts && pnpm check:boundaries && pnpm check:licences && pnpm check:spdx && pnpm check:no-network && pnpm check:public && pnpm i18n:check",
+    "i18n:check": "node scripts/i18n.mjs check",
+    "i18n:new": "node scripts/i18n.mjs new"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.0"
+  }
+}

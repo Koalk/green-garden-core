@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-ulmus-parvifolia",
+      "title": "NC State Plant Toolbox: Ulmus parvifolia",
+      "url": "https://plants.ces.ncsu.edu/plants/ulmus-parvifolia/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "ulmus-parvifolia",
+      "taxon": {
+        "scientificName": "Ulmus parvifolia"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Chinese elm",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Chinese elm bonsai"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Lacebark elm"
+          },
+          {
+            "lang": "es",
+            "name": "Olmo chino",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Olmo cinese",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Bonsai pots dry fast: water when the top of the mix starts to dry, and never leave it standing wet or bone dry."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-ulmus-parvifolia",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-ulmus-parvifolia",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-ulmus-parvifolia",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Dwarf Chinese Elm (Ulmus parvifolia) at Adelaide Zoo.jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "ProtoKiwi",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwarf_Chinese_Elm_(Ulmus_parvifolia)_at_Adelaide_Zoo.jpg",
+          "thumbnail": "ulmus-parvifolia.webp"
+        }
+      ],
+      "photoFile": "Dwarf Chinese Elm (Ulmus parvifolia) at Adelaide Zoo.jpg",
+      "tags": {
+        "curated": ["bonsai", "outdoor", "tree"]
+      },
+      "provenance": {
+        "notes": "One fetched page (NC State), written for the landscape tree: nothing on bonsai care. ASPCA page returned no entry, RHS URL 404, MBG certificate error, so toxicity stays UNKNOWN (never show as safe). Light: full sun to partial shade, mapped to direct. Hardiness USDA 5b to 10a, no temperature range and no word on frost protection for pots, so left unknown. Size 40 to 50 ft as a tree; not stored because it would mislead for a bonsai. Growth rate conflict: the attribute table says medium, the text says quick; the lower one kept. Watering style left unknown: the page gives soil moisture classes only."
+      },
+      "sourcesRead": ["https://plants.ces.ncsu.edu/plants/ulmus-parvifolia/"]
+    }
+  ]
+}

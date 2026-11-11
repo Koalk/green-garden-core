@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "clemson-strelitzia",
+      "title": "Bird of Paradise",
+      "url": "https://hgic.clemson.edu/factsheet/bird-of-paradise/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-strelitzia",
+      "title": "NC State Plant Toolbox: Strelitzia reginae",
+      "url": "https://plants.ces.ncsu.edu/plants/strelitzia-reginae/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "wisc-strelitzia",
+      "title": "Bird of Paradise, Strelitzia reginae",
+      "url": "https://hort.extension.wisc.edu/articles/bird-of-paradise-strelitzia-reginae/",
+      "publisher": "University of Wisconsin Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "strelitzia-reginae",
+      "taxon": {
+        "scientificName": "Strelitzia reginae"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Bird of paradise",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["wisc-strelitzia"],
+          "source": "clemson-strelitzia",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.6,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Hungry for water in summer, much less in winter; split leaves are mostly about dry air."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["wisc-strelitzia", "ncsu-strelitzia"],
+          "source": "clemson-strelitzia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 10,
+            "max": 21
+          },
+          "unit": "C",
+          "source": "clemson-strelitzia",
+          "confidence": "from_knowledge_verify"
+        },
+        "humidityPercent": {
+          "value": {
+            "min": 60,
+            "max": null
+          },
+          "unit": "%",
+          "source": "clemson-strelitzia",
+          "confidence": "checked"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 152,
+            "spread": 152
+          },
+          "unit": "cm",
+          "source": "clemson-strelitzia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-strelitzia",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "clemson-strelitzia",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-strelitzia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-strelitzia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy"],
+            "source": "ncsu-strelitzia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-strelitzia"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "20260411 Strelitzia reginae.jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "Flocci Nivis",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:20260411_Strelitzia_reginae.jpg",
+          "thumbnail": "strelitzia-reginae.webp"
+        }
+      ],
+      "photoFile": "20260411 Strelitzia reginae.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Temperature combines Clemson's night 50-55 F and day 65-70 F into one range (agent's mapping). Size: Clemson about 5 ft by 5 ft, NC State 3-4 ft by 3-4 ft; Clemson stored. Growth: Wisconsin says slow-growing for the genus; NC State medium stored. NC State: toxic to cats, dogs and horses, fruit and seeds mainly; humans low severity."
+      },
+      "sourcesRead": [
+        "https://hgic.clemson.edu/factsheet/bird-of-paradise/",
+        "https://plants.ces.ncsu.edu/plants/strelitzia-reginae/",
+        "https://hort.extension.wisc.edu/articles/bird-of-paradise-strelitzia-reginae/"
+      ],
+      "lookAlikes": [
+        {
+          "name": "White bird of paradise (Strelitzia nicolai)",
+          "tell": "S. reginae has paddle leaves on stalks and orange-and-blue crane-head flowers; nicolai grows into a tall tree with white flowers; Caesalpinia is a garden shrub with poisonous pods"
+        },
+        {
+          "name": "Heliconia",
+          "tell": "S. reginae has paddle leaves on stalks and orange-and-blue crane-head flowers; nicolai grows into a tall tree with white flowers; Caesalpinia is a garden shrub with poisonous pods"
+        },
+        {
+          "name": "Caesalpinia gilliesii",
+          "tell": "S. reginae has paddle leaves on stalks and orange-and-blue crane-head flowers; nicolai grows into a tall tree with white flowers; Caesalpinia is a garden shrub with poisonous pods"
+        }
+      ],
+      "lookAlikeNote": "Caesalpinia gilliesii is more toxic (outdoor shrub)",
+      "nameIdeas": ["Birdie", "Strelitzia Stan", "Crane", "Big Bird", "Paradise Pete"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/752-cuidados-de-la-planta-strelitzia-reginae-o-ave-del-paraiso",
+          "title": "Strelitzia reginae o Ave del Paraiso | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/singolepiante/strelitzia/strelitzia.asp",
+          "title": "Uccello del paradiso - Strelizia alba - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

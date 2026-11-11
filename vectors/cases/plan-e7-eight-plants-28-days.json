@@ -1,0 +1,33 @@
+{
+  "name": "plan-e7-eight-plants-28-days",
+  "description": "02a E7: the E6 collection without Fern and Calathea, 28 days from 2026-11-02: 7 combined days instead of 15.",
+  "why": "02a 5.3 table: E7 naive 15, combined 7, saving 53%, all plants on their ideal count. The day list is not printed for the revised model, so only the summary and counts are pinned.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-02",
+    "horizonDays": 28,
+    "plants": [
+      { "id": "monstera", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-30" },
+      { "id": "pothos", "style": "let_top_dry", "intervalDays": 8, "lastWatered": "2026-10-29" },
+      { "id": "snake", "style": "let_fully_dry", "intervalDays": 21, "lastWatered": "2026-10-23" },
+      { "id": "jade", "style": "let_fully_dry", "intervalDays": 14, "lastWatered": "2026-10-28" },
+      { "id": "peace-lily", "style": "keep_moist", "intervalDays": 5, "lastWatered": "2026-11-01" },
+      { "id": "spider", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-28" },
+      { "id": "zz", "style": "let_fully_dry", "intervalDays": 18, "lastWatered": "2026-10-24" },
+      { "id": "rubber", "style": "let_top_dry", "intervalDays": 9, "lastWatered": "2026-10-31" }
+    ]
+  },
+  "expected": {
+    "summary": { "naiveDays": 15, "wateringDays": 7, "savingPercent": 53 },
+    "plants": [
+      { "plantId": "jade", "wateringCount": 2 },
+      { "plantId": "monstera", "wateringCount": 4 },
+      { "plantId": "peace-lily", "wateringCount": 5 },
+      { "plantId": "pothos", "wateringCount": 3 },
+      { "plantId": "rubber", "wateringCount": 3 },
+      { "plantId": "snake", "wateringCount": 1 },
+      { "plantId": "spider", "wateringCount": 4 },
+      { "plantId": "zz", "wateringCount": 2 }
+    ]
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-begonias-outdoors",
+      "title": "RHS: Begonias outdoors",
+      "url": "https://www.rhs.org.uk/plants/begonias/outdoors",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-begonia-semperflorens",
+      "title": "RHS plant profile: Begonia Semperflorens Cultorum Group",
+      "url": "https://www.rhs.org.uk/plants/130495/begonia-semperflorens-cultorum-group-s/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-begonia",
+      "title": "Begonia (toxic and non-toxic plants; Begonia spp.)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/begonia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "begonia-cucullata",
+      "taxon": {
+        "scientificName": "Begonia cucullata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Wax begonia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Bedding begonia"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Fibrous begonia"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Begonia semperflorens"
+          },
+          {
+            "lang": "es",
+            "name": "Begonia de flor",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Begonia semperflorens",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Begonia siempre en flor",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Begonia semperflorens",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Begonia da aiuola",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-begonias-outdoors",
+          "corroboratedBy": ["rhs-begonia-semperflorens"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water regularly in dry spells, at the base rather than over the leaves; the compost should be moist but well drained, never waterlogged."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-begonia-semperflorens",
+          "corroboratedBy": ["rhs-begonias-outdoors"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 30,
+            "spread": 30
+          },
+          "unit": "cm",
+          "source": "rhs-begonias-outdoors",
+          "corroboratedBy": ["rhs-begonia-semperflorens"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-begonia-semperflorens",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["soluble_oxalate"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "aspca-begonia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "aspca-begonia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-begonia"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "part_shade", "tender"]
+      },
+      "provenance": {
+        "notes": "Name clash: sold as B. semperflorens-cultorum; tuberous begonia (B. x tuberhybrida) and rex begonias are separate entries. Watering: RHS says water regularly during dry periods but avoid wetting the foliage; profile says moist but well-drained, neutral to slightly acid soil in partial shade. NC State has no page under these names (both URLs 404), so the second source for watering is the RHS profile. let_top_dry is the agent's mapping; 3 days is a guess. Light: partial shade (both RHS pages; foliage may scorch in hot sun). Size: RHS 15 to 50 cm height and spread, 30 by 30 is the agent's middle. Habit bushy: RHS profile. Hardiness: tender perennial grown as an annual (RHS), H1C. Toxicity: ASPCA lists the genus Begonia spp. as toxic to dogs, cats and horses, soluble calcium oxalates, vomiting and salivation, most toxic part underground; severity 1 is our grading (mild GI signs in dogs and cats); genus-level, not B. cucullata specifically. The RHS profile's pets line is generic bulb wording and was not used. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/begonias/outdoors",
+        "https://www.rhs.org.uk/plants/130495/begonia-semperflorens-cultorum-group-s/details",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/begonia"
+      ],
+      "links": [
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/begonia/begonia.asp",
+          "title": "La pianta della Begonia - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-07",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-tulipa-gesneriana",
+      "title": "RHS Plant Profile: Tulipa x gesneriana (15)",
+      "url": "https://rhs.org.uk/plants/367435/tulipa-gesneriana-(15)/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-tulip-growing-guide",
+      "title": "RHS Growing Guide: how to grow tulips",
+      "url": "https://www.rhs.org.uk/plants/tulip/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-tulip",
+      "title": "Tulip (Tulipa spp.) (toxic and non-toxic plants)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/tulip",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "tulipa-gesneriana",
+      "taxon": { "scientificName": "Tulipa gesneriana" },
+      "names": {
+        "common": [
+          { "lang": "en-GB", "name": "Tulip", "primary": true },
+          { "lang": "en-GB", "name": "Garden tulip" },
+          { "lang": "en-GB", "name": "Common garden tulip" },
+          {
+            "lang": "es",
+            "name": "Tulipán",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "es", "name": "Tulipán de jardín", "translation": { "status": "machine" } },
+          {
+            "lang": "it",
+            "name": "Tulipano",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "it", "name": "Tulipano da giardino", "translation": { "status": "machine" } }
+        ],
+        "synonyms": ["Tulipa x gesneriana"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": { "value": null, "source": null, "confidence": "unknown" },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": { "value": null, "unit": "C", "source": null, "confidence": "unknown" },
+        "humidityPercent": { "value": null, "unit": "%", "source": null, "confidence": "unknown" },
+        "rootDepthClass": { "value": null, "source": null, "confidence": "unknown" },
+        "habit": {
+          "value": "upright",
+          "source": "rhs-tulipa-gesneriana",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-tulip-growing-guide",
+          "corroboratedBy": ["rhs-tulipa-gesneriana"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost just moist while leaves are showing and let it dry a little between waterings; bulbs rot in wet compost."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-tulipa-gesneriana",
+          "corroboratedBy": ["rhs-tulip-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": { "height": 50, "spread": 50 },
+          "unit": "cm",
+          "source": "rhs-tulipa-gesneriana",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": { "value": null, "source": null, "confidence": "unknown" },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "rhs-tulip-growing-guide",
+          "corroboratedBy": ["rhs-tulipa-gesneriana"],
+          "confidence": "checked"
+        },
+        "hardiness": { "value": "H6", "source": "rhs-tulipa-gesneriana", "confidence": "checked" },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "rhs-tulipa-gesneriana",
+          "confidence": "checked"
+        },
+        "dormancy": {
+          "value": "summer",
+          "source": "rhs-tulip-growing-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "rhs-tulip-growing-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "rhs-tulipa-gesneriana",
+          "corroboratedBy": ["rhs-tulip-growing-guide"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-tulipa-gesneriana",
+          "corroboratedBy": ["rhs-tulip-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Tulips in the ground rarely need water unless it stays dry for two to three weeks; aim for moist, not soggy."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["tulipalin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "diarrhoea", "drooling"],
+            "source": "aspca-tulip",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-tulipa-gesneriana"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "diarrhoea", "drooling"],
+            "source": "aspca-tulip",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-tulipa-gesneriana"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "rhs-tulipa-gesneriana",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "rhs-tulipa-gesneriana",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-tulip", "rhs-tulipa-gesneriana"],
+        "assessedOn": "2026-11-07"
+      },
+      "tags": { "curated": ["outdoor_pot", "ground", "flowering", "hardy", "bulb"] },
+      "provenance": {
+        "notes": "Row 87. RHS profile is Tulipa x gesneriana (15), the common garden tulip; RHS says the species is of uncertain origin and most bulbs sold are hybrids, and the growing guide covers border and specialist tulips in general. NC State has no tulip page (404) and MBG found none, so only RHS is a care source: single-source, lower confidence. Toxicity: ASPCA genus page (Tulipa spp.): toxic to dogs, cats and horses, tulipalin A and B, worst in the bulb; RHS: harmful if eaten, skin allergen, pets too. Severity 1 is the agent's grading (signs listed are mild); symptom words are mapped from the ASPCA list (depression as lethargy). Watering: no page gives a dry-down rule for pots outdoors; RHS says keep well watered while in growth, let compost dry a little after planting in the cold, and not to overwater, so let_top_dry is a mapping and 7 days a guess. Summer dormancy from RHS (warm dry summer rest, lifting and drying bulbs optional). Size is RHS's upper figure (10 to 50 cm). Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://rhs.org.uk/plants/367435/tulipa-gesneriana-(15)/details",
+        "https://www.rhs.org.uk/plants/tulip/growing-guide",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/tulip"
+      ],
+      "lookAlikes": [],
+      "lookAlikeNote": "All tulips are harmful if eaten; the bulb holds the most toxin and looks like an onion.",
+      "photos": []
+    }
+  ]
+}

@@ -1,0 +1,702 @@
+[
+  {
+    "id": "Q-SPECIES",
+    "tier": "A",
+    "weight": 10,
+    "when": "species",
+    "updates": ["species"],
+    "storiesKey": "stories.question.species",
+    "options": ["a", "b", "c", "none", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "Which of these is it?",
+        "options": {
+          "a": "The first one",
+          "b": "The second one",
+          "c": "The third one",
+          "none": "None of these",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Cuál de estas es?",
+        "options": {
+          "a": "La primera",
+          "b": "La segunda",
+          "c": "La tercera",
+          "none": "Ninguna",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "Quale di queste è?",
+        "options": {
+          "a": "La prima",
+          "b": "La seconda",
+          "c": "La terza",
+          "none": "Nessuna",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-LIVES",
+    "tier": "A",
+    "weight": 9,
+    "when": "lives",
+    "updates": ["placement"],
+    "storiesKey": "stories.question.lives",
+    "options": ["indoor", "outdoor_pot", "ground"],
+    "text": {
+      "en-GB": {
+        "question": "Where does it live?",
+        "options": {
+          "indoor": "Indoors",
+          "outdoor_pot": "In a pot outside",
+          "ground": "In the ground"
+        }
+      },
+      "es": {
+        "question": "¿Dónde vive?",
+        "options": {
+          "indoor": "En casa",
+          "outdoor_pot": "En una maceta fuera",
+          "ground": "En la tierra"
+        }
+      },
+      "it": {
+        "question": "Dove vive?",
+        "options": {
+          "indoor": "In casa",
+          "outdoor_pot": "In vaso all'aperto",
+          "ground": "In piena terra"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-DRAIN",
+    "tier": "A",
+    "weight": 8,
+    "when": "drain",
+    "updates": ["drainage"],
+    "storiesKey": "stories.question.drain",
+    "options": ["hole", "cachepot", "no_hole", "self_watering"],
+    "text": {
+      "en-GB": {
+        "question": "Does the pot have a hole in the bottom?",
+        "options": {
+          "hole": "Yes",
+          "cachepot": "In a decorative outer pot",
+          "no_hole": "No hole",
+          "self_watering": "Self-watering"
+        }
+      },
+      "es": {
+        "question": "¿Tiene la maceta un agujero en el fondo?",
+        "options": {
+          "hole": "Sí",
+          "cachepot": "En un cubremaceta decorativo",
+          "no_hole": "Sin agujero",
+          "self_watering": "De autorriego"
+        }
+      },
+      "it": {
+        "question": "Il vaso ha un foro sul fondo?",
+        "options": {
+          "hole": "Sì",
+          "cachepot": "In un coprivaso decorativo",
+          "no_hole": "Nessun foro",
+          "self_watering": "Ad autoirrigazione"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-FIRST",
+    "tier": "A",
+    "weight": 7,
+    "when": "first",
+    "updates": ["lastWatered"],
+    "storiesKey": "stories.question.first",
+    "options": ["today", "this_week", "over_2_weeks", "no_idea"],
+    "text": {
+      "en-GB": {
+        "question": "When did you last water it?",
+        "options": {
+          "today": "Today",
+          "this_week": "This week",
+          "over_2_weeks": "Over 2 weeks ago",
+          "no_idea": "No idea"
+        }
+      },
+      "es": {
+        "question": "¿Cuándo la regaste por última vez?",
+        "options": {
+          "today": "Hoy",
+          "this_week": "Esta semana",
+          "over_2_weeks": "Hace más de 2 semanas",
+          "no_idea": "Ni idea"
+        }
+      },
+      "it": {
+        "question": "Quando l'hai annaffiata l'ultima volta?",
+        "options": {
+          "today": "Oggi",
+          "this_week": "Questa settimana",
+          "over_2_weeks": "Più di 2 settimane fa",
+          "no_idea": "Non lo so"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-LIGHT",
+    "tier": "B",
+    "weight": 6,
+    "when": "light",
+    "updates": ["light"],
+    "storiesKey": "stories.question.light",
+    "options": ["low", "medium", "bright_indirect", "direct", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "How bright is it where it stands?",
+        "options": {
+          "low": "A dark corner",
+          "medium": "A few metres from a window",
+          "bright_indirect": "Close to a window",
+          "direct": "Direct sun",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Cuánta luz hay donde está?",
+        "options": {
+          "low": "Un rincón oscuro",
+          "medium": "A unos metros de una ventana",
+          "bright_indirect": "Cerca de una ventana",
+          "direct": "Sol directo",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "Quanta luce c'è dove si trova?",
+        "options": {
+          "low": "Un angolo buio",
+          "medium": "A qualche metro da una finestra",
+          "bright_indirect": "Vicino a una finestra",
+          "direct": "Sole diretto",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-ROOMLIGHT",
+    "tier": "B",
+    "weight": 6,
+    "when": "roomlight",
+    "updates": ["roomLight"],
+    "storiesKey": "stories.question.roomlight",
+    "options": ["low", "medium", "bright_indirect", "direct", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "How bright is this room?",
+        "options": {
+          "low": "Dark",
+          "medium": "Medium",
+          "bright_indirect": "Bright",
+          "direct": "Direct sun",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Cuánta luz tiene esta habitación?",
+        "options": {
+          "low": "Oscura",
+          "medium": "Media",
+          "bright_indirect": "Luminosa",
+          "direct": "Sol directo",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "Quanta luce c'è in questa stanza?",
+        "options": {
+          "low": "Buia",
+          "medium": "Media",
+          "bright_indirect": "Luminosa",
+          "direct": "Sole diretto",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-POT",
+    "tier": "B",
+    "weight": 5,
+    "when": "pot",
+    "updates": ["potDiameterCm"],
+    "storiesKey": "stories.question.pot",
+    "options": ["small", "medium", "large", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "Roughly how big is the pot?",
+        "options": {
+          "small": "Small (8 to 12 cm)",
+          "medium": "Medium (15 to 20 cm)",
+          "large": "Large (25 to 30 cm)",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Más o menos qué tamaño tiene la maceta?",
+        "options": {
+          "small": "Pequeña (8 a 12 cm)",
+          "medium": "Mediana (15 a 20 cm)",
+          "large": "Grande (25 a 30 cm)",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "Più o meno quanto è grande il vaso?",
+        "options": {
+          "small": "Piccolo (8-12 cm)",
+          "medium": "Medio (15-20 cm)",
+          "large": "Grande (25-30 cm)",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-MAT",
+    "tier": "B",
+    "weight": 4,
+    "when": "mat",
+    "updates": ["potMaterial"],
+    "storiesKey": "stories.question.mat",
+    "options": ["plastic", "terracotta", "glazed", "fabric", "other", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "What is the pot made of?",
+        "options": {
+          "plastic": "Plastic",
+          "terracotta": "Terracotta",
+          "glazed": "Glazed",
+          "fabric": "Fabric",
+          "other": "Other",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿De qué material es la maceta?",
+        "options": {
+          "plastic": "Plástico",
+          "terracotta": "Terracota",
+          "glazed": "Esmaltada",
+          "fabric": "Tela",
+          "other": "Otro",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "Di che materiale è il vaso?",
+        "options": {
+          "plastic": "Plastica",
+          "terracotta": "Terracotta",
+          "glazed": "Smaltato",
+          "fabric": "Tessuto",
+          "other": "Altro",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-GROUND",
+    "tier": "B",
+    "weight": 3,
+    "when": "ground",
+    "updates": ["groundSoil"],
+    "storiesKey": "stories.question.ground",
+    "options": ["sandy", "loam", "clay", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "What soil is it in?",
+        "options": {
+          "sandy": "Sandy soil",
+          "loam": "Loam",
+          "clay": "Clay",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿En qué suelo está?",
+        "options": {
+          "sandy": "Suelo arenoso",
+          "loam": "Suelo franco",
+          "clay": "Arcilla",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "In che terreno si trova?",
+        "options": {
+          "sandy": "Terreno sabbioso",
+          "loam": "Terreno di medio impasto",
+          "clay": "Argilla",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-SUNHOURS",
+    "tier": "B",
+    "weight": 2,
+    "when": "sunhours",
+    "updates": ["directSun"],
+    "storiesKey": "stories.question.sunhours",
+    "options": [
+      "morning",
+      "midday",
+      "afternoon",
+      "morning_afternoon",
+      "most_of_day",
+      "none",
+      "not_sure"
+    ],
+    "text": {
+      "en-GB": {
+        "question": "When does it usually get direct sun?",
+        "options": {
+          "morning": "Morning (about 6 to 11)",
+          "midday": "Midday (about 11 to 15)",
+          "afternoon": "Afternoon (about 15 to 19)",
+          "morning_afternoon": "Morning and afternoon, not midday",
+          "most_of_day": "Most of the day (8 to 18)",
+          "none": "Hardly any",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Cuándo recibe sol directo normalmente?",
+        "options": {
+          "morning": "Por la mañana (de 6 a 11)",
+          "midday": "A mediodía (de 11 a 15)",
+          "afternoon": "Por la tarde (de 15 a 19)",
+          "morning_afternoon": "Mañana y tarde, no a mediodía",
+          "most_of_day": "Casi todo el día (de 8 a 18)",
+          "none": "Casi nada",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "Quando riceve di solito il sole diretto?",
+        "options": {
+          "morning": "Mattina (circa dalle 6 alle 11)",
+          "midday": "Mezzogiorno (circa dalle 11 alle 15)",
+          "afternoon": "Pomeriggio (circa dalle 15 alle 19)",
+          "morning_afternoon": "Mattina e pomeriggio, non a mezzogiorno",
+          "most_of_day": "Quasi tutto il giorno (dalle 8 alle 18)",
+          "none": "Quasi mai",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-PLANTED",
+    "tier": "B",
+    "weight": 6,
+    "when": "planted",
+    "updates": ["plantedOn"],
+    "storiesKey": "stories.question.planted",
+    "options": ["this_year", "last_year", "longer", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "When was it planted?",
+        "options": {
+          "this_year": "This year",
+          "last_year": "Last year",
+          "longer": "More than 2 years ago",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Cuándo se plantó?",
+        "options": {
+          "this_year": "Este año",
+          "last_year": "El año pasado",
+          "longer": "Hace más de 2 años",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "Quando è stata piantata?",
+        "options": {
+          "this_year": "Quest'anno",
+          "last_year": "L'anno scorso",
+          "longer": "Più di 2 anni fa",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-MULCH",
+    "tier": "B",
+    "weight": 2,
+    "when": "mulch",
+    "updates": ["mulched"],
+    "storiesKey": "stories.question.mulch",
+    "options": ["yes", "no", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "Is there mulch or bark on top of the soil?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Hay mantillo o corteza sobre la tierra?",
+        "options": {
+          "yes": "Sí",
+          "no": "No",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "C'è pacciamatura o corteccia sul terreno?",
+        "options": {
+          "yes": "Sì",
+          "no": "No",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-COVER",
+    "tier": "B",
+    "weight": 2,
+    "when": "cover",
+    "updates": ["sheltered"],
+    "storiesKey": "stories.question.cover",
+    "options": ["yes", "no", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "Is it under a roof, a tree or an overhang?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Está bajo un tejado, un árbol o un alero?",
+        "options": {
+          "yes": "Sí",
+          "no": "No",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "È sotto un tetto, un albero o una sporgenza?",
+        "options": {
+          "yes": "Sì",
+          "no": "No",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-ROOM",
+    "tier": "B",
+    "weight": 2,
+    "when": "room",
+    "updates": ["roomId"],
+    "storiesKey": "stories.question.room",
+    "options": ["existing", "new_room", "none"],
+    "text": {
+      "en-GB": {
+        "question": "Which room is it in?",
+        "options": {
+          "existing": "One of my rooms",
+          "new_room": "A new room",
+          "none": "No room"
+        }
+      },
+      "es": {
+        "question": "¿En qué habitación está?",
+        "options": {
+          "existing": "Una de mis habitaciones",
+          "new_room": "Una habitación nueva",
+          "none": "Sin habitación"
+        }
+      },
+      "it": {
+        "question": "In che stanza si trova?",
+        "options": {
+          "existing": "Una delle mie stanze",
+          "new_room": "Una stanza nuova",
+          "none": "Nessuna stanza"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-STILLWET",
+    "tier": "C",
+    "weight": 5,
+    "when": "stillwet",
+    "updates": ["soilType"],
+    "storiesKey": "stories.question.stillwet",
+    "options": ["standard", "gritty", "peaty", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "What kind of soil is it in?",
+        "options": {
+          "standard": "Standard mix",
+          "gritty": "Cactus or gritty mix",
+          "peaty": "Heavy and peaty",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿En qué tipo de sustrato está?",
+        "options": {
+          "standard": "Sustrato universal",
+          "gritty": "Sustrato para cactus o con grava",
+          "peaty": "Pesado y turboso",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "In che tipo di terriccio si trova?",
+        "options": {
+          "standard": "Terriccio universale",
+          "gritty": "Terriccio per cactus o ghiaioso",
+          "peaty": "Pesante e torboso",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-REPOT",
+    "tier": "C",
+    "weight": 4,
+    "when": "repot",
+    "updates": ["lastRepotted"],
+    "storiesKey": "stories.question.repot",
+    "options": ["this_year", "last_year", "longer", "never_or_unknown"],
+    "text": {
+      "en-GB": {
+        "question": "When was it last repotted?",
+        "options": {
+          "this_year": "This year",
+          "last_year": "Last year",
+          "longer": "Longer ago",
+          "never_or_unknown": "Never, or no idea"
+        }
+      },
+      "es": {
+        "question": "¿Cuándo se trasplantó por última vez?",
+        "options": {
+          "this_year": "Este año",
+          "last_year": "El año pasado",
+          "longer": "Hace más tiempo",
+          "never_or_unknown": "Nunca, o ni idea"
+        }
+      },
+      "it": {
+        "question": "Quando è stata rinvasata l'ultima volta?",
+        "options": {
+          "this_year": "Quest'anno",
+          "last_year": "L'anno scorso",
+          "longer": "Più tempo fa",
+          "never_or_unknown": "Mai, o non lo so"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-SIZE",
+    "tier": "C",
+    "weight": 3,
+    "when": "size",
+    "updates": ["plantSize"],
+    "storiesKey": "stories.question.size",
+    "options": ["small", "medium", "large"],
+    "text": {
+      "en-GB": {
+        "question": "How big is it now?",
+        "options": {
+          "small": "Small",
+          "medium": "Medium",
+          "large": "Large"
+        }
+      },
+      "es": {
+        "question": "¿Qué tamaño tiene ahora?",
+        "options": {
+          "small": "Pequeña",
+          "medium": "Mediana",
+          "large": "Grande"
+        }
+      },
+      "it": {
+        "question": "Quanto è grande adesso?",
+        "options": {
+          "small": "Piccola",
+          "medium": "Media",
+          "large": "Grande"
+        }
+      }
+    }
+  },
+  {
+    "id": "Q-DRAUGHT",
+    "tier": "C",
+    "weight": 1,
+    "last": true,
+    "engineInput": false,
+    "when": "draught",
+    "updates": ["draught"],
+    "storiesKey": "stories.question.draught",
+    "options": ["yes", "no", "not_sure"],
+    "text": {
+      "en-GB": {
+        "question": "Is it near a radiator, air vent or an often-open window?",
+        "options": {
+          "yes": "Yes",
+          "no": "No",
+          "not_sure": "Not sure"
+        }
+      },
+      "es": {
+        "question": "¿Está cerca de un radiador, una rejilla de ventilación o una ventana que se abre a menudo?",
+        "options": {
+          "yes": "Sí",
+          "no": "No",
+          "not_sure": "No estoy seguro"
+        }
+      },
+      "it": {
+        "question": "È vicina a un termosifone, a una bocchetta d'aria o a una finestra aperta spesso?",
+        "options": {
+          "yes": "Sì",
+          "no": "No",
+          "not_sure": "Non sono sicuro"
+        }
+      }
+    }
+  }
+]

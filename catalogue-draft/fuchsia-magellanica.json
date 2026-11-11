@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-fuchsia-hardy",
+      "title": "RHS: How to grow hardy fuchsias",
+      "url": "https://www.rhs.org.uk/plants/fuchsia/hardy/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-fuchsia-tender",
+      "title": "RHS: How to grow tender fuchsias",
+      "url": "https://www.rhs.org.uk/plants/fuchsia/tender/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-fuchsia-magellanica",
+      "title": "NC State Plant Toolbox: Fuchsia magellanica",
+      "url": "https://plants.ces.ncsu.edu/plants/fuchsia-magellanica/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "fuchsia-magellanica",
+      "taxon": {
+        "scientificName": "Fuchsia magellanica"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Hardy fuchsia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Fuchsia"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Lady's eardrops"
+          },
+          {
+            "lang": "es",
+            "name": "Fucsia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Pendientes de la reina",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Fucsia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Orecchini di Venere",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-fuchsia-tender",
+          "corroboratedBy": ["ncsu-fuchsia-magellanica"],
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix moist but not soggy; pots and baskets can need water daily in summer, so feel the compost first."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-fuchsia-hardy",
+          "corroboratedBy": ["rhs-fuchsia-tender", "ncsu-fuchsia-magellanica"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 300,
+            "spread": 300
+          },
+          "unit": "cm",
+          "source": "ncsu-fuchsia-magellanica",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-fuchsia-magellanica",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-fuchsia-hardy",
+          "corroboratedBy": ["ncsu-fuchsia-magellanica"],
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-fuchsia-magellanica",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-fuchsia-magellanica",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-fuchsia-magellanica"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "part_shade"]
+      },
+      "provenance": {
+        "notes": "Hardy vs tender: this entry is the hardy F. magellanica (UK in the ground, pots in Spain's shade); most shop fuchsias are tender hybrids (RHS tender guide: H1C to H3 by cultivar, frost-free overwintering, standards need winter protection). Watering: RHS tender guide says compost moist but not soggy, containers and baskets roughly daily, easy to overwater new pots; the hardy guide gives no pot frequency; NC State says cool and moist. Interval 2 days is a guess. Light: RHS best in full sun but happy in dappled or partial shade, no flowers in deep shade; NC State shade-loving but takes full sun, flowering declines in summer heat; stored bright_indirect as the gentler reading (rule 5). Size: NC State 5 to 10 ft by 5 to 10 ft (upper value 300 cm); RHS gives no figure and says most hardy fuchsias are not overly large; from_knowledge_verify. Growth medium (NC State). Hardiness: RHS hardy guide gives no H rating or temperature; stems die to the ground in cold areas and regrow; NC State USDA zones 5a to 10b; no temperature stored. Toxicity: no ASPCA entry for F. magellanica was found (the ASPCA's honeysuckle fuchsia is a different plant); NC State carries non-toxic tags for cats and dogs with no text, so 0 is from_knowledge_verify and weak: listed under pets unknown for review. Berries: RHS says all fuchsia fruit is edible, NC State says not edible by humans (not stated as poisonous); no human exposure stored. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/fuchsia/hardy/growing-guide",
+        "https://www.rhs.org.uk/plants/fuchsia/tender/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/fuchsia-magellanica/"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/2948-cuidados-de-la-planta-fuchsia-magellanica-o-fucsia",
+          "title": "Fuchsia magellanica o Fucsia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/singolepiante/fucsia/fucsia.asp",
+          "title": "Fucsia - Fucsia (Fuchsia) - Piante da Giardino - Fucsia pianta",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "preferred-day-e8-outside-overlap",
+  "description": "02a E8 with Sunday preferred: Sunday 2026-11-08 lies outside both windows, so the preference changes nothing and the later day of the overlap wins.",
+  "why": "02a E8 'the weekend lies outside the overlap and a preference never widens a window'. Sunday is weekday 0.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-02",
+    "horizonDays": 8,
+    "prefs": { "preferredWeekdays": [0] },
+    "plants": [
+      { "id": "a", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-29" },
+      { "id": "b", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-30" }
+    ]
+  },
+  "expected": {
+    "days": [{ "date": "2026-11-07", "plantIds": ["a", "b"] }]
+  }
+}

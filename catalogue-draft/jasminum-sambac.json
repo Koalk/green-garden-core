@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-jasminum-sambac",
+      "title": "RHS: Jasminum sambac",
+      "url": "https://www.rhs.org.uk/plants/58524/jasminum-sambac/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-jasminum",
+      "title": "NC State Plant Toolbox: Jasminum (genus)",
+      "url": "https://plants.ces.ncsu.edu/plants/jasminum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-jasmine",
+      "title": "Jasmine, Jasminum species (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jasmine",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "jasminum-sambac",
+      "taxon": {
+        "scientificName": "Jasminum sambac"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Arabian jasmine",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Sambac jasmine"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["ncsu-jasminum"],
+          "source": "rhs-jasminum-sambac",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost moist but well drained while it grows, and water sparingly in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-jasminum-sambac",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 400,
+            "spread": 100
+          },
+          "unit": "cm",
+          "source": "rhs-jasminum-sambac",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "climbing",
+          "corroboratedBy": ["ncsu-jasminum"],
+          "source": "rhs-jasminum-sambac",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-jasmine",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-jasmine",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-jasmine"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "7385Poblacion Santo Cristo Baliuag, Bulacan 05.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Judgefloro",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:7385Poblacion_Santo_Cristo_Baliuag,_Bulacan_05.jpg",
+          "thumbnail": "jasminum-sambac.webp"
+        }
+      ],
+      "photoFile": "7385Poblacion Santo Cristo Baliuag, Bulacan 05.jpg",
+      "tags": {
+        "curated": ["indoor", "outdoor_pot", "flowering", "climbing", "tender", "fragrant"]
+      },
+      "provenance": {
+        "notes": "NAME CLASH: common jasmine (Jasminum officinale, row 73), winter jasmine, the pot 'jazmin chino' (J. polyanthum) and false jasmine (Trachelospermum, row 200) are different plants; the first four are Jasminum with different hardiness. Tender: RHS H2 (1 to 5 C), grow indoors or in a heated greenhouse in bright light with shade from hot sun, water sparingly in winter. The RHS jasmine growing guide does not mention sambac (its 13 C minimum is for J. polyanthum), so no temperature range is stored. Size: the RHS species page says up to 2.5 to 4 m by 0.5 to 1 m; NC State's genus page says pot plants usually stay at 4 to 5 ft. Toxicity: the ASPCA entry is for Jasminum species in general (non-toxic to dogs and cats), so it is a genus-level reading for this species (from_knowledge_verify); no page names J. sambac. RHS and NC State are silent on toxicity."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/58524/jasminum-sambac/details",
+        "https://www.rhs.org.uk/plants/jasmine/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/jasminum/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jasmine"
+      ],
+      "links": [
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/arbustos-y-trepadoras_1/jazm�n-de-arabia--diamela_3229",
+          "title": "verdeesvida :: Jazmín de Arabia, Diamela",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

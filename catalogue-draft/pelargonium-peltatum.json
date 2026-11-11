@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-peltatum",
+      "title": "RHS: Pelargonium peltatum",
+      "url": "https://www.rhs.org.uk/plants/76828/pelargonium-peltatum/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-pelargonium-guide",
+      "title": "RHS: How to grow pelargoniums",
+      "url": "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-pelargonium",
+      "title": "NC State Plant Toolbox: Pelargonium (genus)",
+      "url": "https://plants.ces.ncsu.edu/plants/pelargonium/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "pelargonium-peltatum",
+      "taxon": {
+        "scientificName": "Pelargonium peltatum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Ivy-leaved geranium",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Ivy-leaved pelargonium"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Trailing geranium"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-pelargonium-guide", "ncsu-pelargonium"],
+          "source": "rhs-peltatum",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water moderately in summer, let the compost dry between drinks, and keep it nearly dry in winter."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-peltatum", "ncsu-pelargonium"],
+          "source": "rhs-pelargonium-guide",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 50,
+            "spread": 50
+          },
+          "unit": "cm",
+          "source": "rhs-peltatum",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-pelargonium",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["rhs-peltatum"],
+          "source": "rhs-pelargonium-guide",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["geraniol", "linalool"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-pelargonium",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-pelargonium",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-pelargonium",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-pelargonium",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-pelargonium"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Balcony town hall.JPG",
+          "licence": "CC-BY-3.0",
+          "creator": "Birne1993",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Balcony_town_hall.JPG",
+          "thumbnail": "pelargonium-peltatum.webp"
+        }
+      ],
+      "photoFile": "Balcony town hall.JPG",
+      "tags": {
+        "curated": ["outdoor_pot", "flowering", "full_sun", "trailing", "tender"]
+      },
+      "provenance": {
+        "notes": "NAME CLASH: 'geranium' is Pelargonium; the hardy cranesbill Geranium is a different plant. Separate row from the zonal pelargonium (row 53): trailing habit, baskets. Watering: RHS profile says moderate in spring and summer, sparingly in winter, letting compost dry between waterings; the NC State genus page agrees for containers; mapped to let_top_dry (agent). Light: the RHS growing guide says most pelargoniums flower best in full sun; the profile says full sun or partial shade. Size: RHS 0.1 to 0.5 m both ways (trails further in baskets). Growth rate and toxicity come from the NC State genus page (medium; low severity, geraniol and linalool, leaves, vomiting, cats most sensitive), not a page about this species, so both are the agent's reading. The RHS profile is silent on toxicity. No page gives tolerances, rest factor, humidity or an indoor temperature."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/76828/pelargonium-peltatum/details",
+        "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/pelargonium/"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/1327-cuidados-de-la-planta-pelargonium-peltatum-o-geranio-hiedra",
+          "title": "Pelargonium peltatum o Geranio hiedra | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-hyp",
+      "title": "NC State Plant Toolbox: Hypoestes phyllostachya",
+      "url": "https://plants.ces.ncsu.edu/plants/hypoestes-phyllostachya/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-hyp",
+      "title": "RHS: How to grow hypoestes",
+      "url": "https://www.rhs.org.uk/plants/hypoestes/how-to-grow-hypoestes",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-polka",
+      "title": "Polka Dot Plant (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/polka-dot-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "hypoestes-phyllostachya",
+      "taxon": {
+        "scientificName": "Hypoestes phyllostachya"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Polka dot plant",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Freckle face"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["ncsu-hyp"],
+          "source": "rhs-hyp",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep it evenly damp and water as soon as it droops; it perks up fast after a soak."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-hyp"],
+          "source": "rhs-hyp",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 12,
+            "max": null
+          },
+          "unit": "C",
+          "source": "rhs-hyp",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 61,
+            "spread": 30
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-hyp"],
+          "source": "ncsu-hyp",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-hyp",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["rhs-hyp"],
+          "source": "ncsu-hyp",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-polka",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-hyp"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-polka",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-hyp"]
+          }
+        ],
+        "sources": ["aspca-polka", "ncsu-hyp"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Starr 080117-1693 Hypoestes phyllostachya.jpg",
+          "licence": "CC-BY-3.0",
+          "creator": "Forest & Kim Starr",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_080117-1693_Hypoestes_phyllostachya.jpg",
+          "thumbnail": "hypoestes-phyllostachya.webp"
+        }
+      ],
+      "photoFile": "Starr 080117-1693 Hypoestes phyllostachya.jpg",
+      "tags": {
+        "curated": ["indoor", "high_humidity"]
+      },
+      "provenance": {
+        "notes": "Watering: RHS says evenly damp with only the top layer allowed to dry a little; NC State only tags it drought intolerant, which fits. The ASPCA page mentions that a bite may cause slight stomach upset; not graded (non-toxic). Temperature is a minimum (RHS: at or above 12 C). Size: NC State 1 to 2 ft by 9 to 12 in, RHS about 30 cm tall. Humidity is moderate to high on RHS but without numbers."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/hypoestes-phyllostachya/",
+        "https://www.rhs.org.uk/plants/hypoestes/how-to-grow-hypoestes",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/polka-dot-plant"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Fittonia (nerve plant)",
+          "tell": "Polka dot plant has pink or white speckles; Fittonia has veined leaves; Coleus has toothed leaves"
+        },
+        {
+          "name": "Hypoestes 'Splash'",
+          "tell": "Polka dot plant has pink or white speckles; Fittonia has veined leaves; Coleus has toothed leaves"
+        },
+        {
+          "name": "Coleus",
+          "tell": "Polka dot plant has pink or white speckles; Fittonia has veined leaves; Coleus has toothed leaves"
+        }
+      ],
+      "lookAlikeNote": "Coleus is toxic to pets; polka dot plant is not",
+      "nameIdeas": ["Polka", "Dottie", "Spotty", "Freckles", "Confetti"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/431-cuidados-de-la-planta-hypoestes-phyllostachya-hoja-de-la-sangre-o-hipoestes",
+          "title": "Hypoestes phyllostachya, Hoja de la sangre o Hipoestes | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/hypoestes/hypoestes.asp",
+          "title": "Hypoestes phyllostachya - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

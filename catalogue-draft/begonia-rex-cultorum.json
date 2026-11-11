@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "aspca-begonia",
+      "title": "Begonia spp. (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "begonia-rex-cultorum",
+      "taxon": {
+        "scientificName": "Begonia rex-cultorum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Rex begonia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Painted-leaf begonia"
+          },
+          {
+            "lang": "es",
+            "name": "Begonia rex",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Begonia rex",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water when the top of the mix feels dry, keep water off the leaves, and ease off in winter."
+        },
+        "light": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["soluble_oxalate"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "aspca-begonia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "aspca-begonia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-begonia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Begonia rex cultorum-1-ondikadai-yercaud-salem-India.jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "Yercaud-elango",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begonia_rex_cultorum-1-ondikadai-yercaud-salem-India.jpg",
+          "thumbnail": "begonia-rex-cultorum.webp"
+        }
+      ],
+      "photoFile": "Begonia rex cultorum-1-ondikadai-yercaud-salem-India.jpg",
+      "tags": {
+        "curated": ["indoor", "foliage"]
+      },
+      "provenance": {
+        "notes": "Weak entry: NC State page 404, RHS and MBG not fetched (no exact URL), so only the ASPCA genus page (Begonia spp., not this species) was read. It lists cats and dogs as toxic (soluble calcium oxalates; vomiting and salivation; underground parts most toxic). Severity 1 is the agent's mapping from 'toxic' with those symptoms. All care values unknown; the interval and the tip are rules of thumb. The 'Painted-leaf begonia' name is author knowledge, not from a page."
+      },
+      "sourcesRead": [
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia"
+      ],
+      "links": [
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/begonia-rex_3127",
+          "title": "verdeesvida :: Begonia rex",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/piante-da-giardino/begonia.asp",
+          "title": "Begonia pianta - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/begonia/begonia.asp",
+          "title": "La pianta della Begonia - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

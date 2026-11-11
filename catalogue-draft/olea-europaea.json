@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-olives",
+      "title": "RHS: How to grow olives",
+      "url": "https://www.rhs.org.uk/plants/olives/how-to-grow-olives",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-olea-europaea",
+      "title": "NC State Plant Toolbox: Common olive (Olea europaea)",
+      "url": "https://plants.ces.ncsu.edu/plants/olea-europaea/common-name/common-olive/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "olea-europaea",
+      "taxon": {
+        "scientificName": "Olea europaea"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Olive",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Olive tree"
+          },
+          {
+            "lang": "es",
+            "name": "Olivo",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Aceituno",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Olivo",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Ulivo",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-olives",
+          "corroboratedBy": ["ncsu-olea-europaea"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "In a pot water regularly while it is growing, from April to late September, and keep it barely moist in winter; stand the pot on feet so it never sits wet."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-olives",
+          "corroboratedBy": ["ncsu-olea-europaea"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": -5,
+            "max": null
+          },
+          "unit": "C",
+          "source": "rhs-olives",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 900,
+            "spread": 750
+          },
+          "unit": "cm",
+          "source": "ncsu-olea-europaea",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "rhs-olives",
+          "corroboratedBy": ["ncsu-olea-europaea"],
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-olea-europaea",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "tree", "full_sun", "drought_tolerant"]
+      },
+      "provenance": {
+        "notes": "Ornamental pot olive vs orchard tree (starter row 63). Watering: RHS says water container plants regularly from April to late September, barely moist over winter, pots on feet; established ground trees are drought tolerant; NC State drought tolerant once established, no frequency. let_top_dry is the agent's mapping, interval 5 days a guess. Pots: at least 30 to 35 cm wide and deep, frost-proof, soil-based peat-free compost with about 20 percent grit; pinch out tips at about 1.5 m to keep a pot tree compact. Light: both full sun. Temperature: RHS says many olives tolerate -5 to -10 C and severe frost (below -5 C) can still damage them; the milder end is stored as the minimum; container plants need winter protection. NC State USDA zones 8a to 10b (7 for some cultivars) and needs two months at 4 to 10 C to flower. Size: NC State 20 to 30 ft by 15 to 25 ft (upper values, an in-ground tree); a pot tree stays far smaller, hence from_knowledge_verify; RHS gives no size. Growth slow (RHS and NC State agree). Habit upright is a mapping of 'erect, rounded'. Toxicity UNKNOWN for pets and humans: neither fetched page says anything and the ASPCA searches found only Elaeagnus ('Russian olive'), a different plant; the fruit is edible after preparation (RHS, NC State). On the pets-unknown list. Xylella fastidiosa: RHS says olives are a high-risk host (relevant to buying plants). Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/olives/how-to-grow-olives",
+        "https://plants.ces.ncsu.edu/plants/olea-europaea/common-name/common-olive/"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/567-cuidados-de-la-planta-olea-europaea-olivo-u-olivera",
+          "title": "Olea europaea, Olivo u Olivera | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/�rboles-y-palmeras_2/olivo_3042",
+          "title": "verdeesvida :: Olivo",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/orto/olivo.asp",
+          "title": "Olivo | Giardinaggio.it",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

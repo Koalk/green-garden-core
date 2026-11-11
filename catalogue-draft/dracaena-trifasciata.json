@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "clemson-beginners",
+      "title": "Exciting houseplant selections for beginners",
+      "url": "https://hgic.clemson.edu/exciting-houseplant-selections-for-beginners/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "iastate",
+      "title": "Easy low-maintenance houseplants",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+      "publisher": "Iowa State University Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-snake",
+      "title": "NC State Plant Toolbox: Dracaena trifasciata",
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/common-name/snake-plant/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "psu-snake",
+      "title": "Snake plants, Allegheny County Master Gardeners",
+      "url": "https://extension.psu.edu/programs/master-gardener/counties/allegheny/news/snake-plants",
+      "publisher": "Penn State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "umd",
+      "title": "Selecting indoor plants",
+      "url": "https://extension.umd.edu/resource/selecting-indoor-plants",
+      "publisher": "University of Maryland Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dracaena-trifasciata",
+      "taxon": {
+        "scientificName": "Dracaena trifasciata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Snake plant",
+            "primary": true
+          }
+        ],
+        "synonyms": ["Sansevieria trifasciata"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["psu-snake", "iastate"],
+          "source": "ncsu-snake",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.6,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Rots from too much water far sooner than it suffers from too little; water only when the pot feels light."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-beginners"],
+          "source": "psu-snake",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 10,
+            "max": null
+          },
+          "unit": "C",
+          "source": "ncsu-snake",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-snake",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-snake",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "diarrhoea", "drooling"],
+            "source": "ncsu-snake",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["psu-snake"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "diarrhoea", "drooling"],
+            "source": "ncsu-snake",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["psu-snake"]
+          }
+        ],
+        "sources": ["ncsu-snake", "psu-snake"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Dracaena trifasciata 177940020.jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "四角銅鑼",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dracaena_trifasciata_177940020.jpg",
+          "thumbnail": "dracaena-trifasciata.webp"
+        }
+      ],
+      "photoFile": "Dracaena trifasciata 177940020.jpg",
+      "tags": {
+        "curated": ["indoor", "low_light", "beginner_friendly"]
+      },
+      "provenance": {
+        "notes": "Light: NC State says partial shade and very low light tolerated, Penn State and Clemson say bright indirect; the preferred level is stored. Size: sources give leaf length (up to 4 ft) but no spread, so size stays unknown. Severity 1 is the agent's grading of 'low' (NC State)."
+      },
+      "sourcesRead": [
+        "https://hgic.clemson.edu/exciting-houseplant-selections-for-beginners/",
+        "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+        "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/common-name/snake-plant/",
+        "https://extension.psu.edu/programs/master-gardener/counties/allegheny/news/snake-plants",
+        "https://extension.umd.edu/resource/selecting-indoor-plants"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Sansevieria cylindrica and other Dracaena",
+          "tell": "Cylindrica has round spear leaves; trifasciata has flat sword leaves with cross-banding"
+        }
+      ],
+      "nameIdeas": ["Sansevieria Sam", "Snakespeare", "Hiss-toric", "Sir Hisses", "Slither Sue"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/692-cuidados-de-la-planta-sansevieria-trifasciata-sanseviera-o-espada-de-san-jorge",
+          "title": "Sansevieria trifasciata o Espada de San Jorge | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/sanseveria/sanseveria.asp",
+          "title": "Sanseveria - Sansevieria trifasciata - Appartamento",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

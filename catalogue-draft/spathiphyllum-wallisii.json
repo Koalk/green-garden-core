@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "iastate",
+      "title": "Easy low-maintenance houseplants",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+      "publisher": "Iowa State University Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "sdstate-peace-lily",
+      "title": "Peace lily: houseplant how-to",
+      "url": "https://extension.sdstate.edu/peace-lily-houseplant-how",
+      "publisher": "SDSU Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "umd",
+      "title": "Selecting indoor plants",
+      "url": "https://extension.umd.edu/resource/selecting-indoor-plants",
+      "publisher": "University of Maryland Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "gubb-houseplants-3l",
+      "title": "Gubb, Blanusa et al.: Can houseplants improve indoor air quality by removing CO2 and increasing relative humidity? (water use of plants in 3-litre pots)",
+      "url": "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf",
+      "publisher": "Air Quality, Atmosphere & Health (copy on greenplantsforgreenbuildings.org)",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-31",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "spathiphyllum-wallisii",
+      "taxon": {
+        "scientificName": "Spathiphyllum wallisii"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Peace lily",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["sdstate-peace-lily"],
+          "source": "iastate",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "gubb-houseplants-3l",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.2,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Droops when thirsty and recovers within hours; water at the first droop, not after."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["iastate"],
+          "source": "sdstate-peace-lily",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 18,
+            "max": 27
+          },
+          "unit": "C",
+          "source": "sdstate-peace-lily",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "swelling", "vomiting"],
+            "source": "sdstate-peace-lily",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "swelling", "vomiting"],
+            "source": "sdstate-peace-lily",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "swelling"],
+            "source": "sdstate-peace-lily",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["sdstate-peace-lily"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Lepelplant 16.JPG",
+          "licence": "PDM-1.0",
+          "creator": "TUFOWKTM",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lepelplant_16.JPG",
+          "thumbnail": "spathiphyllum-wallisii.webp"
+        }
+      ],
+      "photoFile": "Lepelplant 16.JPG",
+      "tags": {
+        "curated": ["indoor", "low_light", "flowering"]
+      },
+      "provenance": {
+        "notes": "South Dakota State calls it mildly toxic (calcium oxalate) and says keep away from small children, cats and dogs; the severity grade 1 and the symptom list are the agent's. Habit and size: no fetched page states them. Anchor: baseIntervalDays 5 -> 5 for a 3-litre reference pot, from measured water use (peace lily, 71.0 g a day); the conversion to days is our arithmetic (02i), so guess."
+      },
+      "sourcesRead": [
+        "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+        "https://extension.sdstate.edu/peace-lily-houseplant-how",
+        "https://extension.umd.edu/resource/selecting-indoor-plants",
+        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/743-cuidados-de-la-planta-spathiphyllum-wallisii-o-espatifilo",
+          "title": "Spathiphyllum wallisii o Espatifilo | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/spathiphyllum/spathiphyllum.asp",
+          "title": "Spatifillo - Spathiphyllum - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+# Toolchain pins and project tasks. List tasks with `mise tasks`, run with `mise run <task>`.
+
+[tools]
+node = "24.22.1"
+pnpm = "12.15.0"
+
+[tasks.install]
+description = "Install workspace dependencies (skipped when the lockfile is unchanged)"
+run = "pnpm install --frozen-lockfile"
+sources = ["pnpm-lock.yaml", "package.json", "packages/*/package.json"]
+outputs = ["node_modules/.modules.yaml"]
+
+[tasks.dev]
+description = "Web UI dev server on port 5173, reachable from the home network (HOST=127.0.0.1 for local only, PORT to change)"
+depends = ["install"]
+run = "pnpm --filter @green-garden/web-ui start"
+
+[tasks.test]
+description = "Run all package tests and golden vectors"
+depends = ["install"]
+run = "pnpm test"
+
+[tasks.typecheck]
+description = "TypeScript build in strict mode"
+depends = ["install"]
+run = "pnpm typecheck"
+
+[tasks.lint]
+description = "ESLint"
+depends = ["install"]
+run = "pnpm lint"
+
+[tasks.fmt]
+description = "Format sources with Prettier"
+depends = ["install"]
+run = "pnpm format"
+
+[tasks.check]
+description = "All CI gates: typecheck, lint, format, tests, boundaries, licences, SPDX, no-network, public check, locales"
+depends = ["install"]
+run = "pnpm check"
+
+[tasks.core-public-check]
+description = "Public-repo check: no private Stories paths, secrets, .env files or personal data in tracked files"
+depends = ["install"]
+run = "pnpm check:public"
+
+[tasks.i18n-check]
+description = "Locale files: ICU syntax, placeholders, plural categories, unused and unknown keys"
+depends = ["install"]
+run = "pnpm i18n:check"
+
+[tasks.weather-smoke]
+description = "Live smoke test of the rain sources (Open-Meteo, Environment Agency): calls the real services once, not part of check"
+depends = ["install"]
+run = "node scripts/weather-smoke.mjs"
+
+[tasks.server]
+description = "Optional self-hosted server on port 8080, reachable from the home network (needs GREEN_GARDEN_SERVER_TOKEN in .env; HOST, PORT, GREEN_GARDEN_SERVER_DATA_DIR to change)"
+depends = ["install"]
+run = "pnpm --filter @green-garden/server start"
+
+[tasks.ha-bridge]
+description = "Home Assistant bridge: plants as HA entities over MQTT (needs GREEN_GARDEN_SERVER_TOKEN and GREEN_GARDEN_HA_MQTT_URL in .env, the server running)"
+depends = ["install"]
+run = "pnpm --filter @green-garden/ha-bridge start"

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-coleus",
+      "title": "NC State Plant Toolbox: Coleus scutellarioides",
+      "url": "https://plants.ces.ncsu.edu/plants/coleus-scutellarioides/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-coleus-amboinicus",
+      "title": "Coleus ampoinicus (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/coleus",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "coleus-scutellarioides",
+      "taxon": {
+        "scientificName": "Coleus scutellarioides"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Coleus",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Painted nettle"
+          }
+        ],
+        "synonyms": ["Plectranthus scutellarioides", "Solenostemon scutellarioides"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-coleus",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost lightly moist, never bone dry, and water sooner if the leaves flop in bright light."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-coleus",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 91
+          },
+          "unit": "cm",
+          "source": "ncsu-coleus",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-coleus",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["diterpenes"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "aspca-coleus-amboinicus",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "aspca-coleus-amboinicus",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-coleus",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-coleus", "aspca-coleus-amboinicus"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Coleus scutellarioides (cultivars) - Jardin universitaire Roger-Van den Hende, Quebec 36.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Wilfredor",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coleus_scutellarioides_(cultivars)_-_Jardin_universitaire_Roger-Van_den_Hende,_Quebec_36.jpg",
+          "thumbnail": "coleus-scutellarioides.webp"
+        }
+      ],
+      "photoFile": "Coleus scutellarioides (cultivars) - Jardin universitaire Roger-Van den Hende, Quebec 36.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "indoor", "foliage", "tender"]
+      },
+      "provenance": {
+        "notes": "Also sold as Plectranthus scutellarioides; NC State now files it as Coleus. Only one fetched page about this plant (NC State); the Missouri Botanical Garden page failed (certificate error). About a third of the NC State page reached me as a model summary rather than verbatim text, so zones and attribute tags are weaker than the description. Watering: NC State says moist, rich, loose soil and gives no schedule; keep_moist is the agent's mapping. Light: NC State best in part shade, tolerates full shade, may wilt in full sun, needs bright light indoors; stored bright_indirect (agent). Size: NC State mound up to 3 ft both ways. Toxicity: NC State says low-severity poison with diterpenes and skin irritation on contact (allergic rash after repeated contact) but says nothing about pets. The ASPCA coleus page is for a different species (Coleus ampoinicus, Indian borage: toxic to dogs and cats, essential oils, vomiting and diarrhoea), so it is a related-species reading only: pets graded 1 as from_knowledge_verify. Review."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/coleus-scutellarioides/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/coleus"
+      ]
+    }
+  ]
+}

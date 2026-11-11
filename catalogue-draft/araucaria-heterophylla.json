@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "iastate-norfolk",
+      "title": "Iowa State Yard and Garden: caring for a Norfolk Island pine",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/how-do-i-care-norfolk-island-pine",
+      "publisher": "Iowa State University Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-norfolk",
+      "title": "NC State Plant Toolbox: Araucaria heterophylla",
+      "url": "https://plants.ces.ncsu.edu/plants/araucaria-heterophylla/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-norfolk",
+      "title": "RHS: Araucaria heterophylla",
+      "url": "https://www.rhs.org.uk/plants/1461/araucaria-heterophylla/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-norfolk",
+      "title": "Australian Pine, Norfolk Island pine (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/australian-pine",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "araucaria-heterophylla",
+      "taxon": {
+        "scientificName": "Araucaria heterophylla"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Norfolk Island pine",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Norfolk pine"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["ncsu-norfolk", "rhs-norfolk"],
+          "source": "iastate-norfolk",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Soak it once the top feels dry and tip out the saucer; turn it weekly so it grows straight."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-norfolk"],
+          "source": "iastate-norfolk",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": 21
+          },
+          "unit": "C",
+          "corroboratedBy": ["ncsu-norfolk"],
+          "source": "iastate-norfolk",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-norfolk",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-norfolk",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-norfolk",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-norfolk"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-norfolk",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-norfolk"]
+          }
+        ],
+        "sources": ["aspca-norfolk", "ncsu-norfolk"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Norfolkpine001.jpg",
+          "licence": "PDM-1.0",
+          "creator": "Kahuroa",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norfolkpine001.jpg",
+          "thumbnail": "araucaria-heterophylla.webp"
+        }
+      ],
+      "photoFile": "Norfolkpine001.jpg",
+      "tags": {
+        "curated": ["indoor", "conifer"]
+      },
+      "provenance": {
+        "notes": "The 01e baseline expected severity 1 (sharp needles, pets avoid it); both fetched toxicity sources (ASPCA and NC State's non-toxic tags for cats and dogs) say non-toxic, so 0. NC State notes the leaf tips are sharp-pointed. Light: Iowa State 'bright light' near an east, west or south window, NC State bright with some afternoon shade; mapped to bright_indirect. Temperature: Iowa State 55 to 70 F, NC State 55 to 65 F. Growth rate: NC State says rapid, which fits the tree outdoors; RHS implies slow (over 50 years to maturity) and indoor plants are said to reach about 9 ft; treat as unreliable. Size: houseplants stay near 9 ft (NC State) but no spread is given, so unknown. Humidity: Iowa State says winter air is too dry, no number."
+      },
+      "sourcesRead": [
+        "https://yardandgarden.extension.iastate.edu/faq/how-do-i-care-norfolk-island-pine",
+        "https://plants.ces.ncsu.edu/plants/araucaria-heterophylla/",
+        "https://www.rhs.org.uk/plants/1461/araucaria-heterophylla/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/australian-pine"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Real pines (Pinus)",
+          "tell": "Norfolk pine has tiered symmetrical branches with soft needles; true pines have bundled needles"
+        },
+        {
+          "name": "Araucaria columnaris",
+          "tell": "Norfolk pine has tiered symmetrical branches with soft needles; true pines have bundled needles"
+        },
+        {
+          "name": "Podocarpus",
+          "tell": "Norfolk pine has tiered symmetrical branches with soft needles; true pines have bundled needles"
+        }
+      ],
+      "nameIdeas": ["Norfolk Nick", "Tinsel", "Little Tree", "Norman", "Fir-ly"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/91-cuidados-de-la-planta-araucaria-heterophylla-o-pino-de-norfolk",
+          "title": "Araucaria heterophylla o Pino de Norfolk | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/pino-de-norfolk_3092",
+          "title": "verdeesvida :: Pino de Norfolk",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

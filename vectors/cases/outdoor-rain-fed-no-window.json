@@ -1,0 +1,29 @@
+{
+  "name": "outdoor-rain-fed-no-window",
+  "description": "GV-K8 (02k E1): lavender established in the ground in Madrid in July. Rain-fed: no window, no watering day; it is listed in rainFed with its drought check.",
+  "why": "02k section 1.3 rule 5 and section 3.5: a rain-fed plant never produces a window.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-07-20",
+    "climate": "mediterranean",
+    "plants": [
+      {
+        "id": "lavender",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "placement": "ground",
+        "plantedOn": "2023-03-01",
+        "droughtTolerance": "high",
+        "establishingIntervalDays": 7,
+        "logs": [{ "date": "2026-06-25", "outcome": "looks_fine" }]
+      }
+    ]
+  },
+  "expected": {
+    "days": [],
+    "plants": [],
+    "rainFed": [
+      { "plantId": "lavender", "daysSinceCredit": 25, "checkDays": 21, "droughtCheck": true }
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-dichondra",
+      "title": "NC State Plant Toolbox: Dichondra argentea 'Silver Falls'",
+      "url": "https://plants.ces.ncsu.edu/plants/dichondra-argentea-silver-falls/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-dichondra",
+      "title": "RHS: Dichondra argentea 'Silver Falls'",
+      "url": "https://www.rhs.org.uk/plants/219360/dichondra-argentea-silver-falls/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dichondra-argentea",
+      "taxon": {
+        "scientificName": "Dichondra argentea"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Silver nickel vine",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Dichondra"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Silver ponysfoot"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-dichondra"],
+          "source": "ncsu-dichondra",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Let the top of the compost dry between drinks, it copes with drought better than with wet roots, and move baskets frost-free for winter."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-dichondra"],
+          "source": "ncsu-dichondra",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 10,
+            "spread": 122
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-dichondra"],
+          "source": "ncsu-dichondra",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-dichondra",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["rhs-dichondra"],
+          "source": "ncsu-dichondra",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-dichondra",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-dichondra"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Chicago Botanic Gdn, Heritage Gdn, Summer pots 180719 342 Pelargonium 'Bullseye Red', Petunia Headliner™ Red, Tagetes 'Marvel Yellow', Celosia argentea 'Twisted Orange', Dichondra argentea 'Silver Falls',.jpg",
+          "licence": "CC-BY-2.0",
+          "creator": "cultivar413",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicago_Botanic_Gdn,_Heritage_Gdn,_Summer_pots_180719_342_Pelargonium_%27Bullseye_Red%27,_Petunia_Headliner%E2%84%A2_Red,_Tagetes_%27Marvel_Yellow%27,_Celosia_argentea_%27Twisted_Orange%27,_Dichondra_argentea_%27Silver_Falls%27,.jpg",
+          "thumbnail": "dichondra-argentea.webp"
+        }
+      ],
+      "photoFile": "Chicago Botanic Gdn, Heritage Gdn, Summer pots 180719 342 Pelargonium 'Bullseye Red', Petunia Headliner™ Red, Tagetes 'Marvel Yellow', Celosia argentea 'Twisted Orange', Dichondra argentea 'Silver Falls',.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "trailing", "drought_tolerant", "full_sun", "foliage"]
+      },
+      "provenance": {
+        "notes": "Sold as 'Silver Falls'. Watering: NC State dry to medium moisture, very drought tolerant; RHS well-drained and drought resistant; mapped to let_top_dry (agent). Hardiness: NC State zones 10a to 12b, RHS H2: tender, move frost-free for winter. Size: NC State 2 to 4 in by 3 to 4 ft, RHS up to 10 cm by 1 to 1.5 m. Toxicity: only NC State says anything, and only about people (low severity, skin irritation from touching, contact dermatitis yes); nothing was found on cats or dogs, so no pet lines are stored and pet safety is unknown (the starter list's 'non-toxic' is knowledge, unverified). RHS is silent."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/dichondra-argentea-silver-falls/",
+        "https://www.rhs.org.uk/plants/219360/dichondra-argentea-silver-falls/details"
+      ]
+    }
+  ]
+}

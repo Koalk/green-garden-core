@@ -1,0 +1,22 @@
+{
+  "name": "season-windows-spain-october",
+  "description": "The same pothos watered on 2026-10-17 in Spain (40 N): still growth, so 7 days.",
+  "why": "Weight 0 at 40 N on 17 October (season-ramp-spain-october): interval 7, band 2 early and 2 late: 2026-10-22 to 2026-10-26.",
+  "input": {
+    "today": "2026-10-18",
+    "hemisphere": "north",
+    "latitude": 40,
+    "plants": [
+      {
+        "id": "pothos",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "restFactor": 1.5,
+        "lastWatered": "2026-10-17"
+      }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "pothos", "earliest": "2026-10-22", "latest": "2026-10-26" }]
+  }
+}

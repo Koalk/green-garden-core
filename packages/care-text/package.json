@@ -1,0 +1,17 @@
+{
+  "name": "@green-garden/care-text",
+  "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@green-garden/engine": "workspace:*",
+    "@green-garden/i18n": "workspace:*",
+    "@green-garden/storage": "workspace:*"
+  }
+}

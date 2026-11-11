@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-04",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-viburnum-tinus",
+      "title": "RHS Plant Profile: Viburnum tinus (laurustinus)",
+      "url": "https://www.rhs.org.uk/plants/18950/viburnum-tinus/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-viburnum-growing-guide",
+      "title": "RHS Growing Guide: How to grow viburnum",
+      "url": "https://www.rhs.org.uk/plants/viburnum/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-viburnum-tinus",
+      "title": "NC State Plant Toolbox: Viburnum tinus",
+      "url": "https://plants.ces.ncsu.edu/plants/viburnum-tinus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "viburnum-tinus",
+      "taxon": {
+        "scientificName": "Viburnum tinus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Laurustinus",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Laurustine"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Common laurustinus"
+          },
+          {
+            "lang": "es",
+            "name": "Durillo",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Laurentino",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Durillo común",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Viburno tino",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Lentaggine",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Laurotino",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Viburnum laurustinus"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-viburnum-tinus",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-viburnum-growing-guide",
+          "corroboratedBy": ["rhs-viburnum-tinus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "In a pot, water when the top of the compost feels dry, and keep watering through dry spells."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-viburnum-tinus",
+          "corroboratedBy": ["ncsu-viburnum-tinus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 300,
+            "spread": 300
+          },
+          "unit": "cm",
+          "source": "rhs-viburnum-tinus",
+          "corroboratedBy": ["ncsu-viburnum-tinus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-viburnum-tinus",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "author",
+          "confidence": "guess"
+        },
+        "hardiness": {
+          "value": "H4",
+          "source": "rhs-viburnum-tinus",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-viburnum-tinus",
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "ncsu-viburnum-tinus",
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "rhs-viburnum-tinus",
+          "corroboratedBy": ["ncsu-viburnum-tinus", "rhs-viburnum-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-viburnum-tinus",
+          "corroboratedBy": ["ncsu-viburnum-tinus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants as needed through their first year or two, especially in dry spells; established laurustinus copes with drought."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": []
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "foliage", "hardy"]
+      },
+      "provenance": {
+        "notes": "Row 77. Hardiness: RHS H4 (-10 to -5 C), NC State has no zone line for the UK; this is the least hardy of the batch. Toxicity: RHS says the fruit are ornamental and not to be eaten and to wear gloves when handling, with no named animal, severity or symptom; ASPCA letter pages for V and L were fetched and list no Viburnum tinus entry (page 1 of 4 only for L), NC State has no toxicity line. So toxicity stays unknown (pets unknown, never pet-safe). Watering: RHS guide says to water newly planted viburnums as needed for the first year or two, especially in dry periods, and has no potted-plant section; NC State says drought tolerant and good drainage. let_top_dry and 7 days are the agent's mapping and a guess. Light and sun: RHS profile full sun, partial shade and full shade, guide most viburnums like an open sunny site, NC State full sun to partial shade; bright_indirect and part are the agent's reading of that spread. Size: RHS 2.5 to 4 m both ways (to 3 m tall), NC State 6 to 12 ft by 6 to 10 ft; 3 m is the agent's pick. Placement: pages describe a border shrub; pot_outdoor is the starter-list row, not a statement of a source. Missouri Botanical Garden failed twice (certificate error). Fetched through a summarising fetch: wording not checked against the raw pages. Es and it names are machine drafts (laurentino, lentaggine are the names I know people use; not sourced)."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/18950/viburnum-tinus/details",
+        "https://www.rhs.org.uk/plants/viburnum/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/viburnum-tinus/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/v",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/l"
+      ],
+      "lookAlikes": [],
+      "lookAlikeNote": "NC State lists Viburnum awabuki 'Chindo', V. plicatum 'Summer Snowflake', V. rhytidophyllum and V. setigerum as often confused with it, without saying how to tell them apart.",
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/803-cuidados-de-la-planta-viburnum-tinus-durillo-o-laurel-salvaje",
+          "title": "Viburnum tinus, Durillo o Laurel salvaje | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/piante-da-giardino/viburnum-tinus.asp",
+          "title": "Viburnum tinus - Piante da Giardino - viburno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

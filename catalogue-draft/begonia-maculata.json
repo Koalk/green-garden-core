@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "aspca-begonia",
+      "title": "Begonia spp. (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "begonia-maculata",
+      "taxon": {
+        "scientificName": "Begonia maculata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Polka dot begonia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Spotted begonia"
+          },
+          {
+            "lang": "es",
+            "name": "Begonia maculata",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Begonia maculata",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "baseIntervalDays": {
+          "value": 6,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Let the top of the mix dry a little between waterings and keep the leaves dry."
+        },
+        "light": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["soluble_oxalate"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "aspca-begonia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "aspca-begonia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-begonia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Pink variegated begonia maculata.jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "Apprehensive-lab-285",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pink_variegated_begonia_maculata.jpg",
+          "thumbnail": "begonia-maculata.webp"
+        }
+      ],
+      "photoFile": "Pink variegated begonia maculata.jpg",
+      "tags": {
+        "curated": ["indoor", "foliage"]
+      },
+      "provenance": {
+        "notes": "Weak entry: NC State page 404, RHS and MBG not fetched, so only the ASPCA genus page (Begonia spp.) was read: toxic to cats and dogs (soluble calcium oxalates; vomiting and drooling; underground parts most toxic). Severity 1 is a mapping. All care values unknown; interval and tip are rules of thumb. Common names are author knowledge."
+      },
+      "sourcesRead": [
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "outdoor-rain-partial-credit",
+  "description": "GV-K4 (02k E3): the same plant on sandy soil with mulch (interval 5). 9 mm is a partial credit (at least half of 15 mm): on 06-05 it sets notBefore 06-06, so the window opens a day later.",
+  "why": "Hand computation in 02k section 3.7, example E3 (round(7 x 0.7 x 1.25 x 0.85) = 5, band 1 early and late) and section 3.3 (partial credit: notBefore = date + 1).",
+  "input": {
+    "today": "2026-06-05",
+    "climate": "oceanic_dry",
+    "plants": [
+      {
+        "id": "lavender",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "placement": "ground",
+        "sun": "full_sun",
+        "groundSoil": "sandy",
+        "mulched": true,
+        "plantedOn": "2026-05-01",
+        "droughtTolerance": "moderate",
+        "establishingIntervalDays": 7,
+        "lastWatered": "2026-06-01",
+        "logs": [{ "date": "2026-06-05", "outcome": "rain", "mm": 9 }]
+      }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "lavender", "earliest": "2026-06-06", "latest": "2026-06-07" }]
+  }
+}

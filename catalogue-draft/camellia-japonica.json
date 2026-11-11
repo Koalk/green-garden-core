@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-camellia-japonica",
+      "title": "NC State Plant Toolbox: Camellia japonica",
+      "url": "https://plants.ces.ncsu.edu/plants/camellia-japonica/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-camellia-japonica",
+      "title": "Missouri Botanical Garden Plant Finder: Camellia japonica",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=287331&isprofile=0&basic=camellia%20japonica",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-camellia-japonica",
+      "title": "RHS Plant Profile: Camellia japonica",
+      "url": "https://www.rhs.org.uk/plants/2845/camellia-japonica/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-camellia",
+      "title": "Camellia (Camellia japonica) (toxic and non-toxic plants)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/camellia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "camellia-japonica",
+      "taxon": {
+        "scientificName": "Camellia japonica"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Camellia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Japanese camellia"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Japanese rose"
+          },
+          {
+            "lang": "es",
+            "name": "Camelia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Camelia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-camellia-japonica",
+          "confidence": "checked"
+        },
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-camellia-japonica",
+          "corroboratedBy": ["mbg-camellia-japonica", "rhs-camellia-japonica"],
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost evenly moist with rainwater if you can; irregular watering and dry late summers make the buds drop."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-camellia-japonica",
+          "corroboratedBy": ["mbg-camellia-japonica", "rhs-camellia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 365,
+            "spread": 300
+          },
+          "unit": "cm",
+          "source": "mbg-camellia-japonica",
+          "corroboratedBy": ["ncsu-camellia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-camellia-japonica",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "mbg-camellia-japonica",
+          "corroboratedBy": ["ncsu-camellia-japonica", "rhs-camellia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-camellia-japonica",
+          "confidence": "from_knowledge_verify"
+        },
+        "droughtTolerance": {
+          "value": "none",
+          "source": "ncsu-camellia-japonica",
+          "corroboratedBy": ["mbg-camellia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "dormancy": {
+          "value": "none",
+          "source": "ncsu-camellia-japonica",
+          "corroboratedBy": ["rhs-camellia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "ncsu-camellia-japonica",
+          "corroboratedBy": ["mbg-camellia-japonica", "rhs-camellia-japonica"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "moist",
+          "source": "ncsu-camellia-japonica",
+          "corroboratedBy": ["mbg-camellia-japonica", "rhs-camellia-japonica"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water in dry spells, above all in late summer when the flower buds form, and mulch to keep the roots cool and moist."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-camellia",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-camellia",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["aspca-camellia"],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": [
+          "outdoor_pot",
+          "ground",
+          "flowering",
+          "part_shade",
+          "acid_soil",
+          "needs_acid_compost"
+        ]
+      },
+      "provenance": {
+        "notes": "Row 95, the Japanese camellia, the common garden and pot shrub. Three care sources agree on part shade, moist but well-drained acid soil and shelter from cold wind and early sun. Missouri BG: pots overwinter poorly indoors and buds drop above about 13 C; a pot outside is the usual UK use. Size: NC State 10 to 13 ft by 5 to 10 ft, Missouri BG 7 to 12 ft by 5 to 10 ft, RHS up to 8 to 12 m after 10 to 20 years; 365 by 300 cm (the Missouri upper figure) is the agent's choice and a pot plant stays smaller. No hardiness stored: the RHS page read shows the rating key but not this plant's H value (the page's value did not come through in the text); NC State USDA 7 to 9. Pets: ASPCA lists Camellia japonica as non-toxic to dogs and cats; NC State has no poison section. Single toxicity source. People not graded. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/camellia-japonica/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=287331&isprofile=0&basic=camellia%20japonica",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=267199&isprofile=0&basic=camellia%20japonica",
+        "https://www.rhs.org.uk/plants/2845/camellia-japonica/details",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/camellia"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Sasanqua camellia (Camellia sasanqua)",
+          "tell": "Smaller leaves and flowers in autumn and early winter; slightly less hardy (RHS)."
+        },
+        {
+          "name": "Tea plant (Camellia sinensis)",
+          "tell": "Small, thin leaves and small white flowers; grown for tea."
+        }
+      ],
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/160-cuidados-de-la-planta-camellia-japonica-o-camelia",
+          "title": "Camellia japonica o Camelia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

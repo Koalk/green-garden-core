@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "aspca-prayer-plant",
+      "title": "Prayer Plant (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/prayer-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en",
+      "linkKind": "toxicity"
+    },
+    {
+      "id": "ncsu-goeppertia",
+      "title": "NC State Plant Toolbox: Goeppertia makoyana",
+      "url": "https://plants.ces.ncsu.edu/plants/goeppertia-makoyana/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-calathea",
+      "title": "How to grow calatheas, RHS Growing Guide",
+      "url": "https://www.rhs.org.uk/plants/calathea/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "goeppertia-makoyana",
+      "taxon": {
+        "scientificName": "Goeppertia makoyana"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Calathea",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-calathea"],
+          "source": "ncsu-goeppertia",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Moist but never soggy; use soft water if the leaf edges brown."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-calathea"],
+          "source": "ncsu-goeppertia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 21
+          },
+          "unit": "C",
+          "source": "rhs-calathea",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": {
+            "min": 60,
+            "max": null
+          },
+          "unit": "%",
+          "source": "ncsu-goeppertia",
+          "confidence": "checked"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 61,
+            "spread": 30
+          },
+          "unit": "cm",
+          "source": "ncsu-goeppertia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-goeppertia",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-goeppertia",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-goeppertia",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["ncsu-goeppertia"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "CalatheaMakoyana.jpg",
+          "licence": "PDM-1.0",
+          "creator": "Chhe (talk)",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CalatheaMakoyana.jpg",
+          "thumbnail": "goeppertia-makoyana.webp"
+        }
+      ],
+      "photoFile": "CalatheaMakoyana.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Temperature: RHS 16-21 C; NC State gives 65-75 without units. The ASPCA page read was for Calathea insignis, not G. makoyana, so it is not cited for this plant. RHS is a genus-level guide for Calathea."
+      },
+      "sourcesRead": [
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/prayer-plant",
+        "https://plants.ces.ncsu.edu/plants/goeppertia-makoyana/",
+        "https://www.rhs.org.uk/plants/calathea/growing-guide"
+      ],
+      "links": [
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/calathea/calathea.asp",
+          "title": "Calatea - Calathea makoyana - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

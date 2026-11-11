@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "sdstate-aloe",
+      "title": "Aloe vera: houseplant how-to",
+      "url": "https://extension.sdstate.edu/aloe-vera-houseplant-how",
+      "publisher": "SDSU Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "aloe-vera",
+      "taxon": {
+        "scientificName": "Aloe vera"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Aloe vera",
+            "primary": true
+          }
+        ],
+        "synonyms": ["Aloe barbadensis"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "sdstate-aloe",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.6,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water deeply but rarely; mushy lower leaves mean it stayed wet."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "sdstate-aloe",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": 29
+          },
+          "unit": "C",
+          "source": "sdstate-aloe",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "rosette",
+          "source": "sdstate-aloe",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["anthraquinone_glycoside", "saponin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "sdstate-aloe",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "sdstate-aloe",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["sdstate-aloe"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "עציץ אלוורה.jpg",
+          "licence": "CC0-1.0",
+          "creator": "חדש דנדש",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D7%A2%D7%A6%D7%99%D7%A5_%D7%90%D7%9C%D7%95%D7%95%D7%A8%D7%94.jpg",
+          "thumbnail": "aloe-vera.webp"
+        }
+      ],
+      "photoFile": "עציץ אלוורה.jpg",
+      "tags": {
+        "curated": ["indoor", "beginner_friendly"]
+      },
+      "provenance": {
+        "notes": "One fetched page only. SDSU says people and pets should not eat it; the pet-specific severity, agents and symptoms are the agent's. Habit 'rosette' is a mapping from 'leaves fanning from the centre'."
+      },
+      "sourcesRead": ["https://extension.sdstate.edu/aloe-vera-houseplant-how"],
+      "lookAlikes": [
+        {
+          "name": "Other Aloe species",
+          "tell": "Snap a leaf: aloe breaks and is gel-filled, agave is fibrous with a hard tip spine. Agave centre is tightly rolled, aloe centre stays open"
+        },
+        {
+          "name": "Agave",
+          "tell": "Snap a leaf: aloe breaks and is gel-filled, agave is fibrous with a hard tip spine. Agave centre is tightly rolled, aloe centre stays open"
+        },
+        {
+          "name": "Yucca",
+          "tell": "Snap a leaf: aloe breaks and is gel-filled, agave is fibrous with a hard tip spine. Agave centre is tightly rolled, aloe centre stays open"
+        },
+        {
+          "name": "Haworthiopsis",
+          "tell": "Snap a leaf: aloe breaks and is gel-filled, agave is fibrous with a hard tip spine. Agave centre is tightly rolled, aloe centre stays open"
+        }
+      ],
+      "lookAlikeNote": "Agave sap is a stronger irritant; not every Aloe is safe to use topically",
+      "nameIdeas": ["Aloe Vera Baby", "Alo-ha", "Aloe-ve", "Vera Wang", "Soothe Sayer"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/70-cuidados-de-la-planta-aloe-vera-acibar-o-sabila",
+          "title": "Aloe vera, Acíbar o Sábila | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/arbustos-y-trepadoras_1/aloe-vera--ac�bar--s�bila_3057",
+          "title": "verdeesvida :: Aloe vera, Acíbar, Sábila",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/grasse/singolegrasse/aloe/aloe.asp",
+          "title": "Aloe, Pianta della salute - Aloe arborescens - Succulente",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

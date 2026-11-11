@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-opuntia-microdasys",
+      "title": "NC State Plant Toolbox: Opuntia microdasys",
+      "url": "https://plants.ces.ncsu.edu/plants/opuntia-microdasys/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-opuntia-microdasys",
+      "title": "RHS: Opuntia microdasys",
+      "url": "https://www.rhs.org.uk/plants/11881/opuntia-microdasys/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-succulents",
+      "title": "ASPCA: Are succulents safe to have around pets?",
+      "url": "https://www.aspca.org/news/are-succulents-safe-have-around-pets",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "opuntia-microdasys",
+      "taxon": {
+        "scientificName": "Opuntia microdasys"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Bunny ears cactus",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Polka dot cactus"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Angel's wings"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["rhs-opuntia-microdasys"],
+          "source": "ncsu-opuntia-microdasys",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 21,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water only when the mix has dried out completely, and give none in winter, when it rests cool."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-opuntia-microdasys"],
+          "source": "ncsu-opuntia-microdasys",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 152
+          },
+          "unit": "cm",
+          "source": "ncsu-opuntia-microdasys",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-opuntia-microdasys",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-opuntia-microdasys",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["glochids"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-opuntia-microdasys",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-succulents"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-opuntia-microdasys",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-succulents"]
+          },
+          {
+            "who": "dog",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "rhs-opuntia-microdasys",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-opuntia-microdasys",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-opuntia-microdasys"]
+          },
+          {
+            "who": "adult",
+            "route": "eye",
+            "severity": 1,
+            "symptoms": [],
+            "source": "rhs-opuntia-microdasys",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-opuntia-microdasys", "rhs-opuntia-microdasys", "aspca-succulents"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Cactus \"Opuntia microdasys\".jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Juan Emilio Prades Bel",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cactus_%22Opuntia_microdasys%22.jpg",
+          "thumbnail": "opuntia-microdasys.webp"
+        }
+      ],
+      "photoFile": "Cactus \"Opuntia microdasys\".jpg",
+      "tags": {
+        "curated": [
+          "indoor",
+          "outdoor_pot",
+          "succulent",
+          "cactus",
+          "drought_tolerant",
+          "dormant_season"
+        ]
+      },
+      "provenance": {
+        "notes": "Not poisonous, but the pads carry fine barbed bristles (glochids) that come off at a touch and lodge in skin, eyes and mouth; both NC State and RHS say wear gloves, and RHS says handle segments with folded newspaper. The skin and eye lines are about the bristles, graded 1 by the agent; RHS lists the plant as a skin and eye irritant for people and for dogs. Ingestion: NC State tags it non-toxic for cats and dogs; the ASPCA succulents article lists it among non-toxic succulents without naming the animals. Dormant in winter: cool (NC State 50 to 65 F), water and feed withheld (RHS); no number for the rest factor. Size: NC State 2 to 3 ft tall by 4 to 5 ft wide; RHS 0.5 to 1 m tall (its spread field reads 0 to 0.1 m, which looks wrong). The NC State pet-toxicity statement is a tag only. Hardiness: NC State zones 9a to 11b, RHS H2."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/opuntia-microdasys/",
+        "https://www.rhs.org.uk/plants/11881/opuntia-microdasys/details",
+        "https://www.aspca.org/news/are-succulents-safe-have-around-pets"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/573-cuidados-de-la-planta-opuntia-microdasys-o-alas-de-angel",
+          "title": "Opuntia microdasys o Alas de ángel | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/grasse/singolegrasse/opuntia/opuntia.asp",
+          "title": "Opunzia, Fico d'India - Opuntia robusta - Succulente - Piante Grasse",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

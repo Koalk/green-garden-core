@@ -1,0 +1,62 @@
+{
+  "name": "plan-e6-ten-plants-28-days",
+  "description": "02a E6 ten-plant collection, 28 days from Monday 2026-11-02, no preferences, no away days: 11 combined days instead of 24, every plant on its ideal watering count.",
+  "why": "02a 5.3: the E6 plan lists days 1, 5, 9, 13, 16, 17, 19, 20, 21, 24, 25 with the plant sets printed there; saving 54%; ideal counts Monstera 4, Pothos 3, Fern 7, Snake 1, Jade 2, Peace lily 5, Spider 4, Calathea 7, ZZ 2, Rubber 3.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-02",
+    "horizonDays": 28,
+    "plants": [
+      { "id": "monstera", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-30" },
+      { "id": "pothos", "style": "let_top_dry", "intervalDays": 8, "lastWatered": "2026-10-29" },
+      { "id": "fern", "style": "keep_moist", "intervalDays": 4, "lastWatered": "2026-10-31" },
+      { "id": "snake", "style": "let_fully_dry", "intervalDays": 21, "lastWatered": "2026-10-23" },
+      { "id": "jade", "style": "let_fully_dry", "intervalDays": 14, "lastWatered": "2026-10-28" },
+      { "id": "peace-lily", "style": "keep_moist", "intervalDays": 5, "lastWatered": "2026-11-01" },
+      { "id": "spider", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-28" },
+      { "id": "calathea", "style": "keep_moist", "intervalDays": 4, "lastWatered": "2026-10-30" },
+      { "id": "zz", "style": "let_fully_dry", "intervalDays": 18, "lastWatered": "2026-10-24" },
+      { "id": "rubber", "style": "let_top_dry", "intervalDays": 9, "lastWatered": "2026-10-31" }
+    ]
+  },
+  "expected": {
+    "summary": { "naiveDays": 24, "wateringDays": 11, "savingPercent": 54 },
+    "days": [
+      { "date": "2026-11-03", "plantIds": ["calathea", "fern", "spider"] },
+      {
+        "date": "2026-11-07",
+        "plantIds": ["calathea", "fern", "monstera", "peace-lily", "pothos", "rubber"]
+      },
+      {
+        "date": "2026-11-11",
+        "plantIds": ["calathea", "fern", "jade", "peace-lily", "snake", "spider", "zz"]
+      },
+      {
+        "date": "2026-11-15",
+        "plantIds": ["calathea", "fern", "monstera", "peace-lily", "pothos"]
+      },
+      { "date": "2026-11-18", "plantIds": ["calathea", "rubber", "spider"] },
+      { "date": "2026-11-19", "plantIds": ["fern"] },
+      { "date": "2026-11-21", "plantIds": ["monstera", "peace-lily", "pothos"] },
+      { "date": "2026-11-22", "plantIds": ["calathea"] },
+      { "date": "2026-11-23", "plantIds": ["fern", "spider"] },
+      {
+        "date": "2026-11-26",
+        "plantIds": ["calathea", "jade", "monstera", "peace-lily", "rubber"]
+      },
+      { "date": "2026-11-27", "plantIds": ["fern", "zz"] }
+    ],
+    "plants": [
+      { "plantId": "calathea", "wateringCount": 7, "outlook": { "level": "thrive" } },
+      { "plantId": "fern", "wateringCount": 7, "outlook": { "level": "thrive" } },
+      { "plantId": "jade", "wateringCount": 2, "outlook": { "level": "thrive" } },
+      { "plantId": "monstera", "wateringCount": 4, "outlook": { "level": "thrive" } },
+      { "plantId": "peace-lily", "wateringCount": 5, "outlook": { "level": "thrive" } },
+      { "plantId": "pothos", "wateringCount": 3, "outlook": { "level": "thrive" } },
+      { "plantId": "rubber", "wateringCount": 3, "outlook": { "level": "thrive" } },
+      { "plantId": "snake", "wateringCount": 1, "outlook": { "level": "thrive" } },
+      { "plantId": "spider", "wateringCount": 4, "outlook": { "level": "thrive" } },
+      { "plantId": "zz", "wateringCount": 2, "outlook": { "level": "thrive" } }
+    ]
+  }
+}

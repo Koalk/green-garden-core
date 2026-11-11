@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-uk-summer",
+  "description": "Rest-season weight at about 55 N (UK) on 2026-07-01: growth season, 0.",
+  "why": "2 July is 183 days from the centre, far outside the 90 day reach. Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2026-07-01", "hemisphere": "north", "latitude": 55 },
+  "expected": { "weight": 0 }
+}

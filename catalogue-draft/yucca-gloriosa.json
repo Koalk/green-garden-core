@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "ncsu-yucca-gloriosa",
+      "title": "NC State Plant Toolbox: Yucca gloriosa",
+      "url": "https://plants.ces.ncsu.edu/plants/yucca-gloriosa/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-yucca-gloriosa",
+      "title": "Missouri Botanical Garden Plant Finder: Yucca gloriosa",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=255857&isprofile=0&basic=yucca%20gloriosa",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-yucca-gloriosa",
+      "title": "RHS Plant Profile: Yucca gloriosa",
+      "url": "https://www.rhs.org.uk/plants/19168/yucca-gloriosa/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-yucca",
+      "title": "ASPCA toxic and non-toxic plants: Yucca (genus)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/yucca",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "yucca-gloriosa",
+      "taxon": {
+        "scientificName": "Yucca gloriosa"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Yucca",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Spanish dagger"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Mound lily yucca"
+          },
+          {
+            "lang": "es",
+            "name": "Yuca",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Yuca gloriosa",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Yucca",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Yucca gloriosa",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "rosette",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["mbg-yucca-gloriosa", "rhs-yucca-gloriosa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["mbg-yucca-gloriosa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water thoroughly but only when the compost has dried right through; in winter keep it almost dry."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["mbg-yucca-gloriosa", "rhs-yucca-gloriosa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 200,
+            "spread": 200
+          },
+          "unit": "cm",
+          "source": "rhs-yucca-gloriosa",
+          "corroboratedBy": ["ncsu-yucca-gloriosa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["rhs-yucca-gloriosa"],
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor", "indoor"],
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["rhs-yucca-gloriosa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["mbg-yucca-gloriosa", "rhs-yucca-gloriosa"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["mbg-yucca-gloriosa"],
+          "confidence": "checked"
+        },
+        "dormancy": {
+          "value": "none",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["mbg-yucca-gloriosa", "rhs-yucca-gloriosa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["mbg-yucca-gloriosa", "rhs-yucca-gloriosa"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "ncsu-yucca-gloriosa",
+          "corroboratedBy": ["mbg-yucca-gloriosa", "rhs-yucca-gloriosa"],
+          "confidence": "checked"
+        },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-yucca-gloriosa",
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Plant in a sunny, sheltered spot in any well-drained soil; no pruning is needed beyond removing spent flower stems, and it should never need watering once established."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponins"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting"],
+            "source": "aspca-yucca",
+            "corroboratedBy": ["rhs-yucca-gloriosa"],
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting"],
+            "source": "aspca-yucca",
+            "corroboratedBy": ["rhs-yucca-gloriosa", "ncsu-yucca-gloriosa"],
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "rhs-yucca-gloriosa",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-yucca", "rhs-yucca-gloriosa", "ncsu-yucca-gloriosa"],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": [
+          "ground",
+          "outdoor_pot",
+          "full_sun",
+          "drought_tolerant",
+          "evergreen",
+          "thorny",
+          "toxic"
+        ]
+      },
+      "provenance": {
+        "notes": "Row 106, Yucca gloriosa (Spanish dagger). Care: NC State, Missouri BG (its cached page is the 'Variegata' cultivar) and RHS agree on full sun, free drainage, drought tolerance and a slow-growing evergreen shrub. Size: RHS 1.5 to 2.5 m by 1.5 to 2.5 m after 10 to 20 years, NC State 1.8 to 4.9 m by 1.8 to 2.4 m, Missouri BG 'Variegata' 60 to 120 cm; 200 by 200 cm is a choice. Hardiness H5 is the RHS rating (NC State zone 7 to 11). Placement: NC State says it is often a container plant and can be a house plant; RHS gives coastal, courtyard and border uses. Toxicity: ASPCA genus page (Yucca spp.) says toxic to dogs, cats and horses, saponins, vomiting in dogs and cats; RHS says harmful to pets if eaten and a skin allergen (wear gloves); NC State tags it as a problem for dogs, cats and horses. Severity 2 for cats and dogs and 1 for skin are the agent's mapping; no source grades people eating it (NC State lists flowers and stems as edible). Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/yucca-gloriosa/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=255857&isprofile=0&basic=yucca%20gloriosa",
+        "https://www.rhs.org.uk/plants/19168/yucca-gloriosa/details",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/yucca"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Spineless yucca (Yucca elephantipes)",
+          "tell": "The soft-leaved houseplant yucca with no spine at the leaf tip; Y. gloriosa has stiff, sharp-tipped leaves and is hardy outdoors."
+        },
+        {
+          "name": "Adam's needle (Yucca filamentosa)",
+          "tell": "Stemless clump with curly thread-like fibres along the leaf edges; Y. gloriosa grows a trunk and has no threads."
+        }
+      ],
+      "lookAlikeNote": "The leaf tips are sharp spines; plant it away from paths and where children play. RHS: skin allergen, wear gloves when handling.",
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/816-cuidados-de-la-planta-yucca-gloriosa-o-yuca-brillante",
+          "title": "Yucca gloriosa o Yuca brillante | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

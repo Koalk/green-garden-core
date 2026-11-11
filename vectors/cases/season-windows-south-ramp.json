@@ -1,0 +1,22 @@
+{
+  "name": "season-windows-south-ramp",
+  "description": "The same pothos in the southern hemisphere (55 S) watered on 2026-04-17: mirrored, so halfway up the ramp and a 9 day interval.",
+  "why": "Weight 0.5 (season-ramp-south-mirror): 9 days, band 2 and 2: 2026-04-24 to 2026-04-28.",
+  "input": {
+    "today": "2026-04-18",
+    "hemisphere": "south",
+    "latitude": 55,
+    "plants": [
+      {
+        "id": "pothos",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "restFactor": 1.5,
+        "lastWatered": "2026-04-17"
+      }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "pothos", "earliest": "2026-04-24", "latest": "2026-04-28" }]
+  }
+}

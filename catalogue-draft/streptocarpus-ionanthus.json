@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "aspca-african-violet",
+      "title": "African Violet (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/african-violet",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en",
+      "linkKind": "toxicity"
+    },
+    {
+      "id": "ncsu-streptocarpus",
+      "title": "NC State Plant Toolbox: Streptocarpus ionanthus",
+      "url": "https://plants.ces.ncsu.edu/plants/streptocarpus-ionanthus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "psu-african-violet",
+      "title": "African Violet Care",
+      "url": "https://extension.psu.edu/african-violet-care",
+      "publisher": "Penn State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "streptocarpus-ionanthus",
+      "taxon": {
+        "scientificName": "Streptocarpus ionanthus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "African violet",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-streptocarpus",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.4,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water the pot, not the leaves; cold water leaves spots."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-streptocarpus",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 27
+          },
+          "unit": "C",
+          "source": "ncsu-streptocarpus",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 23,
+            "spread": 23
+          },
+          "unit": "cm",
+          "source": "ncsu-streptocarpus",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-streptocarpus",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "rosette",
+          "source": "ncsu-streptocarpus",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-streptocarpus",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-african-violet"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-streptocarpus",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-african-violet"]
+          }
+        ],
+        "sources": ["ncsu-streptocarpus", "aspca-african-violet"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Saintpaulia ionantha subsp. rupicola - Botanical Garden in Kaisaniemi, Helsinki - DSC03658.JPG",
+          "licence": "CC0-1.0",
+          "creator": "Daderot",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saintpaulia_ionantha_subsp._rupicola_-_Botanical_Garden_in_Kaisaniemi,_Helsinki_-_DSC03658.JPG",
+          "thumbnail": "streptocarpus-ionanthus.webp"
+        }
+      ],
+      "photoFile": "Saintpaulia ionantha subsp. rupicola - Botanical Garden in Kaisaniemi, Helsinki - DSC03658.JPG",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Watering style is a mapping from 'let the surface dry before rewatering, water from the bottom'. The ASPCA page is listed as Saintpaulia spp. (the former genus name). The Penn State 'African Violet Care' URL returned a generic page with nothing about African violets; read, not used. University of Minnesota's page returned 403."
+      },
+      "sourcesRead": [
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/african-violet",
+        "https://plants.ces.ncsu.edu/plants/streptocarpus-ionanthus/",
+        "https://extension.psu.edu/african-violet-care"
+      ],
+      "links": [
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/violeta-africana_3125",
+          "title": "verdeesvida :: Violeta africana",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/saintpaulia/saintpaulia.asp",
+          "title": "Violetta africana - Saintpaulia - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

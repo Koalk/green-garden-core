@@ -1,0 +1,16 @@
+{
+  "name": "amount-calibration-plant-beats-room",
+  "description": "Calibration levels: a measured amount for the plant wins over a room factor and a global factor; the hint says which level it used.",
+  "why": "Most specific level wins, plant over room over global. 15 cm let_top_dry is 350 ml uncalibrated; the plant was measured at 500 ml.",
+  "fn": "wateringHint",
+  "input": {
+    "style": "let_top_dry",
+    "potDiameterCm": 15,
+    "calibration": {
+      "global": { "factor": 2 },
+      "room": { "factor": 0.5 },
+      "plant": { "measuredMl": 500 }
+    }
+  },
+  "expected": { "volumeMl": 500, "calibration": "plant" }
+}

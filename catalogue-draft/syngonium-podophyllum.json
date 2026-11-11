@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-syn",
+      "title": "NC State Plant Toolbox: Syngonium podophyllum",
+      "url": "https://plants.ces.ncsu.edu/plants/syngonium-podophyllum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-syn",
+      "title": "RHS: Syngonium podophyllum 'Pink Allusion'",
+      "url": "https://www.rhs.org.uk/plants/254850/syngonium-podophyllum-pink-allusion/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-arrow",
+      "title": "Arrow-Head Vine (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/arrow-head-vine",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "syngonium-podophyllum",
+      "taxon": {
+        "scientificName": "Syngonium podophyllum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Arrowhead vine",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Arrowhead plant"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-syn"],
+          "source": "ncsu-syn",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 6,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix damp but free-draining in the growing season, and give less in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-syn"],
+          "source": "rhs-syn",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 183,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-syn",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "climbing",
+          "corroboratedBy": ["rhs-syn"],
+          "source": "ncsu-syn",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "swelling", "drooling", "vomiting"],
+            "source": "aspca-arrow",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-syn", "rhs-syn"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "swelling", "drooling", "vomiting"],
+            "source": "aspca-arrow",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-syn", "rhs-syn"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "swelling", "drooling", "vomiting"],
+            "source": "ncsu-syn",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-syn"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-syn",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-syn"]
+          }
+        ],
+        "sources": ["aspca-arrow", "ncsu-syn", "rhs-syn"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Starr 080117-1518 Syngonium podophyllum.jpg",
+          "licence": "CC-BY-3.0",
+          "creator": "Forest & Kim Starr",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_080117-1518_Syngonium_podophyllum.jpg",
+          "thumbnail": "syngonium-podophyllum.webp"
+        }
+      ],
+      "photoFile": "Starr 080117-1518 Syngonium podophyllum.jpg",
+      "tags": {
+        "curated": ["indoor", "high_humidity"]
+      },
+      "provenance": {
+        "notes": "Severity: NC State rates the poison medium (the 01e baseline was 1); the ASPCA lists dogs and cats as toxic with oral pain, swelling, drooling and vomiting. Graded 2, the agent's mapping. RHS (cultivar 'Pink Allusion') says harmful if swallowed and an irritant to skin and eyes. Size is NC State (3 to 6 ft by 1 to 2 ft, upper values); RHS 1.5 to 2.5 m by up to 0.5 m. Humidity: NC State high, RHS medium; temperature: warm on both, no range. Growth rate: not stated. Young plants are shrubby and turn vining with age, so habit changes over time."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/syngonium-podophyllum/",
+        "https://www.rhs.org.uk/plants/254850/syngonium-podophyllum-pink-allusion/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/arrow-head-vine"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Heartleaf philodendron",
+          "tell": "Syngonium leaf shape changes from arrowhead to lobed with age; philodendron stays heart-shaped"
+        },
+        {
+          "name": "pothos",
+          "tell": "Syngonium leaf shape changes from arrowhead to lobed with age; philodendron stays heart-shaped"
+        },
+        {
+          "name": "Syngonium 'Neon'",
+          "tell": "Syngonium leaf shape changes from arrowhead to lobed with age; philodendron stays heart-shaped"
+        }
+      ],
+      "lookAlikeNote": "same family, toxic",
+      "nameIdeas": ["Arrow", "Cupid", "Synge", "Robin Hood", "Sy"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/757-cuidados-de-la-planta-syngonium-podophyllum-o-singonio",
+          "title": "Syngonium podophyllum o Singonio | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/syngonium/syngonium.asp",
+          "title": "Singonio - Syngonium podophyllum - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: AGPL-3.0-only -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="/vendor/pico.green.min.css" />
+    <title>Green Garden Core (provisional)</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "@green-garden/bulk": "/packages/bulk/src/index.ts",
+          "@green-garden/care-text": "/packages/care-text/src/index.ts",
+          "@green-garden/catalogue": "/packages/catalogue/src/index.ts",
+          "@green-garden/client": "/packages/client/src/index.ts",
+          "@green-garden/engine": "/packages/engine/src/index.ts",
+          "@green-garden/i18n": "/packages/i18n/src/index.ts",
+          "@green-garden/providers": "/packages/providers/src/index.ts",
+          "@green-garden/questions": "/packages/questions/src/index.ts",
+          "@green-garden/storage": "/packages/storage/src/index.ts"
+        }
+      }
+    </script>
+    <style>
+      /* Pico CSS (the link above) does the base look and the light/dark switch; what follows is only
+         what this app needs on top. Colours come from Pico's variables so dark mode follows along. */
+      /* One set of tokens: touch sizes by default, desktop norms from 900px up. Pico grows its
+         base font with the viewport (up to 131%), which made a PC browser look zoomed in. */
+      :root {
+        --ctl-h: 2.75rem;
+        --ctl-pad-x: 1rem;
+        --ctl-font: 1rem;
+        --content-max: 60rem;
+        scrollbar-gutter: stable;
+      }
+      @media (min-width: 900px) {
+        :root {
+          --pico-font-size: 87.5%;
+          --pico-form-element-spacing-vertical: 0.4rem;
+          --pico-form-element-spacing-horizontal: 0.75rem;
+          --ctl-h: 2rem;
+          --ctl-pad-x: 0.75rem;
+          --ctl-font: 0.9rem;
+        }
+        h1 {
+          --pico-font-size: 1.75rem;
+        }
+        h2 {
+          --pico-font-size: 1.4rem;
+        }
+        h3 {
+          --pico-font-size: 1.2rem;
+        }
+      }
+      body > main.container {
+        max-width: var(--content-max);
+        padding-block: 1rem;
+      }
+      input:not([type="checkbox"], [type="radio"]),
+      select,
+      textarea,
+      [role="tab"],
+      .modal-foot button {
+        font-size: var(--ctl-font);
+      }
+      input:not([type="checkbox"], [type="radio"]),
+      select {
+        min-height: var(--ctl-h);
+      }
+      body:has(dialog[open]) {
+        overflow: hidden;
+      }
+      dialog,
+      .modal-scroll,
+      #plant-form {
+        overscroll-behavior: contain;
+      }
+      .help {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-left: 0.25rem;
+        border: 1px solid var(--pico-muted-border-color);
+        border-radius: 50%;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        text-align: center;
+        color: var(--pico-muted-color);
+        cursor: help;
+      }
+      details.alts {
+        margin: 0.5rem 0;
+      }
+      details.alts > summary {
+        font-size: 0.9rem;
+      }
+      #species-results [role="option"].active,
+      #species-results [role="option"][aria-selected="true"] {
+        outline: 2px solid var(--pico-primary);
+        background: var(--pico-card-sectioning-background-color);
+      }
+      .away-mark {
+        white-space: nowrap;
+      }
+      #today {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+      }
+      header p small {
+        color: var(--pico-muted-color);
+      }
+      [role="tablist"] {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      [role="tab"] {
+        width: auto;
+        margin: 0;
+        padding: 0.4rem 1rem;
+      }
+      [role="tab"][aria-selected="false"] {
+        --pico-background-color: transparent;
+        --pico-color: var(--pico-primary);
+        --pico-border-color: var(--pico-primary);
+      }
+      article button,
+      li button,
+      .modal-foot button,
+      .chips button {
+        width: auto;
+        margin: 0;
+        padding: 0.25rem var(--ctl-pad-x);
+        font-size: 0.9rem;
+      }
+      article h4 {
+        margin-bottom: 0.25rem;
+      }
+      nav a {
+        margin-right: 0.75rem;
+      }
+      section {
+        margin-top: 2rem;
+      }
+      table {
+        table-layout: fixed;
+      }
+      th,
+      td {
+        vertical-align: top;
+        padding: 0.25rem;
+        font-size: 0.85rem;
+      }
+      td.out {
+        background: var(--pico-card-sectioning-background-color);
+        color: var(--pico-muted-color);
+      }
+      td.today {
+        outline: 2px solid var(--pico-primary);
+      }
+      td.away {
+        background: var(--pico-mark-background-color);
+        color: var(--pico-mark-color);
+      }
+      fieldset label {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+      .err,
+      .sev3 {
+        color: var(--pico-del-color);
+      }
+      .sev2 {
+        color: var(--pico-secondary);
+        font-weight: 600;
+      }
+      .handled {
+        color: var(--pico-muted-color);
+      }
+      .bang {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0;
+        padding: 0;
+        border-radius: 50%;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .chip {
+        display: inline-block;
+        padding: 0 0.4rem;
+        border: 1px solid var(--pico-muted-border-color);
+        border-radius: 0.6rem;
+        color: var(--pico-muted-color);
+      }
+      .chip-assumed {
+        border-style: dashed;
+        opacity: 0.8;
+      }
+      dl.known select {
+        width: auto;
+        margin: 0;
+        padding: 0.1rem 1.5rem 0.1rem 0.5rem;
+        font-size: 0.85rem;
+      }
+      #ask {
+        border: 2px solid var(--pico-primary);
+      }
+      .assumed {
+        font-size: 0.75em;
+        padding: 0 0.5em;
+        border: 1px dashed var(--pico-muted-border-color);
+        border-radius: 1em;
+        color: var(--pico-muted-color);
+        white-space: nowrap;
+      }
+      .mark {
+        font-size: 0.75em;
+        padding: 0 0.5em;
+        border: 1px solid var(--pico-muted-border-color);
+        border-radius: 1em;
+        color: var(--pico-muted-color);
+        white-space: nowrap;
+      }
+      .mark-measured {
+        border-color: var(--pico-primary);
+        color: var(--pico-primary);
+      }
+      .mark-estimated {
+        border-style: dashed;
+      }
+      .weather-rain h4 {
+        margin-bottom: 0.25rem;
+      }
+      .weather-rain ul {
+        margin-bottom: 0.5rem;
+      }
+      .outdoor .rain button,
+      #outdoors .rain button {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.85em;
+      }
+      #home-modal article {
+        max-width: 34rem;
+        margin: auto;
+      }
+      dialog.fullscreen {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        max-width: none;
+        height: 100dvh;
+        max-height: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        background: var(--pico-background-color);
+      }
+      dialog.fullscreen[open] {
+        display: flex;
+        flex-direction: column;
+      }
+      dialog.fullscreen::backdrop {
+        background: var(--pico-modal-overlay-background-color);
+      }
+      .modal-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid var(--pico-muted-border-color);
+      }
+      .modal-head h2 {
+        margin: 0;
+      }
+      .close {
+        font-size: 2.5rem;
+        line-height: 1;
+        min-width: 3.5rem;
+        min-height: 3.5rem;
+        background: none;
+        border: 0;
+        color: var(--pico-color);
+        cursor: pointer;
+      }
+      #plant-form {
+        flex: 1;
+        overflow-y: auto;
+        min-height: 0;
+      }
+      .modal-body {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 0.5rem 1rem 1rem;
+      }
+      .modal-foot {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: flex-end;
+        padding: 0.75rem 1rem;
+        border-top: 1px solid var(--pico-muted-border-color);
+        background: var(--pico-background-color);
+      }
+      .modal-foot button {
+        min-height: 2.75rem;
+        padding: 0 1.25rem;
+      }
+      #species-results ul,
+      .species-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0.25rem 0;
+      }
+      #species-results button[role="option"] {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+        padding: 0.25rem;
+        margin: 0.15rem 0;
+      }
+      .photo {
+        margin: 0;
+        width: 96px;
+        flex: none;
+      }
+      .photo img {
+        display: block;
+        width: 96px;
+        height: 72px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
+      .photo.ph {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 72px;
+        min-height: 72px;
+        background: var(--pico-card-sectioning-background-color);
+        color: var(--pico-muted-color);
+        font-size: 0.75rem;
+      }
+      .species-card {
+        display: flex;
+        gap: 0.75rem;
+        align-items: flex-start;
+        margin: 0.5rem 0;
+      }
+      .notice {
+        background: var(--pico-mark-background-color);
+        color: var(--pico-mark-color);
+        padding: 0.25rem 0.5rem;
+        border-radius: var(--pico-border-radius);
+      }
+      .modal-scroll {
+        flex: 1;
+        overflow-y: auto;
+        min-height: 0;
+      }
+      .match-list,
+      .place-list,
+      .verify-list,
+      .candidates {
+        list-style: none;
+        padding: 0;
+        margin: 0.25rem 0;
+      }
+      .match-row,
+      .place-row,
+      .verify-row {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--pico-muted-border-color);
+      }
+      #bulk-root li {
+        list-style: none;
+      }
+      #bulk-root .match-row > button.secondary,
+      #bulk-root .place-row > button.secondary {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+        line-height: 1.4;
+      }
+      #bulk-modal .modal-head {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .candidates button.candidate {
+        background: transparent;
+        color: inherit;
+        border: 1px solid var(--pico-muted-border-color);
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+        padding: 0.25rem;
+        margin: 0.15rem 0;
+      }
+      .candidates button.candidate:hover,
+      .candidates button.candidate:focus-visible {
+        border-color: var(--pico-primary);
+      }
+      .chip[aria-pressed="true"] {
+        background: var(--pico-primary);
+        color: var(--pico-primary-inverse);
+      }
+      .chip[aria-pressed="false"] {
+        background: transparent;
+        color: var(--pico-primary);
+        border: 1px solid var(--pico-primary);
+      }
+      .tell,
+      .assumed {
+        color: var(--pico-muted-color);
+      }
+      .assumed {
+        font-style: italic;
+        border-bottom: 1px dashed var(--pico-muted-border-color);
+      }
+      .retype {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+      }
+      .retype input {
+        margin: 0;
+      }
+      .verify-row summary input[type="checkbox"] {
+        margin: 0 0.5rem 0 0;
+      }
+      #bulk-text {
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="app" class="container">Loading... (needs JavaScript)</main>
+    <div id="modal-root"></div>
+    <div id="bulk-root"></div>
+    <div id="home-root"></div>
+    <script type="module" src="/packages/web-ui/src/app.ts"></script>
+  </body>
+</html>

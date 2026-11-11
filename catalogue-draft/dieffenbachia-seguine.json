@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "clemson-dieffenbachia",
+      "title": "Dieffenbachia",
+      "url": "https://hgic.clemson.edu/factsheet/dieffenbachia/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-dieffenbachia",
+      "title": "NC State Plant Toolbox: Dieffenbachia seguine",
+      "url": "https://plants.ces.ncsu.edu/plants/dieffenbachia-seguine/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dieffenbachia-seguine",
+      "taxon": {
+        "scientificName": "Dieffenbachia seguine"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Dumb cane",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["clemson-dieffenbachia"],
+          "source": "ncsu-dieffenbachia",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 8,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water when the top of the mix is dry; wear gloves when pruning, the sap irritates."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-dieffenbachia"],
+          "source": "ncsu-dieffenbachia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 24
+          },
+          "unit": "C",
+          "source": "clemson-dieffenbachia",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 244,
+            "spread": 91
+          },
+          "unit": "cm",
+          "source": "ncsu-dieffenbachia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "clemson-dieffenbachia",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-dieffenbachia",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["oral_irritation", "drooling", "swelling", "vomiting"],
+            "source": "ncsu-dieffenbachia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-dieffenbachia"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["oral_irritation", "drooling", "swelling", "vomiting"],
+            "source": "ncsu-dieffenbachia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-dieffenbachia"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["oral_irritation", "swelling", "vomiting"],
+            "source": "ncsu-dieffenbachia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-dieffenbachia"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-dieffenbachia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-dieffenbachia"]
+          }
+        ],
+        "sources": ["ncsu-dieffenbachia", "clemson-dieffenbachia"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Dieffenbachia seguine - Comigo Ninguem Pode.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Alex Rio Brazil",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dieffenbachia_seguine_-_Comigo_Ninguem_Pode.jpg",
+          "thumbnail": "dieffenbachia-seguine.webp"
+        }
+      ],
+      "photoFile": "Dieffenbachia seguine - Comigo Ninguem Pode.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Strongest toxic plant in the set. NC State rates severity high and says it may be fatal to pets and livestock; Clemson warns of throat swelling and suffocation. Ingestion is stored as severity 3 (our 0-3 scale: can be life-threatening); this grade was a deliberate choice. Growth 'fast' is for ideal conditions only (Clemson); size is NC State's 3-8 ft by 2-3 ft, Clemson 3-6 ft by 1-3 ft."
+      },
+      "sourcesRead": [
+        "https://hgic.clemson.edu/factsheet/dieffenbachia/",
+        "https://plants.ces.ncsu.edu/plants/dieffenbachia-seguine/"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Dieffenbachia amoena",
+          "tell": "Dieffenbachia has thick cane stems and spotted leaves; Aglaonema is shorter and bushier"
+        },
+        {
+          "name": "Aglaonema",
+          "species": "aglaonema",
+          "tell": "Dieffenbachia has thick cane stems and spotted leaves; Aglaonema is shorter and bushier"
+        },
+        {
+          "name": "Alocasia",
+          "tell": "Dieffenbachia has thick cane stems and spotted leaves; Aglaonema is shorter and bushier"
+        }
+      ],
+      "lookAlikeNote": "Dieffenbachia is among the stronger mouth irritants",
+      "nameIdeas": ["Dumb Dumb", "Cane Cane", "Dee", "Spotty", "Dieffen-Bec"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/287-cuidados-de-la-planta-dieffenbachia-seguine-o-amoena",
+          "title": "Dieffenbachia seguine o Amoena | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/dieffembachia/dieffenbachia.asp",
+          "title": "Dieffenbachia - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

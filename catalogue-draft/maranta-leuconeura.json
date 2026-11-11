@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-maranta",
+      "title": "NC State Plant Toolbox: Maranta leuconeura",
+      "url": "https://plants.ces.ncsu.edu/plants/maranta-leuconeura/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-maranta",
+      "title": "RHS: Maranta leuconeura",
+      "url": "https://www.rhs.org.uk/plants/119598/maranta-leuconeura/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-prayer",
+      "title": "Prayer Plant, listed as Calathea insignis (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/prayer-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "maranta-leuconeura",
+      "taxon": {
+        "scientificName": "Maranta leuconeura"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Prayer plant",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-maranta"],
+          "source": "ncsu-maranta",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix evenly damp in the growing season, drier in winter, and use water low in fluoride."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-maranta"],
+          "source": "ncsu-maranta",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 30,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-maranta",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["rhs-maranta"],
+          "source": "ncsu-maranta",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-prayer",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-prayer",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-prayer"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Prayer Plant (Maranta leuconeura) (3073344552).jpg",
+          "licence": "CC-BY-2.0",
+          "creator": "Cliff from Arlington, Virginia, USA",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prayer_Plant_(Maranta_leuconeura)_(3073344552).jpg",
+          "thumbnail": "maranta-leuconeura.webp"
+        }
+      ],
+      "photoFile": "Prayer Plant (Maranta leuconeura) (3073344552).jpg",
+      "tags": {
+        "curated": ["indoor", "high_humidity", "low_light"]
+      },
+      "provenance": {
+        "notes": "TOXICITY IS A RELATED-NAME SOURCE: the ASPCA page read is titled Prayer Plant but gives the scientific name Calathea insignis (also listing Maranta as a common name); NC State and RHS say nothing on toxicity. Graded 0 from_knowledge_verify, as with the calathea entry. Habit bushy is a mapping from 'clumping, spreading from rhizomes'. Temperature: RHS only gives a frost-tender band (10 to 15 C minimum), NC State says cold and drafts are not tolerated; no range stored. Humidity is high on both pages but without numbers. Growth rate: not stated (RHS gives 5 to 10 years to maturity)."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/maranta-leuconeura/",
+        "https://www.rhs.org.uk/plants/119598/maranta-leuconeura/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/prayer-plant"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Calathea (Goeppertia)",
+          "tell": "Maranta trails low, has a pale underside and red vein pattern; Calathea clumps upright"
+        },
+        {
+          "name": "Stromanthe",
+          "tell": "Maranta trails low, has a pale underside and red vein pattern; Calathea clumps upright"
+        },
+        {
+          "name": "Ctenanthe",
+          "tell": "Maranta trails low, has a pale underside and red vein pattern; Calathea clumps upright"
+        }
+      ],
+      "nameIdeas": ["Prayer Pete", "Mara", "Maranta Claus", "Amen", "Praying Mantis"],
+      "links": [
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/maranta/maranta.asp",
+          "title": "Maranta - Maranta leuconeura - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

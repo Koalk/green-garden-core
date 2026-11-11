@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "aspca-cast-iron",
+      "title": "Cast Iron Plant (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cast-iron-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en",
+      "linkKind": "toxicity"
+    },
+    {
+      "id": "clemson-aspidistra",
+      "title": "Cast Iron Plant",
+      "url": "https://hgic.clemson.edu/cast-iron-plant/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-aspidistra",
+      "title": "NC State Plant Toolbox: Aspidistra elatior",
+      "url": "https://plants.ces.ncsu.edu/plants/aspidistra-elatior/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "aspidistra-elatior",
+      "taxon": {
+        "scientificName": "Aspidistra elatior"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Cast iron plant",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["ncsu-aspidistra"],
+          "source": "clemson-aspidistra",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.4,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Takes neglect better than most; water on the late side rather than early."
+        },
+        "light": {
+          "value": "low",
+          "corroboratedBy": ["clemson-aspidistra"],
+          "source": "ncsu-aspidistra",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 91
+          },
+          "unit": "cm",
+          "source": "ncsu-aspidistra",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-aspidistra",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-aspidistra",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-aspidistra",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-cast-iron"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-aspidistra",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-cast-iron"]
+          }
+        ],
+        "sources": ["ncsu-aspidistra", "aspca-cast-iron"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Aspidistra 01 (fcm).jpg",
+          "licence": "CC-BY-SA-2.0",
+          "creator": "Frank C. Müller",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspidistra_01_(fcm).jpg",
+          "thumbnail": "aspidistra-elatior.webp"
+        }
+      ],
+      "photoFile": "Aspidistra 01 (fcm).jpg",
+      "tags": {
+        "curated": ["indoor", "low_light"]
+      },
+      "provenance": {
+        "notes": "Watering style is a mapping: Clemson 'water when dry 2-3 in down' sits between top-dry and fully-dry; let_top_dry stored as the cautious value. Toxicity: NC State tag and the ASPCA page agree (non-toxic for cats and dogs)."
+      },
+      "sourcesRead": [
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cast-iron-plant",
+        "https://hgic.clemson.edu/cast-iron-plant/",
+        "https://plants.ces.ncsu.edu/plants/aspidistra-elatior/"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Hosta (garden)",
+          "tell": "Aspidistra leaves rise one at a time from a rhizome and are dark, tough and glossy; hosta is deciduous with ribbed leaves"
+        },
+        {
+          "name": "Aspidistra cultivars",
+          "tell": "Aspidistra leaves rise one at a time from a rhizome and are dark, tough and glossy; hosta is deciduous with ribbed leaves"
+        }
+      ],
+      "lookAlikeNote": "Hosta is toxic to cats and dogs; cast iron plant is not",
+      "nameIdeas": ["Iron Man", "Tin Man", "Ironsides", "Cast Iron Chef", "Anvil"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/100-cuidados-de-la-planta-aspidistra-elatior-orejas-de-burro-o-pilistra",
+          "title": "Aspidistra elatior, Orejas de burro o Pilistra | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/aspidistra_3219",
+          "title": "verdeesvida :: Aspidistra",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/aspidistra/aspidistra.asp",
+          "title": "Pianta di piombo - Aspidistra elatior - Appartamento",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-fragrans",
+      "title": "NC State Plant Toolbox: Dracaena fragrans",
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-fragrans/common-name/corn-plant/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-dracaena",
+      "title": "Clemson HGIC: Dracaena",
+      "url": "https://hgic.clemson.edu/factsheet/dracaena/",
+      "publisher": "Clemson Cooperative Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-corn",
+      "title": "Corn Plant (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/corn-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    },
+    {
+      "id": "gubb-houseplants-3l",
+      "title": "Gubb, Blanusa et al.: Can houseplants improve indoor air quality by removing CO2 and increasing relative humidity? (water use of plants in 3-litre pots)",
+      "url": "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf",
+      "publisher": "Air Quality, Atmosphere & Health (copy on greenplantsforgreenbuildings.org)",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-31",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dracaena-fragrans",
+      "taxon": {
+        "scientificName": "Dracaena fragrans"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Corn plant",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Cornstalk dracaena"
+          }
+        ],
+        "synonyms": ["Dracaena deremensis", "Dracaena massangeana"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["clemson-dracaena"],
+          "source": "ncsu-fragrans",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 8,
+          "unit": "days",
+          "source": "gubb-houseplants-3l",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water well when the top of the mix feels dry, and use unfluoridated water if the tips brown."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-dracaena"],
+          "source": "ncsu-fragrans",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 21,
+            "max": 27
+          },
+          "unit": "C",
+          "source": "ncsu-fragrans",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 152,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "clemson-dracaena",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-fragrans",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-fragrans",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "drooling"],
+            "source": "aspca-corn",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-fragrans"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "drooling"],
+            "source": "aspca-corn",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-fragrans"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "ncsu-fragrans",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-corn", "ncsu-fragrans"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Plante verte.JPG",
+          "licence": "PDM-1.0",
+          "creator": "moi",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plante_verte.JPG",
+          "thumbnail": "dracaena-fragrans.webp"
+        }
+      ],
+      "photoFile": "Plante verte.JPG",
+      "tags": {
+        "curated": ["indoor", "low_light"]
+      },
+      "provenance": {
+        "notes": "Watering conflict: NC State says keep the mix moist while growing, Clemson (general dracaena advice, not corn plant specific) says let it dry a little first. Kept the wetter one per rule 5, from_knowledge_verify; to be picked by a reviewer. Temperature is NC State (70 to 80 F), Clemson's general dracaena advice is 60 to 70 F. Size is the 'Massangeana' houseplant figure from Clemson (4 to 5 ft, 2 ft spread, upper values); NC State gives 3 to 14.5 ft. Severity 1 maps NC State low severity and ASPCA saponin signs. The UF/IFAS FP184 page redirected and was not fetched. Anchor: baseIntervalDays 10 -> 8 for a 3-litre reference pot, from measured water use (Dracaena fragrans 'Lemon Lime', 44.3 g a day); the conversion to days is our arithmetic (02i), so guess."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/dracaena-fragrans/common-name/corn-plant/",
+        "https://hgic.clemson.edu/factsheet/dracaena/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/corn-plant",
+        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Dracaena marginata",
+          "tell": "Corn plant has broad arching strap leaves on a thick cane, like maize leaves"
+        },
+        {
+          "name": "Dracaena 'Janet Craig'",
+          "tell": "Corn plant has broad arching strap leaves on a thick cane, like maize leaves"
+        },
+        {
+          "name": "Yucca",
+          "tell": "Corn plant has broad arching strap leaves on a thick cane, like maize leaves"
+        }
+      ],
+      "lookAlikeNote": "same genus, same toxicity",
+      "nameIdeas": ["Cornelius", "Cobb", "Maize", "Popcorn", "Corny"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/299-cuidados-de-la-planta-dracaena-fragrans-o-tronco-del-brasil",
+          "title": "Dracaena fragrans o Tronco del Brasil | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

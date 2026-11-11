@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-parsley",
+      "title": "NC State Plant Toolbox: Petroselinum crispum",
+      "url": "https://plants.ces.ncsu.edu/plants/petroselinum-crispum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-parsley-guide",
+      "title": "RHS: How to grow parsley",
+      "url": "https://www.rhs.org.uk/herbs/parsley/grow-your-own",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-parsley",
+      "title": "RHS: Petroselinum crispum",
+      "url": "https://www.rhs.org.uk/plants/41248/petroselinum-crispum/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-parsley",
+      "title": "Parsley (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/parsley",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "petroselinum-crispum",
+      "taxon": {
+        "scientificName": "Petroselinum crispum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Parsley",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Curly parsley"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-parsley-guide", "rhs-parsley"],
+          "source": "ncsu-parsley",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the pot evenly moist but not waterlogged, and move it into shade in hot spells because containers dry out fast."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-parsley-guide", "rhs-parsley"],
+          "source": "ncsu-parsley",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 30
+          },
+          "unit": "cm",
+          "source": "ncsu-parsley",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-parsley",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["ncsu-parsley"],
+          "source": "rhs-parsley",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["furanocoumarins"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "aspca-parsley",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-parsley"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "aspca-parsley",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-parsley"]
+          }
+        ],
+        "sources": ["aspca-parsley", "ncsu-parsley"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Starr 070112-3393 Petroselinum crispum.jpg",
+          "licence": "CC-BY-3.0",
+          "creator": "Forest & Kim Starr",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_070112-3393_Petroselinum_crispum.jpg",
+          "thumbnail": "petroselinum-crispum.webp"
+        }
+      ],
+      "photoFile": "Starr 070112-3393 Petroselinum crispum.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "herb", "biennial"]
+      },
+      "provenance": {
+        "notes": "A biennial usually grown as an annual: in the second year it flowers and the leaves lose flavour (NC State, RHS); it dies down in winter outdoors, and pots can be brought indoors. NC State warns it is confused with poison hemlock (Conium maculatum). Size: NC State 8 in to 3 ft by 8 in to 1 ft (year-two size stored), RHS 30 to 60 cm. Toxicity: ASPCA lists parsley as toxic to dogs and cats (furanocoumarins, photosensitisation after large amounts); NC State rates humans low severity with the same agent. Graded 1 by the agent; the photosensitisation is stored as skin_irritation, the nearest symptom in our list. Humans eat it, so no child line. The Penn State herb page was not used (not about parsley)."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/petroselinum-crispum/",
+        "https://www.rhs.org.uk/herbs/parsley/grow-your-own",
+        "https://www.rhs.org.uk/plants/41248/petroselinum-crispum/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/parsley"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/611-cuidados-de-la-planta-petroselinum-crispum-o-perejil",
+          "title": "Petroselinum crispum o Perejil | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/orto/singoleorticole/prezzemolo/prezzemolo.asp",
+          "title": "Prezzemolo - Petroselinum hortense - Orto",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

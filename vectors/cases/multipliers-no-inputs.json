@@ -1,0 +1,8 @@
+{
+  "name": "multipliers-no-inputs",
+  "description": "Nothing known about the pot, the light or the material: every multiplier is 1, nothing is clipped, the amount is unchanged.",
+  "why": "Default = safe assumptions: a missing fact never moves the schedule.",
+  "fn": "startMultipliers",
+  "input": {},
+  "expected": { "raw": 1, "factor": 1, "clamped": null, "amountFactor": 1, "guess": true }
+}

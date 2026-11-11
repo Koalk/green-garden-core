@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-haworthiopsis-attenuata",
+      "title": "NC State Plant Toolbox: Haworthiopsis attenuata",
+      "url": "https://plants.ces.ncsu.edu/plants/haworthiopsis-attenuata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-haworthiopsis-attenuata",
+      "title": "RHS: Haworthiopsis attenuata",
+      "url": "https://www.rhs.org.uk/plants/504241/haworthiopsis-attenuata/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-haworthia-guide",
+      "title": "RHS: Haworthia (plant guide)",
+      "url": "https://www.rhs.org.uk/plants/haworthia",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-zebra-haworthia",
+      "title": "Zebra haworthia, Haworthia fasciata (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/zebra-haworthia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "haworthiopsis-attenuata",
+      "taxon": {
+        "scientificName": "Haworthiopsis attenuata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Zebra haworthia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Haworthia"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Zebra plant"
+          }
+        ],
+        "synonyms": ["Haworthia attenuata"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["ncsu-haworthiopsis-attenuata"],
+          "source": "rhs-haworthia-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water sparingly once the mix is nearly dry, never let water sit in the rosette, and give only an occasional sip in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-haworthia-guide"],
+          "source": "ncsu-haworthiopsis-attenuata",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 10,
+            "max": 26
+          },
+          "unit": "C",
+          "corroboratedBy": ["ncsu-haworthiopsis-attenuata"],
+          "source": "rhs-haworthia-guide",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 30,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-haworthiopsis-attenuata",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-haworthiopsis-attenuata",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "rosette",
+          "corroboratedBy": ["ncsu-haworthiopsis-attenuata"],
+          "source": "rhs-haworthiopsis-attenuata",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-haworthiopsis-attenuata",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-zebra-haworthia"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-haworthiopsis-attenuata",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-zebra-haworthia"]
+          }
+        ],
+        "sources": ["ncsu-haworthiopsis-attenuata", "aspca-zebra-haworthia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Haworthia attenuata.jpg",
+          "licence": "CC-BY-3.0",
+          "creator": "Popperipopp",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haworthia_attenuata.jpg",
+          "thumbnail": "haworthiopsis-attenuata.webp"
+        }
+      ],
+      "photoFile": "Haworthia attenuata.jpg",
+      "tags": {
+        "curated": ["indoor", "succulent", "dormant_season", "low_light", "beginner_friendly"]
+      },
+      "provenance": {
+        "notes": "Zebra haworthia is easily mixed up with Haworthiopsis fasciata (smooth upper leaf surface); NC State says they are often mislabelled and cared for the same way. Watering: NC State lets the soil dry between waterings; the RHS genus guide waters only when the compost is nearly dry and almost not at all in winter; mapped to let_fully_dry (agent). A cool winter rest with only occasional light watering is needed (RHS genus guide), without numbers, so the rest factor is unknown. Temperature: RHS genus guide 10 to 26 C and always above 10 C; NC State 60 to 80 F, avoid below 50 F. Humidity: NC State says it tolerates normal home humidity, RHS wants low humidity: no figure. Size: NC State 4 to 12 in tall and 6 in to 2 ft wide, RHS about 12 cm rosette. Toxicity: NC State says non-toxic to pets and people; the ASPCA page read is for Haworthia fasciata (non-toxic to dogs and cats), so it is a related-species corroboration."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/haworthiopsis-attenuata/",
+        "https://www.rhs.org.uk/plants/504241/haworthiopsis-attenuata/details",
+        "https://www.rhs.org.uk/plants/haworthia",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/zebra-haworthia"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/403-cuidados-de-la-planta-haworthia-attenuata-o-planta-cebra",
+          "title": "Haworthia attenuata o Planta cebra | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/grasse/singolegrasse/haworthia/haworthia.asp",
+          "title": "Haworthia arachnoidea - Succulente - Piante Grasse",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

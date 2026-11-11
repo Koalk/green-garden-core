@@ -1,0 +1,28 @@
+{
+  "name": "away-schedule-restarts",
+  "description": "Same plant and stretch as away-short-plant-short-stretch: the watering the stretch pushed to 11-16 moves the whole schedule, so the next one is a full interval later (11-20), not back on the original grid (11-18).",
+  "why": ", Reading: the plan should move the whole interval after an away stretch and regroup from there, not complain and snap back. 02a 5.2 anchors the ideal schedule (anchor 11-14, then 11-18); PROVISIONAL restarts the anchor at the watering day plus the interval when the reason is away_days: 11-16 + 4 = 11-20, on its ideal day. Hand-computed.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-10",
+    "horizonDays": 12,
+    "prefs": {
+      "unavailableDates": ["2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15"]
+    },
+    "plants": [
+      { "id": "fern", "style": "keep_moist", "intervalDays": 4, "lastWatered": "2026-11-10" }
+    ]
+  },
+  "expected": {
+    "plants": [
+      {
+        "plantId": "fern",
+        "wateringCount": 2,
+        "waterings": [
+          { "date": "2026-11-16", "reason": "away_days" },
+          { "date": "2026-11-20", "reason": "on_ideal_day" }
+        ]
+      }
+    ]
+  }
+}

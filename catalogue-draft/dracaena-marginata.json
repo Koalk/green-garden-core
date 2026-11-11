@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "clemson-dracaena",
+      "title": "Dracaena",
+      "url": "https://hgic.clemson.edu/factsheet/dracaena/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "iastate",
+      "title": "Easy low-maintenance houseplants",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+      "publisher": "Iowa State University Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-dracaena-reflexa",
+      "title": "NC State Plant Toolbox: Dracaena reflexa var. angustifolia",
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-reflexa-var-angustifolia/common-name/red-marginated-dracaena/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "umd",
+      "title": "Selecting indoor plants",
+      "url": "https://extension.umd.edu/resource/selecting-indoor-plants",
+      "publisher": "University of Maryland Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dracaena-marginata",
+      "taxon": {
+        "scientificName": "Dracaena marginata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Madagascar dragon tree",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["umd"],
+          "source": "clemson-dracaena",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 12,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.5,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Brown tips often come from fluoride in tap water; water thoroughly but let it dry."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["umd"],
+          "source": "clemson-dracaena",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 21
+          },
+          "unit": "C",
+          "source": "clemson-dracaena",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 305,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "clemson-dracaena",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "clemson-dracaena",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "drooling"],
+            "source": "ncsu-dracaena-reflexa",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy", "drooling"],
+            "source": "ncsu-dracaena-reflexa",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-dracaena-reflexa",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-dracaena-reflexa"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Dracaena marginata06082026.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Essermin",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dracaena_marginata06082026.jpg",
+          "thumbnail": "dracaena-marginata.webp"
+        }
+      ],
+      "photoFile": "Dracaena marginata06082026.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Toxicity is genus-level: the NC State page is for Dracaena reflexa var. angustifolia (red-marginated dracaena), a related name, not D. marginata itself; Clemson's page does not mention toxicity. Hence from_knowledge_verify. Size: dragon tree up to 10 ft, upright types usually under 2 ft wide (Clemson). The Missouri Botanical Garden page failed (certificate error)."
+      },
+      "sourcesRead": [
+        "https://hgic.clemson.edu/factsheet/dracaena/",
+        "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+        "https://plants.ces.ncsu.edu/plants/dracaena-reflexa-var-angustifolia/common-name/red-marginated-dracaena/",
+        "https://extension.umd.edu/resource/selecting-indoor-plants"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Corn plant (Dracaena fragrans)",
+          "tell": "Marginata has thin sword leaves with a red edge in a tuft at the stem tips; corn plant has broad arching leaves"
+        },
+        {
+          "name": "Dracaena reflexa",
+          "tell": "Marginata has thin sword leaves with a red edge in a tuft at the stem tips; corn plant has broad arching leaves"
+        },
+        {
+          "name": "Cordyline",
+          "tell": "Marginata has thin sword leaves with a red edge in a tuft at the stem tips; corn plant has broad arching leaves"
+        },
+        {
+          "name": "Yucca",
+          "tell": "Marginata has thin sword leaves with a red edge in a tuft at the stem tips; corn plant has broad arching leaves"
+        }
+      ],
+      "lookAlikeNote": "same genus, same toxicity",
+      "nameIdeas": ["Dragon Dan", "Marge", "Spiky", "Rainbow Red", "Draco"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/300-cuidados-de-la-planta-dracaena-marginata-o-dracena-de-hoja-fina",
+          "title": "Dracaena marginata o Drácena de hoja fina | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/dracaena/dracaena.asp",
+          "title": "Dracena del Madagascar - Dracaena marginata - Appartamento",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

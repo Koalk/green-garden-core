@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-04",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-geranium-rozanne",
+      "title": "RHS Plant Profile: Geranium [Rozanne] ('Gerwat')",
+      "url": "https://www.rhs.org.uk/plants/153768/geranium-rozanne-gerwat/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-geranium-growing-guide",
+      "title": "RHS Growing Guide: How to grow geraniums",
+      "url": "https://www.rhs.org.uk/plants/geranium/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-geranium-rozanne",
+      "title": "NC State Plant Toolbox: Geranium 'Rozanne'",
+      "url": "https://plants.ces.ncsu.edu/plants/geranium-rozanne/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "geranium-rozanne",
+      "taxon": {
+        "scientificName": "Geranium 'Rozanne'"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Hardy geranium",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Cranesbill"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Crane's-bill"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Rozanne"
+          },
+          {
+            "lang": "es",
+            "name": "Geranio rústico",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Geranio vivaz",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Geranio de jardín",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Geranio rustico",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Geranio perenne",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Geranium 'Gerwat'"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-geranium-growing-guide",
+          "corroboratedBy": ["rhs-geranium-rozanne"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "In a pot, water when the top of the compost is dry and give a good soak in a dry spell rather than a little often."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-geranium-rozanne",
+          "corroboratedBy": ["ncsu-geranium-rozanne"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 60,
+            "spread": 80
+          },
+          "unit": "cm",
+          "source": "rhs-geranium-rozanne",
+          "corroboratedBy": ["ncsu-geranium-rozanne"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-geranium-rozanne",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "author",
+          "confidence": "guess"
+        },
+        "hardiness": {
+          "value": "H7",
+          "source": "rhs-geranium-rozanne",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "rhs-geranium-rozanne",
+          "corroboratedBy": ["ncsu-geranium-rozanne"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "ncsu-geranium-rozanne",
+          "corroboratedBy": ["rhs-geranium-rozanne"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-geranium-rozanne",
+          "corroboratedBy": ["rhs-geranium-rozanne"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "any",
+          "source": "rhs-geranium-rozanne",
+          "corroboratedBy": ["rhs-geranium-growing-guide", "ncsu-geranium-rozanne"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants through their first spring and summer until established, and in drought give a single thorough soak."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": []
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "hardy"]
+      },
+      "provenance": {
+        "notes": "Row 84. NAME CLASH: this is the hardy geranium (cranesbill), not Pelargonium. The ASPCA page that comes up for 'geranium' is about Pelargonium species (toxic to dogs, cats and horses, with geraniol and linalool, signs vomiting, anorexia, depression and dermatitis); it was fetched and is not carried over to this plant, so toxicity stays unknown (pets unknown, never pet-safe). No fetched page gives human toxicity for Rozanne. Hardiness: RHS H7 (below -20 C); NC State 5a to 8b. Watering: RHS growing guide says to water new plants until established through their first spring and summer, to keep container-grown summer plantings moist until they establish and to give a single thorough soak in drought; let_top_dry and 7 days are the agent's mapping and a guess. Drought: NC State 'established plants show some drought tolerance', RHS 'wet and dry conditions' badge; moderate is the agent's mapping. Sun: RHS full sun or partial shade, NC State flowers best in full sun; full is the agent's pick. Size: RHS 0.5 to 1 m both ways (to 60 cm tall), NC State 1 to 1.5 ft by 1 to 2 ft; 60 by 80 cm is the agent's pick. Habit left unknown: no fetched page says sprawling, trailing or mounding. Placement is from the starter-list row, not a source. Missouri Botanical Garden failed twice (certificate error). Fetched through a summarising fetch: wording not checked against the raw pages. Es and it names are machine drafts; 'geranio' alone in Spanish and Italian means Pelargonium, which is why only 'rústico', 'vivaz', 'de jardín' and 'perenne' are given."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/153768/geranium-rozanne-gerwat/details",
+        "https://www.rhs.org.uk/plants/geranium/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/geranium-rozanne/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/geranium"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Zonal geranium (Pelargonium x hortorum)",
+          "species": "pelargonium-x-hortorum",
+          "tell": "Pelargonium is the tender plant of pots and windowsills; RHS says most true geraniums are hardy apart from two island species."
+        },
+        {
+          "name": "Ivy-leaved geranium (Pelargonium peltatum)",
+          "species": "pelargonium-peltatum",
+          "tell": "Pelargonium is the tender plant of pots and windowsills; RHS says most true geraniums are hardy apart from two island species."
+        }
+      ],
+      "lookAlikeNote": "In everyday speech 'geranium' often means Pelargonium; the ASPCA page under that name is about Pelargonium."
+    }
+  ]
+}

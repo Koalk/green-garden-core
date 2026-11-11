@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-02",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-buxus-sempervirens",
+      "title": "RHS Plant Profile: Buxus sempervirens (common box)",
+      "url": "https://www.rhs.org.uk/plants/2579/buxus-sempervirens/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-box-growing-guide",
+      "title": "RHS Growing Guide: How to grow box",
+      "url": "https://www.rhs.org.uk/plants/box/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-buxus-sempervirens",
+      "title": "NC State Plant Toolbox: Buxus sempervirens",
+      "url": "https://plants.ces.ncsu.edu/plants/buxus-sempervirens",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-boxwood",
+      "title": "Boxwood (toxic and non-toxic plants; Buxus spp.)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boxwood",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "buxus-sempervirens",
+      "taxon": {
+        "scientificName": "Buxus sempervirens"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Box",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Common box"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Boxwood"
+          },
+          {
+            "lang": "en-GB",
+            "name": "European box"
+          },
+          {
+            "lang": "es",
+            "name": "Boj",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Boj común",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Bosso",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Bosso comune",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-box-growing-guide",
+          "corroboratedBy": ["ncsu-buxus-sempervirens"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water box in pots all year, winter too, but never let it dry out completely or sit waterlogged."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-buxus-sempervirens",
+          "corroboratedBy": ["rhs-box-growing-guide", "ncsu-buxus-sempervirens"],
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 500,
+            "spread": 500
+          },
+          "unit": "cm",
+          "source": "rhs-buxus-sempervirens",
+          "corroboratedBy": ["rhs-box-growing-guide", "ncsu-buxus-sempervirens"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-buxus-sempervirens",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-buxus-sempervirens",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "rhs-buxus-sempervirens",
+          "corroboratedBy": ["rhs-box-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H6",
+          "source": "rhs-buxus-sempervirens",
+          "confidence": "checked"
+        },
+        "rootDepthClass": {
+          "value": "shallow",
+          "source": "ncsu-buxus-sempervirens",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-buxus-sempervirens",
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "ncsu-buxus-sempervirens",
+          "corroboratedBy": ["rhs-box-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "rhs-buxus-sempervirens",
+          "corroboratedBy": ["rhs-box-growing-guide", "ncsu-buxus-sempervirens"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "ncsu-buxus-sempervirens",
+          "corroboratedBy": ["rhs-buxus-sempervirens", "rhs-box-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Keep new plants moist but not waterlogged; well-established box in the ground needs water only in long dry spells."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["steroidal alkaloids"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "aspca-boxwood",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-buxus-sempervirens"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "aspca-boxwood",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-buxus-sempervirens", "rhs-buxus-sempervirens"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-buxus-sempervirens",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-buxus-sempervirens",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-boxwood", "ncsu-buxus-sempervirens", "rhs-buxus-sempervirens"],
+        "assessedOn": "2026-11-02"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "foliage", "hardy"]
+      },
+      "provenance": {
+        "notes": "Row 75. Risks recorded by the sources: box blight, box tree caterpillar (the 'box moth'), box sucker, red spider mite and scale; RHS says these 'can make box impossible to grow successfully in some areas'. Toxicity: ASPCA genus page (Buxus spp.) toxic to dogs, cats and horses (alkaloids; dogs and cats vomiting and diarrhoea); NC State species page tags it a problem for cats, dogs and horses and rates humans low severity (nausea, vomiting, diarrhoea, dizziness, convulsions, respiratory failure; cell sap irritates skin); RHS 'harmful if eaten' for dogs. Severity 2 is the agent's grading. Child symptoms are the agent's reduction of the NC State list to the shared vocabulary. Watering: RHS guide says box needs a drainage and must not dry out completely, containers need watering on an ongoing basis even in winter, in the ground it needs none once established except in long dry spells; NC State says well-drained, drought tolerant, shallow-rooted. let_top_dry and 5 days are the agent's mapping and a guess. Light: RHS profile partial or full shade, guide sun or shade, NC State full sun to partial shade; bright_indirect and sunNeed part are the agent's reading of 'grows best in partial shade'. Size: RHS 4 to 8 m, guide up to 5 m unclipped, NC State 5 to 20 ft; 5 m is the agent's pick. Hardiness: RHS H6 (-20 to -15 C), NC State USDA 5a to 8b. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/2579/buxus-sempervirens/details",
+        "https://www.rhs.org.uk/plants/box/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/buxus-sempervirens",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boxwood"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Japanese holly (Ilex crenata)",
+          "tell": "Box leaves are opposite each other and its young stems are square in cross-section (NC State)."
+        },
+        {
+          "name": "Sweet box (Sarcococca)",
+          "tell": "Box leaves are opposite each other and its young stems are square in cross-section (NC State)."
+        },
+        {
+          "name": "Japanese box (Buxus microphylla var. japonica)",
+          "tell": "A close relative that NC State lists as a mix-up; it is a little more heat tolerant but slower to put on growth."
+        }
+      ],
+      "lookAlikeNote": "Japanese holly is the usual substitute for box where blight or the moth is a problem.",
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/144-cuidados-de-la-planta-buxus-sempervirens-boj-comun-o-boje",
+          "title": "Buxus sempervirens, Boj común o Boje | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

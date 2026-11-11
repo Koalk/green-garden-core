@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "clemson-beginners",
+      "title": "Exciting houseplant selections for beginners",
+      "url": "https://hgic.clemson.edu/exciting-houseplant-selections-for-beginners/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-pothos",
+      "title": "How to grow pothos indoors",
+      "url": "https://hgic.clemson.edu/factsheet/how-to-grow-pothos-indoors-epipremnum-spp-care-cultivars-and-common-problems/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "iastate",
+      "title": "Easy low-maintenance houseplants",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+      "publisher": "Iowa State University Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "psu-pothos",
+      "title": "Pothos as a houseplant",
+      "url": "https://extension.psu.edu/pothos-as-a-houseplant",
+      "publisher": "Penn State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "umd",
+      "title": "Selecting indoor plants",
+      "url": "https://extension.umd.edu/resource/selecting-indoor-plants",
+      "publisher": "University of Maryland Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "epipremnum-aureum",
+      "taxon": {
+        "scientificName": "Epipremnum aureum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Pothos",
+            "primary": true
+          }
+        ],
+        "synonyms": ["Scindapsus aureus"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["iastate", "clemson-beginners"],
+          "source": "psu-pothos",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.3,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Better a little too dry than too wet; drooping from dryness is temporary."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-beginners"],
+          "source": "clemson-pothos",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 27
+          },
+          "unit": "C",
+          "source": "psu-pothos",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": {
+            "min": 50,
+            "max": 70
+          },
+          "unit": "%",
+          "source": "clemson-pothos",
+          "confidence": "checked"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "psu-pothos",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "climbing",
+          "corroboratedBy": ["clemson-pothos"],
+          "source": "psu-pothos",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "psu-pothos",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-pothos"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "psu-pothos",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-pothos"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "psu-pothos",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-pothos"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "psu-pothos",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["psu-pothos", "clemson-pothos"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Epipremnum aureum 31082012.jpg",
+          "licence": "CC-BY-SA-3.0",
+          "creator": "Joydeep",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum_31082012.jpg",
+          "thumbnail": "epipremnum-aureum.webp"
+        }
+      ],
+      "photoFile": "Epipremnum aureum 31082012.jpg",
+      "tags": {
+        "curated": ["indoor", "trailing", "beginner_friendly"]
+      },
+      "provenance": {
+        "notes": "Watering: Penn State 'once the soil has dried out', Clemson pothos page 'let dry completely', Clemson beginners 'top 1.5-2 in dry'; let_top_dry stored. Light: Penn State 'moderate to bright'; Clemson 'bright, indirect' stored. Size: only trailing length (up to 30-40 ft) is stated, no spread, so size stays unknown."
+      },
+      "sourcesRead": [
+        "https://hgic.clemson.edu/exciting-houseplant-selections-for-beginners/",
+        "https://hgic.clemson.edu/factsheet/how-to-grow-pothos-indoors-epipremnum-spp-care-cultivars-and-common-problems/",
+        "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+        "https://extension.psu.edu/pothos-as-a-houseplant",
+        "https://extension.umd.edu/resource/selecting-indoor-plants"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Heartleaf philodendron",
+          "species": "philodendron-hederaceum",
+          "tell": "Pothos petiole is grooved and has no papery sheath on new growth; philodendron petiole is smooth with a sheath; pothos leaves are thicker, waxy, slightly asymmetric"
+        },
+        {
+          "name": "Monstera adansonii",
+          "tell": "Pothos petiole is grooved and has no papery sheath on new growth; philodendron petiole is smooth with a sheath; pothos leaves are thicker, waxy, slightly asymmetric"
+        },
+        {
+          "name": "Scindapsus",
+          "tell": "Pothos petiole is grooved and has no papery sheath on new growth; philodendron petiole is smooth with a sheath; pothos leaves are thicker, waxy, slightly asymmetric"
+        },
+        {
+          "name": "Cebu Blue pothos",
+          "tell": "Pothos petiole is grooved and has no papery sheath on new growth; philodendron petiole is smooth with a sheath; pothos leaves are thicker, waxy, slightly asymmetric"
+        }
+      ],
+      "lookAlikeNote": "same family, both toxic; near-identical care",
+      "nameIdeas": ["Potty", "Potus", "Pothos Pete", "Devil Dan", "Goldie"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/1138-cuidados-de-la-planta-epipremnum-aureum-o-potus",
+          "title": "Epipremnum aureum o Potus | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/pothos/pothos.asp",
+          "title": "Pothos (Epipremnum aureum) - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

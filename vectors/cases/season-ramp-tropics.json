@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-tropics",
+  "description": "Near the equator (20 degrees) there is no rest season, even on 31 December: 0.",
+  "why": "Below 30 degrees latitude the light and temperature drop is too small to name a rest season; a guess, flagged in the notes. Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2026-12-31", "hemisphere": "north", "latitude": 20 },
+  "expected": { "weight": 0 }
+}

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-adiantum-raddianum",
+      "title": "NC State Plant Toolbox: Adiantum raddianum",
+      "url": "https://plants.ces.ncsu.edu/plants/adiantum-raddianum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-adiantum-raddianum",
+      "title": "RHS: Adiantum raddianum",
+      "url": "https://www.rhs.org.uk/plants/20650/adiantum-raddianum/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "adiantum-raddianum",
+      "taxon": {
+        "scientificName": "Adiantum raddianum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Maidenhair fern",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Delta maidenhair fern"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-adiantum-raddianum"],
+          "source": "ncsu-adiantum-raddianum",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Never let the roots dry out: keep the mix evenly moist, stand it on damp pebbles, and water more sparingly in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-adiantum-raddianum"],
+          "source": "rhs-adiantum-raddianum",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 61,
+            "spread": 61
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-adiantum-raddianum"],
+          "source": "ncsu-adiantum-raddianum",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-adiantum-raddianum",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["ncsu-adiantum-raddianum"],
+          "source": "rhs-adiantum-raddianum",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Adiantum raddianum - Wilhelma Zoo - Stuttgart, Germany - DSC01985.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Daderot",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adiantum_raddianum_-_Wilhelma_Zoo_-_Stuttgart,_Germany_-_DSC01985.jpg",
+          "thumbnail": "adiantum-raddianum.webp"
+        }
+      ],
+      "photoFile": "Adiantum raddianum - Wilhelma Zoo - Stuttgart, Germany - DSC01985.jpg",
+      "tags": {
+        "curated": ["indoor", "fern", "high_humidity", "fussy"]
+      },
+      "provenance": {
+        "notes": "A fussy fern: NC State rates maintenance high and sunburn and drying are the usual faults. Watering: NC State moist to wet soil, roots must not dry out; RHS water freely in growth, sparingly in winter. Light: RHS bright indirect with good ventilation; NC State partial shade to shade, loses vigour in full sun or deep shade. Humidity: both want it high (RHS: tray of moist gravel; NC State: bathrooms, terrariums), no figure. Temperature: RHS H1C (tender), no range given. Size: NC State 1 to 2 ft by 1 to 2 ft, RHS about 60 cm in the text. Toxicity is UNKNOWN: neither page mentions it and the ASPCA maidenhair fern URL returned 404; the starter list's 'non-toxic' is unverified knowledge, so nothing is stored (schema principle: no source, never safe)."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/adiantum-raddianum/",
+        "https://www.rhs.org.uk/plants/20650/adiantum-raddianum/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/maidenhair-fern"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-jade",
+      "title": "NC State Plant Toolbox: Crassula ovata",
+      "url": "https://plants.ces.ncsu.edu/plants/crassula-ovata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "sdstate-jade",
+      "title": "Jade plant: houseplant how-to",
+      "url": "https://extension.sdstate.edu/jade-plant-houseplant-how",
+      "publisher": "SDSU Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "crassula-ovata",
+      "taxon": {
+        "scientificName": "Crassula ovata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Jade plant",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "sdstate-jade",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.6,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Soak, then wait until the mix is dry through; wrinkled leaves mean it waited too long."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "sdstate-jade",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": 29
+          },
+          "unit": "C",
+          "source": "sdstate-jade",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 183,
+            "spread": 91
+          },
+          "unit": "cm",
+          "source": "sdstate-jade",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "sdstate-jade",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["sdstate-jade"],
+          "source": "ncsu-jade",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy"],
+            "source": "sdstate-jade",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-jade"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "lethargy"],
+            "source": "sdstate-jade",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-jade"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "sdstate-jade",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["sdstate-jade", "ncsu-jade"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Crassula ovata - Jade Plant - South Africa 6.JPG",
+          "licence": "PDM-1.0",
+          "creator": "Abu Shawka",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crassula_ovata_-_Jade_Plant_-_South_Africa_6.JPG",
+          "thumbnail": "crassula-ovata.webp"
+        }
+      ],
+      "photoFile": "Crassula ovata - Jade Plant - South Africa 6.JPG",
+      "tags": {
+        "curated": ["indoor", "beginner_friendly"]
+      },
+      "provenance": {
+        "notes": "Light: South Dakota State says bright indirect, NC State says full sun or partial shade (bright light essential); the more cautious bright_indirect is stored. Growth: SDSU slow, NC State medium; slow stored. Size: SDSU up to 6 ft by 3 ft, NC State 3-6 ft by 2-3 ft. Mapping of habit 'bushy' from 'small tree look' / 'multi-stemmed' is the agent's. Jade is the one real watering judgement call: SDSU says let soil dry completely."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/crassula-ovata/",
+        "https://extension.sdstate.edu/jade-plant-houseplant-how"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Elephant bush (Portulacaria afra, sold as dwarf jade)",
+          "tell": "Jade has thick oval leaves in opposite pairs on thick woody stems; elephant bush has small leaves on wiry red stems"
+        },
+        {
+          "name": "other Crassula",
+          "tell": "Jade has thick oval leaves in opposite pairs on thick woody stems; elephant bush has small leaves on wiry red stems"
+        }
+      ],
+      "lookAlikeNote": "Look-alike (elephant bush) is the SAFER one (listed non-toxic); jade is toxic to pets. Jade is more drought-tolerant",
+      "nameIdeas": ["Jade Law", "Jadey", "Crassula Carl", "Shrek", "Jaden"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/252-cuidados-de-la-planta-crassula-ovata-o-arbol-de-jade",
+          "title": "Crassula ovata o Árbol de jade | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/piante-grasse/piante-grasse/crassula-ovata.asp",
+          "title": "Caratteristiche del crassula ovata - Piante Grasse",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

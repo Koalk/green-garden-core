@@ -1,0 +1,25 @@
+{
+  "name": "away-short-plant-short-stretch",
+  "description": "A 4-day plant, watered today, with 4 away days that cover its whole window: it is watered on the first free day after them and the outlook stays thrive (no warning).",
+  "why": ", Seen in a browser: 'at risk of decay' over a 4-day stretch for a 4-day plant. Fern: keep_moist, interval 4, band 3 to 4, dry tolerance 2. Watered 11-10, away 11-12 to 11-15, first free day 11-16: gap 6, 2 days past the ideal, exactly the dry tolerance, and the stretch is the cause. PROVISIONAL: a gap the away days made that stays inside the dry tolerance is no warning. Hand-computed.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-10",
+    "horizonDays": 12,
+    "prefs": {
+      "unavailableDates": ["2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15"]
+    },
+    "plants": [
+      { "id": "fern", "style": "keep_moist", "intervalDays": 4, "lastWatered": "2026-11-10" }
+    ]
+  },
+  "expected": {
+    "plants": [
+      {
+        "plantId": "fern",
+        "waterings": [{ "date": "2026-11-16", "reason": "away_days" }],
+        "outlook": { "level": "thrive", "severity": 0, "reasons": [] }
+      }
+    ]
+  }
+}

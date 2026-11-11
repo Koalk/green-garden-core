@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-ficus-lyrata",
+      "title": "NC State Plant Toolbox: Ficus lyrata",
+      "url": "https://plants.ces.ncsu.edu/plants/ficus-lyrata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "psu-fiddle-leaf",
+      "title": "Fiddle Leaf Fig (Ficus lyrata), Adams County Master Gardener",
+      "url": "https://extension.psu.edu/programs/master-gardener/counties/adams/news/fiddle-leaf-fig-ficus-lyrata",
+      "publisher": "Penn State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "ficus-lyrata",
+      "taxon": {
+        "scientificName": "Ficus lyrata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Fiddle-leaf fig",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["psu-fiddle-leaf"],
+          "source": "ncsu-ficus-lyrata",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": 1.4,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Dislikes both wet feet and drought; brown patches spreading from the edge mean overwatering."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-ficus-lyrata",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": null
+          },
+          "unit": "C",
+          "source": "ncsu-ficus-lyrata",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-ficus-lyrata",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-ficus-lyrata",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "ncsu-ficus-lyrata",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "ncsu-ficus-lyrata",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "ncsu-ficus-lyrata",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-ficus-lyrata",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-ficus-lyrata"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Starr 031108-0130 Ficus lyrata.jpg",
+          "licence": "CC-BY-3.0",
+          "creator": "Forest & Kim Starr",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_031108-0130_Ficus_lyrata.jpg",
+          "thumbnail": "ficus-lyrata.webp"
+        }
+      ],
+      "photoFile": "Starr 031108-0130 Ficus lyrata.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Watering style is a mapping ('moist, well-drained, sensitive to overwatering'; Penn State: check 2 in down). Size: houseplant height 2-10 ft but no spread, so unknown. The UF/IFAS page failed on redirect loops."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/ficus-lyrata/",
+        "https://extension.psu.edu/programs/master-gardener/counties/adams/news/fiddle-leaf-fig-ficus-lyrata"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Rubber plant",
+          "species": "ficus-elastica",
+          "tell": "Fiddle-leaf has violin-shaped leaves with pale deep veins and a wavy edge"
+        },
+        {
+          "name": "weeping fig",
+          "tell": "Fiddle-leaf has violin-shaped leaves with pale deep veins and a wavy edge"
+        },
+        {
+          "name": "Ficus 'Audrey'",
+          "tell": "Fiddle-leaf has violin-shaped leaves with pale deep veins and a wavy edge"
+        }
+      ],
+      "lookAlikeNote": "same mild sap toxicity",
+      "nameIdeas": ["Fiddle Dee Dee", "Fiddlesticks", "Violet", "Stradivarius", "Lyra"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/362-cuidados-de-la-planta-ficus-lyrata-o-ficus-lira",
+          "title": "Ficus lyrata o Ficus lira | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/ficus-lyrata/ficus-lyrata.asp",
+          "title": "Ficus lyrata - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

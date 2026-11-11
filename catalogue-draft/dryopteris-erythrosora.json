@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-dryopteris-erythrosora",
+      "title": "NC State Plant Toolbox: Dryopteris erythrosora",
+      "url": "https://plants.ces.ncsu.edu/plants/dryopteris-erythrosora/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-dryopteris-erythrosora",
+      "title": "Missouri Botanical Garden Plant Finder: Dryopteris erythrosora",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285661&isprofile=0&basic=dryopteris%20erythrosora",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-dryopteris-erythrosora",
+      "title": "RHS Plant Profile: Dryopteris erythrosora",
+      "url": "https://www.rhs.org.uk/plants/25899/dryopteris-erythrosora/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dryopteris-erythrosora",
+      "taxon": { "scientificName": "Dryopteris erythrosora" },
+      "names": {
+        "common": [
+          { "lang": "en-GB", "name": "Japanese shield fern", "primary": true },
+          { "lang": "en-GB", "name": "Autumn fern" },
+          { "lang": "en-GB", "name": "Copper shield fern" },
+          { "lang": "en-GB", "name": "Hardy fern" },
+          {
+            "lang": "es",
+            "name": "Helecho escudo japonés",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "es", "name": "Helecho de jardín", "translation": { "status": "machine" } },
+          {
+            "lang": "it",
+            "name": "Felce giapponese",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "it", "name": "Felce da giardino", "translation": { "status": "machine" } }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": { "value": null, "source": null, "confidence": "unknown" },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": { "value": null, "source": null, "confidence": "unknown", "unit": "C" },
+        "humidityPercent": { "value": null, "source": null, "confidence": "unknown", "unit": "%" },
+        "rootDepthClass": { "value": null, "source": null, "confidence": "unknown" },
+        "habit": {
+          "value": "rosette",
+          "source": "ncsu-dryopteris-erythrosora",
+          "corroboratedBy": ["rhs-dryopteris-erythrosora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "mbg-dryopteris-erythrosora",
+          "corroboratedBy": ["ncsu-dryopteris-erythrosora", "rhs-dryopteris-erythrosora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost evenly moist; a pot dries fast, so check it often and never let the fronds crisp."
+        },
+        "light": {
+          "value": "low",
+          "source": "ncsu-dryopteris-erythrosora",
+          "corroboratedBy": ["mbg-dryopteris-erythrosora", "rhs-dryopteris-erythrosora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": { "height": 75, "spread": 90 },
+          "source": "rhs-dryopteris-erythrosora",
+          "corroboratedBy": ["ncsu-dryopteris-erythrosora", "mbg-dryopteris-erythrosora"],
+          "confidence": "from_knowledge_verify",
+          "unit": "cm"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-dryopteris-erythrosora",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "ncsu-dryopteris-erythrosora",
+          "corroboratedBy": ["rhs-dryopteris-erythrosora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-dryopteris-erythrosora",
+          "corroboratedBy": ["rhs-dryopteris-erythrosora"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "none",
+          "source": "mbg-dryopteris-erythrosora",
+          "corroboratedBy": ["ncsu-dryopteris-erythrosora", "rhs-dryopteris-erythrosora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "dormancy": {
+          "value": "none",
+          "source": "ncsu-dryopteris-erythrosora",
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "shade",
+          "source": "mbg-dryopteris-erythrosora",
+          "corroboratedBy": ["ncsu-dryopteris-erythrosora", "rhs-dryopteris-erythrosora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "moist",
+          "source": "mbg-dryopteris-erythrosora",
+          "corroboratedBy": ["ncsu-dryopteris-erythrosora", "rhs-dryopteris-erythrosora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H4",
+          "source": "rhs-dryopteris-erythrosora",
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Mulch well and water in the first season and in dry spells; in dry shade it copes but looks its best in constantly moist soil."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": { "curated": ["ground", "outdoor_pot", "foliage", "shade", "ferns"] },
+      "provenance": {
+        "notes": "Row 101, Japanese shield fern (autumn fern), the hardy outdoor fern of the 'hardy ferns' row; not the houseplant ferns of rows 28 and 36. Three care sources agree on shade to part shade, moist humusy soil and a slow, semi-evergreen clump. Light conflict: RHS also allows full sun with plenty of water; the shade reading of NC State and Missouri BG is kept. Drought conflict: NC State and RHS say brief drought or dry shade is tolerated, Missouri BG says the soil must not dry out; the conservative reading (no tolerance) is kept. Size: RHS 0.5 to 1 m, NC State 1.5 to 2 ft by 2 to 3 ft, Missouri BG 1.5 to 2.5 ft; 75 by 90 cm is the agent's mapping. Hardiness H4 is the RHS rating (NC State zones 6b to 12, Missouri BG 5 to 8). Dormancy none: semi-evergreen. NC State warns it may naturalise and turn invasive in the US south-east. Toxicity: no source states any, so people and pets stay unknown. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/dryopteris-erythrosora/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=285661&isprofile=0&basic=dryopteris%20erythrosora",
+        "https://www.rhs.org.uk/plants/25899/dryopteris-erythrosora/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Japanese painted fern (Athyrium niponicum)",
+          "tell": "Silvery-grey fronds with a purple midrib; the other 'Japanese' garden fern. Not this entry."
+        }
+      ],
+      "lookAlikeNote": "RHS: the variety 'Brilliance' and var. prolifica have their own pages; they keep this key.",
+      "photos": [],
+      "links": []
+    }
+  ]
+}

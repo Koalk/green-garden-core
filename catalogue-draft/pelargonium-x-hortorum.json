@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-pelargonium-hybridum",
+      "title": "NC State Plant Toolbox: Pelargonium x hybridum (zonal pelargonium)",
+      "url": "https://plants.ces.ncsu.edu/plants/pelargonium-x-hybridum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-hortorum",
+      "title": "RHS: Pelargonium x hortorum",
+      "url": "https://www.rhs.org.uk/plants/160286/pelargonium-%C3%97-hortorum/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "pelargonium-x-hortorum",
+      "taxon": {
+        "scientificName": "Pelargonium x hortorum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Zonal geranium",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Zonal pelargonium"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Bedding geranium"
+          }
+        ],
+        "synonyms": ["Pelargonium x hybridum"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["ncsu-pelargonium-hybridum"],
+          "source": "rhs-hortorum",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water when the top of the compost has dried, let it breathe between drinks, and give it very little over winter."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-hortorum"],
+          "source": "ncsu-pelargonium-hybridum",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 50,
+            "spread": 50
+          },
+          "unit": "cm",
+          "source": "rhs-hortorum",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-pelargonium-hybridum",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["rhs-hortorum"],
+          "source": "ncsu-pelargonium-hybridum",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["geraniol", "linalool"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-pelargonium-hybridum",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-pelargonium-hybridum",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-pelargonium-hybridum",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-pelargonium-hybridum",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-pelargonium-hybridum"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Beyaz Sardunya-2 (Pelargonium hortorum).jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "Cann66",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beyaz_Sardunya-2_(Pelargonium_hortorum).jpg",
+          "thumbnail": "pelargonium-x-hortorum.webp"
+        }
+      ],
+      "photoFile": "Beyaz Sardunya-2 (Pelargonium hortorum).jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "flowering", "full_sun", "tender"]
+      },
+      "provenance": {
+        "notes": "NAME CLASH: in the UK and Spain 'geranium' usually means Pelargonium; the hardy cranesbill (Geranium) is a different plant and a different row. NC State files this under Pelargonium x hybridum (previously x hortorum); RHS uses x hortorum (name status 'Unresolved'), so the two pages are treated as the same plant. Watering: RHS says let the compost dry between waterings, NC State says container plants can dry between waterings; mapped to let_top_dry (agent). Light: NC State full sun (6+ hours), low light gives leggy plants; RHS full sun or partial shade; stored as the sunnier reading. Size: RHS 0.1 to 0.5 m for both height and spread, NC State up to about 90 cm tall (1 to 3 ft) with no spread; RHS figures stored (pot plant). Tolerances and rest factor: no page gives numbers (both say little water in winter). Temperature: pages give overwintering minimums and hardiness classes (H2) but no indoor range. Toxicity: only NC State states it (low severity, leaves, geraniol and linalool; vomiting and appetite loss, cats most sensitive, mild contact dermatitis, a problem for cats, dogs, horses and people); RHS is silent. The grade 1 is the agent's mapping from 'low'. The ASPCA page was not read for this row. The NC State genus page was also read and agrees."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/pelargonium-x-hybridum/",
+        "https://plants.ces.ncsu.edu/plants/pelargonium/",
+        "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+        "https://www.rhs.org.uk/plants/160286/pelargonium-%C3%97-hortorum/details"
+      ]
+    }
+  ]
+}

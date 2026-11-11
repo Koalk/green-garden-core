@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-goeppertia-orbifolia",
+      "title": "NC State Plant Toolbox: Goeppertia orbifolia",
+      "url": "https://plants.ces.ncsu.edu/plants/goeppertia-orbifolia/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-calathea",
+      "title": "Calathea spp. (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calathea",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "goeppertia-orbifolia",
+      "taxon": {
+        "scientificName": "Goeppertia orbifolia"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Calathea orbifolia",
+            "primary": true
+          },
+          {
+            "lang": "es",
+            "name": "Calatea orbifolia",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Calatea",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Calathea orbifolia", "Calathea rotundifolia", "Maranta orbifolia"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-goeppertia-orbifolia",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix evenly moist but never soggy, using rainwater or filtered water, and keep the leaves dry."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-goeppertia-orbifolia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 18,
+            "max": 24
+          },
+          "unit": "C",
+          "source": "ncsu-goeppertia-orbifolia",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 91,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-goeppertia-orbifolia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-goeppertia-orbifolia",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-goeppertia-orbifolia",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-goeppertia-orbifolia",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-calathea"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-goeppertia-orbifolia",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-calathea"]
+          }
+        ],
+        "sources": ["ncsu-goeppertia-orbifolia", "aspca-calathea"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Calathea orbiculata - Begonia House - Wellington Botanic Garden - Wellington, NZ - DSC09392.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Daderot",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calathea_orbiculata_-_Begonia_House_-_Wellington_Botanic_Garden_-_Wellington,_NZ_-_DSC09392.jpg",
+          "thumbnail": "goeppertia-orbifolia.webp"
+        }
+      ],
+      "photoFile": "Calathea orbiculata - Begonia House - Wellington Botanic Garden - Wellington, NZ - DSC09392.jpg",
+      "tags": {
+        "curated": ["indoor", "high_humidity", "fussy"]
+      },
+      "provenance": {
+        "notes": "Two fetched pages; RHS and MBG not fetched. NC State: keep consistently moist, not wet; prefers distilled or rain water (fluoride browns tips); bright indirect or partial shade; steady 65 to 75 F (18 to 24 C, converted), no minimum; humidity at least 60%; 2 to 3 ft tall, 1 to 2 ft wide; rapid growth; erect columnar clump. Humidity: page says at least 60%, a floor with no upper figure, and the schema stores a range, so left unknown. Toxicity: NC State tags non-toxic for cats and dogs; ASPCA agrees at genus level (Calathea spp.), so corroboration is genus-level. Base interval is a guess."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/goeppertia-orbifolia/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calathea"
+      ]
+    }
+  ]
+}

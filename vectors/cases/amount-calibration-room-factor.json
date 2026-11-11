@@ -1,0 +1,12 @@
+{
+  "name": "amount-calibration-room-factor",
+  "description": "Calibration levels: with no plant level, the room factor wins over the global factor.",
+  "why": "Fallback order. 350 ml uncalibrated times the room factor 0.5 is 175, rounded to 50 ml is 200 (rounding is half up).",
+  "fn": "wateringHint",
+  "input": {
+    "style": "let_top_dry",
+    "potDiameterCm": 15,
+    "calibration": { "global": { "factor": 2 }, "room": { "factor": 0.5 } }
+  },
+  "expected": { "volumeMl": 200, "calibration": "room" }
+}

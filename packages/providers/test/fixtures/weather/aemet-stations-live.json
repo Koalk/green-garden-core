@@ -1,0 +1,92 @@
+[
+  {
+    "latitud": "413826N",
+    "provincia": "VALLADOLID",
+    "altitud": "734",
+    "indicativo": "2422",
+    "nombre": "VALLADOLID",
+    "indsinop": "08141",
+    "longitud": "044515W"
+  },
+  {
+    "latitud": "405323N",
+    "provincia": "MADRID",
+    "altitud": "1159",
+    "indicativo": "3104Y",
+    "nombre": "RASCAFRÍA",
+    "indsinop": "",
+    "longitud": "035318W"
+  },
+  {
+    "latitud": "403300N",
+    "provincia": "MADRID",
+    "altitud": "672",
+    "indicativo": "3125Y",
+    "nombre": "SAN SEBASTIÁN DE LOS REYES",
+    "indsinop": "",
+    "longitud": "033700W"
+  },
+  {
+    "latitud": "403341N",
+    "provincia": "MADRID",
+    "altitud": "740",
+    "indicativo": "3126Y",
+    "nombre": "MADRID, EL GOLOSO",
+    "indsinop": "",
+    "longitud": "034243W"
+  },
+  {
+    "latitud": "402800N",
+    "provincia": "MADRID",
+    "altitud": "609",
+    "indicativo": "3129",
+    "nombre": "MADRID AEROPUERTO",
+    "indsinop": "08221",
+    "longitud": "033320W"
+  },
+  {
+    "latitud": "402706N",
+    "provincia": "MADRID",
+    "altitud": "664",
+    "indicativo": "3194U",
+    "nombre": "MADRID, CIUDAD UNIVERSITARIA",
+    "indsinop": "08220",
+    "longitud": "034327W"
+  },
+  {
+    "latitud": "402654N",
+    "provincia": "MADRID",
+    "altitud": "665",
+    "indicativo": "3194Y",
+    "nombre": "POZUELO DE ALARCÓN",
+    "indsinop": "",
+    "longitud": "034848W"
+  },
+  {
+    "latitud": "402441N",
+    "provincia": "MADRID",
+    "altitud": "667",
+    "indicativo": "3195",
+    "nombre": "MADRID, RETIRO",
+    "indsinop": "08222",
+    "longitud": "034040W"
+  },
+  {
+    "latitud": "402232N",
+    "provincia": "MADRID",
+    "altitud": "690",
+    "indicativo": "3196",
+    "nombre": "MADRID, CUATRO VIENTOS",
+    "indsinop": "08223",
+    "longitud": "034710W"
+  },
+  {
+    "latitud": "401758N",
+    "provincia": "MADRID",
+    "altitud": "620",
+    "indicativo": "3200",
+    "nombre": "GETAFE",
+    "indsinop": "08224",
+    "longitud": "034320W"
+  }
+]

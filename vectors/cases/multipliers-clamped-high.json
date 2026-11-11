@@ -1,0 +1,14 @@
+{
+  "name": "multipliers-clamped-high",
+  "description": "A 20 cm pot in low light wants 2.133 of the catalogue interval; the clamp holds it to 1.6 and the clipped part moves into the amount: 1.6 / 2.133 = 0.75 of the water each time.",
+  "why": "A pot held back at the top gets a smaller amount. 20 / 15 = 1.3333 (pot size, 02i), light low 1.6 (02i), plastic 1.0: product 2.1333, factor 1.6, amount 1.6 / 2.1333 = 0.75. Hand computation, rounded to 3 decimals in the output.",
+  "fn": "startMultipliers",
+  "input": { "potDiameterCm": 20, "light": "low", "potMaterial": "plastic" },
+  "expected": {
+    "raw": 2.133,
+    "factor": 1.6,
+    "clamped": "high",
+    "amountFactor": 0.75,
+    "guess": true
+  }
+}

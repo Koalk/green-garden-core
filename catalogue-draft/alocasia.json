@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-aloc",
+      "title": "NC State Plant Toolbox: Alocasia (elephant's-ear)",
+      "url": "https://plants.ces.ncsu.edu/plants/alocasia/common-name/elephants-ear/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-aloc",
+      "title": "RHS: How to grow alocasias",
+      "url": "https://www.rhs.org.uk/plants/alocasia/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-aloc",
+      "title": "Alocasia (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/alocasia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "alocasia",
+      "taxon": {
+        "scientificName": "Alocasia"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Alocasia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Elephant's ear"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-aloc"],
+          "source": "ncsu-aloc",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep it evenly damp while it grows, and give it almost nothing in winter when it rests."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-aloc"],
+          "source": "rhs-aloc",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 20,
+            "max": 25
+          },
+          "unit": "C",
+          "source": "ncsu-aloc",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "fast",
+          "corroboratedBy": ["rhs-aloc"],
+          "source": "ncsu-aloc",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-aloc",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "swelling", "drooling", "vomiting"],
+            "source": "aspca-aloc",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-aloc"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "swelling", "drooling", "vomiting"],
+            "source": "aspca-aloc",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-aloc"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "swelling", "vomiting", "diarrhoea"],
+            "source": "ncsu-aloc",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-aloc"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-aloc",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-aloc"]
+          }
+        ],
+        "sources": ["ncsu-aloc", "aspca-aloc", "rhs-aloc"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Xanthosoma sagittifolium 'Mickey Mouse' (Philippines).jpg",
+          "licence": "CC0-1.0",
+          "creator": "Obsidian Soul",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xanthosoma_sagittifolium_%27Mickey_Mouse%27_(Philippines).jpg",
+          "thumbnail": "alocasia.webp"
+        }
+      ],
+      "photoFile": "Xanthosoma sagittifolium 'Mickey Mouse' (Philippines).jpg",
+      "tags": {
+        "curated": ["indoor", "high_humidity", "dormant_season"]
+      },
+      "provenance": {
+        "notes": "Genus-level entry; species differ (A. macrorrhizos, A. amazonica and others). Watering conflict: NC State keep consistently moist, RHS water once the upper 5 cm has dried (April to October) and barely in winter; kept keep_moist per rule 5. Winter dormancy is described by RHS and NC State but with no number, so rest factor stays unknown. Temperature is NC State daytime 68 to 77 F; RHS says keep above 16 C and never below 10 C in winter. Size varies from 0.5 to 4.5 m by species: unknown. Severity 2: NC State rates the poison medium, ASPCA lists dogs and cats as toxic. NC State also lists eye injury (no eye symptom in our vocabulary, not graded) and says it can be fatal in serious cases; gloves advised (RHS)."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/alocasia/common-name/elephants-ear/",
+        "https://www.rhs.org.uk/plants/alocasia/growing-guide",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/alocasia"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Colocasia and Xanthosoma (elephant ears)",
+          "tell": "Alocasia leaves point up and out with the stalk at the notch; Colocasia leaves droop with the stalk attached inside the edge"
+        },
+        {
+          "name": "Anthurium",
+          "tell": "Alocasia leaves point up and out with the stalk at the notch; Colocasia leaves droop with the stalk attached inside the edge"
+        },
+        {
+          "name": "Philodendron",
+          "tell": "Alocasia leaves point up and out with the stalk at the notch; Colocasia leaves droop with the stalk attached inside the edge"
+        }
+      ],
+      "lookAlikeNote": "Colocasia and Xanthosoma also toxic; Colocasia loves wet soil, Alocasia rots in it",
+      "nameIdeas": ["Alo-Hola", "Dumbo", "Elle", "Elephant Ear-nest", "Ali"],
+      "links": [
+        {
+          "url": "https://www.piante.it/alocasia/",
+          "title": "Alocasia",
+          "publisher": "Piante.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

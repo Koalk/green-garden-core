@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "aspca-baby-rubber",
+      "title": "Baby Rubber Plant (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/baby-rubber-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en",
+      "linkKind": "toxicity"
+    },
+    {
+      "id": "clemson-peperomia",
+      "title": "Peperomia indoor plant care and growing guide",
+      "url": "https://hgic.clemson.edu/factsheet/peperomia-peperomia-spp-indoor-plant-care-and-growing-guide/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-peperomia",
+      "title": "NC State Plant Toolbox: Peperomia obtusifolia",
+      "url": "https://plants.ces.ncsu.edu/plants/peperomia-obtusifolia/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "peperomia-obtusifolia",
+      "taxon": {
+        "scientificName": "Peperomia obtusifolia"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Baby rubber plant",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["clemson-peperomia"],
+          "source": "ncsu-peperomia",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Tolerates neglect but rots if overwatered; let the soil dry moderately."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-peperomia"],
+          "source": "ncsu-peperomia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 61,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-peperomia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-peperomia",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-peperomia",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-peperomia",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-baby-rubber"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-peperomia",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-baby-rubber"]
+          }
+        ],
+        "sources": ["ncsu-peperomia", "aspca-baby-rubber"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Peperomia obtusifolia, Conservatorio botánico, Fort Wayne, Indiana, Estados Unidos, 2012-11-12, DD 01.jpg",
+          "licence": "CC-BY-SA-3.0",
+          "creator": "Diego Delso",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peperomia_obtusifolia,_Conservatorio_bot%C3%A1nico,_Fort_Wayne,_Indiana,_Estados_Unidos,_2012-11-12,_DD_01.jpg",
+          "thumbnail": "peperomia-obtusifolia.webp"
+        }
+      ],
+      "photoFile": "Peperomia obtusifolia, Conservatorio botánico, Fort Wayne, Indiana, Estados Unidos, 2012-11-12, DD 01.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Watering style is a mapping: NC State 'prefers dry soil, intolerant of wet soil', Clemson 'prefers to dry out between waterings' to let_top_dry. Toxicity: NC State tags it non-toxic for cats and dogs; the ASPCA page for the same species agrees (fact only, no wording copied)."
+      },
+      "sourcesRead": [
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/baby-rubber-plant",
+        "https://hgic.clemson.edu/factsheet/peperomia-peperomia-spp-indoor-plant-care-and-growing-guide/",
+        "https://plants.ces.ncsu.edu/plants/peperomia-obtusifolia/"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Peperomia argyreia (watermelon)",
+          "tell": "Obtusifolia has thick glossy leaves on upright stems; watermelon peperomia has silver stripes"
+        },
+        {
+          "name": "Pilea",
+          "tell": "Obtusifolia has thick glossy leaves on upright stems; watermelon peperomia has silver stripes"
+        },
+        {
+          "name": "Hoya obovata",
+          "tell": "Obtusifolia has thick glossy leaves on upright stems; watermelon peperomia has silver stripes"
+        }
+      ],
+      "nameIdeas": ["Pepper", "Pep Talk", "Peppa", "Baby Blue", "Salt"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/3409-cuidados-de-la-planta-peperomia-obtusifolia-o-peperomia",
+          "title": "Peperomia obtusifolia o Peperomia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/peperomia--cola-de-rat�n_3138",
+          "title": "verdeesvida :: Peperomia, Cola de ratón",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/peperomia/peperomia.asp",
+          "title": "Peperomia - Peperomia caperata - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

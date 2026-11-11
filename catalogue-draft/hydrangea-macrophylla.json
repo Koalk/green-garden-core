@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-hydrangea-shrubby",
+      "title": "RHS: How to grow shrubby hydrangeas",
+      "url": "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-hydrangea-macrophylla",
+      "title": "NC State Plant Toolbox: Hydrangea macrophylla",
+      "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-hydrangea",
+      "title": "Hydrangea (toxic and non-toxic plants list; entry is Hydrangea arborescens)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hydrangea",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "hydrangea-macrophylla",
+      "taxon": {
+        "scientificName": "Hydrangea macrophylla"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Bigleaf hydrangea",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Hydrangea"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Mophead hydrangea"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Hortensia"
+          },
+          {
+            "lang": "es",
+            "name": "Hortensia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Hidrangea",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Ortensia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Hydrangea",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Hydrangea hortensia"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-hydrangea-shrubby",
+          "corroboratedBy": ["ncsu-hydrangea-macrophylla"],
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix evenly moist and check pots daily in summer; they dry out fast, so move them to a shadier spot in hot weather."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-hydrangea-shrubby",
+          "corroboratedBy": ["ncsu-hydrangea-macrophylla"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 180,
+            "spread": 180
+          },
+          "unit": "cm",
+          "source": "ncsu-hydrangea-macrophylla",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-hydrangea-macrophylla",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-hydrangea-macrophylla",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["cyanogenic_glycoside"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-hydrangea-macrophylla",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-hydrangea-macrophylla",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "rhs-hydrangea-shrubby",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "rhs-hydrangea-shrubby",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-hydrangea-macrophylla", "aspca-hydrangea", "rhs-hydrangea-shrubby"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "part_shade"]
+      },
+      "provenance": {
+        "notes": "NAME CLASH: sold as 'hydrangea' with H. paniculata, H. serrata and H. arborescens; pruning and sun differ. This entry is H. macrophylla (mophead and lacecap). Watering: RHS says evenly moist soil, check pots so they do not dry out, move to a shadier spot in summer; no frequency, so interval 3 days is a guess. NC State gives no schedule (occasionally wet soil is fine). Light: RHS light shade, tolerates more sun if the soil stays moist; NC State dappled sun to partial shade, protect from afternoon sun; stored bright_indirect as the closest class. Size: NC State 3 to 6 ft by 3 to 6 ft (upper value 180 cm used); dwarf cultivars 2 to 4 ft; RHS gives no figure; from_knowledge_verify because the upper value of a range was taken and the NC State page was truncated by the fetch (size, growth rate and light are in the verbatim part; USDA zones 6a to 11b and the toxic agent come from a model summary of the cut part, so they are not stored as checked). Growth rate rapid (NC State). Hardiness: RHS hardy through most of the UK, late frost damages buds, no temperature given. Pots: RHS recommends compact cultivars such as 'Red Hot Violet' and 'Altona', ericaceous compost to keep blue flowers on alkaline soil. Toxicity: ASPCA lists toxic to cats and dogs (cyanogenic glycoside; vomiting, depression, diarrhoea; cyanide poisoning rare) but its entry is H. arborescens, so it is only a genus-level reading; NC State's macrophylla page rates severity low with problem tags for cats, dogs and children. Stored 1 (agent's grading). Human skin: RHS says foliage contact may aggravate skin allergies, so adult skin 1; NC State (summary part) says no contact dermatitis, a conflict kept at the cautious grade. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/hydrangea/shrubby/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hydrangea"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/425-cuidados-de-la-planta-hydrangea-macrophylla-u-hortensia",
+          "title": "Hydrangea macrophylla u Hortensia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/singolepiante/ortensia/ortensia.asp",
+          "title": "Ortensia - Hidrangea - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

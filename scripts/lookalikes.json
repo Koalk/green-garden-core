@@ -1,0 +1,902 @@
+[
+  {
+    "rank": 1,
+    "common": "Snake plant",
+    "scientific": "Dracaena trifasciata",
+    "lookalikes": "Sansevieria cylindrica and other Dracaena",
+    "tell_apart": "Cylindrica has round spear leaves; trifasciata has flat sword leaves with cross-banding",
+    "care_or_toxicity_flag": "none, same care and toxicity",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Dracaena_trifasciata_177940020.jpg",
+      "file": "Dracaena trifasciata 177940020.jpg",
+      "licence": "CC BY 4.0",
+      "author": "四角銅鑼",
+      "verified": false
+    },
+    "name_ideas": ["Sansevieria Sam", "Snakespeare", "Hiss-toric", "Sir Hisses", "Slither Sue"]
+  },
+  {
+    "rank": 2,
+    "common": "Spider plant",
+    "scientific": "Chlorophytum comosum",
+    "lookalikes": "Mondo grass (Ophiopogon); curly and variegated Chlorophytum cultivars",
+    "tell_apart": "Spider plant sends arching runners with plantlets; mondo grass is a tuft with no runners",
+    "care_or_toxicity_flag": "none",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Chlorophytum_comosum_in_China.jpg",
+      "file": "Chlorophytum comosum in China.jpg",
+      "licence": "CC BY-SA 4.0",
+      "author": "Dinkun Chen",
+      "verified": false
+    },
+    "name_ideas": ["Spidey", "Webster", "Spinderella", "Charlotte", "Arachne"]
+  },
+  {
+    "rank": 3,
+    "common": "Peace lily",
+    "scientific": "Spathiphyllum wallisii (lists give Spathiphyllum spp.)",
+    "lookalikes": "True lilies (Lilium) and daylilies (Hemerocallis); calla lily; Anthurium",
+    "tell_apart": "Peace lily has a white spathe around a spike on a leafy clump; true lilies have six-petal flowers on a tall stem",
+    "care_or_toxicity_flag": "MORE TOXIC look-alike: Lilium and Hemerocallis are acutely fatal to cats (kidney failure); peace lily is a mild oral irritant",
+    "lookalike_source": "https://peacelilycare.org/pet-safety/true-lily-vs-peace-lily/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:SpathiphyllumWallisii.jpg",
+      "file": "SpathiphyllumWallisii.jpg",
+      "licence": "Public domain",
+      "author": "Peter Fiskerstrand",
+      "verified": false
+    },
+    "name_ideas": ["Lily Allen", "Peaceful Pete", "Spathi", "Calm Cal", "Dove"]
+  },
+  {
+    "rank": 4,
+    "common": "ZZ plant",
+    "scientific": "Zamioculcas zamiifolia",
+    "lookalikes": "Zamia (cardboard palm, a cycad); Raven ZZ is the same species",
+    "tell_apart": "ZZ has glossy leaflets on a fat stalk from a rhizome; cycads have stiff palm-like fronds",
+    "care_or_toxicity_flag": "Zamia is a cycad: more toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Millonaria_(Zamioculcas_zamiifolia).jpg",
+      "file": "Millonaria (Zamioculcas zamiifolia).jpg",
+      "licence": "CC0",
+      "author": "Muago",
+      "verified": false
+    },
+    "name_ideas": ["Zee Zee", "Zazu", "Zizi", "Zanzibar", "Zed"]
+  },
+  {
+    "rank": 5,
+    "common": "Jade plant",
+    "scientific": "Crassula ovata",
+    "lookalikes": "Elephant bush (Portulacaria afra, sold as dwarf jade); other Crassula",
+    "tell_apart": "Jade has thick oval leaves in opposite pairs on thick woody stems; elephant bush has small leaves on wiry red stems",
+    "care_or_toxicity_flag": "Look-alike (elephant bush) is the SAFER one (listed non-toxic); jade is toxic to pets. Jade is more drought-tolerant",
+    "lookalike_source": "https://www.succulent.care/crassula-ovata-vs-portulacaria-afra/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
+      "file": "Among the branches of a potted jade plant.jpg",
+      "licence": "CC0",
+      "author": "W.carter",
+      "verified": false
+    },
+    "name_ideas": ["Jade Law", "Jadey", "Crassula Carl", "Shrek", "Jaden"]
+  },
+  {
+    "rank": 6,
+    "common": "Pothos / devil's ivy",
+    "scientific": "Epipremnum aureum",
+    "lookalikes": "Heartleaf philodendron; Monstera adansonii; Scindapsus; Cebu Blue pothos",
+    "tell_apart": "Pothos petiole is grooved and has no papery sheath on new growth; philodendron petiole is smooth with a sheath; pothos leaves are thicker, waxy, slightly asymmetric",
+    "care_or_toxicity_flag": "same family, both toxic; near-identical care",
+    "lookalike_source": "https://plantcareclub.com/blog/pothos-vs-philodendron",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum_31082012.jpg",
+      "file": "Epipremnum aureum 31082012.jpg",
+      "licence": "CC BY-SA 3.0",
+      "author": "Joydeep",
+      "verified": false
+    },
+    "name_ideas": ["Potty", "Potus", "Pothos Pete", "Devil Dan", "Goldie"]
+  },
+  {
+    "rank": 7,
+    "common": "Swiss cheese plant",
+    "scientific": "Monstera deliciosa",
+    "lookalikes": "Split-leaf philodendron (Thaumatophyllum); Monstera adansonii; Rhaphidophora tetrasperma",
+    "tell_apart": "Holes inside the blade point to Monstera; philodendron splits only reach in from the edge",
+    "care_or_toxicity_flag": "all toxic; similar care",
+    "lookalike_source": "https://www.theplantindex.com/articles/monstera-vs-philodendron-vs-mini-monstera",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_001.jpg",
+      "file": "Monstera deliciosa 001.jpg",
+      "licence": "CC BY 3.0",
+      "author": "H. Zell",
+      "verified": false
+    },
+    "name_ideas": ["Monty", "Monstera Mash", "Swissy", "Holey Moley", "Cheddar"]
+  },
+  {
+    "rank": 8,
+    "common": "Rubber plant",
+    "scientific": "Ficus elastica",
+    "lookalikes": "Fiddle-leaf fig; Ficus benjamina; Schefflera",
+    "tell_apart": "Rubber plant has big oval glossy leaves with a pointed tip and a red sheath on new growth",
+    "care_or_toxicity_flag": "same mild sap toxicity; similar care",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Ficus_elastica_23876156.jpg",
+      "file": "Ficus elastica 23876156.jpg",
+      "licence": "CC BY 4.0",
+      "author": "Martin Purdy",
+      "verified": false
+    },
+    "name_ideas": ["Rubber Ducky", "Ficus Fred", "Elastigirl", "Bouncer", "Stretch"]
+  },
+  {
+    "rank": 9,
+    "common": "Aloe vera",
+    "scientific": "Aloe vera",
+    "lookalikes": "Other Aloe species; Agave; Yucca; Haworthiopsis",
+    "tell_apart": "Snap a leaf: aloe breaks and is gel-filled, agave is fibrous with a hard tip spine. Agave centre is tightly rolled, aloe centre stays open",
+    "care_or_toxicity_flag": "Agave sap is a stronger irritant; not every Aloe is safe to use topically",
+    "lookalike_source": "https://plantcaretoday.com/agave-vs-aloe.html",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Starr_011104-0040_Aloe_vera.jpg",
+      "file": "Starr 011104-0040 Aloe vera.jpg",
+      "licence": "CC BY 3.0",
+      "author": "Forest & Kim Starr",
+      "verified": false
+    },
+    "name_ideas": ["Aloe Vera Baby", "Alo-ha", "Aloe-ve", "Vera Wang", "Soothe Sayer"]
+  },
+  {
+    "rank": 10,
+    "common": "Chinese money plant",
+    "scientific": "Pilea peperomioides",
+    "lookalikes": "Raindrop peperomia (Peperomia polybotrya); money tree (Pachira); jade plant",
+    "tell_apart": "Pilea leaves are perfectly round with the stem attached in the middle (peltate); raindrop peperomia leaves are thick with a point",
+    "care_or_toxicity_flag": "Jade, also sold as a money plant, is TOXIC; Pilea is not",
+    "lookalike_source": "https://plantgrail.com/articles/what-is-a-money-plant-five-plants-share-the-name/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Pilea_peperomioides_Chinese_money_plant.jpg",
+      "file": "Pilea peperomioides Chinese money plant.jpg",
+      "licence": "CC0",
+      "author": "Husky",
+      "verified": false
+    },
+    "name_ideas": ["Pilea Penny", "Coin Flip", "Penny Lane", "Missionary Mike", "Pancake"]
+  },
+  {
+    "rank": 11,
+    "common": "Air plants",
+    "scientific": "Tillandsia spp.",
+    "lookalikes": "Other Tillandsia species; Spanish moss (T. usneoides)",
+    "tell_apart": "Tectorum is covered in dense white hairs; ionantha is a small rosette; xerographica is large and curled",
+    "care_or_toxicity_flag": "none, all non-toxic; big hairy species need less watering",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Tillandsia_tectorum.jpg",
+      "file": "Tillandsia tectorum.jpg",
+      "licence": "CC0",
+      "author": "Fen37",
+      "verified": false
+    },
+    "name_ideas": ["Airhead", "Tilly", "Windy", "Floaty", "Breezy"]
+  },
+  {
+    "rank": 12,
+    "common": "Heartleaf philodendron",
+    "scientific": "Philodendron hederaceum",
+    "lookalikes": "Pothos; Monstera adansonii; Philodendron micans",
+    "tell_apart": "Smooth stalk and papery sheath on new leaves mean philodendron; grooved stalk and no sheath mean pothos",
+    "care_or_toxicity_flag": "same family, both toxic",
+    "lookalike_source": "https://plantcareclub.com/blog/pothos-vs-philodendron",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Philodendron_hederaceum_(25177319755).jpg",
+      "file": "Philodendron hederaceum (25177319755).jpg",
+      "licence": "CC BY 2.0",
+      "author": "Dick Culbert from Gibsons, B.C., Canada",
+      "verified": false
+    },
+    "name_ideas": ["Phil", "Philly", "Heart Throb", "Phil Collins", "Vine Diesel"]
+  },
+  {
+    "rank": 13,
+    "common": "Cast iron plant",
+    "scientific": "Aspidistra elatior",
+    "lookalikes": "Hosta (garden); Aspidistra cultivars",
+    "tell_apart": "Aspidistra leaves rise one at a time from a rhizome and are dark, tough and glossy; hosta is deciduous with ribbed leaves",
+    "care_or_toxicity_flag": "Hosta is toxic to cats and dogs; cast iron plant is not",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Aspidistra-elatior-variegata.jpg",
+      "file": "Aspidistra-elatior-variegata.jpg",
+      "licence": "Public domain",
+      "author": "frau-doktor",
+      "verified": false
+    },
+    "name_ideas": ["Iron Man", "Tin Man", "Ironsides", "Cast Iron Chef", "Anvil"]
+  },
+  {
+    "rank": 14,
+    "common": "English ivy",
+    "scientific": "Hedera helix",
+    "lookalikes": "Boston ivy (Parthenocissus); Swedish ivy (Plectranthus); devil's ivy (pothos); poison ivy",
+    "tell_apart": "True ivy clings with aerial rootlets and has lobed leaves; Boston ivy uses adhesive discs; Swedish ivy has scalloped hairy leaves; poison ivy has three leaflets",
+    "care_or_toxicity_flag": "Swedish ivy is non-toxic; pothos also toxic; poison ivy is a skin hazard",
+    "lookalike_source": "https://extension.umd.edu/resource/english-ivy",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Hedera_helix_2_RF.jpg",
+      "file": "Hedera helix 2 RF.jpg",
+      "licence": "CC BY 4.0",
+      "author": "Robert Flogaus-Faust",
+      "verified": false
+    },
+    "name_ideas": ["Ivy League", "Ivy Winter", "Climber Clive", "Hedy", "Vine Diesel"]
+  },
+  {
+    "rank": 15,
+    "common": "Parlour palm",
+    "scientific": "Chamaedorea elegans",
+    "lookalikes": "Sago palm (Cycas revoluta); cat palm; kentia palm; areca palm",
+    "tell_apart": "Parlour palm is a slim cane with soft arching feathery leaves; sago is a stiff cycad with a thick scarred trunk and spine-tipped leaflets",
+    "care_or_toxicity_flag": "DEADLY look-alike: sago palm is very toxic to dogs and cats",
+    "lookalike_source": "https://plantgrail.com/articles/indoor-palm-types/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Chamaedorea_elegans_(20144031253).jpg",
+      "file": "Chamaedorea elegans (20144031253).jpg",
+      "licence": "CC BY 2.0",
+      "author": "Dick Culbert from Gibsons, B.C., Canada",
+      "verified": false
+    },
+    "name_ideas": ["Palm Beach", "Parlour Pete", "Elegance", "Palmela", "Palmer"]
+  },
+  {
+    "rank": 16,
+    "common": "Fiddle-leaf fig",
+    "scientific": "Ficus lyrata",
+    "lookalikes": "Rubber plant; weeping fig; Ficus 'Audrey'",
+    "tell_apart": "Fiddle-leaf has violin-shaped leaves with pale deep veins and a wavy edge",
+    "care_or_toxicity_flag": "same mild sap toxicity",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Starr_031108-0130_Ficus_lyrata.jpg",
+      "file": "Starr 031108-0130 Ficus lyrata.jpg",
+      "licence": "CC BY 3.0",
+      "author": "Forest & Kim Starr",
+      "verified": false
+    },
+    "name_ideas": ["Fiddle Dee Dee", "Fiddlesticks", "Violet", "Stradivarius", "Lyra"]
+  },
+  {
+    "rank": 17,
+    "common": "Madagascar dragon tree",
+    "scientific": "Dracaena marginata",
+    "lookalikes": "Corn plant (Dracaena fragrans); Dracaena reflexa; Cordyline; Yucca",
+    "tell_apart": "Marginata has thin sword leaves with a red edge in a tuft at the stem tips; corn plant has broad arching leaves",
+    "care_or_toxicity_flag": "same genus, same toxicity",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Starr_061231-3032_Dracaena_marginata.jpg",
+      "file": "Starr 061231-3032 Dracaena marginata.jpg",
+      "licence": "CC BY 3.0",
+      "author": "Forest & Kim Starr",
+      "verified": false
+    },
+    "name_ideas": ["Dragon Dan", "Marge", "Spiky", "Rainbow Red", "Draco"]
+  },
+  {
+    "rank": 18,
+    "common": "Chinese evergreen",
+    "scientific": "Aglaonema spp.",
+    "lookalikes": "Dieffenbachia; peace lily; other Aglaonema cultivars",
+    "tell_apart": "Aglaonema has oblong leaves on short stems, slow and bushy; Dieffenbachia is cane-like and taller",
+    "care_or_toxicity_flag": "both toxic, Dieffenbachia the harsher irritant",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:20260317_Aglaonema_commutatum.jpg",
+      "file": "20260317 Aglaonema commutatum.jpg",
+      "licence": "CC BY 4.0",
+      "author": "Flocci Nivis",
+      "verified": false
+    },
+    "name_ideas": ["Aggie", "Evergreen Eve", "Silver Bay", "Chinese Whispers", "Ag-la-no-way"]
+  },
+  {
+    "rank": 19,
+    "common": "African violet",
+    "scientific": "Streptocarpus ionanthus (sold as Saintpaulia ionantha)",
+    "lookalikes": "Cape primrose (Streptocarpus hybrids); Gloxinia (Sinningia); Episcia",
+    "tell_apart": "African violet is a rosette of fuzzy round leaves on short stems; cape primrose has long strap-like leaves",
+    "care_or_toxicity_flag": "none for toxicity; cape primrose tolerates drier compost",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Streptocarpus_ionanthus_(as_Saintpaulia_ionantha)_-_Curtis%27_121_(Ser._3_no._51)_pl._7408_(1895).jpg",
+      "file": "Streptocarpus ionanthus (as Saintpaulia ionantha) - Curtis' 121 (Ser. 3 no. 51) pl. 7408 (1895).jpg",
+      "licence": "Public domain",
+      "author": "M. S. del. ( = Matilda Smith, 1854-1926)",
+      "verified": false
+    },
+    "name_ideas": ["Violet Beauregarde", "Vi", "Fuzzy Wuzzy", "Violetta", "Purple Rain"]
+  },
+  {
+    "rank": 20,
+    "common": "Bird of paradise",
+    "scientific": "Strelitzia reginae",
+    "lookalikes": "White bird of paradise (Strelitzia nicolai); Heliconia; Caesalpinia gilliesii",
+    "tell_apart": "S. reginae has paddle leaves on stalks and orange-and-blue crane-head flowers; nicolai grows into a tall tree with white flowers; Caesalpinia is a garden shrub with poisonous pods",
+    "care_or_toxicity_flag": "Caesalpinia gilliesii is more toxic (outdoor shrub)",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Strelitzia_larger.jpg",
+      "file": "Strelitzia larger.jpg",
+      "licence": "Public domain",
+      "author": "Scott Bauer, USDA",
+      "verified": false
+    },
+    "name_ideas": ["Birdie", "Strelitzia Stan", "Crane", "Big Bird", "Paradise Pete"]
+  },
+  {
+    "rank": 21,
+    "common": "Hoya / wax plant",
+    "scientific": "Hoya carnosa",
+    "lookalikes": "Hoya kerrii (sweetheart); Hoya carnosa 'Krimson Queen'; Dischidia",
+    "tell_apart": "H. carnosa has oval waxy leaves in pairs and round clusters of star flowers; kerrii has heart-shaped leaves",
+    "care_or_toxicity_flag": "none, Hoya listed non-toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Hoya_carnosa_(wax_vines).jpg",
+      "file": "Hoya carnosa (wax vines).jpg",
+      "licence": "CC0",
+      "author": "Muldoonsamuel",
+      "verified": false
+    },
+    "name_ideas": ["Hoy Hoy", "Wax On", "Waxy", "Honey", "Candle"]
+  },
+  {
+    "rank": 22,
+    "common": "Anthurium",
+    "scientific": "Anthurium andraeanum",
+    "lookalikes": "Peace lily; Anthurium clarinervium; Zantedeschia",
+    "tell_apart": "Anthurium has a glossy heart-shaped red or pink spathe around a bumpy spike; peace lily has a white spathe",
+    "care_or_toxicity_flag": "both toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Anthurium_(Flamingoplant)_12-08-2019_(actm)_01.jpg",
+      "file": "Anthurium (Flamingoplant) 12-08-2019 (actm) 01.jpg",
+      "licence": "CC BY-SA 4.0",
+      "author": "Agnes Monkelbaan",
+      "verified": false
+    },
+    "name_ideas": ["Anthony", "Flamingo", "Red Alert", "Hot Lips", "Anthea"]
+  },
+  {
+    "rank": 23,
+    "common": "Baby rubber plant",
+    "scientific": "Peperomia obtusifolia",
+    "lookalikes": "Peperomia argyreia (watermelon); Pilea; Hoya obovata",
+    "tell_apart": "Obtusifolia has thick glossy leaves on upright stems; watermelon peperomia has silver stripes",
+    "care_or_toxicity_flag": "none, Peperomia non-toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Peperomia_obtusifolia,_Conservatorio_bot%C3%A1nico,_Fort_Wayne,_Indiana,_Estados_Unidos,_2012-11-12,_DD_01.jpg",
+      "file": "Peperomia obtusifolia, Conservatorio botánico, Fort Wayne, Indiana, Estados Unidos, 2012-11-12, DD 01.jpg",
+      "licence": "CC BY-SA 3.0",
+      "author": "Diego Delso",
+      "verified": false
+    },
+    "name_ideas": ["Pepper", "Pep Talk", "Peppa", "Baby Blue", "Salt"]
+  },
+  {
+    "rank": 24,
+    "common": "Dumb cane",
+    "scientific": "Dieffenbachia seguine",
+    "lookalikes": "Dieffenbachia amoena; Aglaonema; Alocasia",
+    "tell_apart": "Dieffenbachia has thick cane stems and spotted leaves; Aglaonema is shorter and bushier",
+    "care_or_toxicity_flag": "Dieffenbachia is among the stronger mouth irritants",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Dieffenbachia_seguine_-_Comigo_Ninguem_Pode.jpg",
+      "file": "Dieffenbachia seguine - Comigo Ninguem Pode.jpg",
+      "licence": "CC0",
+      "author": "Alex Rio Brazil",
+      "verified": false
+    },
+    "name_ideas": ["Dumb Dumb", "Cane Cane", "Dee", "Spotty", "Dieffen-Bec"]
+  },
+  {
+    "rank": 25,
+    "common": "Calathea",
+    "scientific": "Calathea / Goeppertia spp.",
+    "lookalikes": "Maranta; Stromanthe; Ctenanthe; other Goeppertia",
+    "tell_apart": "Check the underside: pale green is Maranta, magenta is Stromanthe, burgundy on a broad leaf is Calathea, purple on a narrow leaf is Ctenanthe. Calathea clumps upright",
+    "care_or_toxicity_flag": "none, all non-toxic; Calathea is the fussiest",
+    "lookalike_source": "https://www.theplantindex.com/articles/calathea-vs-maranta-vs-stromanthe-vs-ctenanthe",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:CalatheaMakoyana.jpg",
+      "file": "CalatheaMakoyana.jpg",
+      "licence": "Public domain",
+      "author": "Chhe (talk)",
+      "verified": false
+    },
+    "name_ideas": ["Cal", "Calla Me Maybe", "Peacock", "Makoy", "Zebra Crossing"]
+  },
+  {
+    "rank": 26,
+    "common": "Areca palm",
+    "scientific": "Dypsis lutescens (E lists it as Chrysalidocarpus lutescens)",
+    "lookalikes": "Sago palm; kentia palm; cat palm; Phoenix roebelenii",
+    "tell_apart": "Areca has several yellowish-green canes with arching feathery fronds; sago is a stiff single trunk",
+    "care_or_toxicity_flag": "DEADLY look-alike: sago palm",
+    "lookalike_source": "https://plantgrail.com/articles/indoor-palm-types/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Dypsis_lutescens_Medell%C3%ADn_-_4.jpg",
+      "file": "Dypsis lutescens Medellín - 4.jpg",
+      "licence": "CC0",
+      "author": "Unknown authorUnknown author",
+      "verified": false
+    },
+    "name_ideas": ["Aretha", "Areca Raider", "Butterfly", "Palmy", "Goldie Palm"]
+  },
+  {
+    "rank": 27,
+    "common": "Lucky bamboo",
+    "scientific": "Dracaena sanderiana",
+    "lookalikes": "True bamboo (Phyllostachys); Dracaena braunii",
+    "tell_apart": "Lucky bamboo has smooth jointed green canes, usually in water; true bamboo is a woody grass",
+    "care_or_toxicity_flag": "True bamboo is the SAFER one (ASPCA non-toxic); lucky bamboo is toxic to pets",
+    "lookalike_source": "https://www.gardenia.net/plant/dracaena-sanderiana-lucky-bamboo",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Dracaena_sanderiana_132157891.jpg",
+      "file": "Dracaena sanderiana 132157891.jpg",
+      "licence": "CC BY 4.0",
+      "author": "Beah Vega",
+      "verified": false
+    },
+    "name_ideas": ["Lucky", "Bam-Boo", "Fortune", "Panda Pal", "Bamboozle"]
+  },
+  {
+    "rank": 28,
+    "common": "Boston fern",
+    "scientific": "Nephrolepis exaltata",
+    "lookalikes": "Asparagus fern (Asparagus setaceus, A. densiflorus); other Nephrolepis; maidenhair",
+    "tell_apart": "Boston fern has flat leaflets on arching fronds with spore dots underneath; asparagus fern has wiry spiny stems, needle-like cladodes and red berries",
+    "care_or_toxicity_flag": "TOXIC look-alike: asparagus fern is toxic to cats and dogs",
+    "lookalike_source": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boston-fern",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Helecho_de_Boston_(Nephrolepis_exaltata).jpg",
+      "file": "Helecho de Boston (Nephrolepis exaltata).jpg",
+      "licence": "CC0",
+      "author": "Nathaly 1106",
+      "verified": false
+    },
+    "name_ideas": ["Fernando", "Boston Bruins", "Fern Gully", "Frond Friend", "Fernie Sanders"]
+  },
+  {
+    "rank": 29,
+    "common": "Corn plant",
+    "scientific": "Dracaena fragrans",
+    "lookalikes": "Dracaena marginata; Dracaena 'Janet Craig'; Yucca",
+    "tell_apart": "Corn plant has broad arching strap leaves on a thick cane, like maize leaves",
+    "care_or_toxicity_flag": "same genus, same toxicity",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Starr_031209-0040_Dracaena_fragrans.jpg",
+      "file": "Starr 031209-0040 Dracaena fragrans.jpg",
+      "licence": "CC BY 3.0",
+      "author": "Forest & Kim Starr",
+      "verified": false
+    },
+    "name_ideas": ["Cornelius", "Cobb", "Maize", "Popcorn", "Corny"]
+  },
+  {
+    "rank": 30,
+    "common": "String of hearts",
+    "scientific": "Ceropegia woodii",
+    "lookalikes": "String of pearls and bananas (Curio); string of turtles (Peperomia prostrata)",
+    "tell_apart": "String of hearts has heart leaves with silver marbling and small tubers on the strand",
+    "care_or_toxicity_flag": "Curio strings are TOXIC; hearts and turtles are not",
+    "lookalike_source": "https://plantgrail.com/articles/string-of-pearls-bananas-hearts-trailing-succulents/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Ceropegia_woodii_Ceropegia_Wooda_2024-04-26_01.jpg",
+      "file": "Ceropegia woodii Ceropegia Wooda 2024-04-26 01.jpg",
+      "licence": "CC BY-SA 4.0",
+      "author": "Agnieszka Kwiecień, Nova",
+      "verified": false
+    },
+    "name_ideas": ["Cupid", "Heartstrings", "Valentine", "Sweetheart", "Ceropegia Cy"]
+  },
+  {
+    "rank": 31,
+    "common": "String of pearls",
+    "scientific": "Curio rowleyanus",
+    "lookalikes": "String of bananas (Curio radicans); string of dolphins; string of hearts; string of turtles",
+    "tell_apart": "Pearls has round pea-sized leaves; bananas has curved banana-shaped leaves; dolphins has leaping-dolphin leaves",
+    "care_or_toxicity_flag": "All Curio strings toxic; bananas reported more toxic by one source. Hearts and turtles are non-toxic",
+    "lookalike_source": "https://plantgrail.com/articles/string-of-pearls-bananas-hearts-trailing-succulents/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Erbse_am_Band_(Senecio_rowleyanus)_(31772262164).jpg",
+      "file": "Erbse am Band (Senecio rowleyanus) (31772262164).jpg",
+      "licence": "CC BY 2.0",
+      "author": "Maja Dumat from Deutschland (Germany)",
+      "verified": false
+    },
+    "name_ideas": ["Pearl Jam", "Pearly", "Pea Pod", "Peas Please", "Rosary"]
+  },
+  {
+    "rank": 32,
+    "common": "Ponytail palm",
+    "scientific": "Beaucarnea recurvata",
+    "lookalikes": "Sago palm (Cycas revoluta); Yucca; Dasylirion; Cordyline",
+    "tell_apart": "Ponytail has a swollen bulbous base and long soft curly leaves; sago is a stiff cycad with a rough trunk and spiny leaflets",
+    "care_or_toxicity_flag": "DEADLY look-alike: sago palm",
+    "lookalike_source": "https://plantgrail.com/articles/indoor-palm-types/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Beaucarnea_recurvata,_Llera,_Tamaulipas,_Mexico_2.jpg",
+      "file": "Beaucarnea recurvata, Llera, Tamaulipas, Mexico 2.jpg",
+      "licence": "CC BY 4.0",
+      "author": "tereso30",
+      "verified": false
+    },
+    "name_ideas": ["Ponyo", "Pony Express", "Elephant Foot", "Curly", "Tail Wag"]
+  },
+  {
+    "rank": 33,
+    "common": "Christmas / holiday cactus",
+    "scientific": "Schlumbergera truncata (and hybrids)",
+    "lookalikes": "Christmas cactus (Schlumbergera x buckleyi); Easter cactus (Hatiora gaertneri)",
+    "tell_apart": "Thanksgiving: pointed saw-tooth segment edges, blooms in November. Christmas: rounded scalloped edges, December. Easter: bristles at tips, April",
+    "care_or_toxicity_flag": "none, all non-toxic; bloom timing differs",
+    "lookalike_source": "https://www.extension.iastate.edu/linn/news/it-thanksgiving-christmas-or-easter-cactus",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Schlumbergera_truncata_kz01.jpg",
+      "file": "Schlumbergera truncata kz01.jpg",
+      "licence": "CC BY 4.0",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "verified": false
+    },
+    "name_ideas": ["Turkey", "Claws", "Tinsel", "Thanks-Giving", "Festive Fred"]
+  },
+  {
+    "rank": 34,
+    "common": "Moth orchid",
+    "scientific": "Phalaenopsis hybrids",
+    "lookalikes": "Other orchids: Dendrobium, Oncidium, Paphiopedilum",
+    "tell_apart": "Phalaenopsis has broad flat leaves in a fan and thick silver-green roots; Dendrobium has cane-like stems",
+    "care_or_toxicity_flag": "none, non-toxic; care differs by genus",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Phalaenopsis_Cultivar_White_01.jpg",
+      "file": "Phalaenopsis Cultivar White 01.jpg",
+      "licence": "CC BY-SA 4.0",
+      "author": "Uoaei1",
+      "verified": false
+    },
+    "name_ideas": ["Phally", "Moth Man", "Orchid Dorkid", "Fally", "Mothra"]
+  },
+  {
+    "rank": 35,
+    "common": "Croton",
+    "scientific": "Codiaeum variegatum",
+    "lookalikes": "Aucuba (Japanese laurel); Dracaena marginata 'Tricolor'",
+    "tell_apart": "Croton has thick leathery leaves with red, yellow and orange veins; aucuba has speckled outdoor foliage",
+    "care_or_toxicity_flag": "Croton is toxic; aucuba mildly toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Codiaeum_variegatum_31032014.jpg",
+      "file": "Codiaeum variegatum 31032014.jpg",
+      "licence": "CC BY-SA 3.0",
+      "author": "Joydeep",
+      "verified": false
+    },
+    "name_ideas": ["Cro Cro", "Rainbow", "Joseph", "Technicolor", "Dreamcoat"]
+  },
+  {
+    "rank": 36,
+    "common": "Bird's nest fern",
+    "scientific": "Asplenium nidus",
+    "lookalikes": "Staghorn fern; other Asplenium; Boston fern",
+    "tell_apart": "Bird's nest has simple wavy undivided fronds in a central rosette; Boston fern fronds are divided",
+    "care_or_toxicity_flag": "none, all non-toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Starr-090623-1444-Asplenium_nidus-habit_and_sori-Nahiku-Maui_(24335949904).jpg",
+      "file": "Starr-090623-1444-Asplenium nidus-habit and sori-Nahiku-Maui (24335949904).jpg",
+      "licence": "CC BY 3.0 us",
+      "author": "Forest and Kim Starr",
+      "verified": false
+    },
+    "name_ideas": ["Nesty", "Eggbert", "Tweet", "Nest Egg", "Robin"]
+  },
+  {
+    "rank": 37,
+    "common": "Dwarf umbrella tree",
+    "scientific": "Schefflera arboricola",
+    "lookalikes": "Umbrella tree (Schefflera actinophylla); Fatsia; Pachira",
+    "tell_apart": "Arboricola has smaller leaflets than actinophylla; Pachira has 5 smooth leaflets and is non-toxic",
+    "care_or_toxicity_flag": "Pachira (money tree) is non-toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Schefflera_arboricola,_vrugte,_a,_Pretoria.jpg",
+      "file": "Schefflera arboricola, vrugte, a, Pretoria.jpg",
+      "licence": "CC BY-SA 3.0",
+      "author": "JMK",
+      "verified": false
+    },
+    "name_ideas": ["Shef", "Umbrella Ella", "Brolly", "Parasol", "Dwarf Dave"]
+  },
+  {
+    "rank": 38,
+    "common": "Bromeliads",
+    "scientific": "Bromeliaceae (genera such as Guzmania, Aechmea)",
+    "lookalikes": "Aechmea; Neoregelia; Vriesea; pineapple (Ananas)",
+    "tell_apart": "Guzmania has a smooth-edged funnel with a bright central bract; Aechmea has spiny leaf edges",
+    "care_or_toxicity_flag": "none, non-toxic; Aechmea spines can scratch",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Guzmania_sp._in_Yumenoshima_Tropical_Greenhouse_Dome,_Tokyo.jpg",
+      "file": "Guzmania sp. in Yumenoshima Tropical Greenhouse Dome, Tokyo.jpg",
+      "licence": "CC BY 4.0",
+      "author": "M108t",
+      "verified": false
+    },
+    "name_ideas": ["Bromeo", "Brom Brom", "Pineapple Express", "Cup", "Funnel"]
+  },
+  {
+    "rank": 39,
+    "common": "Cape primrose",
+    "scientific": "Streptocarpus hybrids",
+    "lookalikes": "African violet; Gloxinia",
+    "tell_apart": "Cape primrose has long strap leaves in a rosette; African violet has short fuzzy round leaves",
+    "care_or_toxicity_flag": "none, non-toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Streptocarpus_%27Anderson%27s_Wellington_Morning%27_hybrid,_side-on.JPG",
+      "file": "Streptocarpus 'Anderson's Wellington Morning' hybrid, side-on.JPG",
+      "licence": "CC BY-SA 3.0",
+      "author": "Nzfauna",
+      "verified": false
+    },
+    "name_ideas": ["Cape Crusader", "Primrose Path", "Capey", "Cape Cod", "Prim"]
+  },
+  {
+    "rank": 40,
+    "common": "Purple shamrock",
+    "scientific": "Oxalis triangularis",
+    "lookalikes": "Oxalis regnellii; weedy Oxalis corniculata; clover (Trifolium)",
+    "tell_apart": "Triangularis has three purple triangular leaflets that fold at night; clovers have rounded leaflets with V marks",
+    "care_or_toxicity_flag": "Oxalis is toxic if eaten in quantity; clover is less so",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:False_shamrock_(Oxalis_triangularis).jpg",
+      "file": "False shamrock (Oxalis triangularis).jpg",
+      "licence": "CC BY 4.0",
+      "author": "EvanBaldonado",
+      "verified": false
+    },
+    "name_ideas": ["Shamrock Shaker", "Purple Rain", "Clover", "Lucky", "Fold Man"]
+  },
+  {
+    "rank": 41,
+    "common": "Alocasia / elephant ear",
+    "scientific": "Alocasia spp.",
+    "lookalikes": "Colocasia and Xanthosoma (elephant ears); Anthurium; Philodendron",
+    "tell_apart": "Alocasia leaves point up and out with the stalk at the notch; Colocasia leaves droop with the stalk attached inside the edge",
+    "care_or_toxicity_flag": "Colocasia and Xanthosoma also toxic; Colocasia loves wet soil, Alocasia rots in it",
+    "lookalike_source": "https://justhouseplants.com/alocasia-vs-colocasia/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Alocasia_Jacklyn_Plant.jpg",
+      "file": "Alocasia Jacklyn Plant.jpg",
+      "licence": "CC BY 4.0",
+      "author": "Accordingtoprince",
+      "verified": false
+    },
+    "name_ideas": ["Alo-Hola", "Dumbo", "Elle", "Elephant Ear-nest", "Ali"]
+  },
+  {
+    "rank": 42,
+    "common": "Prayer plant",
+    "scientific": "Maranta leuconeura",
+    "lookalikes": "Calathea (Goeppertia); Stromanthe; Ctenanthe",
+    "tell_apart": "Maranta trails low, has a pale underside and red vein pattern; Calathea clumps upright",
+    "care_or_toxicity_flag": "none, all non-toxic",
+    "lookalike_source": "https://www.theplantindex.com/articles/calathea-vs-maranta-vs-stromanthe-vs-ctenanthe",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Prayer_Plant_(Maranta_leuconeura)_(3073344552).jpg",
+      "file": "Prayer Plant (Maranta leuconeura) (3073344552).jpg",
+      "licence": "CC BY 2.0",
+      "author": "Cliff from Arlington, Virginia, USA",
+      "verified": false
+    },
+    "name_ideas": ["Prayer Pete", "Mara", "Maranta Claus", "Amen", "Praying Mantis"]
+  },
+  {
+    "rank": 43,
+    "common": "Wandering jew / tradescantia",
+    "scientific": "Tradescantia zebrina (also T. pallida)",
+    "lookalikes": "Tradescantia pallida (purple heart); T. fluminensis; Callisia repens (turtle vine)",
+    "tell_apart": "Zebrina has two silver stripes and a purple underside; fluminensis is plain green; pallida is solid purple and hairy",
+    "care_or_toxicity_flag": "none; treat all as skin irritants",
+    "lookalike_source": "https://plantgrail.com/articles/tradescantia-varieties-inch-plant-types/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:20260317_Tradescantia_zebrina_01.jpg",
+      "file": "20260317 Tradescantia zebrina 01.jpg",
+      "licence": "CC BY 4.0",
+      "author": "Flocci Nivis",
+      "verified": false
+    },
+    "name_ideas": ["Zebby", "Wanda", "Zebrina Zack", "Jewel", "Wanderer"]
+  },
+  {
+    "rank": 44,
+    "common": "Money tree",
+    "scientific": "Pachira aquatica",
+    "lookalikes": "Chinese money plant (Pilea); jade plant; Schefflera arboricola",
+    "tell_apart": "Pachira has a braided trunk and 5-leaflet palmate leaves; Pilea has round coin leaves; jade is a succulent",
+    "care_or_toxicity_flag": "Jade, also sold as a money plant, is TOXIC; Pachira is not",
+    "lookalike_source": "https://plantgrail.com/articles/what-is-a-money-plant-five-plants-share-the-name/",
+    "confidence": "search summary, not fetched in full",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Money_tree_(Pachira_aquatica).gif",
+      "file": "Money tree (Pachira aquatica).gif",
+      "licence": "CC BY 4.0",
+      "author": "Atlas Þə Biologist",
+      "verified": false
+    },
+    "name_ideas": ["Cash", "Penny Pincher", "Braidy", "Moneybags", "Pachi"]
+  },
+  {
+    "rank": 45,
+    "common": "Weeping fig",
+    "scientific": "Ficus benjamina",
+    "lookalikes": "Rubber plant; fiddle-leaf fig; Ficus microcarpa",
+    "tell_apart": "Benjamina has small glossy pointed leaves on drooping twigs and drops leaves when moved; rubber plant has big leaves",
+    "care_or_toxicity_flag": "same",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:BBG_-_Ficus_benjamina_-_Forrest.jpg",
+      "file": "BBG - Ficus benjamina - Forrest.jpg",
+      "licence": "CC BY 3.0",
+      "author": "PierreSelim",
+      "verified": false
+    },
+    "name_ideas": ["Benji", "Weepy", "Benjamin Franklin", "Willow", "Sob Story"]
+  },
+  {
+    "rank": 46,
+    "common": "Kalanchoe",
+    "scientific": "Kalanchoe blossfeldiana",
+    "lookalikes": "Mother of thousands (Kalanchoe daigremontiana); K. thyrsiflora; K. tomentosa",
+    "tell_apart": "Blossfeldiana is compact with scalloped glossy leaves and flower clusters; mother of thousands has plantlets along leaf edges",
+    "care_or_toxicity_flag": "MORE TOXIC look-alike: mother of thousands",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Kalanchoe_blossfeldiana_Plant_07.jpg",
+      "file": "Kalanchoe blossfeldiana Plant 07.jpg",
+      "licence": "CC BY-SA 4.0",
+      "author": "Sabina Bajracharya",
+      "verified": false
+    },
+    "name_ideas": ["Kalan", "Kalanchoe Kev", "Blossom", "Flaming Katy", "Calando"]
+  },
+  {
+    "rank": 47,
+    "common": "Norfolk Island pine",
+    "scientific": "Araucaria heterophylla",
+    "lookalikes": "Real pines (Pinus); Araucaria columnaris; Podocarpus",
+    "tell_apart": "Norfolk pine has tiered symmetrical branches with soft needles; true pines have bundled needles",
+    "care_or_toxicity_flag": "none",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Araucaria_heterophylla_(Norfolk_Island_Pine).jpg",
+      "file": "Araucaria heterophylla (Norfolk Island Pine).jpg",
+      "licence": "CC0",
+      "author": "Obsidian Soul",
+      "verified": false
+    },
+    "name_ideas": ["Norfolk Nick", "Tinsel", "Little Tree", "Norman", "Fir-ly"]
+  },
+  {
+    "rank": 48,
+    "common": "Arrowhead vine",
+    "scientific": "Syngonium podophyllum",
+    "lookalikes": "Heartleaf philodendron; pothos; Syngonium 'Neon'",
+    "tell_apart": "Syngonium leaf shape changes from arrowhead to lobed with age; philodendron stays heart-shaped",
+    "care_or_toxicity_flag": "same family, toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Syngonium_podophyllum_(Philippines)_02.jpg",
+      "file": "Syngonium podophyllum (Philippines) 02.jpg",
+      "licence": "CC0",
+      "author": "Obsidian Soul",
+      "verified": false
+    },
+    "name_ideas": ["Arrow", "Cupid", "Synge", "Robin Hood", "Sy"]
+  },
+  {
+    "rank": 49,
+    "common": "Polka dot plant",
+    "scientific": "Hypoestes phyllostachya",
+    "lookalikes": "Fittonia (nerve plant); Hypoestes 'Splash'; Coleus",
+    "tell_apart": "Polka dot plant has pink or white speckles; Fittonia has veined leaves; Coleus has toothed leaves",
+    "care_or_toxicity_flag": "Coleus is toxic to pets; polka dot plant is not",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Starr_080117-1693_Hypoestes_phyllostachya.jpg",
+      "file": "Starr 080117-1693 Hypoestes phyllostachya.jpg",
+      "licence": "CC BY 3.0",
+      "author": "Forest & Kim Starr",
+      "verified": false
+    },
+    "name_ideas": ["Polka", "Dottie", "Spotty", "Freckles", "Confetti"]
+  },
+  {
+    "rank": 50,
+    "common": "Satin pothos",
+    "scientific": "Scindapsus pictus",
+    "lookalikes": "Pothos; Scindapsus 'Exotica'; Monstera",
+    "tell_apart": "Satin pothos has velvety dark green leaves with silver splashes; pothos is bright yellow-green and glossy",
+    "care_or_toxicity_flag": "none, both toxic",
+    "lookalike_source": null,
+    "confidence": "from knowledge, verify",
+    "photo": {
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Scindapsus_pictus_var.JPG",
+      "file": "Scindapsus pictus var.JPG",
+      "licence": "CC BY 3.0",
+      "author": "Pogrebnoj-Alexandroff",
+      "verified": false
+    },
+    "name_ideas": ["Satin Sam", "Silver Spoon", "Satina", "Splash", "Silky"]
+  }
+]

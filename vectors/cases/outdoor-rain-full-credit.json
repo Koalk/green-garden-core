@@ -1,0 +1,27 @@
+{
+  "name": "outdoor-rain-full-credit",
+  "description": "GV-K3 (02k E2): lavender in the ground, establishing, UK loam, full sun. Interval 6; 18 mm of rain on 2026-06-04 is a full credit (15 mm) and moves the window to 06-11 to 06-12.",
+  "why": "Hand computation in 02k section 3.7, example E2 (interval round(7 x 1.0 x 1.0 x 0.85) = 6, band 2 early and late, anchor 06-07 + 6).",
+  "input": {
+    "today": "2026-06-05",
+    "climate": "oceanic_dry",
+    "plants": [
+      {
+        "id": "lavender",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "placement": "ground",
+        "sun": "full_sun",
+        "groundSoil": "loam",
+        "plantedOn": "2026-05-01",
+        "droughtTolerance": "moderate",
+        "establishingIntervalDays": 7,
+        "lastWatered": "2026-06-01",
+        "logs": [{ "date": "2026-06-04", "outcome": "rain", "mm": 18 }]
+      }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "lavender", "earliest": "2026-06-11", "latest": "2026-06-12" }]
+  }
+}

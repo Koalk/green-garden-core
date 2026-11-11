@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-anthurium",
+      "title": "NC State Plant Toolbox: Anthurium andraeanum",
+      "url": "https://plants.ces.ncsu.edu/plants/anthurium-andraeanum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "anthurium-andraeanum",
+      "taxon": {
+        "scientificName": "Anthurium andraeanum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Anthurium",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-anthurium",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 6,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water when the top of the mix is dry; avoid a soggy saucer."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-anthurium",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 18,
+            "max": 27
+          },
+          "unit": "C",
+          "source": "ncsu-anthurium",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": {
+            "min": 60,
+            "max": 80
+          },
+          "unit": "%",
+          "source": "ncsu-anthurium",
+          "confidence": "checked"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 46,
+            "spread": 30
+          },
+          "unit": "cm",
+          "source": "ncsu-anthurium",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-anthurium",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-anthurium",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "ncsu-anthurium",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "ncsu-anthurium",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "ncsu-anthurium",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-anthurium",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-anthurium"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Anturium - 2025.02.18.jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "Aw58",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anturium_-_2025.02.18.jpg",
+          "thumbnail": "anthurium-andraeanum.webp"
+        }
+      ],
+      "photoFile": "Anturium - 2025.02.18.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "One source only. The Missouri Botanical Garden page failed (certificate error) and was not used."
+      },
+      "sourcesRead": ["https://plants.ces.ncsu.edu/plants/anthurium-andraeanum/"],
+      "lookAlikes": [
+        {
+          "name": "Peace lily",
+          "species": "spathiphyllum-wallisii",
+          "tell": "Anthurium has a glossy heart-shaped red or pink spathe around a bumpy spike; peace lily has a white spathe"
+        },
+        {
+          "name": "Anthurium clarinervium",
+          "tell": "Anthurium has a glossy heart-shaped red or pink spathe around a bumpy spike; peace lily has a white spathe"
+        },
+        {
+          "name": "Zantedeschia",
+          "tell": "Anthurium has a glossy heart-shaped red or pink spathe around a bumpy spike; peace lily has a white spathe"
+        }
+      ],
+      "lookAlikeNote": "both toxic",
+      "nameIdeas": ["Anthony", "Flamingo", "Red Alert", "Hot Lips", "Anthea"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/84-cuidados-de-la-planta-anthurium-andraeanum-flor-de-flamenco-o-anturio",
+          "title": "Anthurium andraeanum, Flor de flamenco o Anturio | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/anthurium/anthurium.asp",
+          "title": "Anturio - Anthurium andraeanum - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

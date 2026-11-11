@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-sage",
+      "title": "RHS: How to grow sage",
+      "url": "https://www.rhs.org.uk/herbs/sage",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-salvia-officinalis",
+      "title": "NC State Plant Toolbox: Salvia officinalis",
+      "url": "https://plants.ces.ncsu.edu/plants/salvia-officinalis/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-sage",
+      "title": "Sage (toxic and non-toxic plants; Salvia officinalis)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/sage",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "salvia-officinalis",
+      "taxon": {
+        "scientificName": "Salvia officinalis"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Sage",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Common sage"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Garden sage"
+          },
+          {
+            "lang": "es",
+            "name": "Salvia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Salvia común",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Salvia officinal",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Salvia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Salvia comune",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-sage",
+          "corroboratedBy": ["ncsu-salvia-officinalis"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "In pots keep the compost slightly moist but not saturated, and check often in summer; in the ground it needs no extra water once established. In winter keep pots out of heavy rain."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-sage",
+          "corroboratedBy": ["ncsu-salvia-officinalis"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 60,
+            "spread": 60
+          },
+          "unit": "cm",
+          "source": "rhs-sage",
+          "corroboratedBy": ["ncsu-salvia-officinalis"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-salvia-officinalis",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-salvia-officinalis",
+          "corroboratedBy": ["rhs-sage"],
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-sage",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-sage",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["aspca-sage", "ncsu-salvia-officinalis"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "herb", "full_sun", "fragrant"]
+      },
+      "provenance": {
+        "notes": "Name clash with ornamental salvia (S. nemorosa, own entry, row 64); in Spain and Italy 'salvia' on a shop label is usually this culinary sage. Watering: RHS says drought tolerant once established, in containers keep compost slightly moist but not saturated, winter wet rots the roots; NC State well-drained medium to dry soils, intolerant of wet soils. let_top_dry is the agent's mapping, 7 days a guess. Light: full sun (both). Size: RHS 30 to 90 cm height and spread, NC State up to 60 cm by 60 to 90 cm; 60 by 60 is the agent's middle. Pots at least 30 cm wide and deep with grit (RHS). Short-lived: woody and straggly after six or seven years (RHS). Hardiness: no RHS rating; NC State zones 4 to 8, some coloured cultivars not winter hardy; no temperature stored. Toxicity: ASPCA lists Salvia officinalis non-toxic to dogs, cats and horses; NC State tags agree. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/herbs/sage",
+        "https://plants.ces.ncsu.edu/plants/salvia-officinalis/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/sage"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/688-cuidados-de-la-planta-salvia-officinalis-o-salvia-comun",
+          "title": "Salvia officinalis o Salvia común | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

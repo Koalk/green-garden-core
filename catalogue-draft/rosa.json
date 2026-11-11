@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-roses-containers",
+      "title": "RHS: Roses, growing in containers",
+      "url": "https://www.rhs.org.uk/plants/roses/growing-in-containers",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-roses-growing-guide",
+      "title": "RHS: How to grow roses",
+      "url": "https://www.rhs.org.uk/plants/roses/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-rosa",
+      "title": "NC State Plant Toolbox: Rosa (genus)",
+      "url": "https://plants.ces.ncsu.edu/plants/rosa/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-rose",
+      "title": "Rose (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rose",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "rosa",
+      "taxon": {
+        "scientificName": "Rosa"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Rose",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Patio rose"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Miniature rose"
+          },
+          {
+            "lang": "es",
+            "name": "Rosal",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Rosa",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Rosal miniatura",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Rosa",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Rosa nana",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Rosa da vaso",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-roses-growing-guide",
+          "corroboratedBy": ["rhs-roses-containers"],
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Pot roses need much more water than border roses, possibly daily in hot weather; never let the compost dry out or sit waterlogged."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-roses-growing-guide",
+          "corroboratedBy": ["rhs-roses-containers", "ncsu-rosa"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-rosa",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-rose",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-rose",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-rose"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "full_sun"]
+      },
+      "provenance": {
+        "notes": "Genus-level entry for garden roses (starter row 55): patio and miniature roses are what the pot guidance covers; shrub, climbing and rambler roses differ a lot (RHS: climbers and ground cover need pots at least 30 to 45 cm deep; Gardeners' World advice that ramblers are best not potted is search-summary only, not cited). Watering: RHS growing guide says container roses need much more water than border roses, as often as needed, up to daily in hot weather, never dry or waterlogged; the container page agrees (dry pots get powdery mildew). Interval 2 days is a guess. Light: RHS at least 4 hours of sun a day (container page: at least half the day); NC State full sun; stored direct. Pots: patio and miniature roses in 23 to 35 cm deep pots, peat-free John Innes No 3, feed every fortnight from mid-spring to late summer. Size and growth rate left unknown: RHS gives no figures for the group; NC State's genus range (30 to 240 cm tall, 60 to 180 wide) is too wide to store, and the NC State page was truncated by the fetch. Habit bushy is a mapping (NC State: shrubs or vines). Hardiness: neither page gives a figure. Toxicity: ASPCA lists Rosa species non-toxic to cats and dogs; severity 0 is our grading. NC State not cited for pets (pet part not read). Prickles (not thorns, NC State) can hurt but there is no vocabulary entry for injury; not graded. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/roses/growing-in-containers",
+        "https://www.rhs.org.uk/plants/roses/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/rosa/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rose"
+      ],
+      "links": [
+        {
+          "url": "https://www.piante.it/rosa/",
+          "title": "Rosa",
+          "publisher": "Piante.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

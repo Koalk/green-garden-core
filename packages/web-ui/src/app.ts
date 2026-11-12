@@ -5,6 +5,7 @@
  * PROVISIONAL: layout, wording and the single-page structure are the simplest thing that
  * lets every function be exercised; none of it is a design decision.
  */
+import { LoadGate, loadBannerHtml, loadBannerState } from "./load-banner.ts";
 import { askHomePending, cancelHomePending, type HomePending } from "./home-pending.ts";
 import { RemoteBackend } from "@green-garden/client";
 import { type LogOutcome, type PlanResult } from "@green-garden/engine";
@@ -142,7 +143,7 @@ import {
   windowsFor,
 } from "./view.ts";
 
-const store = new BrowserStore(window.localStorage);
+const store = new LoadGate(new BrowserStore(window.localStorage));
 let data: AppData = store.load();
 let today = localIsoDate(new Date());
 /** An old `#holidays` link (the tab is now Planning) is rewritten in place, no history entry. */
@@ -307,7 +308,7 @@ function commit(next: AppData, message = ""): void {
   store.save(data);
   render();
   notice.show(message);
-  if (sync !== undefined) void sync.push(data).then(reportSync);
+  if (sync !== undefined && !store.readOnly) void sync.push(data).then(reportSync);
 }
 
 /**
@@ -685,6 +686,7 @@ function render(): void {
         (id) =>
           `<button role="tab" id="tab-${id}" aria-selected="${id === tab}" aria-controls="panel" data-action="tab" data-tab="${id}">${esc(t(`tab.${id}`))}</button>`,
       ).join(" ")}</div>
+      ${store.bannerDismissed ? loadBannerHtml({ ...loadBannerState(store.lastLoad, data), banner: undefined }) : loadBannerHtml(loadBannerState(store.lastLoad, data))}
       ${notice.text() === "" ? "" : `<p role="status" class="notice">${esc(notice.text())}</p>`}
     </header>
     <div role="tabpanel" id="panel" aria-labelledby="tab-${tab}">${panel(plan)}</div>`;
@@ -830,6 +832,15 @@ const onClick = (ev: Event): void => {
       }
       break;
     }
+    case "load-overwrite":
+      store.overwrite();
+      store.save(data);
+      render();
+      break;
+    case "load-leave":
+      store.leave();
+      render();
+      break;
     case "tab": {
       const t = el.dataset["tab"];
       if (t !== undefined) window.location.hash = t;
@@ -1287,7 +1298,7 @@ const bulkModal = createBulkModal({
 });
 
 render();
-if (sync !== undefined) void sync.connect(data).then(reportConnected);
+if (sync !== undefined && !store.readOnly) void sync.connect(data).then(reportConnected);
 refreshWeather();
 // The server keeps each answer for an hour; asking twice an hour only reads its cache.
 window.setInterval(refreshWeather, 30 * 60_000);

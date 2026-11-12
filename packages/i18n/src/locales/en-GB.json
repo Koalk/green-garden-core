@@ -666,5 +666,10 @@
   "season.bringIn": "Frost is coming; bring the {name} in?",
   "season.putOut": "Warm enough to put the {name} outside again?",
   "season.notYet": "Not yet",
-  "season.leave": "Leave it out"
+  "season.leave": "Leave it out",
+  "loadBanner.newer": "This data was saved by a newer version of Green Garden. You can look at it, but nothing will be saved unless you overwrite it. A copy was kept ({copy}).",
+  "loadBanner.unreadable": "The saved data could not be read, so you are starting empty. A copy of it was kept ({copy}).",
+  "loadBanner.overwrite": "Keep a copy and overwrite",
+  "loadBanner.leave": "Leave it",
+  "loadBanner.invalid": "{n, plural, one {# plant} other {# plants}} in your data could not be read."
 }

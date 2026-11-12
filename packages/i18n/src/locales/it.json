@@ -664,5 +664,10 @@
   "season.bringIn": "Arriva il gelo: porti dentro {name}?",
   "season.putOut": "Abbastanza caldo per rimettere {name} fuori?",
   "season.notYet": "Non ancora",
-  "season.leave": "Lasciala fuori"
+  "season.leave": "Lasciala fuori",
+  "loadBanner.newer": "Questi dati sono stati salvati da una versione più recente di Green Garden. Puoi vederli, ma non verrà salvato nulla a meno che tu non li sovrascriva. È stata conservata una copia ({copy}).",
+  "loadBanner.unreadable": "I dati salvati non si sono potuti leggere, quindi parti da zero. È stata conservata una copia ({copy}).",
+  "loadBanner.overwrite": "Conserva una copia e sovrascrivi",
+  "loadBanner.leave": "Lascia stare",
+  "loadBanner.invalid": "{n, plural, one {# pianta} other {# piante}} nei tuoi dati non si sono potute leggere."
 }

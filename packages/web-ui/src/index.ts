@@ -15,4 +15,5 @@ export * from "./view.ts";
 export * from "./species.ts";
 export * from "./modal.ts";
 export * from "./notice.ts";
+export * from "./load-banner.ts";
 export * from "./sync.ts";

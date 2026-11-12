@@ -68,15 +68,5 @@
     "file": ".github/workflows/check.yml",
     "kind": "secret",
     "reason": "actions pinned by full commit SHA, which look like hex tokens"
-  },
-  {
-    "file": "scripts/commit-msg-allow.json",
-    "kind": "secret",
-    "reason": "a commit hash, which looks like a hex token"
-  },
-  {
-    "file": "scripts/commit-msg-allow.json",
-    "kind": "session-id",
-    "reason": "the reason text for the one allowed commit"
   }
 ]

@@ -98,14 +98,14 @@
       },
       "care": {
         "wateringStyle": {
-          "value": "keep_moist",
+          "value": "let_top_dry",
           "corroboratedBy": ["sdstate-peace-lily"],
           "source": "iastate",
           "confidence": "checked"
         },
         "engineMethod": "interval",
         "baseIntervalDays": {
-          "value": 5,
+          "value": 7,
           "unit": "days",
           "source": "gubb-houseplants-3l",
           "confidence": "guess"
@@ -216,7 +216,7 @@
         "curated": ["indoor", "low_light", "flowering"]
       },
       "provenance": {
-        "notes": "South Dakota State calls it mildly toxic (calcium oxalate) and says keep away from small children, cats and dogs; the severity grade 1 and the symptom list are the agent's. Habit and size: no fetched page states them. Anchor: baseIntervalDays 5 -> 5 for a 3-litre reference pot, from measured water use (peace lily, 71.0 g a day); the conversion to days is our arithmetic (02i), so guess. Interval: NC State 'keep soil moist, but not soggy; allow it to dry between waterings'; Clemson 'moist but not soggy and allowed to dry out slightly between waterings'; RHS water through the growing season, 'reduce watering slightly in winter'. No days given. The 5 days stay: they come from the 3-litre study (a larger pot than the 13 cm reference) and the written sources back the rule, not the number, so confidence stays guess. They say moist, then slightly dry, which fits let_top_dry better than the stored keep_moist (review). Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
+        "notes": "South Dakota State calls it mildly toxic (calcium oxalate) and says keep away from small children, cats and dogs; the severity grade 1 and the symptom list are the agent's. Habit and size: no fetched page states them. Anchor: the 3-litre study gives about 5 days for a 3-litre pot, from measured water use (peace lily, 71.0 g a day); the conversion to days is our arithmetic (02i), so guess. Interval: NC State 'keep soil moist, but not soggy; allow it to dry between waterings'; Clemson 'moist but not soggy and allowed to dry out slightly between waterings'; RHS water through the growing season, 'reduce watering slightly in winter'. No days given. The interval is 7 days for the 13 cm reference pot (the 3-litre study pot, a larger one, gave about 5); the written sources back the rule, not the number, so confidence stays guess. They say moist, then slightly dry, so the style is let_top_dry. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
       },
       "sourcesRead": [
         "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",

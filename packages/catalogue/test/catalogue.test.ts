@@ -795,7 +795,8 @@ describe("reference-pot anchors from the 3-litre study", () => {
   const study = "gubb-houseplants-3l";
   const anchors: [string, number][] = [
     ["hedera-helix", 5],
-    ["spathiphyllum-wallisii", 5],
+    // 7 for the 13 cm reference pot (the study measured the 3-litre pot, about 5 days).
+    ["spathiphyllum-wallisii", 7],
     ["dracaena-fragrans", 8],
     ["guzmania", 13],
   ];
@@ -809,6 +810,9 @@ describe("reference-pot anchors from the 3-litre study", () => {
       assert.ok(e.sourcesRead.some((u: string) => u.includes("greenplantsforgreenbuildings.org")));
     });
   }
+  it("peace lily: let the top dry (sources say moist, then dry slightly)", () => {
+    assert.equal(entry("spathiphyllum-wallisii").care.wateringStyle.value, "let_top_dry");
+  });
   it("other species keep their style default", () => {
     assert.equal(entry("dracaena-marginata").care.baseIntervalDays.value, 12);
   });

@@ -40,7 +40,7 @@ const PINS: Pin[] = [
   },
   {
     id: "spathiphyllum-wallisii",
-    interval: 5,
+    interval: 7,
     confidence: "guess",
     sources: 1,
     dryTol: 2,

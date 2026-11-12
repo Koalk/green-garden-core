@@ -5,7 +5,7 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { test } from "node:test";
-import { REPORT_ONLY_KINDS, scanFiles } from "./public-check-lib.mjs";
+import { REPORT_ONLY_KINDS, checkCommitMessage, scanFiles } from "./public-check-lib.mjs";
 
 // Planted values are built in pieces so this file does not trip the check it tests.
 const STORIES = "green-garden" + "-stories/docs/x.md";
@@ -148,4 +148,13 @@ test("new rules are report-only kinds, old ones stay failing", () => {
   ]);
   assert.ok(!REPORT_ONLY_KINDS.has("secret"));
   assert.ok(!REPORT_ONLY_KINDS.has("private-path"));
+});
+
+test("commit messages: session ids and the owner's name fail, plain ones pass", () => {
+  const SID = "S2" + "42";
+  assert.deepEqual(checkCommitMessage(`Merge main into ${SID} part 1`), ["session-id"]);
+  assert.deepEqual(checkCommitMessage("feat(catalogue): check intervals"), []);
+  assert.deepEqual(checkCommitMessage(`fix: x\n\nbody names ${DANI} here`), ["owner-name"]);
+  assert.deepEqual(checkCommitMessage(`fix: x\n\nfound by V-${"1"}3`), ["session-id"]);
+  assert.deepEqual(checkCommitMessage(`# note ${SID}\nfix: x`), []);
 });

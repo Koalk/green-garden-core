@@ -136,3 +136,15 @@ export function scanFiles(dir, files, allow = []) {
   }
   return out;
 }
+
+/** Check a commit message (subject and body, git comment lines ignored) with the session-id and
+ * owner-name rules; returns the kinds found, each once. */
+export function checkCommitMessage(message) {
+  const kinds = new Set();
+  const rules = lineRules.filter((r) => r.kind === "session-id" || r.kind === "owner-name");
+  for (const line of message.split("\n")) {
+    if (line.startsWith("#")) continue;
+    for (const rule of rules) if (rule.test(line, "COMMIT_EDITMSG")) kinds.add(rule.kind);
+  }
+  return [...kinds];
+}

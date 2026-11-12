@@ -29,3 +29,6 @@ fi
 case "$subject" in
   *.) echo "commit-msg: no trailing full stop in the subject." >&2; exit 1 ;;
 esac
+
+# Core is public: no session IDs or personal names in commit messages.
+node "$(dirname "$0")/../scripts/check-commit-msg.mjs" "$msg_file" || exit 1

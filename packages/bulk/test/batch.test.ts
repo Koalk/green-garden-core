@@ -251,3 +251,49 @@ describe("detail rows and export", () => {
     }
   });
 });
+
+describe("batch undo of Q-SUNHOURS", () => {
+  it("keeps directSun through export and import, then reverts it", () => {
+    let d = saved("3x aloe vera");
+    const [a, b] = d.plants;
+    assert.ok(a && b);
+    d = {
+      ...d,
+      plants: d.plants.map((x) =>
+        x.id === b.id
+          ? { ...x, fieldSources: { ...x.fieldSources, directSun: "default" as const } }
+          : x,
+      ),
+    };
+    d = answerQuestion(d, a.id, "Q-SUNHOURS", "morning", TODAY);
+    const filled = d.plants.find((x) => x.id === b.id);
+    assert.deepEqual(filled?.directSun, [{ from: 6, to: 11 }]);
+    const back = importData(exportData(d)).data;
+    assert.ok(back);
+    const reverted = theyDiffer(back, a.id, "Q-SUNHOURS");
+    assert.equal(reverted.plants.find((x) => x.id === b.id)?.directSun, undefined);
+  });
+
+  it("restores a previous list held before the fill", () => {
+    let d = saved("2x aloe vera");
+    const [a, b] = d.plants;
+    assert.ok(a && b);
+    d = {
+      ...d,
+      plants: d.plants.map((x) =>
+        x.id === b.id
+          ? {
+              ...x,
+              directSun: [{ from: 15, to: 19 }],
+              fieldSources: { ...x.fieldSources, directSun: "default" as const },
+            }
+          : x,
+      ),
+    };
+    d = answerQuestion(d, a.id, "Q-SUNHOURS", "morning", TODAY);
+    const back = importData(exportData(d)).data;
+    assert.ok(back);
+    const reverted = theyDiffer(back, a.id, "Q-SUNHOURS");
+    assert.deepEqual(reverted.plants.find((x) => x.id === b.id)?.directSun, [{ from: 15, to: 19 }]);
+  });
+});

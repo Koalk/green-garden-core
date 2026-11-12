@@ -43,6 +43,23 @@ export function groupOf(data: AppData, p: Plant): Plant[] {
 export const isSplit = (p: Plant, questionId: string): boolean =>
   p.batch?.split?.includes(questionId) === true;
 
+/**
+ * The record keeps only text, numbers and null (the export drops anything else), so a list such as
+ * `directSun` is stored as JSON text and read back with `fromRecord`.
+ */
+const toRecord = (v: unknown): string | number | null =>
+  v === undefined ? null : typeof v === "string" || typeof v === "number" ? v : JSON.stringify(v);
+
+const LIST_FIELDS = new Set(["directSun"]);
+const fromRecord = (k: string, v: string | number): unknown => {
+  if (!LIST_FIELDS.has(k) || typeof v !== "string") return v;
+  try {
+    return JSON.parse(v) as unknown;
+  } catch {
+    return v;
+  }
+};
+
 const omit = <T extends object>(o: T, key: string): Partial<T> =>
   Object.fromEntries(Object.entries(o).filter(([k]) => k !== key)) as Partial<T>;
 
@@ -104,9 +121,7 @@ export function fillGroup(
     );
     if (isSplit(m, questionId) || !free) return m;
     const was: Before = wasFilled?.before ?? {
-      fields: Object.fromEntries(
-        fields.map((k) => [k, (mine[k] as string | number | undefined) ?? null]),
-      ),
+      fields: Object.fromEntries(fields.map((k) => [k, toRecord(mine[k])])),
       sources: Object.fromEntries(
         sources.map((k) => [k, m.fieldSources?.[k as SourcedField] ?? null]),
       ),
@@ -157,9 +172,14 @@ export function theyDiffer(data: AppData, plantId: string, questionId: string): 
       let out: Plant = m;
       const fill = m.batch.filled?.[questionId];
       if (fill?.from === plantId) {
-        const fields = Object.entries({ ...m, ...fill.before.fields }).filter(
-          ([k]) => fill.before.fields[k] !== null,
-        );
+        const fields = Object.entries({
+          ...m,
+          ...Object.fromEntries(
+            Object.entries(fill.before.fields).flatMap(([k, v]) =>
+              v === null ? [] : [[k, fromRecord(k, v)]],
+            ),
+          ),
+        }).filter(([k]) => fill.before.fields[k] !== null);
         const sources = Object.entries({ ...m.fieldSources, ...fill.before.sources }).filter(
           ([k]) => fill.before.sources[k] !== null,
         );

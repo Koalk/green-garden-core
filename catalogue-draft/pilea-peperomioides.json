@@ -58,9 +58,9 @@
       },
       "care": {
         "wateringStyle": {
-          "value": null,
-          "source": null,
-          "confidence": "unknown"
+          "value": "let_top_dry",
+          "source": "rhs-pilea-water",
+          "confidence": "from_knowledge_verify"
         },
         "engineMethod": "interval",
         "baseIntervalDays": {
@@ -152,7 +152,7 @@
         "curated": ["indoor"]
       },
       "provenance": {
-        "notes": "Penn State gives no watering style ('no overwatering or underwatering'), so it stays unknown; UMD calls the light level medium. Penn State's temperature figure is day 65-75 F. No fetched page states toxicity, so it stays unknown, never safe. Interval: RHS 'water once the top few centimetres of compost start to dry out' (finger test or lifting the pot), 'less water in winter'; NC State says only 'moist, well-drained mix', susceptible to rot if overwatered (no rule). One source with a rule, so 7 stays unconfirmed. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
+        "notes": "Penn State gives no watering style ('no overwatering or underwatering'), UMD calls the light level medium. Penn State's temperature figure is day 65-75 F. No fetched page states toxicity, so it stays unknown, never safe. Interval: RHS 'water once the top few centimetres of compost start to dry out' (finger test or lifting the pot), 'less water in winter'; NC State says only 'moist, well-drained mix', susceptible to rot if overwatered (no rule). One source with a rule, so 7 stays unconfirmed. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify). Watering style let_top_dry from RHS (water once the top few centimetres of compost start to dry out)."
       },
       "sourcesRead": [
         "https://extension.psu.edu/pilea-as-a-houseplant",

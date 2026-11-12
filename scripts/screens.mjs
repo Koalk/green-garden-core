@@ -205,6 +205,51 @@ const SETS = {
       ],
     },
   ],
+  // fixes from the first browser run: bulk add after the garden question is dismissed, Pilea in Add plant,
+  // and Today right after a bulk add with "I watered all of these today".
+  s263: [
+    {
+      name: "01-bulk-garden-dismissed",
+      viewport: true,
+      steps: [
+        "location.hash = 'plants'",
+        "document.querySelector('[data-action=add-many]').click()",
+        "(() => { const t = document.querySelector('#bulk-text'); t.value = 'ivy-leaved geranium'; t.dispatchEvent(new Event('input', { bubbles: true })); })()",
+        "document.querySelector('[data-action=bulk-match]').click()",
+        "document.querySelector('[data-action=bulk-pick]').click()",
+        "document.querySelector('[data-action=bulk-next]').click()",
+        "document.querySelector('[data-action=bulk-placement][data-value=outdoor_pot]').click()",
+        "document.querySelector('[data-action=bulk-next]').click()",
+        "document.querySelector('[data-action=bulk-save]').click()",
+        "document.querySelector('[data-action=home-cancel]').click()",
+      ],
+    },
+    {
+      name: "02-add-pilea",
+      viewport: true,
+      steps: [
+        ...sample("plants"),
+        "document.querySelector('[data-action=add-plant]').click()",
+        "(() => { const i = document.querySelector('input[name=speciesSearch]'); i.value = 'pilea'; i.dispatchEvent(new Event('input', { bubbles: true })); })()",
+        "document.querySelector('[data-action=pick][data-id=pilea-peperomioides]').click()",
+      ],
+    },
+    {
+      name: "03-today-after-bulk",
+      steps: [
+        "location.hash = 'plants'",
+        "document.querySelector('[data-action=add-many]').click()",
+        "(() => { const t = document.querySelector('#bulk-text'); t.value = 'ivy-leaved geranium'; t.dispatchEvent(new Event('input', { bubbles: true })); })()",
+        "document.querySelector('[data-action=bulk-match]').click()",
+        "document.querySelector('[data-action=bulk-pick]').click()",
+        "document.querySelector('[data-action=bulk-next]').click()",
+        "document.querySelector('[data-action=bulk-next]').click()",
+        "document.querySelector('[data-action=bulk-watered][data-value=today]').click()",
+        "document.querySelector('[data-action=bulk-save]').click()",
+        "location.hash = 'today'",
+      ],
+    },
+  ],
   // the Planning tab (was Holidays) and the Settings tab with the preferences.
   s119: [
     { name: "01-planning", steps: sample("planning") },

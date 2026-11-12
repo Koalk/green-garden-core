@@ -61,9 +61,9 @@
       "care": {
         "engineMethod": "interval",
         "wateringStyle": {
-          "value": null,
-          "source": null,
-          "confidence": "unknown"
+          "value": "let_top_dry",
+          "source": "author",
+          "confidence": "guess"
         },
         "baseIntervalDays": {
           "value": 3,
@@ -148,7 +148,7 @@
         "curated": ["bonsai", "outdoor", "tree"]
       },
       "provenance": {
-        "notes": "One fetched page (NC State), written for the landscape tree: nothing on bonsai care. ASPCA page returned no entry, RHS URL 404, MBG certificate error, so toxicity stays UNKNOWN (never show as safe). Light: full sun to partial shade, mapped to direct. Hardiness USDA 5b to 10a, no temperature range and no word on frost protection for pots, so left unknown. Size 40 to 50 ft as a tree; not stored because it would mislead for a bonsai. Growth rate conflict: the attribute table says medium, the text says quick; the lower one kept. Watering style left unknown: the page gives soil moisture classes only."
+        "notes": "One fetched page (NC State), written for the landscape tree: nothing on bonsai care. ASPCA page returned no entry, RHS URL 404, MBG certificate error, so toxicity stays UNKNOWN (never show as safe). Light: full sun to partial shade, mapped to direct. Hardiness USDA 5b to 10a, no temperature range and no word on frost protection for pots, so left unknown. Size 40 to 50 ft as a tree; not stored because it would mislead for a bonsai. Growth rate conflict: the attribute table says medium, the text says quick; the lower one kept. Watering style let_top_dry is the entry's own tip rule (guess, no source read)."
       },
       "sourcesRead": ["https://plants.ces.ncsu.edu/plants/ulmus-parvifolia/"]
     }

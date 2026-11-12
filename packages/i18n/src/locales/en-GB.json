@@ -433,6 +433,7 @@
   "bulk.place.same": "Same as above",
   "bulk.place.later": "Decide later",
   "bulk.place.note": "Indoors unless you say otherwise; garden-only plants start in the ground. Rooms are optional.",
+  "bulk.place.gardenNote": "Outdoor plants need the garden question first, so nothing was saved yet. Save again to answer it, or put them indoors.",
   "bulk.place.ariaWhere": "Where {name} lives",
   "bulk.place.ariaRoom": "Room of {name}",
   "bulk.verify.ariaTick": "Add {name}",

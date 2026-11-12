@@ -33,7 +33,12 @@ import {
 import { nextName } from "./names.ts";
 import { withCatalogueOutdoor } from "./outdoor.ts";
 import { amountNoteFor } from "./amount.ts";
-import { defaultPlacementFor, placementAfterAsk, placementNeedsHome } from "./placement.ts";
+import {
+  defaultPlacementFor,
+  nameAfterPick,
+  placementAfterAsk,
+  placementNeedsHome,
+} from "./placement.ts";
 import { applyMove, moveTarget } from "./moves.ts";
 import { parseRanges, presetRanges, serialiseRanges, sunRowHtml } from "./sun-hours.ts";
 import { esc, t } from "./text.ts";
@@ -317,6 +322,9 @@ export function createPlantModal(host: ModalHost): {
     close();
   }
 
+  /** The name the last catalogue pick filled in, so a later pick may replace it. */
+  let autoName: string | undefined;
+
   function pickCatalogue(id: string): void {
     const row = SPECIES.find((r) => r.id === id);
     if (row === undefined) return;
@@ -328,7 +336,9 @@ export function createPlantModal(host: ModalHost): {
       if (v !== undefined) values[k] = String(v);
       else Reflect.deleteProperty(values, k);
     }
-    if ((values["plantName"] ?? "").trim() === "") setField("plantName", row.name);
+    const named = nameAfterPick(values["plantName"] ?? "", autoName, row.name);
+    autoName = named.auto;
+    if (named.name !== (values["plantName"] ?? "")) setField("plantName", named.name);
     // A new plant starts on the entry's own placement; a saved plant keeps where it lives.
     if (plantId === undefined) choosePlacement(defaultPlacementFor(row));
     setField("species", row.scientificName);

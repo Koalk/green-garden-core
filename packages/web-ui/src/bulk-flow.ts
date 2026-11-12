@@ -13,6 +13,7 @@ import {
   type BulkState,
   type SaveResult,
 } from "@green-garden/bulk";
+import { homeQuestionNeeded } from "@green-garden/bulk";
 import type { AppData, Plant } from "@green-garden/storage";
 import { SPECIES } from "./pilot-data.ts";
 
@@ -77,4 +78,21 @@ export function saveBulk(
   species: readonly BulkSpecies[] = SPECIES,
 ): SaveResult {
   return saveBulkWith(data, state, today, species);
+}
+
+/**
+ * Q-K0 before a bulk save: a plant that lives outdoors waits for the garden question while no climate is
+ * set. `dismissed` is where the dialog goes when the question is dismissed: back to placement, with the
+ * list and every choice kept (nothing is saved without a climate).
+ */
+export function gardenGate(
+  data: AppData,
+  state: BulkState,
+  today: string,
+): { needed: boolean; dismissed: (s: BulkState) => BulkState } {
+  const res = saveBulk(data, state, today);
+  return {
+    needed: homeQuestionNeeded(data, res.data),
+    dismissed: (s) => ({ ...s, step: "place" }),
+  };
 }

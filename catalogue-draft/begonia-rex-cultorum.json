@@ -58,9 +58,9 @@
       "care": {
         "engineMethod": "interval",
         "wateringStyle": {
-          "value": null,
-          "source": null,
-          "confidence": "unknown"
+          "value": "let_top_dry",
+          "source": "author",
+          "confidence": "guess"
         },
         "baseIntervalDays": {
           "value": 5,
@@ -162,7 +162,7 @@
         "curated": ["indoor", "foliage"]
       },
       "provenance": {
-        "notes": "Weak entry: NC State page 404, RHS and MBG not fetched (no exact URL), so only the ASPCA genus page (Begonia spp., not this species) was read. It lists cats and dogs as toxic (soluble calcium oxalates; vomiting and salivation; underground parts most toxic). Severity 1 is the agent's mapping from 'toxic' with those symptoms. All care values unknown; the interval and the tip are rules of thumb. The 'Painted-leaf begonia' name is author knowledge, not from a page."
+        "notes": "Weak entry: NC State page 404, RHS and MBG not fetched (no exact URL), so only the ASPCA genus page (Begonia spp., not this species) was read. It lists cats and dogs as toxic (soluble calcium oxalates; vomiting and salivation; underground parts most toxic). Severity 1 is the agent's mapping from 'toxic' with those symptoms. All care values unknown; the interval and the tip are rules of thumb. The 'Painted-leaf begonia' name is author knowledge, not from a page. Watering style let_top_dry is the entry's own tip rule (guess, no source read)."
       },
       "sourcesRead": [
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia"

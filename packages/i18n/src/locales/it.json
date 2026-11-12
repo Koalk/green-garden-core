@@ -431,6 +431,7 @@
   "bulk.place.same": "Come sopra",
   "bulk.place.later": "Decidi più tardi",
   "bulk.place.note": "In casa, a meno che tu dica altro; le piante solo da giardino partono in terra. Le stanze sono facoltative.",
+  "bulk.place.gardenNote": "Le piante all'aperto hanno bisogno prima della domanda sul giardino, quindi non è stato salvato nulla. Salva di nuovo per rispondere, o mettile in casa.",
   "bulk.place.ariaWhere": "Dove vive {name}",
   "bulk.place.ariaRoom": "Stanza di {name}",
   "bulk.verify.ariaTick": "Aggiungi {name}",

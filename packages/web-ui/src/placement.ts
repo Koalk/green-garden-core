@@ -36,3 +36,17 @@ export function placementAfterAsk(before: string, chosen: string, answered: bool
   if (answered) return chosen;
   return before === chosen ? "indoor" : before;
 }
+
+/**
+ * The name field after a species is picked. An empty name, or the name the previous pick filled in, takes
+ * the new species' name; a name the person typed or changed stays. `auto` is what to remember as filled in.
+ */
+export function nameAfterPick(
+  current: string,
+  auto: string | undefined,
+  speciesName: string,
+): { name: string; auto: string | undefined } {
+  const trimmed = current.trim();
+  if (trimmed === "" || trimmed === auto) return { name: speciesName, auto: speciesName };
+  return { name: current, auto: undefined };
+}

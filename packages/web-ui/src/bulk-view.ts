@@ -30,6 +30,8 @@ export interface BulkViewContext {
   readonly species?: readonly SpeciesRow[];
   /** The text came back from a saved draft. */
   readonly restored?: boolean;
+  /** The garden question was dismissed: say why the save did not happen. */
+  readonly gardenNote?: boolean;
 }
 
 const STEPS: readonly Step[] = ["type", "match", "place", "verify"];
@@ -159,7 +161,9 @@ function placeStep(state: BulkState, ctx: BulkViewContext): string {
         <div class="chips" role="group" aria-label="${tHtml("bulk.place.ariaRoom", { name: row.label ?? row.input })}">${rooms}</div></li>`;
     })
     .join("");
-  return `<p><small>${esc(t("bulk.place.note"))}</small></p><ul class="place-list">${rows}</ul>`;
+  const gardenNote =
+    ctx.gardenNote === true ? `<p class="notice">${esc(t("bulk.place.gardenNote"))}</p>` : "";
+  return `${gardenNote}<p><small>${esc(t("bulk.place.note"))}</small></p><ul class="place-list">${rows}</ul>`;
 }
 
 /** A value with its mark: greyed and "~" while it is only assumed. */

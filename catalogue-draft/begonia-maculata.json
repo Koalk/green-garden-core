@@ -58,9 +58,9 @@
       "care": {
         "engineMethod": "interval",
         "wateringStyle": {
-          "value": null,
-          "source": null,
-          "confidence": "unknown"
+          "value": "let_top_dry",
+          "source": "author",
+          "confidence": "guess"
         },
         "baseIntervalDays": {
           "value": 6,
@@ -162,7 +162,7 @@
         "curated": ["indoor", "foliage"]
       },
       "provenance": {
-        "notes": "Weak entry: NC State page 404, RHS and MBG not fetched, so only the ASPCA genus page (Begonia spp.) was read: toxic to cats and dogs (soluble calcium oxalates; vomiting and drooling; underground parts most toxic). Severity 1 is a mapping. All care values unknown; interval and tip are rules of thumb. Common names are author knowledge."
+        "notes": "Weak entry: NC State page 404, RHS and MBG not fetched, so only the ASPCA genus page (Begonia spp.) was read: toxic to cats and dogs (soluble calcium oxalates; vomiting and drooling; underground parts most toxic). Severity 1 is a mapping. All care values unknown; interval and tip are rules of thumb. Common names are author knowledge. Watering style let_top_dry is the entry's own tip rule (guess, no source read)."
       },
       "sourcesRead": [
         "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia"

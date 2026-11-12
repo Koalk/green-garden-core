@@ -431,6 +431,7 @@
   "bulk.place.same": "Igual que la anterior",
   "bulk.place.later": "Decidir más tarde",
   "bulk.place.note": "En casa salvo que digas otra cosa; las plantas solo de jardín empiezan en la tierra. Las habitaciones son opcionales.",
+  "bulk.place.gardenNote": "Las plantas de exterior necesitan primero la pregunta del jardín, así que aún no se guardó nada. Guarda de nuevo para responderla, o ponlas en casa.",
   "bulk.place.ariaWhere": "Dónde vive {name}",
   "bulk.place.ariaRoom": "Habitación de {name}",
   "bulk.verify.ariaTick": "Añadir {name}",

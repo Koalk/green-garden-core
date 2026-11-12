@@ -10,6 +10,7 @@ import { spaceView, type AppData } from "@green-garden/storage";
 import {
   advance,
   bulkDraftText,
+  gardenGate,
   goBack,
   makeMatcher,
   pickCandidate,
@@ -46,6 +47,7 @@ export function createBulkModal(host: ModalHost): { open(): void } {
   const photos = new Map<string, PhotoInfo>();
   let state: BulkState = startBulk();
   let restored = false;
+  let gardenNote = false;
   let matcher: Matcher | undefined;
   let matcherLocale = "";
   let draftTimer: number | undefined;
@@ -105,6 +107,7 @@ export function createBulkModal(host: ModalHost): { open(): void } {
       data,
       today: host.today(),
       restored,
+      gardenNote,
     });
     const d = dialog();
     if (d !== null && !d.open) d.showModal();
@@ -129,6 +132,22 @@ export function createBulkModal(host: ModalHost): { open(): void } {
   function finish(): void {
     window.clearTimeout(draftTimer);
     pending = undefined;
+    // Q-K0: an outdoor plant needs the garden question. Dismissing it keeps the dialog, list and choices.
+    const gate = gardenGate(host.data(), state, host.today());
+    if (gate.needed) {
+      host.askHome((answered) => {
+        if (dialog() === null) return;
+        if (answered) {
+          gardenNote = false;
+          finish();
+        } else {
+          gardenNote = true;
+          setState(gate.dismissed(state));
+        }
+      });
+      return;
+    }
+    gardenNote = false;
     const res = saveBulk(host.data(), state, host.today());
     const message =
       res.notAdded === 0
@@ -263,6 +282,7 @@ export function createBulkModal(host: ModalHost): { open(): void } {
       restored = saved !== undefined;
       state = startBulk(saved ?? "");
       pending = undefined;
+      gardenNote = false;
       draw();
       host.root.querySelector<HTMLTextAreaElement>("#bulk-text")?.focus();
     },

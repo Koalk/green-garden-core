@@ -892,3 +892,24 @@ describe("RHS hardiness for camellia and photinia", () => {
     });
   }
 });
+
+describe("catalogue-draft watering style", () => {
+  it("every entry with a base interval also has a watering style", () => {
+    const missing: string[] = [];
+    for (const { f, json } of loaded) {
+      const care = (
+        json as {
+          entries: {
+            care: {
+              baseIntervalDays: { value: number | null };
+              wateringStyle: { value: string | null };
+            };
+          }[];
+        }
+      ).entries[0]?.care;
+      if (care?.baseIntervalDays.value != null && care.wateringStyle.value === null)
+        missing.push(f);
+    }
+    assert.deepEqual(missing, []);
+  });
+});

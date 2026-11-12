@@ -668,7 +668,9 @@ function outlookOf(t: Tracked, ctx: Context, end: Day, avail: Availability): Out
       const interval = intervalAt(t.cfg, carried, from, ctx.climate);
       const b = band(t.cfg.style, interval);
       const gap = stop.day - from;
-      if (gap > b.high) {
+      // An assumed care fact stretches the window past the band (model.ts `compute`), so a watering the
+      // planner put at the end of that window is on schedule, not past what the plant tolerates.
+      if (gap > b.high + t.cfg.marginDays) {
         const pastIdeal = gap - interval;
         // the away stretch is the cause only when an unavailable day lies in the part of the gap
         // that is still ahead of today and after the band opened (an old `lastWatered` is overdue, not away).

@@ -372,7 +372,9 @@ describe("self-hosted stylesheet", () => {
 
   it("keeps colours in theme variables so dark mode works", () => {
     const style = /<style>([\s\S]*?)<\/style>/.exec(html)?.[1] ?? "";
-    assert.doesNotMatch(style, /#[0-9a-fA-F]{3,6}\b/);
+    // Colours may be defined in custom properties (the dark tokens); rules must use the variables.
+    const rules = style.replace(/--[\w-]+:[^;}]*;/g, "");
+    assert.doesNotMatch(rules, /#[0-9a-fA-F]{3,6}\b/);
   });
 });
 

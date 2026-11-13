@@ -250,6 +250,43 @@ const SETS = {
       ],
     },
   ],
+  // the dark mode pass: every screen and dialog (dark-check.mjs checks the same list for contrast).
+  s264: [
+    { name: "01-today", steps: sample("today") },
+    { name: "02-plants", steps: sample("plants") },
+    { name: "03-improve", steps: sample("improve") },
+    { name: "04-planning", steps: sample("planning") },
+    { name: "05-settings", steps: sample("settings") },
+    {
+      name: "06-add-plant",
+      viewport: true,
+      steps: [...sample("plants"), "document.querySelector('[data-action=add-plant]').click()"],
+    },
+    {
+      name: "07-bulk-add",
+      viewport: true,
+      steps: [
+        "location.hash = 'plants'",
+        "document.querySelector('[data-action=add-many]').click()",
+        "(() => { const t = document.querySelector('#bulk-text'); t.value = 'ivy-leaved geranium'; t.dispatchEvent(new Event('input', { bubbles: true })); })()",
+        "document.querySelector('[data-action=bulk-match]').click()",
+        "document.querySelector('[data-action=bulk-pick]').click()",
+        "document.querySelector('[data-action=bulk-next]').click()",
+      ],
+    },
+    {
+      name: "08-move-sheet",
+      steps: [...tender("today"), "document.querySelector('[data-action=season-move]').click()"],
+    },
+    {
+      name: "09-load-banner",
+      steps: [
+        ...sample("today"),
+        "(() => { const d = JSON.parse(localStorage.getItem('green-garden')); d.version = 99999; localStorage.setItem('green-garden', JSON.stringify(d)); })()",
+        "location.reload()",
+      ],
+    },
+  ],
   // the Planning tab (was Holidays) and the Settings tab with the preferences.
   s119: [
     { name: "01-planning", steps: sample("planning") },

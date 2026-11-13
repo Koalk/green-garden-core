@@ -53,6 +53,23 @@
           --pico-font-size: 1.2rem;
         }
       }
+      /* Dark mode: Pico's dark muted text, borders and form edges are too faint on its dark
+   surfaces (muted text 4.4:1, field edges 1.3:1). Raised here once, as tokens, for both ways dark
+   is switched on (system setting, or data-theme="dark"); every screen follows. */
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --pico-muted-color: #9ba4b6;
+          --pico-muted-border-color: #3a4354;
+          --pico-form-element-border-color: #6b768c;
+          --chip-on-fg: #0b1606;
+        }
+      }
+      :root[data-theme="dark"] {
+        --pico-muted-color: #9ba4b6;
+        --pico-muted-border-color: #3a4354;
+        --pico-form-element-border-color: #6b768c;
+        --chip-on-fg: #0b1606;
+      }
       body > main.container {
         width: 100%;
         max-width: var(--content-max);
@@ -244,7 +261,6 @@
       }
       .chip-assumed {
         border-style: dashed;
-        opacity: 0.8;
       }
       dl.known select {
         width: auto;
@@ -455,7 +471,7 @@
       }
       .chip[aria-pressed="true"] {
         background: var(--pico-primary);
-        color: var(--pico-primary-inverse);
+        color: var(--chip-on-fg, var(--pico-primary-inverse));
       }
       .chip[aria-pressed="false"] {
         background: transparent;

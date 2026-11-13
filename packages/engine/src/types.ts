@@ -7,7 +7,7 @@ export type LogOutcome =
   | "skipped"
   | "still_wet"
   | "dry_early"
-  /** Rain fell (02k 3.3): credits an outdoor plant with `mm`, without teaching it anything. */
+  /** Rain fell: credits an outdoor plant with `mm`, without teaching it anything. */
   | "rain"
   /** "The plant looks fine": answers a drought check and restarts its count. Changes no schedule. */
   | "looks_fine";
@@ -15,7 +15,7 @@ export type Light = "low" | "medium" | "bright_indirect" | "direct";
 export type PotMaterial = "plastic" | "terracotta" | "glazed" | "fabric" | "other";
 export type OutlookLevel = "thrive" | "survive" | "scrape_by" | "decay";
 
-/** Where a plant lives (02k 3.1); missing means indoors. Same values as the storage `placement`. */
+/** Where a plant lives; missing means indoors. Same values as the storage `placement`. */
 export type Placement = "indoor" | "outdoor_pot" | "ground";
 /** Sun the spot gets (the storage `sun`). */
 export type SunExposure = "full_sun" | "part_shade" | "shade";
@@ -24,10 +24,10 @@ export type RootDepth = "shallow" | "medium" | "deep";
 /** Drought tolerance once established, in the ground. */
 export type DroughtTolerance = "none" | "moderate" | "high";
 export type Dormancy = "none" | "winter" | "summer";
-/** How a plant is cared for on a day (02k 3.2). */
+/** How a plant is cared for on a day. */
 export type CareMode = "interval" | "rain_fed" | "suspended";
 /**
- * Summer water demand and rain pattern of the home (02k 8.4): the engine reads it to pick its
+ * Summer water demand and rain pattern of the home: the engine reads it to pick its
  * outdoor constants. `winterMin` (hardiness) is a storage setting; watering does not use it.
  */
 export type ClimateClass =
@@ -40,7 +40,7 @@ export interface LogEntry {
   readonly mm?: number;
 }
 
-/** One day of weather (02k 3.1). Observed rows credit outdoor plants; `forecast` rows never do. */
+/** One day of weather. Observed rows credit outdoor plants; `forecast` rows never do. */
 export interface WeatherDay {
   readonly date: string;
   readonly rainMm: number;
@@ -56,17 +56,17 @@ export interface WeatherDay {
   readonly kind?: "measured" | "modelled";
 }
 
-/** One dated stay in a place (02m 1.2). Oldest first in `PlantInput.placementHistory`. */
+/** One dated stay in a place. Oldest first in `PlantInput.placementHistory`. */
 export interface PlacementEntry {
   /** YYYY-MM-DD, the first day the plant is there. */
   readonly on: string;
-  /** "ground" is not a move target: digging up and potting is replanting (02m 1.7). */
+  /** "ground" is not a move target: digging up and potting is replanting. */
   readonly placement: "indoor" | "outdoor_pot";
   /** Outdoors only: under cover, so rain gives no credit. Absent means false. */
   readonly sheltered?: boolean;
 }
 
-/** A stretch of direct sun, whole hours on the 24 h local clock, 0 <= from < to <= 24 (02m 3.2). */
+/** A stretch of direct sun, whole hours on the 24 h local clock, 0 <= from < to <= 24. */
 export interface SunRange {
   readonly from: number;
   readonly to: number;
@@ -94,11 +94,11 @@ export interface PlantInput {
   /** Days the root zone may stay wet / early watering tolerated. Missing means max(1, round(I / 4)). */
   readonly wetTolDays?: number;
   /**
-   * Days added to the end of the window because some care facts are assumed, not known (01i section 3): the caller counts one per assumed field. Whole days, 0 to 3; anything else is read as 0.
+   * Days added to the end of the window because some care facts are assumed, not known: the caller counts one per assumed field. Whole days, 0 to 3; anything else is read as 0.
    */
   readonly uncertaintyDays?: number;
   /**
-   * Facts for the start multipliers (02i): pot diameter, the room's light and the pot material
+   * Facts for the start multipliers: pot diameter, the room's light and the pot material
    * scale `intervalDays` (clamped to 0.6 to 1.6 of it). Missing facts count as 1. Leave all three out for
    * an interval the user typed themselves.
    */
@@ -106,13 +106,13 @@ export interface PlantInput {
   readonly light?: Light;
   readonly potMaterial?: PotMaterial;
   /**
-   * Outdoor and in-ground care (02k 3.1). All optional; with none of them (or `placement` indoor)
+   * Outdoor and in-ground care. All optional; with none of them (or `placement` indoor)
    * the plant is cared for exactly as before. Catalogue-sourced fields are marked.
    */
   readonly placement?: Placement;
   readonly sun?: SunExposure;
   /**
-   * When the place gets direct sun (02m 3.2): outdoors the plant's own answer, indoors the room's.
+   * When the place gets direct sun: outdoors the plant's own answer, indoors the room's.
    * Hours win over `sun` and `light`; `[]` means no direct sun; absent means unknown (the class is used).
    */
   readonly directSun?: readonly SunRange[];
@@ -136,7 +136,7 @@ export interface PlantInput {
   /** Catalogue: days between deep waterings in the growth season while establishing. Missing means 7. */
   readonly establishingIntervalDays?: number;
   /**
-   * Where the plant has been and when (02m 1.2). Absent means "the current placement, since
+   * Where the plant has been and when. Absent means "the current placement, since
    * forever". The first entry reaches back in time; each later one is a move that restarts learning,
    * re-anchors the schedule and decides which days' rain counted. `placement` and `sheltered` above
    * equal the last entry's values.
@@ -153,7 +153,7 @@ export interface Preferences {
   readonly preferredWeekdays?: readonly number[];
   readonly unavailableDates?: readonly string[];
   readonly unavailableWeekdays?: readonly number[];
-  /** Offer a watering before an unavoidable gap (02b). Off by default. */
+  /** Offer a watering before an unavoidable gap. Off by default. */
   readonly preLeaveWatering?: boolean;
 }
 
@@ -202,7 +202,7 @@ export interface Window {
   readonly justMoved?: true;
 }
 
-/** A plant that lives on rain (02k 3.5): no window, only a drought check. */
+/** A plant that lives on rain: no window, only a drought check. */
 export interface RainFedPlant {
   readonly plantId: string;
   /** Days since the last credited rain, watering or "looks fine"; null when nothing is recorded. */
@@ -215,7 +215,7 @@ export interface RainFedPlant {
   readonly assumed: readonly string[];
 }
 
-/** A plant in its dormant season (02k 3.5): no window until `until`. */
+/** A plant in its dormant season: no window until `until`. */
 export interface DormantPlant {
   readonly plantId: string;
   /** First day it is not dormant; null when none within about a year. */

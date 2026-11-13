@@ -14,7 +14,7 @@ import {
   type WeatherDay,
 } from "@green-garden/engine";
 
-// 02m sections 1.2, 1.3 and 1.6 (dated history; learning
+// (dated history; learning
 // restarts on a move). Hand-computed with interval 7 indoors, part_shade pot (x0.7 -> 5 days), let_top_dry
 // (band 25 % / 25 % -> 1 day early, 1 day late at interval 5), oceanic_wet, no rest factor.
 

@@ -1,7 +1,7 @@
 {
   "name": "outlook-assumed-margin-no-warning",
   "description": "A plant whose care facts are assumed (3 days of margin), watered today: the next watering planned at the end of the stretched window, 3 days past the band, is inside its window and raises no warning.",
-  "why": "Found in a browser: a plant just bulk-added as watered today showed 'will only scrape by ... 0 days ago'. let_top_dry, interval 5, no tolerances given: dry tolerance ceil(5/2) = 3. The only other plant waters later in the same window, so the first plant joins it at the window's last day: gap 8 = band high 5 + 3 margin, inWindow. The outlook used the band without the margin and called it past the ideal by 3 (level 1 or 2). Hand-computed from 02a 5.1, 5.4.",
+  "why": "Found in a browser: a plant just bulk-added as watered today showed 'will only scrape by ... 0 days ago'. let_top_dry, interval 5, no tolerances given: dry tolerance ceil(5/2) = 3. The only other plant waters later in the same window, so the first plant joins it at the window's last day: gap 8 = band high 5 + 3 margin, inWindow. The outlook used the band without the margin and called it past the ideal by 3 (level 1 or 2). Hand-computed.",
   "fn": "planDays",
   "input": {
     "today": "2026-06-10",

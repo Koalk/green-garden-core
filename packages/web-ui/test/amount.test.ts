@@ -11,7 +11,7 @@ afterEach(() => {
 
 const pot15 = { style: "let_top_dry", potDiameterCm: 15 } as const; // about 350 ml
 
-describe("amount lines (02h)", () => {
+describe("amount lines", () => {
   it("the stop point comes first, the amount is secondary and never in ml", () => {
     const a = amountLines(pot15, DEFAULT_AMOUNT_PREFS);
     assert.match(a.stop, /^Water until it runs out of the bottom into the saucer/);

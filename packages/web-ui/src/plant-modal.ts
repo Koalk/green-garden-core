@@ -427,7 +427,7 @@ export function createPlantModal(host: ModalHost): {
       selected?.kind === "catalogue" ? selected.row : undefined,
     );
     // An edit that flips indoors <-> pot outside is a dated move (today), so the history and the
-    // learning restart stay right (02m 1.5); the saved fields keep the old place until then.
+    // learning restart stay right; the saved fields keep the old place until then.
     const flips =
       old !== undefined &&
       plant.placement !== "ground" &&

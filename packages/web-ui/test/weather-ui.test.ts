@@ -80,12 +80,12 @@ describe("asking the server for rain", () => {
       seen.headers = init?.headers;
       return Promise.resolve({ ok: status < 400, status, json: () => Promise.resolve(body) });
     };
-  const point = { lat: 55.95, lon: -3.19 };
+  const point = { lat: 51.5, lon: -0.12 };
 
   it("asks the same origin when no server is chosen", async () => {
     const seen: { url?: string } = {};
     const r = await loadWeather(fetcherFor(200, reply, seen), undefined, point, TODAY);
-    assert.equal(seen.url, "/api/weather?lat=55.95&lon=-3.19&today=2026-11-07");
+    assert.equal(seen.url, "/api/weather?lat=51.5&lon=-0.12&today=2026-11-07");
     assert.ok(r.ok);
   });
 
@@ -95,7 +95,7 @@ describe("asking the server for rain", () => {
     await loadWeather(fetcherFor(200, reply, seen), cfg, point, TODAY);
     assert.equal(
       seen.url,
-      "http://192.168.1.20:8080/api/weather?lat=55.95&lon=-3.19&today=2026-11-07",
+      "http://192.168.1.20:8080/api/weather?lat=51.5&lon=-0.12&today=2026-11-07",
     );
     assert.equal(seen.headers?.["authorization"], "Bearer tok");
   });
@@ -105,10 +105,10 @@ describe("asking the server for rain", () => {
     await loadWeather(
       fetcherFor(200, reply, seen),
       undefined,
-      { lat: 55.953251, lon: -3.188267 },
+      { lat: 51.500729, lon: -0.124625 },
       TODAY,
     );
-    assert.match(seen.url ?? "", /lat=55\.95&lon=-3\.19&/);
+    assert.match(seen.url ?? "", /lat=51\.5&lon=-0.12&/);
   });
 
   it("names why it failed", async () => {
@@ -149,10 +149,10 @@ describe("weather in the plan", () => {
     const d = emptyData();
     const on: AppData = {
       ...d,
-      settings: { ...d.settings, weather: { enabled: true, lat: 55.95, lon: -3.19 } },
+      settings: { ...d.settings, weather: { enabled: true, lat: 51.5, lon: -0.12 } },
     };
     assert.equal(weatherDays(on, ready).length, 5);
-    assert.deepEqual(weatherPoint(on), { lat: 55.95, lon: -3.19 });
+    assert.deepEqual(weatherPoint(on), { lat: 51.5, lon: -0.12 });
     assert.deepEqual(weatherDays(on, {}), []);
   });
 
@@ -241,7 +241,7 @@ describe("Settings: weather and data sources", () => {
   const off = emptyData();
   const on: AppData = {
     ...off,
-    settings: { ...off.settings, weather: { enabled: true, lat: 55.95, lon: -3.19 } },
+    settings: { ...off.settings, weather: { enabled: true, lat: 51.5, lon: -0.12 } },
   };
 
   it("is off by default, with a switch, two coordinates and a locate button", () => {
@@ -256,8 +256,8 @@ describe("Settings: weather and data sources", () => {
   it("shows what is saved", () => {
     const html = weatherSettingsHtml(on, ready);
     assert.match(html, /name="enabled"[^>]*checked/);
-    assert.match(html, /value="55\.95"/);
-    assert.match(html, /value="-3\.19"/);
+    assert.match(html, /value="51.5"/);
+    assert.match(html, /value="-0.12"/);
   });
 
   it("asks for a point when it is on without one", () => {
@@ -297,9 +297,9 @@ describe("Settings: weather and data sources", () => {
   });
 
   it("saves the switch and the point rounded to 2 decimals, and nothing else", () => {
-    const form = new URLSearchParams({ enabled: "on", lat: "55.953251", lon: "-3.188267" });
+    const form = new URLSearchParams({ enabled: "on", lat: "51.500729", lon: "-0.124625" });
     const saved = saveWeather(off, form);
-    assert.deepEqual(saved.settings.weather, { enabled: true, lat: 55.95, lon: -3.19 });
+    assert.deepEqual(saved.settings.weather, { enabled: true, lat: 51.5, lon: -0.12 });
     assert.deepEqual(
       { ...saved, settings: { ...saved.settings, weather: undefined } },
       {

@@ -13,7 +13,7 @@ import {
   type Plant,
 } from "../src/index.ts";
 
-// 02m 3.2: `directSun` ranges on a plant and on a room travel in the export. Additive optional
+// `directSun` ranges on a plant and on a room travel in the export. Additive optional
 // keys: the format stays 8.
 
 const plant: Plant = {

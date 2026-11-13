@@ -1,7 +1,7 @@
 {
   "name": "bands-02a-5-1",
-  "description": "Frequency-relative bands from 02a section 5.1 (keep_moist 25/10, let_top_dry 25/25, let_fully_dry 10/35, round half up).",
-  "why": "Placeholder percentages kept. The examples are the ones printed in 02a 5.1: I=4 [3,4]; I=5 [4,6]; I=7 [5,9]; I=9 [7,11]; I=14 [13,19]; I=21 [19,28].",
+  "description": "Frequency-relative bands (keep_moist 25/10, let_top_dry 25/25, let_fully_dry 10/35, round half up).",
+  "why": "Placeholder percentages kept. The examples are the ones worked out by hand: I=4 [3,4]; I=5 [4,6]; I=7 [5,9]; I=9 [7,11]; I=14 [13,19]; I=21 [19,28].",
   "fn": "bandTable",
   "input": [
     { "style": "keep_moist", "intervalDays": 4 },

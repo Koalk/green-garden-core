@@ -3,21 +3,21 @@
 import { lightByHours } from "./sun.ts";
 import type { Light, PotMaterial, StartFacts, StartMultipliers } from "./types.ts";
 
-// PROVISIONAL: every number here is a guess from 02i recommendation 2 (drying physics), not
+// PROVISIONAL: every number here is a guess (drying physics), not
 // a measured value. The scaling laws are explainable; the absolute levels wait for real dry-downs.
 
 /** Pot diameter the catalogue intervals are taken to be for. */
 export const REFERENCE_DIAMETER_CM = 15;
-/** Exponent of the diameter ratio (02i: between 1 and 2, start 1.0). */
+/** Exponent of the diameter ratio (between 1 and 2, start 1.0). */
 const POT_SIZE_EXPONENT = 1;
-/** Light, relative to medium (02i): dim stretches the interval, strong light shortens it. */
+/** Light, relative to medium: dim stretches the interval, strong light shortens it. */
 const LIGHT_FACTOR: Record<Light, number> = {
   low: 1.6,
   medium: 1,
   bright_indirect: 0.65,
   direct: 0.4,
 };
-/** Pot material (02i: terracotta 0.7; fabric dries through its walls the same way, a guess). */
+/** Pot material (terracotta 0.7; fabric dries through its walls the same way, a guess). */
 const MATERIAL_FACTOR: Record<PotMaterial, number> = {
   plastic: 1,
   glazed: 1,
@@ -43,7 +43,7 @@ function lookup<K extends string>(table: Record<K, number>, key: K | undefined):
 }
 
 /**
- * The start multipliers on a plant's catalogue interval (02i recommendation 2): pot size against a
+ * The start multipliers on a plant's catalogue interval: pot size against a
  * 15 cm reference, room light and pot material, each a guess. Unknown facts count as 1, so a plant we
  * know nothing about keeps its catalogue interval. The product is clamped to 0.6 to 1.6; when the clamp
  * bites, the clipped part moves into the amount per watering instead of being lost: a pot

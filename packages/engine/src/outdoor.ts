@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * In-ground and outdoor care (02k sections 3 and 8): a pure care resolver in front of the window
+ * In-ground and outdoor care: a pure care resolver in front of the window
  * arithmetic, and the rain bookkeeping. Nothing here touches `band`, `compute` or the combiner: an
  * outdoor plant is turned into an indoor-shaped `PlantInput` (an interval in days), or into a rain-fed or
  * dormant entry that has no window. A plant without `placement`, or placed indoors, passes through
@@ -24,7 +24,7 @@ import type {
   WeatherDay,
 } from "./types.ts";
 
-/** The seven climate classes of 02k 8.4; `oceanic_wet` is assumed when the home has not said. */
+/** The seven climate classes of the home; `oceanic_wet` is assumed when the home has not said. */
 export const CLIMATE_CLASSES: readonly ClimateClass[] = [
   "oceanic_wet",
   "oceanic_dry",
@@ -49,7 +49,7 @@ interface ClimateConstants {
 
 const ALL_YEAR = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-// PROVISIONAL: 02k 8.4, all guesses.
+// PROVISIONAL: all guesses.
 const CLIMATE: Readonly<Record<ClimateClass, ClimateConstants>> = {
   oceanic_wet: { potSummer: 1.0, dryMonths: [], droughtCheckDays: 28, rainFedModerate: true },
   oceanic_dry: {
@@ -75,7 +75,7 @@ const CLIMATE: Readonly<Record<ClimateClass, ClimateConstants>> = {
   mountain: { potSummer: 0.9, dryMonths: [7, 8], droughtCheckDays: 21, rainFedModerate: true },
 };
 
-// PROVISIONAL: 02k 3.2.
+// PROVISIONAL: guess.
 const POT_EXPOSURE: Readonly<Record<SunExposure, number>> = {
   full_sun: 0.5,
   part_shade: 0.7,
@@ -91,9 +91,9 @@ const MULCH = 1.25;
 const DEFAULT_ESTABLISHING_DAYS = 7;
 const MODERATE_ESTABLISHED = 2;
 const NONE_ESTABLISHED = 1.5;
-/** Sheltered, settled, drought-tolerant ground plants (02m 2.3): the moderate rule, longer. PROVISIONAL guess. */
+/** Sheltered, settled, drought-tolerant ground plants: the moderate rule, longer. PROVISIONAL guess. */
 const SHELTERED_HIGH_ESTABLISHED = 3;
-/** Rain (mm) that counts as a full watering, by root depth (02k 3.2). */
+/** Rain (mm) that counts as a full watering, by root depth. */
 const CREDIT_ESTABLISHED: Readonly<Record<RootDepth, number>> = {
   shallow: 10,
   medium: 15,
@@ -105,7 +105,7 @@ const CREDIT_ESTABLISHING: Readonly<Record<RootDepth, number>> = {
   deep: 20,
 };
 const CREDIT_POT = 8;
-/** Days without credited rain before the optional winter-soak prompt (02k 3.5). */
+/** Days without credited rain before the optional winter-soak prompt. */
 export const WINTER_SOAK_DAYS = 28;
 const SCAN_LIMIT = 420;
 
@@ -252,7 +252,7 @@ function resolver(p: PlantInput, env: Required<CareEnv>): Resolver {
         establishing,
       };
     }
-    // Under cover nothing feeds the plant: never rain-fed (02m 2.3).
+    // Under cover nothing feeds the plant: never rain-fed.
     if (tolerance === "high" && !sheltered)
       return { mode: "rain_fed", intervalDays: p.intervalDays, establishing };
     if (tolerance === "moderate" || tolerance === "high") {
@@ -299,7 +299,7 @@ function fullEnv(env: CareEnv): Required<CareEnv> {
 }
 
 /**
- * How a plant is cared for on a day (02k 3.2): `interval` (the usual windows, with the resolved interval),
+ * How a plant is cared for on a day: `interval` (the usual windows, with the resolved interval),
  * `rain_fed` (no window; a drought check prompt instead) or `suspended` (dormant; `until` says when it ends).
  * Indoor plants, and any plant with no `placement`, return their own values.
  */
@@ -367,7 +367,7 @@ export interface RainEvent {
 }
 
 /**
- * Rain reports (log entries and observed weather rows) as credit events, oldest first (02k 3.3). Two
+ * Rain reports (log entries and observed weather rows) as credit events, oldest first. Two
  * partial rains on consecutive days add up. A forecast row never gets here.
  */
 export function rainEvents(
@@ -421,7 +421,7 @@ export function rainEvents(
 }
 
 // ---------------------------------------------------------------------------------------------------
-// Placement history (02m section 1). A plant that moves in and out keeps dated entries; the
+// Placement history. A plant that moves in and out keeps dated entries; the
 // engine reads where it was on any day. Without a history every function here is the identity.
 
 /** The entries the engine trusts: valid date, a move target, oldest first; an equal date keeps the later. */
@@ -470,7 +470,7 @@ export function plantOn(plant: PlantInput, day: Day): PlantInput {
   return { ...rest, placement: at.placement, sheltered: at.sheltered };
 }
 
-/** Rain in mm that counted as a full watering on a day: 0 indoors and under cover (02m 1.3). */
+/** Rain in mm that counted as a full watering on a day: 0 indoors and under cover. */
 export function creditMmOn(plant: PlantInput, day: Day, env: CareEnv = {}): number {
   const p = plantOn(plant, day);
   return resolver(p, fullEnv(env)).at(day).creditMm;
@@ -498,9 +498,9 @@ export type MoveResult =
     };
 
 /**
- * Appends a move to a plant's history (02m 1.2, 1.5). The date is never in the future and never before the
+ * Appends a move to a plant's history. The date is never in the future and never before the
  * previous entry's; an equal date replaces that entry. The first move writes the base entry first:
- * `addedOn`, else the earliest log date, else the move date. A ground plant cannot move (02m 1.7).
+ * `addedOn`, else the earliest log date, else the move date. A ground plant cannot move.
  */
 export function recordMove(
   plant: PlantInput & { readonly addedOn?: string },

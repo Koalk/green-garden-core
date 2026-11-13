@@ -1,7 +1,7 @@
 {
   "name": "outdoor-pot-seville-july",
-  "description": "GV-K11 (02k E4): a geranium in a pot in full sun in Seville in July (mediterranean). Indoor base 8 days becomes round(8 x 0.5 x 0.7) = 3; watered 07-01, the window is 07-03 to 07-05.",
-  "why": "Hand computation in 02k section 3.7, example E4 and the climate table of 8.4 (pot summer multiplier 0.7).",
+  "description": "GV-K11: a geranium in a pot in full sun in Seville in July (mediterranean). Indoor base 8 days becomes round(8 x 0.5 x 0.7) = 3; watered 07-01, the window is 07-03 to 07-05.",
+  "why": "Hand computation, example E4, with the climate table (pot summer multiplier 0.7).",
   "input": {
     "today": "2026-07-02",
     "climate": "mediterranean",

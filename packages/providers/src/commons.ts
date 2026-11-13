@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Reference photos from Wikimedia Commons (features/01d). The browser fetches them at runtime; nothing
+ * Reference photos from Wikimedia Commons. The browser fetches them at runtime; nothing
  * is bundled. Only licences that allow commercial use with attribution are kept (CC0, CC BY, CC BY-SA,
  * public domain), and the creator and licence are returned so the UI can show them.
  */

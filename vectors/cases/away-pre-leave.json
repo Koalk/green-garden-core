@@ -1,7 +1,7 @@
 {
   "name": "away-pre-leave",
   "description": "Same absence as away-window-fully-away with the pre-leave option on: the fern is watered the day before the first away day (today), one day early, and the outlook improves from decay to scrape_by.",
-  "why": "02b proposal, PROVISIONAL, option off by default. Pre-leave watering is chosen when the plant would be at most its wet tolerance (default max(1, round(I/4)) = 1 day) early, earlier than the post-return gap is long, and not watered within the last third of its interval. Fern: 1 day early, qualifies. The new gap 0 to 11-09 is 7 days against band high 4: 3 days past the ideal, dry tolerance 2, so scrape_by. The early gap (2 days against band low 3) is within the wet tolerance. Hand-computed.",
+  "why": "PROVISIONAL proposal, option off by default. Pre-leave watering is chosen when the plant would be at most its wet tolerance (default max(1, round(I/4)) = 1 day) early, earlier than the post-return gap is long, and not watered within the last third of its interval. Fern: 1 day early, qualifies. The new gap 0 to 11-09 is 7 days against band high 4: 3 days past the ideal, dry tolerance 2, so scrape_by. The early gap (2 days against band low 3) is within the wet tolerance. Hand-computed.",
   "fn": "planDays",
   "input": {
     "today": "2026-11-02",

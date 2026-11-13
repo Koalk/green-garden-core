@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * What a person can do for their plants while nobody can water (features/02b-away-care-options.md),
+ * What a person can do for their plants while nobody can water,
  * filtered by watering style and by how long the stretch is. Physical measures only. A bath, matting or a
  * reservoir is never offered for plants that like to dry out. PROVISIONAL: lengths and choices are
- * from extension pages and author knowledge, flagged in 02b.
+ * from extension pages and author knowledge.
  */
 import { formatDate, parseDate } from "@green-garden/engine";
 import { spaceView, type AppData, type Plant } from "@green-garden/storage";

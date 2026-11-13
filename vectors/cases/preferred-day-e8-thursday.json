@@ -1,7 +1,7 @@
 {
   "name": "preferred-day-e8-thursday",
-  "description": "02a E8 with Thursday preferred: the shared day moves to Thursday 2026-11-05 because both plants are covered either way and the preference breaks the tie.",
-  "why": "02a E8 'Preferred weekday Thursday: Thursday, both plants'. Weekdays are numbered 0 = Sunday to 6 = Saturday, so Thursday is 4. Same windows as the no-preference vector.",
+  "description": "E8 with Thursday preferred: the shared day moves to Thursday 2026-11-05 because both plants are covered either way and the preference breaks the tie.",
+  "why": "E8 'Preferred weekday Thursday: Thursday, both plants'. Weekdays are numbered 0 = Sunday to 6 = Saturday, so Thursday is 4. Same windows as the no-preference vector.",
   "fn": "planDays",
   "input": {
     "today": "2026-11-02",

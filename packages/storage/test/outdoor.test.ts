@@ -20,7 +20,7 @@ import {
 } from "../src/index.ts";
 
 // the in-ground fields, the `climate` and `winterMin` settings and the rain log reach the engine,
-// the export keeps them, and format 8 stays (additive optional keys, 01i 7.3).
+// the export keeps them, and format 8 stays (additive optional keys).
 
 const lavender: Plant = {
   id: "lav",

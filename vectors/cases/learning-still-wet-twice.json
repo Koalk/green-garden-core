@@ -1,7 +1,7 @@
 {
   "name": "learning-still-wet-twice",
-  "description": "02a E5/E10 'still wet' learning: a let_top_dry Monstera (I=7) watered 2026-11-02 is reported still wet on 11-09 and 11-10. Window as of 11-11.",
-  "why": "PROVISIONAL. Each still_wet snoozes by max(1, round(25% of I)) = 2 days (02a 5.5) and adds the same to the learned adjustment, capped at ceil(I/2) = 4 (02a 1.3). Two logs give adjustment 4, effective interval 11, band [8,14], anchor 11, and the window may not open before the day after the last log. 02a E5 printed [8,10] for the superseded one-day model.",
+  "description": "'Still wet' learning: a let_top_dry Monstera (I=7) watered 2026-11-02 is reported still wet on 11-09 and 11-10. Window as of 11-11.",
+  "why": "PROVISIONAL. Each still_wet snoozes by max(1, round(25% of I)) = 2 days and adds the same to the learned adjustment, capped at ceil(I/2) = 4. Two logs give adjustment 4, effective interval 11, band [8,14], anchor 11, and the window may not open before the day after the last log. The earlier draft printed [8,10] for the superseded one-day model.",
   "input": {
     "today": "2026-11-11",
     "plants": [

@@ -1,7 +1,7 @@
 {
   "name": "away-schedule-restarts",
   "description": "Same plant and stretch as away-short-plant-short-stretch: the watering the stretch pushed to 11-16 moves the whole schedule, so the next one is a full interval later (11-20), not back on the original grid (11-18).",
-  "why": ", Reading: the plan should move the whole interval after an away stretch and regroup from there, not complain and snap back. 02a 5.2 anchors the ideal schedule (anchor 11-14, then 11-18); PROVISIONAL restarts the anchor at the watering day plus the interval when the reason is away_days: 11-16 + 4 = 11-20, on its ideal day. Hand-computed.",
+  "why": ", Reading: the plan should move the whole interval after an away stretch and regroup from there, not complain and snap back. The ideal schedule is anchored (anchor 11-14, then 11-18); PROVISIONAL restarts the anchor at the watering day plus the interval when the reason is away_days: 11-16 + 4 = 11-20, on its ideal day. Hand-computed.",
   "fn": "planDays",
   "input": {
     "today": "2026-11-10",

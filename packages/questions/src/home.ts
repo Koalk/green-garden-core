@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Q-K0, the home question (02k section 8.5; to 3 answered 2026-11-02). Asked once, not per
+ * Q-K0, the home question. Asked once, not per
  * plant: the country, then a region the person recognises, then at most two follow-ups. The answer is two
  * home settings, `climate` (summer water demand and rain pattern) and `winterMin` (RHS hardiness class).
  * No location is read or stored; a wrong guess only shifts intervals. The rows are judgement from AEMET
- * NT 37 and the Met Office rain pattern, `from knowledge, verify` (02k 8.5); the es and it wording is a
+ * NT 37 and the Met Office rain pattern, `from knowledge, verify`; the es and it wording is a
  * machine draft for review.
  */
 import type { Locale } from "./next.ts";
@@ -53,7 +53,7 @@ const yesNo = (yes: Home): readonly HomeFollowUpOption[] => [
   { id: "no", label: t("No", "No", "No") },
 ];
 
-// PROVISIONAL: every row is a guess by region, 02k 8.5.
+// PROVISIONAL: every row is a guess by region.
 export const HOME_REGIONS: readonly HomeRegion[] = [
   {
     id: "gb-scotland-west",

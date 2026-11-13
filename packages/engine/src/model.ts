@@ -5,7 +5,7 @@ import { startMultipliers } from "./multipliers.ts";
 import { seasonFactor, type Climate } from "./season.ts";
 import type { Band, LogEntry, PlantInput, WateringStyle } from "./types.ts";
 
-// PROVISIONAL: placeholder band percentages from 02a 5.1, kept.
+// PROVISIONAL: placeholder band percentages, kept.
 const PERCENT: Record<WateringStyle, { early: number; late: number }> = {
   keep_moist: { early: 25, late: 10 },
   let_top_dry: { early: 25, late: 25 },
@@ -97,7 +97,7 @@ export function intervalAt(cfg: Config, st: State, day: Day, climate: Climate): 
 }
 
 /**
- * Window for the next watering (02a 5.1 and 5.2): the band from the last watering,
+ * Window for the next watering: the band from the last watering,
  * intersected with the tolerance around the ideal schedule (anchor).
  * `ref` stands in for "today" when the plant has never been watered.
  */
@@ -149,7 +149,7 @@ export function initialState(p: PlantInput, parse: (s: string) => Day | undefine
   };
 }
 
-/** Snooze size: 25% of the base interval, at least 1 day (02a 5.5). */
+/** Snooze size: 25% of the base interval, at least 1 day. */
 function snoozeStep(cfg: Config): number {
   return Math.max(1, percentOf(25, cfg.base));
 }
@@ -169,11 +169,11 @@ export function applyLog(
   const c = compute(cfg, st, date, climate);
   switch (outcome) {
     case "done": {
-      // The ideal schedule steps by one interval and never moves otherwise (02a 5.2).
+      // The ideal schedule steps by one interval and never moves otherwise.
       const anchor = c.anchor + intervalAt(cfg, st, date, climate);
       let adj = st.adj;
       let streak = st.streak + 1;
-      // PROVISIONAL: after 3 waterings in a row the learned adjustment decays by 1 (02a 1.3).
+      // PROVISIONAL: after 3 waterings in a row the learned adjustment decays by 1.
       if (streak >= 3 && adj !== 0) {
         adj -= Math.sign(adj);
         streak = 0;

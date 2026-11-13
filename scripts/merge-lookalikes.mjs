@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-// One-off, kept as a record: merges the look-alike research data (scripts/lookalikes.json, from
-// features/01g-lookalikes-and-names.md) into catalogue-draft/*.json as lookAlikes, lookAlikeNote,
+// One-off, kept as a record: merges the look-alike research data (scripts/lookalikes.json) into catalogue-draft/*.json as lookAlikes, lookAlikeNote,
 // nameIdeas and photoFile. Species without an row are left alone (field absent = not researched).
 // Photo files are candidates, unverified: the browser reads licence and author from Commons itself.
 // Run: node scripts/merge-lookalikes.mjs

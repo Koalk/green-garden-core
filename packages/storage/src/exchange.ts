@@ -218,7 +218,7 @@ function dateList(v: unknown, warn: Warn, what: string): string[] {
   return out;
 }
 
-/** Placement history (02m 1.2): valid entries only, oldest first; an equal date keeps the later entry. */
+/** Placement history: valid entries only, oldest first; an equal date keeps the later entry. */
 function parsePlacementHistory(v: unknown): PlacementEntry[] | undefined {
   if (!Array.isArray(v)) return undefined;
   const entries: { entry: PlacementEntry; day: number; index: number }[] = [];
@@ -241,7 +241,7 @@ function parsePlacementHistory(v: unknown): PlacementEntry[] | undefined {
   return out.length === 0 ? undefined : out;
 }
 
-/** Direct-sun ranges (02m 3.2): whole hours, 0 <= from < to <= 24, sorted, merged, at most 3. [] is a real answer. */
+/** Direct-sun ranges: whole hours, 0 <= from < to <= 24, sorted, merged, at most 3. [] is a real answer. */
 function parseDirectSun(v: unknown): SunRange[] | undefined {
   if (!Array.isArray(v)) return undefined;
   const ranges: SunRange[] = [];
@@ -394,7 +394,7 @@ function parsePlant(
   const fieldSources = parseFieldSources(raw["fieldSources"]);
   if (fieldSources !== undefined) p.fieldSources = fieldSources;
   else if (fromOlderFile && /^catalogue\b/i.test(p.source ?? "")) {
-    // Version 6 and older: the free-text source tells where the care values came from (01i section 7.3).
+    // Version 6 and older: the free-text source tells where the care values came from.
     p.fieldSources = {
       intervalDays: "catalogue",
       style: "catalogue",

@@ -1,7 +1,7 @@
 {
   "name": "plan-e6-ten-plants-28-days",
-  "description": "02a E6 ten-plant collection, 28 days from Monday 2026-11-02, no preferences, no away days: 11 combined days instead of 24, every plant on its ideal watering count.",
-  "why": "02a 5.3: the E6 plan lists days 1, 5, 9, 13, 16, 17, 19, 20, 21, 24, 25 with the plant sets printed there; saving 54%; ideal counts Monstera 4, Pothos 3, Fern 7, Snake 1, Jade 2, Peace lily 5, Spider 4, Calathea 7, ZZ 2, Rubber 3.",
+  "description": "E6 ten-plant collection, 28 days from Monday 2026-11-02, no preferences, no away days: 11 combined days instead of 24, every plant on its ideal watering count.",
+  "why": "The E6 plan lists days 1, 5, 9, 13, 16, 17, 19, 20, 21, 24, 25 with the plant sets printed there; saving 54%; ideal counts Monstera 4, Pothos 3, Fern 7, Snake 1, Jade 2, Peace lily 5, Spider 4, Calathea 7, ZZ 2, Rubber 3.",
   "fn": "planDays",
   "input": {
     "today": "2026-11-02",

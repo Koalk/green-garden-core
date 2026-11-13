@@ -167,7 +167,7 @@ export function resultLinks(source, html, base, plant) {
   return out.slice(0, source.maxResults ?? 2);
 }
 
-/** Rows of the 01c starter table (`| n | Common en / common es | *Scientific name* | ...`). */
+/** Rows of the starter table (`| n | Common en / common es | *Scientific name* | ...`). */
 export function parseStarterRows(md) {
   const rows = [];
   for (const line of md.split(/\r?\n/)) {

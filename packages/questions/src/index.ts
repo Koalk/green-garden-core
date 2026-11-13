@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * The drip-fed question bank and its pacing (01i sections 3 to 5): which question to ask about a plant
+ * The drip-fed question bank and its pacing: which question to ask about a plant
  * next, and when to stay quiet. Pure data and functions; no storage, no UI, no clock (callers pass today).
  */
 export {

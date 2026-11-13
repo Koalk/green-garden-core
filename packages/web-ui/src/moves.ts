@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * "Bring inside" and "Put outside" (02m 1.5): the sheet's rules and markup. The move itself is the
+ * "Bring inside" and "Put outside": the sheet's rules and markup. The move itself is the
  * engine's `recordMove`; this file only checks the date, applies the result to the app data and undoes it.
  */
 import { formatDate, parseDate, recordMove } from "@green-garden/engine";
@@ -10,7 +10,7 @@ import { esc, t } from "./text.ts";
 
 export type MoveTarget = "indoor" | "outdoor_pot";
 
-/** Where a plant would go: the other of indoors and a pot outside. A ground plant cannot move (02m 1.7). */
+/** Where a plant would go: the other of indoors and a pot outside. A ground plant cannot move. */
 export function moveTarget(plant: Plant): MoveTarget | undefined {
   if (plant.placement === "ground") return undefined;
   return plant.placement === "outdoor_pot" ? "indoor" : "outdoor_pot";

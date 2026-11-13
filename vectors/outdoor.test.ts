@@ -13,7 +13,7 @@ import {
 } from "@green-garden/engine";
 import { loadVectors, runVector } from "./runner.ts";
 
-// Worked examples E1 to E7 and GV-K1 to GV-K14 of 02k section 3. Constants are PROVISIONAL.
+// Worked examples E1 to E7 and GV-K1 to GV-K14. Constants are PROVISIONAL.
 
 const lavender: PlantInput = {
   id: "lavender",
@@ -470,7 +470,7 @@ describe("GV-K13: forecast rain is a hint, never a change", () => {
   });
 });
 
-describe("sheltered ground plants are never rain-fed (02m 2.3)", () => {
+describe("sheltered ground plants are never rain-fed", () => {
   const settled: PlantInput = { ...lavender, plantedOn: "2025-04-01", mulched: false };
   const env = { climate: "oceanic_dry" as ClimateClass, hemisphere: "north" as const };
   const june5 = "2026-06-05";

@@ -25,7 +25,7 @@ const list = (p: QuestionPlant) => rankQuestions(p, TODAY, {}, { mode: "list" })
 const push = (p: QuestionPlant) =>
   rankQuestions(p, TODAY, {}, { mode: "voluntary" }).map((q) => q.id);
 
-describe("in-ground questions Q-K2, Q-K5, Q-K6 (02k section 5)", () => {
+describe("in-ground questions Q-K2, Q-K5, Q-K6", () => {
   it("are in the bank with plain wording in en-GB, es and it", () => {
     for (const id of ["Q-PLANTED", "Q-MULCH", "Q-COVER"]) {
       const q = QUESTIONS.find((x) => x.id === id);
@@ -83,7 +83,7 @@ describe("in-ground questions Q-K2, Q-K5, Q-K6 (02k section 5)", () => {
   });
 });
 
-describe("Q-K0: the home question (02k 8.5, and 2)", () => {
+describe("Q-K0: the home question", () => {
   it("covers every row of the 8.5 table", () => {
     assert.equal(HOME_REGIONS.filter((r) => r.country === "GB").length, 4);
     assert.equal(HOME_REGIONS.filter((r) => r.country === "ES").length, 11);

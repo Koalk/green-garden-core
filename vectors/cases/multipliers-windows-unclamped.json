@@ -1,7 +1,7 @@
 {
   "name": "multipliers-windows-unclamped",
   "description": "Monstera (let_top_dry, catalogue 7 days) in an 18 cm pot, watered on 2026-11-02: the start multiplier 1.2 makes the working interval 8 days (8.4 rounded), so the window is 2026-11-08 to 2026-11-12.",
-  "why": "02i recommendation 2 with the 02a 5.1 band for let_top_dry (25% early, 25% late): 7 x 1.2 = 8.4, rounded to 8 days; early 2 days, late 2 days; earliest 2026-11-02 + 8 - 2, latest + 8 + 2. Without the multiplier the window is [2026-11-07, 2026-11-11] (windows-assumed-margin). Hand computation.",
+  "why": "The start multipliers with the band for let_top_dry (25% early, 25% late): 7 x 1.2 = 8.4, rounded to 8 days; early 2 days, late 2 days; earliest 2026-11-02 + 8 - 2, latest + 8 + 2. Without the multiplier the window is [2026-11-07, 2026-11-11] (windows-assumed-margin). Hand computation.",
   "input": {
     "today": "2026-11-02",
     "plants": [

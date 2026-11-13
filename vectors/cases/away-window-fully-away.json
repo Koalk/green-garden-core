@@ -1,7 +1,7 @@
 {
   "name": "away-window-fully-away",
   "description": "Away days with the whole watering window unavailable and the pre-leave option switched off: the plant is watered on the first available day after, and its outlook is decay.",
-  "why": "02a 5.4: plan on available days only and flag the plant. Fern (keep_moist, I=4, last 2026-10-31) has window 11-03 to 11-04; 11-03 to 11-08 are unavailable; first available day is 11-09, a 9-day gap against a band high of 4. PROVISIONAL outlook rule: past the band by more than 1.5 x the dry tolerance (default ceil(I/2) = 2) is decay. Hand-computed.",
+  "why": "Plan on available days only and flag the plant. Fern (keep_moist, I=4, last 2026-10-31) has window 11-03 to 11-04; 11-03 to 11-08 are unavailable; first available day is 11-09, a 9-day gap against a band high of 4. PROVISIONAL outlook rule: past the band by more than 1.5 x the dry tolerance (default ceil(I/2) = 2) is decay. Hand-computed.",
   "fn": "planDays",
   "input": {
     "today": "2026-11-02",

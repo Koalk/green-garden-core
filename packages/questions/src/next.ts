@@ -13,10 +13,10 @@ export interface QuestionText {
   readonly options: Readonly<Record<string, string>>;
 }
 
-/** One entry of the question bank (01i section 4.3). Plain wording only; the Stories flavour is a text key. */
+/** One entry of the question bank. Plain wording only; the Stories flavour is a text key. */
 export interface Question {
   readonly id: string;
-  /** Care-impact tier (01i section 5.1): A ranks 1 to 4, B ranks 5 to 7, C the rest. */
+  /** Care-impact tier: A ranks 1 to 4, B ranks 5 to 7, C the rest. */
   readonly tier: Tier;
   /** Care-impact weight for the seeded shuffle: heavier tends to come earlier inside a tier. */
   readonly weight: number;
@@ -98,7 +98,7 @@ export interface QuestionPlant {
   readonly dryEarly?: number;
 }
 
-/** Per-plant question state (01i section 7.2), keyed by plant id in {@link QuestionState}. */
+/** Per-plant question state, keyed by plant id in {@link QuestionState}. */
 export interface PlantQuestionState {
   /** The day a question was last put to this plant (the one-a-day cap). */
   readonly lastAskedOn?: string;
@@ -131,7 +131,7 @@ export interface Options {
   readonly hemisphere?: "north" | "south";
 }
 
-/** Pacing numbers (01i section 5.2). */
+/** Pacing numbers. */
 export const PACING = {
   /** Plants due today at or above which no question is pushed. */
   busyDayPlants: 4,
@@ -299,7 +299,7 @@ export function rankQuestions(
 }
 
 /**
- * The question to put to this plant now, or null. Pushes obey the caps of 01i section 5.2: nothing
+ * The question to put to this plant now, or null. Pushes obey the caps of the pacing numbers: nothing
  * on a busy day, 2 a day in total, 1 a day per plant, tier A only and 1 a day in total during a
  * plant's first week. A voluntary run ignores the daily caps but stops at 5 answers a sitting.
  */

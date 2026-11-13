@@ -12,7 +12,7 @@ import { buildPlanInput, spaceView, type AppData, type Plant } from "@green-gard
 import type { SpeciesRow } from "./pilot-data.ts";
 import { esc, t, tHtml } from "./text.ts";
 
-/** "It rained" buttons: light, proper, downpour (02k 2.3). PROVISIONAL: the mm are guesses. */
+/** "It rained" buttons: light, proper, downpour. PROVISIONAL: the mm are guesses. */
 export const RAIN_SIZES = [
   { id: "light", mm: 5 },
   { id: "proper", mm: 12 },
@@ -77,7 +77,7 @@ export function assumedChipHtml(assumed: readonly string[]): string {
 }
 
 /**
- * Bed watering in household words (02k 1.3): watering cans or a slow time with the hose, never ml.
+ * Bed watering in household words: watering cans or a slow time with the hose, never ml.
  * Only for plants in the ground; pots outside keep the usual amount lines. PROVISIONAL: the counts.
  */
 export function bedAmountWords(plant: Pick<Plant, "placement" | "rootDepth">): string | undefined {

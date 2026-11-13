@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * SEPA Time Series API adapter (Scotland, 02k 11 and 12). KiWIS service, over 280 tipping-bucket
+ * SEPA Time Series API adapter (Scotland). KiWIS service, over 280 tipping-bucket
  * gauges. Licence: SEPA's data table lists the Time Series API and rainfall as OGL 3.0, its older general
  * terms (v3.1) say non-commercial; The maintainers asked SEPA in writing, so `RAIN_SOURCES` keeps `commercialUse:
  * "pending"` until the answer is in. Core only, for the self-hoster.

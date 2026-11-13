@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * The "How much" text (02h): the stop point is the instruction, the amount is secondary and counted in
+ * The "How much" text: the stop point is the instruction, the amount is secondary and counted in
  * the user's own container. The engine supplies a rounded volume; this module only words it. Precise mode
  * adds an ml figure, labelled "estimate" until the amount rests on the user's own measurement.
  * Shared by the core web UI and the Stories app: every function takes the `Translate` to word it with.
@@ -38,7 +38,7 @@ export const DEFAULT_AMOUNT_PREFS: AmountPrefs = {
   wording: "uk",
 };
 
-/** Settings fields to preferences, with the defaults (02h: mug, qualitative, UK wording). */
+/** Settings fields to preferences, with the defaults (mug, qualitative, UK wording). */
 export function amountPrefs(
   s: Partial<Pick<Settings, "measure" | "amountMode" | "wording">>,
 ): AmountPrefs {
@@ -57,7 +57,7 @@ const CONTAINER_ML: Record<Exclude<Measure, "none">, number> = {
   cup: 237,
 };
 
-/** A hole-less pot gets about this share of the normal amount (02h section 6; guess). */
+/** A hole-less pot gets about this share of the normal amount (guess). */
 const NO_HOLE_SHARE = 0.4;
 /** More than this many containers is too much to pour by count: say the stop point only. */
 const MAX_CONTAINERS = 3;

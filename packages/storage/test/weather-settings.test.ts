@@ -14,8 +14,8 @@ describe("weather settings", () => {
   });
 
   it("setWeather rounds the home point to 2 decimals", () => {
-    const d = setWeather(base, { enabled: true, lat: 55.953251, lon: -3.188267 });
-    assert.deepEqual(d.settings.weather, { enabled: true, lat: 55.95, lon: -3.19 });
+    const d = setWeather(base, { enabled: true, lat: 51.500729, lon: -0.124625 });
+    assert.deepEqual(d.settings.weather, { enabled: true, lat: 51.5, lon: -0.12 });
   });
 
   it("setWeather keeps the switch without a point, and drops a half point or a point out of range", () => {

@@ -62,9 +62,9 @@ const day = (
 
 describe("Open-Meteo", () => {
   it("asks the forecast API with past_days, not the ERA5 archive, and rounds the point to 2 decimals", () => {
-    const url = openMeteoUrl({ lat: 55.94137, lon: -3.174408 }, 3, 3);
+    const url = openMeteoUrl({ lat: 51.500729, lon: -0.124625 }, 3, 3);
     assert.match(url, /^https:\/\/api\.open-meteo\.com\/v1\/forecast\?/);
-    assert.match(url, /latitude=55\.94&longitude=-3\.17/);
+    assert.match(url, /latitude=51.5&longitude=-0.12/);
     assert.match(url, /daily=precipitation_sum,precipitation_probability_max/);
     assert.match(url, /past_days=3/);
     assert.match(url, /forecast_days=3/);
@@ -186,7 +186,7 @@ describe("Environment Agency gauges", () => {
   });
 });
 
-describe("combining gauges (02k 11 'Combining')", () => {
+describe("combining gauges", () => {
   const near = (id: string, km: number): GaugeStation => ({
     id,
     label: id,

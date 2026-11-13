@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { QUESTIONS, rankQuestions, type QuestionPlant, type QuestionText } from "../src/index.ts";
 
-// 02m 3.4: Q-SUNHOURS replaces the sun half of Q-GROUND, which then asks soil only.
+// Q-SUNHOURS replaces the sun half of Q-GROUND, which then asks soil only.
 
 const TODAY = "2026-06-10";
 const LOCALES = ["en-GB", "es", "it"] as const;
@@ -20,7 +20,7 @@ const byId = (id: string) => QUESTIONS.find((q) => q.id === id);
 describe("Q-SUNHOURS", () => {
   const q = byId("Q-SUNHOURS");
 
-  it("is a tier B question that sets directSun, with the presets of 02m 3.4", () => {
+  it("is a tier B question that sets directSun", () => {
     assert.ok(q);
     assert.equal(q.tier, "B");
     assert.equal(q.weight, 2);

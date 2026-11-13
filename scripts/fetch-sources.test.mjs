@@ -97,7 +97,7 @@ test("resultLinks: Clemson results are factsheets whose address names the plant,
   assert.deepEqual(got, ["https://hgic.clemson.edu/factsheet/tulips/"]);
 });
 
-test("parseStarterRows reads rows of the 01c table with common names in both languages", () => {
+test("parseStarterRows reads rows of the starter table with common names in both languages", () => {
   const md = [
     "| 87 | Tulip / tulipán | *Tulipa gesneriana* | UK3 UK8 (2) | accepted |",
     "| 90 | Clematis / clemátide | *Clematis (hybrids)* | UK3 ES3 (2) | genus accepted |",

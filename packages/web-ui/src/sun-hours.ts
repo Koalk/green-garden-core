@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * The Direct sun row in add and edit (02m 3.4 and 3.5): hours as chips, presets, exact hours.
+ * The Direct sun row in add and edit: hours as chips, presets, exact hours.
  * The form carries the hours as text in one hidden field: "" unknown, "none" no sun, else "7-11,15-18".
  */
 import { parseSunRanges } from "@green-garden/bulk";

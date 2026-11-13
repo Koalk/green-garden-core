@@ -214,7 +214,7 @@ function track(input: PlanInput, ctx: Context): { tracked: Tracked[]; reminderOn
 }
 
 /**
- * A move (02m 1.3): the last watering stays; the learned adjustment and streak start again (* Lean A), the snooze is cleared and the ideal schedule restarts at the last watering plus the new place's
+ * A move: the last watering stays; the learned adjustment and streak start again, the snooze is cleared and the ideal schedule restarts at the last watering plus the new place's
  * interval. With no watering on record the plant stays due today.
  */
 function moved(cfg: Config, st: State, day: Day, climate: Context["climate"]): State {
@@ -289,7 +289,7 @@ function outdoorEntry(p: PlantInput, care: ResolvedCare, ctx: Context): void {
   });
 }
 
-/** Moved in the last 3 days while a window is open (02m 1.3 item 4). */
+/** Moved in the last 3 days while a window is open. */
 function justMoved(t: Tracked, earliest: Day, ctx: Context): boolean {
   return t.movedOn !== undefined && ctx.today - t.movedOn <= 3 && earliest <= ctx.today;
 }
@@ -469,7 +469,7 @@ export function planDays(input: PlanInput): PlanResult {
   for (let guard = 0; guard < MAX_ITERATIONS; guard += 1) {
     const cands = candidates(tracked, ctx);
     // PROVISIONAL: only windows that close inside the horizon trigger a watering day; later
-    // ones wait for the next plan (02a 5.3 results need this).
+    // ones wait for the next plan (the plan results need this).
     const active = cands.filter((x) => x.latest <= end);
     if (active.length === 0) break;
     const first = Math.min(...active.map((x) => x.latest));
@@ -502,7 +502,7 @@ export function planDays(input: PlanInput): PlanResult {
     }
 
     // PROVISIONAL: no available day inside the urgent windows. They are watered, late and
-    // flagged, on the first available day after them (02a 5.4 only says: flag them). Everything
+    // flagged, on the first available day after them (the spec only says: flag them). Everything
     // whose window has opened by then joins that day. With no such day left in the horizon they
     // are reported unserved.
     let after: Day | undefined;
@@ -576,7 +576,7 @@ function lastFreeBefore(limit: Day, today: Day, avail: Availability): Day | unde
   return undefined;
 }
 
-// PROVISIONAL: pre-leave rule from 02b. Early by no more than the wet tolerance, earlier than
+// PROVISIONAL: pre-leave rule. Early by no more than the wet tolerance, earlier than
 // waiting for the first free day, and not watered within the last third of the interval.
 function wantsPreLeave(x: Candidate, before: Day, after: Day | undefined, ctx: Context): boolean {
   const early = x.earliest - before;
@@ -643,7 +643,7 @@ function planOf(
   };
 }
 
-// PROVISIONAL: outlook from the gaps between waterings (02a 5.4, 01b, 02b). A gap inside the
+// PROVISIONAL: outlook from the gaps between waterings. A gap inside the
 // band is thrive. Past the band: survive up to the dry tolerance past the ideal interval,
 // scrape_by up to 1.5 x the tolerance, decay beyond. Too early by more than the wet tolerance
 // is survive.

@@ -1,7 +1,7 @@
 {
   "name": "multipliers-unclamped",
-  "description": "Start multipliers (02i recommendation 2) for an 18 cm plastic pot in medium light: only the pot size counts, so the product is 1.2 and nothing is clipped.",
-  "why": "02i: pot diameter ratio against a 15 cm reference (exponent 1.0, guess) = 18 / 15 = 1.2; light medium 1.0; plastic 1.0. Product 1.2 is inside 0.6 to 1.6, so factor = raw and the amount factor is 1. All values are guesses (flagged).",
+  "description": "Start multipliers for an 18 cm plastic pot in medium light: only the pot size counts, so the product is 1.2 and nothing is clipped.",
+  "why": "Pot diameter ratio against a 15 cm reference (exponent 1.0, guess) = 18 / 15 = 1.2; light medium 1.0; plastic 1.0. Product 1.2 is inside 0.6 to 1.6, so factor = raw and the amount factor is 1. All values are guesses (flagged).",
   "fn": "startMultipliers",
   "input": { "potDiameterCm": 18, "light": "medium", "potMaterial": "plastic" },
   "expected": {

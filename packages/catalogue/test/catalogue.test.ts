@@ -18,7 +18,7 @@ const loaded = files.map((f) => ({
   json: JSON.parse(readFileSync(new URL(f, dir), "utf8")) as unknown,
 }));
 
-// Research runs (rows 51 to 200, research order of 01c). Each batch of 5 extends this list first (red), then the files.
+// Research runs (rows 51 to 200). Each batch of 5 extends this list first (red), then the files.
 const RESEARCHED = [
   // batch 1a: rows 53, 56, 61, 72, 80
   "pelargonium-x-hortorum",

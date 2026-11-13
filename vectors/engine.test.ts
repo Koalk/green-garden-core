@@ -166,7 +166,7 @@ describe("planning", () => {
       assert.notEqual(d.date, "2026-11-10");
     }
   });
-  it("away days 10 to 16 of the E6 collection flag the plants 02a 5.4 names", () => {
+  it("away days 10 to 16 of the E6 collection flag the plants the plan names", () => {
     const e6: PlantInput[] = [
       { id: "monstera", style: "let_top_dry", intervalDays: 7, lastWatered: "2026-10-30" },
       { id: "pothos", style: "let_top_dry", intervalDays: 8, lastWatered: "2026-10-29" },
@@ -188,13 +188,13 @@ describe("planning", () => {
     });
     for (const d of plan.days) assert.ok(!away.includes(d.date), d.date);
     const flagged = plan.plants.filter((p) => p.outlook.severity > 0).map((p) => p.plantId);
-    // 02a 5.4: Monstera, Pothos, Fern, Peace lily, Calathea (day 13) and Spider, Rubber (day 16).
+    // Flagged: Monstera, Pothos, Fern, Peace lily, Calathea (day 13) and Spider, Rubber (day 16).
     // only plants the stretch pushes past their dry tolerance are flagged now (the others were late but inside it); a gap the
     // away days made inside the tolerance is no warning.
     for (const id of ["fern", "calathea"]) {
       assert.ok(flagged.includes(id), `${id} flagged`);
     }
-    // The 4-day plants are the worst off (02a: "scrape by or worse").
+    // The 4-day plants are the worst off ("scrape by or worse").
     for (const id of ["fern", "calathea"]) {
       const p = plan.plants.find((x) => x.plantId === id);
       assert.ok((p?.outlook.severity ?? 0) >= 2, id);
@@ -488,7 +488,7 @@ describe("amount calibration (C15)", () => {
   });
 });
 
-describe("uncertainty margin (01i section 3)", () => {
+describe("uncertainty margin", () => {
   // Monstera: let_top_dry, 7 days, watered today: window ends 2026-11-11 without a margin (earliest 2026-11-07).
   const base: PlantInput = { ...monstera };
   const later = (extra: Partial<PlantInput>): string =>

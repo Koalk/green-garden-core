@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Environment Agency rainfall API adapter (England, 02k 11). About 1,000 tipping-bucket gauges,
+ * Environment Agency rainfall API adapter (England). About 1,000 tipping-bucket gauges,
  * 15-minute totals in mm, readings kept for about four weeks, Open Government Licence 3.0, no key.
  * Required credit: "This uses Environment Agency rainfall data from the real-time data API (Beta)".
  * Station positions are rounded to a 100 m grid by the service. The real-time API gives raw readings

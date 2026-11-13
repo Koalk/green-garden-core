@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
-/** One row of the defaults table (01i section 3): what we assume for a field and what a better answer buys. */
+/** One row of the defaults table: what we assume for a field and what a better answer buys. */
 export interface DefaultsRow {
-  /** 1 is the biggest care improvement. A judgement (`guess`), except drainage and pot size (02h). */
+  /** 1 is the biggest care improvement. A judgement (`guess`), except drainage and pot size. */
   readonly rank: number;
   readonly field: string;
   /** The value used when nothing is known; `null` means "no value, the plant shows a prompt instead". */

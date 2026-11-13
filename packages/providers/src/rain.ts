@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Putting rain sources together (02k 11 "Combining"): several nearby gauges aggregated by a
+ * Putting rain sources together: several nearby gauges aggregated by a
  * distance-weighted median, a day no gauge fully covers staying unknown (never zero), the gauge replacing
  * the modelled estimate for a day it knows, and the provenance and credit lines kept with every day.
  */

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
-/** Markup of the bulk-add dialog (01i section 8, B3): one function per step. Plain HTML strings, no DOM. */
+/** Markup of the bulk-add dialog: one function per step. Plain HTML strings, no DOM. */
 import {
   assumedMarginDays,
   type AppData,

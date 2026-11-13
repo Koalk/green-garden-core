@@ -1,7 +1,7 @@
 {
   "name": "windows-assumed-margin",
   "description": "Monstera (let_top_dry, 7 days) watered on 2026-11-02 with two assumed fields in ranks 3 to 7 (uncertaintyDays 2), as of the same day.",
-  "why": "01i section 3 and +1 day per assumed field, window end only. Without a margin the window is [2026-11-07, 2026-11-11] (same plant as engine.test.ts); two assumed fields end it on 2026-11-13 and the wording is 'around'. Hand computation.",
+  "why": "+1 day per assumed field, window end only. Without a margin the window is [2026-11-07, 2026-11-11] (same plant as engine.test.ts); two assumed fields end it on 2026-11-13 and the wording is 'around'. Hand computation.",
   "input": {
     "today": "2026-11-02",
     "plants": [

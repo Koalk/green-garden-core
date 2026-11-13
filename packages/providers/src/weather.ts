@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Weather and rain-gauge interfaces (02k 10 and 11). A `WeatherProvider` gives forecast days and
+ * Weather and rain-gauge interfaces. A `WeatherProvider` gives forecast days and
  * modelled recent rain; a `GaugeProvider` gives measured daily totals from stations near a point. Every
  * observation carries its provenance, so the screens can say where a number came from and the licence
  * obligations travel with the data. The engine only ever sees `WeatherDay` rows (`toWeatherDays`).
@@ -13,7 +13,7 @@ export interface GeoPoint {
   readonly lon: number;
 }
 
-/** About 1 km: all a provider needs to pick stations, and nothing exact is kept (02k 11 Risks 14). */
+/** About 1 km: all a provider needs to pick stations, and nothing exact is kept. */
 export function roundPoint(p: GeoPoint): GeoPoint {
   const r = (x: number): number => Math.round(x * 100) / 100;
   return { lat: r(p.lat), lon: r(p.lon) };

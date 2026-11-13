@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * The "How much" text for the web UI (02h). The wording lives in `@green-garden/care-text` (shared
+ * The "How much" text for the web UI. The wording lives in `@green-garden/care-text` (shared
  * with the Stories app); this module binds it to the active locale so call sites stay `amountLines(input, prefs)`.
  */
 import {

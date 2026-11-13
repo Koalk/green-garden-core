@@ -37,7 +37,7 @@ const noPlacement = (p: Plant): Plant =>
   Object.fromEntries(Object.entries(p).filter(([k]) => k !== "placement")) as unknown as Plant;
 const dataWith = (p: Plant): AppData => ({ ...emptyData(), plants: [p] });
 
-describe("move sheet (02m 1.5)", () => {
+describe("move sheet", () => {
   it("offers the opposite place, and nothing for a ground plant", () => {
     assert.equal(moveTarget(plant()), "indoor");
     const indoor = noPlacement(plant());
@@ -135,7 +135,7 @@ describe("saving an edit keeps what the form does not show", () => {
   });
 });
 
-describe("direct sun hours (02m 3.4 and 3.5)", () => {
+describe("direct sun hours", () => {
   it("parses and formats", () => {
     assert.deepEqual(parseRanges("7-11"), [{ from: 7, to: 11 }]);
     assert.deepEqual(parseRanges("none"), []);
@@ -183,7 +183,7 @@ describe("direct sun hours (02m 3.4 and 3.5)", () => {
   });
 });
 
-describe("seasonal cards on Today (02m 1.4)", () => {
+describe("seasonal cards on Today", () => {
   const prompts = [{ plantId: "p1", kind: "bring_in" as const, basis: "forecast" as const }];
   it("a bring-in card has the three buttons and names the plant", () => {
     const html = cardsHtml(prompts, [plant()]);

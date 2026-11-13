@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * AEMET OpenData adapter (Spain, including the islands, 02k 11). Free API key by registration,
+ * AEMET OpenData adapter (Spain, including the islands). Free API key by registration,
  * sent as the `api_key` header; reuse under Ley 18/2015 with the credit "© AEMET". Without a key the
  * adapter is off (`no_key`) and calls nothing. Keep the key on the server (the self-hosted server or a bridge).
  *

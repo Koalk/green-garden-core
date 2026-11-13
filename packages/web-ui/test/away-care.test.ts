@@ -8,7 +8,7 @@ import { awayCare, awayCareHtml, awayStretches, type AwaySuggestion } from "../s
 const STYLES = ["keep_moist", "let_top_dry", "let_fully_dry"] as const;
 const LENGTHS = [1, 3, 4, 7, 10, 14, 20, 28, 40];
 
-describe("away care suggestions (02b)", () => {
+describe("away care suggestions", () => {
   it("never suggests a bath, matting or a reservoir for plants that like to dry out", () => {
     for (const style of ["let_fully_dry", "let_top_dry"] as const)
       for (const days of LENGTHS) {

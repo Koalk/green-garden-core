@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Browser controller for the bulk-add dialog (01i section 8, B3). All rules live in bulk-flow.ts and all
+ * Browser controller for the bulk-add dialog. All rules live in bulk-flow.ts and all
  * markup in bulk-view.ts; this file keeps the state, wires events, loads photos and saves the draft.
  */
 import { CommonsPhotos, type Fetcher } from "@green-garden/providers";

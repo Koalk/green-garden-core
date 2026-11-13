@@ -27,7 +27,7 @@ export interface Space {
   readonly awayDates: readonly string[];
 }
 
-/** Where a plant field's value came from (01i section 7.1). `user` is the only source a rematch never replaces. */
+/** Where a plant field's value came from. `user` is the only source a rematch never replaces. */
 export type FieldSource = "catalogue" | "default" | "user" | "learned";
 
 export const PLACEMENTS = ["indoor", "outdoor_pot", "ground"] as const;
@@ -37,19 +37,19 @@ export const PLANT_SIZES = ["small", "medium", "large"] as const;
 export const SUNS = ["full_sun", "part_shade", "shade"] as const;
 export const GROUND_SOILS = ["sandy", "loam", "clay"] as const;
 export const DRAUGHTS = ["yes", "no"] as const;
-/** Catalogue-sourced care facts for plants outdoors (02k section 4); the engine reads them as they are. */
+/** Catalogue-sourced care facts for plants outdoors; the engine reads them as they are. */
 export const ROOT_DEPTHS = ["shallow", "medium", "deep"] as const;
 export const DROUGHT_TOLERANCES = ["none", "moderate", "high"] as const;
 export const DORMANCIES = ["none", "winter", "summer"] as const;
 export const ESTABLISHMENT_SEASONS = [1, 2, 3] as const;
 
-/** The seven climate classes of the home (02k 8.4): summer water demand and rain pattern. */
+/** The seven climate classes of the home: summer water demand and rain pattern. */
 export const CLIMATES: readonly ClimateClass[] = CLIMATE_CLASSES;
-/** Winter cold of the home on the RHS hardiness scale (02k 8.4); only hardiness warnings read it. */
+/** Winter cold of the home on the RHS hardiness scale; only hardiness warnings read it. */
 export const WINTER_MINS = ["H1c", "H2", "H3", "H4", "H5", "H6"] as const;
 export type WinterMin = (typeof WINTER_MINS)[number];
 
-/** Plant fields that can carry a source: the care facts of the defaults table (01i section 3). */
+/** Plant fields that can carry a source: the care facts of the defaults table. */
 export const SOURCED_FIELDS = [
   "species",
   "intervalDays",
@@ -99,7 +99,7 @@ export interface Plant extends PlantInput {
   readonly roomId?: string;
   readonly potDiameterCm?: number;
   readonly potHeightCm?: number;
-  /** Whether the pot can drain; absent means it has a hole (02h section 6). */
+  /** Whether the pot can drain; absent means it has a hole. */
   /** The user's own water measurement for this plant; beats the room and global ones. */
   readonly calibration?: Calibration;
   readonly drainage?: "hole" | "cachepot" | "no_hole" | "self_watering";
@@ -109,7 +109,7 @@ export interface Plant extends PlantInput {
   /** Where the care values came from, free text (manual entry, fixture, a URL). */
   readonly source?: string;
   /**
-   * Per field, where the value came from (01i section 7.1). A field without an entry counts as `user`
+   * Per field, where the value came from. A field without an entry counts as `user`
    * (the safe direction: a rematch never overwrites it). `light` stands for the room's or the plant's light.
    */
   readonly fieldSources?: { readonly [F in SourcedField]?: FieldSource };
@@ -129,7 +129,7 @@ export interface Plant extends PlantInput {
   readonly draught?: (typeof DRAUGHTS)[number];
   /** Set on plants that were added together from one counted line; absent on every other plant. */
   readonly batch?: PlantBatch;
-  /** True when no catalogue entry matched and the plant runs on the generic profile (01i section 2.3). */
+  /** True when no catalogue entry matched and the plant runs on the generic profile. */
   readonly unmatched?: boolean;
   /** Day the user got the plant; set when it is created, editable as "Had it since". */
   readonly addedOn?: string;
@@ -164,7 +164,7 @@ export interface Room {
   readonly light?: "low" | "medium" | "bright_indirect" | "direct";
   /** Calibration for the plants in this room. */
   readonly calibration?: Calibration;
-  /** When the room's windows get direct sun (02m 3.2); indoor plants in the room use it. [] = none. */
+  /** When the room's windows get direct sun; indoor plants in the room use it. [] = none. */
   readonly directSun?: readonly SunRange[];
   /** The Home Assistant area this room was imported from, kept for sensor mapping later. */
   readonly haAreaId?: string;
@@ -234,7 +234,7 @@ export interface Settings {
   readonly locale?: string;
   /** First day of the week, 0 = Sunday; absent follows the language. */
   readonly weekStart?: number;
-  /** The user's own container for amounts; absent means a mug (02h). */
+  /** The user's own container for amounts; absent means a mug. */
   readonly measure?: "mug" | "glass" | "jug" | "cup" | "none";
   /** Qualitative (halves) or precise (quarters) amounts; absent means qualitative. */
   readonly amountMode?: "qualitative" | "precise";
@@ -246,12 +246,12 @@ export interface Settings {
   readonly reminders?: ReminderSettings;
   /** Rain from the weather sources: off unless chosen. */
   readonly weather?: WeatherSettings;
-  /** "off" switches the "!" and the pushed questions off for every plant; absent means on (01i section 5.4). */
+  /** "off" switches the "!" and the pushed questions off for every plant; absent means on. */
   readonly questions?: "on" | "off";
 }
 
 /**
- * Weather and rain (02k 11): off by default. The home point is rounded to 2 decimals (about 1 km)
+ * Weather and rain: off by default. The home point is rounded to 2 decimals (about 1 km)
  * and is optional: without it only the manual "It rained" works. It leaves the device only to the user's
  * own server, never to the app's makers.
  */
@@ -261,7 +261,7 @@ export interface WeatherSettings {
   readonly lon?: number;
 }
 
-/** Per plant: what the question pacing remembers (01i section 7.2). Ids are question ids such as `Q-MAT`. */
+/** Per plant: what the question pacing remembers. Ids are question ids such as `Q-MAT`. */
 export interface PlantQuestionState {
   /** The day a question was last put to this plant. */
   readonly lastAskedOn?: string;
@@ -295,7 +295,7 @@ export function fieldSource(plant: Pick<Plant, "fieldSources">, field: SourcedFi
   return plant.fieldSources?.[field] ?? "user";
 }
 
-/** Fields whose assumed value widens the care window (ranks 3 to 7 of the defaults table, 01i section 3). */
+/** Fields whose assumed value widens the care window (ranks 3 to 7 of the defaults table). */
 const MARGIN_FIELDS = ["drainage", "lastWatered", "light", "potDiameterCm", "potMaterial"] as const;
 
 /** One day per assumed field in ranks 3 to 7, at most 3. The engine takes this as `uncertaintyDays`. */

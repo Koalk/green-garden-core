@@ -12,8 +12,8 @@ import {
 const lights = ["low", "medium", "bright_indirect", "direct"] as const;
 const materials = ["plastic", "terracotta", "glazed", "fabric", "other"] as const;
 
-describe("start multipliers (02i recommendation 2; every value is a guess)", () => {
-  it("each factor reads as 02i says: bigger pots and dimmer light stretch the interval", () => {
+describe("start multipliers (every value is a guess)", () => {
+  it("each factor reads as the model says: bigger pots and dimmer light stretch the interval", () => {
     assert.equal(startMultipliers({ potDiameterCm: 30 }).potSize, 2);
     assert.equal(startMultipliers({ potDiameterCm: 7.5 }).potSize, 0.5);
     assert.equal(startMultipliers({ light: "low" }).light, 1.6);

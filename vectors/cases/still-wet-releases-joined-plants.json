@@ -1,7 +1,7 @@
 {
   "name": "still-wet-releases-joined-plants",
   "description": "Rule 23: the only plant that set today is snoozed with still wet and nothing was watered, so the plant that only joined today goes back to its own day.",
-  "why": "02c-s06-answers rule 23. Plant a (let_top_dry, I=7, last 10-20) is overdue on 11-02 and sets the day; plant b (last 10-27) only joins, its ideal day is 11-03. a is snoozed today, so nothing sets today any more: the plan has no watering on 11-02, a joins b on 11-03. Hand-checked against the unsnoozed plan (both on 11-02). Already behaved this way from the start; the vector pins it language-neutrally.",
+  "why": "Plant a (let_top_dry, I=7, last 10-20) is overdue on 11-02 and sets the day; plant b (last 10-27) only joins, its ideal day is 11-03. a is snoozed today, so nothing sets today any more: the plan has no watering on 11-02, a joins b on 11-03. Hand-checked against the unsnoozed plan (both on 11-02). Already behaved this way from the start; the vector pins it language-neutrally.",
   "fn": "planDays",
   "input": {
     "today": "2026-11-02",

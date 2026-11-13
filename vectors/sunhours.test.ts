@@ -10,7 +10,7 @@ import {
   type SunRange,
 } from "@green-garden/engine";
 
-// 02m part 3 (clip to daylight, no sun-height weighting). Constants PROVISIONAL.
+// (clip to daylight, no sun-height weighting). Constants PROVISIONAL.
 
 const near = (a: number, b: number, eps = 0.05): void => {
   assert.ok(Math.abs(a - b) <= eps, `${String(a)} is not within ${String(eps)} of ${String(b)}`);
@@ -82,7 +82,7 @@ const pot: PlantInput = {
 
 const env = { hemisphere: "north", latitude: 55, climate: "oceanic_wet" } as const;
 
-describe("hours to the outdoor factor (02m 3.3)", () => {
+describe("hours to the outdoor factor", () => {
   it("a pot with 4 hours in June gets 6 days where the part_shade class gave 7", () => {
     assert.equal(resolveCare(pot, "2026-06-21", env).intervalDays, 7);
     const withHours = { ...pot, directSun: morning };
@@ -151,7 +151,7 @@ describe("hours to the outdoor factor (02m 3.3)", () => {
   });
 });
 
-describe("hours to the indoor light factor (02m 3.3)", () => {
+describe("hours to the indoor light factor", () => {
   it("3 hours pull a bright_indirect window towards direct, saturating at 4 hours", () => {
     const base = startMultipliers({ light: "bright_indirect" }).light;
     assert.equal(base, 0.65);

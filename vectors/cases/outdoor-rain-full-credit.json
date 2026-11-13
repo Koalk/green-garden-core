@@ -1,7 +1,7 @@
 {
   "name": "outdoor-rain-full-credit",
-  "description": "GV-K3 (02k E2): lavender in the ground, establishing, UK loam, full sun. Interval 6; 18 mm of rain on 2026-06-04 is a full credit (15 mm) and moves the window to 06-11 to 06-12.",
-  "why": "Hand computation in 02k section 3.7, example E2 (interval round(7 x 1.0 x 1.0 x 0.85) = 6, band 2 early and late, anchor 06-07 + 6).",
+  "description": "GV-K3: lavender in the ground, establishing, UK loam, full sun. Interval 6; 18 mm of rain on 2026-06-04 is a full credit (15 mm) and moves the window to 06-11 to 06-12.",
+  "why": "Hand computation, example E2 (interval round(7 x 1.0 x 1.0 x 0.85) = 6, band 2 early and late, anchor 06-07 + 6).",
   "input": {
     "today": "2026-06-05",
     "climate": "oceanic_dry",

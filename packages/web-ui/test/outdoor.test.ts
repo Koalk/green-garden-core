@@ -176,7 +176,7 @@ describe("the outdoor card block", () => {
   });
 });
 
-describe("amounts for a bed, in cans and minutes, never ml (02k 1.3)", () => {
+describe("amounts for a bed, in cans and minutes, never ml", () => {
   it("words a ground plant by its root depth", () => {
     const deep = bedAmountWords(plant("a", { placement: "ground", rootDepth: "deep" }));
     assert.ok(deep);

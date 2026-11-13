@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-only
-// "learn more" link harvest, no model (no model, polite delays). For one 01j site: discover its plant pages from
+// "learn more" link harvest, no model (no model, polite delays). For one site: discover its plant pages from
 // sitemaps or index pages, open each page that could name a catalogue entry once, and write the harvest TSV
 // (--out, default .cache/link-harvest/). One request every 3 seconds or slower, a cache outside git, stop at the first
 // HTTP 429 and say where to resume (rerun the same command: cached pages cost nothing).
@@ -27,7 +27,7 @@ const USER_AGENT =
 const never = /(?!)/;
 
 const cp = "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/";
-/** Sites of 01j. `lang` is the page language; `publisher` goes in the catalogue link. */
+/** Sites. `lang` is the page language; `publisher` goes in the catalogue link. */
 export const SITES = {
   consultaplantas: {
     lang: "es",

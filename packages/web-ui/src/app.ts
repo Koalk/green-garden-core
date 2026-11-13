@@ -476,7 +476,7 @@ function plantCard(r: PlantRow, plan: PlanResult): string {
   const { plant: p, overdueDays } = r;
   const words = cardWords(r);
   const lines = amountLines(amountInputFor(data, p), amountPrefs(data.settings));
-  // A plant in a bed is worded in watering cans or minutes with the hose, never ml (02k 1.3).
+  // A plant in a bed is worded in watering cans or minutes with the hose, never ml.
   const amount = bedAmountWords(p) ?? linesText(lines);
   const outdoor = outdoorBlockHtml(plan, data, p, today, { rain: false });
   const resting =

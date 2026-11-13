@@ -1,6 +1,6 @@
 {
   "name": "learning-dry-early",
-  "description": "'Dry early' (the opposite snooze, 02a 5.5): a let_top_dry Monstera (I=7) watered 2026-11-02 is reported dry on 11-06. Window as of 11-06.",
+  "description": "'Dry early' (the opposite snooze): a let_top_dry Monstera (I=7) watered 2026-11-02 is reported dry on 11-06. Window as of 11-06.",
   "why": "PROVISIONAL. The step is 2 days but the shortening is capped at max(1, floor(I/4)) = 1 day, so the adjustment is -1, effective interval 6, band [4,8], anchor 6. The window is not cut off at the day after the log, so it is open today.",
   "input": {
     "today": "2026-11-06",

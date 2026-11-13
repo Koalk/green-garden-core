@@ -89,7 +89,7 @@ alias field.
   nursery page). en-GB aliases need nothing extra.
 - Old entries are unchanged: they already are lists of items per language.
 - For the runs: add the aliases people actually type in es and it as extra items of that language
-  (docs: 01f, "Names per language").
+  .
 
 Tests: `test/matcher.test.ts` runs a table of realistic inputs against the frozen
 `test/fixture-catalogue.ts` (never edit it to follow the real catalogue), a speed test at 2000 entries,

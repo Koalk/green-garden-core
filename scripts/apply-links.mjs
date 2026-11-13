@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // store harvested es/it "learn more" links in catalogue-draft/*.json (no model). Reads every
 // the harvest folder's *.tsv, picks up to 3 links per language per entry (species and synonym matches,
-// pages opened; PROTOCOL item 12 / features/01j) and writes the genus-only pages to a list for review.
+// pages opened) and writes the genus-only pages to a list for review.
 //
 //   node scripts/apply-links.mjs [--ids a,b] [--dir harvest-folder] [--dry]
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -12,7 +12,7 @@ import { genusRows, parseTsv, pickLinks } from "./harvest-links-lib.mjs";
 
 const repo = resolve(fileURLToPath(new URL(".", import.meta.url)), "..");
 
-/** Site order is 01j's ranking within each language; publisher names as the sites style them. */
+/** Site order is the sites' ranking within each language; publisher names as the sites style them. */
 const SITES = [
   { host: "consultaplantas.com", lang: "es", publisher: "Consulta Plantas" },
   { host: "verdeesvida.es", lang: "es", publisher: "Verde es Vida" },

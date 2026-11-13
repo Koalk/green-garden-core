@@ -1,7 +1,7 @@
 {
   "name": "preferred-day-e8-outside-overlap",
-  "description": "02a E8 with Sunday preferred: Sunday 2026-11-08 lies outside both windows, so the preference changes nothing and the later day of the overlap wins.",
-  "why": "02a E8 'the weekend lies outside the overlap and a preference never widens a window'. Sunday is weekday 0.",
+  "description": "E8 with Sunday preferred: Sunday 2026-11-08 lies outside both windows, so the preference changes nothing and the later day of the overlap wins.",
+  "why": "E8 'the weekend lies outside the overlap and a preference never widens a window'. Sunday is weekday 0.",
   "fn": "planDays",
   "input": {
     "today": "2026-11-02",

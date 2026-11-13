@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Weather on the screens (02k 11): the "measured" and "estimated" marks on credited rain with
+ * Weather on the screens: the "measured" and "estimated" marks on credited rain with
  * the station and its distance, the credit lines next to them, the Settings switch with the optional home
  * point, and the "Data sources" block. The engine only ever gets `weatherDays`; nothing here changes a plan.
  */

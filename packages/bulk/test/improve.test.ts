@@ -55,7 +55,7 @@ const assumedPlant = (id: string, extra: Partial<Plant> = {}): Plant =>
     ...extra,
   });
 
-describe("improve list: ordering and content (01i section 6)", () => {
+describe("improve list: ordering and content", () => {
   it("lists every plant with something to improve, ignoring pacing and the busy day", () => {
     const d = dataOf([assumedPlant("a"), assumedPlant("b"), assumedPlant("c"), assumedPlant("d")]);
     const rows = improveRows(d, TODAY);
@@ -127,7 +127,7 @@ describe("improve list: ordering and content (01i section 6)", () => {
   });
 });
 
-describe("the '!' marker and the voluntary run (01i section 5.3)", () => {
+describe("the '!' marker and the voluntary run", () => {
   it("marks a plant that has a voluntary question waiting, never one with nothing ready", () => {
     const ready = assumedPlant("a", { logs: [{ date: "2026-11-01", outcome: "done" }] });
     const quiet = plant("b", {
@@ -292,7 +292,7 @@ describe("answering writes the field with source 'you' and the plan can use it a
   });
 });
 
-describe("snooze and never ask (01i section 5.4)", () => {
+describe("snooze and never ask", () => {
   it("ask me later hides it from the '!' for 14 days but not from the list", () => {
     let d = dataOf([assumedPlant("a", { logs: [{ date: "2026-11-01", outcome: "done" }] })]);
     const first = nextForSitting(d, TODAY, 0);
@@ -319,7 +319,7 @@ describe("snooze and never ask (01i section 5.4)", () => {
   });
 });
 
-describe("plant detail: source chips and editable rows (01i section 6)", () => {
+describe("plant detail: source chips and editable rows", () => {
   it("chips: you, assumed, learned", () => {
     const p = assumedPlant("a", {
       drainage: "hole",

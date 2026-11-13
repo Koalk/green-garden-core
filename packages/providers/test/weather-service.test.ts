@@ -215,8 +215,8 @@ describe("weather service: fetch, cache, notices", () => {
   it("rounds the point before it is used as a cache key", async () => {
     const w = weather();
     const svc = make(w, {});
-    await svc.report({ lat: 55.951, lon: -3.1904 }, TODAY);
-    await svc.report({ lat: 55.9549, lon: -3.1851 }, TODAY);
+    await svc.report({ lat: 51.501, lon: -0.1246 }, TODAY);
+    await svc.report({ lat: 51.504, lon: -0.119 }, TODAY);
     assert.equal(w.calls, 1);
   });
 

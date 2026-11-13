@@ -1,7 +1,7 @@
 {
   "name": "plan-e7-eight-plants-28-days",
-  "description": "02a E7: the E6 collection without Fern and Calathea, 28 days from 2026-11-02: 7 combined days instead of 15.",
-  "why": "02a 5.3 table: E7 naive 15, combined 7, saving 53%, all plants on their ideal count. The day list is not printed for the revised model, so only the summary and counts are pinned.",
+  "description": "E7: the E6 collection without Fern and Calathea, 28 days from 2026-11-02: 7 combined days instead of 15.",
+  "why": "E7: naive 15, combined 7, saving 53%, all plants on their ideal count. The day list is not printed for the revised model, so only the summary and counts are pinned.",
   "fn": "planDays",
   "input": {
     "today": "2026-11-02",

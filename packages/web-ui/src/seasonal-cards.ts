@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * The two seasonal cards on Today (02m 1.4). The engine's `seasonalPrompts` decides which plants get
+ * The two seasonal cards on Today. The engine's `seasonalPrompts` decides which plants get
  * one; this file builds the markup and keeps "Not yet" and "Leave it out" (web app state, in localStorage).
  */
 import {

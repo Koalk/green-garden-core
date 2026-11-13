@@ -1,7 +1,7 @@
 {
   "name": "windows-single-plants",
-  "description": "02a examples E1 to E4 recomputed with the section 5 band and anchor model, as of Monday 2026-11-02 (day 0).",
-  "why": "02a E1 to E4 used the superseded first-draft offsets ([3,5], [11,16], [1,2], [9,14]). With the 5.1 bands intersected with the anchor tolerance (5.2) the windows are Monstera [2,6], Snake [9,18], Fern [1,2], ZZ [7,15]. Hand-computed from the 02a formulas; E3 (Fern) is unchanged.",
+  "description": "Examples E1 to E4 recomputed with the band and anchor model, as of Monday 2026-11-02 (day 0).",
+  "why": "E1 to E4 used the superseded first-draft offsets ([3,5], [11,16], [1,2], [9,14]). With the frequency bands intersected with the anchor tolerance the windows are Monstera [2,6], Snake [9,18], Fern [1,2], ZZ [7,15]. Hand-computed from the band formulas; E3 (Fern) is unchanged.",
   "input": {
     "today": "2026-11-02",
     "plants": [

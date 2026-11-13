@@ -8,7 +8,7 @@ import type {
   WateringStyle,
 } from "./types.ts";
 
-// PROVISIONAL: midpoints of the 02a 4.2 heuristic fractions of soil volume. The fractions
+// PROVISIONAL: midpoints of the heuristic fractions of soil volume. The fractions
 // have no authoritative source and need a measuring-jug check on real pots.
 const FRACTION: Record<WateringStyle, number> = {
   keep_moist: 0.125,
@@ -17,7 +17,7 @@ const FRACTION: Record<WateringStyle, number> = {
 };
 
 /**
- * Approximate watering amount (02a section 4). Pot volume from a tapered-pot frustum:
+ * Approximate watering amount. Pot volume from a tapered-pot frustum:
  * height 0.85 x diameter if not given, bottom diameter 0.7 x top, soil 90% of the volume.
  * Volumes under 100 ml are not shown (noise); no diameter means no volume.
  */
@@ -97,7 +97,7 @@ const HALF_CUP_ML = 120;
  * PROVISIONAL: users see a household measure, not ml. A cup is 240 ml, the
  * volume is rounded to half cups, and big pots fall back to half litres of a measuring jug. The engine
  * returns the unit and count only; the UI words it per locale. The wording waits for and the
- * jug experiment (02d).
+ * jug experiment.
  */
 function householdMeasure(volumeMl: number): HouseholdMeasure {
   const halves = Math.max(1, Math.round(volumeMl / HALF_CUP_ML));

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * The rain sources and what each one's terms allow (02k 10 and 11). `commercialUse` lets the
+ * The rain sources and what each one's terms allow. `commercialUse` lets the
  * Stories row gate on it: `confirmed` (terms read, commercial reuse allowed with attribution), `pending`
  * (terms point both ways, a written answer is awaited) or `no` (free tier for non-commercial use only).
  * `built` says whether an adapter exists yet.

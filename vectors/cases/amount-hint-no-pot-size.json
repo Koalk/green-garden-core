@@ -1,7 +1,7 @@
 {
   "name": "amount-hint-no-pot-size",
   "description": "Watering amount hint without a pot diameter: no volume, qualitative instruction only.",
-  "why": "02a 4.2 display rule (D-05 lean 'both'): show a volume only when the pot diameter is known.",
+  "why": "Display rule: show a volume only when the pot diameter is known.",
   "fn": "wateringHint",
   "input": { "style": "keep_moist" },
   "expected": { "volumeMl": null, "measure": null }

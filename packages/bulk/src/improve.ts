@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * The question side of the web UI as pure view models (01i sections 5 to 7): which plants have
+ * The question side of the web UI as pure view models: which plants have
  * something to improve, who gets a "!", what answering writes, and the rows of the plant detail. The
  * ordering, caps and snooze rules are `@green-garden/questions`; nothing here re-decides them. No XP,
  * no pressure: this is the plain surface, and it works the same with gamification off.
@@ -267,7 +267,7 @@ export function neverAskAboutPlant(data: AppData, plantId: string): AppData {
 /** Sets a plant field and records that the user said so (a rematch never overwrites it). */
 type SunRange = NonNullable<Plant["directSun"]>[number];
 
-/** The presets of Q-SUNHOURS as hour ranges on the local clock (02m 3.4); "not_sure" is not one. */
+/** The presets of Q-SUNHOURS as hour ranges on the local clock; "not_sure" is not one. */
 const SUN_PRESETS: Readonly<Record<string, readonly SunRange[]>> = {
   morning: [{ from: 6, to: 11 }],
   midday: [{ from: 11, to: 15 }],
@@ -561,7 +561,7 @@ export function questionFor(data: AppData, target: string, today: string): Quest
   return p === undefined ? undefined : ranked(data, p, today, "voluntary")[0];
 }
 
-/** A voluntary sitting resets after 30 minutes without an answer (01i section 5.3). */
+/** A voluntary sitting resets after 30 minutes without an answer. */
 export const SITTING_MS = 30 * 60 * 1000;
 
 export function answersThisSitting(count: number, lastAnswerAt: number, now: number): number {

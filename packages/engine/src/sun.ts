@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Direct sun by time of day (02m part 3, option A): the hours of a plant's or room's sun
+ * Direct sun by time of day: the hours of a plant's or room's sun
  * ranges that fall between sunrise and sunset, and the factors those hours give. Pure. Clip only: no
  * weighting by sun height, because the rest-season factor already stands for winter's weaker light.
  * Every constant is `PROVISIONAL`: textbook solar geometry plus guesses for the clock.
@@ -67,7 +67,7 @@ export function directSunHours(
   return hours;
 }
 
-/** Piecewise linear through 0 h, 3 h and 6 h (the garden-book thresholds, 02m source 6). */
+/** Piecewise linear through 0 h, 3 h and 6 h (the garden-book thresholds). */
 function byHours(hours: number, shade: number, part: number, full: number): number {
   const h = Math.max(0, hours);
   if (h <= 3) return shade + ((part - shade) * h) / 3;

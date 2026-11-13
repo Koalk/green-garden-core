@@ -13,8 +13,8 @@ import {
   type Plant,
 } from "../src/index.ts";
 
-// 02m 1.2: `placementHistory` is a plain plant field, so it travels in the export. Additive optional
-// key: the format stays 8 (the parser ignores unknown keys, 01i 7.3).
+// `placementHistory` is a plain plant field, so it travels in the export. Additive optional
+// key: the format stays 8 (the parser ignores unknown keys).
 
 const cal: Plant = {
   id: "cal",

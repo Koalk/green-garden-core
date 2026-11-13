@@ -1,7 +1,7 @@
 {
   "name": "multipliers-clamped-low",
   "description": "A 15 cm pot in direct light wants 0.4 of the catalogue interval; the clamp holds it to 0.6 and the clipped part moves into the amount: 0.6 / 0.4 = 1.5 times the water each time.",
-  "why": "Clamp the product of the start multipliers to 0.6 to 1.6 but do not lose what the clamp removes. The pot would dry 0.4 of the interval; watering every 0.6 instead, each watering has to carry 0.6 / 0.4 of the usual water. Light direct 0.4 (02i), 15 cm 1.0, plastic 1.0. Hand computation.",
+  "why": "Clamp the product of the start multipliers to 0.6 to 1.6 but do not lose what the clamp removes. The pot would dry 0.4 of the interval; watering every 0.6 instead, each watering has to carry 0.6 / 0.4 of the usual water. Light direct 0.4, 15 cm 1.0, plastic 1.0. Hand computation.",
   "fn": "startMultipliers",
   "input": { "potDiameterCm": 15, "light": "direct" },
   "expected": {

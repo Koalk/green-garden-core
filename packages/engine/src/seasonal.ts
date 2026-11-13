@@ -4,7 +4,7 @@ import { formatDate, parseDate, yearOf, type Day } from "./dates.ts";
 import { restWeight } from "./season.ts";
 import type { Hemisphere, PlantInput, WeatherDay } from "./types.ts";
 
-// Seasonal bring-in and put-out cards for tender pot plants (02m section 1.4). Pure: the screens
+// Seasonal bring-in and put-out cards for tender pot plants. Pure: the screens
 // show the cards and the move sheet (`recordMove`) does the moving; nothing here moves a plant.
 
 /**
@@ -24,7 +24,7 @@ const SAFE_MIN_C: Readonly<Record<string, number>> = {
   H7: -20,
 };
 const RANK = ["H1a", "H1b", "H1c", "H2", "H3", "H4", "H5", "H6", "H7"];
-/** Margin above the safe minimum at which a forecast triggers a card (`guess`, 02m 1.4). */
+/** Margin above the safe minimum at which a forecast triggers a card (`guess`). */
 const MARGIN_C = 3;
 /** Safe minimum for a plant the catalogue only tags `tender`: H2, the tender class (`guess`). */
 const TENDER_TAG_MIN_C = 1;

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Bulk add (01i section 8, B3): the four steps as pure state. Type names, match them to the catalogue,
+ * Bulk add: the four steps as pure state. Type names, match them to the catalogue,
  * place each plant, verify and save. Nothing here touches the DOM or storage; web-ui's `bulk-modal.ts` and
  * the Stories app wire it. The catalogue rows always come in as an argument.
  * Adding plants has no XP and no daily cap (D-15).
@@ -32,7 +32,7 @@ export const MAX_PER_LINE = 99;
 export const DEFAULT_POT_CM = Number(
   DEFAULTS_TABLE.find((r) => r.field === "potDiameterCm")?.defaultValue ?? 15,
 );
-/** The interval a plant with no catalogue match runs on (01i section 2.3). */
+/** The interval a plant with no catalogue match runs on. */
 export const GENERIC_INTERVAL_DAYS = 10;
 
 // --- Step 1: parsing ---------------------------------------------------------------------------
@@ -274,7 +274,7 @@ export function retype(state: BulkState, id: string, text: string, matcher: Matc
   return mapRow(state, id, (r) => rowFrom(r.id, input, r.count, matcher(input), r));
 }
 
-/** No match wanted: add it as a generic plant (01i section 2.3). */
+/** No match wanted: add it as a generic plant. */
 export function useGeneric(state: BulkState, id: string): BulkState {
   return mapRow(state, id, (r) => {
     return { ...without(r, "speciesId", "label"), generic: true, confirmed: true };

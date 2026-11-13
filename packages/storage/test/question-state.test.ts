@@ -38,7 +38,7 @@ const data: AppData = {
   },
 };
 
-describe("question state in the export (01i section 7.2)", () => {
+describe("question state in the export", () => {
   it("round-trips question state, the questions setting and the ground/draught fields", () => {
     const back = importData(exportData(data)).data;
     assert.deepEqual(back.questionState, data.questionState);

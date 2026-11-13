@@ -9,7 +9,7 @@ import {
   type WeatherDay,
 } from "@green-garden/engine";
 
-// 02k 3.3 and 10.0: rain credit from several sources for the same day. Precedence is manual
+// rain credit from several sources for the same day. Precedence is manual
 // ("It rained") over measured (a gauge) over modelled (a forecast model's estimate). A later, better
 // observation replaces the earlier credit for that day; the plan is recomputed from what it is given.
 

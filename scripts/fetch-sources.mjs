@@ -67,7 +67,7 @@ async function main() {
   const bad = siteIds.filter((s) => !SOURCES[s]);
   if (bad.length || !(a.rows || a.ids || a.plant)) {
     console.error(
-      `usage: --rows <01c rows> and/or --ids <entry ids> and/or --plant "Sci|Synonym|common"; --sites from ${Object.keys(SOURCES).join(", ")}${bad.length ? ` (unknown: ${bad})` : ""}`,
+      `usage: --rows <starter rows> and/or --ids <entry ids> and/or --plant "Sci|Synonym|common"; --sites from ${Object.keys(SOURCES).join(", ")}${bad.length ? ` (unknown: ${bad})` : ""}`,
     );
     process.exit(2);
   }

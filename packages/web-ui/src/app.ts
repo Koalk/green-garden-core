@@ -8,11 +8,12 @@
 import { LoadGate, loadBannerHtml, loadBannerState } from "./load-banner.ts";
 import { askHomePending, cancelHomePending, type HomePending } from "./home-pending.ts";
 import { RemoteBackend } from "@green-garden/client";
-import { type LogOutcome, type PlanResult } from "@green-garden/engine";
+import { type LogOutcome, type PlanResult, type SunPlace } from "@green-garden/engine";
 import {
   BrowserStore,
   exportData,
   earlierWateringRange,
+  homeLatitude,
   importData,
   logWateredEarlier,
   spaceView,
@@ -52,7 +53,7 @@ import {
   type HomeDraft,
 } from "@green-garden/bulk";
 import { healthTexts } from "./health.ts";
-import { applyMove, moveSheetHtml, moveTarget, undoMove } from "./moves.ts";
+import { applyMove, moveEffectText, moveSheetHtml, moveTarget, undoMove } from "./moves.ts";
 import {
   applyCardChoice,
   cardPrompts,
@@ -60,7 +61,7 @@ import {
   loadCardState,
   saveCardState,
 } from "./seasonal-cards.ts";
-import { formatRanges } from "./sun-hours.ts";
+import { sunTodayText } from "./sun-hours.ts";
 import { homeDialogHtml } from "./home-view.ts";
 import {
   bedAmountWords,
@@ -446,7 +447,10 @@ function earlierFormHtml(p: Plant): string {
 /** The move sheet, when it is open for a plant, and the undo line after a move. */
 function moveBlockHtml(): string {
   const plant = moveFor === undefined ? undefined : data.plants.find((x) => x.id === moveFor);
-  const sheet = plant === undefined ? "" : moveSheetHtml(plant, today, spaceView(data).rooms);
+  const sheet =
+    plant === undefined
+      ? ""
+      : moveSheetHtml(plant, today, spaceView(data).rooms, moveEffectText(data, plant, today));
   const undo =
     undoPlant === undefined
       ? ""
@@ -470,6 +474,17 @@ function healthBlockHtml(p: Plant): string {
     <button type="button" data-action="health-copy" data-id="${esc(p.id)}" aria-label="${esc(t("healthcheck.button"))}: ${who}">${esc(t("healthcheck.button"))}</button>
     <button type="button" data-action="health-search" data-id="${esc(p.id)}" aria-label="${esc(t("healthcheck.search"))}: ${who}">${esc(t("healthcheck.search"))}</button>
     <small>${esc(t("healthcheck.note"))}</small></div>`;
+}
+
+/** Where the home is, for the hours of daylight. */
+function sunPlace(): SunPlace {
+  const s = data.settings;
+  const latitude = homeLatitude(s);
+  return {
+    hemisphere: s.hemisphere,
+    ...(latitude === undefined ? {} : { latitude }),
+    ...(s.country === undefined ? {} : { country: s.country }),
+  };
 }
 
 function plantCard(r: PlantRow, plan: PlanResult): string {
@@ -506,6 +521,7 @@ function plantCard(r: PlantRow, plan: PlanResult): string {
       resting
         ? ""
         : `<p>${esc(words.next)}
+      ${r.justMoved === true ? `<br><small>${esc(t("card.justMoved", { date: p.placementHistory?.at(-1)?.on ?? "" }))}</small>` : ""}
       ${overdueDays > 0 ? `<span class="err badge">${tHtml("card.overdue", { n: overdueDays })}</span>` : ""}${dryNote}</p>`
     }
     <p>${resting ? "" : isDueRow(r, today) ? earlierButtonHtml(p) : `<button data-action="log" data-id="${esc(p.id)}" data-outcome="dry_early" aria-label="${tHtml("card.ariaDryEarly", { name: p.name })}">${esc(t("outcome.dry_early"))}</button>`}
@@ -513,12 +529,12 @@ function plantCard(r: PlantRow, plan: PlanResult): string {
       ${moveButtonHtml(p)}
       <button data-action="delete" data-id="${esc(p.id)}" aria-label="${tHtml("card.ariaDelete", { name: p.name })}">${esc(t("common.delete"))}</button></p>
     ${earlierFor === p.id ? earlierFormHtml(p) : ""}
-    ${moveFor === p.id ? moveSheetHtml(p, today, spaceView(data).rooms) : ""}
+    ${moveFor === p.id ? moveSheetHtml(p, today, spaceView(data).rooms, moveEffectText(data, p, today)) : ""}
     <details${detailOpenFor === p.id ? " open" : ""}><summary>${esc(t("card.details"))}</summary><dl>
       <dt>${esc(t("card.care"))}</dt><dd>${esc(words.care)}
         ${p.restFactor === undefined ? "" : tHtml("card.restFactor", { factor: p.restFactor })}</dd>
       <dt>${esc(t("card.window"))}</dt><dd>${esc(words.window)}</dd>
-      ${p.directSun === undefined ? "" : `<dt>${esc(t("sun.legend"))}</dt><dd>${p.directSun.length === 0 ? esc(t("sun.preset.none")) : esc(formatRanges(p.directSun))}</dd>`}
+      ${p.directSun === undefined ? "" : `<dt>${esc(t("sun.legend"))}</dt><dd>${esc(sunTodayText(p.directSun, today, sunPlace()))}</dd>`}
       <dt>${esc(t("card.howMuch"))}</dt><dd>${esc(amount)}${bedAmountWords(p) === undefined ? `${adjust}${note}` : ""}</dd>
       ${rain}
       <dt>${esc(t("tox.label"))}</dt><dd>${esc(toxicityOfPlant(p, data.settings.household))}</dd>
@@ -1285,6 +1301,10 @@ const plantModal = createPlantModal({
   today: () => today,
   commit: commitPlants,
   askHome,
+  openMove: (id) => {
+    moveFor = id;
+    render();
+  },
 });
 
 const bulkRoot = document.getElementById("bulk-root");

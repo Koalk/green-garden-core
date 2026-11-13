@@ -4,8 +4,8 @@
  * "Bring inside" and "Put outside": the sheet's rules and markup. The move itself is the
  * engine's `recordMove`; this file only checks the date, applies the result to the app data and undoes it.
  */
-import { formatDate, parseDate, recordMove } from "@green-garden/engine";
-import type { AppData, Plant } from "@green-garden/storage";
+import { formatDate, parseDate, placeInterval, recordMove } from "@green-garden/engine";
+import { buildPlanInput, type AppData, type Plant } from "@green-garden/storage";
 import { esc, t } from "./text.ts";
 
 export type MoveTarget = "indoor" | "outdoor_pot";
@@ -14,6 +14,28 @@ export type MoveTarget = "indoor" | "outdoor_pot";
 export function moveTarget(plant: Plant): MoveTarget | undefined {
   if (plant.placement === "ground") return undefined;
   return plant.placement === "outdoor_pot" ? "indoor" : "outdoor_pot";
+}
+
+/** An edit that changes indoors <-> a pot outside: it goes through the move sheet, not a silent flip. */
+export function flipsPlace(old: Plant, edited: Pick<Plant, "placement">): boolean {
+  return (
+    old.placement !== "ground" &&
+    edited.placement !== "ground" &&
+    moveTarget(old) === (edited.placement === "outdoor_pot" ? "outdoor_pot" : "indoor")
+  );
+}
+
+/**
+ * The sheet's "what changes" line. With the engine's interval for the plant now and after the move
+ * (learning restarts, so no adjustment) it says "water every 7 days instead of every 5"; otherwise the general line.
+ */
+export function moveEffectText(data: AppData, plant: Plant, today: string): string {
+  const after = applyMove(data, plant.id, { on: today }, today);
+  const from = placeInterval(buildPlanInput(data, today), plant.id);
+  const to =
+    after === undefined ? undefined : placeInterval(buildPlanInput(after, today), plant.id);
+  if (from === undefined || to === undefined || from === to) return t("move.effect");
+  return t("move.effectInterval", { from, to });
 }
 
 /** The dates the sheet accepts: today by default, never future, never before the previous entry. */
@@ -81,6 +103,7 @@ export function moveSheetHtml(
   plant: Plant,
   today: string,
   rooms: readonly { readonly id: string; readonly name: string }[],
+  effect: string = t("move.effect"),
 ): string {
   const target = moveTarget(plant);
   if (target === undefined) return "";
@@ -101,7 +124,7 @@ export function moveSheetHtml(
     <label>${esc(t("move.date"))}
       <input type="date" name="date" autocomplete="off" required value="${esc(range.max)}" min="${esc(range.min)}" max="${esc(range.max)}"></label>
     ${cover}${room}
-    <p><small>${esc(t("move.effect"))}</small></p>
+    <p><small>${esc(effect)}</small></p>
     <button type="submit">${esc(t("move.submit"))}</button>
     <button type="button" data-action="move-cancel">${esc(t("move.cancel"))}</button></form>`;
 }

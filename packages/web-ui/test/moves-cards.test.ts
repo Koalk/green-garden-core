@@ -6,11 +6,21 @@ import { setLocale } from "@green-garden/i18n";
 import { emptyData, type AppData, type Plant } from "@green-garden/storage";
 import { plantFromFields } from "../src/drafts.ts";
 import { modalHtml } from "../src/modal.ts";
-import { applyMove, moveRange, moveSheetHtml, moveTarget, undoMove } from "../src/moves.ts";
+import {
+  applyMove,
+  flipsPlace,
+  moveEffectText,
+  moveRange,
+  moveSheetHtml,
+  moveTarget,
+  undoMove,
+} from "../src/moves.ts";
+import { plantRows } from "../src/view.ts";
 import { applyCardChoice, cardsHtml, emptyCardState } from "../src/seasonal-cards.ts";
 import {
   formatRanges,
   parseRanges,
+  sunTodayText,
   presetRanges,
   sunRowHtml,
   SUN_PRESETS,
@@ -208,5 +218,54 @@ describe("seasonal cards on Today", () => {
     assert.equal(s.snoozedUntil?.["p1"], "2026-11-16");
     const l = applyCardChoice(s, "p1", "leave", TODAY, "north");
     assert.equal(l.leftOutUntil?.["p1"], "2027-07-01");
+  });
+});
+
+describe("move sheet numbers, sun hours today, edit flip", () => {
+  it("the move sheet quotes the interval before and after, from the engine", () => {
+    // let_top_dry, interval 7, in a pot outside (part_shade x0.7 = 5): bringing it in gives 7.
+    const p = plant({ sun: "part_shade" });
+    assert.equal(
+      moveEffectText(dataWith(p), p, TODAY),
+      "What changes: water every 7 days instead of every 5; learned timing starts again.",
+    );
+  });
+
+  it("with no interval to quote it keeps the general line", () => {
+    const g = plant({ placement: "ground" });
+    assert.match(moveEffectText(dataWith(g), g, TODAY), /rain counts only/);
+  });
+
+  it("the sheet shows the line it is given", () => {
+    const html = moveSheetHtml(plant(), TODAY, [], "Custom line");
+    assert.match(html, /Custom line/);
+  });
+
+  it("an edit flips the place only between indoors and a pot outside", () => {
+    const inPot = plant();
+    const indoor = noPlacement(plant());
+    assert.equal(flipsPlace(inPot, indoor), true);
+    assert.equal(flipsPlace(indoor, inPot), true);
+    assert.equal(flipsPlace(inPot, plant({ name: "Other" })), false);
+    assert.equal(flipsPlace(inPot, plant({ placement: "ground" })), false);
+  });
+
+  it("details say about how many hours of sun today", () => {
+    const text = sunTodayText([{ from: 7, to: 11 }], TODAY, {
+      hemisphere: "north",
+      latitude: 55,
+      country: "GB",
+    });
+    assert.equal(text, "7:00-11:00 (about 3 hours today)");
+    assert.equal(sunTodayText([], TODAY, {}), "Hardly any");
+  });
+
+  it("a card knows it was just moved", () => {
+    const rows = plantRows(
+      { plants: [], days: [] } as never,
+      [{ plantId: "p1", earliest: TODAY, latest: TODAY, overdueDays: 0, justMoved: true }],
+      dataWith(plant()),
+    );
+    assert.equal(rows[0]?.justMoved, true);
   });
 });

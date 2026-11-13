@@ -39,7 +39,7 @@ import {
   placementAfterAsk,
   placementNeedsHome,
 } from "./placement.ts";
-import { applyMove, moveTarget } from "./moves.ts";
+import { flipsPlace } from "./moves.ts";
 import { parseRanges, presetRanges, serialiseRanges, sunRowHtml } from "./sun-hours.ts";
 import { esc, t } from "./text.ts";
 import { SPECIES, type SpeciesRow } from "./pilot-data.ts";
@@ -57,6 +57,8 @@ export interface ModalHost {
   commit(next: AppData, message: string): void;
   /** Opens Q-K0; `done(true)` once the home is saved, `done(false)` on "Not now" or Escape. */
   askHome(done: (answered: boolean) => void): void;
+  /** Opens the move sheet for a plant (an edit that flips indoors and pot outside). */
+  openMove?(plantId: string): void;
 }
 
 const SEARCH_DELAY_MS = 300;
@@ -426,29 +428,19 @@ export function createPlantModal(host: ModalHost): {
       plantFromFields(fields, old),
       selected?.kind === "catalogue" ? selected.row : undefined,
     );
-    // An edit that flips indoors <-> pot outside is a dated move (today), so the history and the
-    // learning restart stay right; the saved fields keep the old place until then.
-    const flips =
-      old !== undefined &&
-      plant.placement !== "ground" &&
-      old.placement !== "ground" &&
-      moveTarget(old) === (plant.placement === "outdoor_pot" ? "outdoor_pot" : "indoor");
-    let next =
+    // An edit that flips indoors <-> pot outside is a dated move: the other fields save now, the place
+    // stays as it was, and the move sheet opens for the date (the history and the learning restart).
+    const flips = old !== undefined && flipsPlace(old, plant);
+    const next =
       old === undefined
         ? addPlant(data, plant, host.today())
         : updatePlant(data, flips ? keepPlace(plant, old) : { ...plant, id: old.id });
-    if (flips) {
-      const moved = applyMove(
-        next,
-        old.id,
-        { on: host.today(), sheltered: plant.sheltered === true },
-        host.today(),
-      );
-      if (moved !== undefined) next = moved;
-    }
-    if (draftId !== undefined) next = deleteDraft(next, draftId);
-    host.commit(next, old === undefined ? t("notice.plantAdded") : t("notice.plantSaved"));
+    host.commit(
+      draftId === undefined ? next : deleteDraft(next, draftId),
+      old === undefined ? t("notice.plantAdded") : t("notice.plantSaved"),
+    );
     close();
+    if (flips) host.openMove?.(plantId ?? "");
   }
 
   function randomise(): void {

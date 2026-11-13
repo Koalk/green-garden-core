@@ -249,6 +249,8 @@ export interface PlantRow {
   readonly overdueDays: number;
   /** The window carries an uncertainty margin: the card says "around every N days" and "about". */
   readonly around: boolean;
+  /** Moved in the last 3 days while a window is open: the card says to look at the soil first. */
+  readonly justMoved?: true;
 }
 
 /**
@@ -272,6 +274,7 @@ export function plantRows(
     latest: string;
     overdueDays: number;
     wording?: Window["wording"];
+    justMoved?: true;
   }[],
   data: AppData,
 ): PlantRow[] {
@@ -286,6 +289,7 @@ export function plantRows(
       window: w === undefined ? undefined : `${w.earliest} to ${w.latest}`,
       overdueDays: w?.overdueDays ?? 0,
       around: w?.wording === "around",
+      ...(w?.justMoved === true ? { justMoved: true as const } : {}),
     };
   });
 }

@@ -43,7 +43,7 @@ export type {
 } from "./seasonal.ts";
 export { directSunHours } from "./sun.ts";
 export type { SunPlace } from "./sun.ts";
-export { computeWindows, planDays } from "./plan.ts";
+export { computeWindows, placeInterval, planDays } from "./plan.ts";
 export type * from "./types.ts";
 
 /** Band (acceptable gap between waterings) for each style and interval. */

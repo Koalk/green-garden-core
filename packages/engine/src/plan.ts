@@ -719,3 +719,24 @@ function outlookOf(t: Tracked, ctx: Context, end: Day, avail: Availability): Out
     reasons: [...reasons].sort(),
   };
 }
+
+/**
+ * The working interval in days of a plant where it is today (its place, the season, the care
+ * facts), without the learned adjustment: what the move sheet quotes before and after a move.
+ * Undefined for an unknown plant, a reminder-only one, or one with no watering interval (rain-fed, resting).
+ */
+export function placeInterval(input: PlanInput, plantId: string): number | undefined {
+  const ctx = context(input);
+  const p = (input.plants ?? []).find((x) => x.id === plantId);
+  if (ctx === undefined || p === undefined || p.reminderOnly === true) return undefined;
+  const story = placementEntries(p).filter((e) => {
+    const d = parseDate(e.on);
+    return d !== undefined && d <= ctx.today;
+  });
+  const here = story.length === 0 ? p : plantOn(p, ctx.today);
+  const care = resolveCare(here, ctx.todayText, ctx.care);
+  if (care.mode !== "interval") return undefined;
+  const cfg = makeConfig(applyCare(here, care), care.creditMm);
+  const fresh = { ...initialState(p, parseDate), adj: 0 };
+  return intervalAt(cfg, fresh, ctx.today, ctx.climate);
+}

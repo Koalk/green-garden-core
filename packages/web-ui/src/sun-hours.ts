@@ -5,7 +5,7 @@
  * The form carries the hours as text in one hidden field: "" unknown, "none" no sun, else "7-11,15-18".
  */
 import { parseSunRanges } from "@green-garden/bulk";
-import type { SunRange } from "@green-garden/engine";
+import { directSunHours, type SunPlace, type SunRange } from "@green-garden/engine";
 import { esc, t } from "./text.ts";
 
 export const SUN_PRESETS = [
@@ -73,4 +73,11 @@ export function sunRowHtml(value: string, hidden = false): string {
       <input type="number" aria-label="${esc(t("sun.to"))}" data-sun="to" min="1" max="24" step="1" autocomplete="off">
       <button type="button" data-action="sun-add">${esc(t("sun.save"))}</button></div>
     <small>${esc(t("sun.hint"))}</small></fieldset>`;
+}
+
+/** "7:00-11:00 (about 4 hours today)", or "Hardly any" for an empty list. */
+export function sunTodayText(ranges: readonly SunRange[], today: string, place: SunPlace): string {
+  if (ranges.length === 0) return t("sun.preset.none");
+  const n = Math.round(directSunHours(ranges, today, place));
+  return `${formatRanges(ranges)} ${t("sun.aboutToday", { n })}`;
 }

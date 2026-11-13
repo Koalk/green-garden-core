@@ -158,6 +158,20 @@ const SETS = {
       ],
     },
   ],
+  // the move sheet with its interval line, and the Plants list with sun hours today in the details.
+  move: [
+    {
+      name: "01-move-sheet",
+      steps: [...tender("today"), "document.querySelector('[data-action=season-move]').click()"],
+    },
+    {
+      name: "02-plants-details",
+      steps: [
+        ...tender("plants"),
+        "document.querySelectorAll('details').forEach((d) => { d.open = true; })",
+      ],
+    },
+  ],
   // "Learn more" (es and en) and "Not sure what it is?" in the add-plant dialog.
   s156: [
     { name: "01-learn-es", viewport: true, steps: learn("es", "dracaena", true) },

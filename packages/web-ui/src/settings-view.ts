@@ -17,6 +17,7 @@ import { homeSettingsHtml } from "./home-view.ts";
 import { NO_FILL } from "./modal.ts";
 import { esc, t, tHtml } from "./text.ts";
 import { preLeaveOn, weekStartOf } from "./view.ts";
+import { serverOnlyHtml } from "./static-mode.ts";
 import { getWeatherState, weatherSettingsHtml } from "./weather-view.ts";
 
 export const PETS = ["cat", "dog", "small_pet"] as const;
@@ -154,7 +155,7 @@ export function settingsHtml(
       ${placeSettings(data)}
       <button type="submit">${esc(t("settings.save"))}</button></form>
     ${homeSettingsHtml(home)}
-    ${weatherSettingsHtml(data, getWeatherState())}
+    ${serverOnlyHtml(weatherSettingsHtml(data, getWeatherState()))}
     <details><summary>${esc(t("settings.measureWater"))}</summary>${calibrationHtml(data)}</details></section>`;
 }
 

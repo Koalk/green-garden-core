@@ -676,5 +676,7 @@
   "loadBanner.unreadable": "I dati salvati non si sono potuti leggere, quindi parti da zero. È stata conservata una copia ({copy}).",
   "loadBanner.overwrite": "Conserva una copia e sovrascrivi",
   "loadBanner.leave": "Lascia stare",
-  "loadBanner.invalid": "{n, plural, one {# pianta} other {# piante}} nei tuoi dati non si sono potute leggere."
+  "loadBanner.invalid": "{n, plural, one {# pianta} other {# piante}} nei tuoi dati non si sono potute leggere.",
+  "preview.label": "Anteprima",
+  "preview.note": "I tuoi dati restano in questo browser. Promemoria, meteo e sincronizzazione richiedono l'app."
 }

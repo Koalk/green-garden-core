@@ -402,7 +402,7 @@ describe("bundled catalogue photos", () => {
 
   it("the species card uses the bundled thumbnail, the stored credit and a full photo at 800 px", () => {
     const h = speciesPanelHtml({ kind: "catalogue", row: bundled }, [bundled], none);
-    assert.match(h, /src="\/catalogue-thumbs\/aloe-vera\.webp"/);
+    assert.match(h, /src="catalogue-thumbs\/aloe-vera\.webp"/);
     assert.match(h, /J\. Doe/);
     assert.match(h, /CC BY-SA 3\.0/);
     assert.match(h, /href="https:\/\/commons\.wikimedia\.org\/wiki\/File:Aloe_vera\.jpg"/);
@@ -411,7 +411,7 @@ describe("bundled catalogue photos", () => {
 
   it("search results show the bundled thumbnail without loading the full photo", () => {
     const h = resultsHtml([{ kind: "catalogue", row: bundled }], none);
-    assert.match(h, /src="\/catalogue-thumbs\/aloe-vera\.webp"/);
+    assert.match(h, /src="catalogue-thumbs\/aloe-vera\.webp"/);
     assert.doesNotMatch(h, /data-full/);
   });
 

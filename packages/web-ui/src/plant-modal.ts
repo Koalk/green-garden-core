@@ -5,6 +5,7 @@
  * rules from drafts.ts, species.ts and names.ts; this file only wires events, the network and the DOM.
  * PROVISIONAL: behaviour is the simplest that works, not a design decision.
  */
+import { isStaticPreview } from "./static-mode.ts";
 import {
   CommonsPhotos,
   openPlantbookDetail,
@@ -389,7 +390,7 @@ export function createPlantModal(host: ModalHost): {
     hits = searchSpecies(text, SPECIES).map((row) => ({ kind: "catalogue", row }));
     drawResults();
     loadPhotos();
-    if (text.trim().length < 2) return;
+    if (text.trim().length < 2 || isStaticPreview()) return;
     timer = window.setTimeout(() => {
       void openPlantbookSearch(text, fetcher).then((found) => {
         if (!session.isCurrent(mine)) return;

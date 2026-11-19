@@ -134,6 +134,7 @@ import {
 } from "./improve.ts";
 import { askEndHtml, askHtml, bangHtml, detailHtml, improveHtml } from "./improve-view.ts";
 import { toIcs } from "./ics.ts";
+import { isStaticPreview, previewBannerHtml, serverOnlyHtml } from "./static-mode.ts";
 import {
   aroundPlants,
   calendarWeeks,
@@ -231,7 +232,7 @@ const notice = createNotice(
 
 // The optional server: when one is chosen, every change is also sent to it. The browser copy stays
 // as the cache, and a stale save is refused by the server rather than overwriting another device.
-let syncConfig = loadSyncConfig(window.localStorage);
+let syncConfig = isStaticPreview() ? undefined : loadSyncConfig(window.localStorage);
 let sync: SyncSession | undefined;
 function startSync(config: SyncConfig | undefined): void {
   syncConfig = config;
@@ -266,7 +267,7 @@ let weatherBusy = false;
  * answer changed. With weather off or no point, the state is cleared and manual rain is all there is.
  */
 function refreshWeather(): void {
-  const point = weatherPoint(data);
+  const point = isStaticPreview() ? undefined : weatherPoint(data);
   if (point === undefined) {
     const had = weatherSignature !== "";
     setWeatherState({});
@@ -671,11 +672,11 @@ function dataSection(): string {
     <form data-form="import"><label>${esc(t("data.import"))}
     <input type="file" name="file" accept="application/json,.json" required></label>
     <button type="submit">${esc(t("data.importButton"))}</button></form>
-    ${syncHtml(syncConfig)}
+    ${serverOnlyHtml(`${syncHtml(syncConfig)}
     ${remindersHtml(data)}
     <h3>${esc(t("ha.heading"))}</h3>
     <p><button data-action="ha-areas">${esc(t("ha.button"))}</button></p>
-    <div id="ha-result" aria-live="polite">${haHtml()}</div></section>`;
+    <div id="ha-result" aria-live="polite">${haHtml()}</div>`)}</section>`;
 }
 
 function panel(plan: ReturnType<typeof makePlan>): string {
@@ -719,6 +720,7 @@ function render(): void {
   const plan = currentPlan();
   app.innerHTML = `
     <header><h1>${esc(t("app.title"))}</h1>
+      ${previewBannerHtml()}
       <p><small>${esc(t("header.note"))}
       <label for="today" style="display:inline">${esc(t("header.todayLabel"))}</label>
       <input id="today" name="simulatedToday" type="date" ${NO_FILL} value="${esc(today)}">

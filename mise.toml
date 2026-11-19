@@ -55,6 +55,16 @@ description = "Headless Chrome layout check of the web UI (card grid, Today besi
 depends = ["install"]
 run = "node scripts/layout-check.mjs"
 
+[tasks.preview-build]
+description = "Build the static preview of the web UI (no server) into dist/static"
+depends = ["install"]
+run = "node scripts/build-static.mjs dist/static"
+
+[tasks.preview-check]
+description = "Headless Chrome check of the static preview at 390 and 1440 px (builds and serves it itself; needs Chrome or Edge), not part of check"
+depends = ["install"]
+run = "node scripts/static-check.mjs"
+
 [tasks.weather-smoke]
 description = "Live smoke test of the rain sources (Open-Meteo, Environment Agency): calls the real services once, not part of check"
 depends = ["install"]

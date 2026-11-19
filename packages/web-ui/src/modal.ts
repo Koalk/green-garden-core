@@ -89,7 +89,7 @@ const photoOf = (
 ): PhotoInfo | undefined => {
   if (r.photo !== undefined) {
     return {
-      thumbUrl: `/catalogue-thumbs/${r.photo.thumbnail}`,
+      thumbUrl: `catalogue-thumbs/${r.photo.thumbnail}`,
       ...(full ? { fullUrl: commonsFileUrl(r.photo.file, PHOTO_SIZES.detail) } : {}),
       pageUrl: r.photo.sourceUrl,
       licence: licenceLabel(r.photo.licence),

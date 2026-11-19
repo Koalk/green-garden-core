@@ -676,5 +676,7 @@
   "loadBanner.unreadable": "No se pudieron leer los datos guardados, así que empiezas de cero. Se conservó una copia ({copy}).",
   "loadBanner.overwrite": "Conservar una copia y sobrescribir",
   "loadBanner.leave": "Dejarlo así",
-  "loadBanner.invalid": "{n, plural, one {# planta} other {# plantas}} de tus datos no se pudieron leer."
+  "loadBanner.invalid": "{n, plural, one {# planta} other {# plantas}} de tus datos no se pudieron leer.",
+  "preview.label": "Vista previa",
+  "preview.note": "Tus datos se quedan en este navegador. Los recordatorios, el tiempo y la sincronización necesitan la app."
 }

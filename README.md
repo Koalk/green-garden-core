@@ -24,8 +24,24 @@ mise install        # once: toolchain
 mise run dev        # web UI on http://localhost:5173 and the home network
 mise run check      # all CI gates
 mise run layout-check # headless Chrome layout check of the web UI (needs Chrome or Edge; CHROME to point at one)
+mise run preview-build # static preview of the web UI in dist/static (see below)
 mise tasks          # list every task
 ```
+
+## Static preview
+
+`node scripts/build-static.mjs [outDir]` (or `mise run preview-build`) builds the web UI as plain files in
+`dist/static`, with no server and no bundler: it strips the TypeScript types, renames `.ts` to `.js` and
+makes every path relative, so any static host can serve it, also under a sub-path. Data stays in the
+browser. A "Preview" label says so; everything that needs a server (rain from the server route, syncing,
+email reminders, Home Assistant, OpenPlantbook search) is hidden. The calendar download (`.ics`) works.
+
+On every push to `main`, once the check is green, the `preview` job in `.github/workflows/check.yml` builds
+it and deploys it to GitHub Pages at `https://<owner>.github.io/<repo>/`. The repository owner has to turn
+Pages on once (Settings > Pages > Source: GitHub Actions); until then the job reports a notice and
+deploys nothing. `scripts/build-static.test.mjs` checks the build output (part of `pnpm check`); `mise run preview-check`
+loads it in headless Chrome at 390 and 1440 px with no console errors and no request to a server route
+(needs Chrome or Edge; `CHROME` points at one), and the `preview` job runs it before deploying.
 
 ## Self-hosting
 

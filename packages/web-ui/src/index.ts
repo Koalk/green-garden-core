@@ -17,3 +17,4 @@ export * from "./modal.ts";
 export * from "./notice.ts";
 export * from "./load-banner.ts";
 export * from "./sync.ts";
+export * from "./static-mode.ts";

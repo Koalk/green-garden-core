@@ -678,5 +678,7 @@
   "loadBanner.unreadable": "The saved data could not be read, so you are starting empty. A copy of it was kept ({copy}).",
   "loadBanner.overwrite": "Keep a copy and overwrite",
   "loadBanner.leave": "Leave it",
-  "loadBanner.invalid": "{n, plural, one {# plant} other {# plants}} in your data could not be read."
+  "loadBanner.invalid": "{n, plural, one {# plant} other {# plants}} in your data could not be read.",
+  "preview.label": "Preview",
+  "preview.note": "Your data stays in this browser. Reminders, weather and syncing need the app."
 }

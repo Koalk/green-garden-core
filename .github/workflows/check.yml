@@ -33,3 +33,46 @@ jobs:
           else
             node scripts/check-commit-msg.mjs --push "${{ github.event.before }}" "${{ github.sha }}"
           fi
+
+  # Static preview of the web UI on GitHub Pages (a build with no server; see README). Runs only
+  # for pushes to main, after the check above is green. Until Pages is switched on in the repo
+  # settings (Source: GitHub Actions) the first step fails softly and the rest is skipped.
+  preview:
+    needs: check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Pages is not enabled
+        if: steps.pages.outcome != 'success'
+        run: echo "::notice::GitHub Pages is not on (Settings, Pages, Source GitHub Actions), preview not deployed"
+      - if: steps.pages.outcome == 'success'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - if: steps.pages.outcome == 'success'
+        uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # v5.2.7
+      - if: steps.pages.outcome == 'success'
+        run: pnpm install --frozen-lockfile
+      - if: steps.pages.outcome == 'success'
+        run: node scripts/static-check.mjs
+      - if: steps.pages.outcome == 'success'
+        run: node scripts/build-static.mjs dist/static
+      - if: steps.pages.outcome == 'success'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: dist/static
+      - id: deployment
+        if: steps.pages.outcome == 'success'
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

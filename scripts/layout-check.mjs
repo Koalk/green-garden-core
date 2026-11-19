@@ -5,7 +5,9 @@
 // Against a sample garden of at least six plants it checks:
 //   1440x900: plant cards sit in more than one column, and the content is wider than 60rem;
 //   1100x800: Today's list and the calendar sit side by side;
-//   390x844:  no card's button row has more than two buttons on one line.
+//   390x844:  no card's button row has more than two buttons on one line;
+//   390x844:  Today's calendar days stack (as wide as the calendar, names under the date) and no name breaks mid-word;
+//   1440x900: opening a plant's Edit dialog does not change the page's clientWidth (the scrollbar stays).
 // Exit 1 on any failure.
 import { spawn } from "node:child_process";
 import { existsSync, mkdtempSync } from "node:fs";
@@ -110,6 +112,46 @@ const CHECKS = [
       return [...new Set(out)];
     })()`,
   },
+  {
+    width: 390,
+    height: 844,
+    mobile: true,
+    hash: "today",
+    run: `(() => {
+      const out = [];
+      const cal = document.querySelector('#calendar');
+      if (!cal) return ['no #calendar on Today'];
+      const cw = cal.querySelector('table').getBoundingClientRect().width;
+      const cells = [...cal.querySelectorAll('td')].filter((td) => td.getBoundingClientRect().width > 0 && td.querySelector('div'));
+      if (cells.length === 0) return ['no calendar day with plant names is visible'];
+      for (const td of cells) {
+        const r = td.getBoundingClientRect(), date = td.querySelector('small').getBoundingClientRect();
+        if (r.width < cw - 2) out.push('calendar day is ' + Math.round(r.width) + 'px wide, calendar is ' + Math.round(cw) + 'px (days do not stack)');
+        for (const d of td.querySelectorAll('div')) {
+          const b = d.getBoundingClientRect(), lh = parseFloat(getComputedStyle(d).lineHeight) || 1.5 * parseFloat(getComputedStyle(d).fontSize);
+          if (b.top < date.bottom - 1) out.push('name "' + d.textContent + '" is not under its date');
+          if (b.height > lh * 1.5 && !/\s/.test(d.textContent.trim())) out.push('name "' + d.textContent + '" breaks mid-word');
+        }
+      }
+      return [...new Set(out)];
+    })()`,
+  },
+  {
+    width: 1440,
+    height: 900,
+    mobile: false,
+    hash: "plants",
+    run: `(async () => {
+      const before = document.documentElement.clientWidth;
+      const btn = document.querySelector('main [data-action=edit]');
+      if (!btn) return ['no Edit button on Plants'];
+      btn.click();
+      await new Promise((r) => setTimeout(r, 500));
+      if (!document.querySelector('dialog[open]')) return ['Edit did not open a dialog'];
+      const after = document.documentElement.clientWidth;
+      return after === before ? [] : ['clientWidth went from ' + before + ' to ' + after + ' when Edit opened'];
+    })()`,
+  },
 ];
 
 const port = 9300 + Math.floor(Math.random() * 500);
@@ -118,7 +160,6 @@ const proc = spawn(chrome, [
   `--remote-debugging-port=${port}`,
   `--user-data-dir=${mkdtempSync(join(tmpdir(), "gg-layout-"))}`,
   "--no-first-run",
-  "--hide-scrollbars",
   "about:blank",
 ]);
 let wsUrl;

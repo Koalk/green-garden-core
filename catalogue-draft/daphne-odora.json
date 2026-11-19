@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-daphne-odora",
+      "title": "NC State Plant Toolbox: Daphne odora",
+      "url": "https://plants.ces.ncsu.edu/plants/daphne-odora/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-daphne-odora",
+      "title": "Missouri Botanical Garden Plant Finder: Daphne odora",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=292288&isprofile=0&basic=daphne%20odora",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-daphne-odora",
+      "title": "RHS Plant Profile: Daphne odora",
+      "url": "https://www.rhs.org.uk/plants/31151/daphne-odora/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "daphne-odora",
+      "taxon": { "scientificName": "Daphne odora" },
+      "names": {
+        "common": [
+          { "lang": "en-GB", "name": "Winter daphne", "primary": true },
+          { "lang": "en-GB", "name": "Daphne" },
+          { "lang": "en-GB", "name": "Fragrant daphne" },
+          { "lang": "en-GB", "name": "Japanese daphne" },
+          {
+            "lang": "es",
+            "name": "Dafne",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "es", "name": "Dafne de invierno", "translation": { "status": "machine" } },
+          {
+            "lang": "it",
+            "name": "Dafne",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "it", "name": "Dafne odorosa", "translation": { "status": "machine" } }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": { "value": null, "source": null, "confidence": "unknown" },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": { "value": null, "source": null, "confidence": "unknown", "unit": "C" },
+        "humidityPercent": { "value": null, "source": null, "confidence": "unknown", "unit": "%" },
+        "rootDepthClass": { "value": null, "source": null, "confidence": "unknown" },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-daphne-odora",
+          "corroboratedBy": ["rhs-daphne-odora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-daphne-odora",
+          "corroboratedBy": ["mbg-daphne-odora", "rhs-daphne-odora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost lightly moist with sharp drainage; wet feet kill it faster than a dry spell."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-daphne-odora",
+          "corroboratedBy": ["mbg-daphne-odora", "rhs-daphne-odora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": { "height": 150, "spread": 150 },
+          "source": "rhs-daphne-odora",
+          "corroboratedBy": ["ncsu-daphne-odora", "mbg-daphne-odora"],
+          "confidence": "from_knowledge_verify",
+          "unit": "cm"
+        },
+        "growthRate": { "value": null, "source": null, "confidence": "unknown" },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "ncsu-daphne-odora",
+          "corroboratedBy": ["mbg-daphne-odora", "rhs-daphne-odora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-daphne-odora",
+          "corroboratedBy": ["rhs-daphne-odora"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "mbg-daphne-odora",
+          "confidence": "from_knowledge_verify"
+        },
+        "dormancy": {
+          "value": "none",
+          "source": "ncsu-daphne-odora",
+          "corroboratedBy": ["rhs-daphne-odora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "mbg-daphne-odora",
+          "corroboratedBy": ["ncsu-daphne-odora", "rhs-daphne-odora"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "mbg-daphne-odora",
+          "corroboratedBy": ["ncsu-daphne-odora", "rhs-daphne-odora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": { "value": "H4", "source": "rhs-daphne-odora", "confidence": "checked" },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Mulch in spring to keep the roots cool, water in long dry spells and leave it undisturbed; it resents being moved."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["mezerein"],
+        "exposures": [
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": [],
+            "source": "ncsu-daphne-odora",
+            "corroboratedBy": ["rhs-daphne-odora"],
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": [],
+            "source": "ncsu-daphne-odora",
+            "corroboratedBy": ["rhs-daphne-odora"],
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 2,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-daphne-odora",
+            "corroboratedBy": ["rhs-daphne-odora"],
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": [],
+            "source": "rhs-daphne-odora",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": [],
+            "source": "rhs-daphne-odora",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-daphne-odora", "rhs-daphne-odora"],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": ["ground", "outdoor_pot", "flowering", "part_shade", "scented", "toxic"]
+      },
+      "provenance": {
+        "notes": "Row 99, winter daphne. Care: NC State, Missouri BG and RHS agree on part shade to sun, moist but sharply drained soil, shelter and a short, fussy life (NC State: often only 3 or 4 years; Missouri BG: dies suddenly for no clear reason). Conflict on watering: NC State says it can dry out between waterings, Missouri BG says do not let the soil dry out; the dry-top style is kept with a guess interval. Size: RHS 1 to 1.5 m, NC State 3 to 6.5 ft by 2 to 4 ft, Missouri BG 3 to 4 ft; 150 by 150 cm is the RHS upper figure. Hardiness H4 is the RHS rating (Missouri BG: hardy to about -12 C, zone 7). Growth rate not stated, left unknown. Toxicity: NC State grades poison severity high, symptoms unknown, suspected principle mezerein, and notes contact dermatitis; RHS: toxic if eaten, skin irritant, toxic to pets. Severity 3 for ingestion (people), 2 for skin and 2 for cats and dogs are the agent's mapping; symptoms are left empty because no source lists them. No ASPCA page was found for it. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/daphne-odora/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=292288&isprofile=0&basic=daphne%20odora",
+        "https://www.rhs.org.uk/plants/31151/daphne-odora/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Spurge laurel and other daphnes",
+          "tell": "Many species are sold as daphne; D. odora is the evergreen with pink-white scented winter flowers. Treat every daphne as toxic."
+        }
+      ],
+      "lookAlikeNote": "RHS: toxic if eaten and a skin irritant; wear gloves when handling. Toxic to pets.",
+      "photos": [],
+      "links": []
+    }
+  ]
+}

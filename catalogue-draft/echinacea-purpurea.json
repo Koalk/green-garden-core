@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-04",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-echinacea-purpurea",
+      "title": "RHS Plant Profile: Echinacea purpurea (purple coneflower)",
+      "url": "https://www.rhs.org.uk/plants/41568/echinacea-purpurea/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-echinacea-genus-guide",
+      "title": "RHS Genus Guide: Echinacea (coneflower)",
+      "url": "https://www.rhs.org.uk/plants/echinacea",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-echinacea-purpurea",
+      "title": "NC State Plant Toolbox: Echinacea purpurea",
+      "url": "https://plants.ces.ncsu.edu/plants/echinacea-purpurea/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-04",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "echinacea-purpurea",
+      "taxon": {
+        "scientificName": "Echinacea purpurea"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Purple coneflower",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Coneflower"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Echinacea"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Eastern purple coneflower"
+          },
+          {
+            "lang": "es",
+            "name": "Equinácea",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Echinacea",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Equinacea",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Echinacea",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Rudbeckia purpurea",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Rudbeckia purpurea"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "rhs-echinacea-purpurea",
+          "confidence": "checked"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-echinacea-purpurea",
+          "corroboratedBy": ["rhs-echinacea-purpurea", "rhs-echinacea-genus-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Let the top of the compost dry between waterings; coneflowers cope with a dry spell better than wet feet."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-echinacea-purpurea",
+          "corroboratedBy": ["rhs-echinacea-genus-guide", "ncsu-echinacea-purpurea"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 120,
+            "spread": 50
+          },
+          "unit": "cm",
+          "source": "rhs-echinacea-purpurea",
+          "corroboratedBy": ["ncsu-echinacea-purpurea"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-echinacea-purpurea",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "author",
+          "confidence": "guess"
+        },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-echinacea-purpurea",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-echinacea-purpurea",
+          "corroboratedBy": ["rhs-echinacea-purpurea"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "ncsu-echinacea-purpurea",
+          "corroboratedBy": ["rhs-echinacea-genus-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "rhs-echinacea-genus-guide",
+          "corroboratedBy": ["rhs-echinacea-purpurea", "ncsu-echinacea-purpurea"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-echinacea-purpurea",
+          "corroboratedBy": ["rhs-echinacea-genus-guide", "ncsu-echinacea-purpurea"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants until they settle in; once established coneflowers tolerate dry soil, but they rot on wet, heavy ground."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": []
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "hardy"]
+      },
+      "provenance": {
+        "notes": "Row 78. Toxicity: no fetched page gives any. The ASPCA URL tried returned the plant-list index with no echinacea entry (not a confirmed absence); RHS and NC State name no toxicity (NC State only says the herbaceous parts may be steeped as a tea). Toxicity stays unknown (pets unknown). Hardiness: RHS H5. Growth: NC State 'Rapid', mapped to fast. Habit: RHS 'an upright perennial'. Drought: NC State 'drought tolerant once established', RHS genus guide 'tolerating dry soil'; high is the agent's mapping. Watering style let_top_dry and 7 days are the agent's mapping and a guess (RHS well-drained, NC State moist to occasionally dry). Size: RHS 1 to 1.5 m tall by up to 0.5 m wide, NC State 3 to 4 ft by 1 to 2 ft; 120 by 50 cm is the agent's pick. The trade hybrids in the starter-list row are less hardy than the species; these pages are about the species. Placement is from the starter-list row, not a source. Missouri Botanical Garden failed twice (certificate error). Fetched through a summarising fetch: wording not checked against the raw pages. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/41568/echinacea-purpurea/details",
+        "https://www.rhs.org.uk/plants/echinacea",
+        "https://plants.ces.ncsu.edu/plants/echinacea-purpurea/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/echinacea"
+      ],
+      "lookAlikes": [],
+      "lookAlikeNote": "NC State lists Echinacea angustifolia, E. laevigata, E. pallida, E. tennesseensis, 'Tomato Soup', Rudbeckia fulgida, Rudbeckia hirta and Zinnia peruviana as often confused with it, without saying how to tell them apart. RHS lists the old names Rudbeckia purpurea and Rudbeckia echinacea purpurea.",
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/310-cuidados-de-la-planta-echinacea-purpurea-o-equinacea-morada",
+          "title": "Echinacea purpurea o Equinácea morada | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

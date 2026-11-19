@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-pachira",
+      "title": "NC State Plant Toolbox: Pachira aquatica",
+      "url": "https://plants.ces.ncsu.edu/plants/pachira-aquatica/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-pachira",
+      "title": "RHS: Pachira aquatica",
+      "url": "https://www.rhs.org.uk/plants/12078/pachira-aquatica/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-money",
+      "title": "Money Tree (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/money-tree",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "pachira-aquatica",
+      "taxon": {
+        "scientificName": "Pachira aquatica"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Money tree",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Guiana chestnut"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-pachira"],
+          "source": "ncsu-pachira",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 8,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix damp but never standing in water; leaves drop if it dries out or sits wet."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-pachira"],
+          "source": "ncsu-pachira",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 18,
+            "max": 24
+          },
+          "unit": "C",
+          "source": "ncsu-pachira",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 150,
+            "spread": 50
+          },
+          "unit": "cm",
+          "source": "rhs-pachira",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-pachira",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "corroboratedBy": ["rhs-pachira"],
+          "source": "ncsu-pachira",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "drooling"],
+            "source": "ncsu-pachira",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-money",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["ncsu-pachira", "aspca-money"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Money plant (luck plant).jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "Al K Drake",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Money_plant_(luck_plant).jpg",
+          "thumbnail": "pachira-aquatica.webp"
+        }
+      ],
+      "photoFile": "Money plant (luck plant).jpg",
+      "tags": {
+        "curated": ["indoor", "braided_trunk"]
+      },
+      "provenance": {
+        "notes": "CONFLICT on cats: the ASPCA lists the plant non-toxic to dogs, cats and horses; NC State flags it as a problem for cats (mild to moderate stomach upset), but ties the concern to the seeds, which houseplants never produce. Kept the higher grade for cats (1) per rule 5; to be decided by a reviewer. The dog entry rests on ASPCA alone. NC State also says the seeds are possibly toxic and carcinogenic for people, not graded. Watering: both pages say keep damp and well-drained, so keep_moist. Size is the RHS pot figure (up to 1.5 m, spread up to 0.5 m); NC State says 6 to 8 ft indoors. Humidity: thrives in humid air, no number."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/pachira-aquatica/",
+        "https://www.rhs.org.uk/plants/12078/pachira-aquatica/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/money-tree"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Chinese money plant (Pilea)",
+          "tell": "Pachira has a braided trunk and 5-leaflet palmate leaves; Pilea has round coin leaves; jade is a succulent"
+        },
+        {
+          "name": "jade plant",
+          "tell": "Pachira has a braided trunk and 5-leaflet palmate leaves; Pilea has round coin leaves; jade is a succulent"
+        },
+        {
+          "name": "Schefflera arboricola",
+          "tell": "Pachira has a braided trunk and 5-leaflet palmate leaves; Pilea has round coin leaves; jade is a succulent"
+        }
+      ],
+      "lookAlikeNote": "Jade, also sold as a money plant, is TOXIC; Pachira is not",
+      "nameIdeas": ["Cash", "Penny Pincher", "Braidy", "Moneybags", "Pachi"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/582-cuidados-de-la-planta-pachira-aquatica-o-paquira-acuatica",
+          "title": "Pachira aquatica o Paquira acuática | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/pachira_3040",
+          "title": "verdeesvida :: Pachira",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

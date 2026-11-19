@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-south-mirror",
+  "description": "Rest-season weight in the southern hemisphere at about 55 S on 2026-04-17: halfway up the ramp, 0.5 (the mirror of 17 October in the north).",
+  "why": "Southern seasons are half a year off: the centre of full rest is 1 July. 1 July minus 17 April is 75 days: weight 0.5. Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2026-04-17", "hemisphere": "south", "latitude": 55 },
+  "expected": { "weight": 0.5 }
+}

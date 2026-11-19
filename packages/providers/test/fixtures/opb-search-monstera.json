@@ -1,0 +1,19 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "pid": "monstera friedrichsthalii",
+      "display_pid": "Monstera friedrichsthalii",
+      "alias": "monstera",
+      "category": "Araceae, Monstera"
+    },
+    {
+      "pid": "monstera deliciosa",
+      "display_pid": "Monstera deliciosa",
+      "alias": "monstera",
+      "category": "Araceae, Monstera"
+    }
+  ]
+}

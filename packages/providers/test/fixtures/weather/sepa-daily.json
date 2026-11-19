@@ -1,0 +1,27 @@
+[
+  {
+    "ts_id": "56623010",
+    "station_name": "Edinburgh RBG (Royal Botanic Garden)",
+    "station_latitude": "55.96662337",
+    "station_longitude": "-3.212310737",
+    "parametertype_name": "Precip",
+    "ts_name": "Day.Total",
+    "ts_unitname": "millimeter",
+    "ts_unitsymbol": "mm",
+    "station_no": "15201",
+    "station_id": "37076",
+    "rows": "9",
+    "columns": "Timestamp,Value,Quality Code",
+    "data": [
+      ["2026-10-28T09:00:00.000Z", 0.0, 254],
+      ["2026-10-29T09:00:00.000Z", 0.0, 254],
+      ["2026-10-30T09:00:00.000Z", 0.0, 254],
+      ["2026-10-31T09:00:00.000Z", 0.0, 254],
+      ["2026-11-01T09:00:00.000Z", 0.0, 254],
+      ["2026-11-02T09:00:00.000Z", 0.0, 254],
+      ["2026-11-03T09:00:00.000Z", 1.4, 254],
+      ["2026-11-04T09:00:00.000Z", 0.2, 254],
+      ["2026-11-05T09:00:00.000Z", 0.0, 254]
+    ]
+  }
+]

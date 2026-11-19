@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "clemson-zz",
+      "title": "ZZ plant indoor care and growing tips",
+      "url": "https://hgic.clemson.edu/factsheet/zz-plant-zamioculcas-zamiifolia-indoor-care-growing-tips-plant-guide/",
+      "publisher": "Clemson HGIC",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "iastate",
+      "title": "Easy low-maintenance houseplants",
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+      "publisher": "Iowa State University Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "umd",
+      "title": "Selecting indoor plants",
+      "url": "https://extension.umd.edu/resource/selecting-indoor-plants",
+      "publisher": "University of Maryland Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-zamioculcas-zamiifolia-water",
+      "title": "Zamioculcas zamiifolia (Plant Finder)",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276468",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-zamioculcas-zamiifolia-water",
+      "title": "ZZ plant (Plant Toolbox)",
+      "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-11",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "zamioculcas-zamiifolia",
+      "taxon": {
+        "scientificName": "Zamioculcas zamiifolia"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "ZZ plant",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["iastate", "umd"],
+          "source": "clemson-zz",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "mbg-zamioculcas-zamiifolia-water",
+          "corroboratedBy": ["ncsu-zamioculcas-zamiifolia-water"],
+          "confidence": "checked"
+        },
+        "restSeasonFactor": {
+          "value": 1.5,
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": 21,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wetToleranceDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Stores water in its rhizomes, so wait until the mix is completely dry."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "clemson-zz",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": null
+          },
+          "unit": "C",
+          "source": "clemson-zz",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 122,
+            "spread": 122
+          },
+          "unit": "cm",
+          "source": "clemson-zz",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "clemson-zz",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "clemson-zz",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "clemson-zz",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "clemson-zz",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["clemson-zz"],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Zz plant.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Philsacor",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zz_plant.jpg",
+          "thumbnail": "zamioculcas-zamiifolia.webp"
+        }
+      ],
+      "photoFile": "Zz plant.jpg",
+      "tags": {
+        "curated": ["indoor", "low_light", "beginner_friendly"]
+      },
+      "provenance": {
+        "notes": "Clemson labels it not pet safe; agent, severity and symptoms are the agent's mapping. Missouri Botanical Garden's ZZ page failed (certificate error) and was not used. Interval: Missouri Botanical Garden 'regularly watered, but allow soils to dry between applications; avoid wet soils'; NC State 'watered routinely but allowed to dry out between waterings', rhizomes store water. No days given; fleshy rhizomes in a 13 cm pot make a fortnight a safe middle, so 14. Pot and season: 13 cm pot, bright indirect light, room temperature, growing season. Dry and wet tolerance days: no source gives days, left as before (from_knowledge_verify)."
+      },
+      "sourcesRead": [
+        "https://hgic.clemson.edu/factsheet/zz-plant-zamioculcas-zamiifolia-indoor-care-growing-tips-plant-guide/",
+        "https://yardandgarden.extension.iastate.edu/how-to/easy-low-maintenance-houseplants",
+        "https://extension.umd.edu/resource/selecting-indoor-plants",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276468",
+        "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Zamia (cardboard palm, a cycad)",
+          "tell": "ZZ has glossy leaflets on a fat stalk from a rhizome; cycads have stiff palm-like fronds"
+        },
+        {
+          "name": "Raven ZZ is the same species",
+          "tell": "ZZ has glossy leaflets on a fat stalk from a rhizome; cycads have stiff palm-like fronds"
+        }
+      ],
+      "lookAlikeNote": "Zamia is a cycad: more toxic",
+      "nameIdeas": ["Zee Zee", "Zazu", "Zizi", "Zanzibar", "Zed"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/818-cuidados-de-la-planta-zamioculcas-zamiifolia-o-zamioculca",
+          "title": "Zamioculcas zamiifolia o Zamioculca | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/zamia--zamioculca_3059",
+          "title": "verdeesvida :: Zamia, Zamioculca",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/piante-appartamento/piante-da-interno/zamioculcas.asp",
+          "title": "Coltivare zamioculcas - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/zamia/zamioculcas.asp",
+          "title": "Zamia - Zamioculcas zamiifolia - zamioculcas - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

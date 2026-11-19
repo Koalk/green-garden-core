@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-thyme",
+      "title": "RHS: How to grow thyme",
+      "url": "https://www.rhs.org.uk/herbs/thyme/grow-your-own",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-thymus",
+      "title": "NC State Plant Toolbox: Thymus (genus)",
+      "url": "https://plants.ces.ncsu.edu/plants/thymus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-thyme",
+      "title": "Thyme (toxic and non-toxic plants list; Thymus vulgaris)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/thyme",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "thymus-vulgaris",
+      "taxon": {
+        "scientificName": "Thymus vulgaris"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Thyme",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Common thyme"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Garden thyme"
+          },
+          {
+            "lang": "es",
+            "name": "Tomillo",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Tomillo común",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Timo",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Timo comune",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "rhs-thyme",
+          "corroboratedBy": ["ncsu-thymus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a pot only when the mix has dried out, a little more in hot dry spells; wet compost, especially in winter, rots the roots."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-thyme",
+          "corroboratedBy": ["ncsu-thymus"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 30,
+            "spread": 30
+          },
+          "unit": "cm",
+          "source": "rhs-thyme",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-thymus",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-thyme",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-thyme",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-thyme",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-thyme"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "herb", "full_sun", "fragrant"]
+      },
+      "provenance": {
+        "notes": "Look-alikes and name clash: many Thymus species; T. serpyllum is the creeping one and T. cilicicus is less hardy (RHS). This entry is common thyme, T. vulgaris. Watering: RHS says rarely needs water except newly planted or in containers in hot dry weather, overwatering and winter damp rot the roots; NC State genus page says intolerant of wet soils and poor drainage. let_fully_dry is the agent's mapping; interval 10 days is a guess. Pots: at least 15 cm wide and 10 cm deep, soil-based compost with up to 25 percent grit. Light: both say full sun. Size: RHS says small mounded shrubs up to 30 cm for T. vulgaris and plant spacing 20 to 30 cm; spread 30 is taken from the spacing, hence from_knowledge_verify. Growth rate slow is the NC State genus reading, applied to the species. Hardiness: RHS most widely sold varieties withstand frost and UK winters; NC State genus page USDA zones 5a to 9b; no temperature stored. Toxicity: ASPCA lists T. vulgaris non-toxic to cats and dogs; the NC State genus page has no pet tags. Severity 0 is our grading. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/herbs/thyme/grow-your-own",
+        "https://plants.ces.ncsu.edu/plants/thymus/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/thyme"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/774-cuidados-de-la-planta-thymus-vulgaris-o-tomillo",
+          "title": "Thymus vulgaris o Tomillo | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/piante/timo.asp",
+          "title": "Timo, Pepolino - Thymus vulgaris - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

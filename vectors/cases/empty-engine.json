@@ -1,0 +1,6 @@
+{
+  "name": "empty-engine",
+  "description": "Stub engine: no plants yields no windows. Placeholder until M1.",
+  "input": { "today": "2026-01-01" },
+  "expected": { "windows": [] }
+}

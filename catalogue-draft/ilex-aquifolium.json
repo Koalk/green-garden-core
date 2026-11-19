@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-ilex-aquifolium",
+      "title": "NC State Plant Toolbox: Ilex aquifolium",
+      "url": "https://plants.ces.ncsu.edu/plants/ilex-aquifolium/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-ilex-aquifolium",
+      "title": "Missouri Botanical Garden Plant Finder: Ilex aquifolium",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276162&isprofile=0&basic=ilex%20aquifolium",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-ilex-aquifolium",
+      "title": "RHS Plant Profile: Ilex aquifolium",
+      "url": "https://www.rhs.org.uk/plants/9087/ilex-aquifolium/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-ilex",
+      "title": "ASPCA toxic and non-toxic plants: Holly (genus Ilex)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/holly",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "ilex-aquifolium",
+      "taxon": {
+        "scientificName": "Ilex aquifolium"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Holly",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "English holly"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Common holly"
+          },
+          {
+            "lang": "en-GB",
+            "name": "European holly"
+          },
+          {
+            "lang": "es",
+            "name": "Acebo",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Acebo común",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Agrifoglio",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Alloro spinoso",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-ilex-aquifolium",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "mbg-ilex-aquifolium",
+          "corroboratedBy": ["rhs-ilex-aquifolium"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a young pot-grown holly when the top of the compost is dry and never let it stand wet; established trees in the ground need nothing extra."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-ilex-aquifolium",
+          "corroboratedBy": ["mbg-ilex-aquifolium", "rhs-ilex-aquifolium"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 1200,
+            "spread": 600
+          },
+          "source": "rhs-ilex-aquifolium",
+          "corroboratedBy": ["ncsu-ilex-aquifolium"],
+          "confidence": "from_knowledge_verify",
+          "unit": "cm"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-ilex-aquifolium",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "rhs-ilex-aquifolium",
+          "corroboratedBy": ["ncsu-ilex-aquifolium", "mbg-ilex-aquifolium"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-ilex-aquifolium",
+          "corroboratedBy": ["rhs-ilex-aquifolium"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dormancy": {
+          "value": "none",
+          "source": "ncsu-ilex-aquifolium",
+          "corroboratedBy": ["rhs-ilex-aquifolium"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "ncsu-ilex-aquifolium",
+          "corroboratedBy": ["mbg-ilex-aquifolium", "rhs-ilex-aquifolium"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "mbg-ilex-aquifolium",
+          "corroboratedBy": ["ncsu-ilex-aquifolium", "rhs-ilex-aquifolium"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H6",
+          "source": "rhs-ilex-aquifolium",
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water young plants in their first dry summers; established holly copes with ordinary weather but dislikes poorly drained soil."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponins"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy"],
+            "source": "aspca-ilex",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy"],
+            "source": "aspca-ilex",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-ilex-aquifolium",
+            "corroboratedBy": ["rhs-ilex-aquifolium"],
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-ilex-aquifolium",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-ilex", "ncsu-ilex-aquifolium", "rhs-ilex-aquifolium"],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": ["ground", "outdoor_pot", "foliage", "berries", "evergreen", "toxic_berries"]
+      },
+      "provenance": {
+        "notes": "Row 98, English holly. Care: NC State, Missouri BG and RHS agree on full sun to part shade, moist but well-drained soil, shelter from cold wind; dioecious, so only female plants carry berries and need a male nearby. Size: RHS above 12 m by 4 to 8 m, NC State 30 to 50 ft by 15 to 25 ft; 1200 by 600 cm is the agent's choice and a hedge or pot plant is kept far smaller. Hardiness H6 is the RHS rating. Missouri BG and NC State say it dislikes hot humid summers (US view) and is invasive on the US west coast; not a UK concern. Toxicity: the ASPCA page cached is the genus page (Ilex opaca, naming English holly as a common name): toxic to cats and dogs, low toxicity of leaves and berries, vomiting, diarrhoea and depression; NC State grades poison severity low but says the fruit is particularly poisonous to children; RHS: fruit ornamental, not to be eaten, wear gloves. Severity 1 for pets and adults and 2 for children are the agent's mapping, the child grade taking the more cautious of the two readings. The ASPCA page is for the genus, not this species. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/ilex-aquifolium/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=276162&isprofile=0&basic=ilex%20aquifolium",
+        "https://www.rhs.org.uk/plants/9087/ilex-aquifolium/details",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/holly"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Japanese holly (Ilex crenata)",
+          "tell": "Small, smooth, spineless leaves; the box look-alike. Not this species."
+        },
+        {
+          "name": "American holly (Ilex opaca)",
+          "tell": "Duller leaves with fewer spines; the species the ASPCA page is written for."
+        }
+      ],
+      "lookAlikeNote": "RHS: the fruit are ornamental and not to be eaten, and gloves are advised when handling. Only female plants fruit.",
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/434-cuidados-de-la-planta-ilex-aquifolium-o-acebo",
+          "title": "Ilex aquifolium o Acebo | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

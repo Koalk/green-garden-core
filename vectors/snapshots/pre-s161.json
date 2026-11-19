@@ -1,0 +1,1652 @@
+{
+  "air-plant-reminder-only": {
+    "windows": [
+      {
+        "plantId": "fern",
+        "taskType": "water",
+        "earliest": "2026-11-03",
+        "latest": "2026-11-04",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": ["tillandsia"],
+    "issues": []
+  },
+  "amount-calibration-global-factor": {
+    "style": "let_top_dry",
+    "volumeMl": 700,
+    "measure": {
+      "unit": "cup",
+      "halves": 6
+    },
+    "calibration": "global",
+    "adjust": null,
+    "provisional": true
+  },
+  "amount-calibration-plant-beats-room": {
+    "style": "let_top_dry",
+    "volumeMl": 500,
+    "measure": {
+      "unit": "cup",
+      "halves": 4
+    },
+    "calibration": "plant",
+    "adjust": null,
+    "provisional": true
+  },
+  "amount-calibration-room-factor": {
+    "style": "let_top_dry",
+    "volumeMl": 200,
+    "measure": {
+      "unit": "cup",
+      "halves": 2
+    },
+    "calibration": "room",
+    "adjust": null,
+    "provisional": true
+  },
+  "amount-hint-15cm-pot": {
+    "style": "let_top_dry",
+    "volumeMl": 350,
+    "measure": {
+      "unit": "cup",
+      "halves": 3
+    },
+    "calibration": null,
+    "adjust": null,
+    "provisional": true
+  },
+  "amount-hint-clamp-less": {
+    "style": "let_top_dry",
+    "volumeMl": 250,
+    "measure": {
+      "unit": "cup",
+      "halves": 2
+    },
+    "calibration": null,
+    "adjust": "less",
+    "provisional": true
+  },
+  "amount-hint-clamp-more": {
+    "style": "let_top_dry",
+    "volumeMl": 500,
+    "measure": {
+      "unit": "cup",
+      "halves": 4
+    },
+    "calibration": null,
+    "adjust": "more",
+    "provisional": true
+  },
+  "amount-hint-no-pot-size": {
+    "style": "keep_moist",
+    "volumeMl": null,
+    "measure": null,
+    "calibration": null,
+    "adjust": null,
+    "provisional": true
+  },
+  "amount-hint-small-succulent-pot": {
+    "style": "let_fully_dry",
+    "volumeMl": null,
+    "measure": null,
+    "calibration": null,
+    "adjust": null,
+    "provisional": true
+  },
+  "amount-hint-user-measure-wins": {
+    "style": "let_top_dry",
+    "volumeMl": 400,
+    "measure": {
+      "unit": "cup",
+      "halves": 3
+    },
+    "calibration": "plant",
+    "adjust": null,
+    "provisional": true
+  },
+  "away-pre-leave-default": {
+    "days": [
+      {
+        "date": "2026-11-02",
+        "plantIds": ["fern"]
+      },
+      {
+        "date": "2026-11-09",
+        "plantIds": ["fern"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "fern",
+        "waterings": [
+          {
+            "date": "2026-11-02",
+            "windowEarliest": "2026-11-03",
+            "windowLatest": "2026-11-04",
+            "inWindow": false,
+            "movedDays": -2,
+            "reason": "pre_leave"
+          },
+          {
+            "date": "2026-11-09",
+            "windowEarliest": "2026-11-05",
+            "windowLatest": "2026-11-06",
+            "inWindow": false,
+            "movedDays": 3,
+            "reason": "away_days"
+          }
+        ],
+        "wateringCount": 2,
+        "idealCount": 2,
+        "outlook": {
+          "level": "scrape_by",
+          "severity": 2,
+          "reasons": ["away_days", "gap_exceeds_band"]
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 2,
+      "wateringDays": 2,
+      "savingPercent": 0
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "away-pre-leave": {
+    "days": [
+      {
+        "date": "2026-11-02",
+        "plantIds": ["fern"]
+      },
+      {
+        "date": "2026-11-09",
+        "plantIds": ["fern"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "fern",
+        "waterings": [
+          {
+            "date": "2026-11-02",
+            "windowEarliest": "2026-11-03",
+            "windowLatest": "2026-11-04",
+            "inWindow": false,
+            "movedDays": -2,
+            "reason": "pre_leave"
+          },
+          {
+            "date": "2026-11-09",
+            "windowEarliest": "2026-11-05",
+            "windowLatest": "2026-11-06",
+            "inWindow": false,
+            "movedDays": 3,
+            "reason": "away_days"
+          }
+        ],
+        "wateringCount": 2,
+        "idealCount": 2,
+        "outlook": {
+          "level": "scrape_by",
+          "severity": 2,
+          "reasons": ["away_days", "gap_exceeds_band"]
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 2,
+      "wateringDays": 2,
+      "savingPercent": 0
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "away-served-before-leaving": {
+    "days": [
+      {
+        "date": "2026-11-02",
+        "plantIds": ["spider"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "spider",
+        "waterings": [
+          {
+            "date": "2026-11-02",
+            "windowEarliest": "2026-11-02",
+            "windowLatest": "2026-11-06",
+            "inWindow": true,
+            "movedDays": -2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 1,
+      "wateringDays": 1,
+      "savingPercent": 0
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "away-window-fully-away": {
+    "days": [
+      {
+        "date": "2026-11-09",
+        "plantIds": ["fern"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "fern",
+        "waterings": [
+          {
+            "date": "2026-11-09",
+            "windowEarliest": "2026-11-03",
+            "windowLatest": "2026-11-04",
+            "inWindow": false,
+            "movedDays": 5,
+            "reason": "away_days"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 2,
+        "outlook": {
+          "level": "decay",
+          "severity": 3,
+          "reasons": ["away_days", "gap_exceeds_band"]
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 2,
+      "wateringDays": 1,
+      "savingPercent": 50
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "bands-02a-5-1": [
+    {
+      "style": "keep_moist",
+      "intervalDays": 4,
+      "earlyDays": 1,
+      "lateDays": 0,
+      "low": 3,
+      "high": 4
+    },
+    {
+      "style": "keep_moist",
+      "intervalDays": 5,
+      "earlyDays": 1,
+      "lateDays": 1,
+      "low": 4,
+      "high": 6
+    },
+    {
+      "style": "let_top_dry",
+      "intervalDays": 7,
+      "earlyDays": 2,
+      "lateDays": 2,
+      "low": 5,
+      "high": 9
+    },
+    {
+      "style": "let_top_dry",
+      "intervalDays": 9,
+      "earlyDays": 2,
+      "lateDays": 2,
+      "low": 7,
+      "high": 11
+    },
+    {
+      "style": "let_fully_dry",
+      "intervalDays": 14,
+      "earlyDays": 1,
+      "lateDays": 5,
+      "low": 13,
+      "high": 19
+    },
+    {
+      "style": "let_fully_dry",
+      "intervalDays": 21,
+      "earlyDays": 2,
+      "lateDays": 7,
+      "low": 19,
+      "high": 28
+    }
+  ],
+  "empty-engine": {
+    "windows": [],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "learning-dry-early": {
+    "windows": [
+      {
+        "plantId": "monstera",
+        "taskType": "water",
+        "earliest": "2026-11-06",
+        "latest": "2026-11-10",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "learning-still-wet-twice": {
+    "windows": [
+      {
+        "plantId": "monstera",
+        "taskType": "water",
+        "earliest": "2026-11-11",
+        "latest": "2026-11-16",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "multipliers-clamped-high": {
+    "potSize": 1.333,
+    "light": 1.6,
+    "material": 1,
+    "raw": 2.133,
+    "factor": 1.6,
+    "clamped": "high",
+    "amountFactor": 0.75,
+    "guess": true
+  },
+  "multipliers-clamped-low": {
+    "potSize": 1,
+    "light": 0.4,
+    "material": 1,
+    "raw": 0.4,
+    "factor": 0.6,
+    "clamped": "low",
+    "amountFactor": 1.5,
+    "guess": true
+  },
+  "multipliers-no-inputs": {
+    "potSize": 1,
+    "light": 1,
+    "material": 1,
+    "raw": 1,
+    "factor": 1,
+    "clamped": null,
+    "amountFactor": 1,
+    "guess": true
+  },
+  "multipliers-unclamped": {
+    "potSize": 1.2,
+    "light": 1,
+    "material": 1,
+    "raw": 1.2,
+    "factor": 1.2,
+    "clamped": null,
+    "amountFactor": 1,
+    "guess": true
+  },
+  "multipliers-windows-clamped-high": {
+    "windows": [
+      {
+        "plantId": "shady",
+        "taskType": "water",
+        "earliest": "2026-11-14",
+        "latest": "2026-11-22",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "multipliers-windows-clamped-low": {
+    "windows": [
+      {
+        "plantId": "sunny",
+        "taskType": "water",
+        "earliest": "2026-11-06",
+        "latest": "2026-11-10",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "multipliers-windows-unclamped": {
+    "windows": [
+      {
+        "plantId": "monstera",
+        "taskType": "water",
+        "earliest": "2026-11-08",
+        "latest": "2026-11-12",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "plan-e6-ten-plants-28-days": {
+    "days": [
+      {
+        "date": "2026-11-03",
+        "plantIds": ["calathea", "fern", "spider"]
+      },
+      {
+        "date": "2026-11-07",
+        "plantIds": ["calathea", "fern", "monstera", "peace-lily", "pothos", "rubber"]
+      },
+      {
+        "date": "2026-11-11",
+        "plantIds": ["calathea", "fern", "jade", "peace-lily", "snake", "spider", "zz"]
+      },
+      {
+        "date": "2026-11-15",
+        "plantIds": ["calathea", "fern", "monstera", "peace-lily", "pothos"]
+      },
+      {
+        "date": "2026-11-18",
+        "plantIds": ["calathea", "rubber", "spider"]
+      },
+      {
+        "date": "2026-11-19",
+        "plantIds": ["fern"]
+      },
+      {
+        "date": "2026-11-21",
+        "plantIds": ["monstera", "peace-lily", "pothos"]
+      },
+      {
+        "date": "2026-11-22",
+        "plantIds": ["calathea"]
+      },
+      {
+        "date": "2026-11-23",
+        "plantIds": ["fern", "spider"]
+      },
+      {
+        "date": "2026-11-26",
+        "plantIds": ["calathea", "jade", "monstera", "peace-lily", "rubber"]
+      },
+      {
+        "date": "2026-11-27",
+        "plantIds": ["fern", "zz"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "calathea",
+        "waterings": [
+          {
+            "date": "2026-11-03",
+            "windowEarliest": "2026-11-02",
+            "windowLatest": "2026-11-03",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-06",
+            "windowLatest": "2026-11-07",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-10",
+            "windowLatest": "2026-11-11",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-15",
+            "windowEarliest": "2026-11-14",
+            "windowLatest": "2026-11-15",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-18",
+            "windowEarliest": "2026-11-18",
+            "windowLatest": "2026-11-19",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-22",
+            "windowEarliest": "2026-11-22",
+            "windowLatest": "2026-11-22",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-26",
+            "windowEarliest": "2026-11-26",
+            "windowLatest": "2026-11-26",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 7,
+        "idealCount": 7,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "fern",
+        "waterings": [
+          {
+            "date": "2026-11-03",
+            "windowEarliest": "2026-11-03",
+            "windowLatest": "2026-11-04",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-07",
+            "windowLatest": "2026-11-07",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-11",
+            "windowLatest": "2026-11-11",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-15",
+            "windowEarliest": "2026-11-15",
+            "windowLatest": "2026-11-15",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-19",
+            "windowEarliest": "2026-11-19",
+            "windowLatest": "2026-11-19",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-23",
+            "windowEarliest": "2026-11-23",
+            "windowLatest": "2026-11-23",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-27",
+            "windowEarliest": "2026-11-27",
+            "windowLatest": "2026-11-27",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 7,
+        "idealCount": 7,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "jade",
+        "waterings": [
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-10",
+            "windowLatest": "2026-11-16",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-26",
+            "windowEarliest": "2026-11-24",
+            "windowLatest": "2026-11-30",
+            "inWindow": true,
+            "movedDays": 1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 2,
+        "idealCount": 2,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "monstera",
+        "waterings": [
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-04",
+            "windowLatest": "2026-11-08",
+            "inWindow": true,
+            "movedDays": 1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-15",
+            "windowEarliest": "2026-11-12",
+            "windowLatest": "2026-11-15",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-21",
+            "windowEarliest": "2026-11-20",
+            "windowLatest": "2026-11-22",
+            "inWindow": true,
+            "movedDays": 1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-26",
+            "windowEarliest": "2026-11-26",
+            "windowLatest": "2026-11-29",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 4,
+        "idealCount": 4,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "peace-lily",
+        "waterings": [
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-05",
+            "windowLatest": "2026-11-07",
+            "inWindow": true,
+            "movedDays": 1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-11",
+            "windowLatest": "2026-11-12",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-15",
+            "windowEarliest": "2026-11-15",
+            "windowLatest": "2026-11-17",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-21",
+            "windowEarliest": "2026-11-20",
+            "windowLatest": "2026-11-21",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-26",
+            "windowEarliest": "2026-11-25",
+            "windowLatest": "2026-11-27",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          }
+        ],
+        "wateringCount": 5,
+        "idealCount": 5,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "pothos",
+        "waterings": [
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-04",
+            "windowLatest": "2026-11-08",
+            "inWindow": true,
+            "movedDays": 1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-15",
+            "windowEarliest": "2026-11-13",
+            "windowLatest": "2026-11-16",
+            "inWindow": true,
+            "movedDays": 1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-21",
+            "windowEarliest": "2026-11-21",
+            "windowLatest": "2026-11-24",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 3,
+        "idealCount": 3,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "rubber",
+        "waterings": [
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-07",
+            "windowLatest": "2026-11-11",
+            "inWindow": true,
+            "movedDays": -2,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-18",
+            "windowEarliest": "2026-11-16",
+            "windowLatest": "2026-11-18",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-26",
+            "windowEarliest": "2026-11-25",
+            "windowLatest": "2026-11-29",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 3,
+        "idealCount": 3,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "snake",
+        "waterings": [
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-11",
+            "windowLatest": "2026-11-20",
+            "inWindow": true,
+            "movedDays": -2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "spider",
+        "waterings": [
+          {
+            "date": "2026-11-03",
+            "windowEarliest": "2026-11-02",
+            "windowLatest": "2026-11-06",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-09",
+            "windowLatest": "2026-11-12",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-18",
+            "windowEarliest": "2026-11-16",
+            "windowLatest": "2026-11-20",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-23",
+            "windowEarliest": "2026-11-23",
+            "windowLatest": "2026-11-27",
+            "inWindow": true,
+            "movedDays": -2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 4,
+        "idealCount": 4,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "zz",
+        "waterings": [
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-09",
+            "windowLatest": "2026-11-17",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-27",
+            "windowEarliest": "2026-11-27",
+            "windowLatest": "2026-12-05",
+            "inWindow": true,
+            "movedDays": -2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 2,
+        "idealCount": 2,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 24,
+      "wateringDays": 11,
+      "savingPercent": 54
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "plan-e7-eight-plants-28-days": {
+    "days": [
+      {
+        "date": "2026-11-06",
+        "plantIds": ["monstera", "peace-lily", "pothos", "spider"]
+      },
+      {
+        "date": "2026-11-11",
+        "plantIds": ["jade", "monstera", "peace-lily", "rubber", "snake", "spider", "zz"]
+      },
+      {
+        "date": "2026-11-16",
+        "plantIds": ["peace-lily", "pothos", "spider"]
+      },
+      {
+        "date": "2026-11-20",
+        "plantIds": ["monstera", "peace-lily", "rubber"]
+      },
+      {
+        "date": "2026-11-24",
+        "plantIds": ["jade", "pothos", "spider"]
+      },
+      {
+        "date": "2026-11-26",
+        "plantIds": ["monstera", "peace-lily"]
+      },
+      {
+        "date": "2026-11-29",
+        "plantIds": ["rubber", "zz"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "jade",
+        "waterings": [
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-10",
+            "windowLatest": "2026-11-16",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-24",
+            "windowEarliest": "2026-11-24",
+            "windowLatest": "2026-11-30",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 2,
+        "idealCount": 2,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "monstera",
+        "waterings": [
+          {
+            "date": "2026-11-06",
+            "windowEarliest": "2026-11-04",
+            "windowLatest": "2026-11-08",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-11",
+            "windowLatest": "2026-11-15",
+            "inWindow": true,
+            "movedDays": -2,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-20",
+            "windowEarliest": "2026-11-18",
+            "windowLatest": "2026-11-20",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-26",
+            "windowEarliest": "2026-11-25",
+            "windowLatest": "2026-11-29",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 4,
+        "idealCount": 4,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "peace-lily",
+        "waterings": [
+          {
+            "date": "2026-11-06",
+            "windowEarliest": "2026-11-05",
+            "windowLatest": "2026-11-07",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-10",
+            "windowLatest": "2026-11-12",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-16",
+            "windowEarliest": "2026-11-15",
+            "windowLatest": "2026-11-17",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-20",
+            "windowEarliest": "2026-11-20",
+            "windowLatest": "2026-11-22",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-26",
+            "windowEarliest": "2026-11-25",
+            "windowLatest": "2026-11-26",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          }
+        ],
+        "wateringCount": 5,
+        "idealCount": 5,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "pothos",
+        "waterings": [
+          {
+            "date": "2026-11-06",
+            "windowEarliest": "2026-11-04",
+            "windowLatest": "2026-11-08",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-16",
+            "windowEarliest": "2026-11-12",
+            "windowLatest": "2026-11-16",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-24",
+            "windowEarliest": "2026-11-22",
+            "windowLatest": "2026-11-24",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 3,
+        "idealCount": 3,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "rubber",
+        "waterings": [
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-07",
+            "windowLatest": "2026-11-11",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-20",
+            "windowEarliest": "2026-11-18",
+            "windowLatest": "2026-11-20",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-29",
+            "windowEarliest": "2026-11-27",
+            "windowLatest": "2026-11-29",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 3,
+        "idealCount": 3,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "snake",
+        "waterings": [
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-11",
+            "windowLatest": "2026-11-20",
+            "inWindow": true,
+            "movedDays": -2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "spider",
+        "waterings": [
+          {
+            "date": "2026-11-06",
+            "windowEarliest": "2026-11-02",
+            "windowLatest": "2026-11-06",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-11",
+            "windowLatest": "2026-11-13",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-16",
+            "windowEarliest": "2026-11-16",
+            "windowLatest": "2026-11-20",
+            "inWindow": true,
+            "movedDays": -2,
+            "reason": "joined_group"
+          },
+          {
+            "date": "2026-11-24",
+            "windowEarliest": "2026-11-23",
+            "windowLatest": "2026-11-25",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 4,
+        "idealCount": 4,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "zz",
+        "waterings": [
+          {
+            "date": "2026-11-11",
+            "windowEarliest": "2026-11-09",
+            "windowLatest": "2026-11-17",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          },
+          {
+            "date": "2026-11-29",
+            "windowEarliest": "2026-11-27",
+            "windowLatest": "2026-12-05",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          }
+        ],
+        "wateringCount": 2,
+        "idealCount": 2,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 15,
+      "wateringDays": 7,
+      "savingPercent": 53
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "preferred-day-e8-no-preference": {
+    "days": [
+      {
+        "date": "2026-11-07",
+        "plantIds": ["a", "b"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "a",
+        "waterings": [
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-03",
+            "windowLatest": "2026-11-07",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "b",
+        "waterings": [
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-04",
+            "windowLatest": "2026-11-08",
+            "inWindow": true,
+            "movedDays": 1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 2,
+      "wateringDays": 1,
+      "savingPercent": 50
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "preferred-day-e8-outside-overlap": {
+    "days": [
+      {
+        "date": "2026-11-07",
+        "plantIds": ["a", "b"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "a",
+        "waterings": [
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-03",
+            "windowLatest": "2026-11-07",
+            "inWindow": true,
+            "movedDays": 2,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "b",
+        "waterings": [
+          {
+            "date": "2026-11-07",
+            "windowEarliest": "2026-11-04",
+            "windowLatest": "2026-11-08",
+            "inWindow": true,
+            "movedDays": 1,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 2,
+      "wateringDays": 1,
+      "savingPercent": 50
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "preferred-day-e8-thursday": {
+    "days": [
+      {
+        "date": "2026-11-05",
+        "plantIds": ["a", "b"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "a",
+        "waterings": [
+          {
+            "date": "2026-11-05",
+            "windowEarliest": "2026-11-03",
+            "windowLatest": "2026-11-07",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      },
+      {
+        "plantId": "b",
+        "waterings": [
+          {
+            "date": "2026-11-05",
+            "windowEarliest": "2026-11-04",
+            "windowLatest": "2026-11-08",
+            "inWindow": true,
+            "movedDays": -1,
+            "reason": "preferred_day"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 2,
+      "wateringDays": 1,
+      "savingPercent": 50
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "season-north-rest": {
+    "windows": [
+      {
+        "plantId": "pothos",
+        "taskType": "water",
+        "earliest": "2026-12-09",
+        "latest": "2026-12-15",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "season-ramp-default-latitude": {
+    "weight": 0.5
+  },
+  "season-ramp-south-december": {
+    "weight": 0
+  },
+  "season-ramp-south-mirror": {
+    "weight": 0.5
+  },
+  "season-ramp-spain-mid": {
+    "weight": 0.5
+  },
+  "season-ramp-spain-october": {
+    "weight": 0
+  },
+  "season-ramp-tropics": {
+    "weight": 0
+  },
+  "season-ramp-uk-full": {
+    "weight": 1
+  },
+  "season-ramp-uk-mid": {
+    "weight": 0.5
+  },
+  "season-ramp-uk-spring": {
+    "weight": 0.5
+  },
+  "season-ramp-uk-summer": {
+    "weight": 0
+  },
+  "season-south-growth": {
+    "windows": [
+      {
+        "plantId": "pothos",
+        "taskType": "water",
+        "earliest": "2026-12-06",
+        "latest": "2026-12-10",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "season-windows-south-ramp": {
+    "windows": [
+      {
+        "plantId": "pothos",
+        "taskType": "water",
+        "earliest": "2026-04-24",
+        "latest": "2026-04-28",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "season-windows-spain-october": {
+    "windows": [
+      {
+        "plantId": "pothos",
+        "taskType": "water",
+        "earliest": "2026-10-22",
+        "latest": "2026-10-26",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "season-windows-uk-ramp": {
+    "windows": [
+      {
+        "plantId": "pothos",
+        "taskType": "water",
+        "earliest": "2026-10-24",
+        "latest": "2026-10-28",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "still-wet-releases-joined-plants": {
+    "days": [
+      {
+        "date": "2026-11-03",
+        "plantIds": ["a", "b"]
+      }
+    ],
+    "plants": [
+      {
+        "plantId": "a",
+        "waterings": [
+          {
+            "date": "2026-11-03",
+            "windowEarliest": "2026-11-03",
+            "windowLatest": "2026-11-03",
+            "inWindow": true,
+            "movedDays": 5,
+            "reason": "joined_group"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "scrape_by",
+          "severity": 2,
+          "reasons": ["gap_exceeds_band"]
+        }
+      },
+      {
+        "plantId": "b",
+        "waterings": [
+          {
+            "date": "2026-11-03",
+            "windowEarliest": "2026-11-02",
+            "windowLatest": "2026-11-05",
+            "inWindow": true,
+            "movedDays": 0,
+            "reason": "on_ideal_day"
+          }
+        ],
+        "wateringCount": 1,
+        "idealCount": 1,
+        "outlook": {
+          "level": "thrive",
+          "severity": 0,
+          "reasons": []
+        }
+      }
+    ],
+    "summary": {
+      "naiveDays": 2,
+      "wateringDays": 1,
+      "savingPercent": 50
+    },
+    "reminderOnly": [],
+    "issues": []
+  },
+  "windows-assumed-margin": {
+    "windows": [
+      {
+        "plantId": "monstera",
+        "taskType": "water",
+        "earliest": "2026-11-07",
+        "latest": "2026-11-13",
+        "overdueDays": 0,
+        "marginDays": 2,
+        "wording": "around"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  },
+  "windows-single-plants": {
+    "windows": [
+      {
+        "plantId": "fern",
+        "taskType": "water",
+        "earliest": "2026-11-03",
+        "latest": "2026-11-04",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      },
+      {
+        "plantId": "monstera",
+        "taskType": "water",
+        "earliest": "2026-11-04",
+        "latest": "2026-11-08",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      },
+      {
+        "plantId": "snake",
+        "taskType": "water",
+        "earliest": "2026-11-11",
+        "latest": "2026-11-20",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      },
+      {
+        "plantId": "zz",
+        "taskType": "water",
+        "earliest": "2026-11-09",
+        "latest": "2026-11-17",
+        "overdueDays": 0,
+        "marginDays": 0,
+        "wording": "exact"
+      }
+    ],
+    "reminderOnly": [],
+    "issues": []
+  }
+}

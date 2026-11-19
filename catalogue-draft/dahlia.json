@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-dahlia",
+      "title": "RHS: How to grow dahlias",
+      "url": "https://www.rhs.org.uk/plants/dahlia/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-dahlia",
+      "title": "NC State Plant Toolbox: Dahlia",
+      "url": "https://plants.ces.ncsu.edu/plants/dahlia/common-name/dahlia/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-dahlia",
+      "title": "Dahlia (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dahlia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dahlia",
+      "taxon": {
+        "scientificName": "Dahlia"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Dahlia",
+            "primary": true
+          },
+          {
+            "lang": "es",
+            "name": "Dalia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Dalia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-dahlia",
+          "corroboratedBy": ["ncsu-dahlia"],
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Dahlias are thirsty and pots dry out fast; water regularly through the season, but go lightly while tubers are just sprouting, because wet compost rots them."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-dahlia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 120,
+            "spread": 90
+          },
+          "unit": "cm",
+          "source": "rhs-dahlia",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "rhs-dahlia",
+          "corroboratedBy": ["ncsu-dahlia"],
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-dahlia",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["polyacetylenes"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "aspca-dahlia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "aspca-dahlia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "cat",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "aspca-dahlia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "aspca-dahlia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-dahlia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-dahlia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-dahlia", "ncsu-dahlia"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": [
+          "outdoor_pot",
+          "ground",
+          "flowering",
+          "full_sun",
+          "tender",
+          "tubers_stored_in_winter"
+        ]
+      },
+      "provenance": {
+        "notes": "Garden hybrids (starter row 60); only bedding types up to 60 cm suit pots (RHS: about 50 cm pot, one standard or up to three small types). Tubers are lifted and stored frost-free in most of the UK and may stay in the ground under mulch in mild areas (RHS, NC State), so the tag tubers_stored_in_winter applies in the UK only. Watering: RHS thirsty plants, container plants need regular watering all season, keep tubers only slightly moist when started; NC State moist, well-drained, plenty of water; interval 2 days is a guess. Light: RHS warm, sheltered, sunny; NC State full sun to partial shade; stored direct. Size: RHS bedding types to 60 cm, most about 120 cm, a few over 200; height 120 is RHS's 'most', spread 90 is the upper end of NC State's 30 to 91 cm, hence from_knowledge_verify. Growth fast (RHS vigorous, NC State rapid). Hardiness: RHS tender, will not survive frost, wait until consistently above 5 C before planting out (a planting rule, not a tolerance); NC State tubers injured below 25 F; no temperature stored. The RHS page was truncated by the fetch after the parts used here. Toxicity: ASPCA toxic to dogs and cats, principle unknown, signs mild gastrointestinal upset and mild dermatitis; NC State rates severity low with problem tags for cats and dogs and phototoxic polyacetylenes, contact dermatitis yes (repeated handling of tubers, leaf contact in sunlight). Vomiting is our mapping of 'mild gastrointestinal'; severity 1 is our grading. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/dahlia/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/dahlia/common-name/dahlia/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dahlia"
+      ],
+      "links": [
+        {
+          "url": "https://www.ass-agir.it/wp-content/uploads/2021/03/Scheda-n.89_Dahlia.pdf",
+          "title": "Dahlia",
+          "publisher": "Ass-Agir",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

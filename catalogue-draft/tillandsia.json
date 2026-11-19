@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-27",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "cornell-air-plants",
+      "title": "Air Plants (Tillandsia), Warren County Master Gardeners",
+      "url": "https://warren.cce.cornell.edu/gardening-landscape/warren-county-master-gardener-articles/air-plants-tillandsia",
+      "publisher": "Cornell Cooperative Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "ifas-air-plants",
+      "title": "Air Plants (Tillandsia)",
+      "url": "https://gardeningsolutions.ifas.ufl.edu/plants/houseplants/air-plants/",
+      "publisher": "UF/IFAS Gardening Solutions",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    },
+    {
+      "id": "psu-tillandsia",
+      "title": "Tillandsias as Houseplants",
+      "url": "https://extension.psu.edu/tillandsias-as-houseplants",
+      "publisher": "Penn State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-27",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "tillandsia",
+      "taxon": {
+        "scientificName": "Tillandsia"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Air plants",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "engineMethod": "reminder_only",
+        "baseIntervalDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Soak or mist, then dry upright within a few hours; never leave water pooled in the leaf base."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ifas-air-plants", "cornell-air-plants"],
+          "source": "psu-tillandsia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": 32
+          },
+          "unit": "C",
+          "source": "psu-tillandsia",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "rosette",
+          "corroboratedBy": ["ifas-air-plants"],
+          "source": "psu-tillandsia",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-10-27"
+      },
+      "photos": [
+        {
+          "file": "Tillandsia en maceta en un patio.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Koffermejia",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tillandsia_en_maceta_en_un_patio.jpg",
+          "thumbnail": "tillandsia.webp"
+        }
+      ],
+      "photoFile": "Tillandsia en maceta en un patio.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Reminder-only plant: Penn State, UF/IFAS and Cornell give a method (mist, rinse or soak weekly) rather than a soil-dry style. Temperature: Penn State nights above 55 F, days 65-90 F; Cornell gives 65-85 F days, 50-65 F nights. No fetched page states toxicity; an ASPCA search found only other bromeliads, so it stays unknown."
+      },
+      "sourcesRead": [
+        "https://warren.cce.cornell.edu/gardening-landscape/warren-county-master-gardener-articles/air-plants-tillandsia",
+        "https://gardeningsolutions.ifas.ufl.edu/plants/houseplants/air-plants/",
+        "https://extension.psu.edu/tillandsias-as-houseplants"
+      ],
+      "links": [
+        {
+          "url": "https://www.piante.it/tillandsia/",
+          "title": "Tillandsia",
+          "publisher": "Piante.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

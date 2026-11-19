@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-guz",
+      "title": "NC State Plant Toolbox: Guzmania",
+      "url": "https://plants.ces.ncsu.edu/plants/guzmania/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-brom",
+      "title": "RHS: How to grow bromeliads",
+      "url": "https://www.rhs.org.uk/plants/bromeliads/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-brom",
+      "title": "Clemson HGIC: Bromeliads",
+      "url": "https://hgic.clemson.edu/factsheet/bromeliads/",
+      "publisher": "Clemson Cooperative Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-mosaic",
+      "title": "Mosaic Vase, Guzmania musaica (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mosaic-vase",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    },
+    {
+      "id": "gubb-houseplants-3l",
+      "title": "Gubb, Blanusa et al.: Can houseplants improve indoor air quality by removing CO2 and increasing relative humidity? (water use of plants in 3-litre pots)",
+      "url": "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf",
+      "publisher": "Air Quality, Atmosphere & Health (copy on greenplantsforgreenbuildings.org)",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-31",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "guzmania",
+      "taxon": {
+        "scientificName": "Guzmania"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Bromeliad",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Guzmania"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-brom"],
+          "source": "clemson-brom",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 13,
+          "unit": "days",
+          "source": "gubb-houseplants-3l",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the central cup topped up with clean water and refresh it now and then; the mix itself only needs a drink once it has dried."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-brom", "ncsu-guz"],
+          "source": "rhs-brom",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 29
+          },
+          "unit": "C",
+          "source": "clemson-brom",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 99,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-guz",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "corroboratedBy": ["clemson-brom"],
+          "source": "ncsu-guz",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "rosette",
+          "corroboratedBy": ["rhs-brom", "clemson-brom"],
+          "source": "ncsu-guz",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-mosaic",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-mosaic",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["aspca-mosaic"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Bromelia (Guzmania lingulata).jpg",
+          "licence": "CC0-1.0",
+          "creator": "Nathaly 1106",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bromelia_(Guzmania_lingulata).jpg",
+          "thumbnail": "guzmania.webp"
+        }
+      ],
+      "photoFile": "Bromelia (Guzmania lingulata).jpg",
+      "tags": {
+        "curated": ["indoor", "epiphytic", "high_humidity", "flowering"]
+      },
+      "provenance": {
+        "notes": "Starter row 38 is the family Bromeliaceae; this entry is for the genus Guzmania, the one the lists name first and the one NC State, RHS and Clemson cover. Other bromeliads (Aechmea, Neoregelia, Vriesea) need their own rows if wanted. Watering is a mapping: all three pages say keep the cup filled and let the mix dry between waterings; the watering tip carries the cup rule, the engine only gets the mix. Light: Clemson says guzmanias prefer moderate light, RHS bright with shade from strong sun, NC State full sun to shade by species; stored bright indirect. Temperature is Clemson's 60 to 85 F; RHS gives a 10 C winter minimum. Toxicity has one source: the ASPCA page for Guzmania musaica (Orange Star, G. lingulata, is also listed non-toxic but its page was not read); NC State, RHS and Clemson make no toxicity statement. Spiny-edged relatives such as Aechmea can scratch. Anchor: baseIntervalDays 7 -> 13 for a 3-litre reference pot, from measured water use (Guzmania 'Indian Night', 28.0 g a day); the conversion to days is our arithmetic (02i), so guess."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/guzmania/",
+        "https://www.rhs.org.uk/plants/bromeliads/growing-guide",
+        "https://hgic.clemson.edu/factsheet/bromeliads/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mosaic-vase",
+        "https://greenplantsforgreenbuildings.org/wp-content/uploads/2020/06/Can-Houseplants-Improve-Indoor-Air.pdf"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Aechmea",
+          "tell": "Guzmania has a smooth-edged funnel with a bright central bract; Aechmea has spiny leaf edges"
+        },
+        {
+          "name": "Neoregelia",
+          "tell": "Guzmania has a smooth-edged funnel with a bright central bract; Aechmea has spiny leaf edges"
+        },
+        {
+          "name": "Vriesea",
+          "tell": "Guzmania has a smooth-edged funnel with a bright central bract; Aechmea has spiny leaf edges"
+        },
+        {
+          "name": "pineapple (Ananas)",
+          "tell": "Guzmania has a smooth-edged funnel with a bright central bract; Aechmea has spiny leaf edges"
+        }
+      ],
+      "nameIdeas": ["Bromeo", "Brom Brom", "Pineapple Express", "Cup", "Funnel"],
+      "links": [
+        {
+          "url": "https://www.piante.it/guzmania/",
+          "title": "Guzmania",
+          "publisher": "Piante.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

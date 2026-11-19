@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-07",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-citrus-x-microcarpa",
+      "title": "NC State Plant Toolbox: Citrus x microcarpa",
+      "url": "https://plants.ces.ncsu.edu/plants/citrus-x-microcarpa/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-citrus-x-microcarpa",
+      "title": "RHS Plant Profile: Citrus x microcarpa (F)",
+      "url": "https://www.rhs.org.uk/plants/320548/citrus-x-microcarpa-(f)/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "citrus-x-microcarpa",
+      "taxon": { "scientificName": "Citrus x microcarpa" },
+      "names": {
+        "common": [
+          { "lang": "en-GB", "name": "Calamondin", "primary": true },
+          { "lang": "en-GB", "name": "Calamansi" },
+          { "lang": "en-GB", "name": "Calamondin orange" },
+          { "lang": "en-GB", "name": "Philippine lime" },
+          {
+            "lang": "es",
+            "name": "Calamondín",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "es", "name": "Calamansi", "translation": { "status": "machine" } },
+          { "lang": "es", "name": "Naranjo calamondín", "translation": { "status": "machine" } },
+          {
+            "lang": "it",
+            "name": "Calamondino",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "it", "name": "Calamansi", "translation": { "status": "machine" } }
+        ],
+        "synonyms": ["Citrofortunella microcarpa", "Citrofortunella mitis", "Citrus madurensis"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": { "value": null, "source": null, "confidence": "unknown" },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": { "value": null, "unit": "C", "source": null, "confidence": "unknown" },
+        "humidityPercent": { "value": null, "unit": "%", "source": null, "confidence": "unknown" },
+        "rootDepthClass": { "value": null, "source": null, "confidence": "unknown" },
+        "habit": { "value": "bushy", "source": "rhs-citrus-x-microcarpa", "confidence": "checked" },
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-citrus-x-microcarpa",
+          "corroboratedBy": ["ncsu-citrus-x-microcarpa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water freely in spring and summer and keep the compost evenly moist but never soggy; ease right back in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-citrus-x-microcarpa",
+          "corroboratedBy": ["ncsu-citrus-x-microcarpa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": { "height": 400, "spread": 250 },
+          "unit": "cm",
+          "source": "rhs-citrus-x-microcarpa",
+          "corroboratedBy": ["ncsu-citrus-x-microcarpa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-citrus-x-microcarpa",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["indoor", "pot_outdoor"],
+          "source": "rhs-citrus-x-microcarpa",
+          "corroboratedBy": ["ncsu-citrus-x-microcarpa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H3",
+          "source": "rhs-citrus-x-microcarpa",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-citrus-x-microcarpa",
+          "corroboratedBy": ["rhs-citrus-x-microcarpa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "rhs-citrus-x-microcarpa",
+          "corroboratedBy": ["ncsu-citrus-x-microcarpa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-citrus-x-microcarpa",
+          "corroboratedBy": ["ncsu-citrus-x-microcarpa"],
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": { "status": "unknown", "agents": [], "exposures": [], "sources": [] },
+      "tags": { "curated": ["indoor", "outdoor_pot", "edible", "tender", "flowering"] },
+      "provenance": {
+        "notes": "Row 232 (calamondin gets its own entry; kumquat is a separate plant). Pages: RHS profile of Citrus x microcarpa (F) and NC State Plant Toolbox, both hand-fetched 2026-11-07 because the cache had nothing (NC State address by the old name 404, ASPCA citrus, kumquat and calamondin pages returned an empty soft 404, MBG and Clemson found no page). Light: RHS says full light with shade from hot sun and partial shade as position, NC State full sun; the gentler reading (bright_indirect, sunNeed part) is kept (rule 5). Watering: RHS water freely in spring and summer, sparingly in winter; NC State moist, well-drained soil. keep_moist is the agent's mapping and 4 days a guess. Size 4 m by 2.5 m is RHS's upper figure for a shrub under glass (NC State 3 to 6 m by 2 to 3 m); a potted houseplant stays smaller. Hardiness is the RHS rating H3 (-5 to 1 C), although RHS also tells you to grow it under glass: in practice it is frost-tender and overwinters indoors (NC State: overwinter indoors in colder areas). No humidity range (NC State only says high). Toxicity unknown: neither page gives a pet or people grading; the RHS skin-allergen note covers lemon and lime-bearing citrus only. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/citrus-x-microcarpa/",
+        "https://www.rhs.org.uk/plants/320548/citrus-x-microcarpa-(f)/details",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/calamondin",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/kumquat",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/citrus"
+      ],
+      "lookAlikes": [],
+      "lookAlikeNote": "Kumquat (Citrus japonica) is the other small pot citrus on row 232; calamondin is the hybrid of mandarin and kumquat, with round orange fruit and a sour pulp.",
+      "photos": []
+    }
+  ]
+}

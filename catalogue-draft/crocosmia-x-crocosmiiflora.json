@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "ncsu-crocosmia-x-crocosmiiflora",
+      "title": "NC State Plant Toolbox: Crocosmia x crocosmiiflora",
+      "url": "https://plants.ces.ncsu.edu/plants/crocosmia-x-crocosmiiflora/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-crocosmia-x-crocosmiiflora",
+      "title": "RHS Plant Profile: Crocosmia x crocosmiiflora",
+      "url": "https://www.rhs.org.uk/plants/92445/crocosmia-%C3%97-crocosmiiflora/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "crocosmia-x-crocosmiiflora",
+      "taxon": {
+        "scientificName": "Crocosmia x crocosmiiflora"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Montbretia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Crocosmia"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Garden montbretia"
+          },
+          {
+            "lang": "es",
+            "name": "Crocosmia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Montbretia",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Crocosmia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Montbrezia",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Tritonia crocosmiiflora"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["rhs-crocosmia-x-crocosmiiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["rhs-crocosmia-x-crocosmiiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the soil moist but never waterlogged while it grows and flowers; stop watering as the leaves die back."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["rhs-crocosmia-x-crocosmiiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 60,
+            "spread": 30
+          },
+          "unit": "cm",
+          "source": "rhs-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["ncsu-crocosmia-x-crocosmiiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "confidence": "from_knowledge_verify"
+        },
+        "placement": {
+          "value": ["ground"],
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["rhs-crocosmia-x-crocosmiiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["rhs-crocosmia-x-crocosmiiflora"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dormancy": {
+          "value": "winter",
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["rhs-crocosmia-x-crocosmiiflora"],
+          "confidence": "checked"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["rhs-crocosmia-x-crocosmiiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "moist",
+          "source": "ncsu-crocosmia-x-crocosmiiflora",
+          "corroboratedBy": ["rhs-crocosmia-x-crocosmiiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H4",
+          "source": "rhs-crocosmia-x-crocosmiiflora",
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Plant the corms in moist, humus-rich soil; dig and divide the clumps every two or three years, clear dead stems in spring and mulch deeply or lift the corms in cold areas."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": ["ground", "flowering", "part_shade", "invasive_outdoors_in_warm_climates"]
+      },
+      "provenance": {
+        "notes": "Row 105, montbretia. Care: NC State and RHS agree on moist but well-drained soil, full sun to partial shade, a deciduous clump that dies back, and dividing every few years; the part-shade reading is the gentler of full sun or partial shade. Missouri BG has no page for the hybrid (only cultivars) and the cache found no ASPCA page, so two care sources only. Size: RHS about 60 cm tall (0.5 to 1 m), spread 10 to 50 cm; NC State says less than 12 inches of space needed; 60 by 30 cm is a mapping. Hardiness H4 is the RHS rating. Placement in pots is not stated, so ground only. Both sources stress its weediness: RHS lists it as invasive non-native, Schedule 9 of the Wildlife and Countryside Act (offence to plant or cause to grow in the wild in Great Britain; not banned from sale); NC State says high maintenance and to dispose of corms with care. Toxicity: no page read states any, so people and pets are unknown. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/crocosmia-x-crocosmiiflora/",
+        "https://www.rhs.org.uk/plants/92445/crocosmia-%C3%97-crocosmiiflora/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Crocosmia 'Lucifer'",
+          "tell": "Taller (up to 1.2 m) with pleated leaves and flame-red flowers; hardier and not the invasive montbretia."
+        }
+      ],
+      "lookAlikeNote": "Garden hybrids named as cultivars (Emily McKenzie, Star of the East) are separate RHS pages; this key is the wild-type montbretia.",
+      "photos": [],
+      "links": []
+    }
+  ]
+}

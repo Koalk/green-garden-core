@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-trunc",
+      "title": "NC State Plant Toolbox: Schlumbergera truncata",
+      "url": "https://plants.ces.ncsu.edu/plants/schlumbergera-truncata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-holiday",
+      "title": "Clemson HGIC: Thanksgiving and Christmas cacti",
+      "url": "https://hgic.clemson.edu/factsheet/thanksgiving-christmas-cacti/",
+      "publisher": "Clemson Cooperative Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-xmas",
+      "title": "Christmas Cactus (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/christmas-cactus",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "schlumbergera-truncata",
+      "taxon": {
+        "scientificName": "Schlumbergera truncata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Christmas cactus",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Holiday cactus"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Thanksgiving cactus"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["ncsu-trunc"],
+          "source": "clemson-holiday",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water when the top feels dry, never let it stand in a saucer, and keep it evenly moist once buds form."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-trunc"],
+          "source": "clemson-holiday",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 21,
+            "max": 27
+          },
+          "unit": "C",
+          "corroboratedBy": ["clemson-holiday"],
+          "source": "ncsu-trunc",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 30,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-trunc",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["clemson-holiday"],
+          "source": "ncsu-trunc",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-trunc",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-xmas"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-trunc",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-xmas"]
+          }
+        ],
+        "sources": ["ncsu-trunc", "aspca-xmas"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Novemberkaktus.jpg",
+          "licence": "CC-BY-SA-3.0",
+          "creator": "Esquilo",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Novemberkaktus.jpg",
+          "thumbnail": "schlumbergera-truncata.webp"
+        }
+      ],
+      "photoFile": "Novemberkaktus.jpg",
+      "tags": {
+        "curated": ["indoor", "epiphytic", "flowering"]
+      },
+      "provenance": {
+        "notes": "Watering: Clemson says water when the medium feels dry and never dry out completely; NC State says keep moist but fast-draining. Mapped to let_top_dry. Light: Clemson light shade, NC State partial shade with bright winter light; mapped to bright_indirect. Temperature 70 to 80 F (both) is the growing-season range; buds set at cooler nights (Clemson 50 to 68 F, NC State a run of nights near 40 F). Size: NC State 9 to 12 in tall, 1 to 2 ft wide. The ASPCA page read is for Schlumbergera bridgesii (Christmas or Easter cactus), a different species, so toxicity is genus-level. Humidity and growth rate: no number or statement."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/schlumbergera-truncata/",
+        "https://hgic.clemson.edu/factsheet/thanksgiving-christmas-cacti/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/christmas-cactus"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Christmas cactus (Schlumbergera x buckleyi)",
+          "tell": "Thanksgiving: pointed saw-tooth segment edges, blooms in November. Christmas: rounded scalloped edges, December. Easter: bristles at tips, April"
+        },
+        {
+          "name": "Easter cactus (Hatiora gaertneri)",
+          "tell": "Thanksgiving: pointed saw-tooth segment edges, blooms in November. Christmas: rounded scalloped edges, December. Easter: bristles at tips, April"
+        }
+      ],
+      "nameIdeas": ["Turkey", "Claws", "Tinsel", "Thanks-Giving", "Festive Fred"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/705-cuidados-de-la-planta-schlumbergera-truncata-o-cactus-de-navidad",
+          "title": "Schlumbergera truncata o Cactus de Navidad | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/_5/cactus-de-navidad_3065",
+          "title": "verdeesvida :: Cactus de Navidad",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/piante-grasse/piante-grasse/cactus-di-natale.asp",
+          "title": "Cactus di Natale - schlumbergera",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

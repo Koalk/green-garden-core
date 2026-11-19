@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-nidus",
+      "title": "NC State Plant Toolbox: Asplenium nidus",
+      "url": "https://plants.ces.ncsu.edu/plants/asplenium-nidus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-nidus",
+      "title": "RHS: Asplenium nidus",
+      "url": "https://www.rhs.org.uk/plants/1728/asplenium-nidus/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-nest",
+      "title": "Clemson HGIC: How to grow and care for bird's nest fern",
+      "url": "https://hgic.clemson.edu/how-to-grow-and-care-for-birds-nest-fern-asplenium-nidus/",
+      "publisher": "Clemson Cooperative Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "asplenium-nidus",
+      "taxon": {
+        "scientificName": "Asplenium nidus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Bird's nest fern",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-nidus"],
+          "source": "ncsu-nidus",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Pour water round the rim, not into the centre, and keep the mix evenly damp."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-nest", "ncsu-nidus"],
+          "source": "rhs-nidus",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 21
+          },
+          "unit": "C",
+          "source": "ncsu-nidus",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 152,
+            "spread": 91
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-nidus"],
+          "source": "ncsu-nidus",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "corroboratedBy": ["rhs-nidus", "clemson-nest"],
+          "source": "ncsu-nidus",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "rosette",
+          "corroboratedBy": ["rhs-nidus", "clemson-nest"],
+          "source": "ncsu-nidus",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "clemson-nest",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "clemson-nest",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["clemson-nest"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Giant bird nest fern.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Suzanne ujen",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_bird_nest_fern.jpg",
+          "thumbnail": "asplenium-nidus.webp"
+        }
+      ],
+      "photoFile": "Giant bird nest fern.jpg",
+      "tags": {
+        "curated": ["indoor", "fern", "high_humidity"]
+      },
+      "provenance": {
+        "notes": "WEAK TOXICITY SOURCE: the only fetched statement is Clemson's general remark that ferns are considered non-toxic to pets; NC State and RHS say nothing, and the ASPCA entry page for this fern could not be read (the fetch returned the landing page). Severity 0 is therefore from_knowledge_verify; treat as unconfirmed until the ASPCA page is read. Watering: Clemson says moisten when the top inch is dry but never let it dry out entirely; NC State and RHS say keep moist. Kept keep_moist. Size is the NC State outdoor-scale figure (3 to 5 ft by 2 to 3 ft; RHS 1 to 1.5 m by 0.5 to 1 m); Clemson says indoor fronds reach 18 to 24 inches. Humidity is high on both NC State and Clemson but no number is given, so unknown."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/asplenium-nidus/",
+        "https://www.rhs.org.uk/plants/1728/asplenium-nidus/details",
+        "https://hgic.clemson.edu/how-to-grow-and-care-for-birds-nest-fern-asplenium-nidus/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/birds-nest-fern"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Staghorn fern",
+          "tell": "Bird's nest has simple wavy undivided fronds in a central rosette; Boston fern fronds are divided"
+        },
+        {
+          "name": "other Asplenium",
+          "tell": "Bird's nest has simple wavy undivided fronds in a central rosette; Boston fern fronds are divided"
+        },
+        {
+          "name": "Boston fern",
+          "tell": "Bird's nest has simple wavy undivided fronds in a central rosette; Boston fern fronds are divided"
+        }
+      ],
+      "nameIdeas": ["Nesty", "Eggbert", "Tweet", "Nest Egg", "Robin"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/101-cuidados-de-la-planta-asplenium-nidus-o-asplenio",
+          "title": "Asplenium nidus o Asplenio | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/asplenium/asplenium.asp",
+          "title": "Felce a nido d'uccello, Lingua di cervo - Asplenium nidus - Appartamento",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

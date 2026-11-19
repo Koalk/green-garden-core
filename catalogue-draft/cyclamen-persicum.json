@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-cyclamen",
+      "title": "RHS: Cyclamen persicum",
+      "url": "https://www.rhs.org.uk/plants/101163/cyclamen-persicum/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-cyclamen",
+      "title": "NC State Plant Toolbox: Cyclamen persicum",
+      "url": "https://plants.ces.ncsu.edu/plants/cyclamen-persicum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-cyclamen",
+      "title": "Cyclamen (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cyclamen",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "cyclamen-persicum",
+      "taxon": {
+        "scientificName": "Cyclamen persicum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Florist's cyclamen",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Cyclamen"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Persian cyclamen"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-cyclamen"],
+          "source": "ncsu-cyclamen",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water at the pot edge or from below once the top feels dry, keep the crown dry, and let it rest nearly dry when the leaves yellow in summer."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-cyclamen"],
+          "source": "ncsu-cyclamen",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": 18
+          },
+          "unit": "C",
+          "corroboratedBy": ["ncsu-cyclamen"],
+          "source": "rhs-cyclamen",
+          "confidence": "from_knowledge_verify"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 23,
+            "spread": 23
+          },
+          "unit": "cm",
+          "source": "ncsu-cyclamen",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-cyclamen",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["triterpenoid_saponins"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["drooling", "vomiting", "diarrhoea", "cardiac"],
+            "source": "aspca-cyclamen",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-cyclamen"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["drooling", "vomiting", "diarrhoea", "cardiac"],
+            "source": "aspca-cyclamen",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-cyclamen"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-cyclamen",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-cyclamen",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-cyclamen", "ncsu-cyclamen"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Cyclamen persicum - Rakefet 2009.jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "MathKnight and Zachi Evenor",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyclamen_persicum_-_Rakefet_2009.jpg",
+          "thumbnail": "cyclamen-persicum.webp"
+        }
+      ],
+      "photoFile": "Cyclamen persicum - Rakefet 2009.jpg",
+      "tags": {
+        "curated": ["indoor", "outdoor_pot", "flowering", "dormant_season", "tender"]
+      },
+      "provenance": {
+        "notes": "Florist's cyclamen only; Cyclamen coum and hederifolium are hardy garden cyclamen with different care (the Penn State page read is about those; it only confirms that florist's cyclamen will not survive its winters, and says mildly toxic). Watering: NC State says water only when the soil feels dry, at the edge or base, never over the crown; RHS says moderate in growth, less after flowering, dry when dormant; mapped to let_top_dry (agent). Summer dormancy (leaves yellow, rest dry) is stated by both but with no numbers, so the rest factor is unknown. Temperature: RHS minimum winter 13 to 16 C, NC State recommends about 65 F (18 C); the 13 to 18 range merges the two (agent). Humidity: both say moderate, no figure. Size: NC State 6 to 9 in; RHS 10 to 20 cm. Toxicity: ASPCA (Cyclamen spp., terpenoid saponins, tubers worst, heart rhythm problems and death after large amounts) says toxic to dogs and cats; NC State rates poison severity low and agrees on signs. Graded 2 (higher reading, rule 5; the grade is the agent's). RHS only says not to eat the bulbs and to wear gloves. Child and skin lines from NC State (vomiting and diarrhoea if eaten, skin irritation when handled). ASPCA covers the genus, not C. persicum specifically. Growth rate: no page gives one."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/101163/cyclamen-persicum/details",
+        "https://plants.ces.ncsu.edu/plants/cyclamen-persicum/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cyclamen",
+        "https://extension.psu.edu/hardy-cyclamen-for-the-home-garden"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/266-cuidados-de-la-planta-cyclamen-persicum-o-ciclamen",
+          "title": "Cyclamen persicum o Ciclamen | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-flor_3/ciclamen--violeta-de-los-alpes--violeta-persa_3062",
+          "title": "verdeesvida :: Ciclamen, Violeta de los Alpes, Violeta persa",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/ciclamino/ciclamino.asp",
+          "title": "Ciclamino - Cyclamen persicum - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

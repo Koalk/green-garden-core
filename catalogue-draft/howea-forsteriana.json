@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-howea",
+      "title": "NC State Plant Toolbox: Howea forsteriana",
+      "url": "https://plants.ces.ncsu.edu/plants/howea-forsteriana/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-howea",
+      "title": "RHS: Howea forsteriana",
+      "url": "https://www.rhs.org.uk/plants/8845/howea-forsteriana/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-kentia",
+      "title": "Kentia palm (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kentia-palm",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "howea-forsteriana",
+      "taxon": {
+        "scientificName": "Howea forsteriana"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Kentia palm",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Sentry palm"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Paradise palm"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-howea"],
+          "source": "ncsu-howea",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water moderately so the mix stays just damp, never soggy, and give it noticeably less in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-howea"],
+          "source": "rhs-howea",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 15,
+            "max": null
+          },
+          "unit": "C",
+          "source": "rhs-howea",
+          "confidence": "from_knowledge_verify"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-howea",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-howea",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-kentia",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-howea"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-kentia",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-howea"]
+          }
+        ],
+        "sources": ["aspca-kentia", "ncsu-howea"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Howea forsteriana - Krohn Conservatory - DSC03672.JPG",
+          "licence": "CC0-1.0",
+          "creator": "Daderot",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Howea_forsteriana_-_Krohn_Conservatory_-_DSC03672.JPG",
+          "thumbnail": "howea-forsteriana.webp"
+        }
+      ],
+      "photoFile": "Howea forsteriana - Krohn Conservatory - DSC03672.JPG",
+      "tags": {
+        "curated": ["indoor", "palm", "low_light", "beginner_friendly"]
+      },
+      "provenance": {
+        "notes": "NAME CLASH: sentry palm Howea belmoreana is slower and recurved, and nurseries sell several seedlings per pot even though the plant is single-stemmed. Not a sago palm (deadly to pets). Watering: NC State wants a well-drained, humus-rich mix that does not dry out; RHS says moderate in growth and sparing in winter; mapped to keep_moist (agent), the page gives no schedule. Light: NC State says it survives low light and wants moderate light, avoid direct sun; RHS says bright light protected from sun (partial shade, north or east aspect); stored bright_indirect from RHS. Temperature: RHS hardiness H1A means under glass all year, above 15 C; the minimum 15 is the agent's reading of that scale. Humidity: RHS moderate, no figure. Size left unknown: RHS gives 2 m in the description but 8 to 12 m (spread 4 to 8 m) in the table and no spread for the indoor figure; NC State gives only frond length. Habit: NC State erect single stem; RHS lists 'bushy'. Toxicity: ASPCA lists it as non-toxic to dogs and cats and NC State tags it the same."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/howea-forsteriana/",
+        "https://www.rhs.org.uk/plants/8845/howea-forsteriana/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kentia-palm"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/422-cuidados-de-la-planta-howea-forsteriana-kentia-o-palma-del-paraiso",
+          "title": "Howea forsteriana, Kentia o Palma del Paraiso | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/kentia/kentia.asp",
+          "title": "Kenzia - Howea forsteriana - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

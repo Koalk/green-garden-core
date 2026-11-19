@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-trad",
+      "title": "NC State Plant Toolbox: Tradescantia zebrina",
+      "url": "https://plants.ces.ncsu.edu/plants/tradescantia-zebrina/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-trad",
+      "title": "RHS: Tradescantia zebrina",
+      "url": "https://www.rhs.org.uk/plants/79575/tradescantia-zebrina/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-trad",
+      "title": "Variegated Inch Plant, listed as Tradescantia fluminensis (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/variegated-wandering-jew",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "tradescantia-zebrina",
+      "taxon": {
+        "scientificName": "Tradescantia zebrina"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Wandering Jew",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Inch plant"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Silver inch plant"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-trad"],
+          "source": "ncsu-trad",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water the soil, not the leaves, and let the top dry a little between drinks."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-trad"],
+          "source": "ncsu-trad",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 18,
+            "max": 24
+          },
+          "unit": "C",
+          "source": "ncsu-trad",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 23,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-trad",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-trad",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["rhs-trad"],
+          "source": "ncsu-trad",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "ncsu-trad",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "ncsu-trad",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "cat",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "aspca-trad",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-trad"]
+          },
+          {
+            "who": "dog",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "aspca-trad",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-trad"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "ncsu-trad",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-trad",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-trad"]
+          }
+        ],
+        "sources": ["ncsu-trad", "rhs-trad", "aspca-trad"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "20260317 Tradescantia zebrina 01.jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "Flocci Nivis",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:20260317_Tradescantia_zebrina_01.jpg",
+          "thumbnail": "tradescantia-zebrina.webp"
+        }
+      ],
+      "photoFile": "20260317 Tradescantia zebrina 01.jpg",
+      "tags": {
+        "curated": ["indoor", "trailing"]
+      },
+      "provenance": {
+        "notes": "Toxic agent unknown (NC State: unknown). NC State rates severity low, names cats, dogs and children, mouth and stomach irritation if eaten and contact dermatitis from the sap; RHS lists it as a skin allergen. The ASPCA page read is for Tradescantia fluminensis (spelled 'flumeninsis' on the page), a close relative, so the skin entries for pets are from_knowledge_verify. Symptom mapping 'stomach irritation' to vomiting is the agent's. Temperature 65 to 75 F is NC State; humidity: ordinary indoor air is fine, no number."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/tradescantia-zebrina/",
+        "https://www.rhs.org.uk/plants/79575/tradescantia-zebrina/details",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/variegated-wandering-jew"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Tradescantia pallida (purple heart)",
+          "tell": "Zebrina has two silver stripes and a purple underside; fluminensis is plain green; pallida is solid purple and hairy"
+        },
+        {
+          "name": "T. fluminensis",
+          "tell": "Zebrina has two silver stripes and a purple underside; fluminensis is plain green; pallida is solid purple and hairy"
+        },
+        {
+          "name": "Callisia repens (turtle vine)",
+          "tell": "Zebrina has two silver stripes and a purple underside; fluminensis is plain green; pallida is solid purple and hairy"
+        }
+      ],
+      "nameIdeas": ["Zebby", "Wanda", "Zebrina Zack", "Jewel", "Wanderer"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/787-cuidados-de-la-planta-tradescantia-zebrina-zebrina-o-panamena",
+          "title": "Tradescantia zebrina, Zebrina o Panameña | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/amor-de-hombre_3152",
+          "title": "verdeesvida :: Amor de hombre",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

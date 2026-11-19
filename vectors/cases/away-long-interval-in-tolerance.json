@@ -1,0 +1,25 @@
+{
+  "name": "away-long-interval-in-tolerance",
+  "description": "A 21-day plant last watered 20 days ago, today and 3 more days away: watered on the first free day, 3 days past its ideal interval, well inside its tolerance: no warning.",
+  "why": ", Seen in a browser: warnings on plants whose interval is much longer than the away window. Cactus: keep_moist, interval 21 (band 16 to 23), dry tolerance 11. Last 10-21, away 11-10 to 11-13, watered 11-14: gap 24, 3 past the ideal, the stretch made it, 3 <= 11, so no warning. Hand-computed.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-10",
+    "horizonDays": 8,
+    "prefs": {
+      "unavailableDates": ["2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13"]
+    },
+    "plants": [
+      { "id": "cactus", "style": "keep_moist", "intervalDays": 21, "lastWatered": "2026-10-21" }
+    ]
+  },
+  "expected": {
+    "plants": [
+      {
+        "plantId": "cactus",
+        "waterings": [{ "date": "2026-11-14" }],
+        "outlook": { "level": "thrive", "severity": 0, "reasons": [] }
+      }
+    ]
+  }
+}

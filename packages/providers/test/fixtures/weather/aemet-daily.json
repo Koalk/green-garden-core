@@ -1,0 +1,46 @@
+[
+  {
+    "fecha": "2026-11-01",
+    "indicativo": "3195",
+    "nombre": "MADRID, RETIRO",
+    "provincia": "MADRID",
+    "altitud": "667",
+    "tmed": "11,2",
+    "prec": "0,0"
+  },
+  {
+    "fecha": "2026-11-02",
+    "indicativo": "3195",
+    "nombre": "MADRID, RETIRO",
+    "provincia": "MADRID",
+    "altitud": "667",
+    "tmed": "10,0",
+    "prec": "4,6"
+  },
+  {
+    "fecha": "2026-11-03",
+    "indicativo": "3195",
+    "nombre": "MADRID, RETIRO",
+    "provincia": "MADRID",
+    "altitud": "667",
+    "tmed": "9,1",
+    "prec": "Ip"
+  },
+  {
+    "fecha": "2026-11-04",
+    "indicativo": "3195",
+    "nombre": "MADRID, RETIRO",
+    "provincia": "MADRID",
+    "altitud": "667",
+    "tmed": "8,5"
+  },
+  {
+    "fecha": "2026-11-05",
+    "indicativo": "3195",
+    "nombre": "MADRID, RETIRO",
+    "provincia": "MADRID",
+    "altitud": "667",
+    "tmed": "8,0",
+    "prec": "Acum"
+  }
+]

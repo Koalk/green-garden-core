@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-lactuca-sativa",
+      "title": "NC State Plant Toolbox: Lactuca sativa",
+      "url": "https://plants.ces.ncsu.edu/plants/lactuca-sativa/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-lactuca-sativa",
+      "title": "Missouri Botanical Garden Plant Finder: Lactuca sativa",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=263870&isprofile=0&basic=lactuca%20sativa",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-lettuce-grow-your-own",
+      "title": "RHS: how to grow lettuces",
+      "url": "https://www.rhs.org.uk/vegetables/lettuce/grow-your-own",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "lactuca-sativa",
+      "taxon": { "scientificName": "Lactuca sativa" },
+      "names": {
+        "common": [
+          { "lang": "en-GB", "name": "Lettuce", "primary": true },
+          { "lang": "en-GB", "name": "Garden lettuce" },
+          {
+            "lang": "es",
+            "name": "Lechuga",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          {
+            "lang": "it",
+            "name": "Lattuga",
+            "primary": true,
+            "translation": { "status": "machine" }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": { "value": null, "source": null, "confidence": "unknown" },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": { "value": null, "source": null, "confidence": "unknown", "unit": "C" },
+        "humidityPercent": { "value": null, "source": null, "confidence": "unknown", "unit": "%" },
+        "rootDepthClass": { "value": null, "source": null, "confidence": "unknown" },
+        "habit": {
+          "value": "rosette",
+          "source": "ncsu-lactuca-sativa",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-lactuca-sativa",
+          "corroboratedBy": ["mbg-lactuca-sativa", "rhs-lettuce-grow-your-own"],
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost evenly moist; dry spells and heat make lettuce bolt and turn bitter, so water early in the day and give midsummer shade."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-lactuca-sativa",
+          "corroboratedBy": ["mbg-lactuca-sativa", "rhs-lettuce-grow-your-own"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": { "height": 30, "spread": 30 },
+          "unit": "cm",
+          "source": "ncsu-lactuca-sativa",
+          "corroboratedBy": ["mbg-lactuca-sativa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": { "value": "fast", "source": "ncsu-lactuca-sativa", "confidence": "checked" },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "ncsu-lactuca-sativa",
+          "corroboratedBy": ["mbg-lactuca-sativa", "rhs-lettuce-grow-your-own"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "annual",
+          "source": "ncsu-lactuca-sativa",
+          "corroboratedBy": ["mbg-lactuca-sativa"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "none",
+          "source": "ncsu-lactuca-sativa",
+          "corroboratedBy": ["mbg-lactuca-sativa", "rhs-lettuce-grow-your-own"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "ncsu-lactuca-sativa",
+          "corroboratedBy": ["mbg-lactuca-sativa", "rhs-lettuce-grow-your-own"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "moist",
+          "source": "ncsu-lactuca-sativa",
+          "corroboratedBy": ["mbg-lactuca-sativa", "rhs-lettuce-grow-your-own"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water often in warm, dry weather and sow a short row every two weeks; light shade in midsummer delays flowering."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["lactucin", "lactucopicrin"],
+        "exposures": [
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-lactuca-sativa",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-lactuca-sativa"],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": { "curated": ["outdoor_pot", "ground", "edible", "seasonal", "part_shade"] },
+      "provenance": {
+        "notes": "Row 94, lettuce kept as one entry for all types (cos, butterhead, crisphead, loose-leaf); a cut-and-come-again salad mix is not this entry. A short-cycle annual: sow, pick, clear (head types about three months, loose leaf about a month to first pick, RHS). Sources: NC State, Missouri BG (taxon 263870; 271393 also opened, a cultivar page, not cited), RHS grow-your-own page. No ASPCA entry for lettuce, so pets read 'not assessed'. People: NC State lists contact dermatitis from the sap (low severity, lactucin and lactucopicrin); graded 1 for skin by the agent. Conflict: none on care; NC State says full sun to partial shade, RHS a sunny spot with light shade in midsummer; 'part' chosen as the gentler reading. Size 30 by 30 cm is the agent's mapping of 6 to 12 in. No hardiness (annual). Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/lactuca-sativa/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=263870&isprofile=0&basic=lactuca%20sativa",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=271393&isprofile=0&basic=lactuca%20sativa",
+        "https://www.rhs.org.uk/vegetables/lettuce/grow-your-own"
+      ],
+      "photos": [],
+      "links": []
+    }
+  ]
+}

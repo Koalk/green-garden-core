@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-petunia",
+      "title": "NC State Plant Toolbox: Petunia x hybrida",
+      "url": "https://plants.ces.ncsu.edu/plants/petunia-x-hybrida/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-petunia-wave",
+      "title": "RHS: Petunia 'Wave Purple' (Wave Series)",
+      "url": "https://www.rhs.org.uk/plants/234560/petunia-wave-purple-wave-series/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "ttu-petunia",
+      "title": "Texas Tech: Petunia x atkinsiana (landscape information sheet)",
+      "url": "https://www.depts.ttu.edu/plantresources/Pages/directories/landscape-info-sheets/herbaceous-info/Petunia_xatkinsiana.php",
+      "publisher": "Texas Tech University",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-petunia",
+      "title": "Petunia (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/petunia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "petunia-x-atkinsiana",
+      "taxon": {
+        "scientificName": "Petunia x atkinsiana"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Petunia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Garden petunia"
+          }
+        ],
+        "synonyms": ["Petunia x hybrida"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-petunia-wave", "ncsu-petunia"],
+          "source": "ttu-petunia",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost evenly moist in summer and check pots daily in hot spells, because baskets dry out fast."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["ncsu-petunia"],
+          "source": "rhs-petunia-wave",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 38,
+            "spread": 91
+          },
+          "unit": "cm",
+          "corroboratedBy": ["ncsu-petunia"],
+          "source": "ttu-petunia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-petunia",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["rhs-petunia-wave"],
+          "source": "ttu-petunia",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-petunia",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-petunia"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-petunia",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-petunia"]
+          }
+        ],
+        "sources": ["aspca-petunia", "ncsu-petunia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Petunia x atkinsiana.jpg",
+          "licence": "CC0-1.0",
+          "creator": "İmmortalance",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petunia_x_atkinsiana.jpg",
+          "thumbnail": "petunia-x-atkinsiana.webp"
+        }
+      ],
+      "photoFile": "Petunia x atkinsiana.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "flowering", "full_sun", "annual_bedding"]
+      },
+      "provenance": {
+        "notes": "Surfinia, Wave and Million Bells are trade series; Calibrachoa (Million Bells) is a different genus. Watering: Texas Tech says moist well-drained soil with medium water need, RHS moist but well-drained, NC State good drainage and moist with moderate drought tolerance; no page gives a schedule, so keep_moist is the agent's mapping and the interval is a guess for pots in summer. Light: RHS full sun; NC State full sun to partial shade (survives heavy shade, flowers poorly); Texas Tech lists light shade, so it differs. Size from Texas Tech (8 to 15 in tall, 1 to 3 ft spread, upper values); NC State agrees on spread. Habit and growth rate: NC State's care-attribute part came through a summary of a truncated page (rapid, spreading), so both are marked as the agent's reading; cultivar groups range from mounding to trailing. The RHS page is for the cultivar 'Wave Purple', not the species. Toxicity: ASPCA lists Petunia as non-toxic to dogs and cats (fact only, own words), NC State tags it non-toxic; neither gives symptoms, so no child or adult line is stored. Humidity and temperature: no usable figure. The University of Minnesota Extension petunia page returned 403 and was not used."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/petunia-x-hybrida/",
+        "https://www.rhs.org.uk/plants/234560/petunia-wave-purple-wave-series/details",
+        "https://www.depts.ttu.edu/plantresources/Pages/directories/landscape-info-sheets/herbaceous-info/Petunia_xatkinsiana.php",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/petunia"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "season-windows-uk-ramp",
+  "description": "Pothos (let_top_dry, 7 days, rest factor 1.5) watered on 2026-10-17 in the UK (55 N): halfway up the ramp the factor is 1.25, so the interval is 9 days, between 7 (growth) and 11 (rest).",
+  "why": "Factor = 1 + weight x (restFactor - 1) = 1 + 0.5 x 0.5 = 1.25; 7 x 1.25 = 8.75 rounds half up to 9. let_top_dry band 25% early (2) and late (2): 2026-10-17 + 9 - 2 = 2026-10-24 and + 9 + 2 = 2026-10-28. The hard switch gave 7.",
+  "input": {
+    "today": "2026-10-18",
+    "hemisphere": "north",
+    "latitude": 55,
+    "plants": [
+      {
+        "id": "pothos",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "restFactor": 1.5,
+        "lastWatered": "2026-10-17"
+      }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "pothos", "earliest": "2026-10-24", "latest": "2026-10-28" }]
+  }
+}

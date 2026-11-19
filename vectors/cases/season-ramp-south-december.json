@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-south-december",
+  "description": "Rest-season weight in the southern hemisphere on 2026-12-01: growth, 0.",
+  "why": "December is the southern summer; same as season-south-growth for the window. Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2026-12-01", "hemisphere": "south", "latitude": 55 },
+  "expected": { "weight": 0 }
+}

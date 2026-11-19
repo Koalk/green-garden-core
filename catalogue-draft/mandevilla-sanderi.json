@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-mandevilla",
+      "title": "NC State Plant Toolbox: Mandevilla (genus)",
+      "url": "https://plants.ces.ncsu.edu/plants/mandevilla/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-mandevilla-guide",
+      "title": "RHS: How to grow mandevillas",
+      "url": "https://www.rhs.org.uk/plants/mandevilla/how-to-grow-mandevillas",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-mandevilla",
+      "title": "Clemson HGIC: Mandevilla",
+      "url": "https://hgic.clemson.edu/factsheet/mandevilla/",
+      "publisher": "Clemson Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "mandevilla-sanderi",
+      "taxon": {
+        "scientificName": "Mandevilla sanderi"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Dipladenia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Mandevilla"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Brazilian jasmine"
+          }
+        ],
+        "synonyms": ["Mandevilla x amabilis 'Sanderi'"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["ncsu-mandevilla"],
+          "source": "rhs-mandevilla-guide",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water regularly so the compost stays moist but not waterlogged, give it more in hot weather, and ease off in winter without letting it dry out."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-mandevilla", "clemson-mandevilla"],
+          "source": "rhs-mandevilla-guide",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 15,
+            "max": null
+          },
+          "unit": "C",
+          "source": "rhs-mandevilla-guide",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 305,
+            "spread": 122
+          },
+          "unit": "cm",
+          "source": "ncsu-mandevilla",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-mandevilla",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "climbing",
+          "corroboratedBy": ["ncsu-mandevilla", "clemson-mandevilla"],
+          "source": "rhs-mandevilla-guide",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "rhs-mandevilla-guide",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["rhs-mandevilla-guide"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Mandevilla sanderi, Washington, D.C.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Nvss132",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mandevilla_sanderi,_Washington,_D.C.jpg",
+          "thumbnail": "mandevilla-sanderi.webp"
+        }
+      ],
+      "photoFile": "Mandevilla sanderi, Washington, D.C.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "indoor", "flowering", "climbing", "tender"]
+      },
+      "provenance": {
+        "notes": "Still sold as Dipladenia; the RHS species page for Mandevilla sanderi is nearly empty (family, range, genus note), so the care comes from genus-level pages: RHS growing guide (full), NC State genus page and Clemson. Size is the NC State genus range (3 to 10 ft by 3 to 4 ft, upper values), not this species, and is marked as the agent's reading; Clemson and RHS say larger cultivars reach 15 ft or more and that newer ones are bred to be shrubbier and less vigorous. Temperature: RHS wants at least 21 C by day while growing and ideally above 15 C at night in winter, survives above 10 C; the 15 C minimum is stored. Humidity: RHS and NC State say likes humid air, no figure. Toxicity: no page about pet toxicity was found: the ASPCA mandevilla URL returned its landing page, not an entry. RHS says the milky sap can irritate skin (stored as one adult skin line, grade the agent's). Pets and ingestion are UNKNOWN, not safe; the family (Apocynaceae) is one where some plants are dangerous, so this needs a source before the plant is shown to pet owners."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/mandevilla/",
+        "https://www.rhs.org.uk/plants/mandevilla/how-to-grow-mandevillas",
+        "https://www.rhs.org.uk/plants/59342/mandevilla-sanderi/details",
+        "https://hgic.clemson.edu/factsheet/mandevilla/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/mandevilla"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/947-cuidados-de-la-planta-mandevilla-sanderi-o-dipladenia-sanderi",
+          "title": "Mandevilla sanderi o Dipladenia sanderi | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/arbustos-y-trepadoras_1/mandevilla--dipladenia--jazm�n-de-brasil_3050",
+          "title": "verdeesvida :: Mandevilla, Dipladenia, Jazmín de Brasil",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/dipladenia/dipladenia.asp",
+          "title": "Dipladenia - Mandevilla splendens - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

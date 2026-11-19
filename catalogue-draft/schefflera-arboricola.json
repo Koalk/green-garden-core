@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-scheff",
+      "title": "NC State Plant Toolbox: Heptapleurum arboricola",
+      "url": "https://plants.ces.ncsu.edu/plants/heptapleurum-arboricola/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-scheff",
+      "title": "RHS: Heptapleurum arboricola",
+      "url": "https://www.rhs.org.uk/plants/187874/heptapleurum-arboricola/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-scheff",
+      "title": "Schefflera (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/schefflera",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "schefflera-arboricola",
+      "taxon": {
+        "scientificName": "Schefflera arboricola"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Dwarf umbrella tree",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Umbrella plant"
+          }
+        ],
+        "synonyms": ["Heptapleurum arboricola"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-scheff"],
+          "source": "ncsu-scheff",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Soak it, then wait until the top of the mix has dried; leaves drop if it stays soggy or bone dry."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-scheff"],
+          "source": "ncsu-scheff",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 183,
+            "spread": 183
+          },
+          "unit": "cm",
+          "source": "ncsu-scheff",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-scheff",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["rhs-scheff"],
+          "source": "ncsu-scheff",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "ncsu-scheff",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-scheff"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "drooling", "vomiting"],
+            "source": "ncsu-scheff",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-scheff"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "ncsu-scheff",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-scheff",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-scheff", "aspca-scheff"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Schefflera 'Gold Capella' houseplant.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Kolano123",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schefflera_%27Gold_Capella%27_houseplant.jpg",
+          "thumbnail": "schefflera-arboricola.webp"
+        }
+      ],
+      "photoFile": "Schefflera 'Gold Capella' houseplant.jpg",
+      "tags": {
+        "curated": ["indoor"]
+      },
+      "provenance": {
+        "notes": "Severity: NC State calls all parts seriously toxic to dogs and cats but rates the poison low severity for people; the ASPCA genus entry (Schefflera, not S. arboricola by name) lists dogs and cats as toxic with burning mouth, drooling and vomiting. Graded 2 for pets and 1 for children by the agent; the 01e baseline was 1, so a reviewer may want to lower it. Size is the NC State indoor figure (4 to 6 ft tall and wide, upper value); RHS gives 0.5 to 1 m by 0.1 to 0.5 m. The RHS page makes no toxicity statement. Temperature and humidity: no usable figure. Pachira (money tree) is the non-toxic look-alike."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/heptapleurum-arboricola/",
+        "https://www.rhs.org.uk/plants/187874/heptapleurum-arboricola/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/schefflera"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Umbrella tree (Schefflera actinophylla)",
+          "tell": "Arboricola has smaller leaflets than actinophylla; Pachira has 5 smooth leaflets and is non-toxic"
+        },
+        {
+          "name": "Fatsia",
+          "tell": "Arboricola has smaller leaflets than actinophylla; Pachira has 5 smooth leaflets and is non-toxic"
+        },
+        {
+          "name": "Pachira",
+          "tell": "Arboricola has smaller leaflets than actinophylla; Pachira has 5 smooth leaflets and is non-toxic"
+        }
+      ],
+      "lookAlikeNote": "Pachira (money tree) is non-toxic",
+      "nameIdeas": ["Shef", "Umbrella Ella", "Brolly", "Parasol", "Dwarf Dave"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/702-cuidados-de-la-planta-schefflera-arboricola-o-cheflera",
+          "title": "Schefflera arboricola o Cheflera | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/702-cuidados-de-la-planta-schefflera-arboricola-o-escheflera-variegada",
+          "title": "Schefflera arboricola o Cheflera | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/scheflera/scheflera.asp",
+          "title": "Schefflera actinophylla - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

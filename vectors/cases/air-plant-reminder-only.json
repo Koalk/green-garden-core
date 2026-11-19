@@ -1,0 +1,16 @@
+{
+  "name": "air-plant-reminder-only",
+  "description": "Air plants (Tillandsia) are outside the engine in v1: a reminder-only plant gets no window and is listed separately.",
+  "why": "Exclude from the engine in v1, plain reminder only.",
+  "input": {
+    "today": "2026-11-02",
+    "plants": [
+      { "id": "fern", "style": "keep_moist", "intervalDays": 4, "lastWatered": "2026-10-31" },
+      { "id": "tillandsia", "style": "keep_moist", "intervalDays": 7, "reminderOnly": true }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "fern", "earliest": "2026-11-03", "latest": "2026-11-04" }],
+    "reminderOnly": ["tillandsia"]
+  }
+}

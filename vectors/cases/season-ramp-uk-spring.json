@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-uk-spring",
+  "description": "Rest-season weight at about 55 N (UK) on 2027-03-16: halfway down the spring ramp, 0.5.",
+  "why": "16 March 2027 is 75 days after 31 December 2026 (31 + 28 + 16): weight = 1 - (75 - 60) / 30 = 0.5. The ramp runs on both sides of the full rest ('and back'). Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2027-03-16", "hemisphere": "north", "latitude": 55 },
+  "expected": { "weight": 0.5 }
+}

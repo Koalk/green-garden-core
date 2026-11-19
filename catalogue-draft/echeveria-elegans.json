@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-echeveria",
+      "title": "NC State Plant Toolbox: Echeveria elegans",
+      "url": "https://plants.ces.ncsu.edu/plants/echeveria-elegans/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-echeveria",
+      "title": "RHS: Echeveria elegans",
+      "url": "https://www.rhs.org.uk/plants/6226/echeveria-elegans/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "echeveria-elegans",
+      "taxon": {
+        "scientificName": "Echeveria elegans"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Mexican snowball",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Echeveria"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Mexican gem"
+          }
+        ],
+        "synonyms": ["Echeveria potosina"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["rhs-echeveria"],
+          "source": "ncsu-echeveria",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 14,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Soak it and then leave it until the mix is fully dry, and skip water in winter, because wet roots are what kills it."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-echeveria"],
+          "source": "ncsu-echeveria",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 10,
+            "spread": 50
+          },
+          "unit": "cm",
+          "source": "rhs-echeveria",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-echeveria",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "rosette",
+          "corroboratedBy": ["ncsu-echeveria"],
+          "source": "rhs-echeveria",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-echeveria",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-echeveria",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["ncsu-echeveria"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Rosa de alabastro (Echeveria elegans), jardín del molino, Sierra de San Felipe, Setúbal, Portugal, 2012-05-11, DD 01.JPG",
+          "licence": "CC-BY-SA-3.0",
+          "creator": "Diego Delso",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosa_de_alabastro_(Echeveria_elegans),_jard%C3%ADn_del_molino,_Sierra_de_San_Felipe,_Set%C3%BAbal,_Portugal,_2012-05-11,_DD_01.JPG",
+          "thumbnail": "echeveria-elegans.webp"
+        }
+      ],
+      "photoFile": "Rosa de alabastro (Echeveria elegans), jardín del molino, Sierra de San Felipe, Setúbal, Portugal, 2012-05-11, DD 01.JPG",
+      "tags": {
+        "curated": ["indoor", "outdoor_pot", "succulent", "drought_tolerant", "full_sun"]
+      },
+      "provenance": {
+        "notes": "Many Echeveria hybrids are sold; this row is the species. Watering: NC State says overwatering is the most common problem and it likes dry, well-drained soil; RHS says water moderately in growth and not at all when dormant; both fit let_fully_dry but neither says 'fully' (agent mapping). Light: both full sun. Size: RHS up to 10 cm tall, spread 10 to 50 cm (upper stored); NC State gives no height. Hardiness: RHS H2 (1 to 5 C) and NC State zones 9a to 11b, no indoor range. Toxicity: only NC State's tags (non-toxic for cats and dogs) say anything; the ASPCA echeveria page returned 404 and RHS is silent. One tag-only source: review. Growth: NC State slow."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/echeveria-elegans/",
+        "https://www.rhs.org.uk/plants/6226/echeveria-elegans/details"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/923-cuidados-de-la-planta-echeveria-elegans-o-rosa-de-alabastro",
+          "title": "Echeveria elegans o Rosa de alabastro | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/grasse/singolegrasse/echeveria/echeveria.asp",
+          "title": "Echeveria - Succulente - Piante Grasse",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

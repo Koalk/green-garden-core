@@ -1,0 +1,29 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/engine" },
+    { "path": "packages/i18n" },
+    { "path": "packages/i18n/test" },
+    { "path": "packages/questions" },
+    { "path": "packages/questions/test" },
+    { "path": "packages/bulk" },
+    { "path": "packages/bulk/test" },
+    { "path": "packages/care-text" },
+    { "path": "packages/care-text/test" },
+    { "path": "packages/catalogue" },
+    { "path": "packages/catalogue/test" },
+    { "path": "packages/providers" },
+    { "path": "packages/providers/test" },
+    { "path": "packages/storage" },
+    { "path": "packages/storage/test" },
+    { "path": "packages/client" },
+    { "path": "packages/client/test" },
+    { "path": "packages/server" },
+    { "path": "packages/server/test" },
+    { "path": "packages/web-ui" },
+    { "path": "packages/web-ui/test" },
+    { "path": "packages/ha-bridge" },
+    { "path": "packages/ha-bridge/test" },
+    { "path": "vectors" }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-croton",
+      "title": "NC State Plant Toolbox: Codiaeum variegatum",
+      "url": "https://plants.ces.ncsu.edu/plants/codiaeum-variegatum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-croton",
+      "title": "RHS: How to grow codiaeum",
+      "url": "https://www.rhs.org.uk/plants/codiaeum/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "codiaeum-variegatum",
+      "taxon": {
+        "scientificName": "Codiaeum variegatum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Croton",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Joseph's coat"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["ncsu-croton"],
+          "source": "rhs-croton",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water when the surface has dried, use room-temperature water, and ease off in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-croton"],
+          "source": "rhs-croton",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 18,
+            "max": 35
+          },
+          "unit": "C",
+          "source": "rhs-croton",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-croton",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["diterpene_ester", "latex_irritant"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "rhs-croton",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-croton"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "rhs-croton",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-croton"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-croton",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-croton"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-croton",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-croton"]
+          }
+        ],
+        "sources": ["ncsu-croton", "rhs-croton"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Codiaeum variegatum 31032014.jpg",
+          "licence": "CC-BY-SA-3.0",
+          "creator": "Joydeep",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Codiaeum_variegatum_31032014.jpg",
+          "thumbnail": "codiaeum-variegatum.webp"
+        }
+      ],
+      "photoFile": "Codiaeum variegatum 31032014.jpg",
+      "tags": {
+        "curated": ["indoor", "high_humidity"]
+      },
+      "provenance": {
+        "notes": "Toxicity: RHS says all parts are poisonous, keep from children and pets; NC State rates severity low, says harm needs large amounts (nausea, vomiting, diarrhoea) and does not mention pets. Kept the higher grade (2) per rule 5; pet symptoms are mapped from the human ones. Skin 1: NC State says minor, short-lived irritation, repeated contact can give an allergic rash; RHS also says the sap irritates eyes (no eye symptom in our vocabulary, not graded). Light conflict: NC State wants some direct sun, RHS bright filtered light. Humidity conflict (NC State low to medium, RHS essential high): unknown. Size: NC State 2 to 8 ft (about 3 ft indoors) and RHS 30 to 90 cm, but no spread for houseplants: unknown. Watering mapped from RHS 'when the surface has dried'."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/codiaeum-variegatum/",
+        "https://www.rhs.org.uk/plants/codiaeum/growing-guide"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Aucuba (Japanese laurel)",
+          "tell": "Croton has thick leathery leaves with red, yellow and orange veins; aucuba has speckled outdoor foliage"
+        },
+        {
+          "name": "Dracaena marginata 'Tricolor'",
+          "tell": "Croton has thick leathery leaves with red, yellow and orange veins; aucuba has speckled outdoor foliage"
+        }
+      ],
+      "lookAlikeNote": "Croton is toxic; aucuba mildly toxic",
+      "nameIdeas": ["Cro Cro", "Rainbow", "Joseph", "Technicolor", "Dreamcoat"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/224-cuidados-de-la-planta-codiaeum-variegatum-croto-o-croton-de-interior",
+          "title": "Codiaeum variegatum, Croto o Croton de interior | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/crot�n_3175",
+          "title": "verdeesvida :: Crotón",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/croton/croton.asp",
+          "title": "Croton - Codiaeum variegatum - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

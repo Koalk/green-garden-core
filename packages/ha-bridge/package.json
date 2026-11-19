@@ -1,0 +1,19 @@
+{
+  "name": "@green-garden/ha-bridge",
+  "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "node --test",
+    "start": "node --disable-warning=ExperimentalWarning src/main.ts"
+  },
+  "dependencies": {
+    "@green-garden/client": "workspace:*",
+    "@green-garden/engine": "workspace:*",
+    "@green-garden/server": "workspace:*",
+    "@green-garden/storage": "workspace:*"
+  }
+}

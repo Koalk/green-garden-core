@@ -1,0 +1,21 @@
+{
+  "name": "season-south-growth",
+  "description": "Automatic season factor (C10), southern hemisphere in December: growth season, so the rest factor is not applied and the base interval 7 gives band [5,9].",
+  "why": "PROVISIONAL. Same plant as season-north-rest, hemisphere south: December is growth season there. Band [5,9] from 2026-12-01 gives 12-06 to 12-10.",
+  "input": {
+    "today": "2026-12-02",
+    "hemisphere": "south",
+    "plants": [
+      {
+        "id": "pothos",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "restFactor": 1.5,
+        "lastWatered": "2026-12-01"
+      }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "pothos", "earliest": "2026-12-06", "latest": "2026-12-10" }]
+  }
+}

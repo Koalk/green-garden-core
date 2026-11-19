@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-07",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-clematis",
+      "title": "NC State Plant Toolbox: Clematis",
+      "url": "https://plants.ces.ncsu.edu/plants/clematis/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-clematis",
+      "title": "Clematis (Clematis spp.) (toxic and non-toxic plants)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/clematis",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "clematis",
+      "taxon": {
+        "scientificName": "Clematis"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Clematis",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Virgin's bower"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Leatherflower"
+          },
+          {
+            "lang": "es",
+            "name": "Clemátide",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Clematis",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Clematide",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Clematis",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "climbing",
+          "source": "ncsu-clematis",
+          "confidence": "checked"
+        },
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-clematis",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water deeply and keep the compost moist, with the roots shaded by mulch or other plants."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-clematis",
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 550,
+            "spread": 100
+          },
+          "unit": "cm",
+          "source": "ncsu-clematis",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-clematis",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "ncsu-clematis",
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-clematis",
+          "confidence": "checked"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-clematis",
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "moist",
+          "source": "ncsu-clematis",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water deeply, because clematis is deep rooted, and mulch to keep the roots cool and moist."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["protoanemonin"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["drooling", "vomiting", "diarrhoea"],
+            "source": "aspca-clematis",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-clematis"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["drooling", "vomiting", "diarrhoea"],
+            "source": "aspca-clematis",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-clematis"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["oral_irritation", "vomiting", "diarrhoea"],
+            "source": "ncsu-clematis",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["oral_irritation", "vomiting", "diarrhoea"],
+            "source": "ncsu-clematis",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 2,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-clematis",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-clematis", "ncsu-clematis"],
+        "assessedOn": "2026-11-07"
+      },
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "hardy", "climber"]
+      },
+      "provenance": {
+        "notes": "Row 90, a genus-level entry (hybrids, like rose and hosta). Pages: NC State genus page and ASPCA genus page; the cached MBG search had no page. Single care source, so care values are lower confidence; no RHS page read (hardiness left empty, NC State USDA 3 to 9 by species). Pruning groups 1 to 3 differ by type (NC State: type 1 after flowering, type 2 light prune in late winter, type 3 cut nearly to the ground in late winter); not stored. NC State gives 1 to 18 ft long; 550 by 100 cm is the agent's figure for a large climber. Toxicity: NC State high severity (protoanemonin; severe mouth pain and ulcers, dizziness, confusion, convulsions in people; fatalities rare because of the intense bitter taste; contact dermatitis yes) and ASPCA toxic to dogs, cats and horses (salivation, vomiting, diarrhoea). Grade 3 for children and 2 for adults and pets are the agent's mapping; convulsions and confusion have no word in our vocabulary. Watering: moist, well-drained, deep watering; keep_moist a mapping, 4 days a guess. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/clematis/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/clematis"
+      ],
+      "lookAlikes": [],
+      "lookAlikeNote": "All parts are irritant; the sap blisters skin and the bitter taste usually stops people eating much.",
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.ass-agir.it/wp-content/uploads/2020/11/Scheda-n.67_Clematis.pdf",
+          "title": "Clematis",
+          "publisher": "Ass-Agir",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.piante.it/clematis/",
+          "title": "Clematis",
+          "publisher": "Piante.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

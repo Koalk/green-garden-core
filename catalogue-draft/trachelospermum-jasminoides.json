@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-trachelospermum",
+      "title": "RHS: How to grow trachelospermum",
+      "url": "https://www.rhs.org.uk/plants/trachelospermum/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-trachelospermum-jasminoides",
+      "title": "NC State Plant Toolbox: Trachelospermum jasminoides",
+      "url": "https://plants.ces.ncsu.edu/plants/trachelospermum-jasminoides/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-star-jasmine",
+      "title": "Star Jasmine (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/star-jasmine",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "trachelospermum-jasminoides",
+      "taxon": {
+        "scientificName": "Trachelospermum jasminoides"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Star jasmine",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Confederate jasmine"
+          },
+          {
+            "lang": "en-GB",
+            "name": "False jasmine"
+          },
+          {
+            "lang": "es",
+            "name": "Jazmín estrella",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Falso jazmín",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Jazmín de leche",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Falso gelsomino",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Gelsomino rampicante",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Rincospermo",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Rhynchospermum jasminoides"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "rhs-trachelospermum",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "In a pot it dries out quickly in summer, so check often and never let it dry out or sit in water; ease off in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-trachelospermum",
+          "corroboratedBy": ["ncsu-trachelospermum-jasminoides"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 400,
+            "spread": 100
+          },
+          "unit": "cm",
+          "source": "rhs-trachelospermum",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "climbing",
+          "source": "rhs-trachelospermum",
+          "corroboratedBy": ["ncsu-trachelospermum-jasminoides"],
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-star-jasmine",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-star-jasmine",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-star-jasmine"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "climbing", "fragrant"]
+      },
+      "provenance": {
+        "notes": "NAME CLASH: false jasmine, not a Jasminum (row 73 is Jasminum officinale, row 200 is this plant). Starter list says search-summary only; now read from fetched RHS growing guide and NC State page. Watering: RHS says pots dry out fast and must neither dry out nor waterlog; in the ground only first-year and dry-spell watering, so style keep_moist is the pot reading. Interval 5 days is a guess. Light: RHS warm sheltered sun or light shade; NC State full sun to partial shade; stored bright_indirect as the closest class. Size: RHS says slow-growing, 4 m or more eventually, no spread; NC State says 3 to 20 ft by 3 to 4 ft and rapid growth, so the RHS and NC State disagree on speed; height 400 is the RHS figure, spread 100 is a mapping of NC State's 3 to 4 ft, hence from_knowledge_verify; growth rate left unknown. Hardiness: RHS gives no rating and says protect in frost; NC State zones 8a to 10b, container overwintered indoors in colder climates; no temperature stored. Toxicity: ASPCA lists T. jasminoides non-toxic to cats and dogs (severity 0 graded by us). NC State is mixed: plant type says Poisonous but its tags say non-toxic for cats and dogs, with no explanation; it also notes milky latex sap. Stored severity 0 with this conflict recorded; skin irritation from the sap is not graded. Es and it names are author knowledge (machine draft), not fetched."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/trachelospermum/growing-guide",
+        "https://plants.ces.ncsu.edu/plants/trachelospermum-jasminoides/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/star-jasmine"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/781-cuidados-de-la-planta-trachelospermum-jasminoides-o-falso-jazmin",
+          "title": "Trachelospermum jasminoides o Falso jazmín | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/piante/solanum-jasminoides.asp",
+          "title": "Falso gelsomino - Trachelospermum jasminoides - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

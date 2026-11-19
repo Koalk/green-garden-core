@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-02",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-jasminum-officinale",
+      "title": "RHS Plant Profile: Jasminum officinale",
+      "url": "https://www.rhs.org.uk/plants/9454/jasminum-officinale/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-jasminum-officinale",
+      "title": "NC State Plant Toolbox: Jasminum officinale",
+      "url": "https://plants.ces.ncsu.edu/plants/jasminum-officinale/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-jasmine",
+      "title": "Jasmine (toxic and non-toxic plants; Jasminum species)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jasmine",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "jasminum-officinale",
+      "taxon": {
+        "scientificName": "Jasminum officinale"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Common jasmine",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Jasmine"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Poet's jasmine"
+          },
+          {
+            "lang": "en-GB",
+            "name": "True jasmine"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Summer jasmine"
+          },
+          {
+            "lang": "es",
+            "name": "Jazmín",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Jazmín común",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Jazmín blanco",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Gelsomino",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Gelsomino comune",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-jasminum-officinale",
+          "corroboratedBy": ["rhs-jasminum-officinale"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep a potted jasmine moist but never soggy while it grows and flowers, and give it a warm, sheltered, sunny spot."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-jasminum-officinale",
+          "corroboratedBy": ["ncsu-jasminum-officinale"],
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 600,
+            "spread": 200
+          },
+          "unit": "cm",
+          "source": "rhs-jasminum-officinale",
+          "corroboratedBy": ["ncsu-jasminum-officinale"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-jasminum-officinale",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "climbing",
+          "source": "rhs-jasminum-officinale",
+          "corroboratedBy": ["ncsu-jasminum-officinale"],
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "ncsu-jasminum-officinale",
+          "corroboratedBy": ["rhs-jasminum-officinale"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-jasminum-officinale",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-jasminum-officinale",
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "ncsu-jasminum-officinale",
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "rhs-jasminum-officinale",
+          "corroboratedBy": ["ncsu-jasminum-officinale"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "any",
+          "source": "rhs-jasminum-officinale",
+          "corroboratedBy": ["ncsu-jasminum-officinale"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "In the ground it likes moist, well-drained soil and copes with a dry spell once established."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-jasminum-officinale",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-jasmine"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-jasminum-officinale",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-jasmine"]
+          }
+        ],
+        "sources": ["ncsu-jasminum-officinale", "aspca-jasmine"],
+        "assessedOn": "2026-11-02"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "climbing", "fragrant"]
+      },
+      "provenance": {
+        "notes": "Row 73. NAME CLASH: on Spanish labels 'jazmín' is often Jasminum polyanthum (jazmín chino, row ES9), and false or star jasmine (Trachelospermum, own entry) is a different genus; the matcher turns these into a choose. Toxicity: NC State tags this species non-toxic for cats, dogs and horses; ASPCA lists only the genus (Jasminum species) as non-toxic, which is why it is corroboration, not the main source. No human data fetched, so no child or adult rows. Watering: NC State moist, well-drained, drought tolerant, occasionally dry; RHS moist but well-drained or well-drained; let_top_dry is the agent's mapping, 7 days a guess. Hardiness: RHS H5 (-15 to -10 C); NC State USDA 7b to 10b, not cold tolerant beyond zone 7, can be grown as a container plant and brought in to over-winter; no temperature stored. Size conflict: RHS up to 4 to 8 m by 1.5 to 2.5 m (also 'up to 12 m' in its description); NC State up to 40 ft (12 m) by 15 ft (4.6 m); 6 m by 2 m is the agent's middle. Leaf habit: RHS deciduous; NC State deciduous or semi-evergreen. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/9454/jasminum-officinale/details",
+        "https://plants.ces.ncsu.edu/plants/jasminum-officinale/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jasmine"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Star jasmine (Trachelospermum jasminoides)",
+          "species": "trachelospermum-jasminoides",
+          "tell": "A common jasmine leaf has 7 to 9 leaflets and the plant is deciduous to semi-evergreen; star jasmine is a different genus, not a true jasmine."
+        },
+        {
+          "name": "Madagascar jasmine (Jasminum x stephanense)",
+          "tell": "A hybrid that NC State lists as a frequent mix-up; check the leaves, which on common jasmine are divided into 7 to 9 leaflets."
+        }
+      ],
+      "lookAlikeNote": "ASPCA lists true jasmine and star jasmine as non-toxic, but Cape jasmine (Gardenia) and Paraguayan jasmine (Brunfelsia) are toxic to pets.",
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/453-cuidados-de-la-planta-jasminum-officinale-o-jazmin-comun",
+          "title": "Jasminum officinale o Jazmín común | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-sc",
+      "title": "NC State Plant Toolbox: Scindapsus pictus",
+      "url": "https://plants.ces.ncsu.edu/plants/scindapsus-pictus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-sc",
+      "title": "RHS: Scindapsus pictus 'Argyraeus'",
+      "url": "https://www.rhs.org.uk/plants/119870/scindapsus-pictus-argyraeus/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-satin",
+      "title": "Satin Pothos (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/satin-pothos",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "scindapsus-pictus",
+      "taxon": {
+        "scientificName": "Scindapsus pictus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Satin pothos",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Silk pothos"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-sc"],
+          "source": "ncsu-sc",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the mix just damp and well drained; yellow leaves mean too wet, curling ones too dry."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-sc"],
+          "source": "ncsu-sc",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 18,
+            "max": 29
+          },
+          "unit": "C",
+          "source": "ncsu-sc",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 150,
+            "spread": 100
+          },
+          "unit": "cm",
+          "source": "rhs-sc",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "corroboratedBy": ["rhs-sc"],
+          "source": "ncsu-sc",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "climbing",
+          "corroboratedBy": ["rhs-sc"],
+          "source": "ncsu-sc",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_insoluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "swelling", "drooling", "vomiting"],
+            "source": "aspca-satin",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-sc", "rhs-sc"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "swelling", "drooling", "vomiting"],
+            "source": "aspca-satin",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-sc", "rhs-sc"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "rhs-sc",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "rhs-sc",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-satin", "ncsu-sc", "rhs-sc"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Scindapsus pictus (15631442715).jpg",
+          "licence": "CC-BY-SA-2.0",
+          "creator": "Bernard DUPONT from FRANCE",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scindapsus_pictus_(15631442715).jpg",
+          "thumbnail": "scindapsus-pictus.webp"
+        }
+      ],
+      "photoFile": "Scindapsus pictus (15631442715).jpg",
+      "tags": {
+        "curated": ["indoor", "trailing"]
+      },
+      "provenance": {
+        "notes": "Watering: NC State and RHS say keep the mix damp but well drained, mapped to keep_moist. A Clemson pothos guide that appeared in search results (which says to let the soil dry completely) was not fetched, so it is not cited. Severity 1 is the agent's grade (NC State states none; the ASPCA lists dogs and cats as toxic with oral pain, swelling, drooling and vomiting). Size is the RHS cultivar figure (1 to 1.5 m by 0.5 to 1 m); NC State says 1.5 to 3 ft indoors. Humidity: no page gives it."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/scindapsus-pictus/",
+        "https://www.rhs.org.uk/plants/119870/scindapsus-pictus-argyraeus/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/satin-pothos"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Pothos",
+          "tell": "Satin pothos has velvety dark green leaves with silver splashes; pothos is bright yellow-green and glossy"
+        },
+        {
+          "name": "Scindapsus 'Exotica'",
+          "tell": "Satin pothos has velvety dark green leaves with silver splashes; pothos is bright yellow-green and glossy"
+        },
+        {
+          "name": "Monstera",
+          "tell": "Satin pothos has velvety dark green leaves with silver splashes; pothos is bright yellow-green and glossy"
+        }
+      ],
+      "nameIdeas": ["Satin Sam", "Silver Spoon", "Satina", "Splash", "Silky"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/1143-cuidados-de-la-planta-scindapsus-pictus-o-potus-plateado",
+          "title": "Scindapsus pictus o Potus plateado | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/poto-plateado--poto-sat�n_3158",
+          "title": "verdeesvida :: Poto plateado, Poto satén",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/pothos/pothos.asp",
+          "title": "Pothos (Epipremnum aureum) - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

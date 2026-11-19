@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-basil",
+      "title": "NC State Plant Toolbox: Ocimum basilicum",
+      "url": "https://plants.ces.ncsu.edu/plants/ocimum-basilicum/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-basil-guide",
+      "title": "RHS: How to grow basil",
+      "url": "https://www.rhs.org.uk/herbs/basil/grow-your-own",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-basil",
+      "title": "Basil (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/basil",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "ocimum-basilicum",
+      "taxon": {
+        "scientificName": "Ocimum basilicum"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Basil",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Sweet basil"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["ncsu-basil"],
+          "source": "rhs-basil-guide",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost evenly moist, water in the morning, and never leave the roots wet overnight."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["ncsu-basil"],
+          "source": "rhs-basil-guide",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 10,
+            "max": null
+          },
+          "unit": "C",
+          "source": "rhs-basil-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 50,
+            "spread": 36
+          },
+          "unit": "cm",
+          "corroboratedBy": ["ncsu-basil"],
+          "source": "rhs-basil-guide",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-basil",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["ncsu-basil"],
+          "source": "rhs-basil-guide",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-basil",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-basil"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-basil",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-basil"]
+          }
+        ],
+        "sources": ["aspca-basil", "ncsu-basil"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "9810Makati Central Business District Ayala Greenbelt Landmarks 17.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Judgefloro",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:9810Makati_Central_Business_District_Ayala_Greenbelt_Landmarks_17.jpg",
+          "thumbnail": "ocimum-basilicum.webp"
+        }
+      ],
+      "photoFile": "9810Makati Central Business District Ayala Greenbelt Landmarks 17.jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "indoor", "herb", "full_sun", "tender", "annual_herb"]
+      },
+      "provenance": {
+        "notes": "Tender: RHS says not hardy in the UK, wait for nights above 10 C before putting it out, and it dislikes cold, damp conditions; the 10 C minimum is the agent's reading of that advice (the Penn State indoor-herbs page, read only as a model summary of a truncated page, says it cannot survive below 50 F, about the same). Usually treated as an annual. Watering: RHS evenly moist, hates wet roots overnight; NC State moist well-drained. Size: RHS 20 to 50 cm tall; spread taken from NC State (up to 1 ft 2 in); NC State's wider range is 4 in to 3 ft by cultivar. Toxicity: ASPCA lists basil as non-toxic to dogs and cats and NC State tags it the same."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/ocimum-basilicum/",
+        "https://www.rhs.org.uk/herbs/basil/grow-your-own",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/basil",
+        "https://extension.psu.edu/growing-herbs-indoors"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/564-cuidados-de-la-planta-ocimum-basilicum-o-albahaca",
+          "title": "Ocimum basilicum o Albahaca | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/orto/singoleorticole/basilico/basilico.asp",
+          "title": "Basilico - Ocymum basilicum - Orto",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

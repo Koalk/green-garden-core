@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "iastate-orchid",
+      "title": "Iowa State Yard and Garden: proper care for a moth orchid",
+      "url": "https://yardandgarden.extension.iastate.edu/faq/what-proper-care-moth-orchid",
+      "publisher": "Iowa State University Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-phalaen",
+      "title": "RHS: How to grow Phalaenopsis (moth orchids)",
+      "url": "https://www.rhs.org.uk/plants/phalaenopsis/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-phalaen",
+      "title": "Phalaenopsis Orchid (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/phalaenopsis-orchid",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "phalaenopsis",
+      "taxon": {
+        "scientificName": "Phalaenopsis"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Moth orchid",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-phalaen"],
+          "source": "iastate-orchid",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "rhs-phalaen",
+          "confidence": "from_knowledge_verify"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Drench it, drain it fully, and water again once the bark has dried a little; keep the crown dry."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-phalaen"],
+          "source": "iastate-orchid",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 27
+          },
+          "unit": "C",
+          "corroboratedBy": ["rhs-phalaen"],
+          "source": "iastate-orchid",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": {
+            "min": 40,
+            "max": 60
+          },
+          "unit": "%",
+          "source": "iastate-orchid",
+          "confidence": "checked"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "rosette",
+          "source": "rhs-phalaen",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-phalaen",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-phalaen",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["aspca-phalaen"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Phalaenopsis Cultivar White 01.jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Uoaei1",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phalaenopsis_Cultivar_White_01.jpg",
+          "thumbnail": "phalaenopsis.webp"
+        }
+      ],
+      "photoFile": "Phalaenopsis Cultivar White 01.jpg",
+      "tags": {
+        "curated": ["indoor", "epiphytic", "flowering"]
+      },
+      "provenance": {
+        "notes": "Genus-level entry (hybrids). Watering is a mapping: Iowa State evenly moist, water thoroughly then let it dry a little; RHS never fully dry, never standing in water. The interval is RHS 'roughly once a week while growing', mapped by the agent, so from_knowledge_verify, not a measured value; it assumes a bark mix. Temperature: Iowa State days 70 to 80 F and nights 60 to 70 F, RHS keep above 16 C. Size: RHS 15 to 20 cm up to 50 cm tall, no spread, so unknown. Toxicity has one source (the ASPCA genus page); Iowa State and RHS pages say nothing on toxicity. Habit rosette is a mapping from RHS 'leaves in a clump'."
+      },
+      "sourcesRead": [
+        "https://yardandgarden.extension.iastate.edu/faq/what-proper-care-moth-orchid",
+        "https://www.rhs.org.uk/plants/phalaenopsis/growing-guide",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/phalaenopsis-orchid"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Other orchids: Dendrobium, Oncidium, Paphiopedilum",
+          "tell": "Phalaenopsis has broad flat leaves in a fan and thick silver-green roots; Dendrobium has cane-like stems"
+        }
+      ],
+      "nameIdeas": ["Phally", "Moth Man", "Orchid Dorkid", "Fally", "Mothra"],
+      "links": [
+        {
+          "url": "https://www.piante.it/phalaenopsis/",
+          "title": "Phalaenopsis",
+          "publisher": "Piante.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

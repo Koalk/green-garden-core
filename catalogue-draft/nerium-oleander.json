@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-02",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-nerium-oleander",
+      "title": "RHS Plant Profile: Nerium oleander L.",
+      "url": "https://www.rhs.org.uk/plants/98456/nerium-oleander-l/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-nerium-oleander",
+      "title": "NC State Plant Toolbox: Nerium oleander",
+      "url": "https://plants.ces.ncsu.edu/plants/nerium-oleander/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-oleander",
+      "title": "Oleander (toxic and non-toxic plants; Nerium oleander)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/oleander",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "nerium-oleander",
+      "taxon": {
+        "scientificName": "Nerium oleander"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Oleander",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Rose bay"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Rosebay"
+          },
+          {
+            "lang": "es",
+            "name": "Adelfa",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Baladre",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Oleandro",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-nerium-oleander",
+          "corroboratedBy": ["ncsu-nerium-oleander"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a potted oleander when the top of the compost has dried, and keep it in full sun; it copes with dry spells but not with frost."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-nerium-oleander",
+          "corroboratedBy": ["ncsu-nerium-oleander"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 0,
+            "max": null
+          },
+          "source": "ncsu-nerium-oleander",
+          "confidence": "from_knowledge_verify"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 200,
+            "spread": 125
+          },
+          "unit": "cm",
+          "source": "rhs-nerium-oleander",
+          "corroboratedBy": ["ncsu-nerium-oleander"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-nerium-oleander",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-nerium-oleander",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "rhs-nerium-oleander",
+          "corroboratedBy": ["ncsu-nerium-oleander"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H3",
+          "source": "rhs-nerium-oleander",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-nerium-oleander",
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "rhs-nerium-oleander",
+          "corroboratedBy": ["ncsu-nerium-oleander"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "rhs-nerium-oleander",
+          "corroboratedBy": ["ncsu-nerium-oleander"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "any",
+          "source": "rhs-nerium-oleander",
+          "corroboratedBy": ["ncsu-nerium-oleander"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Once established it copes with dry spells; water young plants through dry weather and keep it in full sun."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["cardiac glycosides"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["drooling", "diarrhoea", "lethargy", "cardiac"],
+            "source": "aspca-oleander",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-nerium-oleander"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["drooling", "diarrhoea", "lethargy", "cardiac"],
+            "source": "aspca-oleander",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-nerium-oleander"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "cardiac"],
+            "source": "ncsu-nerium-oleander",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-nerium-oleander"]
+          },
+          {
+            "who": "adult",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "cardiac"],
+            "source": "ncsu-nerium-oleander",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["rhs-nerium-oleander"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-nerium-oleander",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-oleander", "ncsu-nerium-oleander", "rhs-nerium-oleander"],
+        "assessedOn": "2026-11-02"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "full_sun", "tender", "drought_tolerant"]
+      },
+      "provenance": {
+        "notes": "Row 70. Every part is poisonous: NC State rates it high severity, fatal if eaten, smoke from burning is harmful, sap causes contact dermatitis; RHS says toxic if eaten, to pets too; ASPCA toxic to dogs and cats (cardiac glycosides). Severity 3 is the agent's grading; ASPCA gives no scale, symptom lists for people are NC State's, pet symptoms are ASPCA's. Watering: RHS moist but well-drained, drought resistance yes; NC State drought tolerant, good drainage; let_top_dry is the agent's mapping, 7 days a guess. Hardiness: RHS H3 (coastal and mild parts of the UK, -5 to 1 C); NC State USDA 8a to 10b and intolerant of 32 F or below, so the stored minimum 0 C is the agent's conversion and a limit, not a comfort range. Size: RHS 1.5 to 2.5 m by 1 to 1.5 m; NC State up to about 6 m by 1.8 to 3 m; the RHS middle is stored. Dwarf forms in pots are not separated. RHS flags it as a high-risk host for Xylella fastidiosa (Spain: check local rules before moving plants). Es and it names are machine drafts. No NC State or RHS value for waterNeedRatio, so it is not filled."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/98456/nerium-oleander-l/details",
+        "https://plants.ces.ncsu.edu/plants/nerium-oleander/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/oleander"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Yellow oleander (Cascabela thevetia)",
+          "tell": "Oleander carries pink, white or red flowers in terminal clusters (RHS); yellow oleander is a separate plant that NC State lists as a frequent mix-up."
+        }
+      ],
+      "lookAlikeNote": "Both are poisonous; do not treat either as a safe garden shrub around pets or children.",
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/555-cuidados-de-la-planta-nerium-oleander-laurel-rosa-o-adelfa",
+          "title": "Nerium oleander, Laurel rosa o Adelfa | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/singolepiante/oleandro/oleandro.asp",
+          "title": "Oleandro - Nerium oleander - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

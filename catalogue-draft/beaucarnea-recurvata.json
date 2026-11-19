@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-pony",
+      "title": "NC State Plant Toolbox: Beaucarnea recurvata",
+      "url": "https://plants.ces.ncsu.edu/plants/beaucarnea-recurvata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-pony",
+      "title": "RHS: Beaucarnea recurvata",
+      "url": "https://www.rhs.org.uk/plants/1993/beaucarnea-recurvata/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-pony",
+      "title": "Pony Tail (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pony-tail",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "beaucarnea-recurvata",
+      "taxon": {
+        "scientificName": "Beaucarnea recurvata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Ponytail palm",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Elephant's foot"
+          }
+        ],
+        "synonyms": ["Nolina recurvata"]
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["rhs-pony"],
+          "source": "ncsu-pony",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 21,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Soak well, then leave it alone until the mix is dry; the swollen base is its water tank."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-pony"],
+          "source": "ncsu-pony",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 10,
+            "max": null
+          },
+          "unit": "C",
+          "corroboratedBy": ["rhs-pony"],
+          "source": "ncsu-pony",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 244,
+            "spread": 152
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-pony"],
+          "source": "ncsu-pony",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-pony",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "rosette",
+          "corroboratedBy": ["rhs-pony"],
+          "source": "ncsu-pony",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-pony",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-pony"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "ncsu-pony",
+            "confidence": "checked",
+            "corroboratedBy": ["aspca-pony"]
+          }
+        ],
+        "sources": ["ncsu-pony", "aspca-pony"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Beaucarnea recurvata - Ботаничка градина Скопје (1).jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Dandarmkd",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaucarnea_recurvata_-_%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5_(1).jpg",
+          "thumbnail": "beaucarnea-recurvata.webp"
+        }
+      ],
+      "photoFile": "Beaucarnea recurvata - Ботаничка градина Скопје (1).jpg",
+      "tags": {
+        "curated": ["indoor", "succulent", "drought_tolerant"]
+      },
+      "provenance": {
+        "notes": "Watering is a mapping: NC State soak and let dry between waterings, RHS moderate while growing and barely damp in winter; mapped to let_fully_dry. Light is direct (NC State: at least 6 hours; RHS: maximum light). Temperature is a minimum: NC State hardy to about 10 C, RHS minimum roughly 5 to 10 C. Size is NC State container size (6 to 8 ft by 3 to 5 ft, upper values); RHS 1.5 to 2.5 m by 1 to 1.5 m. Sago palm is a deadly look-alike (see lookAlikeNote)."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/beaucarnea-recurvata/",
+        "https://www.rhs.org.uk/plants/1993/beaucarnea-recurvata/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pony-tail"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Sago palm (Cycas revoluta)",
+          "tell": "Ponytail has a swollen bulbous base and long soft curly leaves; sago is a stiff cycad with a rough trunk and spiny leaflets"
+        },
+        {
+          "name": "Yucca",
+          "tell": "Ponytail has a swollen bulbous base and long soft curly leaves; sago is a stiff cycad with a rough trunk and spiny leaflets"
+        },
+        {
+          "name": "Dasylirion",
+          "tell": "Ponytail has a swollen bulbous base and long soft curly leaves; sago is a stiff cycad with a rough trunk and spiny leaflets"
+        },
+        {
+          "name": "Cordyline",
+          "tell": "Ponytail has a swollen bulbous base and long soft curly leaves; sago is a stiff cycad with a rough trunk and spiny leaflets"
+        }
+      ],
+      "lookAlikeNote": "DEADLY look-alike: sago palm",
+      "nameIdeas": ["Ponyo", "Pony Express", "Elephant Foot", "Curly", "Tail Wag"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/560-cuidados-de-la-planta-nolina-recurvata-o-beaucarnea-recurvata",
+          "title": "Beaucarnea recurvata o Nolina recurvata | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/560-cuidados-de-la-planta-nolina-recurvata-o-beaucarnea-recurvata",
+          "title": "Beaucarnea recurvata o Nolina recurvata | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-interior_4/pata-de-elefante_3171",
+          "title": "verdeesvida :: Pata de elefante",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/beaucarnea/beaucarnea.asp",
+          "title": "Mangia fumo Nolina - Beaucarnea recurvata - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

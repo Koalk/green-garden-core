@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-strepto",
+      "title": "NC State Plant Toolbox: Streptocarpus",
+      "url": "https://plants.ces.ncsu.edu/plants/streptocarpus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-cariad",
+      "title": "RHS: Streptocarpus 'Cariad'",
+      "url": "https://www.rhs.org.uk/plants/343970/streptocarpus-cariad/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-saxorum",
+      "title": "Clemson HGIC: Cape primrose (Streptocarpus saxorum)",
+      "url": "https://hgic.clemson.edu/cape-primrose-streptocarpus-saxorum-how-to-grow-this-easy-houseplant/",
+      "publisher": "Clemson Cooperative Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-cape",
+      "title": "Cape Primrose (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cape-primrose",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "streptocarpus",
+      "taxon": {
+        "scientificName": "Streptocarpus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Cape primrose",
+            "primary": true
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-cariad"],
+          "source": "ncsu-strepto",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water from below, let the top dry a little between drinks, and ease off in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-cariad", "ncsu-strepto"],
+          "source": "clemson-saxorum",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 24
+          },
+          "unit": "C",
+          "source": "clemson-saxorum",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 50,
+            "spread": 50
+          },
+          "unit": "cm",
+          "source": "rhs-cariad",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-strepto",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "rosette",
+          "source": "ncsu-strepto",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-cape",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-strepto", "clemson-saxorum"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-cape",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-strepto", "clemson-saxorum"]
+          }
+        ],
+        "sources": ["aspca-cape", "ncsu-strepto", "clemson-saxorum"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Streptocarpus sp. (Cape primrose) 1.jpg",
+          "licence": "CC-BY-2.0",
+          "creator": "James St. John",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Streptocarpus_sp._(Cape_primrose)_1.jpg",
+          "thumbnail": "streptocarpus.webp"
+        }
+      ],
+      "photoFile": "Streptocarpus sp. (Cape primrose) 1.jpg",
+      "tags": {
+        "curated": ["indoor", "flowering"]
+      },
+      "provenance": {
+        "notes": "Genus-level entry for the hybrids (the African violet row 19 stays separate). Watering conflict: Clemson (S. saxorum) says keep evenly damp, NC State and RHS say let the compost dry slightly between waterings; the two-source reading is kept. The Clemson page is for S. saxorum and its figures (60 to 75 F, 8 by 12 in) are for that species; the RHS size is for the hybrid 'Cariad' (10 to 50 cm), upper values. Habit rosette follows NC State 'most commonly a basal rosette'. Humidity is high per NC State but no number."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/streptocarpus/",
+        "https://www.rhs.org.uk/plants/343970/streptocarpus-cariad/details",
+        "https://hgic.clemson.edu/cape-primrose-streptocarpus-saxorum-how-to-grow-this-easy-houseplant/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cape-primrose"
+      ],
+      "lookAlikes": [
+        {
+          "name": "African violet",
+          "tell": "Cape primrose has long strap leaves in a rosette; African violet has short fuzzy round leaves"
+        },
+        {
+          "name": "Gloxinia",
+          "tell": "Cape primrose has long strap leaves in a rosette; African violet has short fuzzy round leaves"
+        }
+      ],
+      "nameIdeas": ["Cape Crusader", "Primrose Path", "Capey", "Cape Cod", "Prim"]
+    }
+  ]
+}

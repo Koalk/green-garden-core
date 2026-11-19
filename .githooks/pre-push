@@ -1,0 +1,6 @@
+#!/bin/sh
+# Runs an optional, untracked local pre-push hook (.git/hooks-local/pre-push)
+# if this clone has one; otherwise does nothing. Enabled by scripts/setup-hooks.sh.
+h="$(git rev-parse --git-common-dir)/hooks-local/pre-push"
+[ -f "$h" ] || exit 0
+exec sh "$h" "$@"

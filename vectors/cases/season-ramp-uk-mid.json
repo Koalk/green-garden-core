@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-uk-mid",
+  "description": "Rest-season weight at about 55 N (UK) on 2026-10-17: halfway up the 30 day ramp, so 0.5.",
+  "why": "Full rest is 60 days either side of 31 December at 55 N (1 November to the end of February), reached by a 30 day linear ramp. 31 December minus 17 October is 75 days: weight = 1 - (75 - 60) / 30 = 0.5. Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2026-10-17", "hemisphere": "north", "latitude": 55 },
+  "expected": { "weight": 0.5 }
+}

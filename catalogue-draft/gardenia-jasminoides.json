@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-gardenia",
+      "title": "NC State Plant Toolbox: Gardenia jasminoides",
+      "url": "https://plants.ces.ncsu.edu/plants/gardenia-jasminoides/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-gardenia",
+      "title": "RHS: How to grow gardenias",
+      "url": "https://www.rhs.org.uk/plants/gardenia/how-to-grow",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-gardenia",
+      "title": "Gardenia (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gardenia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "gardenia-jasminoides",
+      "taxon": {
+        "scientificName": "Gardenia jasminoides"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Gardenia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Cape jasmine"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["ncsu-gardenia"],
+          "source": "rhs-gardenia",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 4,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost constantly moist but never saturated, use rainwater if your tap water is hard, and ease off a little in winter without letting it dry out."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-gardenia"],
+          "source": "rhs-gardenia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 10,
+            "max": 24
+          },
+          "unit": "C",
+          "source": "rhs-gardenia",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": null,
+          "unit": "cm",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-gardenia",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-gardenia",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["genioposide", "gardenoside"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "aspca-gardenia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-gardenia"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "aspca-gardenia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-gardenia"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-gardenia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-gardenia", "ncsu-gardenia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Gardenia jasminoides aka Cape jasmine.jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Prianxi",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_aka_Cape_jasmine.jpg",
+          "thumbnail": "gardenia-jasminoides.webp"
+        }
+      ],
+      "photoFile": "Gardenia jasminoides aka Cape jasmine.jpg",
+      "tags": {
+        "curated": ["indoor", "outdoor_pot", "flowering", "high_humidity", "needs_acid_compost"]
+      },
+      "provenance": {
+        "notes": "Houseplant gardenia (RHS: short-lived, tricky) and a hardy garden shrub (NC State: zones 7b to 11b, 4 to 8 ft) in one row. Needs ericaceous compost and soft water. Care values come from the RHS growing guide (indoor, full page); NC State was truncated (about 39 of 51 thousand characters verbatim, the attribute table via summary), so its growth rate, habit and light-by-hours are weaker. Light: RHS warm and bright out of direct sun; NC State bright indirect or partial shade. Temperature: RHS day 21 to 24 C, winter 10 to 15 C, nights under 18 C for flowering. Humidity: RHS high and uniform, no figure. Size left unknown: NC State's shrub size is the outdoor one and the RHS guide gives none. Toxicity: ASPCA toxic to dogs and cats (genioposide, gardenoside; mild vomiting and diarrhoea, hives); NC State low severity for humans with the same mild signs. Graded 1 by the agent; hives not in our symptom list."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/gardenia-jasminoides/",
+        "https://www.rhs.org.uk/plants/gardenia/how-to-grow",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gardenia"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/375-cuidados-de-la-planta-gardenia-jasminoides-gardenia-o-jazmin-del-cabo",
+          "title": "Gardenia jasminoides o Gardenia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/arbustos-y-trepadoras_1/gardenia--jazm�n-del-cabo_3039",
+          "title": "verdeesvida :: Gardenia, Jazmín del Cabo",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/piante/gardenia.asp",
+          "title": "Gardenia - Gardenia jasminoides - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

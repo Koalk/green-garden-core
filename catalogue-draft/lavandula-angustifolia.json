@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-lavender-english",
+      "title": "RHS: English lavender (plant guide)",
+      "url": "https://www.rhs.org.uk/plants/lavender/english",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-lavender",
+      "title": "RHS: Lavender (plant guide)",
+      "url": "https://www.rhs.org.uk/plants/lavender",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-lavandula-angustifolia",
+      "title": "NC State Plant Toolbox: Lavandula angustifolia",
+      "url": "https://plants.ces.ncsu.edu/plants/lavandula-angustifolia/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-lavender",
+      "title": "Lavender (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lavender",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "lavandula-angustifolia",
+      "taxon": {
+        "scientificName": "Lavandula angustifolia"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "English lavender",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Common lavender"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Lavender"
+          },
+          {
+            "lang": "es",
+            "name": "Lavanda",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Espliego",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Lavanda inglesa",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Lavanda",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Lavanda comune",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Lavanda vera",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Lavandula officinalis"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "source": "ncsu-lavandula-angustifolia",
+          "corroboratedBy": ["rhs-lavender-english"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 10,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a pot only once the mix has dried right out, and never leave it sitting in water, especially in winter."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-lavender-english",
+          "corroboratedBy": ["ncsu-lavandula-angustifolia", "rhs-lavender"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 90,
+            "spread": 90
+          },
+          "unit": "cm",
+          "source": "rhs-lavender-english",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-lavandula-angustifolia",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-lavender-english",
+          "corroboratedBy": ["ncsu-lavandula-angustifolia"],
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["linalool", "linalyl_acetate"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "aspca-lavender",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "aspca-lavender",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting"],
+            "source": "ncsu-lavandula-angustifolia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-lavender", "ncsu-lavandula-angustifolia"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "full_sun", "fragrant"]
+      },
+      "provenance": {
+        "notes": "NAME CLASH and look-alikes: this is English lavender; L. stoechas (Spanish or French lavender, cantueso) and L. x intermedia are different plants. RHS says English lavenders are hardy and long-lived, French lavender and the tender species slightly less hardy and short-lived; the shop labels in Spain mix them. Starter list rows mix species too; this entry is L. angustifolia only. Watering: no page gives pot advice or a schedule; RHS says free-draining soil, hates wet in winter; NC State says perfectly drained, preferably on the dry side, root rot from overwatering. let_fully_dry is the agent's mapping; interval 10 days is a guess. Light: RHS sun-lover, dislikes shade; NC State full sun (partial shade also listed), stored direct. Size: RHS 30 to 90 cm tall for the species (cultivars 10 to 100), no species spread; NC State up to 2 ft tall by 3 ft wide (60 by 90 cm); height 90 is RHS's upper value, spread 90 is NC State's, hence from_knowledge_verify. Growth medium is NC State. Hardiness: RHS H5 per search summary only, not on the fetched pages; NC State USDA zones 5a to 9b; no temperature stored. Toxicity: ASPCA toxic to cats and dogs (linalool, linalyl acetate; nausea, vomiting, inappetence), no severity word; NC State tags problem for cats and dogs and rates human severity low with the same agents and signs. Stored 1 for cats, dogs and children (agent's grading). NC State says no contact dermatitis, so no skin entry. Es and it names are machine drafts, not fetched."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/lavender/english",
+        "https://www.rhs.org.uk/plants/lavender",
+        "https://plants.ces.ncsu.edu/plants/lavandula-angustifolia/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lavender"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/859-cuidados-de-la-planta-lavandula-angustifolia-espliego-o-lavanda",
+          "title": "Lavandula angustifolia, Espliego o Lavanda | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/piante/lavanda.asp",
+          "title": "Lavanda - Lavandula angustifolia - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

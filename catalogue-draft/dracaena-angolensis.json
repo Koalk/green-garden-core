@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-dracaena-angolensis",
+      "title": "NC State Plant Toolbox: Dracaena angolensis",
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-angolensis/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-sansevieria",
+      "title": "RHS: Sansevieria (plant guide)",
+      "url": "https://www.rhs.org.uk/plants/sansevieria",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-sansevieria-cylindrica",
+      "title": "RHS: Sansevieria cylindrica",
+      "url": "https://www.rhs.org.uk/plants/16411/sansevieria-cylindrica/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-dracaena",
+      "title": "Dracaena spp. (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dracaena",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "dracaena-angolensis",
+      "taxon": {
+        "scientificName": "Dracaena angolensis"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Cylindrical snake plant",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "African spear"
+          }
+        ],
+        "synonyms": ["Sansevieria cylindrica"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_fully_dry",
+          "corroboratedBy": ["rhs-sansevieria"],
+          "source": "ncsu-dracaena-angolensis",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 14,
+          "source": "ncsu-dracaena-angolensis",
+          "confidence": "from_knowledge_verify"
+        },
+        "restSeasonFactor": {
+          "value": 2.1,
+          "source": "ncsu-dracaena-angolensis",
+          "confidence": "from_knowledge_verify"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Use a gritty mix and water only when it is dry through, about every two weeks in summer and monthly in winter."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-sansevieria"],
+          "source": "ncsu-dracaena-angolensis",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 10,
+            "max": 24
+          },
+          "source": "rhs-sansevieria",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 150,
+            "spread": 50
+          },
+          "unit": "cm",
+          "source": "rhs-sansevieria-cylindrica",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-dracaena-angolensis",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "corroboratedBy": ["rhs-sansevieria-cylindrica"],
+          "source": "ncsu-dracaena-angolensis",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["saponins"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling", "lethargy"],
+            "source": "ncsu-dracaena-angolensis",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-dracaena"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling", "lethargy"],
+            "source": "ncsu-dracaena-angolensis",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-dracaena"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": [],
+            "source": "ncsu-dracaena-angolensis",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-dracaena-angolensis", "aspca-dracaena"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["indoor", "succulent", "drought_tolerant", "beginner_friendly"]
+      },
+      "provenance": {
+        "notes": "Formerly Sansevieria cylindrica (not stored as a synonym: the name matcher then sends the plain input sansevieria here instead of to the snake plant); part of the snake-plant group (the snake plant of row 1 is Dracaena trifasciata). First entry whose base interval comes from a page: NC State says about every two weeks in summer and monthly in winter, so 14 days and a rest factor of 30/14 (about 2.1) are the agent's reading of that sentence, not a stated factor. RHS (genus guide) says water only once the compost starts to dry. Temperature: RHS genus guide best 15 to 24 C, keep above 10 C; NC State says bring indoors below 55 F (13 C); the RHS range is stored. Humidity: RHS says it dislikes high humidity, no figure. Size: the RHS species page gives 1 to 1.5 m by 0.1 to 0.5 m; NC State gives 6 in to 7 ft by 6 in to 2 ft. Habit: NC State erect from a basal rosette, mapped to upright (agent). Toxicity: NC State low severity, saponin, tagged a problem for cats, dogs and children, signs include dilated pupils, vomiting, drooling, weakness; the ASPCA entry is the genus Dracaena (toxic to dogs and cats, same signs). Graded 1 by the agent, as for the snake plant; RHS says harmful if eaten without detail. NC State says the sap irritates skin but contact dermatitis 'no', so no skin line."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/dracaena-angolensis/",
+        "https://www.rhs.org.uk/plants/sansevieria",
+        "https://www.rhs.org.uk/plants/16411/sansevieria-cylindrica/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dracaena"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/2943-cuidados-de-la-planta-sansevieria-cylindrica-o-lanza-africana",
+          "title": "Sansevieria cylindrica o Lanza Africana | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

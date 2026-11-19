@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-kal",
+      "title": "NC State Plant Toolbox: Kalanchoe blossfeldiana",
+      "url": "https://plants.ces.ncsu.edu/plants/kalanchoe-blossfeldiana/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-kal",
+      "title": "RHS: Kalanchoe blossfeldiana",
+      "url": "https://www.rhs.org.uk/plants/78810/kalanchoe-blossfeldiana/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-kal",
+      "title": "Clemson HGIC: Kalanchoe",
+      "url": "https://hgic.clemson.edu/factsheet/kalanchoe/",
+      "publisher": "Clemson Cooperative Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-kal",
+      "title": "Kalanchoe (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kalanchoe",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "kalanchoe-blossfeldiana",
+      "taxon": {
+        "scientificName": "Kalanchoe blossfeldiana"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Kalanchoe",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Flaming Katy"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["clemson-kal"],
+          "source": "ncsu-kal",
+          "confidence": "from_knowledge_verify"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 12,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water thoroughly, then let it dry before the next drink; soggy roots rot."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-kal"],
+          "source": "ncsu-kal",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 16,
+            "max": 21
+          },
+          "unit": "C",
+          "source": "ncsu-kal",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 46,
+            "spread": 30
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-kal"],
+          "source": "ncsu-kal",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-kal",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["ncsu-kal"],
+          "source": "rhs-kal",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["bufadienolide"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "cardiac"],
+            "source": "ncsu-kal",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-kal", "rhs-kal"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 3,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "cardiac"],
+            "source": "ncsu-kal",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["aspca-kal", "rhs-kal"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "cardiac"],
+            "source": "ncsu-kal",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-kal", "aspca-kal", "rhs-kal"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "Flaming Katy 2.jpg",
+          "licence": "CC-BY-SA-4.0",
+          "creator": "Slyronit",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flaming_Katy_2.jpg",
+          "thumbnail": "kalanchoe-blossfeldiana.webp"
+        }
+      ],
+      "photoFile": "Flaming Katy 2.jpg",
+      "tags": {
+        "curated": ["indoor", "succulent", "flowering"]
+      },
+      "provenance": {
+        "notes": "The one plant in this batch with possible heart effects: NC State rates the poison medium, says pet ingestion can be fatal (altered heart rate, seizures, death) and gives arrhythmia for people; the ASPCA genus entry (Kalanchoe spp.) lists dogs and cats as toxic with vomiting, diarrhoea and rarely an irregular heartbeat. Graded 3 for pets (the higher of the two readings, rule 5; the 01e baseline was 2 to 3), 2 for children. Seizures have no symptom in our vocabulary and are not listed. Watering: NC State and Clemson say let the soil dry (partly, per Clemson); mapped to let_top_dry. Temperature: NC State 60 F night and 70 F day, Clemson 45 to 65 F nights and 50 to 70 F days. Clemson makes no toxicity statement. Humidity: no page gives one."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/kalanchoe-blossfeldiana/",
+        "https://www.rhs.org.uk/plants/78810/kalanchoe-blossfeldiana/details",
+        "https://hgic.clemson.edu/factsheet/kalanchoe/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kalanchoe"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Mother of thousands (Kalanchoe daigremontiana)",
+          "tell": "Blossfeldiana is compact with scalloped glossy leaves and flower clusters; mother of thousands has plantlets along leaf edges"
+        },
+        {
+          "name": "K. thyrsiflora",
+          "tell": "Blossfeldiana is compact with scalloped glossy leaves and flower clusters; mother of thousands has plantlets along leaf edges"
+        },
+        {
+          "name": "K. tomentosa",
+          "tell": "Blossfeldiana is compact with scalloped glossy leaves and flower clusters; mother of thousands has plantlets along leaf edges"
+        }
+      ],
+      "lookAlikeNote": "MORE TOXIC look-alike: mother of thousands",
+      "nameIdeas": ["Kalan", "Kalanchoe Kev", "Blossom", "Flaming Katy", "Calando"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/465-cuidados-de-la-planta-kalanchoe-blossfeldiana-o-calanchoe",
+          "title": "Kalanchoe blossfeldiana o Calanchoe | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/piante-grasse/piante-grasse/kalanchoe.asp",
+          "title": "Curare Kalanchoe - Piante Grasse",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

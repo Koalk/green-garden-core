@@ -1,0 +1,5 @@
+{
+  "en-GB": { "name": "English (UK)", "machine": false },
+  "es": { "name": "Español", "machine": true },
+  "it": { "name": "Italiano", "machine": true }
+}

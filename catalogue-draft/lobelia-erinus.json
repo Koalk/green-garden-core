@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-lobelia",
+      "title": "NC State Plant Toolbox: Lobelia erinus",
+      "url": "https://plants.ces.ncsu.edu/plants/lobelia-erinus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-lobelia",
+      "title": "RHS: Lobelia erinus",
+      "url": "https://www.rhs.org.uk/plants/142728/lobelia-erinus/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "lobelia-erinus",
+      "taxon": {
+        "scientificName": "Lobelia erinus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Trailing lobelia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Edging lobelia"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["rhs-lobelia"],
+          "source": "ncsu-lobelia",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Never let the pot dry out, because it does not tolerate drought, and feed fortnightly while it flowers."
+        },
+        "light": {
+          "value": "direct",
+          "corroboratedBy": ["rhs-lobelia"],
+          "source": "ncsu-lobelia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 23,
+            "spread": 30
+          },
+          "unit": "cm",
+          "source": "ncsu-lobelia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "trailing",
+          "corroboratedBy": ["ncsu-lobelia"],
+          "source": "rhs-lobelia",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["lobeline", "lobelamine"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea", "drooling", "lethargy", "tremor"],
+            "source": "ncsu-lobelia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea", "drooling", "lethargy", "tremor"],
+            "source": "ncsu-lobelia",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea", "drooling", "lethargy", "tremor"],
+            "source": "ncsu-lobelia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-lobelia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Lobelia erinus plant (05).jpg",
+          "licence": "CC0-1.0",
+          "creator": "ahaislip",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lobelia_erinus_plant_(05).jpg",
+          "thumbnail": "lobelia-erinus.webp"
+        }
+      ],
+      "photoFile": "Lobelia erinus plant (05).jpg",
+      "tags": {
+        "curated": ["outdoor_pot", "flowering", "trailing", "annual_bedding", "tender"]
+      },
+      "provenance": {
+        "notes": "Trailing and upright cultivars exist (NC State); this row stores the trailing reading. Hardy only in zones 10a to 11b (NC State), H2 (RHS), so it is bedding. Likes cool springs, struggles in hot humid summers. Watering: NC State consistently moist and drought intolerant; RHS reliably moist. Size: NC State 6 to 9 in tall and 6 to 12 in wide (its text says 4 to 9 in), RHS 10 to 50 cm. Toxicity: NC State rates humans medium severity (lobeline and lobelamine alkaloids; nausea, vomiting, diarrhoea, drooling, weakness, dilated pupils, convulsions, coma after large amounts of any part) and does not mention cats or dogs; RHS says 'potentially harmful' without detail. No pet source was fetched, so the pet lines (graded 2) copy the human grading and symptoms and are the agent's mapping (from_knowledge_verify): review, and read the ASPCA page when one is found. The 'convulsions' sign is stored as tremor."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/lobelia-erinus/",
+        "https://www.rhs.org.uk/plants/142728/lobelia-erinus/details"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/501-cuidados-de-la-planta-lobelia-erinus-o-lobelia-azul",
+          "title": "Lobelia erinus o Lobelia azul | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-flor_3/lobelia_3139",
+          "title": "verdeesvida :: Lobelia",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

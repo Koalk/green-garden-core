@@ -1,0 +1,21 @@
+{
+  "name": "multipliers-windows-clamped-low",
+  "description": "A 10 day plant (let_top_dry) in a 15 cm pot in direct light: the product 0.4 is held to 0.6, so the working interval is 6 days, not 4. Watered on 2026-11-02.",
+  "why": "Clamp to 0.6 of the catalogue interval. 10 x 0.6 = 6 days; band 25% early (round half up of 1.5 = 2) and 25% late (2): earliest 2026-11-02 + 6 - 2 = 2026-11-06, latest + 6 + 2 = 2026-11-10. Hand computation.",
+  "input": {
+    "today": "2026-11-02",
+    "plants": [
+      {
+        "id": "sunny",
+        "style": "let_top_dry",
+        "intervalDays": 10,
+        "lastWatered": "2026-11-02",
+        "potDiameterCm": 15,
+        "light": "direct"
+      }
+    ]
+  },
+  "expected": {
+    "windows": [{ "plantId": "sunny", "earliest": "2026-11-06", "latest": "2026-11-10" }]
+  }
+}

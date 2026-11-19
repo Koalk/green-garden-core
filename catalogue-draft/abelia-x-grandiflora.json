@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-abelia-chinensis",
+      "title": "NC State Plant Toolbox: Abelia chinensis (Chinese abelia, parent of the glossy abelia)",
+      "url": "https://plants.ces.ncsu.edu/plants/abelia-chinensis/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-abelia-x-grandiflora",
+      "title": "RHS Plant Profile: Abelia x grandiflora",
+      "url": "https://www.rhs.org.uk/plants/100036/abelia-x-grandiflora/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "abelia-x-grandiflora",
+      "taxon": {
+        "scientificName": "Abelia x grandiflora"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Glossy abelia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Abelia"
+          },
+          {
+            "lang": "es",
+            "name": "Abelia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Abelia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": ["Abelia chinensis"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-abelia-chinensis",
+          "corroboratedBy": ["rhs-abelia-x-grandiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-abelia-x-grandiflora",
+          "corroboratedBy": ["ncsu-abelia-chinensis"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a pot when the top of the compost has dried; it likes moist but well-drained soil and a sunny, sheltered spot."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-abelia-x-grandiflora",
+          "corroboratedBy": ["ncsu-abelia-chinensis"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 300,
+            "spread": 300
+          },
+          "source": "rhs-abelia-x-grandiflora",
+          "corroboratedBy": ["ncsu-abelia-chinensis"],
+          "confidence": "from_knowledge_verify",
+          "unit": "cm"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-abelia-chinensis",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "rhs-abelia-x-grandiflora",
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-abelia-chinensis",
+          "corroboratedBy": ["rhs-abelia-x-grandiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "ncsu-abelia-chinensis",
+          "confidence": "from_knowledge_verify"
+        },
+        "dormancy": {
+          "value": "winter",
+          "source": "ncsu-abelia-chinensis",
+          "corroboratedBy": ["rhs-abelia-x-grandiflora"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "rhs-abelia-x-grandiflora",
+          "corroboratedBy": ["ncsu-abelia-chinensis"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-abelia-x-grandiflora",
+          "corroboratedBy": ["ncsu-abelia-chinensis"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H5",
+          "source": "rhs-abelia-x-grandiflora",
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants through their first dry spells; established shrubs cope with dry weather and flower longest in full sun."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": ["ground", "outdoor_pot", "flowering", "full_sun", "scented"]
+      },
+      "provenance": {
+        "notes": "Row 100, glossy abelia. GBIF treats Abelia x grandiflora as a synonym of Abelia chinensis, and NC State's page cached for it is the Chinese abelia (A. chinensis, the parent species), so it stands in for the hybrid; RHS has a page for the hybrid itself. Two care sources only, no Missouri BG page (the search found none) and no ASPCA page. Agree on full sun (NC State also part shade), moist well-drained soil and a semi-evergreen to deciduous shrub that may die back in the cold. Size: RHS 2.5 to 4 m, 'shrub to 3 m' in its own description; NC State 5 to 8 ft by 4 to 6 ft; 300 by 300 cm follows the RHS description. Hardiness H5 is the RHS rating (it also says not fully hardy, sheltered position). Dormancy 'winter' because semi-evergreen/deciduous in cold. Toxicity: neither page states any, so people and pets stay unknown. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/abelia-chinensis/",
+        "https://www.rhs.org.uk/plants/100036/abelia-x-grandiflora/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Chinese abelia (Abelia chinensis)",
+          "tell": "A parent species, more fragrant and rarer in shops; sold under the same name in places."
+        },
+        {
+          "name": "Compact cultivars ('Kaleidoscope', 'Hopley's', 'Sherwoodii')",
+          "tell": "Much smaller (1 to 1.5 m); the same care but not the full size on this entry."
+        }
+      ],
+      "lookAlikeNote": "Cultivars share this key; RHS gives pruning group 8, with hard pruning every 3 to 4 years when needed.",
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/24-cuidados-de-la-planta-abelia-grandiflora-abelia-o-abelia-de-mexico",
+          "title": "Abelia x grandiflora o Abelia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

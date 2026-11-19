@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-07",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-lantana-camara",
+      "title": "NC State Plant Toolbox: Lantana camara",
+      "url": "https://plants.ces.ncsu.edu/plants/lantana-camara/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-lantana-camara",
+      "title": "Missouri Botanical Garden Plant Finder: Lantana camara",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=287443&isprofile=0&basic=lantana%20camara",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-lantana",
+      "title": "Lantana (Lantana camara) (toxic and non-toxic plants)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/lantana",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-07",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "lantana-camara",
+      "taxon": {
+        "scientificName": "Lantana camara"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Lantana",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Common lantana"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Shrub verbena"
+          },
+          {
+            "lang": "es",
+            "name": "Lantana",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Banderita española",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Verbena arbustiva",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Lantana",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Camara",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-lantana-camara",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-lantana-camara",
+          "corroboratedBy": ["mbg-lantana-camara"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water when the top of the compost has dried; it copes with a dry spell and sulks in soggy pots."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-lantana-camara",
+          "corroboratedBy": ["mbg-lantana-camara"],
+          "confidence": "checked"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 120,
+            "spread": 120
+          },
+          "unit": "cm",
+          "source": "ncsu-lantana-camara",
+          "corroboratedBy": ["mbg-lantana-camara"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-lantana-camara",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "ncsu-lantana-camara",
+          "corroboratedBy": ["mbg-lantana-camara"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-lantana-camara",
+          "corroboratedBy": ["mbg-lantana-camara"],
+          "confidence": "from_knowledge_verify"
+        },
+        "droughtTolerance": {
+          "value": "high",
+          "source": "ncsu-lantana-camara",
+          "corroboratedBy": ["mbg-lantana-camara"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-lantana-camara",
+          "corroboratedBy": ["mbg-lantana-camara"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "mbg-lantana-camara",
+          "corroboratedBy": ["ncsu-lantana-camara"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants until they settle in; established lantana tolerates dry soil and flowers best in sun."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["lantadene"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "liver"],
+            "source": "aspca-lantana",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-lantana-camara"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea", "lethargy", "liver"],
+            "source": "aspca-lantana",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-lantana-camara"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "ncsu-lantana-camara",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-lantana-camara",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-lantana", "ncsu-lantana-camara"],
+        "assessedOn": "2026-11-07"
+      },
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "tender", "full_sun"]
+      },
+      "provenance": {
+        "notes": "Row 88. Pages: NC State, MBG (two Plant Finder pages cached; the second is the cultivar 'Little Lucky Peach Glow' and not cited) and ASPCA. RHS not read (hand-fetch budget kept for calamondin and tulip; RHS pages are not in the cache), so hardiness is left empty: MBG gives top growth hardy in USDA 10 to 11 and roots to zone 9, NC State 7a to 11b, and the RHS H-scale needs a UK source. Lifecycle perennial is the agent's choice: NC State lists annual and perennial, MBG says gardeners in cold climates treat it as an annual. The Spanish shop plant of row 88 is often Lantana montevidensis (trailing lantana, lantana rastrera), a different species; lantana is invasive in warm regions (MBG, NC State: weedy). Toxicity: ASPCA toxic to dogs, cats and horses (triterpenoids, liver failure more common in livestock); NC State medium severity for people (lantadenes), leaves and unripe berries minor skin irritation, contact dermatitis yes. Grades of 2 are the agent's mapping of toxic plus medium. Watering style a mapping, 5 days a guess. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/lantana-camara/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=287443&isprofile=0&basic=lantana%20camara",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=273977&isprofile=0&basic=lantana%20camara",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/lantana"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Trailing lantana (Lantana montevidensis)",
+          "tell": "Creeping habit with smaller lilac or white flower heads and smaller leaves; it is the plant most Spanish shops sell as lantana."
+        }
+      ],
+      "lookAlikeNote": "Toxic to dogs, cats and livestock, mainly the leaves and unripe green berries.",
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/479-cuidados-de-la-planta-lantana-camara-bandera-espanola-o-confite",
+          "title": "Lantana camara, Bandera española o Confite | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

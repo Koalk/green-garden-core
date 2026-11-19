@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-01",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-salvia-guide",
+      "title": "RHS: How to grow salvias",
+      "url": "https://www.rhs.org.uk/plants/salvia/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-salvia-nemorosa",
+      "title": "RHS plant profile: Salvia nemorosa",
+      "url": "https://www.rhs.org.uk/plants/60176/salvia-nemorosa/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-salvia-nemorosa",
+      "title": "NC State Plant Toolbox: Salvia nemorosa",
+      "url": "https://plants.ces.ncsu.edu/plants/salvia-nemorosa/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-sage",
+      "title": "Sage (toxic and non-toxic plants; Salvia officinalis)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/sage",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-01",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "salvia-nemorosa",
+      "taxon": {
+        "scientificName": "Salvia nemorosa"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Woodland sage",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Balkan clary"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Perennial salvia"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Ornamental sage"
+          },
+          {
+            "lang": "es",
+            "name": "Salvia ornamental",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Salvia nemorosa",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Salvia azul",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Salvia ornamentale",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Salvia nemorosa",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-salvia-guide",
+          "corroboratedBy": ["rhs-salvia-nemorosa", "ncsu-salvia-nemorosa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water well in the first year, then let it dry out a bit between waterings; in pots keep it watered in summer but never waterlogged."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-salvia-nemorosa",
+          "corroboratedBy": ["ncsu-salvia-nemorosa", "rhs-salvia-guide"],
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 90,
+            "spread": 60
+          },
+          "unit": "cm",
+          "source": "ncsu-salvia-nemorosa",
+          "corroboratedBy": ["rhs-salvia-nemorosa"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "rhs-salvia-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-salvia-nemorosa",
+          "corroboratedBy": ["ncsu-salvia-nemorosa"],
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-sage",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-sage",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-sage"],
+        "assessedOn": "2026-11-01"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "full_sun", "hardy", "pollinator"]
+      },
+      "provenance": {
+        "notes": "Name clash: culinary sage is Salvia officinalis (own entry, row 67); tender border salvias (S. x jamensis, S. 'Amistad') are other plants. Watering: RHS guide says drought tolerant once established, allow established plants to dry out a bit between waterings, dislike continually wet soil; pots dry out faster and must not be waterlogged; RHS profile moist but well-drained, drought tolerant once established; NC State average moist well-drained soil, drought-tolerant. let_top_dry is the agent's mapping; 7 days is a guess. Light: full sun, tolerates light partial shade (RHS profile), full sun to partial shade (NC State). Size: RHS profile max height 0.5 to 1 m, spread 0.1 to 0.5 m; NC State 1.5 to 3 ft by 0.5 to 2 ft; 90 by 60 cm is the agent's pick from the overlap, hence from_knowledge_verify. Growth: fast is the RHS genus guide's wording ('fast-growing plants'), applied to the species. Hardiness: RHS H7 (hardier than -20 C), NC State zones 4 to 8; no temperature stored. Pruning: cut back spent spikes, cut to near ground level in July for a second flush (RHS). Toxicity: ASPCA has no S. nemorosa entry; the only ASPCA sage entry is S. officinalis (non-toxic to dogs, cats, horses), so severity 0 is a genus-level reading, weak, listed under pets unknown. NC State page has no pet tags. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/salvia/growing-guide",
+        "https://www.rhs.org.uk/plants/60176/salvia-nemorosa/details",
+        "https://plants.ces.ncsu.edu/plants/salvia-nemorosa/",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/sage"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/1055-cuidados-de-la-planta-salvia-nemorosa-o-salvia-de-bosque",
+          "title": "Salvia nemorosa o Salvia de bosque | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

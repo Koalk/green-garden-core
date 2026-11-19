@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-poinsettia",
+      "title": "NC State Plant Toolbox: Euphorbia pulcherrima",
+      "url": "https://plants.ces.ncsu.edu/plants/euphorbia-pulcherrima/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-poinsettia-guide",
+      "title": "RHS: How to grow poinsettias",
+      "url": "https://www.rhs.org.uk/plants/euphorbia/poinsettia/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-poinsettia",
+      "title": "Clemson HGIC: Poinsettia",
+      "url": "https://hgic.clemson.edu/factsheet/poinsettia/",
+      "publisher": "Clemson Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-poinsettia",
+      "title": "Poinsettia (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poinsettia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "euphorbia-pulcherrima",
+      "taxon": {
+        "scientificName": "Euphorbia pulcherrima"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Poinsettia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Christmas star"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["ncsu-poinsettia", "clemson-poinsettia"],
+          "source": "rhs-poinsettia-guide",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water only when the surface feels dry, let the pot drain, and never leave it standing in water or in its foil sleeve."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["rhs-poinsettia-guide"],
+          "source": "clemson-poinsettia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 13,
+            "max": 21
+          },
+          "unit": "C",
+          "corroboratedBy": ["ncsu-poinsettia", "clemson-poinsettia"],
+          "source": "rhs-poinsettia-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 60,
+            "spread": 30
+          },
+          "unit": "cm",
+          "corroboratedBy": ["ncsu-poinsettia"],
+          "source": "rhs-poinsettia-guide",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["ncsu-poinsettia"],
+          "source": "rhs-poinsettia-guide",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["diterpene_esters"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "aspca-poinsettia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-poinsettia"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["oral_irritation", "vomiting"],
+            "source": "aspca-poinsettia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-poinsettia"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "clemson-poinsettia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-poinsettia"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-poinsettia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-poinsettia"]
+          },
+          {
+            "who": "adult",
+            "route": "eye",
+            "severity": 2,
+            "symptoms": [],
+            "source": "ncsu-poinsettia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["clemson-poinsettia"]
+          }
+        ],
+        "sources": ["aspca-poinsettia", "ncsu-poinsettia", "clemson-poinsettia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "A Bit Bedraggled (46364683581).jpg",
+          "licence": "CC0-1.0",
+          "creator": "Dennis Sylvester Hurd",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Bit_Bedraggled_(46364683581).jpg",
+          "thumbnail": "euphorbia-pulcherrima.webp"
+        }
+      ],
+      "photoFile": "A Bit Bedraggled (46364683581).jpg",
+      "tags": {
+        "curated": ["indoor", "flowering", "seasonal"]
+      },
+      "provenance": {
+        "notes": "Seasonal pot plant: held until spring and re-flowered only with long dark nights (NC State, RHS and Clemson all describe the short-day routine); no rest-season number. Toxicity sources disagree on how bad it is: ASPCA lists it as toxic to dogs and cats (irritant sap, mouth and stomach irritation, sometimes vomiting) while saying the danger is overrated; NC State rates humans low; Clemson says not considered toxic; RHS says much less toxic than other euphorbias and warns about sap on skin and eyes; the Penn State holiday-plants page was truncated and only a summary of it was read (says exaggerated). Pets graded 1 (the agent's mapping, higher reading kept). Sap in the eye: NC State says temporary to permanent corneal damage, graded 2 by the agent. Temperature merges RHS minimum 13 to 16 C with NC State 65 to 70 F and Clemson 'not above 70 F'. Size: RHS 60 by 30 cm (shop plants are growth-suppressed; NC State says wild plants reach 10 ft). Humidity: RHS says humidity extends flowering, no figure. Growth rate: none states it."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/euphorbia-pulcherrima/",
+        "https://www.rhs.org.uk/plants/euphorbia/poinsettia/growing-guide",
+        "https://hgic.clemson.edu/factsheet/poinsettia/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poinsettia",
+        "https://extension.psu.edu/holiday-plants-and-pets"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-d-a-la-l/345-cuidados-de-la-planta-euphorbia-pulcherrima-o-flor-de-pascua",
+          "title": "Euphorbia pulcherrima o Flor de Pascua",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/piante/poinsettia.asp",
+          "title": "Stella di Natale - Euphorbia pulcherrima - Appartamento",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-spain-mid",
+  "description": "Rest-season weight at about 40 N (Spain) on 2026-11-15: halfway up the ramp, 0.5, but the rest season is shorter and later than in the UK.",
+  "why": "The full-rest half-width shrinks with latitude: 60 + (40 - 55) x 29 / 15 = 31 days at 40 N. 31 December minus 15 November is 46 days: weight = 1 - (46 - 31) / 30 = 0.5. Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2026-11-15", "hemisphere": "north", "latitude": 40 },
+  "expected": { "weight": 0.5 }
+}

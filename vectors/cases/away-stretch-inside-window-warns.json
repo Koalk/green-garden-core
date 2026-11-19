@@ -1,0 +1,48 @@
+{
+  "name": "away-stretch-inside-window-warns",
+  "description": "A plant that tolerates 5 dry days, with a 17-day away stretch well inside the 28-day plan window, warns: the stretch outlasts what it tolerates.",
+  "why": "An away stretch inside the plan window that exceeds the dry tolerance must warn; a stretch that starts near the end of the plan falls outside the window and has nothing to warn about. let_top_dry, interval 7, dry tolerance 5, watered 2026-11-10, away 2026-11-14 to 2026-11-30. Pre-leave watering on 11-13, next free day 12-01: gap 18, 11 past the ideal interval, beyond 1.5 x 5 = 7, so decay. Hand-computed.",
+  "fn": "planDays",
+  "input": {
+    "today": "2026-11-10",
+    "horizonDays": 28,
+    "prefs": {
+      "unavailableDates": [
+        "2026-11-14",
+        "2026-11-15",
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26",
+        "2026-11-27",
+        "2026-11-28",
+        "2026-11-29",
+        "2026-11-30"
+      ]
+    },
+    "plants": [
+      {
+        "id": "pilea",
+        "style": "let_top_dry",
+        "intervalDays": 7,
+        "dryTolDays": 5,
+        "lastWatered": "2026-11-10"
+      }
+    ]
+  },
+  "expected": {
+    "plants": [
+      {
+        "plantId": "pilea",
+        "outlook": { "level": "decay", "severity": 3, "reasons": ["away_days", "gap_exceeds_band"] }
+      }
+    ]
+  }
+}

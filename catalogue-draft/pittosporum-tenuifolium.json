@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-02",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-pittosporum-tenuifolium",
+      "title": "RHS Plant Profile: Pittosporum tenuifolium",
+      "url": "https://www.rhs.org.uk/plants/13202/pittosporum-tenuifolium/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-pittosporum-growing-guide",
+      "title": "RHS Growing Guide: How to grow pittosporum (genus)",
+      "url": "https://www.rhs.org.uk/plants/pittosporum/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "pittosporum-tenuifolium",
+      "taxon": {
+        "scientificName": "Pittosporum tenuifolium"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Pittosporum",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Kohuhu"
+          },
+          {
+            "lang": "en-GB",
+            "name": "New Zealand pittosporum"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Tawhiwhi"
+          },
+          {
+            "lang": "es",
+            "name": "Pitosporo",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Pittosporo",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-pittosporum-growing-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a potted pittosporum during dry spells and make sure the pot drains; waterlogged soil and long drought both make it drop leaves."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-pittosporum-tenuifolium",
+          "corroboratedBy": ["rhs-pittosporum-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 600,
+            "spread": 325
+          },
+          "unit": "cm",
+          "source": "rhs-pittosporum-tenuifolium",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "rhs-pittosporum-tenuifolium",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "rhs-pittosporum-growing-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H4",
+          "source": "rhs-pittosporum-tenuifolium",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "rhs-pittosporum-tenuifolium",
+          "confidence": "from_knowledge_verify"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "rhs-pittosporum-growing-guide",
+          "confidence": "from_knowledge_verify"
+        },
+        "establishment": {
+          "seasons": {
+            "value": 2,
+            "source": "rhs-pittosporum-growing-guide",
+            "confidence": "from_knowledge_verify"
+          },
+          "intervalDays": {
+            "value": null,
+            "source": null,
+            "confidence": "unknown"
+          }
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "rhs-pittosporum-tenuifolium",
+          "corroboratedBy": ["rhs-pittosporum-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-pittosporum-growing-guide",
+          "corroboratedBy": ["rhs-pittosporum-tenuifolium"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants through dry spells in spring and summer for a couple of years; established plants are fairly drought tolerant."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": []
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "foliage"]
+      },
+      "provenance": {
+        "notes": "Row 76. Pets unknown: no fetched page covers Pittosporum tenuifolium; the ASPCA page fetched (https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/japanese-pittosporum) is for P. tobira, a different species, and lists it non-toxic to dogs, cats and horses; that is not carried over. No NC State Plant Toolbox page for this species turned up in the search. Care comes from the RHS species profile (moist but well-drained or well-drained, full sun or partial shade, H4 = -10 to -5 C, 4 to 8 m by 2.5 to 4 m, 10 to 20 years to maturity, bushy, evergreen) and the RHS genus growing guide: well-drained soil, water for the first couple of years in dry spells (large specimens up to five), fairly drought tolerant once established, may still need water on quick-draining soil or in a hot spot, containers only for the smaller cultivars, leaf drop from waterlogging or long dry spells, mulch 5 to 7.5 cm. The guide is about the genus, so everything taken from it is from_knowledge_verify. Growth rate: neither page gives one. let_top_dry and 7 days are the agent's mapping and a guess. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/13202/pittosporum-tenuifolium/details",
+        "https://www.rhs.org.uk/plants/pittosporum/growing-guide",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/japanese-pittosporum"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/1166-cuidados-de-la-planta-pittosporum-tenuifolium-o-pitosporo-variegado",
+          "title": "Pittosporum tenuifolium o Pitosporo variegado | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/arbustos-y-trepadoras_1/pittosporum-tenuifolium_3058",
+          "title": "verdeesvida :: Pittosporum tenuifolium",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/singolepiante/pittosporum/pittosporum.asp",
+          "title": "Pittosporo - Pittosporum - Arbusti - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

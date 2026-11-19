@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-spain-october",
+  "description": "Rest-season weight at about 40 N (Spain) on 2026-10-17: still growth, 0 (the UK is already at 0.5 on this date).",
+  "why": "31 December minus 17 October is 75 days, past the 31 + 30 = 61 day reach at 40 N. Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2026-10-17", "hemisphere": "north", "latitude": 40 },
+  "expected": { "weight": 0 }
+}

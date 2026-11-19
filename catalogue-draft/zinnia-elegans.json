@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-zinnia-elegans",
+      "title": "NC State Plant Toolbox: Zinnia elegans",
+      "url": "https://plants.ces.ncsu.edu/plants/zinnia-elegans/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-zinnia-elegans",
+      "title": "Missouri Botanical Garden Plant Finder: Zinnia elegans",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=277260&isprofile=0&basic=zinnia%20elegans",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-zinnia-growing-guide",
+      "title": "RHS Growing Guide: how to grow zinnia",
+      "url": "https://www.rhs.org.uk/plants/zinnia/growing-guide",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-zinnia",
+      "title": "Zinnia (toxic and non-toxic plants)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/zinnia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "zinnia-elegans",
+      "taxon": {
+        "scientificName": "Zinnia elegans"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Zinnia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Common zinnia"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Youth-and-old-age"
+          },
+          {
+            "lang": "es",
+            "name": "Zinnia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Zinnia",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-zinnia-elegans",
+          "corroboratedBy": ["mbg-zinnia-elegans"],
+          "confidence": "checked"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "mbg-zinnia-elegans",
+          "corroboratedBy": ["ncsu-zinnia-elegans", "rhs-zinnia-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water when the top of the compost feels dry, at the base and not over the leaves, which invites mildew."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-zinnia-elegans",
+          "corroboratedBy": ["mbg-zinnia-elegans", "rhs-zinnia-growing-guide"],
+          "confidence": "checked"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 90,
+            "spread": 30
+          },
+          "unit": "cm",
+          "source": "ncsu-zinnia-elegans",
+          "corroboratedBy": ["mbg-zinnia-elegans", "rhs-zinnia-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "fast",
+          "source": "ncsu-zinnia-elegans",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "ncsu-zinnia-elegans",
+          "corroboratedBy": ["mbg-zinnia-elegans", "rhs-zinnia-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "annual",
+          "source": "ncsu-zinnia-elegans",
+          "corroboratedBy": ["mbg-zinnia-elegans", "rhs-zinnia-growing-guide"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "ncsu-zinnia-elegans",
+          "corroboratedBy": ["mbg-zinnia-elegans"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-zinnia-elegans",
+          "corroboratedBy": ["mbg-zinnia-elegans", "rhs-zinnia-growing-guide"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "ncsu-zinnia-elegans",
+          "corroboratedBy": ["mbg-zinnia-elegans", "rhs-zinnia-growing-guide"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water in dry spells and keep the leaves dry; zinnias flower best in full sun and sulk in cold, wet soil."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-zinnia",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-zinnia-elegans"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-zinnia",
+            "confidence": "checked",
+            "corroboratedBy": ["ncsu-zinnia-elegans"]
+          }
+        ],
+        "sources": ["aspca-zinnia", "ncsu-zinnia-elegans"],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": [
+          "outdoor_pot",
+          "ground",
+          "flowering",
+          "full_sun",
+          "annual_bedding",
+          "pollinator"
+        ]
+      },
+      "provenance": {
+        "notes": "Row 91. An annual: it is sown or bought as a young plant after the last frost and ends with the first frost (NC State, Missouri BG; RHS: half-hardy annual, plant out in early June in the south of England). Stored as lifecycle annual. Sources: NC State and Missouri BG (both USDA-based), RHS growing guide for the UK timing, ASPCA genus page (Zinnia species, non-toxic to dogs and cats; NC State tags it non-toxic for cats, dogs and horses). Size: NC State 6 in to 3 ft by 8 in to 1 ft, Missouri BG up to 4 ft; 90 by 30 cm is the agent's mapping. Watering: Missouri BG evenly moist and well-drained, NC State occasionally dry; let_top_dry is a mapping and 3 days a guess. No hardiness stored (annual). People: no source states a grade, so no child or adult line. Es and it names are machine drafts; no es or it care page read."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/zinnia-elegans/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=277260&isprofile=0&basic=zinnia%20elegans",
+        "https://www.rhs.org.uk/plants/zinnia/growing-guide",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/zinnia"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Narrow-leaf zinnia (Zinnia angustifolia)",
+          "tell": "Narrower leaves and small single orange or white flowers; the Profusion series is a cross of the two."
+        }
+      ],
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/821-cuidados-de-la-planta-zinnia-elegans-o-zinia",
+          "title": "Zinnia elegans o Zinia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-s-a-la-z/821-cuidados-de-la-planta-zinnia-elegans-rosa-mistica-o-zinia",
+          "title": "Zinnia elegans o Zinia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

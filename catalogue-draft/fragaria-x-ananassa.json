@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-fragaria-x-ananassa",
+      "title": "NC State Plant Toolbox: Fragaria x ananassa",
+      "url": "https://plants.ces.ncsu.edu/plants/fragaria-x-ananassa/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-strawberries-grow-your-own",
+      "title": "RHS: how to grow strawberries",
+      "url": "https://www.rhs.org.uk/fruit/strawberries/grow-your-own",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-strawberry",
+      "title": "Strawberry (Fragaria spp.) (toxic and non-toxic plants)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/strawberry",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "fragaria-x-ananassa",
+      "taxon": { "scientificName": "Fragaria x ananassa" },
+      "names": {
+        "common": [
+          { "lang": "en-GB", "name": "Strawberry", "primary": true },
+          { "lang": "en-GB", "name": "Garden strawberry" },
+          {
+            "lang": "es",
+            "name": "Fresa",
+            "primary": true,
+            "translation": { "status": "machine" }
+          },
+          { "lang": "es", "name": "Fresón", "translation": { "status": "machine" } },
+          {
+            "lang": "it",
+            "name": "Fragola",
+            "primary": true,
+            "translation": { "status": "machine" }
+          }
+        ],
+        "synonyms": ["Fragaria ananassa"]
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": { "value": null, "source": null, "confidence": "unknown" },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": { "value": null, "source": null, "confidence": "unknown", "unit": "C" },
+        "humidityPercent": { "value": null, "source": null, "confidence": "unknown", "unit": "%" },
+        "rootDepthClass": { "value": null, "source": null, "confidence": "unknown" },
+        "habit": {
+          "value": "rosette",
+          "source": "ncsu-fragaria-x-ananassa",
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "keep_moist",
+          "source": "ncsu-fragaria-x-ananassa",
+          "corroboratedBy": ["rhs-strawberries-grow-your-own"],
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 2,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost evenly moist, especially in pots and baskets, and water the soil rather than the crown or the fruit."
+        },
+        "light": {
+          "value": "direct",
+          "source": "ncsu-fragaria-x-ananassa",
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": { "height": 30, "spread": 60 },
+          "unit": "cm",
+          "source": "ncsu-fragaria-x-ananassa",
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-fragaria-x-ananassa",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "ncsu-fragaria-x-ananassa",
+          "corroboratedBy": ["rhs-strawberries-grow-your-own"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-fragaria-x-ananassa",
+          "corroboratedBy": ["rhs-strawberries-grow-your-own"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "none",
+          "source": "ncsu-fragaria-x-ananassa",
+          "corroboratedBy": ["rhs-strawberries-grow-your-own"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "ncsu-fragaria-x-ananassa",
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "moist",
+          "source": "ncsu-fragaria-x-ananassa",
+          "corroboratedBy": ["rhs-strawberries-grow-your-own"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants regularly and everything in long dry spells; replant the bed every three or four years."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": [],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-strawberry",
+            "confidence": "checked"
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 0,
+            "symptoms": [],
+            "source": "aspca-strawberry",
+            "confidence": "checked"
+          }
+        ],
+        "sources": ["aspca-strawberry"],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": { "curated": ["outdoor_pot", "ground", "edible", "hardy", "full_sun"] },
+      "provenance": {
+        "notes": "Row 93, the garden strawberry kept as one entry (summer-fruiting and perpetual types share the care; the alpine strawberry is a separate species). Sources: NC State (current name page, the script's old address 404ed), RHS grow-your-own page (replant every three or four years, water new plants and dry spells, containers need regular watering, hardy; protect flowers from frost), ASPCA genus page (Fragaria spp., non-toxic to dogs and cats). NC State sizes 6 to 12 in by 1 to 2 ft; 30 by 60 cm is the agent's mapping. Light: NC State full sun to partial shade, full chosen. No Missouri BG or Clemson page found (search only). No RHS H rating read, so no hardiness. Pet toxicity rests on one genus-level source. Fruit is edible, so no child line; the leaves are not graded. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/fragaria-x-ananassa/",
+        "https://www.rhs.org.uk/fruit/strawberries/grow-your-own",
+        "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/strawberry"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Alpine or wild strawberry (Fragaria vesca)",
+          "tell": "Much smaller, pointed fruit and no runners in the clumping forms; RHS treats it as a separate crop."
+        },
+        {
+          "name": "Mock strawberry (Potentilla indica)",
+          "tell": "Yellow flowers and bland, dry fruit that points upwards."
+        }
+      ],
+      "photos": [],
+      "links": []
+    }
+  ]
+}

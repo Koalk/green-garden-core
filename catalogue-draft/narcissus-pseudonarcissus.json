@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-02",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "rhs-narcissus-pseudonarcissus",
+      "title": "RHS Plant Profile: Narcissus pseudonarcissus subsp. pseudonarcissus (13)",
+      "url": "https://www.rhs.org.uk/plants/11394/narcissus-pseudonarcissus-subsp-pseudonarcissus-13/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "ncsu-narcissus-pseudonarcissus",
+      "title": "NC State Plant Toolbox: Narcissus pseudonarcissus",
+      "url": "https://plants.ces.ncsu.edu/plants/narcissus-pseudonarcissus/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-narcissus",
+      "title": "Narcissus (toxic and non-toxic plants; Narcissus spp.)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/narcissus",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-11-02",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "narcissus-pseudonarcissus",
+      "taxon": {
+        "scientificName": "Narcissus pseudonarcissus"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Wild daffodil",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Daffodil"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Trumpet daffodil"
+          },
+          {
+            "lang": "es",
+            "name": "Narciso",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Narciso de trompeta",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Narciso",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Narciso selvatico",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-narcissus-pseudonarcissus",
+          "corroboratedBy": ["rhs-narcissus-pseudonarcissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep the compost evenly moist while the leaves are growing and flowering, but never let a bulb sit in wet compost, and let the leaves die back on their own."
+        },
+        "light": {
+          "value": "direct",
+          "source": "rhs-narcissus-pseudonarcissus",
+          "corroboratedBy": ["ncsu-narcissus-pseudonarcissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 40,
+            "spread": 20
+          },
+          "unit": "cm",
+          "source": "ncsu-narcissus-pseudonarcissus",
+          "corroboratedBy": ["rhs-narcissus-pseudonarcissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-narcissus-pseudonarcissus",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "upright",
+          "source": "ncsu-narcissus-pseudonarcissus",
+          "corroboratedBy": ["rhs-narcissus-pseudonarcissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "placement": {
+          "value": ["pot_outdoor", "ground"],
+          "source": "rhs-narcissus-pseudonarcissus",
+          "corroboratedBy": ["ncsu-narcissus-pseudonarcissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H6",
+          "source": "rhs-narcissus-pseudonarcissus",
+          "confidence": "checked"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-narcissus-pseudonarcissus",
+          "corroboratedBy": ["rhs-narcissus-pseudonarcissus"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "ncsu-narcissus-pseudonarcissus",
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "full",
+          "source": "rhs-narcissus-pseudonarcissus",
+          "corroboratedBy": ["ncsu-narcissus-pseudonarcissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-narcissus-pseudonarcissus",
+          "corroboratedBy": ["ncsu-narcissus-pseudonarcissus"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "In the ground it wants soil that stays moist through the growing season but never waterlogged, since wet soil rots the bulb."
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["lycorine"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "drooling", "diarrhoea", "tremor", "cardiac"],
+            "source": "aspca-narcissus",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-narcissus-pseudonarcissus"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "drooling", "diarrhoea", "tremor", "cardiac"],
+            "source": "aspca-narcissus",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-narcissus-pseudonarcissus"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["vomiting", "diarrhoea"],
+            "source": "rhs-narcissus-pseudonarcissus",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-narcissus-pseudonarcissus"]
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "rhs-narcissus-pseudonarcissus",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": [
+          "aspca-narcissus",
+          "ncsu-narcissus-pseudonarcissus",
+          "rhs-narcissus-pseudonarcissus"
+        ],
+        "assessedOn": "2026-11-02"
+      },
+      "photos": [],
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "hardy"]
+      },
+      "provenance": {
+        "notes": "Row 74. The RHS page is the subspecies pseudonarcissus (division 13, 'all natural species and their varieties'), NC State the species, ASPCA the genus (Narcissus spp, daffodil, jonquil, paperwhite). In Spain the common bulb in shops is often the paperwhite N. tazetta (own plant). Toxicity: ASPCA toxic to dogs, cats and horses (lycorine and other alkaloids; bulbs worst; large ingestions convulsions, low blood pressure, tremors, arrhythmias); NC State species page rates severity low; RHS 'harmful if eaten, skin irritant', pets too. The higher grade (2) is kept; no source gives a numeric scale. Conflict on skin: NC State says contact dermatitis no (species page; the genus page says yes), RHS says skin irritant; the cautious reading is kept. Pet symptoms are ASPCA's; the child symptoms are the agent's mapping from the same list. Watering: bulb in moist, well-draining soil, drought and heat tolerant, bulb rot in wet soil; let_top_dry is the agent's mapping and 7 days a guess; no dormancy or summer-dry-rest advice was found on any fetched page, so dormancy is not filled. Size: RHS 10 to 50 cm tall; NC State 30 to 46 cm by 23 to 30 cm; 40 by 20 is the agent's middle. Hardiness: RHS H6 (-20 to -15 C); NC State USDA 4a to 8b. Es and it names are machine drafts."
+      },
+      "sourcesRead": [
+        "https://www.rhs.org.uk/plants/11394/narcissus-pseudonarcissus-subsp-pseudonarcissus-13/details",
+        "https://plants.ces.ncsu.edu/plants/narcissus-pseudonarcissus/",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/narcissus"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Other daffodils (N. jonquilla, N. poeticus, N. x incomparabilis)",
+          "tell": "The wild daffodil has one flower per stem and a trumpet at least as long as the outer petals, usually all yellow (NC State)."
+        }
+      ],
+      "lookAlikeNote": "All narcissus are toxic to dogs, cats and horses; the bulbs are the most poisonous part."
+    }
+  ]
+}

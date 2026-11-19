@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-28",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-oxalis",
+      "title": "NC State Plant Toolbox: Oxalis triangularis",
+      "url": "https://plants.ces.ncsu.edu/plants/oxalis-triangularis/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-oxalis",
+      "title": "RHS: Oxalis triangularis",
+      "url": "https://www.rhs.org.uk/plants/50979/oxalis-triangularis/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-shamrock",
+      "title": "Shamrock Plant, Oxalis spp. (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shamrock-plant",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-28",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "oxalis-triangularis",
+      "taxon": {
+        "scientificName": "Oxalis triangularis"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Purple shamrock",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "False shamrock"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "ncsu-oxalis",
+          "confidence": "checked"
+        },
+        "engineMethod": "interval",
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Let the top dry between drinks, and water very little when it dies back for its rest."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-oxalis"],
+          "source": "rhs-oxalis",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 46,
+            "spread": 61
+          },
+          "unit": "cm",
+          "source": "ncsu-oxalis",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-oxalis",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["rhs-oxalis"],
+          "source": "ncsu-oxalis",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["soluble_oxalate"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["drooling", "tremor", "kidney"],
+            "source": "aspca-shamrock",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-oxalis"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["drooling", "tremor", "kidney"],
+            "source": "aspca-shamrock",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-oxalis"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": [],
+            "source": "ncsu-oxalis",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-shamrock", "ncsu-oxalis"],
+        "assessedOn": "2026-10-28"
+      },
+      "photos": [
+        {
+          "file": "False shamrock (Oxalis triangularis).jpg",
+          "licence": "CC-BY-4.0",
+          "creator": "EvanBaldonado",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:False_shamrock_(Oxalis_triangularis).jpg",
+          "thumbnail": "oxalis-triangularis.webp"
+        }
+      ],
+      "photoFile": "False shamrock (Oxalis triangularis).jpg",
+      "tags": {
+        "curated": ["indoor", "flowering", "dormant_season"]
+      },
+      "provenance": {
+        "notes": "Severity: the ASPCA genus entry (Oxalis spp.) lists dogs and cats as toxic (tremors, drooling, kidney failure rare); NC State rates the plant low severity and says serious effects need large amounts, and that kidney failure is possible after serious ingestion. Graded 2 for pets (higher of the two, rule 5) and 1 for children; the 01e baseline was 1. Kidney failure is rare, listed as a symptom for completeness. The plant goes dormant (NC State, reduce watering until growth returns), but no source gives a rest factor in numbers. Light: NC State full sun to partial shade, RHS partial shade; stored bright indirect. Temperature and humidity: no usable figure (RHS rates it hardy outdoors, which is irrelevant indoors). RHS makes no toxicity statement."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/oxalis-triangularis/",
+        "https://www.rhs.org.uk/plants/50979/oxalis-triangularis/details",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shamrock-plant"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Oxalis regnellii",
+          "tell": "Triangularis has three purple triangular leaflets that fold at night; clovers have rounded leaflets with V marks"
+        },
+        {
+          "name": "weedy Oxalis corniculata",
+          "tell": "Triangularis has three purple triangular leaflets that fold at night; clovers have rounded leaflets with V marks"
+        },
+        {
+          "name": "clover (Trifolium)",
+          "tell": "Triangularis has three purple triangular leaflets that fold at night; clovers have rounded leaflets with V marks"
+        }
+      ],
+      "lookAlikeNote": "Oxalis is toxic if eaten in quantity; clover is less so",
+      "nameIdeas": ["Shamrock Shaker", "Purple Rain", "Clover", "Lucky", "Fold Man"],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-m-a-la-r/1297-cuidados-de-la-planta-oxalis-triangularis-o-planta-mariposa",
+          "title": "Oxalis triangularis o Planta mariposa | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "windows-single-plants",
+  "description": "Examples E1 to E4 recomputed with the band and anchor model, as of Monday 2026-11-02 (day 0).",
+  "why": "E1 to E4 used the superseded first-draft offsets ([3,5], [11,16], [1,2], [9,14]). With the frequency bands intersected with the anchor tolerance the windows are Monstera [2,6], Snake [9,18], Fern [1,2], ZZ [7,15]. Hand-computed from the band formulas; E3 (Fern) is unchanged.",
+  "input": {
+    "today": "2026-11-02",
+    "plants": [
+      { "id": "monstera", "style": "let_top_dry", "intervalDays": 7, "lastWatered": "2026-10-30" },
+      { "id": "snake", "style": "let_fully_dry", "intervalDays": 21, "lastWatered": "2026-10-23" },
+      { "id": "fern", "style": "keep_moist", "intervalDays": 4, "lastWatered": "2026-10-31" },
+      { "id": "zz", "style": "let_fully_dry", "intervalDays": 18, "lastWatered": "2026-10-24" }
+    ]
+  },
+  "expected": {
+    "windows": [
+      { "plantId": "fern", "earliest": "2026-11-03", "latest": "2026-11-04" },
+      { "plantId": "monstera", "earliest": "2026-11-04", "latest": "2026-11-08" },
+      { "plantId": "snake", "earliest": "2026-11-11", "latest": "2026-11-20" },
+      { "plantId": "zz", "earliest": "2026-11-09", "latest": "2026-11-17" }
+    ]
+  }
+}

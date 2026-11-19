@@ -1,0 +1,8 @@
+{
+  "name": "season-ramp-uk-full",
+  "description": "Rest-season weight at about 55 N (UK) on 2026-12-01: full rest, 1.",
+  "why": "1 December is 30 days from 31 December, inside the 60 day full-rest half-width at 55 N. Hand computation.",
+  "fn": "restWeight",
+  "input": { "date": "2026-12-01", "hemisphere": "north", "latitude": 55 },
+  "expected": { "weight": 1 }
+}

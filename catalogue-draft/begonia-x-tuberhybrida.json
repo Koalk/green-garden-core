@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-begonia-tuberous",
+      "title": "NC State Plant Toolbox: Begonia, tuberous types",
+      "url": "https://plants.ces.ncsu.edu/plants/begonia-tuberous-types/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "clemson-begonia",
+      "title": "Clemson HGIC: Begonia",
+      "url": "https://hgic.clemson.edu/factsheet/begonia/",
+      "publisher": "Clemson Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-begonias-outdoors",
+      "title": "RHS: Begonias outdoors",
+      "url": "https://www.rhs.org.uk/plants/begonias/outdoors",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-begonia",
+      "title": "Begonia (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "begonia-x-tuberhybrida",
+      "taxon": {
+        "scientificName": "Begonia x tuberhybrida"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Tuberous begonia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Hybrid tuberous begonia"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "keep_moist",
+          "corroboratedBy": ["clemson-begonia", "rhs-begonias-outdoors"],
+          "source": "ncsu-begonia-tuberous",
+          "confidence": "checked"
+        },
+        "baseIntervalDays": {
+          "value": 3,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Keep it evenly moist but never soggy, water the soil rather than the leaves, and ease off as the leaves yellow in autumn."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["clemson-begonia", "rhs-begonias-outdoors"],
+          "source": "ncsu-begonia-tuberous",
+          "confidence": "from_knowledge_verify"
+        },
+        "temperatureC": {
+          "value": null,
+          "unit": "C",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 46,
+            "spread": 61
+          },
+          "unit": "cm",
+          "corroboratedBy": ["rhs-begonias-outdoors"],
+          "source": "ncsu-begonia-tuberous",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-begonia-tuberous",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "bushy",
+          "corroboratedBy": ["clemson-begonia"],
+          "source": "ncsu-begonia-tuberous",
+          "confidence": "checked"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["calcium_oxalate_soluble"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "aspca-begonia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-begonia-tuberous"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["vomiting", "drooling"],
+            "source": "aspca-begonia",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-begonia-tuberous"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": [],
+            "source": "ncsu-begonia-tuberous",
+            "confidence": "from_knowledge_verify"
+          },
+          {
+            "who": "adult",
+            "route": "skin",
+            "severity": 1,
+            "symptoms": ["skin_irritation"],
+            "source": "ncsu-begonia-tuberous",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["ncsu-begonia-tuberous", "aspca-begonia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Begonia tuberhybrida 0.1 R.jpg",
+          "licence": "PDM-1.0",
+          "creator": "Rob Hille",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begonia_tuberhybrida_0.1_R.jpg",
+          "thumbnail": "begonia-x-tuberhybrida.webp"
+        }
+      ],
+      "photoFile": "Begonia tuberhybrida 0.1 R.jpg",
+      "tags": {
+        "curated": [
+          "outdoor_pot",
+          "flowering",
+          "dormant_season",
+          "tender",
+          "tubers_stored_in_winter"
+        ]
+      },
+      "provenance": {
+        "notes": "Tuberous begonia, not wax begonia (Begonia cucullata, own row) and not the Rex or angel-wing houseplants. Seasonal pot plant: tubers are started indoors in late winter, planted out after frost and lifted and stored dry (about 7 C, RHS; 45 to 55 F, Clemson) before the first frost, so the rest factor is unknown and the winter 'care' is storage, not watering. Watering: all three pages say moist, well-drained, regular, with tuber rot if too wet; NC State also says not drought tolerant. Light: partial shade (NC State 2 to 6 hours of direct sun; Clemson and RHS agree, RHS says sun or partial shade and scorch in hot sun); mapped to bright_indirect (agent). Size: NC State 1 to 1.5 ft tall and 1 to 2 ft wide; RHS 15 to 50 cm both ways. Humidity: NC State says it dislikes heat and humidity, no figure. Toxicity: ASPCA (Begonia spp.: soluble calcium oxalates, vomiting and salivation in dogs and cats, underground parts worst) and NC State (low severity, sap irritates skin, a problem for children) agree; neither grades it beyond 'low'. Graded 1 as the agent's mapping, no page says 2. The child line has no symptoms because the pages give none specific to people."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/begonia-tuberous-types/",
+        "https://hgic.clemson.edu/factsheet/begonia/",
+        "https://www.rhs.org.uk/plants/begonias/outdoors",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/960-cuidados-de-la-planta-begonia-x-tuberhybrida-o-begonia-tuberosa",
+          "title": "Begonia x tuberhybrida o Begonia tuberosa | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/giardino/piante-da-giardino/begonia.asp",
+          "title": "Begonia pianta - Piante da Giardino",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

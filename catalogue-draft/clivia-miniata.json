@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-30",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-clivia",
+      "title": "NC State Plant Toolbox: Clivia miniata",
+      "url": "https://plants.ces.ncsu.edu/plants/clivia-miniata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-clivia",
+      "title": "RHS: Clivia (plant guide)",
+      "url": "https://www.rhs.org.uk/plants/clivia",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en"
+    },
+    {
+      "id": "aspca-kaffir-lily",
+      "title": "Kaffir lily, Clivia (toxic and non-toxic plants list)",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kaffir-lily",
+      "publisher": "ASPCA",
+      "kind": "database",
+      "access": "fetched",
+      "retrievedOn": "2026-10-30",
+      "lang": "en",
+      "linkKind": "toxicity"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "clivia-miniata",
+      "taxon": {
+        "scientificName": "Clivia miniata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Clivia",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Kaffir lily"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Bush lily"
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "corroboratedBy": ["rhs-clivia"],
+          "source": "ncsu-clivia",
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 7,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "unit": "days",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water freely in summer, let the top dry between drinks, and keep it cool and nearly dry for a winter rest so it flowers."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "corroboratedBy": ["ncsu-clivia"],
+          "source": "rhs-clivia",
+          "confidence": "checked"
+        },
+        "temperatureC": {
+          "value": {
+            "min": 5,
+            "max": null
+          },
+          "unit": "C",
+          "source": "rhs-clivia",
+          "confidence": "checked"
+        },
+        "humidityPercent": {
+          "value": null,
+          "unit": "%",
+          "source": null,
+          "confidence": "unknown"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 61,
+            "spread": 91
+          },
+          "unit": "cm",
+          "source": "ncsu-clivia",
+          "confidence": "checked"
+        },
+        "growthRate": {
+          "value": "slow",
+          "source": "ncsu-clivia",
+          "confidence": "checked"
+        },
+        "habit": {
+          "value": "rosette",
+          "source": "ncsu-clivia",
+          "confidence": "from_knowledge_verify"
+        }
+      },
+      "toxicity": {
+        "status": "assessed",
+        "agents": ["lycorine"],
+        "exposures": [
+          {
+            "who": "cat",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["drooling", "vomiting", "diarrhoea", "tremor", "cardiac"],
+            "source": "aspca-kaffir-lily",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-clivia"]
+          },
+          {
+            "who": "dog",
+            "route": "ingest",
+            "severity": 2,
+            "symptoms": ["drooling", "vomiting", "diarrhoea", "tremor", "cardiac"],
+            "source": "aspca-kaffir-lily",
+            "confidence": "from_knowledge_verify",
+            "corroboratedBy": ["ncsu-clivia"]
+          },
+          {
+            "who": "child",
+            "route": "ingest",
+            "severity": 1,
+            "symptoms": ["drooling", "vomiting", "diarrhoea"],
+            "source": "ncsu-clivia",
+            "confidence": "from_knowledge_verify"
+          }
+        ],
+        "sources": ["aspca-kaffir-lily", "ncsu-clivia"],
+        "assessedOn": "2026-10-30"
+      },
+      "photos": [
+        {
+          "file": "Clivia miniata . Clivia naranja.jpg",
+          "licence": "CC0-1.0",
+          "creator": "Nathaly 1106",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clivia_miniata_._Clivia_naranja.jpg",
+          "thumbnail": "clivia-miniata.webp"
+        }
+      ],
+      "photoFile": "Clivia miniata . Clivia naranja.jpg",
+      "tags": {
+        "curated": ["indoor", "flowering", "dormant_season", "likes_rootbound"]
+      },
+      "provenance": {
+        "notes": "A cool, dry winter rest of one to two months (NC State: nights under 50 F; RHS: cooler, drier winter) is needed to flower; no page gives a watering number for it, so the rest factor is unknown. Likes to be rootbound (NC State, RHS). Watering: NC State drought tolerant, overwatering rots the crown; RHS dislikes soggy compost, water freely in summer; mapped to let_top_dry (agent). Light: RHS filtered or indirect, scorches in direct sun; NC State morning sun is best as a houseplant (stored the shadier reading). Size: NC State 2 ft tall by 3 ft wide, RHS 10 to 50 cm; NC State figures stored. Habit: basal strap-like leaves in a clump, no stem; 'rosette' is the agent's mapping. Toxicity: ASPCA (lycorine and other alkaloids; vomiting, drooling, diarrhoea; large amounts convulsions, low blood pressure, tremors, heart rhythm changes; bulbs worst) says toxic to dogs and cats; NC State rates humans low severity with the same signs and says no contact dermatitis. Pets graded 2 because of the heart and nerve effects after large doses; the grade is the agent's. The RHS page read says nothing on toxicity."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/clivia-miniata/",
+        "https://www.rhs.org.uk/plants/clivia",
+        "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kaffir-lily"
+      ],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/219-cuidados-de-la-planta-clivia-miniata-o-clivia",
+          "title": "Clivia miniata o Clivia | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.verdeesvida.es/fichas_de_plantas/plantas-de-flor_3/clivia_3155",
+          "title": "verdeesvida :: Clivia",
+          "publisher": "Verde es Vida",
+          "lang": "es",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.giardinaggio.it/appartamento/singolepiante/clivia/clivia.asp",
+          "title": "Clivia miniata - Appartamento - Piante da interno",
+          "publisher": "Giardinaggio.it",
+          "lang": "it",
+          "kind": "care"
+        },
+        {
+          "url": "https://www.piante.it/clivia-miniata/",
+          "title": "Clivia miniata",
+          "publisher": "Piante.it",
+          "lang": "it",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

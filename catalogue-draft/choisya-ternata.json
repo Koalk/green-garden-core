@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "sources": [
+    {
+      "id": "author",
+      "title": "Author knowledge, to be verified",
+      "url": "",
+      "kind": "author_knowledge"
+    },
+    {
+      "id": "ncsu-choisya-ternata",
+      "title": "NC State Plant Toolbox: Choisya ternata",
+      "url": "https://plants.ces.ncsu.edu/plants/choisya-ternata/",
+      "publisher": "NC State Extension",
+      "kind": "extension",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "mbg-choisya-ternata",
+      "title": "Missouri Botanical Garden Plant Finder: Choisya ternata",
+      "url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=292058&isprofile=0&basic=choisya%20ternata",
+      "publisher": "Missouri Botanical Garden",
+      "kind": "botanic_garden",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    },
+    {
+      "id": "rhs-choisya-ternata",
+      "title": "RHS Plant Profile: Choisya ternata",
+      "url": "https://www.rhs.org.uk/plants/3766/choisya-ternata/details",
+      "publisher": "Royal Horticultural Society",
+      "kind": "society",
+      "access": "fetched",
+      "retrievedOn": "2026-11-09",
+      "lang": "en"
+    }
+  ],
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "choisya-ternata",
+      "taxon": {
+        "scientificName": "Choisya ternata"
+      },
+      "names": {
+        "common": [
+          {
+            "lang": "en-GB",
+            "name": "Mexican orange blossom",
+            "primary": true
+          },
+          {
+            "lang": "en-GB",
+            "name": "Mexican orange"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Choisya"
+          },
+          {
+            "lang": "en-GB",
+            "name": "Mexican mock orange"
+          },
+          {
+            "lang": "es",
+            "name": "Naranjo mexicano",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "es",
+            "name": "Choisya",
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Choisya",
+            "primary": true,
+            "translation": {
+              "status": "machine"
+            }
+          },
+          {
+            "lang": "it",
+            "name": "Fiore d'arancio del Messico",
+            "translation": {
+              "status": "machine"
+            }
+          }
+        ],
+        "synonyms": []
+      },
+      "care": {
+        "engineMethod": "interval",
+        "restSeasonFactor": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "dryToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "wetToleranceDays": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "days"
+        },
+        "temperatureC": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "C"
+        },
+        "humidityPercent": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown",
+          "unit": "%"
+        },
+        "rootDepthClass": {
+          "value": null,
+          "source": null,
+          "confidence": "unknown"
+        },
+        "habit": {
+          "value": "bushy",
+          "source": "ncsu-choisya-ternata",
+          "corroboratedBy": ["rhs-choisya-ternata"],
+          "confidence": "from_knowledge_verify"
+        },
+        "wateringStyle": {
+          "value": "let_top_dry",
+          "source": "rhs-choisya-ternata",
+          "corroboratedBy": ["ncsu-choisya-ternata", "mbg-choisya-ternata"],
+          "confidence": "from_knowledge_verify"
+        },
+        "baseIntervalDays": {
+          "value": 5,
+          "unit": "days",
+          "source": "author",
+          "confidence": "guess"
+        },
+        "wateringTip": {
+          "lang": "en-GB",
+          "text": "Water a pot when the top of the compost has dried; it hates sitting wet but sulks if it dries out for long."
+        },
+        "light": {
+          "value": "bright_indirect",
+          "source": "rhs-choisya-ternata",
+          "corroboratedBy": ["ncsu-choisya-ternata", "mbg-choisya-ternata"],
+          "confidence": "from_knowledge_verify"
+        },
+        "matureSizeCm": {
+          "value": {
+            "height": 250,
+            "spread": 250
+          },
+          "source": "rhs-choisya-ternata",
+          "corroboratedBy": ["ncsu-choisya-ternata", "mbg-choisya-ternata"],
+          "confidence": "from_knowledge_verify",
+          "unit": "cm"
+        },
+        "growthRate": {
+          "value": "medium",
+          "source": "ncsu-choisya-ternata",
+          "confidence": "checked"
+        },
+        "placement": {
+          "value": ["ground", "pot_outdoor"],
+          "source": "rhs-choisya-ternata",
+          "corroboratedBy": ["ncsu-choisya-ternata", "mbg-choisya-ternata"],
+          "confidence": "from_knowledge_verify"
+        },
+        "lifecycle": {
+          "value": "perennial",
+          "source": "ncsu-choisya-ternata",
+          "corroboratedBy": ["mbg-choisya-ternata"],
+          "confidence": "checked"
+        },
+        "droughtTolerance": {
+          "value": "moderate",
+          "source": "ncsu-choisya-ternata",
+          "corroboratedBy": ["mbg-choisya-ternata", "rhs-choisya-ternata"],
+          "confidence": "from_knowledge_verify"
+        },
+        "dormancy": {
+          "value": "none",
+          "source": "ncsu-choisya-ternata",
+          "corroboratedBy": ["rhs-choisya-ternata"],
+          "confidence": "from_knowledge_verify"
+        },
+        "sunNeed": {
+          "value": "part",
+          "source": "rhs-choisya-ternata",
+          "corroboratedBy": ["ncsu-choisya-ternata", "mbg-choisya-ternata"],
+          "confidence": "checked"
+        },
+        "soilPreference": {
+          "value": "free_draining",
+          "source": "rhs-choisya-ternata",
+          "corroboratedBy": ["ncsu-choisya-ternata", "mbg-choisya-ternata"],
+          "confidence": "from_knowledge_verify"
+        },
+        "hardiness": {
+          "value": "H4",
+          "source": "rhs-choisya-ternata",
+          "confidence": "checked"
+        },
+        "wateringTipGround": {
+          "lang": "en-GB",
+          "text": "Water new plants through their first dry spells; established plants shrug off brief dry weather but not waterlogged soil."
+        }
+      },
+      "toxicity": {
+        "status": "unknown",
+        "agents": [],
+        "exposures": [],
+        "sources": [],
+        "assessedOn": "2026-11-09"
+      },
+      "tags": {
+        "curated": ["outdoor_pot", "ground", "flowering", "part_shade", "scented"]
+      },
+      "provenance": {
+        "notes": "Row 97, Mexican orange blossom. Three care sources agree on full sun to part shade, well-drained soil, shelter from cold wind and a pruning-tolerant evergreen shrub. Size: RHS 1.5 to 2.5 m (250 cm kept); NC State and Missouri BG 4 to 8 ft. Hardiness H4 is the RHS rating (the page lists the rating key and then the plant's own value). Light conflict: NC State and Missouri BG add shelter from hot afternoon sun, so the gentler part-shade reading is kept. Missouri BG and NC State say north of USDA zone 7 it is a pot plant brought indoors in winter; in the UK it is a ground or outdoor pot plant. Toxicity: none of the three pages states a poison grade or pet safety, so people and pets stay unknown (RHS page has no safety note). Es and it names are machine drafts. 'Sundance' (golden foliage) scorches in hot sun and wants part shade (Missouri BG); it is a cultivar of this entry."
+      },
+      "sourcesRead": [
+        "https://plants.ces.ncsu.edu/plants/choisya-ternata/",
+        "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=292058&isprofile=0&basic=choisya%20ternata",
+        "https://www.rhs.org.uk/plants/3766/choisya-ternata/details"
+      ],
+      "lookAlikes": [
+        {
+          "name": "Aztec Pearl (Choisya x dewitteana)",
+          "tell": "A different hybrid sold beside it, with narrower leaflets; its care is close but it is not this species."
+        }
+      ],
+      "lookAlikeNote": "NC State and Missouri BG both list the golden cultivar 'Sundance'; it keeps the same key.",
+      "photos": [],
+      "links": [
+        {
+          "url": "https://www.consultaplantas.com/index.php/es/plantas-por-nombre/plantas-de-la-a-a-la-c/205-cuidados-de-la-planta-choisya-ternata-choisia-o-naranjo-de-mexico",
+          "title": "Choisya ternata, Choisia o Naranjo de México | Cuidados",
+          "publisher": "Consulta Plantas",
+          "lang": "es",
+          "kind": "care"
+        }
+      ]
+    }
+  ]
+}

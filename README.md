@@ -23,6 +23,7 @@ Needs [mise](https://mise.jdx.dev), which installs the pinned Node and pnpm.
 mise install        # once: toolchain
 mise run dev        # web UI on http://localhost:5173 and the home network
 mise run check      # all CI gates
+mise run layout-check # headless Chrome layout check of the web UI (needs Chrome or Edge; CHROME to point at one)
 mise tasks          # list every task
 ```
 

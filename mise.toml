@@ -50,6 +50,11 @@ description = "Locale files: ICU syntax, placeholders, plural categories, unused
 depends = ["install"]
 run = "pnpm i18n:check"
 
+[tasks.layout-check]
+description = "Headless Chrome layout check of the web UI (card grid, Today beside the calendar, phone button rows); starts its own dev server on a free port, not part of check"
+depends = ["install"]
+run = "node scripts/layout-check.mjs"
+
 [tasks.weather-smoke]
 description = "Live smoke test of the rain sources (Open-Meteo, Environment Agency): calls the real services once, not part of check"
 depends = ["install"]

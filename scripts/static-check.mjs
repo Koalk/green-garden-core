@@ -9,13 +9,13 @@
 //   - Settings has no weather form, and the Data tab has the export but no server, reminders or
 //     Home Assistant block.
 // Exit 1 on any failure. CHROME points at a browser when it is not found in the usual places.
-import { spawn } from "node:child_process";
 import { existsSync, mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { createServer } from "node:http";
 import { tmpdir } from "node:os";
 import { extname, join, normalize } from "node:path";
 import { setTimeout as sleep } from "node:timers/promises";
 import { buildStatic } from "./build-static.mjs";
+import { startChrome } from "./chrome.mjs";
 
 const chrome = [
   process.env.CHROME,
@@ -53,34 +53,15 @@ const server = createServer((req, res) => {
 await new Promise((r) => server.listen(0, "127.0.0.1", r));
 const base = `http://127.0.0.1:${server.address().port}/preview/`;
 
-const port = 9800 + Math.floor(Math.random() * 150);
-const profile = mkdtempSync(join(tmpdir(), "gg-static-chrome-"));
-const proc = spawn(chrome, [
-  "--headless=new",
-  `--remote-debugging-port=${port}`,
-  `--user-data-dir=${profile}`,
-  "--no-first-run",
-  "about:blank",
-]);
+const chromeRun = await startChrome(chrome, { prefix: "gg-static-chrome-" }).catch((e) => {
+  server.close();
+  throw e;
+});
+const { profile, wsUrl, stop: stopChrome } = chromeRun;
 const stopAll = () => {
-  if (process.platform === "win32") spawn("taskkill", ["/PID", String(proc.pid), "/T", "/F"]);
-  else proc.kill();
+  stopChrome();
   server.close();
 };
-let wsUrl;
-for (let i = 0; i < 50 && wsUrl === undefined; i++) {
-  try {
-    const list = await (await fetch(`http://127.0.0.1:${port}/json`)).json();
-    wsUrl = list.find((t) => t.type === "page")?.webSocketDebuggerUrl;
-  } catch {
-    // still starting
-  }
-  if (wsUrl === undefined) await sleep(200);
-}
-if (wsUrl === undefined) {
-  stopAll();
-  throw new Error("Chrome did not open a page");
-}
 const ws = new WebSocket(wsUrl);
 await new Promise((r) => ws.addEventListener("open", r, { once: true }));
 const problems = [];

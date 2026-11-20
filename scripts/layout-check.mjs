@@ -10,10 +10,10 @@
 //   1440x900: opening a plant's Edit dialog does not change the page's clientWidth (the scrollbar stays).
 // Exit 1 on any failure.
 import { spawn } from "node:child_process";
-import { existsSync, mkdtempSync } from "node:fs";
-import { tmpdir } from "node:os";
+import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { startChrome } from "./chrome.mjs";
 
 const chrome = [
   process.env.CHROME,
@@ -154,29 +154,11 @@ const CHECKS = [
   },
 ];
 
-const port = 9300 + Math.floor(Math.random() * 500);
-const proc = spawn(chrome, [
-  "--headless=new",
-  `--remote-debugging-port=${port}`,
-  `--user-data-dir=${mkdtempSync(join(tmpdir(), "gg-layout-"))}`,
-  "--no-first-run",
-  "about:blank",
-]);
-let wsUrl;
-for (let i = 0; i < 50 && wsUrl === undefined; i++) {
-  try {
-    const list = await (await fetch(`http://127.0.0.1:${port}/json`)).json();
-    wsUrl = list.find((t) => t.type === "page")?.webSocketDebuggerUrl;
-  } catch {
-    // still starting
-  }
-  if (wsUrl === undefined) await sleep(200);
-}
-if (wsUrl === undefined) {
-  proc.kill();
+const chromeRun = await startChrome(chrome, { prefix: "gg-layout-" }).catch((e) => {
   server?.kill();
-  throw new Error("Chrome did not open a page");
-}
+  throw e;
+});
+const { wsUrl } = chromeRun;
 const ws = new WebSocket(wsUrl);
 await new Promise((r) => ws.addEventListener("open", r, { once: true }));
 let nextId = 1;
@@ -233,7 +215,7 @@ try {
   }
 } finally {
   ws.close();
-  proc.kill();
+  chromeRun.stop();
   server?.kill();
 }
 console.log(failures === 0 ? "layout: all checks pass" : `layout: ${failures} failures`);

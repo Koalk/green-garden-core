@@ -6,10 +6,8 @@
 // opened and checked: text must reach WCAG AA (4.5:1, 3:1 for large text), and a bordered or filled
 // control or card must stand out from what is behind it (border or fill at least 1.3:1, form
 // fields 3:1). Exit 1 on any failure.
-import { spawn } from "node:child_process";
-import { existsSync, mkdtempSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { existsSync } from "node:fs";
+import { startChrome } from "./chrome.mjs";
 
 const base = process.argv[2] ?? "http://127.0.0.1:5181/";
 const chrome = [
@@ -136,27 +134,11 @@ const AUDIT = `(() => {
   return [...new Set(out)];
 })()`;
 
-const port = 9300 + Math.floor(Math.random() * 500);
-const proc = spawn(chrome, [
-  "--headless=new",
-  `--remote-debugging-port=${port}`,
-  `--user-data-dir=${mkdtempSync(join(tmpdir(), "gg-dark-"))}`,
-  "--no-first-run",
-  "--hide-scrollbars",
-  "about:blank",
-]);
+const { wsUrl, stop: stopChrome } = await startChrome(chrome, {
+  prefix: "gg-dark-",
+  extra: ["--hide-scrollbars"],
+});
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-let wsUrl;
-for (let i = 0; i < 50 && wsUrl === undefined; i++) {
-  try {
-    const list = await (await fetch(`http://127.0.0.1:${port}/json`)).json();
-    wsUrl = list.find((t) => t.type === "page")?.webSocketDebuggerUrl;
-  } catch {
-    // still starting
-  }
-  if (wsUrl === undefined) await sleep(200);
-}
-if (wsUrl === undefined) throw new Error("Chrome did not open a page");
 const ws = new WebSocket(wsUrl);
 await new Promise((r) => ws.addEventListener("open", r, { once: true }));
 let nextId = 1;
@@ -214,7 +196,7 @@ try {
   }
 } finally {
   ws.close();
-  proc.kill();
+  stopChrome();
 }
 console.log(failures === 0 ? "dark mode: all screens pass" : `dark mode: ${failures} failures`);
 process.exit(failures === 0 ? 0 : 1);

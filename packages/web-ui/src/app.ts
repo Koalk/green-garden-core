@@ -70,7 +70,7 @@ import {
   cardPrompts,
   cardsHtml,
 } from "./seasonal-cards.ts";
-import { sunTodayText } from "./sun-hours.ts";
+import { plantSunText } from "./sun-hours.ts";
 import { homeDialogHtml } from "./home-view.ts";
 import {
   bedAmountWords,
@@ -139,6 +139,7 @@ import {
   aroundPlants,
   calendarWeeks,
   cardWords,
+  unreadableCardLine,
   dayEntries,
   localIsoDate,
   makePlan,
@@ -520,6 +521,7 @@ function plantCard(r: PlantRow, plan: PlanResult): string {
   // A plant in a bed is worded in watering cans or minutes with the hose, never ml.
   const amount = bedAmountWords(p) ?? linesText(lines);
   const outdoor = outdoorBlockHtml(plan, data, p, today, { rain: false });
+  const sunText = plantSunText(data, p, today, sunPlace());
   const resting =
     plan.rainFed.some((x) => x.plantId === p.id) || plan.dormant.some((x) => x.plantId === p.id);
   const rain = canLogRain(p)
@@ -541,6 +543,7 @@ function plantCard(r: PlantRow, plan: PlanResult): string {
     : "";
   return `<article class="card"><h4>${esc(p.name)}${waitingNow.includes(p.id) ? ` ${bangHtml(p.id, p.name)}` : ""}</h4>
     <p><small>${esc(p.species ?? "")}</small></p>
+    ${unreadableCardLine(p)}
     ${toxicityPopupOfPlant(p)}
     ${outdoor}
     ${
@@ -560,7 +563,7 @@ function plantCard(r: PlantRow, plan: PlanResult): string {
       <dt>${esc(t("card.care"))}</dt><dd>${esc(words.care)}
         ${p.restFactor === undefined ? "" : tHtml("card.restFactor", { factor: p.restFactor })}</dd>
       <dt>${esc(t("card.window"))}</dt><dd>${esc(words.window)}</dd>
-      ${p.directSun === undefined ? "" : `<dt>${esc(t("sun.legend"))}</dt><dd>${esc(sunTodayText(p.directSun, today, sunPlace()))}</dd>`}
+      ${sunText === undefined ? "" : `<dt>${esc(t("sun.legend"))}</dt><dd>${esc(sunText)}</dd>`}
       <dt>${esc(t("card.howMuch"))}</dt><dd>${esc(amount)}${bedAmountWords(p) === undefined ? `${adjust}${note}` : ""}</dd>
       ${rain}
       <dt>${esc(t("tox.label"))}</dt><dd>${esc(toxicityOfPlant(p, data.settings.household))}</dd>
@@ -763,6 +766,11 @@ function text(f: FormData, k: string): string | undefined {
 
 const onClick = (ev: Event): void => {
   const el = (ev.target as HTMLElement).closest<HTMLElement>("[data-action]");
+  // A held notice (Not moved) goes with the next click, whatever it hits.
+  if (notice.held()) {
+    notice.clear();
+    render();
+  }
   if (el === null) return;
   const { action, id, outcome, date } = el.dataset;
   switch (action) {
@@ -807,7 +815,7 @@ const onClick = (ev: Event): void => {
       moveFor = undefined;
       moveFromEdit = undefined;
       render();
-      if (dropped !== undefined) notice.show(notMovedText(dropped));
+      if (dropped !== undefined) notice.show(notMovedText(dropped), { hold: true });
       break;
     }
     case "move-undo":

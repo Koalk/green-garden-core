@@ -5,7 +5,8 @@
  * The form carries the hours as text in one hidden field: "" unknown, "none" no sun, else "7-11,15-18".
  */
 import { parseSunRanges } from "@green-garden/bulk";
-import { directSunHours, type SunPlace, type SunRange } from "@green-garden/engine";
+import { directSunHours, resolveCare, type SunPlace, type SunRange } from "@green-garden/engine";
+import { buildPlanInput, type AppData, type Plant } from "@green-garden/storage";
 import { esc, t } from "./text.ts";
 
 export const SUN_PRESETS = [
@@ -80,4 +81,32 @@ export function sunTodayText(ranges: readonly SunRange[], today: string, place: 
   if (ranges.length === 0) return t("sun.preset.none");
   const n = Math.round(directSunHours(ranges, today, place));
   return `${formatRanges(ranges)} ${t("sun.aboutToday", { n })}`;
+}
+
+/**
+ * The sun row in a plant's Details: the hours the plan uses for it and where they come from, the
+ * plant's own or its room's. The hours come from the plan input and `resolveCare`, as the schedule
+ * sees them. Undefined when neither the plant nor its room has an answer.
+ */
+export function plantSunText(
+  data: AppData,
+  plant: Plant,
+  today: string,
+  place: SunPlace,
+): string | undefined {
+  const input = buildPlanInput(data, today);
+  const planned = (input.plants ?? []).find((x) => x.id === plant.id);
+  const ranges = planned?.directSun;
+  if (planned === undefined || ranges === undefined) return undefined;
+  const care = resolveCare(planned, today, {
+    ...(place.hemisphere === undefined ? {} : { hemisphere: place.hemisphere }),
+    ...(place.latitude === undefined ? {} : { latitude: place.latitude }),
+    ...(place.country === undefined ? {} : { country: place.country }),
+    ...(input.climate === undefined ? {} : { climate: input.climate }),
+  });
+  const hours =
+    ranges.length === 0
+      ? t("sun.preset.none")
+      : `${formatRanges(ranges)} ${t("sun.aboutToday", { n: Math.round(care.sunHours ?? 0) })}`;
+  return t(plant.directSun === undefined ? "sun.fromRoom" : "sun.own", { hours });
 }

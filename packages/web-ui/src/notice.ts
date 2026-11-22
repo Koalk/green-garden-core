@@ -6,7 +6,9 @@ export const NOTICE_MS = 2000;
 export interface Notice {
   text(): string;
   /** Show a message and restart the countdown; an empty message clears. */
-  show(message: string): void;
+  show(message: string, options?: { hold?: boolean }): void;
+  /** True while the message is held: it stays until the next action instead of expiring. */
+  held(): boolean;
   clear(): void;
 }
 
@@ -21,6 +23,7 @@ export function createNotice(
 ): Notice {
   let message = "";
   let timer: number | undefined;
+  let hold = false;
   const stop = (): void => {
     if (timer !== undefined) clearTimer(timer);
     timer = undefined;
@@ -28,16 +31,23 @@ export function createNotice(
   const clear = (): void => {
     stop();
     message = "";
+    hold = false;
   };
   return {
     text: () => message,
-    show(next) {
+    held: () => hold,
+    show(next, options) {
       stop();
       if (next === "") {
         clear();
         return;
       }
       message = next;
+      hold = options?.hold === true;
+      if (hold) {
+        onChange();
+        return;
+      }
       timer = setTimer(() => {
         timer = undefined;
         message = "";

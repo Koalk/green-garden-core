@@ -80,6 +80,44 @@ describe("transient notice (the 'Plant saved' banner never went away)", () => {
   });
 });
 
+describe("a held notice (Not moved) stays until the next action", () => {
+  it("does not expire on a timer", () => {
+    const clock = fakeClock();
+    const n = createNotice(clock.setTimer, clock.clearTimer, () => undefined);
+    n.show("Not moved: still outside.", { hold: true });
+    assert.equal(clock.pending(), 0);
+    clock.advance(NOTICE_MS * 10);
+    assert.equal(n.text(), "Not moved: still outside.");
+    assert.equal(n.held(), true);
+  });
+
+  it("the next notice replaces it, and a plain one expires as before", () => {
+    const clock = fakeClock();
+    const n = createNotice(clock.setTimer, clock.clearTimer, () => undefined);
+    n.show("held", { hold: true });
+    n.show("plain");
+    assert.equal(n.held(), false);
+    clock.advance(NOTICE_MS);
+    assert.equal(n.text(), "");
+  });
+
+  it("clear() drops it", () => {
+    const clock = fakeClock();
+    const n = createNotice(clock.setTimer, clock.clearTimer, () => undefined);
+    n.show("held", { hold: true });
+    n.clear();
+    assert.equal(n.text(), "");
+    assert.equal(n.held(), false);
+  });
+
+  it("app.ts holds the Not moved line and drops it on any click", async () => {
+    const { readFileSync } = await import("node:fs");
+    const text = readFileSync(`${import.meta.dirname}/../src/app.ts`, "utf8");
+    assert.match(text, /notice\.show\(notMovedText\(dropped\), \{ hold: true \}\)/);
+    assert.match(text, /const onClick = [\s\S]{0,500}notice\.held\(\)/);
+  });
+});
+
 describe("app.ts notice wiring", () => {
   const src = `${import.meta.dirname}/../src/app.ts`;
   it("goes through the transient notice and clears on tab change", async () => {

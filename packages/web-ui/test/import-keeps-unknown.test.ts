@@ -121,3 +121,33 @@ describe("a modal keeps the scrollbar", () => {
     assert.match(html, /html:has\(dialog\[open\]\)\s*\{[^}]*overflow-y:\s*scroll/);
   });
 });
+
+import { unreadableCardLine } from "../src/index.ts";
+
+describe("an unreadable plant is marked on its own card", () => {
+  it("says it could not be read, in the banner's words, in every language", () => {
+    const res = readImportFile(fileWithMist());
+    const misty = invalidPlants(res.data)[0];
+    assert.ok(misty);
+    setLocale("en-GB");
+    assert.match(unreadableCardLine(misty), /could not be read/);
+    setLocale("es");
+    assert.match(unreadableCardLine(misty), /no se pudo leer/);
+    setLocale("it");
+    assert.match(unreadableCardLine(misty), /non si è potuta leggere/);
+    setLocale("en-GB");
+  });
+
+  it("marks nothing on a readable plant", () => {
+    const res = readImportFile(fileWithMist());
+    const fern = res.data.plants.find((p) => p.name === "Fern");
+    assert.ok(fern);
+    assert.equal(unreadableCardLine(fern), "");
+  });
+
+  it("the card uses it", async () => {
+    const { readFileSync } = await import("node:fs");
+    const app = readFileSync(`${import.meta.dirname}/../src/app.ts`, "utf8");
+    assert.match(app, /unreadableCardLine\(p\)/);
+  });
+});

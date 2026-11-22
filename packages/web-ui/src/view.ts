@@ -21,7 +21,7 @@ import {
   type ImportIssue,
   type Plant,
 } from "@green-garden/storage";
-import { t } from "./text.ts";
+import { esc, t } from "./text.ts";
 
 export { buildPlanInput, makePlan };
 
@@ -325,6 +325,13 @@ export function cardWords(r: PlantRow): { care: string; next: string; window: st
           ? t("card.windowAround", { window: r.window })
           : r.window,
   };
+}
+
+/** A plant a store load could not read says so on its own card, so it can be found among the others. */
+export function unreadableCardLine(plant: Pick<Plant, "invalid">): string {
+  return plant.invalid === undefined
+    ? ""
+    : `<p><span class="err badge">${esc(t("card.unreadable"))}</span></p>`;
 }
 
 /** What Today says under a plant: the reason it is on the list, with "about" when values are assumed. */

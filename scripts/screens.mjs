@@ -301,6 +301,27 @@ const SETS = {
       ],
     },
   ],
+  // an unreadable plant marked on its card, the room's sun hours in Details, the calendar caption.
+  unreadable: [
+    {
+      name: "01-unreadable-card",
+      steps: [
+        ...sample("plants"),
+        "(() => { const d = JSON.parse(localStorage.getItem('green-garden')); d.plants.push({ id: 'mist-1', spaceId: d.plants[0].spaceId, name: 'Misty', style: 'mist', intervalDays: 3 }); localStorage.setItem('green-garden', JSON.stringify(d)); })()",
+        "location.reload()",
+      ],
+    },
+    {
+      name: "02-room-sun-details",
+      steps: [
+        ...sample("plants"),
+        "(() => { const d = JSON.parse(localStorage.getItem('green-garden')); const room = d.rooms[0] ?? (d.rooms[0] = { id: 'r1', name: 'Lounge', spaceId: d.plants[0].spaceId }); room.directSun = [{ from: 6, to: 11 }]; for (const p of d.plants) { if (p.placement === undefined || p.placement === 'indoor') { p.roomId = room.id; delete p.directSun; } } localStorage.setItem('green-garden', JSON.stringify(d)); })()",
+        "location.reload()",
+        "document.querySelector('main article.card details').open = true",
+      ],
+    },
+    { name: "03-calendar-caption", steps: sample("today") },
+  ],
   // the Planning tab (was Holidays) and the Settings tab with the preferences.
   s119: [
     { name: "01-planning", steps: sample("planning") },

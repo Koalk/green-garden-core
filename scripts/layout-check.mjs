@@ -6,6 +6,7 @@
 //   1440x900: plant cards sit in more than one column, and the content is wider than 60rem;
 //   1100x800: Today's list and the calendar sit side by side;
 //   390x844:  no card's button row has more than two buttons on one line;
+//   390x844:  Today's calendar caption sits full width on one line;
 //   390x844:  Today's calendar days stack (as wide as the calendar, names under the date) and no name breaks mid-word;
 //   1440x900: opening a plant's Edit dialog does not change the page's clientWidth (the scrollbar stays).
 // Exit 1 on any failure.
@@ -122,6 +123,11 @@ const CHECKS = [
       const cal = document.querySelector('#calendar');
       if (!cal) return ['no #calendar on Today'];
       const cw = cal.querySelector('table').getBoundingClientRect().width;
+      const cap = cal.querySelector('caption');
+      if (!cap) return ['no calendar caption'];
+      const cb = cap.getBoundingClientRect(), clh = parseFloat(getComputedStyle(cap).lineHeight) || 1.5 * parseFloat(getComputedStyle(cap).fontSize);
+      if (cb.width < cw - 2) out.push('calendar caption is ' + Math.round(cb.width) + 'px wide, calendar is ' + Math.round(cw) + 'px');
+      if (cb.height > clh * 1.5) out.push('calendar caption wraps onto ' + Math.round(cb.height / clh) + ' lines');
       const cells = [...cal.querySelectorAll('td')].filter((td) => td.getBoundingClientRect().width > 0 && td.querySelector('div'));
       if (cells.length === 0) return ['no calendar day with plant names is visible'];
       for (const td of cells) {

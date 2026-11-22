@@ -7,6 +7,6 @@
     "emitDeclarationOnly": false,
     "types": ["node"]
   },
-  "include": ["*.ts"],
+  "include": ["*.ts", "merge/*.ts"],
   "references": [{ "path": ".." }]
 }

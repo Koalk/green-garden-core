@@ -94,3 +94,47 @@ both to the file; no code here sends or merges anything yet.
 - Export from any client imports into any other. Contract tests cover round trips: export, import into
   the other adapter, export again, compare.
 - Export and import are the backup and migration path. Sharing between devices builds on the fields in version 11 below.
+## Merging two copies (`packages/storage/src/sync/merge.ts`)
+
+`merge(local, incoming)` joins two copies of a version 11 document and returns the document, the
+conflicts and the ID remaps. It is a pure function: no I/O, no clock. Merging the same copy twice gives
+the same document, and so does merging copies in any order (the device's own `device` and `me` aside).
+`mergeInbox(local, copies)` merges the copies with each other first and then once into `local`; the result
+equals merging each in turn. A copy from another household is skipped (`ignored: "other-household"`).
+
+- **Events are united.** Log entries are joined on their `id`. Placement moves are joined, an identical
+  move kept once. A seasonal "not yet" or "leave it out" keeps the later day per plant. Away days are
+  joined per space, each with its stamp; a removal (`awayTombstones`) wins over an add with an older stamp.
+- **Undo is a tombstone** on the entry's `id` in `sync.tombstones` (the later stamp per key). The entry is
+  removed and the tombstone keeps it from coming back.
+- **Plant and room fields: the later stamp wins per field.** A tie on the stamp is broken by the device ID
+  inside it; two values with the same stamp (for example both 0) go to the one whose canonical text sorts
+  later, so both devices choose alike. Keys this build does not know are merged the same way. Settings are
+  not merged yet: they carry no stamps, and the local copy's stay.
+- **Replay state is not merged.** `lastWatered`, `anchor`, `adjustmentDays` and `doneStreak` are taken from
+  the copy with the later last watering; replaying the entries from a checkpoint is what produces them.
+- **Deletes keep the record.** `deleted` is a field like the others. A watering (outcome `done`) with a
+  stamp later than the removal brings the plant back; otherwise it stays deleted with its entries kept.
+  The result is the same in either order.
+- **Checkpoints.** The later `cutoff` wins (equal cutoffs: the canonical text sorts later). Entries dated
+  before the winning cutoff are dropped. Entries after it from both copies are united.
+- **Old removals are dropped** when a `now` is passed: a tombstone, away-day removal or deleted record whose
+  stamp is more than 180 days old goes once every member's last-seen stamp is past it. The cutoff
+  (60 days) and the 180 days are in `sync/constants.ts`, provisional.
+- **Conflicts.** A field is a conflict when both copies changed it since each last saw the other (the
+  incoming stamp is after the local `seen` for the incoming member, and the local stamp is after the
+  incoming copy's `seen` for the local member) and the values differ. The later stamp has already won; the
+  loser is returned as `{ kind, id, field, mine, theirs }` with both stamps. Entries never conflict.
+  `resolve(doc, conflict, "mine" | "theirs", now)` writes the chosen value back with a new stamp from this
+  device, so it wins on every device.
+- **`seen`.** After a merge, `sync.seen` holds for each member the latest stamp received from them, and
+  for the local member its own first stamp, so the result does not depend on which copy was local. A copy
+  from the same device does not count as a sender.
+- **ID collisions.** A plant or room created apart on two devices with the same ID carries a creation stamp
+  (`stamps.created`) and optionally its creator's member index (`createdBy`). The record with the lower
+  (creator index, creation stamp) keeps the ID. The other gets a new ID worked out from the old one and its
+  creation stamp (`derivedId`), so both devices choose the same one, and references to it (a plant's room,
+  seasonal choices) follow. The remap is returned. A record without a creation stamp is never treated as a
+  collision.
+- **Order of lists.** Plants and rooms come out sorted by ID, spaces by ID, entries by date, then stamp,
+  then ID.

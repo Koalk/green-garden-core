@@ -86,3 +86,14 @@ export {
 } from "./model.ts";
 export { BrowserStore, MemoryStore, type KeyValue, type LoadReport, type Store } from "./store.ts";
 export { setWeather, weatherSettings } from "./weather-settings.ts";
+export {
+  CHECKPOINT_CUTOFF_DAYS,
+  TOMBSTONE_KEEP_DAYS,
+  merge,
+  mergeInbox,
+  resolve,
+  type Conflict,
+  type MergeOptions,
+  type MergeResult,
+  type Remap,
+} from "./sync/merge.ts";

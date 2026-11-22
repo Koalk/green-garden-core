@@ -173,7 +173,7 @@ describe("format 11", () => {
         stamp: s,
         household: { id: "1111111111111111", key: "a2V5" },
         members: [
-          { index: 0, name: "Dani", personal: { locale: "es" } },
+          { index: 0, name: "Ana", personal: { locale: "es" } },
           { index: 1, name: "Pat", personal: {} },
         ],
         me: 0,

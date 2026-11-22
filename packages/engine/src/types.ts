@@ -152,6 +152,16 @@ export interface PlantInput {
   readonly reminderOnly?: boolean;
   /** Log entries after the state above, oldest first. */
   readonly logs?: readonly LogEntry[];
+  /**
+   * The replay state as of a cutoff day (`YYYY-MM-DD`), so older entries can be dropped. Entries and
+   * moves dated before the cutoff are ignored; the seed (`lastWatered`, `anchor`, `adjustmentDays`,
+   * `doneStreak`, `notBefore`, each optional) replaces the plant's own fields of those names and the
+   * replay carries on from it. A checkpoint with an unreadable cutoff or seed is ignored.
+   */
+  readonly checkpoint?: {
+    readonly cutoff: string;
+    readonly seed: { readonly [field: string]: unknown };
+  };
 }
 
 export interface Preferences {

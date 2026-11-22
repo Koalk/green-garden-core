@@ -43,6 +43,7 @@ export type {
 } from "./seasonal.ts";
 export { directSunHours } from "./sun.ts";
 export type { SunPlace } from "./sun.ts";
+export { ENGINE_VERSION, nextDateCheck } from "./check.ts";
 export { computeWindows, placeInterval, planDays } from "./plan.ts";
 export type * from "./types.ts";
 

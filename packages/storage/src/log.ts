@@ -58,6 +58,28 @@ export function logOutcome(
 }
 
 /**
+ * Undoes one entry by its `id`: only that entry goes, so another member's entry for the same plant and
+ * day stands (the plan still counts one watering for the day). `data` itself comes back for an unknown
+ * plant, an unknown ID or an entry from before sync (no `id`). With a `stamp` (from the device's
+ * clock) in a household, the removal is also recorded as a tombstone, so a merge with a copy that
+ * still holds the entry does not bring it back.
+ */
+export function undoLog(data: AppData, plantId: string, entryId: string, stamp?: string): AppData {
+  const plant = data.plants.find((p) => p.id === plantId);
+  if (plant === undefined || !(plant.logs ?? []).some((l) => l.id === entryId)) return data;
+  const plants = data.plants.map((p) =>
+    p.id === plantId ? { ...p, logs: (p.logs ?? []).filter((l) => l.id !== entryId) } : p,
+  );
+  const sync = data.sync;
+  if (stamp === undefined || sync === undefined) return { ...data, plants };
+  return {
+    ...data,
+    plants,
+    sync: { ...sync, tombstones: { ...sync.tombstones, [entryId]: stamp } },
+  };
+}
+
+/**
  * The dates "Watered it earlier?" offers: the day after the plant's last watering (its latest `done`
  * log or `lastWatered`; skips, still-wet and dry-early logs do not water) up to today, never the future.
  * A plant never watered gets a year back. `undefined` when it was watered today: nothing to backdate.

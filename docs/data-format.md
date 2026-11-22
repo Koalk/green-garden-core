@@ -138,3 +138,34 @@ equals merging each in turn. A copy from another household is skipped (`ignored:
   collision.
 - **Order of lists.** Plants and rooms come out sorted by ID, spaces by ID, entries by date, then stamp,
   then ID.
+
+## Replaying merged entries (`packages/engine`, `packages/storage/src/log.ts`)
+
+The next watering date is worked out by replaying a plant's entries, so two people's entries can be
+merged without either of them storing a date. The rules that matter once entries come from more than one
+person:
+
+- **One entry counts per day and outcome.** Two `done` entries for one plant on one day (two people
+  watering it) move the schedule once, as if one had been logged; both stay in the entries, and each still
+  counts as its member's watering. The same holds for any outcome except `rain`, whose entries are read
+  as rainfall reports and are not reduced. Different outcomes on one day (a `done` and a `still_wet`) each
+  count. For data from one person only, the replay differs from before in one case: two identical entries
+  on one day.
+- **Undo removes one entry.** `undoLog(data, plantId, entryId, stamp?)` removes only the entry with that
+  `id`; another member's entry for the same day stands, so the schedule still moves once. With a `stamp`
+  from the device's clock the removal is also kept as a tombstone, so merging with a copy that still holds
+  the entry does not bring it back. Entries from before version 11 have no `id` and cannot be undone this
+  way.
+- **A checkpoint seeds the replay.** With `checkpoint: { cutoff, seed }`, entries and moves dated before
+  `cutoff` (and weather rows before it) are ignored, and the replay starts from `seed`: `lastWatered`,
+  `anchor`, `adjustmentDays`, `doneStreak` and `notBefore`, each optional. The seed replaces the plant's own
+  fields of those names (a field it leaves out counts as unset), because it is the whole state as of the
+  cutoff: the state after replaying everything dated before it. An entry dated on the cutoff day still
+  counts. A checkpoint with an unreadable cutoff or seed value is ignored and reported as an issue. The
+  replay uses a checkpoint for plants it schedules by interval.
+- **Next-date check.** `nextDateChecks(data, today)` gives one small whole number (0 to 65535) per plant,
+  worked out from the plant's ID, its replayed window (earliest and latest day) and the engine's
+  `ENGINE_VERSION`. `checkNextDates(data, today, theirs)` compares another device's numbers with this
+  device's and returns `{ kind: "engine-mismatch", plantId, mine, theirs }` for each plant both know whose
+  numbers differ: two devices on different engines, or with different entries. It is data only; nothing
+  blocks. `ENGINE_VERSION` goes up whenever a change to the replay would move a date for unchanged data.

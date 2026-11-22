@@ -148,9 +148,21 @@ function track(input: PlanInput, ctx: Context): { tracked: Tracked[]; reminderOn
       return cfg ?? stays[0]?.cfg ?? cfgNow;
     };
     const cfg = stays.length === 0 ? cfgNow : cfgOn(ctx.today);
-    const initial = initialState(p, parseDate);
+    const checkpoint = readCheckpoint(p, ctx);
+    const initial = initialState(checkpoint === undefined ? p : checkpoint.plant, parseDate);
     let state = initial;
-    const logs: readonly LogEntry[] = p.logs ?? [];
+    const cutoff = checkpoint?.cutoff;
+    const logs: readonly LogEntry[] = (p.logs ?? []).filter((l) => {
+      const d = parseDate(l.date);
+      return cutoff === undefined || d === undefined || d >= cutoff;
+    });
+    const weather = (ctx.input.weather ?? []).filter((w) => {
+      const d = parseDate(w.date);
+      return cutoff === undefined || d === undefined || d >= cutoff;
+    });
+    // One entry counts per (day, outcome): two people watering the same plant on one day move the
+    // schedule once. The entries themselves stay in the data.
+    const counted = new Set<string>();
     interface Event {
       readonly day: Day;
       readonly rank: number;
@@ -163,12 +175,17 @@ function track(input: PlanInput, ctx: Context): { tracked: Tracked[]; reminderOn
       if (day === undefined) ctx.issues.push(`${p.id}: invalid log date ${entry.date}`);
       // PROVISIONAL: a log dated after today is not part of the story yet (the user moved the
       // date back); it is kept in the data and counts again once today reaches it.
-      else if (day <= ctx.today && entry.outcome !== "rain") dated.push({ day, rank: 1, entry });
+      else if (day <= ctx.today && entry.outcome !== "rain") {
+        const key = `${String(day)}|${entry.outcome}`;
+        if (counted.has(key)) continue;
+        counted.add(key);
+        dated.push({ day, rank: 1, entry });
+      }
     }
     // rain reports and observed weather become credit events (two partials in a row add up).
     // with a history the credit is the credit of where the plant was that day.
     const credit = stays.length === 0 ? care.creditMm : (day: Day): number => cfgOn(day).creditMm;
-    for (const e of rainEvents(logs, ctx.input.weather ?? [], ctx.today, credit)) {
+    for (const e of rainEvents(logs, weather, ctx.today, credit)) {
       dated.push({
         day: e.day,
         rank: 2,
@@ -184,6 +201,7 @@ function track(input: PlanInput, ctx: Context): { tracked: Tracked[]; reminderOn
       if (i === 0 || day === undefined || to === undefined) return;
       movedOn = day;
       if (initial.last !== undefined && day < initial.last) return;
+      if (cutoff !== undefined && day < cutoff) return;
       dated.push({ day, rank: 0, moveTo: to });
     });
     // A rain event sorts after anything a person logged the same day.
@@ -211,6 +229,63 @@ function track(input: PlanInput, ctx: Context): { tracked: Tracked[]; reminderOn
     });
   }
   return { tracked, reminderOnly };
+}
+
+/**
+ * The plant's checkpoint, when it has a readable one: the cutoff day and the plant with its replay
+ * fields replaced by the seed's (a field the seed leaves out is gone, the seed is the whole state).
+ * An unreadable cutoff or seed value is reported and the checkpoint ignored.
+ */
+function readCheckpoint(
+  p: PlantInput,
+  ctx: Context,
+): { readonly cutoff: Day; readonly plant: PlantInput } | undefined {
+  const cp = p.checkpoint;
+  if (cp === undefined) return undefined;
+  // the file can hold anything; the types say what a well-formed checkpoint looks like.
+  const loose = cp as { readonly cutoff?: unknown; readonly seed?: unknown };
+  const cutoff = typeof loose.cutoff === "string" ? parseDate(loose.cutoff) : undefined;
+  const seed: { readonly [field: string]: unknown } =
+    typeof loose.seed === "object" && loose.seed !== null
+      ? (loose.seed as { readonly [field: string]: unknown })
+      : {};
+  const date = (k: string): string | undefined | null => {
+    const v = seed[k];
+    if (v === undefined) return undefined;
+    return typeof v === "string" && parseDate(v) !== undefined ? v : null;
+  };
+  const count = (k: string): number | undefined | null => {
+    const v = seed[k];
+    if (v === undefined) return undefined;
+    return typeof v === "number" && Number.isFinite(v) ? v : null;
+  };
+  const lastWatered = date("lastWatered");
+  const anchor = date("anchor");
+  const notBefore = date("notBefore");
+  const adjustmentDays = count("adjustmentDays");
+  const doneStreak = count("doneStreak");
+  if (
+    cutoff === undefined ||
+    [lastWatered, anchor, notBefore, adjustmentDays, doneStreak].some((v) => v === null)
+  ) {
+    ctx.issues.push(`${p.id}: invalid checkpoint`);
+    return undefined;
+  }
+  const REPLAY_FIELDS = ["lastWatered", "anchor", "notBefore", "adjustmentDays", "doneStreak"];
+  const rest = Object.fromEntries(
+    Object.entries(p).filter(([k]) => !REPLAY_FIELDS.includes(k)),
+  ) as unknown as PlantInput;
+  return {
+    cutoff,
+    plant: {
+      ...rest,
+      ...(lastWatered === undefined || lastWatered === null ? {} : { lastWatered }),
+      ...(anchor === undefined || anchor === null ? {} : { anchor }),
+      ...(notBefore === undefined || notBefore === null ? {} : { notBefore }),
+      ...(adjustmentDays === undefined || adjustmentDays === null ? {} : { adjustmentDays }),
+      ...(doneStreak === undefined || doneStreak === null ? {} : { doneStreak }),
+    },
+  };
 }
 
 /**

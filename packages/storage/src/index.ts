@@ -15,6 +15,7 @@ export {
   logOutcome,
   logWateredEarlier,
   pinPreLeave,
+  undoLog,
   withPins,
 } from "./log.ts";
 export { migrate } from "./migrate.ts";
@@ -86,6 +87,7 @@ export {
 } from "./model.ts";
 export { BrowserStore, MemoryStore, type KeyValue, type LoadReport, type Store } from "./store.ts";
 export { setWeather, weatherSettings } from "./weather-settings.ts";
+export { checkNextDates, nextDateChecks, type EngineMismatch } from "./sync/check.ts";
 export {
   CHECKPOINT_CUTOFF_DAYS,
   TOMBSTONE_KEEP_DAYS,

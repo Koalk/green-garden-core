@@ -47,11 +47,16 @@ import {
   type Room,
   type Settings,
   type Space,
+  type PlantCheckpoint,
+  type Stamps,
+  type SyncBlock,
+  type SyncMember,
 } from "./model.ts";
+import { isStamp } from "./sync/clock.ts";
 import { weatherSettings } from "./weather-settings.ts";
 
 export const FORMAT = "green-garden-export";
-export const VERSION = 10;
+export const VERSION = 11;
 
 const STYLES: readonly WateringStyle[] = ["keep_moist", "let_top_dry", "let_fully_dry"];
 const DRAINAGES = ["hole", "cachepot", "no_hole", "self_watering"] as const;
@@ -114,6 +119,7 @@ const TOP_KEYS = [
   "questionState",
   "seasonal",
   "settings",
+  "sync",
 ];
 const PLANT_KEYS = [
   "id",
@@ -163,9 +169,22 @@ const PLANT_KEYS = [
   "batch",
   "fieldSources",
   "invalid",
+  "stamps",
+  "deleted",
+  "checkpoint",
 ];
-const LOG_KEYS = ["date", "outcome", "mm"];
-const ROOM_KEYS = ["id", "name", "light", "spaceId", "calibration", "haAreaId", "directSun"];
+const LOG_KEYS = ["date", "outcome", "mm", "id", "by", "at"];
+const ROOM_KEYS = [
+  "id",
+  "name",
+  "light",
+  "spaceId",
+  "calibration",
+  "haAreaId",
+  "directSun",
+  "stamps",
+  "deleted",
+];
 const SETTINGS_KEYS = [
   "hemisphere",
   "horizonDays",
@@ -300,11 +319,27 @@ function parsePlant(
         warn("import.invalidLog", `${label}: ignored an invalid log entry`, { label });
       else {
         const mm = isObj(l) ? num(l["mm"]) : undefined;
+        const logId = isObj(l) ? parseHexId(l["id"]) : undefined;
+        const by = isObj(l) ? parseMember(l["by"]) : undefined;
+        const at = isObj(l) && isStamp(l["at"]) ? l["at"] : undefined;
+        if (isObj(l)) {
+          for (const k of ["id", "by", "at"] as const) {
+            const good = k === "id" ? logId : k === "by" ? by : at;
+            if (l[k] !== undefined && good === undefined)
+              warn("import.badLogField", `${label}: ignored invalid ${k} on a log entry`, {
+                label,
+                field: k,
+              });
+          }
+        }
         logs.push({
           ...(isObj(l) ? unknownKeys(l, LOG_KEYS) : {}),
           date: d,
           outcome: o,
           ...(mm !== undefined && mm >= 0 ? { mm } : {}),
+          ...(logId === undefined ? {} : { id: logId }),
+          ...(by === undefined ? {} : { by }),
+          ...(at === undefined ? {} : { at }),
         });
       }
     }
@@ -393,6 +428,11 @@ function parsePlant(
   }
   const batch = parseBatch(raw["batch"]);
   if (batch !== undefined) p.batch = batch;
+  const stamps = parseStamps(raw["stamps"], warn, label);
+  if (stamps !== undefined) p.stamps = stamps;
+  if (raw["deleted"] === true) p.deleted = true;
+  const checkpoint = parseCheckpoint(raw["checkpoint"], warn, label);
+  if (checkpoint !== undefined) p.checkpoint = checkpoint;
   const fieldSources = parseFieldSources(raw["fieldSources"]);
   if (fieldSources !== undefined) p.fieldSources = fieldSources;
   else if (fromOlderFile && /^catalogue\b/i.test(p.source ?? "")) {
@@ -524,6 +564,89 @@ function parseFieldSources(v: unknown): Plant["fieldSources"] {
   return Object.keys(out).length === 0 ? undefined : out;
 }
 
+/** An 8-byte ID as 16 lowercase hex digits. */
+function parseHexId(v: unknown): string | undefined {
+  return typeof v === "string" && /^[0-9a-f]{16}$/.test(v) ? v : undefined;
+}
+
+/** A member index, 0 to 31. */
+function parseMember(v: unknown): number | undefined {
+  return typeof v === "number" && Number.isInteger(v) && v >= 0 && v <= 31 ? v : undefined;
+}
+
+/** A map of names to stamps; an entry that is not a stamp is dropped with a warning. */
+function parseStampMap(
+  v: unknown,
+  warn: Warn,
+  what: string,
+): { readonly [key: string]: string } | undefined {
+  if (!isObj(v)) return undefined;
+  const out: Record<string, string> = {};
+  for (const [k, x] of Object.entries(v)) {
+    if (isStamp(x)) out[k] = x;
+    else
+      warn("import.badStamp", `${what}: ignored an invalid stamp for ${k}`, {
+        label: what,
+        field: k,
+      });
+  }
+  return Object.keys(out).length === 0 ? undefined : out;
+}
+
+function parseStamps(v: unknown, warn: Warn, label: string): Stamps | undefined {
+  return parseStampMap(v, warn, label);
+}
+
+function parseCheckpoint(v: unknown, warn: Warn, label: string): PlantCheckpoint | undefined {
+  if (v === undefined) return undefined;
+  const cutoff = isObj(v) ? date(v["cutoff"]) : undefined;
+  if (!isObj(v) || cutoff === undefined || !isObj(v["seed"])) {
+    warn("import.badCheckpoint", `${label}: ignored an invalid checkpoint`, { label });
+    return undefined;
+  }
+  return { cutoff, seed: v["seed"] };
+}
+
+/** The `sync` block, or undefined when it is missing or has no usable device ID (migration mints one). */
+function parseSync(raw: unknown, warn: Warn): SyncBlock | undefined {
+  if (!isObj(raw)) return undefined;
+  const device = parseHexId(raw["device"]);
+  if (device === undefined) {
+    warn("import.badSync", "ignored a sync block without a valid device ID");
+    return undefined;
+  }
+  const stamp = isStamp(raw["stamp"]) ? raw["stamp"] : "0";
+  const hh = raw["household"];
+  const hhId = isObj(hh) ? parseHexId(hh["id"]) : undefined;
+  const hhKey = isObj(hh) ? str(hh["key"]) : undefined;
+  const members: SyncMember[] = [];
+  for (const m of Array.isArray(raw["members"]) ? (raw["members"] as unknown[]) : []) {
+    const index = isObj(m) ? parseMember(m["index"]) : undefined;
+    if (!isObj(m) || index === undefined || members.some((x) => x.index === index)) {
+      warn("import.badMember", "ignored a malformed or duplicate household member");
+      continue;
+    }
+    members.push({
+      index,
+      name: str(m["name"]) ?? `Member ${index + 1}`,
+      personal: isObj(m["personal"]) ? m["personal"] : {},
+    });
+  }
+  const me = parseMember(raw["me"]);
+  const seen = parseStampMap(raw["seen"], warn, "sync");
+  const tombstones = parseStampMap(raw["tombstones"], warn, "sync");
+  return {
+    ...unknownKeys(raw, ["device", "stamp", "household", "members", "me", "seen", "tombstones"]),
+    device,
+    stamp,
+    ...(hhId === undefined || hhKey === undefined ? {} : { household: { id: hhId, key: hhKey } }),
+    ...(members.length === 0 ? {} : { members }),
+    ...(me === undefined ? {} : { me }),
+    ...(seen === undefined ? {} : { seen }),
+    ...(tombstones === undefined ? {} : { tombstones }),
+  };
+}
+
 function parseDrafts(
   raw: unknown,
   warn: Warn,
@@ -580,10 +703,14 @@ function parseSpaces(raw: unknown, warn: Warn): Space[] {
       continue;
     }
     seen.add(id);
+    const awayStamps = parseStampMap(isObj(r) ? r["awayStamps"] : undefined, warn, id);
+    const awayTombstones = parseStampMap(isObj(r) ? r["awayTombstones"] : undefined, warn, id);
     out.push({
       id,
       name: (isObj(r) ? str(r["name"]) : undefined) ?? id,
       awayDates: dateList(isObj(r) ? r["awayDates"] : undefined, warn, "away days"),
+      ...(awayStamps === undefined ? {} : { awayStamps }),
+      ...(awayTombstones === undefined ? {} : { awayTombstones }),
     });
   }
   return out;
@@ -760,6 +887,7 @@ export function importData(text: string, options: ImportOptions = {}): ImportRes
       const calibration = parseCalibration(r["calibration"]);
       const haAreaId = str(r["haAreaId"]);
       const directSun = parseDirectSun(r["directSun"]);
+      const roomStamps = parseStamps(r["stamps"], warn, id);
       rooms.push({
         ...unknownKeys(r, ROOM_KEYS),
         id,
@@ -769,6 +897,8 @@ export function importData(text: string, options: ImportOptions = {}): ImportRes
         ...(calibration === undefined ? {} : { calibration }),
         ...(haAreaId === undefined ? {} : { haAreaId }),
         ...(directSun === undefined ? {} : { directSun }),
+        ...(roomStamps === undefined ? {} : { stamps: roomStamps }),
+        ...(r["deleted"] === true ? { deleted: true as const } : {}),
       });
     } else warn("import.roomNoId", "ignored a room without id");
   }
@@ -777,6 +907,7 @@ export function importData(text: string, options: ImportOptions = {}): ImportRes
   const questionState = parseQuestionState(raw["questionState"]);
   const seasonal = parseSeasonal(raw["seasonal"]);
   const spaces = parseSpaces(raw["spaces"], warn);
+  const sync = parseSync(raw["sync"], warn);
   const known = new Set(spaces.map((x) => x.id));
   for (const item of [...plants, ...rooms, ...drafts]) {
     if (item.spaceId !== undefined && !known.has(item.spaceId)) {
@@ -803,6 +934,7 @@ export function importData(text: string, options: ImportOptions = {}): ImportRes
         ...(questionState === undefined ? {} : { questionState }),
         ...(seasonal === undefined ? {} : { seasonal }),
         settings: parseSettings(raw["settings"], warn),
+        ...(sync === undefined ? {} : { sync }),
       },
       version,
     ),

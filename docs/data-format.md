@@ -40,13 +40,57 @@ On a fatal problem (unparseable text, wrong format, higher version) the old text
 
 | Version | Added |
 |---|---|
+| 11 | Groundwork for sharing a garden between people and devices (nothing shares yet). Top-level `sync` (this device's ID, its latest stamp and, once a household exists, the household's ID and key, its `members`, `me`, the last stamp `seen` from each member and `tombstones`). Plants and rooms carry `stamps` (when each field last changed) and an optional `deleted`; plants may carry a `checkpoint` (`cutoff` day and `seed`). Log entries carry `id`, `by` and `at`. Spaces carry `awayStamps` and `awayTombstones` for away days. A version 10 file migrates on import: see below. |
 | 10 | `seasonal` on the file: the seasonal cards' "Not yet" and "Leave it out" choices per plant (`snoozedUntil`, `leftOutUntil`), so they survive a reload and travel in the export. Also what a plant's room carries: an indoor plant without its own `directSun` takes its room's. A version 9 file imports unchanged; no migration step is needed (the key is optional). |
 | 9 | Declared for `addedOn`, `placementHistory` and `directSun`, which arrived while the number still said 8. Migration from 8: a plant without `addedOn` gets the earliest day its history shows, marked estimated. |
 | 8 and older | Earlier versions are not documented here. |
+
+## Sharing groundwork (version 11)
+
+Changes to a garden that more than one person or device makes need an order and an identity. Version 11 adds
+both to the file; no code here sends or merges anything yet.
+
+- **Stamps.** A stamp is a hybrid logical clock value: wall time in milliseconds, a counter for changes in the
+  same millisecond, and the ID of the device that made the change. The later stamp wins; the device ID
+  breaks an exact tie. A device's stamps never go backwards, even if its clock does. In JSON a stamp is a
+  fixed-width string (`<12 hex>-<4 hex>-<16 hex>`), so sorting the strings sorts the stamps. `"0"` is
+  older than any real stamp.
+- **IDs.** New plants, rooms, households, devices and log entries get 8 random bytes written as 16 hex
+  digits. IDs that already exist stay as they are (a plant called `p1` keeps working). Where an old record
+  needs a shared ID (log entries from before version 11), the ID is a fixed hash of what identifies it, so
+  two devices that import the same file work out the same ID.
+- **Fields.** `stamps` maps a field name to the stamp of its last change. A field without a stamp counts as
+  stamp 0. `deleted: true` keeps a removed plant or room in the file so the removal can be shared;
+  `stamps.deleted` says when. Away days are one list per space, so `awayStamps` holds a stamp per day and
+  `awayTombstones` the days that were removed.
+- **Log entries.** `id` tells two entries apart, `by` is the index (0 to 31) of the member who made it and
+  `at` is the stamp of when. `by` is absent on entries from before version 11.
+- **Checkpoints.** `checkpoint: { cutoff, seed }` on a plant records its state as of a cutoff day so older
+  log entries can be dropped. It is read and written back; nothing creates one yet.
+- **`sync` block.** `device` and `stamp` exist on every device. The household fields appear only once the
+  device belongs to a household. The `inbox` of changes waiting to be applied is device-only and never
+  exported.
+- **Household and personal keys.** The export keeps one complete layout. `HOUSEHOLD_*` and `PERSONAL_*`
+  lists in `packages/storage/src/sync/keys.ts` say which keys belong to the whole household (plants, rooms,
+  pins, seasonal choices, away days, hemisphere, latitude, country, climate, winter minimum, household,
+  weather, calibration, watering days) and which to one member (language, units, week start, horizon,
+  reminders, questions, question pacing, drafts and the app's own `stories` section).
+
+### Migrating a version 10 file
+
+- Every field present gets stamp 0, so any real edit wins over it. Placement history and log entries are
+  events and carry no field stamps.
+- Every log entry gets an ID derived from (plant ID, date, outcome, position in the plant's log) and
+  `at: "0"`, and no `by`.
+- Each away day gets stamp 0.
+- A device ID is minted the first time a file is loaded, with stamp 0, and kept after that.
+- The plan the engine makes from the data is unchanged: it does not read any of the new fields.
+- Stamps for fields that gain a value after loading are the caller's job; the migration only fills stamps
+  that are missing from files older than version 11.
 
 ## Export and import in general
 
 - One versioned JSON document holds plants, rooms, care settings, the watering log and unavailable dates.
 - Export from any client imports into any other. Contract tests cover round trips: export, import into
   the other adapter, export again, compare.
-- Sync is out of scope; export and import are the backup and migration path.
+- Export and import are the backup and migration path. Sharing between devices builds on the fields in version 11 below.

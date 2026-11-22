@@ -14,6 +14,7 @@ import {
   type AppData,
   type KeyValue,
 } from "../src/index.ts";
+import { plain } from "./plain.ts";
 
 const sample: AppData = {
   spaces: [{ id: DEFAULT_SPACE_ID, name: "Home", awayDates: ["2026-11-03"] }],
@@ -47,7 +48,7 @@ describe("X5 export/import", () => {
   it("round-trips", () => {
     const { data, warnings } = importData(exportData(sample));
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data, sample);
+    assert.deepEqual(plain(data), sample);
   });
 
   it("keeps unknown fields (app extras) and writes them back", () => {
@@ -58,7 +59,7 @@ describe("X5 export/import", () => {
     });
     const { data, warnings } = importData(text);
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data, { ...sample, theme: "forest", xp: 120 });
+    assert.deepEqual(plain(data), { ...sample, theme: "forest", xp: 120 });
   });
 
   it("skips broken plants and says why", () => {
@@ -111,7 +112,7 @@ describe("stores", () => {
     const a = new BrowserStore(kv, "k");
     assert.deepEqual(a.load(), emptyData());
     a.save(sample);
-    assert.deepEqual(new BrowserStore(kv, "k").load(), sample);
+    assert.deepEqual(plain(new BrowserStore(kv, "k").load()), sample);
     map.set("k", "garbage");
     assert.deepEqual(new BrowserStore(kv, "k").load(), emptyData());
   });
@@ -189,10 +190,10 @@ describe("language settings and import issue codes", () => {
 
   it("round-trips locale and weekStart (version 4 export)", () => {
     const text = exportData(withLang);
-    assert.equal((JSON.parse(text) as { version: number }).version, 10);
+    assert.equal((JSON.parse(text) as { version: number }).version, 11);
     const { data, warnings } = importData(text);
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data, withLang);
+    assert.deepEqual(plain(data), withLang);
   });
 
   it("a version 1 file without them still loads: both stay absent", () => {
@@ -218,10 +219,10 @@ describe("language settings and import issue codes", () => {
       { code: "import.notExport", params: { format: "green-garden-export" } },
     ]);
     const newer = importData(
-      JSON.stringify({ format: "green-garden-export", version: 11, rooms: [] }),
+      JSON.stringify({ format: "green-garden-export", version: VERSION + 1, rooms: [] }),
     );
     assert.deepEqual(newer.issues, [
-      { code: "import.newerVersion", params: { version: "11", supported: 10 } },
+      { code: "import.newerVersion", params: { version: String(VERSION + 1), supported: VERSION } },
     ]);
     assert.equal(newer.issues.length, newer.warnings.length);
   });
@@ -232,10 +233,10 @@ describe("pinned pre-leave waterings in the export", () => {
 
   it("round-trips pins", () => {
     const text = exportData(withPins);
-    assert.equal((JSON.parse(text) as { version: number }).version, 10);
+    assert.equal((JSON.parse(text) as { version: number }).version, 11);
     const { data, warnings } = importData(text);
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data, withPins);
+    assert.deepEqual(plain(data), withPins);
   });
 
   it("a file without pins has none; no empty list is written", () => {
@@ -291,7 +292,7 @@ describe("amount, household and room fields", () => {
   it("round-trips them", () => {
     const { data, warnings } = importData(exportData(rich));
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data, rich);
+    assert.deepEqual(plain(data), rich);
   });
 
   it("ignores values it does not know instead of failing", () => {
@@ -358,7 +359,7 @@ describe("spaces (D-20)", () => {
   it("an old export lands in the default space with its away days", () => {
     const { data, warnings } = importData(JSON.stringify(old));
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data.spaces, [
+    assert.deepEqual(plain(data.spaces), [
       { id: DEFAULT_SPACE_ID, name: "Home", awayDates: ["2026-11-03", "2026-11-04"] },
     ]);
     assert.deepEqual(
@@ -419,10 +420,10 @@ describe("spaces (D-20)", () => {
       rooms: [{ id: "r1", name: "Desk", spaceId: "space2" }],
     };
     const text = exportData(two);
-    assert.equal((JSON.parse(text) as { version: number }).version, 10);
+    assert.equal((JSON.parse(text) as { version: number }).version, 11);
     const { data, warnings } = importData(text);
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data, two);
+    assert.deepEqual(plain(data), two);
   });
 
   it("an unknown spaceId moves the item to the default space and says so", () => {
@@ -461,10 +462,10 @@ describe("calibration at three levels", () => {
 
   it("round-trips the plant, room and global calibration (version 7)", () => {
     const text = exportData(cal);
-    assert.equal((JSON.parse(text) as { version: number }).version, 10);
+    assert.equal((JSON.parse(text) as { version: number }).version, 11);
     const { data, warnings } = importData(text);
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data, cal);
+    assert.deepEqual(plain(data), cal);
   });
 
   it("drops a calibration that is not a positive number, keeps the rest", () => {
@@ -500,10 +501,10 @@ describe("rooms imported from Home Assistant keep their area id", () => {
 
   it("round-trips haAreaId (version 7)", () => {
     const text = exportData(withArea);
-    assert.equal((JSON.parse(text) as { version: number }).version, 10);
+    assert.equal((JSON.parse(text) as { version: number }).version, 11);
     const { data, warnings } = importData(text);
     assert.deepEqual(warnings, []);
-    assert.deepEqual(data.rooms, withArea.rooms);
+    assert.deepEqual(plain(data.rooms), withArea.rooms);
   });
 
   it("ignores an area id that is not text", () => {

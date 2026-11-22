@@ -201,14 +201,14 @@ describe("format version 10", () => {
     });
 
   it("is 10, and a version 8 file with addedOn, history and sun hours reads and writes as 10", () => {
-    assert.equal(VERSION, 10);
+    assert.equal(VERSION, 11);
     const v8 = file(8, {
       addedOn: "2026-09-01",
       directSun: [{ from: 9, to: 12 }],
       placementHistory: [{ on: "2026-09-01", placement: "indoor" }],
     });
     const back = JSON.parse(exportData(importData(v8).data)) as Loose;
-    assert.equal(back["version"], 10);
+    assert.equal(back["version"], 11);
     assert.equal(at(back, "plants", 0, "addedOn"), "2026-09-01");
     assert.deepEqual(at(back, "plants", 0, "directSun"), [{ from: 9, to: 12 }]);
     assert.equal((at(back, "plants", 0, "placementHistory") as unknown[]).length, 1);

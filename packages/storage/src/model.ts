@@ -25,6 +25,10 @@ export interface Space {
   readonly name: string;
   /** Days nobody can water in this space. */
   readonly awayDates: readonly string[];
+  /** Stamp of each away day, so removing one can sync. A day without a stamp counts as stamp 0. */
+  readonly awayStamps?: { readonly [date: string]: string };
+  /** Away days that were removed, with the stamp of the removal, so the removal wins over older adds. */
+  readonly awayTombstones?: { readonly [date: string]: string };
 }
 
 /** Where a plant field's value came from. `user` is the only source a rematch never replaces. */
@@ -140,6 +144,50 @@ export interface Plant extends PlantInput {
    * Such a plant keeps all its original keys, is left out of the plan and listed as "needs attention".
    */
   readonly invalid?: readonly string[];
+  /** Stamp of the last change to each field (a field without one counts as stamp 0). */
+  readonly stamps?: Stamps;
+  /** Deleted: the record stays so the deletion can sync; `stamps.deleted` says when. */
+  readonly deleted?: true;
+  /** The state as of a cutoff day; logs before the cutoff are ignored. Kept, written by nothing yet. */
+  readonly checkpoint?: PlantCheckpoint;
+}
+
+/** Stamp of the last change per field name. */
+export type Stamps = { readonly [field: string]: string };
+
+/** What a plant looked like on `cutoff` (a day), so older log entries can be dropped. */
+export interface PlantCheckpoint {
+  readonly cutoff: string;
+  readonly seed: { readonly [field: string]: unknown };
+}
+
+/** One member of a household as the file records it. */
+export interface SyncMember {
+  /** 0 to 31; log entries name their member by it. */
+  readonly index: number;
+  readonly name: string;
+  /** The member's own settings (language, units and the like), kept for every device. */
+  readonly personal: { readonly [key: string]: unknown };
+}
+
+/**
+ * What this device needs to share changes: who it is, the latest stamp it has made, and, once a
+ * household exists, the household's ID and key, its members and what has been seen from each.
+ */
+export interface SyncBlock {
+  /** This device's 8-byte ID. */
+  readonly device: string;
+  /** The latest stamp this device has made or seen. */
+  readonly stamp: string;
+  readonly household?: { readonly id: string; readonly key: string };
+  readonly members?: readonly SyncMember[];
+  /** Index of the member this device is. */
+  readonly me?: number;
+  /** Member index to the latest stamp seen from that member. */
+  readonly seen?: { readonly [member: string]: string };
+  /** Removals that must keep winning over older changes, as key to stamp. */
+  readonly tombstones?: { readonly [key: string]: string };
+  readonly [unknown: string]: unknown;
 }
 
 /**
@@ -168,6 +216,10 @@ export interface Room {
   readonly directSun?: readonly SunRange[];
   /** The Home Assistant area this room was imported from, kept for sensor mapping later. */
   readonly haAreaId?: string;
+  /** Stamp of the last change to each field (a field without one counts as stamp 0). */
+  readonly stamps?: Stamps;
+  /** Deleted: the record stays so the deletion can sync; `stamps.deleted` says when. */
+  readonly deleted?: true;
 }
 
 /** Who lives with the plants; the toxicity text speaks to them. */
@@ -294,6 +346,8 @@ export interface AppData {
   /** "Not yet" and "Leave it out" of the seasonal cards; absent when nothing was chosen. */
   readonly seasonal?: SeasonalCardState;
   readonly settings: Settings;
+  /** Sharing state of this device; added on load when missing. */
+  readonly sync?: SyncBlock;
 }
 
 /** Plants a store load kept but could not read; the UI lists them with what is wrong. */

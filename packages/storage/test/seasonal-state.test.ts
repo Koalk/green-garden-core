@@ -31,13 +31,13 @@ const withState = (seasonal: AppData["seasonal"]): AppData => ({
 
 describe("seasonal card state in the export", () => {
   it("is format 10 and round-trips both maps", () => {
-    assert.equal(VERSION, 10);
+    assert.equal(VERSION, 11);
     const state = {
       snoozedUntil: { p1: "2026-10-25" },
       leftOutUntil: { p1: "2027-07-01" },
     };
     const text = exportData(withState(state));
-    assert.equal((JSON.parse(text) as { version: number }).version, 10);
+    assert.equal((JSON.parse(text) as { version: number }).version, 11);
     const back = importData(text);
     assert.deepEqual(back.warnings, []);
     assert.deepEqual(back.data.seasonal, state);

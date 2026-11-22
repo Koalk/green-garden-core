@@ -52,7 +52,7 @@ describe("plants added together in the export", () => {
   });
 
   it("stays export version 9: the batch key is additive and optional", () => {
-    assert.equal((JSON.parse(exportData(data)) as { version: number }).version, 10);
+    assert.equal((JSON.parse(exportData(data)) as { version: number }).version, 11);
   });
 
   it("drops a malformed batch instead of failing the import", () => {

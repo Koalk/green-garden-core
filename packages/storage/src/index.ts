@@ -19,6 +19,24 @@ export {
 } from "./log.ts";
 export { migrate } from "./migrate.ts";
 export {
+  ZERO_STAMP,
+  compareStamps,
+  createClock,
+  formatStamp,
+  isStamp,
+  parseStamp,
+  type Clock,
+  type Stamp,
+} from "./sync/clock.ts";
+export { derivedId, newId } from "./sync/ids.ts";
+export {
+  HOUSEHOLD_PREFS_KEYS,
+  HOUSEHOLD_SETTINGS_KEYS,
+  HOUSEHOLD_TOP_KEYS,
+  PERSONAL_SETTINGS_KEYS,
+  PERSONAL_TOP_KEYS,
+} from "./sync/keys.ts";
+export {
   DEFAULT_REMINDER_TIME,
   DEFAULT_SPACE_ID,
   PLACEMENTS,
@@ -52,6 +70,10 @@ export {
   type Space,
   emptyData,
   type AppData,
+  type PlantCheckpoint,
+  type Stamps,
+  type SyncBlock,
+  type SyncMember,
   type Plant,
   type PlantBatch,
   type PlantDraft,

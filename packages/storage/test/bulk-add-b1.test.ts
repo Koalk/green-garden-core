@@ -55,8 +55,8 @@ const full: Plant = {
 
 describe("bulk add B1: new plant fields and sources", () => {
   it("the export version is 9", () => {
-    assert.equal(VERSION, 10);
-    assert.equal((JSON.parse(exportData(dataWith(full))) as { version: number }).version, 10);
+    assert.equal(VERSION, 11);
+    assert.equal((JSON.parse(exportData(dataWith(full))) as { version: number }).version, 11);
   });
 
   it("round-trips placement, potMaterial, soilType, plantSize, unmatched and fieldSources", () => {

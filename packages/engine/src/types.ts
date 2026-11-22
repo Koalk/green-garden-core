@@ -38,6 +38,12 @@ export interface LogEntry {
   readonly outcome: LogOutcome;
   /** Millimetres of rain, for the `rain` outcome. */
   readonly mm?: number;
+  /** 8-byte ID (16 hex digits) so a household can tell two entries apart; the plan never reads it. */
+  readonly id?: string;
+  /** Index of the household member who made the entry; absent on entries from before sync. */
+  readonly by?: number;
+  /** Stamp of when the entry was made; `"0"` on entries from before sync. The plan never reads it. */
+  readonly at?: string;
 }
 
 /** One day of weather. Observed rows credit outdoor plants; `forecast` rows never do. */

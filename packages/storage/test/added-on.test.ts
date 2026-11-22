@@ -29,7 +29,7 @@ const withPlant = (p: Plant): AppData => ({ ...emptyData(), plants: [p] });
 
 describe("plant addedOn", () => {
   it("round-trips addedOn and its estimated mark, format stays 8", () => {
-    assert.equal(VERSION, 10);
+    assert.equal(VERSION, 11);
     const plant: Plant = { ...base, addedOn: "2026-03-01", addedOnEstimated: true };
     const back = importData(exportData(withPlant(plant)));
     assert.deepEqual(back.warnings, []);

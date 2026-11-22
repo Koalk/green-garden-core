@@ -18,6 +18,7 @@ import {
   type AppData,
   type Plant,
 } from "../src/index.ts";
+import { plain } from "./plain.ts";
 
 // the in-ground fields, the `climate` and `winterMin` settings and the rain log reach the engine,
 // the export keeps them, and format 8 stays (additive optional keys).
@@ -51,12 +52,12 @@ function dataWith(plant: Plant, settings: Partial<AppData["settings"]> = {}): Ap
 
 describe("in-ground fields, climate and rain in the export", () => {
   it("stays format 8 and round-trips every new key", () => {
-    assert.equal(VERSION, 10);
+    assert.equal(VERSION, 11);
     const back = importData(
       exportData(dataWith(lavender, { climate: "oceanic_dry", winterMin: "H4" })),
     );
     assert.deepEqual(back.warnings, []);
-    assert.deepEqual(back.data.plants[0], lavender);
+    assert.deepEqual(plain(back.data.plants[0]), lavender);
     assert.equal(back.data.settings.climate, "oceanic_dry");
     assert.equal(back.data.settings.winterMin, "H4");
   });
@@ -107,14 +108,16 @@ describe("in-ground fields, climate and rain in the export", () => {
     assert.equal("climate" in back.settings, false);
     assert.equal("winterMin" in back.settings, false);
     // a rain log with no amount is kept (it credits nothing)
-    assert.deepEqual(p.logs, [{ date: "2026-06-04", outcome: "rain" }]);
+    assert.deepEqual(plain(p.logs), [{ date: "2026-06-04", outcome: "rain" }]);
   });
 
   it("accepts the looks_fine outcome", () => {
     const d = dataWith({ ...lavender, logs: [{ date: "2026-06-04", outcome: "looks_fine" }] });
     const back = importData(exportData(d));
     assert.deepEqual(back.warnings, []);
-    assert.deepEqual(back.data.plants[0]?.logs, [{ date: "2026-06-04", outcome: "looks_fine" }]);
+    assert.deepEqual(plain(back.data.plants[0]?.logs), [
+      { date: "2026-06-04", outcome: "looks_fine" },
+    ]);
   });
 
   it("lists the climate classes and the winter minimums", () => {

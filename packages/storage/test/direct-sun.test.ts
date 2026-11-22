@@ -45,7 +45,7 @@ const data = (): AppData => ({
 
 describe("directSun in the export", () => {
   it("stays format 8 and round-trips on plants and rooms", () => {
-    assert.equal(VERSION, 10);
+    assert.equal(VERSION, 11);
     const back = importData(exportData(data()));
     assert.deepEqual(back.warnings, []);
     assert.deepEqual(back.data.plants[0]?.directSun, plant.directSun);

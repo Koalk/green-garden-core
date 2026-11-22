@@ -38,7 +38,7 @@ const roundTrip = (raw: unknown) => importData(JSON.stringify(raw));
 
 describe("placementHistory in the export", () => {
   it("stays format 8 and round-trips", () => {
-    assert.equal(VERSION, 10);
+    assert.equal(VERSION, 11);
     const back = importData(exportData(dataWith(cal)));
     assert.deepEqual(back.warnings, []);
     assert.deepEqual(back.data.plants[0]?.placementHistory, cal.placementHistory);

@@ -35,10 +35,10 @@ function dataWith(settings: Partial<AppData["settings"]>): AppData {
 
 describe("home latitude and country", () => {
   it("the export is version 9, with the two new optional settings", () => {
-    assert.equal(VERSION, 10);
+    assert.equal(VERSION, 11);
     const text = exportData(dataWith({ latitude: 41.4, country: "ES" }));
     const parsed = JSON.parse(text) as { version: number; settings: Record<string, unknown> };
-    assert.equal(parsed.version, 10);
+    assert.equal(parsed.version, 11);
     assert.equal(parsed.settings["latitude"], 41.4);
     assert.equal(parsed.settings["country"], "ES");
   });

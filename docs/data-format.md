@@ -40,7 +40,7 @@ On a fatal problem (unparseable text, wrong format, higher version) the old text
 
 | Version | Added |
 |---|---|
-| 11 | Groundwork for sharing a garden between people and devices (nothing shares yet). Top-level `sync` (this device's ID, its latest stamp and, once a household exists, the household's ID and key, its `members`, `me`, the last stamp `seen` from each member and `tombstones`). Plants and rooms carry `stamps` (when each field last changed) and an optional `deleted`; plants may carry a `checkpoint` (`cutoff` day and `seed`). Log entries carry `id`, `by` and `at`. Spaces carry `awayStamps` and `awayTombstones` for away days. A version 10 file migrates on import: see below. |
+| 11 | Groundwork for sharing a garden between people and devices (nothing shares yet). Top-level `sync` (this device's ID, its latest stamp and, once a household exists, the household's ID and key, its `members`, `me`, the last stamp `seen` from each member and `tombstones`). Plants and rooms carry `stamps` (when each field last changed, including `created`), an optional `createdBy` (the creator's member index) and an optional `deleted`; plants may carry a `checkpoint` (`cutoff` day and `seed`). Log entries carry `id`, `by` and `at`. Spaces carry `awayStamps` and `awayTombstones` for away days. A version 10 file migrates on import: see below. |
 | 10 | `seasonal` on the file: the seasonal cards' "Not yet" and "Leave it out" choices per plant (`snoozedUntil`, `leftOutUntil`), so they survive a reload and travel in the export. Also what a plant's room carries: an indoor plant without its own `directSun` takes its room's. A version 9 file imports unchanged; no migration step is needed (the key is optional). |
 | 9 | Declared for `addedOn`, `placementHistory` and `directSun`, which arrived while the number still said 8. Migration from 8: a plant without `addedOn` gets the earliest day its history shows, marked estimated. |
 | 8 and older | Earlier versions are not documented here. |
@@ -63,6 +63,12 @@ both to the file; no code here sends or merges anything yet.
   stamp 0. `deleted: true` keeps a removed plant or room in the file so the removal can be shared;
   `stamps.deleted` says when. Away days are one list per space, so `awayStamps` holds a stamp per day and
   `awayTombstones` the days that were removed.
+- **Creation stamp and creator.** `stamps.created` on a plant or room is the stamp of the moment it was
+  created, and `createdBy` is the member index (0 to 31) of whoever created it. They exist for the ID
+  collision rule (see "Merging two copies"): when two devices create records with the same ID, the lower
+  (`createdBy`, `stamps.created`) keeps it. The app writes `stamps.created` on every new plant and room, and
+  `createdBy` only once a household exists. Both are optional: a file without them still loads and merges,
+  and a record without `stamps.created` is never treated as an ID collision.
 - **Log entries.** `id` tells two entries apart, `by` is the index (0 to 31) of the member who made it and
   `at` is the stamp of when. `by` is absent on entries from before version 11.
 - **Checkpoints.** `checkpoint: { cutoff, seed }` on a plant records its state as of a cutoff day so older

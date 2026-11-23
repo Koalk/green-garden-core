@@ -17,6 +17,7 @@ import { homeSettingsHtml } from "./home-view.ts";
 import { NO_FILL } from "./modal.ts";
 import { esc, t, tHtml } from "./text.ts";
 import { preLeaveOn, weekStartOf } from "./view.ts";
+import { buildLabel } from "./build-info.ts";
 import { serverOnlyHtml } from "./static-mode.ts";
 import { getWeatherState, weatherSettingsHtml } from "./weather-view.ts";
 
@@ -156,7 +157,8 @@ export function settingsHtml(
       <button type="submit">${esc(t("settings.save"))}</button></form>
     ${homeSettingsHtml(home)}
     ${serverOnlyHtml(weatherSettingsHtml(data, getWeatherState()))}
-    <details><summary>${esc(t("settings.measureWater"))}</summary>${calibrationHtml(data)}</details></section>`;
+    <details><summary>${esc(t("settings.measureWater"))}</summary>${calibrationHtml(data)}</details>
+    <p><small>${esc(t("settings.build", { build: buildLabel() }))}</small></p></section>`;
 }
 
 export function saveSettings(data: AppData, f: FormFields): AppData {

@@ -10,6 +10,7 @@ import { cpSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } f
 import { createRequire, stripTypeScriptTypes } from "node:module";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildScript } from "../packages/web-ui/dev/build-info.mjs";
 
 const repo = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -50,7 +51,7 @@ export function buildStatic(out = join(repo, "dist", "static")) {
   const html = page
     .replace(importmap[0], () => {
       const flag = "<script>globalThis.__GG_STATIC_PREVIEW__ = true;</script>";
-      return `${flag}\n    <script type="importmap">\n${JSON.stringify({ imports }, null, 2)}\n    </script>`;
+      return `${flag}\n    ${buildScript()}\n    <script type="importmap">\n${JSON.stringify({ imports }, null, 2)}\n    </script>`;
     })
     .replace(
       '<link rel="stylesheet" href="/vendor/',

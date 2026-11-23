@@ -117,6 +117,7 @@
   "settings.save": "Salva impostazioni",
   "settings.heading": "Impostazioni",
   "settings.measureWater": "Misurare l'acqua (facoltativo)",
+  "settings.build": "Interfaccia web di Green Garden {build}",
   "settings.language": "Lingua",
   "settings.languageAuto": "Automatica (lingua del dispositivo)",
   "settings.machine": "traduzione automatica, non ancora rivista",

@@ -8,6 +8,7 @@ import {
   type Plant,
   type PlantProblem,
 } from "@green-garden/storage";
+import { buildLabel } from "./build-info.ts";
 import { esc } from "./text.ts";
 
 /** Where "Ask for help" goes: a prefilled issue on the public core repo. Nothing is sent from the page. */
@@ -70,7 +71,7 @@ export function problemPlain(p: PlantProblem): string {
 /** The text "Ask for help" would post: versions, the reason and the plant's JSON. */
 export function helpBody(plant: Plant): string {
   return [
-    `Green Garden web UI, data format version ${VERSION}.`,
+    `Green Garden web UI ${buildLabel()}, data format version ${VERSION}.`,
     "",
     `A plant could not be read: ${problemPlain(plantProblem(plant))}.`,
     "",

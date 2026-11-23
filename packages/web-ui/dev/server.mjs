@@ -10,6 +10,7 @@ import { networkInterfaces } from "node:os";
 import { createRequire } from "node:module";
 import { dirname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildScript } from "./build-info.mjs";
 import { HomeAssistantAreas, buildWeatherService } from "@green-garden/providers";
 
 const PICO = createRequire(import.meta.url).resolve("@picocss/pico/css/pico.green.min.css");
@@ -180,7 +181,15 @@ export async function handle(urlPath, ctx = {}) {
   try {
     const src = await readFile(full, "utf8");
     const ext = rel.slice(rel.lastIndexOf("."));
-    const body = ext === ".ts" ? stripTypeScriptTypes(src) : src;
+    let body = ext === ".ts" ? stripTypeScriptTypes(src) : src;
+    // The local server is its own build: stamp the page with the checkout's commit and today's date.
+    if (rel === "/packages/web-ui/index.html") {
+      body = body.replace(
+        '<script type="importmap">',
+        () => `${buildScript()}
+    <script type="importmap">`,
+      );
+    }
     return { status: 200, type: `${TYPES[ext] ?? "text/plain"}; charset=utf-8`, body };
   } catch {
     return { status: 404, type: "text/plain", body: "not found" };

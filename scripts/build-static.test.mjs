@@ -47,3 +47,10 @@ describe("static build output", () => {
     assert.doesNotMatch(files(out).join("\n"), /server\.mjs|\.env/);
   });
 });
+
+describe("static build identity", () => {
+  it("sets the short commit and the date for the page", () => {
+    const html = readFileSync(join(out, "index.html"), "utf8");
+    assert.match(html, /__GG_BUILD__\s*=\s*\{"commit":"[^"]+","date":"\d{4}-\d{2}-\d{2}"\}/);
+  });
+});

@@ -18,6 +18,8 @@ import {
   spaceView,
   type AppData,
   type Plant,
+  plantText,
+  repairPlant,
 } from "@green-garden/storage";
 import {
   addAwayRange,
@@ -71,6 +73,7 @@ import {
   cardsHtml,
 } from "./seasonal-cards.ts";
 import { plantSunText } from "./sun-hours.ts";
+import { helpBody, helpUrl, unreadableCardHtml, type UnreadableUi } from "./unreadable-view.ts";
 import { homeDialogHtml } from "./home-view.ts";
 import {
   bedAmountWords,
@@ -187,6 +190,8 @@ let skippedInRun: string[] = [];
 const skippedInList = new Set<string>();
 /** The plant whose detail is open after "Fill all for this plant". */
 let detailOpenFor: string | undefined;
+/** The unreadable plant whose data box or help text is open, and what it holds. */
+let unreadableUi: UnreadableUi | undefined;
 /** The plant whose "Watered it earlier?" date question is open. */
 let earlierFor: string | undefined;
 
@@ -516,6 +521,7 @@ function sunPlace(): SunPlace {
 
 function plantCard(r: PlantRow, plan: PlanResult): string {
   const { plant: p, overdueDays } = r;
+  if (p.invalid !== undefined) return unreadableCardHtml(p, unreadableUi);
   const words = cardWords(r);
   const lines = amountLines(amountInputFor(data, p), amountPrefs(data.settings));
   // A plant in a bed is worded in watering cans or minutes with the hose, never ml.
@@ -797,6 +803,40 @@ const onClick = (ev: Event): void => {
           () => undefined,
         );
       }
+      break;
+    }
+    case "unreadable-see":
+    case "unreadable-help": {
+      const p = data.plants.find((x) => x.id === id);
+      if (p !== undefined) {
+        unreadableUi =
+          action === "unreadable-see"
+            ? { id: p.id, mode: "data", text: plantText(p) }
+            : { id: p.id, mode: "help", text: helpBody(p) };
+        render();
+      }
+      break;
+    }
+    case "unreadable-close":
+      unreadableUi = undefined;
+      render();
+      break;
+    case "unreadable-check": {
+      const text = el.closest("article")?.querySelector<HTMLTextAreaElement>("textarea")?.value;
+      if (id === undefined || text === undefined) break;
+      const res = repairPlant(data, id, text);
+      if (res.ok) {
+        unreadableUi = undefined;
+        commit(res.data, t("unreadable.saved"));
+      } else {
+        unreadableUi = { id, mode: "data", text, problem: res.problem };
+        render();
+      }
+      break;
+    }
+    case "unreadable-open-issue": {
+      const text = el.closest("article")?.querySelector<HTMLTextAreaElement>("textarea")?.value;
+      if (text !== undefined) window.open(helpUrl(text), "_blank", "noopener");
       break;
     }
     case "earlier":

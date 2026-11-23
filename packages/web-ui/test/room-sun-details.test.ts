@@ -80,3 +80,49 @@ describe("Details show the sun hours an indoor plant uses, and where they come f
     assert.match(app, /plantSunText\(data, p, today, sunPlace\(\)\)/);
   });
 });
+
+describe("the Direct sun row needs sun hours, not a light level", () => {
+  // a plant whose interval the user typed has no catalogue source, so no start facts reach the plan
+  const typed = (extra: Partial<Plant> = {}): Plant => {
+    return Object.fromEntries(
+      Object.entries(fern(extra)).filter(([k]) => k !== "source"),
+    ) as unknown as Plant;
+  };
+  const roomNoLight = (directSun?: { from: number; to: number }[]): AppData => ({
+    ...emptyData(),
+    plants: [typed()],
+    rooms: [
+      {
+        id: "r1",
+        name: "Lounge",
+        spaceId: space,
+        ...(directSun === undefined ? {} : { directSun }),
+      },
+    ],
+  });
+
+  it("shows a room's sun hours when the room has no light level", () => {
+    const text = plantSunText(roomNoLight([{ from: 6, to: 11 }]), typed(), TODAY, place);
+    assert.match(text ?? "", /from the room/i);
+    assert.match(text ?? "", /6:00-11:00/);
+  });
+
+  it("shows a plant's own sun hours when its room has no light level", () => {
+    const own = typed({ directSun: [{ from: 13, to: 16 }] });
+    const data = { ...roomNoLight(), plants: [own] };
+    assert.match(plantSunText(data, own, TODAY, place) ?? "", /its own/i);
+  });
+
+  it("shows a plant's own sun hours when it has no room", () => {
+    const own = typed({ directSun: [{ from: 13, to: 16 }] });
+    const noRoom = Object.fromEntries(
+      Object.entries(own).filter(([k]) => k !== "roomId"),
+    ) as unknown as Plant;
+    const data = { ...emptyData(), plants: [noRoom] };
+    assert.match(plantSunText(data, noRoom, TODAY, place) ?? "", /13:00-16:00/);
+  });
+
+  it("still says nothing when there are no hours anywhere", () => {
+    assert.equal(plantSunText(roomNoLight(), typed(), TODAY, place), undefined);
+  });
+});

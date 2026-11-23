@@ -942,3 +942,95 @@ export function importData(text: string, options: ImportOptions = {}): ImportRes
     issues,
   };
 }
+
+/** Why a plant could not be read: the field and the value it had, for a translated, plain-words line. */
+export type PlantProblem =
+  | { readonly kind: "notObject" }
+  | { readonly kind: "notJson" }
+  | { readonly kind: "unknown" }
+  | { readonly kind: "duplicateId"; readonly value: string }
+  | {
+      readonly kind: "badValue";
+      readonly field: "id" | "style" | "intervalDays";
+      readonly value?: string;
+    };
+
+function badValue(field: "id" | "style" | "intervalDays", v: unknown): PlantProblem {
+  return v === undefined
+    ? { kind: "badValue", field }
+    : {
+        kind: "badValue",
+        field,
+        value: typeof v === "string" ? v : JSON.stringify(v),
+      };
+}
+
+/** The first thing wrong with a plant object, the same rules `parsePlant` applies. */
+function problemOf(o: Obj): PlantProblem | undefined {
+  if (str(o["id"]) === undefined) return badValue("id", undefined);
+  if (STYLES.find((s) => s === o["style"]) === undefined) return badValue("style", o["style"]);
+  const interval = num(o["intervalDays"]);
+  if (interval === undefined || interval < 1) return badValue("intervalDays", o["intervalDays"]);
+  return undefined;
+}
+
+/** Why a plant a store load kept as unreadable could not be read (derived from the data it still carries). */
+export function plantProblem(plant: Pick<Plant, "invalid">): PlantProblem {
+  const code = plant.invalid?.[0];
+  const o = plant as unknown as Obj;
+  if (code === "import.plantNotObject") return { kind: "notObject" };
+  if (code === "import.duplicateId") {
+    return { kind: "duplicateId", value: (str(o["id"]) ?? "").replace(/~\d+$/, "") };
+  }
+  const id = str(o["id"]);
+  const found = problemOf(
+    id !== undefined && /^invalid-\d+$/.test(id) ? { ...o, id: undefined } : o,
+  );
+  return found ?? { kind: "unknown" };
+}
+
+/** The plant as editable JSON: every key it came with, without the unreadable mark. */
+export function plantText(plant: Plant): string {
+  const rest = Object.fromEntries(Object.entries(plant).filter(([k]) => k !== "invalid"));
+  return JSON.stringify(rest, null, 2);
+}
+
+/**
+ * Check and save: reads `text` as one plant with the same rules as an import. If it reads, it replaces the
+ * kept plant `id` and the plant is normal again; if not, the reason comes back and nothing changes.
+ */
+export function repairPlant(
+  data: AppData,
+  id: string,
+  text: string,
+):
+  | { readonly ok: true; readonly data: AppData }
+  | { readonly ok: false; readonly problem: PlantProblem } {
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(text);
+  } catch {
+    return { ok: false, problem: { kind: "notJson" } };
+  }
+  if (!isObj(parsed)) return { ok: false, problem: { kind: "notObject" } };
+  const problem = problemOf(parsed);
+  if (problem !== undefined) return { ok: false, problem };
+  const newId = str(parsed["id"]) ?? id;
+  if (data.plants.some((p) => p.id === newId && p.id !== id)) {
+    return { ok: false, problem: { kind: "duplicateId", value: newId } };
+  }
+  const old = data.plants.find((p) => p.id === id);
+  if (old === undefined) return { ok: false, problem: { kind: "unknown" } };
+  // Version 10 so the stamp and "had it since" steps run for the plant coming back.
+  const res = importData(
+    JSON.stringify({ format: FORMAT, version: 10, plants: [{ ...parsed, invalid: undefined }] }),
+  );
+  const fixed = res.data.plants[0];
+  if (fixed === undefined) return { ok: false, problem: { kind: "unknown" } };
+  const space =
+    typeof parsed["spaceId"] === "string" && data.spaces.some((s) => s.id === parsed["spaceId"])
+      ? fixed.spaceId
+      : old.spaceId;
+  const next: Plant = { ...fixed, spaceId: space };
+  return { ok: true, data: { ...data, plants: data.plants.map((p) => (p.id === id ? next : p)) } };
+}

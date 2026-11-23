@@ -322,6 +322,44 @@ const SETS = {
     },
     { name: "03-calendar-caption", steps: sample("today") },
   ],
+  // an unreadable plant: its reason, its data to edit, what "Ask for help" would post; the Direct sun row.
+  unreadable2: [
+    {
+      name: "01-card",
+      steps: [
+        ...sample("plants"),
+        "(() => { const d = JSON.parse(localStorage.getItem('green-garden')); d.plants.push({ id: 'mist-1', spaceId: d.plants[0].spaceId, name: 'Misty', style: 'mist', intervalDays: 3, logs: [] }); localStorage.setItem('green-garden', JSON.stringify(d)); })()",
+        "location.reload()",
+      ],
+    },
+    {
+      name: "02-data",
+      steps: [
+        ...sample("plants"),
+        "(() => { const d = JSON.parse(localStorage.getItem('green-garden')); d.plants.push({ id: 'mist-1', spaceId: d.plants[0].spaceId, name: 'Misty', style: 'mist', intervalDays: 3, logs: [] }); localStorage.setItem('green-garden', JSON.stringify(d)); })()",
+        "location.reload()",
+        "document.querySelector('[data-action=unreadable-see]').click()",
+        "document.querySelector('[data-action=unreadable-check]').click()",
+      ],
+    },
+    {
+      name: "03-help",
+      steps: [
+        ...sample("plants"),
+        "(() => { const d = JSON.parse(localStorage.getItem('green-garden')); d.plants.push({ id: 'mist-1', spaceId: d.plants[0].spaceId, name: 'Misty', style: 'mist', intervalDays: 3, logs: [] }); localStorage.setItem('green-garden', JSON.stringify(d)); })()",
+        "location.reload()",
+        "document.querySelector('[data-action=unreadable-help]').click()",
+      ],
+    },
+    {
+      name: "04-sun-row",
+      steps: [
+        ...sample("plants"),
+        "(() => { const d = JSON.parse(localStorage.getItem('green-garden')); const room = d.rooms[0] ?? (d.rooms[0] = { id: 'r1', name: 'Lounge', spaceId: d.plants[0].spaceId }); delete room.light; room.directSun = [{ from: 6, to: 11 }]; for (const p of d.plants) { if (p.placement === undefined || p.placement === 'indoor') { p.roomId = room.id; delete p.directSun; delete p.source; } } localStorage.setItem('green-garden', JSON.stringify(d)); })()",
+        "location.reload()",
+      ],
+    },
+  ],
   // the Planning tab (was Holidays) and the Settings tab with the preferences.
   s119: [
     { name: "01-planning", steps: sample("planning") },

@@ -96,9 +96,16 @@ export function plantSunText(
 ): string | undefined {
   const input = buildPlanInput(data, today);
   const planned = (input.plants ?? []).find((x) => x.id === plant.id);
-  const ranges = planned?.directSun;
-  if (planned === undefined || ranges === undefined) return undefined;
-  const care = resolveCare(planned, today, {
+  if (planned === undefined) return undefined;
+  // The plan leaves sun hours out for a plant whose interval the user typed (no start facts), but the
+  // row shows what the plant or its room says, whatever the room's light level.
+  const outdoors = plant.placement !== undefined && plant.placement !== "indoor";
+  const ranges =
+    planned.directSun ??
+    plant.directSun ??
+    (outdoors ? undefined : data.rooms.find((r) => r.id === plant.roomId)?.directSun);
+  if (ranges === undefined) return undefined;
+  const care = resolveCare({ ...planned, directSun: ranges }, today, {
     ...(place.hemisphere === undefined ? {} : { hemisphere: place.hemisphere }),
     ...(place.latitude === undefined ? {} : { latitude: place.latitude }),
     ...(place.country === undefined ? {} : { country: place.country }),

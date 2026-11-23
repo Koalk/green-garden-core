@@ -7,7 +7,11 @@ export {
   exportData,
   importData,
   type ImportIssue,
+  plantProblem,
+  plantText,
+  repairPlant,
   type ImportOptions,
+  type PlantProblem,
   type ImportResult,
 } from "./exchange.ts";
 export {

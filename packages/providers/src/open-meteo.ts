@@ -22,9 +22,15 @@ export function openMeteoUrl(point: GeoPoint, pastDays: number, forecastDays: nu
   const p = roundPoint(point);
   return (
     `${BASE}?latitude=${String(p.lat)}&longitude=${String(p.lon)}` +
-    "&daily=precipitation_sum,precipitation_probability_max" +
+    "&daily=precipitation_sum,precipitation_probability_max,temperature_2m_min,temperature_2m_max" +
     `&past_days=${String(pastDays)}&forecast_days=${String(forecastDays)}&timezone=auto`
   );
+}
+
+/** A finite number at an index of a daily series, else undefined (a missing value is never read as 0 degrees). */
+function numberAt(series: unknown, i: number): number | undefined {
+  const v: unknown = Array.isArray(series) ? series[i] : undefined;
+  return typeof v === "number" && Number.isFinite(v) ? v : undefined;
 }
 
 /** Days with a number; a day without one is left out, never read as zero rain. */
@@ -34,6 +40,8 @@ export function parseOpenMeteo(json: unknown, today: string, retrievedAt: string
   const time = daily["time"];
   const sum = daily["precipitation_sum"];
   const chance = daily["precipitation_probability_max"];
+  const tMin = daily["temperature_2m_min"];
+  const tMax = daily["temperature_2m_max"];
   if (!Array.isArray(time) || !Array.isArray(sum)) return [];
   const out: RainDay[] = [];
   time.forEach((date: unknown, i) => {
@@ -41,11 +49,15 @@ export function parseOpenMeteo(json: unknown, today: string, retrievedAt: string
     if (typeof date !== "string" || typeof mm !== "number" || !Number.isFinite(mm)) return;
     const forecast = date > today;
     const p: unknown = Array.isArray(chance) ? chance[i] : undefined;
+    const lo = numberAt(tMin, i);
+    const hi = numberAt(tMax, i);
     out.push({
       date,
       rainMm: mm,
       forecast,
       ...(forecast && typeof p === "number" ? { probability: p } : {}),
+      ...(lo === undefined ? {} : { tMinC: lo }),
+      ...(hi === undefined ? {} : { tMaxC: hi }),
       provenance: {
         provider: "open-meteo",
         dataset: "Forecast API, daily precipitation_sum",

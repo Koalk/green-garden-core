@@ -88,6 +88,62 @@ describe("Open-Meteo", () => {
     assert.equal(nov6.provenance.retrievedAt, NOW);
   });
 
+  it("asks for the daily minimum and maximum temperature too", () => {
+    const url = openMeteoUrl({ lat: 51.5, lon: -0.12 }, 7, 3);
+    assert.match(url, /daily=[^&]*temperature_2m_min/);
+    assert.match(url, /daily=[^&]*temperature_2m_max/);
+  });
+
+  it("every row of a recorded answer carries tMinC and tMaxC, through to the engine's rows", () => {
+    const days = parseOpenMeteo(fixture("open-meteo-temps.json"), "2026-11-25", NOW);
+    assert.equal(days.length, 6);
+    assert.deepEqual(
+      days.map((d) => [d.date, d.tMinC, d.tMaxC]),
+      [
+        ["2026-11-22", 0.4, 7.1],
+        ["2026-11-23", -0.2, 5.8],
+        ["2026-11-24", 0.8, 4.5],
+        ["2026-11-25", 2.6, 6.1],
+        ["2026-11-26", 2.6, 5.1],
+        ["2026-11-27", 1.9, 5.4],
+      ],
+    );
+    const rows = toWeatherDays(days);
+    assert.equal(rows[1]?.tMinC, -0.2);
+    assert.equal(rows[4]?.tMaxC, 5.1);
+    assert.equal(rows[4].forecast, true);
+  });
+
+  it("a row missing a temperature is left without it, the rain stays", () => {
+    const days = parseOpenMeteo(
+      {
+        daily: {
+          time: ["2026-11-24", "2026-11-25"],
+          precipitation_sum: [1, 2],
+          temperature_2m_min: [null, 3.5],
+          temperature_2m_max: [8, "x"],
+        },
+      },
+      "2026-11-25",
+      NOW,
+    );
+    assert.equal(days.length, 2);
+    const [first, second] = days;
+    assert.ok(first && second);
+    assert.equal("tMinC" in first, false);
+    assert.equal(first.tMaxC, 8);
+    assert.equal(second.tMinC, 3.5);
+    assert.equal("tMaxC" in second, false);
+    assert.equal(second.rainMm, 2);
+  });
+
+  it("an answer with no temperature fields parses as before", () => {
+    const days = parseOpenMeteo(fixture("open-meteo.json"), "2026-11-04", NOW);
+    assert.equal(days.length, 6);
+    assert.ok(days.every((d) => !("tMinC" in d) && !("tMaxC" in d)));
+    assert.ok(toWeatherDays(days).every((d) => !("tMinC" in d) && !("tMaxC" in d)));
+  });
+
   it("a day with no number is left out, never read as zero", () => {
     const days = parseOpenMeteo(
       { daily: { time: ["2026-11-03", "2026-11-04"], precipitation_sum: [null, 0.4] } },

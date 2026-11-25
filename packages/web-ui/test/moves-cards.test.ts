@@ -1,8 +1,10 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { afterEach, describe, it } from "node:test";
 import { setLocale } from "@green-garden/i18n";
+import { parseOpenMeteo, toWeatherDays } from "@green-garden/providers";
 import { emptyData, exportData, importData, type AppData, type Plant } from "@green-garden/storage";
 import { plantFromFields } from "../src/drafts.ts";
 import { modalHtml } from "../src/modal.ts";
@@ -287,6 +289,38 @@ describe("seasonal state lives in the data", () => {
       cardStateOf(d),
     );
   const calamondin = (): Plant => plant({ id: "p1", placement: "outdoor_pot" });
+
+  const recorded = (name: string) =>
+    JSON.parse(
+      readFileSync(
+        new URL(`../../providers/test/fixtures/weather/${name}`, import.meta.url),
+        "utf8",
+      ),
+    ) as unknown;
+
+  it("a recorded forecast with frost gives a bring-in card with basis forecast", () => {
+    const days = toWeatherDays(
+      parseOpenMeteo(recorded("open-meteo-temps.json"), "2026-11-25", "2026-11-25T08:00:00Z"),
+    );
+    const d = dataWith(calamondin());
+    const cards = cardPrompts(d, days, "2026-11-25", cardStateOf(d));
+    assert.deepEqual(
+      cards.map((c) => [c.plantId, c.kind, c.basis]),
+      [["p1", "bring_in", "forecast"]],
+    );
+  });
+
+  it("an answer without temperatures gives the calendar fallback", () => {
+    const days = toWeatherDays(
+      parseOpenMeteo(recorded("open-meteo.json"), "2026-11-04", "2026-11-04T08:00:00Z"),
+    );
+    const d = dataWith(calamondin());
+    const cards = cardPrompts(d, days, "2026-11-04", cardStateOf(d));
+    assert.deepEqual(
+      cards.map((c) => [c.plantId, c.kind, c.basis]),
+      [["p1", "bring_in", "calendar"]],
+    );
+  });
 
   it("Not yet and Leave it out are stored on the data and reach the export", () => {
     const d0 = dataWith(calamondin());

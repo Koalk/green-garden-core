@@ -58,6 +58,9 @@ export interface RainDay {
   readonly forecast: boolean;
   /** Chance of rain in percent, forecast days only. */
   readonly probability?: number;
+  /** Daily minimum and maximum air temperature in degrees Celsius, when the source gives them. */
+  readonly tMinC?: number;
+  readonly tMaxC?: number;
   readonly provenance: Provenance;
 }
 
@@ -117,6 +120,8 @@ export function toWeatherDays(days: readonly RainDay[]): WeatherDay[] {
             rainMm: d.rainMm,
             kind: d.provenance.kind,
             ...(d.forecast ? { forecast: true } : {}),
+            ...(d.tMinC === undefined ? {} : { tMinC: d.tMinC }),
+            ...(d.tMaxC === undefined ? {} : { tMaxC: d.tMaxC }),
           },
         ],
   );
